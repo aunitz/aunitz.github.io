@@ -2,7 +2,7 @@
 layout:     post
 title:      "Romper la escala del eje Y en un gráfico"
 subtitle:   "¿Es una buena idea?"
-date:       2021-06-22 16:30:00
+date:       2021-06-22 17:30:00
 author:     "Aunitz Giménez"
 header-img: "img/post-bg-74.jpg"
 tags:       [buenas prácticas de diseño, buenas prácticas de usabilidad]
