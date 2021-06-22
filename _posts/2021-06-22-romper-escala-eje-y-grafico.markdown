@@ -8,7 +8,7 @@ header-img: "img/post-bg-74.jpg"
 tags:       [buenas prácticas de diseño, buenas prácticas de usabilidad]
 ---
 
-<p>Imaginemos un caso real. Tenemos un equipo de ventas que ha obtenido los siguientes resultados.</p>
+<p>Imaginemos un caso práctico. Tenemos un equipo de ventas que ha obtenido los siguientes resultados.</p>
 
 <table class="table table-bordered" style="max-width: 425px;">
     <thead>
@@ -45,7 +45,7 @@ tags:       [buenas prácticas de diseño, buenas prácticas de usabilidad]
     </tbody>
 </table>
 
-<p>Luciana destaca claramente del resto de comerciales habiendo acumulado unos resultados muy superiores al resto.</p>
+<p>Luciana destaca claramente sobre el resto de comerciales por su abultado importe de ventas totales.</p>
 
 <p>Si utilizamos una hoja de cálculo como Excel para visualizar los resultados mediante un gráfico de barras, obtendremos una representación parecida a la siguiente.</p>
 
@@ -57,7 +57,7 @@ tags:       [buenas prácticas de diseño, buenas prácticas de usabilidad]
 
 <p><img src="{{ site.baseurl }}/img/romper-escala-eje-y-grafico-02.png" loading="lazy" alt=""></p>
 
-<p>Pero el problema de <strong>las escalas logarítmicas</strong> es que <strong>no resultan fácilmente interpretables</strong> por el público en general. Requiere de conocimientos matemáticos y estadísticos avanzados.</p>
+<p>El problema de <strong>las escalas logarítmicas</strong> es que <strong>no resultan fácilmente interpretables</strong> por el público en general. Requiere de conocimientos matemáticos y estadísticos avanzados.</p>
 
 <p>Una solución que nos encontraremos en más de una ocasión es la de recurrir a <strong>“romper” la escala del eje Y</strong> para “acortar” la barra que distorsiona el gráfico y que el resto de las barras se diferencien mejor entre sí.</p>
 
@@ -73,9 +73,9 @@ tags:       [buenas prácticas de diseño, buenas prácticas de usabilidad]
 
 <h2>¿Es una buena idea romper la escala del eje Y?</h2>
 
-<p>El principal inconveniente de romper la escala del eje Y es que <strong>se pierde la correlación entre los valores pequeños y los grandes</strong>. Volvamos a ver el primer ejemplo.</p>
+<p>El principal inconveniente de romper la escala del eje Y es que <strong>se pierde la correlación entre los valores pequeños y los grandes</strong>. Volvamos a ver el gráfico con la escala partida.</p>
 
-<p><img src="{{ site.baseurl }}/img/romper-escala-eje-y-grafico-05.png" loading="lazy" alt=""></p>
+<p><img src="{{ site.baseurl }}/img/romper-escala-eje-y-grafico-03.png" loading="lazy" alt=""></p>
 
 <p>Puede ocurrir que interpretemos inconscientemente que las ventas de Luciana son el doble o el triple que las de María Luisa. Pero la realidad es que son <strong>diez veces más grandes</strong>.</p>
 
@@ -85,9 +85,11 @@ tags:       [buenas prácticas de diseño, buenas prácticas de usabilidad]
 
 <p>Puede que sí. Una posible alternativa es utilizar un <strong>doble gráfico apilado</strong>. En nuestro ejemplo se vería del siguiente modo.</p>
 
+<p><img src="{{ site.baseurl }}/img/romper-escala-eje-y-grafico-05.png" loading="lazy" alt=""></p>
+
 <p>El doble gráfico anterior muestra dos escalas diferentes para el eje Y. En la escala del <strong>gráfico superior</strong> se representa la <strong>proporción real</strong> de los diferentes valores. En el <strong>gráfico inferior</strong> se ha <strong>recortado</strong> la escala del eje Y. De modo que se centra en representar los valores del grupo de comerciales que menos a vendido. Mostrando de manera incompleta la barra de Luciana. Con un degradado del color azul que sugiere al usuario que la barra no se representa completa.</p>
 
-<p>Otras opciones más elaboradas y dinámicas que aprovechan la <strong>interactividad</strong> que tiene la web son las de, por ejemplo, la librería <a href="https://www.amcharts.com/" target="_blank" rel="noopener noreferrer">amCharts</a> que incorpora una solución nativa equivalente al doble gráfico apilado. En la cual, al pasar el cursor por encima de la zona “cortada” el gráfico toma la forma que representa la proporción real de los diferentes valores.</p>
+<p>Otras opciones más elaboradas y dinámicas que aprovechan la <strong>interactividad</strong> que tiene la web son las de, por ejemplo, la librería <a href="https://www.amcharts.com/" target="_blank" rel="noopener noreferrer">amCharts</a> que incorpora una solución nativa equivalente al doble gráfico apilado. En la cual, al pasar el cursor por encima de la zona “cortada”, el gráfico toma la forma que representa la proporción real de los diferentes valores.</p>
 
 <p>A continuación, se puede ver una animación en formato GIF que muestra la solución de amCharts. Que también <a href="https://www.amcharts.com/demos/column-chart-with-axis-break/" target="_blank" rel="noopener noreferrer">se puede experimentar en vivo en su página web</a>.</p>
 
