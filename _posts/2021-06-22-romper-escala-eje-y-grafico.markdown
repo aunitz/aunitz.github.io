@@ -31,7 +31,7 @@ tags:       [buenas prácticas de diseño, buenas prácticas de usabilidad]
             <td class="text-right">89 €</td>
         </tr>
         <tr>
-            <td>Maria Luisa Perello</td>
+            <td>María Perello</td>
             <td class="text-right">153 €</td>
         </tr>
         <tr>
@@ -51,7 +51,7 @@ tags:       [buenas prácticas de diseño, buenas prácticas de usabilidad]
 
 <p><img src="{{ site.baseurl }}/img/romper-escala-eje-y-grafico-01.png" loading="lazy" alt=""></p>
 
-<p>Como la barra de ventas de Luciana es mucho mayor que las demás, no se llegan a apreciar en toda su magnitud las diferencias que hay entre el resto de los comerciales. Por ejemplo, no se percibe con claridad que María Luisa ha venido el doble que Isidoro.</p>
+<p>Como la barra de ventas de Luciana es mucho mayor que las demás, no se llegan a apreciar en toda su magnitud las diferencias que hay entre el resto de los comerciales. Por ejemplo, no se percibe con claridad que María ha venido el doble que Isidoro.</p>
 
 <p>Podríamos utilizar una <strong>escala logarítmica</strong> para el eje Y. Obteniendo un gráfico como el siguiente.</p>
 
@@ -77,7 +77,7 @@ tags:       [buenas prácticas de diseño, buenas prácticas de usabilidad]
 
 <p><img src="{{ site.baseurl }}/img/romper-escala-eje-y-grafico-03.png" loading="lazy" alt=""></p>
 
-<p>Puede ocurrir que interpretemos inconscientemente que las ventas de Luciana son el doble o el triple que las de María Luisa. Pero la realidad es que son <strong>diez veces más grandes</strong>.</p>
+<p>Puede ocurrir que interpretemos inconscientemente que las ventas de Luciana son el doble o el triple que las de María. Pero la realidad es que son <strong>diez veces más grandes</strong>.</p>
 
 <p>Es difícil, sin leer con detenimiento y atención los datos, obtener una compresión visual fiable de los diferentes órdenes de magnitud reales.</p>
 
