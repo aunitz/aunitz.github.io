@@ -16,4 +16,4 @@ tags:       [buenas prácticas de usabilidad]
 
 <p>De modo que en aquellas ocasiones en las que realmente nos hemos equivocado, recurriremos a la acción que nos permita <strong>deshacer</strong> nuestro error.</p>
 
-<p><img src="{{ site.baseurl }}/img/tip-5-deshacer.png" loading="lazy" alt="Ilustración del tip 5 de usabilidad: deshacer en lugar de solicitud de confirmación"></p>
+<p><img src="{{ site.baseurl }}/img/tip-5-deshacer.png" loading="lazy" alt="Ilustración del tip 5 de usabilidad: deshacer en lugar de solicitud de confirmación" width="722" height="428"></p>

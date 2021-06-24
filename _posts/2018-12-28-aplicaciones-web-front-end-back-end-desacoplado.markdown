@@ -18,7 +18,7 @@ tags:       [desarrollo de aplicaciones web]
 </ul>
 <p>Al separar el desarrollo en tres capas se simplifica el trabajo y se facilita la reutilización de código y la separación de conceptos, características que buscan facilitar la tarea de desarrollo de aplicaciones y su posterior mantenimiento.</p>
 
-<p><img src="{{ site.baseurl }}/img/front-end-back-end-desacoplado-01.jpg" loading="lazy" alt=""></p>
+<p><img src="{{ site.baseurl }}/img/front-end-back-end-desacoplado-01.jpg" loading="lazy" alt="" width="722" height="339"></p>
 
 <p>Los primeros desarrollos de aplicaciones web planteaban un enfoque de cliente ligero en el que casi todas las funciones, tanto de la vista, el modelo y el controlador recaían en el servidor. En este enfoque, el cliente manda la petición de cualquier enlace o formulario al controlador y después recibe de la vista una página completa y actualizada. Tanto el modelo como el controlador (y buena parte de la vista) están completamente alojados en el servidor.</p>
 <p>Aquellas primeras aplicaciones eran percibidas por el usuario como lentas y poco dinámicas en comparación con las aplicaciones de escritorio. Para solventar este problema <strong>se fueron trasladando cada vez más partes de la vista al lado del cliente</strong>. Es decir, al navegador.</p>
@@ -31,7 +31,7 @@ tags:       [desarrollo de aplicaciones web]
 <p>Una de las pruebas de ello era que las páginas (JSP, PHP, ASP.NET…) que componían el interfaz del usuario ejecutaban código en lenguajes de programación propios del back-end. Como Java, PHP o ASP.NET.</p>
 <p>Este código se ejecutaba en el servidor y obligaba al navegador a recargase para poder acceder a las nuevas pantallas.</p>
 
-<p><img src="{{ site.baseurl }}/img/front-end-back-end-desacoplado-02.jpg" loading="lazy" alt=""></p>
+<p><img src="{{ site.baseurl }}/img/front-end-back-end-desacoplado-02.jpg" loading="lazy" alt="" width="722" height="339"></p>
 
 <p>Utilizando las herramientas front-end disponibles en aquellos años (AJAX, jQuery) podríamos haberlo evitado, pero resultaba excesivamente complejo y al final siempre dependíamos de los lenguajes de servidor para ciertas tareas del front. Como por ejemplo para el enrutado.</p>
 
@@ -49,7 +49,7 @@ tags:       [desarrollo de aplicaciones web]
 <p>Donde menciona "desarrollador tradicional de ASP.NET" podríamos mencionar igualmente desarrollador tradicional de Java, PHP, etc.</p>
 <p>Desde mi experiencia, la realidad es que <strong>el desarrollador tradicional de back-end rara vez es capaz de asimilar todas las competencias en HTML, CSS y JavaScript que son necesarias</strong> para desarrollar una aplicación web moderna. Es por ello por lo que desde hace años existe una nueva especialidad de desarrollador: el <strong>programador front-end</strong>.</p>
 
-<p><img src="{{ site.baseurl }}/img/front-end-back-end-desacoplado-03.jpg" loading="lazy" alt=""></p>
+<p><img src="{{ site.baseurl }}/img/front-end-back-end-desacoplado-03.jpg" loading="lazy" alt="" width="722" height="339"></p>
 
 <p>Por supuesto también existen los <strong>desarrolladores full-stack</strong> (que trabajan tanto con tecnologías front como back) pero, a mi entender, por la natural limitación de nuestra capacidad intelectual es muy difícil encontrar profesionales que sean capaces de desenvolverse con la misma soltura en ambos frentes. Especialmente para el desarrollo de proyectos de cierta envergadura.</p>
 
@@ -81,7 +81,7 @@ tags:       [desarrollo de aplicaciones web]
 <p>Siento si defraudo las expectativas de algunos, pero no voy a posicionarme sobre esta cuestión. Considero que sería desviar la atención del debate sobre lo realmente relevante: la <strong>apuesta por desacoplar el front-end y el back-end</strong>.</p>
 <p>Entrar a debatir si usar un framework de front u otro es entrar a un detalle técnico similar al que sería necesario para debatir sobre qué framework de back utilizar.</p>
 
-<p><img src="{{ site.baseurl }}/img/front-end-back-end-desacoplado-04.jpg" loading="lazy" alt=""></p>
+<p><img src="{{ site.baseurl }}/img/front-end-back-end-desacoplado-04.jpg" loading="lazy" alt="" width="722" height="481"></p>
 
 <p>Creo que entre los frameworks de primera línea no hay uno mejor ni peor. Dependerá de las características concretas del proyecto, del conocimiento de los desarrolladores, de las necesidades de integración con otros sistemas, de los plazos, etc.</p>
 <p>Lo que considero que es claramente ventajosa es la apuesta por una arquitectura que desacople el front-end y el back-end de manera radical.</p>

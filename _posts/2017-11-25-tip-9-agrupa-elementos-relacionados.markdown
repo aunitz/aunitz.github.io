@@ -12,4 +12,4 @@ tags:       [buenas prácticas de usabilidad]
 
 <p>Este consejo de usabilidad se deriva del <a href="{{ site.baseurl }}{% post_url 2017-01-18-principios-usabilidad %}">principio de consistencia</a>; del que ya he hablado en anteriores ocasiones.</p>
 
-<p><img src="{{ site.baseurl }}/img/tip-9-agrupa-elementos-relacionados.png" loading="lazy" alt="Ilustración del tip 9 de usabilidad: agrupa los elementos relacionados"></p>
+<p><img src="{{ site.baseurl }}/img/tip-9-agrupa-elementos-relacionados.png" loading="lazy" alt="Ilustración del tip 9 de usabilidad: agrupa los elementos relacionados" width="722" height="428"></p>

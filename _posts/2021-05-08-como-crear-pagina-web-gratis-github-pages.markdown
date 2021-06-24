@@ -30,7 +30,7 @@ tags:       [desarrollo de aplicaciones web]
 
 <p>En nuestro ejemplo el nombre de usuario es “aprendeusabilidadyux”:</p>
 
-<p><img src="{{ site.baseurl }}/img/como-crear-pagina-web-gratis-github-pages-01.png" loading="lazy" alt=""></p>
+<p><img src="{{ site.baseurl }}/img/como-crear-pagina-web-gratis-github-pages-01.png" loading="lazy" alt="" width="739" height="736"></p>
 
 <h2>Paso 2: clonar el repositorio de GitHub a nuestro equipo</h2>
 
@@ -46,7 +46,7 @@ tags:       [desarrollo de aplicaciones web]
 
 <p>Una vez descargada, descomprimiremos el contenido del ZIP en el directorio que alberga nuestro repositorio clonado de GitHub.</p>
 
-<p><img src="{{ site.baseurl }}/img/como-crear-pagina-web-gratis-github-pages-02.png" loading="lazy" alt=""></p>
+<p><img src="{{ site.baseurl }}/img/como-crear-pagina-web-gratis-github-pages-02.png" loading="lazy" alt="" width="198" height="183"></p>
 
 <p>GitHub Pages no sólo sirve para alojar páginas web estáticas desarrolladas mediante HTML y CSS. Resulta que incluye uno de los generadores de sitios webs estáticos más veteranos de internet llamado <a href="https://jekyllrb.com/" target="_blank" rel="noopener noreferrer">Jekyll</a>.</p>
 
@@ -56,7 +56,7 @@ tags:       [desarrollo de aplicaciones web]
 
 <p>Como no queremos complicar el ejemplo con Jekyll, le tenemos que decir a GitHub Pages que no procese nuestra página web mediante el motor de Jekyll. Para ello debemos añadir un fichero de texto plano vacío con el nombre “.nojekyll” a la raíz del proyecto.</p>
 
-<p><img src="{{ site.baseurl }}/img/como-crear-pagina-web-gratis-github-pages-03.png" loading="lazy" alt=""></p>
+<p><img src="{{ site.baseurl }}/img/como-crear-pagina-web-gratis-github-pages-03.png" loading="lazy" alt="" width="201" height="198"></p>
 
 <h2>Paso 5: subir a GitHub la web para probar que se publica correctamente</h2>
 
@@ -76,7 +76,7 @@ tags:       [desarrollo de aplicaciones web]
 
 <p>En nuestro caso a <span style="word-break: break-all;">https://aprendeusabilidadyux.github.io/</span></p>
 
-<p><img src="{{ site.baseurl }}/img/como-crear-pagina-web-gratis-github-pages-04.png" loading="lazy" alt=""></p>
+<p><img src="{{ site.baseurl }}/img/como-crear-pagina-web-gratis-github-pages-04.png" loading="lazy" alt="" width="722" height="449"></p>
 
 <p>Si todo ha funcionado correctamente estaremos viendo nuestra web. En caso contrario, conviene entrar a la raíz del repositorio en nuestra cuenta de GitHub y nos indicará si GitHub Pages ha encontrado algún error al tratar de publicar la web.</p>
 
@@ -94,7 +94,7 @@ tags:       [desarrollo de aplicaciones web]
 
 <p>En nuestro caso en <span style="word-break: break-all;">https://aprendeusabilidadyux.github.io/</span></p>
 
-<p><img src="{{ site.baseurl }}/img/como-crear-pagina-web-gratis-github-pages-05.png" loading="lazy" alt=""></p>
+<p><img src="{{ site.baseurl }}/img/como-crear-pagina-web-gratis-github-pages-05.png" loading="lazy" alt="" width="722" height="438"></p>
 
 <h2>Próximo paso: asignarle un dominio propio</h2>
 

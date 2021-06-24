@@ -23,7 +23,7 @@ tags:       [buenas prácticas de usabilidad, formularios]
 
 <h2>Etiquetas por encima</h2>
 
-<p><img src="{{ site.baseurl }}/img/tip-11-etiquetas-por-encima.png" loading="lazy" alt="Formulario con las etiquetas ubicadas por encima de los campos"></p>
+<p><img src="{{ site.baseurl }}/img/tip-11-etiquetas-por-encima.png" loading="lazy" alt="Formulario con las etiquetas ubicadas por encima de los campos" width="521" height="463"></p>
 
 <div class="row">
     <div class="col-sm-6">
@@ -45,7 +45,7 @@ tags:       [buenas prácticas de usabilidad, formularios]
 
 <h2>Etiquetas alineadas a la izquierda</h2>
 
-<p><img src="{{ site.baseurl }}/img/tip-11-etiquetas-alineadas-izquierda.png" loading="lazy" alt="Formulario con las etiquetas alineadas a la izquierda"></p>
+<p><img src="{{ site.baseurl }}/img/tip-11-etiquetas-alineadas-izquierda.png" loading="lazy" alt="Formulario con las etiquetas alineadas a la izquierda" width="521" height="463"></p>
 
 <div class="row">
     <div class="col-sm-6">
@@ -68,7 +68,7 @@ tags:       [buenas prácticas de usabilidad, formularios]
 
 <h2>Etiquetas alineadas a la derecha</h2>
 
-<p><img src="{{ site.baseurl }}/img/tip-11-etiquetas-alineadas-derecha.png" loading="lazy" alt="Formulario con las etiquetas alineadas a la derecha"></p>
+<p><img src="{{ site.baseurl }}/img/tip-11-etiquetas-alineadas-derecha.png" loading="lazy" alt="Formulario con las etiquetas alineadas a la derecha" width="521" height="463"></p>
 
 <div class="row">
     <div class="col-sm-6">
@@ -93,7 +93,7 @@ tags:       [buenas prácticas de usabilidad, formularios]
 
 <p>Por si se te había pasado por la cabeza prescindir de las etiquetas (labels) y utilizar los textos por defecto (placeholders) como sustitutos de estos, no lo hagas.</p>
 
-<p><img src="{{ site.baseurl }}/img/tip-11-inputs-sin-labels.png" loading="lazy" alt="Formulario sin etiquetas"></p>
+<p><img src="{{ site.baseurl }}/img/tip-11-inputs-sin-labels.png" loading="lazy" alt="Formulario sin etiquetas" width="521" height="463"></p>
 
 <p>Puede quedar estéticamente muy bonito, pero tiene dos graves problemas de usabilidad:</p>
 <ul>
@@ -103,4 +103,4 @@ tags:       [buenas prácticas de usabilidad, formularios]
 
 <p>Se podría hacer alguna excepción a esta regla, en casos como por ejemplo el típico formulario de acceso (login) en el que únicamente se pide usuario y contraseña.</p>
 
-<p><img src="{{ site.baseurl }}/img/tip-11-iniciar-sesion.png" loading="lazy" alt="Formulario de inicio de sesión"></p>
+<p><img src="{{ site.baseurl }}/img/tip-11-iniciar-sesion.png" loading="lazy" alt="Formulario de inicio de sesión" width="521" height="319"></p>

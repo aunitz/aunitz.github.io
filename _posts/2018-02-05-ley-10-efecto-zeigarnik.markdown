@@ -12,7 +12,7 @@ tags:       [leyes y principios de usabilidad, leyes y principios de la Gestalt]
 
 <p>Este efecto lo aprovechan muchas aplicaciones para que el usuario complete determinadas tareas. Se utiliza, por ejemplo, para que el usuario complete su perfil en una determinada red social. O como incentivo para superar nuevas fases en los videojuegos.</p>
 
-<p><img src="{{ site.baseurl }}/img/ley-10-efecto-zeigarnik.png" loading="lazy" alt="Ilustración de la Ley 10 de usabilidad: Efecto Zeigárnik"></p>
+<p><img src="{{ site.baseurl }}/img/ley-10-efecto-zeigarnik.png" loading="lazy" alt="Ilustración de la Ley 10 de usabilidad: Efecto Zeigárnik" width="722" height="428"></p>
 
 <p>Este efecto fue descubierto por la psicóloga de la Gestalt y psiquiatra soviética Bliuma Zeigárnik en 1927.</p>
 

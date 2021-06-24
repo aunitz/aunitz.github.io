@@ -14,4 +14,4 @@ tags:       [buenas prácticas de usabilidad]
 
 <p>Los estados ayudarán a los usuarios a comprender si sus acciones pasadas se han llevado a cabo con éxito o no, y si deben tomar medidas o no.</p>
 
-<p><img src="{{ site.baseurl }}/img/tip-12-muestra-el-estado.png" loading="lazy" alt="Muestra el estado de los elementos del interfaz"></p>
+<p><img src="{{ site.baseurl }}/img/tip-12-muestra-el-estado.png" loading="lazy" alt="Muestra el estado de los elementos del interfaz" width="722" height="428"></p>

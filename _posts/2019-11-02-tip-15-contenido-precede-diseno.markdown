@@ -12,7 +12,7 @@ tags:       [buenas prácticas de usabilidad]
 
 <p>En consecuencia, no hay nada más desacertado que diseñar un interfaz sin disponer aún del contenido. Creando espacios con los famosos textos de relleno “lorem ipsum”.</p>
 
-<p><img src="{{ site.baseurl }}/img/tip-15-contenido-precede-diseno.png" loading="lazy" alt="El contenido precede al diseño"></p>
+<p><img src="{{ site.baseurl }}/img/tip-15-contenido-precede-diseno.png" loading="lazy" alt="El contenido precede al diseño" width="722" height="428"></p>
 
 <p>Esta idea es una de las que más consenso genera entre los expertos internacionales en UX. Como <a href="https://twitter.com/zeldman/statuses/804159148" target="_blank" rel="noopener noreferrer">afirmó en 2008 Jeffrey Zeldman</a> (cofundador de <a href="https://alistapart.com/" target="_blank" rel="noopener noreferrer">A List Apart Magazine</a> y <a href="https://www.webstandards.org/" target="_blank" rel="noopener noreferrer">Web Standards Project</a>):</p>
 

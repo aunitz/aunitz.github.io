@@ -14,4 +14,4 @@ tags:       [buenas prácticas de usabilidad, formularios]
 
 <p>Cuantos menos campos tengan nuestros formularios, más usables resultarán. Añade sólo aquellos campos que sean estrictamente imprescindibles.</p>
 
-<p><img src="{{ site.baseurl }}/img/tip-4-reducir-campos-formulario.png" loading="lazy" alt="Ilustración del tip 4 de usabilidad: reduce el número de campos de los formularios"></p>
+<p><img src="{{ site.baseurl }}/img/tip-4-reducir-campos-formulario.png" loading="lazy" alt="Ilustración del tip 4 de usabilidad: reduce el número de campos de los formularios" width="722" height="428"></p>

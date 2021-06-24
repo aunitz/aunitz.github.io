@@ -16,4 +16,4 @@ tags:       [buenas prácticas de usabilidad]
 
 <p>En ningún caso los utilices como elementos de navegación principales o como parte de un recorrido orientado hacia la conversión.</p>
 
-<p><img src="{{ site.baseurl }}/img/tip-7-no-ocultes-opciones-importantes-tras-menus-desplegables.png" loading="lazy" alt="Ilustración del tip 7 de usabilidad: no ocultes opciones importantes tras menús desplegables"></p>
+<p><img src="{{ site.baseurl }}/img/tip-7-no-ocultes-opciones-importantes-tras-menus-desplegables.png" loading="lazy" alt="Ilustración del tip 7 de usabilidad: no ocultes opciones importantes tras menús desplegables" width="722" height="428"></p>

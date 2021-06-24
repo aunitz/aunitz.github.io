@@ -12,7 +12,7 @@ tags:       [sistemas de diseño, desarrollo de aplicaciones web]
 
 <p>En esta ocasión me hago eco de <a href="https://bradfrost.com/blog/link/whats-wrong-with-css-in-js/" target="_blank" rel="noopener noreferrer">su escepticismo</a> sobre una tecnología muy en boga en el desarrollo front-end: el <strong>CSS-in-JS</strong>. Un modelo en el que el CSS se compone usando JavaScript en lugar de estar definido en archivos externos.</p>
 
-<p><img src="{{ site.baseurl }}/img/objeciones-al-css-in-js.png" loading="lazy" alt="Objeciones al CSS-in-JS"></p>
+<p><img src="{{ site.baseurl }}/img/objeciones-al-css-in-js.png" loading="lazy" alt="Objeciones al CSS-in-JS" width="722" height="425"></p>
 
 <p>Coincido con Brad en los tres inconvenientes que observa en las implementaciones de CSS-in-JS. Los he encontrado en proyectos en los que he participado como mánager o consultor; además de alguno más.</p>
 <ul>

@@ -20,6 +20,6 @@ tags:       [buenas prácticas de usabilidad, formularios]
     <li>Evita los botones deshabilitados (atributo <code>disabled</code>). Tienen poco contraste y pueden causar confusión.</li>
 </ul>
 
-<p><img src="{{ site.baseurl }}/img/formularios-usables-botones.png" loading="lazy" alt=""></p>
+<p><img src="{{ site.baseurl }}/img/formularios-usables-botones.png" loading="lazy" alt="" width="521" height="463"></p>
 
 <p class="small">Nota: este post se irá actualizando a medida que mis criterios sobre usabilidad de los formularios vayan evolucionando o los vaya enlazando a posts que desarrollan cada consejo. La fecha de publicación que figura en la cabecera se corresponde a la del post inicial.</p>

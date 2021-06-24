@@ -10,14 +10,14 @@ tags:       [buenas prácticas de usabilidad]
 
 <p>Algunas personas siguen creyendo en el <strong>falso mito de que los usuarios no se desplazan verticalmente en las páginas</strong> (hacer scroll) y que sólo se fijan en el contenido que aparece en la parte superior de la página. Es decir, que sólo prestan atención al contenido que el navegador les muestra en la zona visible de la pantalla de su dispositivo y que no están habituados a desplazarse más allá de esa primera zona.</p>
 
-<p><img src="{{ site.baseurl }}/img/sin-miedo-al-scroll-01.png" loading="lazy" alt=""></p>
+<p><img src="{{ site.baseurl }}/img/sin-miedo-al-scroll-01.png" loading="lazy" alt="" width="720" height="420"></p>
 
 <p>Las personas que aún creen en este mito presionan a los diseñadores web para que todo el contenido que consideran importante deba estar visible en la zona superior de la página. Aquella que supuestamente es la única a la que el usuario presta atención.</p>
 
 <h2>El origen del mito (al principio era cierto)</h2>
 <p>Probablemente el origen de este mito procede de los primeros estudios del <a href="{{ site.baseurl }}{% post_url 2018-01-21-ley-03-ley-de-jakob %}">experto en usabilidad Jakob Nielsen</a>. Quien a principios de los años 90 descubrió que sólo el 10% de los usuarios se desplazaban hacia abajo para ver los enlaces que no estaban visibles en la pantalla inicial. Sin embargo, en el año 1997 el propio <a href="https://www.nngroup.com/articles/changes-in-web-usability-since-1994/" target="_blank" rel="noopener noreferrer">Jakob Nielsen publicó un artículo</a> en el que explicaba que aquel comportamiento de principios de los años 90 ya no estaba vigente. De modo que <strong>la mayoría de los usuarios sí hacen scroll</strong> cuando visitan una página que excede en contenido la parte visible de su pantalla. Él mismo apunta que este cambio de comportamiento probablemente se deba a que los usuarios han adquirido más experiencia en el uso del scroll de las páginas web.</p>
 
-<p><img src="{{ site.baseurl }}/img/sin-miedo-al-scroll-02.png" loading="lazy" alt=""></p>
+<p><img src="{{ site.baseurl }}/img/sin-miedo-al-scroll-02.png" loading="lazy" alt="" width="720" height="531"></p>
 
 <h2>La falsedad actual del mito</h2>
 <p>Si en el año 1997 Jakob Nielsen ya descubrió que la mayoría de los usuarios hacen scroll cuando visitan una página porque se han familiarizado con su uso, <strong>el hábito del desplazamiento vertical</strong> en los usuarios de hoy en día es ya algo que podemos considerar <strong>consustancial al hecho de consultar una página web</strong>.</p>
@@ -29,17 +29,17 @@ tags:       [buenas prácticas de usabilidad]
 
 <p>En los años 90, cuando la mayor parte de los monitores tenían una resolución de 800x600 o de 1024x768, podía ser relativamente factible<sup id="fnref:fn-f1"><a href="#fn:fn-f1" class="footnote">1</a></sup> definir el tamaño de una zona en píxeles que resultase visible para casi todos los usuarios. Sin embargo, hoy en día, la variedad de dispositivos (ordenadores, tablets, smartphones, TV…) es tan amplia y heterogénea, que resulta imposible desterminar cuál es el contenido que figurará inicialmente visible para un usuario particular que acceda a la página con un dispositivo concreto.</p>
 
-<p><img src="{{ site.baseurl }}/img/sin-miedo-al-scroll-03.jpg" loading="lazy" alt=""></p>
+<p><img src="{{ site.baseurl }}/img/sin-miedo-al-scroll-03.jpg" loading="lazy" alt="" width="720" height="401"></p>
 
 <p>En la web <a href="https://screensizemap.com/" target="_blank" rel="noopener noreferrer">Screen size map</a> podemos visualizar la enorme variedad de resoluciones de pantalla existentes hoy en día.</p>
 
-<p><img src="{{ site.baseurl }}/img/sin-miedo-al-scroll-04.png" loading="lazy" alt=""></p>
+<p><img src="{{ site.baseurl }}/img/sin-miedo-al-scroll-04.png" loading="lazy" alt="" width="720" height="405"></p>
 
 <p>¿Cómo determinar de manera invariable qué contenido aparecerá en la zona inicialmente visible? No es posible.</p>
 
 <p>Es por ello por lo que, desde hace unos años, los sitios web habitualmente tienen un diseño fluido que se adapta a la resolución de la pantalla del dispositivo del usuario. Es lo que se conoce como <a href="https://es.wikipedia.org/wiki/Dise%C3%B1o_web_adaptable" target="_blank" rel="noopener noreferrer">Responsive Web Design</a>.</p>
 
-<p><img src="{{ site.baseurl }}/img/sin-miedo-al-scroll-05.png" loading="lazy" alt=""></p>
+<p><img src="{{ site.baseurl }}/img/sin-miedo-al-scroll-05.png" loading="lazy" alt="" width="720" height="412"></p>
 
 <h2>La zona superior de la página sigue siendo importante</h2>
 <p><strong>El objetivo de este post es que le perdamos el miedo</strong> <strong>a la necesidad de realizar scroll</strong> vertical para poder acceder al contenido completo. No es algo malo en términos de usabilidad. Sin embargo, <strong>no debemos concluir que la zona superior de una página no sea importante</strong>. Lo es y mucho.</p>

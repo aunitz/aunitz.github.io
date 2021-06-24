@@ -34,4 +34,4 @@ tags:       [buenas prácticas de usabilidad]
     <li>Listado de enlaces.</li>
 </ol>
 
-<p><img src="{{ site.baseurl }}/img/tip-10-planteate-alternativas-al-carrusel.png" loading="lazy" alt="Ilustración del tip 10 de usabilidad: plantéate alternativas al carrusel"></p>
+<p><img src="{{ site.baseurl }}/img/tip-10-planteate-alternativas-al-carrusel.png" loading="lazy" alt="Ilustración del tip 10 de usabilidad: plantéate alternativas al carrusel" width="722" height="428"></p>

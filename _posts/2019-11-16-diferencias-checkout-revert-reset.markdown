@@ -17,7 +17,7 @@ tags:       [git]
 
 <p>Supongamos que el HEAD de la rama master se encuentra en el <em>commit</em> d. Ahora ejecutamos el comando <code>git checkout b</code>.</p>
 
-<p><img src="{{ site.baseurl }}/img/checkout-revert-reset-1.png" loading="lazy" alt="Git checkout"></p>
+<p><img src="{{ site.baseurl }}/img/checkout-revert-reset-1.png" loading="lazy" alt="Git checkout" width="722" height="225"></p>
 
 <p>El resultado es un cambio en el historial de <em>commits</em>.</p>
 
@@ -33,11 +33,11 @@ tags:       [git]
 
 <p>Supongamos que, partiendo de la siguiente situación, ejecutamos el comando <code>git reset HEAD~2</code></p>
 
-<p><img src="{{ site.baseurl }}/img/checkout-revert-reset-2.png" loading="lazy" alt="Antes del git reset"></p>
+<p><img src="{{ site.baseurl }}/img/checkout-revert-reset-2.png" loading="lazy" alt="Antes del git reset" width="722" height="321"></p>
 
 <p>Estamos deshaciendo los dos últimos <em>commits</em> de la rama <em>Hotfix</em> . Estos dos <em>commits</em> quedarán huérfanos y se eliminarán la próxima vez que Git haga limpieza.</p>
 
-<p><img src="{{ site.baseurl }}/img/checkout-revert-reset-3.png" loading="lazy" alt="Después del git reset"></p>
+<p><img src="{{ site.baseurl }}/img/checkout-revert-reset-3.png" loading="lazy" alt="Después del git reset" width="722" height="321"></p>
 
 <h3>Git reset a nivel de archivo</h3>
 
@@ -53,11 +53,11 @@ tags:       [git]
 
 <p>Supongamos que partimos de la siguiente situación y queremos volver al <em>commit</em> marcado con el asterisco.</p>
 
-<p><img src="{{ site.baseurl }}/img/checkout-revert-reset-4.png" loading="lazy" alt="Antes del git revert"></p>
+<p><img src="{{ site.baseurl }}/img/checkout-revert-reset-4.png" loading="lazy" alt="Antes del git revert" width="722" height="321"></p>
 
 <p>Tras ejecutar el comando <code>git revert HEAD~2</code> estaremos deshaciendo los cambios de los dos últimos <em> commits </em> de la rama <em> Hotfix </em> añadiendo un nuevo <em> commit </em> que ejecuta los cambios.</p>
 
-<p><img src="{{ site.baseurl }}/img/checkout-revert-reset-5.png" loading="lazy" alt="Después del git revert"></p>
+<p><img src="{{ site.baseurl }}/img/checkout-revert-reset-5.png" loading="lazy" alt="Después del git revert" width="722" height="321"></p>
 
 <h2>Usos más frecuentes</h2>
 

@@ -12,7 +12,7 @@ tags:       [git]
 
 <p>Tomando como referencia un <a href="https://midu.dev/como-deshacer-el-ultimo-commit-git" target="_blank" rel="noopener noreferrer">post publicado por Miguel Angel Durán</a> en su página web voy a proporcionar unas pautas muy sencillas y directas.</p>
 
-<p><img src="{{ site.baseurl }}/img/como-deshacer-ultimo-commit-git-01.jpg" loading="lazy" alt=""></p>
+<p><img src="{{ site.baseurl }}/img/como-deshacer-ultimo-commit-git-01.jpg" loading="lazy" alt="" width="720" height="401"></p>
 
 <h2>Caso 1: quieres deshacer un <em>commit</em> no publicado</h2>
 

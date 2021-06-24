@@ -12,7 +12,7 @@ tags:       [desarrollo de aplicaciones web]
 
 <p>Son capaces de ofrecer funcionalidades como trabajar sin conexión, notificaciones push o el acceso al hardware del dispositivo. Tradicionalmente estas funcionalidades sólo estaban disponibles para aplicaciones nativas.</p>
 
-<p><img src="{{ site.baseurl }}/img/que-es-una-progressive-web-app-pwa-01.jpg" loading="lazy" alt=""></p>
+<p><img src="{{ site.baseurl }}/img/que-es-una-progressive-web-app-pwa-01.jpg" loading="lazy" alt="" width="722" height="363"></p>
 
 <p>Las PWA no son una tecnología en sí misma, sino un <strong>conjunto de tecnologías</strong> disponibles en los navegadores web modernos. El concepto de PWA es más bien un término “marketiniano” que fue acuñado por primera vez por Google en 2015. De hecho, Google es la empresa que con más fuerza ha promovido este concepto y cuenta con una <a href="https://developers.google.com/web/progressive-web-apps/" target="_blank" rel="noopener noreferrer">completa web</a> que lo documenta en detalle.</p>
 
@@ -36,7 +36,7 @@ tags:       [desarrollo de aplicaciones web]
     <li><a href="https://developers.google.com/web/fundamentals/media/recording-video/" target="_blank" rel="noopener noreferrer">Grabación de vídeo</a>.</li>
 </ol>
 
-<p><img src="{{ site.baseurl }}/img/que-es-una-progressive-web-app-pwa-02.jpg" loading="lazy" alt=""></p>
+<p><img src="{{ site.baseurl }}/img/que-es-una-progressive-web-app-pwa-02.jpg" loading="lazy" alt="" width="722" height="363"></p>
 
 <h3>Funcionalidades que facilitan la vida al usuario (mejoran la usabilidad)</h3>
 
@@ -50,4 +50,4 @@ tags:       [desarrollo de aplicaciones web]
     <li>Facilidades para <a href="https://developers.google.com/web/fundamentals/discovery/social-discovery/" target="_blank" rel="noopener noreferrer">compartir contenido en redes sociales</a> (Open Graph Protocol para Facebook y las Twitter Cards para Twitter).</li>
 </ol>
 
-<p><img src="{{ site.baseurl }}/img/que-es-una-progressive-web-app-pwa-03.jpg" loading="lazy" alt=""></p>
+<p><img src="{{ site.baseurl }}/img/que-es-una-progressive-web-app-pwa-03.jpg" loading="lazy" alt="" width="722" height="363"></p>

@@ -13,7 +13,7 @@ tags:                 [leyes y principios de usabilidad, leyes y principios de l
 
 <p>Nos resulta instintivo continuar un sendero, río o línea. Una vez que iniciamos una secuencia que está dispuesta en una dirección, continuamos la secuencia hasta que vemos algo significativo o hasta que no hay nada importante que ver.</p>
 
-<p><img src="{{ site.baseurl }}/img/ley-13-principio-de-continuidad.png" loading="lazy" alt="Ilustración de la Ley 13 de usabilidad: Principio de continuidad"></p>
+<p><img src="{{ site.baseurl }}/img/ley-13-principio-de-continuidad.png" loading="lazy" alt="Ilustración de la Ley 13 de usabilidad: Principio de continuidad" width="722" height="294"></p>
 
 <p>En la imagen de arriba, vemos un cruce de líneas y curvas, en lugar de cuatro segmentos de líneas y curvas distintos que se encuentran en un punto.</p>
 

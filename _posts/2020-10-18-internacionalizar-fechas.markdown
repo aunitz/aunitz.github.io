@@ -12,7 +12,7 @@ tags:       [buenas prácticas de usabilidad, formularios]
 
 <p>El significado del formato de las fechas depende del país. “08/11/2020” puede significar 11 de agosto de 2020 en EEUU, pero será 8 de noviembre de 2020 en algunos países europeos.</p>
 
-<p><img src="{{ site.baseurl }}/img/internacionalizar-fechas-00.jpg" loading="lazy" alt=""></p>
+<p><img src="{{ site.baseurl }}/img/internacionalizar-fechas-00.jpg" loading="lazy" alt="" width="722" height="403"></p>
 
 <p><strong>Lo ideal</strong> sería que el <strong>formato de las fechas</strong> fuese <strong>dinámico</strong> y que le mostrásemos a cada usuario aquel formato que es habitual en su país. Sin embargo, esto es algo que la mayor parte de las veces no será posible. Habitualmente porque nuestra web o aplicación puede que se encuentre traducida a varios idiomas, pero no internacionalizada. Es decir, no adaptada a los usos y costumbres de diferentes países. Típicamente podemos tener una versión en inglés de nuestro proyecto, pero no una versión en inglés para EEUU, otra para Reino Unido, otra para Australia, otra para el resto del mundo...</p>
 
@@ -22,7 +22,7 @@ tags:       [buenas prácticas de usabilidad, formularios]
 
 <p>Por ejemplo: 3 de abril de 2020. Puede que necesites abreviar el nombre del mes: 03-abr-2020.</p>
 
-<p><img src="{{ site.baseurl }}/img/internacionalizar-fechas-01.png" loading="lazy" alt=""></p>
+<p><img src="{{ site.baseurl }}/img/internacionalizar-fechas-01.png" loading="lazy" alt="" width="302" height="387"></p>
 
 <p>Por cierto, en español, <a href="https://www.fundeu.es/recomendacion/dias-de-la-semana-meses-estaciones-minuscula/" target="_blank" rel="noopener noreferrer">los nombres de los meses se escriben en minúscula</a> por tratarse de nombres comunes.</p>
 
@@ -30,11 +30,11 @@ tags:       [buenas prácticas de usabilidad, formularios]
 
 <p>Si vas a dejar que el usuario escriba la fecha, utiliza campos diferentes para el día, mes y año y etiquétalos correctamente.</p>
 
-<p><img src="{{ site.baseurl }}/img/internacionalizar-fechas-02.png" loading="lazy" alt=""></p>
+<p><img src="{{ site.baseurl }}/img/internacionalizar-fechas-02.png" loading="lazy" alt="" width="478" height="354"></p>
 
 <p>En caso de que proporciones un componente de calendario para que el usuario seleccione la fecha, utiliza uno que utilice el nombre del mes. Como por ejemplo el de Google Calendar.</p>
 
-<p><img src="{{ site.baseurl }}/img/internacionalizar-fechas-03.png" loading="lazy" alt=""></p>
+<p><img src="{{ site.baseurl }}/img/internacionalizar-fechas-03.png" loading="lazy" alt="" width="371" height="376"></p>
 
 <h2>Consideraciones adicionales</h2>
 

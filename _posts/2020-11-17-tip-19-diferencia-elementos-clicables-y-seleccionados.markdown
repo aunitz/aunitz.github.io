@@ -10,7 +10,7 @@ tags:       [buenas prácticas de usabilidad]
 
 <p>El usuario debe distinguir con total claridad y a primera vista todos aquellos elementos del interfaz que son <strong>clicables</strong>. Como por ejemplo los botones y los enlaces. Así como diferenciar sin esfuerzo cuáles son los <strong>elementos que ha seleccionado</strong>. Como por ejemplo la sección del menú en la que se encuentra ubicado ahora mismo.</p>
 
-<p><img src="{{ site.baseurl }}/img/tip-19-diferencia-elementos-clicables-y-seleccionados.png" loading="lazy" alt=""></p>
+<p><img src="{{ site.baseurl }}/img/tip-19-diferencia-elementos-clicables-y-seleccionados.png" loading="lazy" alt="" width="722" height="431"></p>
 
 <p>En la ilustración anterior, en la primera pantalla, sabemos que hemos entrado en la “Opción 3” del menú principal y que podemos acceder a cualquiera de las otras tres secciones. Además, distinguimos claramente dos enlaces en el texto de la zona de contenido y por último un botón de llamada a la acción.</p>
 

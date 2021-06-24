@@ -10,7 +10,7 @@ tags:       [desarrollo de aplicaciones web]
 
 <p>Los que tenemos una edad recordamos con cariño aquella colección de libros sobre informática del sello <a href="https://www.anayamultimedia.es/" target="_blank" rel="noopener noreferrer">Anaya Multimedia</a> que estaban ilustrados por el genial dibujante <a href="https://es.wikipedia.org/wiki/Forges" target="_blank" rel="noopener noreferrer">Forges</a>.</p>
 
-<p><img src="{{ site.baseurl }}/img/experiencia-de-usuario-versus-interfaz-de-usuario-01.jpg" loading="lazy" alt=""></p>
+<p><img src="{{ site.baseurl }}/img/experiencia-de-usuario-versus-interfaz-de-usuario-01.jpg" loading="lazy" alt="" width="425" height="551"></p>
 
 <p>En homenaje a aquella veterana colección he publicado este post en el que, sin entrar a fondo en la materia, pretendo diferenciar de manera simplificada el significado de dos términos que a veces se utilizan como sinónimos cuando no lo son.</p>
 
@@ -30,4 +30,4 @@ tags:       [desarrollo de aplicaciones web]
 
 <p>Lógicamente la UI juega un papel muy importante dentro de la UX. Pero la UX abarca más aspectos además de la UI. Bajo mi punto de vista, podríamos simplificar diciendo que la UI es un subconjunto de la UX.</p>
 
-<p><img src="{{ site.baseurl }}/img/experiencia-de-usuario-versus-interfaz-de-usuario-02.png" loading="lazy" alt=""></p>
+<p><img src="{{ site.baseurl }}/img/experiencia-de-usuario-versus-interfaz-de-usuario-02.png" loading="lazy" alt="" width="720" height="403"></p>

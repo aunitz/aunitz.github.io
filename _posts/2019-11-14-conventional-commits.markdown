@@ -14,7 +14,7 @@ tags:       [git]
 
 <p>Esta especificación proporciona un conjunto fácil de reglas para crear un historial de <em>commits</em> explícito. Esta convención se ajusta a <a href="http://semver.org/" target="_blank" rel="noopener noreferrer">SemVer</a>, al describir las características, correcciones y cambios que rompen la compatibilidad en los mensajes de los <em>commits</em>.</p>
 
-<p><img src="{{ site.baseurl }}/img/conventional-commits.jpg" loading="lazy" alt="Conventional Commits"></p>
+<p><img src="{{ site.baseurl }}/img/conventional-commits.jpg" loading="lazy" alt="Conventional Commits" width="722" height="435"></p>
 
 <p>En <a href="https://www.adimedia.net/" target="_blank" rel="noopener noreferrer">la empresa en la que trabajo</a> ya veníamos utilizando SemVer y desde la semana pasada, hemos decidido probar a utilizar Conventional Commits en nuestro día a día.</p>
 

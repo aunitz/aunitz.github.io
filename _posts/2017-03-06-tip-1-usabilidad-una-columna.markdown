@@ -20,4 +20,4 @@ tags:       [buenas prácticas de usabilidad]
 
 <p>Guía a los lectores con un contenido atractivo y de valor y termina con una llamada a la acción clara al final.</p>
 
-<p><img src="{{ site.baseurl }}/img/tip-1-una-columna.png" loading="lazy" alt="Ilustración del tip 1 de usabilidad: una sola columna"></p>
+<p><img src="{{ site.baseurl }}/img/tip-1-una-columna.png" loading="lazy" alt="Ilustración del tip 1 de usabilidad: una sola columna" width="722" height="428"></p>

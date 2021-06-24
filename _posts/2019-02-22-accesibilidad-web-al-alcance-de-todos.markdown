@@ -28,7 +28,7 @@ tags:       [buenas prácticas de accesibilidad]
 
 <p>Existen tres niveles de accesibilidad establecidos por la WAI: nivel A (el mínimo), nivel AA y nivel AAA (el máximo).</p>
 
-<p><img src="{{ site.baseurl }}/img/accesibilidad-web-al-alcance-de-todos-01.png" loading="lazy" alt=""></p>
+<p><img src="{{ site.baseurl }}/img/accesibilidad-web-al-alcance-de-todos-01.png" loading="lazy" alt="" width="699" height="80"></p>
 
 <p>Muchos diseñadores y desarrolladores web que se interesan por las reglas de la WAI pueden verse apabullados por su gran número y su profusa documentación.</p>
 
@@ -40,7 +40,7 @@ tags:       [buenas prácticas de accesibilidad]
 
 <p>Inspirándome en el <a href="https://moritzgiessmann.de/accessibility-cheatsheet/" target="_blank" rel="noopener noreferrer">Accessibility Cheatsheet de Moritz Gießmann</a> (que recomiendo tener siempre a mano), lo que pretendo en este artículo es proporcionar una <strong>pautas de accesibilidad muy básicas</strong>. No encaminadas a conseguir un nivel de accesibilidad estándar determinado (A, AA o AAA) sino orientadas a conseguir un mínimo de accesibilidad elemental que facilite el acceso a los usuarios de tus webs y aplicaciones.</p>
 
-<p><img src="{{ site.baseurl }}/img/accesibilidad-web-al-alcance-de-todos-02.jpg" loading="lazy" alt=""></p>
+<p><img src="{{ site.baseurl }}/img/accesibilidad-web-al-alcance-de-todos-02.jpg" loading="lazy" alt="" width="722" height="363"></p>
 
 <p>A nivel general, las barreras de accesibilidad principales que nos podemos encontrar en los usuarios son las siguientes:</p>
 
@@ -57,46 +57,46 @@ tags:       [buenas prácticas de accesibilidad]
 
 <h3>1. Utiliza HTML semántico</h3>
 <p>El uso semántico de las etiquetas HTML ayuda a los lectores de pantalla<sup id="fnref:fn-f1"><a href="#fn:fn-f1" class="footnote">1</a></sup> a interpretar correctamente la estructura y contenidos de la página.</p>
-<p><img src="{{ site.baseurl }}/img/accesibilidad-web-al-alcance-de-todos-03.png" loading="lazy" alt=""></p>
+<p><img src="{{ site.baseurl }}/img/accesibilidad-web-al-alcance-de-todos-03.png" loading="lazy" alt="" width="521" height="430"></p>
 <p>Define el atributo <code>lang</code> del elemento <code>&lt;html&gt;</code>, utiliza una estructura jerárquica de encabezados, listas para lo que son listas, utiliza etiquetas <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;footer&gt;</code>, etc.</p>
 
 <h3>2. Proporciona texto alternativo para las imágenes</h3>
 <p>Todo contenido que no sea texto resulta invisible para los lectores de pantalla. Proporciona un texto alternativo significativo (por ejemplo, mediante el atributo <code>alt</code>) para aquellos elementos no textuales (imágenes, gráficos, CAPTCHAs, etc.) de la página.</p>
-<p><img src="{{ site.baseurl }}/img/accesibilidad-web-al-alcance-de-todos-04.gif" loading="lazy" alt=""></p>
+<p><img src="{{ site.baseurl }}/img/accesibilidad-web-al-alcance-de-todos-04.gif" loading="lazy" alt="" width="392" height="33"></p>
 
 <h3>3. Añade labels a los elementos de formulario</h3>
 <p>Los elementos de formulario deben llevar una etiqueta <code>&lt;label&gt;</code> correctamente relacionada que los nombre adecuadamente para que resulten identificables por los lectores de pantalla.</p>
-<p><img src="{{ site.baseurl }}/img/accesibilidad-web-al-alcance-de-todos-05.gif" loading="lazy" alt=""></p>
+<p><img src="{{ site.baseurl }}/img/accesibilidad-web-al-alcance-de-todos-05.gif" loading="lazy" alt="" width="294" height="38"></p>
 <p>El atributo <code>placeholder</code> no es una alternativa válida.</p>
 
 <h3>4. Muestra dónde está el foco</h3>
 <p>Los usuarios que navegan con el teclado necesitan tener resaltado el elemento que tiene el foco (<code>:focus</code>). Además de que todos los elementos interactivos deben poder coger el foco y poderse recorrer con el teclado en un orden lógico.</p>
-<p><img src="{{ site.baseurl }}/img/accesibilidad-web-al-alcance-de-todos-06.gif" loading="lazy" alt=""></p>
+<p><img src="{{ site.baseurl }}/img/accesibilidad-web-al-alcance-de-todos-06.gif" loading="lazy" alt="" width="627" height="157"></p>
 <p>Por ejemplo, un element <code>&lt;button&gt;</code> puede coger el foco, pero un elemento <code>&lt;span&gt;</code> no.</p>
 
 <h3>5. El color del texto debe contrastar con el color de fondo</h3>
 <p>Se estima que los usuarios con visión reducida son casi tres veces más numerosos que los usuarios con ceguera total. Por ello, el color de texto debe contrastar lo suficiente con el color del fondo para que resulte fácilmente legible.</p>
-<p><img src="{{ site.baseurl }}/img/accesibilidad-web-al-alcance-de-todos-07.png" loading="lazy" alt=""></p>
+<p><img src="{{ site.baseurl }}/img/accesibilidad-web-al-alcance-de-todos-07.png" loading="lazy" alt="" width="478" height="376"></p>
 <p>El nivel de contraste debe ser de al menos 4.5:1 para textos pequeños o de 3:1 para textos grandes (de más de 14px en negrita o de más de 18px si no llevan negrita).</p>
-<p><img src="{{ site.baseurl }}/img/accesibilidad-web-al-alcance-de-todos-08.png" loading="lazy" alt=""></p>
+<p><img src="{{ site.baseurl }}/img/accesibilidad-web-al-alcance-de-todos-08.png" loading="lazy" alt="" width="478" height="377"></p>
 <p>Existen varias herramientas para medir el nivel de contraste. Por ejemplo <a href="https://webaim.org/resources/contrastchecker/" target="_blank" rel="noopener noreferrer">Color Contrast Checker</a>.</p>
 
 <h3>6. No transmitas información solo mediante el color</h3>
 <p>Los usuarios con visión reducida o daltonismo pueden tener serias dificultades para distinguir los colores. Por ello no se debe transmitir ninguna información solo mediante el color. Debe ir apoyada por información gráfica o textual que permita interpretarla correctamente en caso de ausencia de color.</p>
-<p><img src="{{ site.baseurl }}/img/accesibilidad-web-al-alcance-de-todos-09.png" loading="lazy" alt=""></p>
+<p><img src="{{ site.baseurl }}/img/accesibilidad-web-al-alcance-de-todos-09.png" loading="lazy" alt="" width="496" height="157"></p>
 <p>Una manera sencilla de comprobar esta pauta es imprimir (puede ser en formato PDF) la página en blanco y negro y verificar que todo el contenido se entiende correctamente. Una alternativa más precisa es utilizar una aplicación como <a href="http://colororacle.org/" target="_blank" rel="noopener noreferrer">Color Oracle</a>, que muestra en tiempo real lo que ven las personas con discapacidades comunes de la visión del color.  </p>
 
 <h3>7. Escribe enlaces descriptivos</h3>
 <p>Los lectores de pantalla disponen de atajos de teclado que permiten a los usuarios navegar de manera secuencial por los enlaces de un sitio web. Por tanto, deben tener significado por si mismos y no depender del contexto que les rodea.</p>
-<p><img src="{{ site.baseurl }}/img/accesibilidad-web-al-alcance-de-todos-10.png" loading="lazy" alt=""></p>
+<p><img src="{{ site.baseurl }}/img/accesibilidad-web-al-alcance-de-todos-10.png" loading="lazy" alt="" width="187" height="67"></p>
 
 <h3>8. Los enlaces deben distinguirse del texto circundante</h3>
 <p>Garantiza que los usuarios que no pueden distinguir fácilmente entre colores puedan saber cuándo el texto es un enlace. Para ello se necesita que los vínculos cuenten con algún elemento decorativo que los diferencie (como el clásico subrayado) o, si se distinguen únicamente mediante el color, se precisa una relación de contraste de color de al menos 3:1 para distinguir el color del texto del enlace del color del texto circundante.</p>
-<p><img src="{{ site.baseurl }}/img/accesibilidad-web-al-alcance-de-todos-11.png" loading="lazy" alt=""></p>
+<p><img src="{{ site.baseurl }}/img/accesibilidad-web-al-alcance-de-todos-11.png" loading="lazy" alt="" width="558" height="67"></p>
 
 <h3>9. No se debe desactivar la posibilidad de hacer zoom</h3>
 <p>La página no debe incluir el parámetro <code>user-scalable=no</code> en la etiqueta <code>&lt;meta name="viewport"&gt;</code>, ya que desactiva la posibilidad de que el usuario pueda hacer zoom. Una funcionalidad esencial para los usuarios con visión reducida.</p>
-<p><img src="{{ site.baseurl }}/img/accesibilidad-web-al-alcance-de-todos-12.jpg" loading="lazy" alt=""></p>
+<p><img src="{{ site.baseurl }}/img/accesibilidad-web-al-alcance-de-todos-12.jpg" loading="lazy" alt="" width="722" height="363"></p>
 <p>Además, esta misma etiqueta <code>&lt;meta name="viewport"&gt;</code>, no debe incluir el parámetro <code>maximum-scale</code>. El cual limita la escala máxima del nivel de zoom. En caso de que se incluya el parámetro, no debería estar establecido a un valor inferior a 5.</p>
 
 <h2>Reglas no tan básicas de accesibilidad</h2>
@@ -115,7 +115,7 @@ tags:       [buenas prácticas de accesibilidad]
 
 <p>Independientemente de todas las medidas técnicas que se adopten, <strong>es vital facilitar a los usuarios un canal </strong>mediante el cual puedan facilitarnos feedback sobre posibles problemas de accesibilidad y otro tipo de sugerencias sobre la usabilidad de las aplicaciones.</p>
 
-<p><img src="{{ site.baseurl }}/img/accesibilidad-web-al-alcance-de-todos-13.png" loading="lazy" alt=""></p>
+<p><img src="{{ site.baseurl }}/img/accesibilidad-web-al-alcance-de-todos-13.png" loading="lazy" alt="" width="345" height="69"></p>
 
 <h2>Cómo comprobar la accesibilidad</h2>
 
@@ -133,7 +133,7 @@ tags:       [buenas prácticas de accesibilidad]
 
 <p>Uno de los “usuarios” a los que beneficia enormemente la accesibilidad es la araña del buscador de <strong>Google</strong>.</p>
 
-<p><img src="{{ site.baseurl }}/img/accesibilidad-web-al-alcance-de-todos-14.jpg" loading="lazy" alt=""></p>
+<p><img src="{{ site.baseurl }}/img/accesibilidad-web-al-alcance-de-todos-14.jpg" loading="lazy" alt="" width="722" height="363"></p>
 
 <p><strong>Su robot de indexación es completamente sordo, ciego y no puede usar el ratón para navegar</strong>. Por lo que implementar las pautas de accesibilidad antes comentadas te reportará <strong>considerables beneficios SEO</strong> (Search Engine Optimization).</p>
 

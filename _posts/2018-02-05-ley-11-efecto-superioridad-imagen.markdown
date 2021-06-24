@@ -12,6 +12,6 @@ tags:       [leyes y principios de usabilidad]
 
 <p>Este efecto ha sido demostrado en varios experimentos usando diferentes métodos. En algunos de ellos resultó que, cuando la información se presenta de forma oral, después de 3 días, las personas solo recordarán el 10% de la misma. Pero si se agregan imágenes, conseguirán recordar el 65%. ¡Seis veces más cantidad de información!
 
-<p><img src="{{ site.baseurl }}/img/ley-11-efecto-superioridad-imagen.png" loading="lazy" alt="Ilustración de la Ley 11 de usabilidad: Efecto de superioridad de la imagen"></p>
+<p><img src="{{ site.baseurl }}/img/ley-11-efecto-superioridad-imagen.png" loading="lazy" alt="Ilustración de la Ley 11 de usabilidad: Efecto de superioridad de la imagen" width="722" height="428"></p>
 
 <p>Si quieres conocer más detalles sobre este efecto, puedes partir de su <a href="https://en.wikipedia.org/wiki/Picture_superiority_effect" target="_blank" rel="noopener noreferrer">artículo en la Wikipedia</a>.</p>

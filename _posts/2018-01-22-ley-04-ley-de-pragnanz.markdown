@@ -16,7 +16,7 @@ tags:       [leyes y principios de usabilidad, leyes y principios de la Gestalt]
 
 <p>Ejemplo: dados cuatro puntos, veremos un cuadrado, en lugar de otros esquemas visuales más complejos.</p>
 
-<p><img src="{{ site.baseurl }}/img/ley-04-ley-de-pragnanz.png" loading="lazy" alt="Ilustración de la Ley 03 de usabilidad: Ley de Prägnanz"></p>
+<p><img src="{{ site.baseurl }}/img/ley-04-ley-de-pragnanz.png" loading="lazy" alt="Ilustración de la Ley 03 de usabilidad: Ley de Prägnanz" width="722" height="339"></p>
 
 <p>La Ley de Prägnanz es la principal ley general de la Gestalt. "Prägnanz" es una palabra alemana que puede traducirse como "concisión".</p>
 

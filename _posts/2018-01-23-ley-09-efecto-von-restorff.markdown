@@ -12,7 +12,7 @@ tags:       [leyes y principios de usabilidad]
 
 <p>El efecto Von Restorff, también conocido como efecto de aislamiento, es la razón principal por la que las llamadas a la acción (CTA) se diseñan diferentes del resto de los botones de acción de un sitio o aplicación.</p>
 
-<p><img src="{{ site.baseurl }}/img/ley-09-efecto-von-restorff.png" loading="lazy" alt="Ilustración de la Ley 09 de usabilidad: Efecto Von Restorff"></p>
+<p><img src="{{ site.baseurl }}/img/ley-09-efecto-von-restorff.png" loading="lazy" alt="Ilustración de la Ley 09 de usabilidad: Efecto Von Restorff" width="722" height="112"></p>
 
 <p>Este sesgo cognitivo fue descubierto en el año 1933 por el psicólogo alemán Hedwing von Restorff.</p>
 

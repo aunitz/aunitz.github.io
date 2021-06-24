@@ -16,7 +16,7 @@ tags:       [buenas prácticas de usabilidad, formularios]
 
 <p>La justificación de esta segunda consideración es la misma que la de la primera.</p>
 
-<p><img src="{{ site.baseurl }}/img/formularios-usables-consejos-de-diseno.png" loading="lazy" alt=""></p>
+<p><img src="{{ site.baseurl }}/img/formularios-usables-consejos-de-diseno.png" loading="lazy" alt="" width="722" height="444"></p>
 
 <p>El resto de los consejos de diseño puede que no te resulten tan evidentes:</p>
 

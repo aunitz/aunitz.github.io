@@ -16,7 +16,7 @@ tags:       [leyes y principios de usabilidad]
 
 <p>¿Te parece un número muy bajo? En realidad podría resultar que es aún menor. En 1997, Luck y Vogel<sup id="fnref:fn-f1"><a href="#fn:fn-f1" class="footnote">1</a></sup> reducían la cifra en un artículo publicado en Nature y estimaban que solo caben <strong>4 elementos</strong>. Ni uno más.</p>
 
-<p><img src="{{ site.baseurl }}/img/ley-05-ley-de-miller.png" loading="lazy" alt="Ilustración de la Ley 05 de usabilidad: Ley de Miller"></p>
+<p><img src="{{ site.baseurl }}/img/ley-05-ley-de-miller.png" loading="lazy" alt="Ilustración de la Ley 05 de usabilidad: Ley de Miller" width="722" height="428"></p>
 
 <p>Si quieres conocer más sobre esta ley, puedes partir de su <a href="https://en.wikipedia.org/wiki/The_Magical_Number_Seven,_Plus_or_Minus_Two" target="_blank" rel="noopener noreferrer">artículo en la Wikipedia</a>.</p>
 

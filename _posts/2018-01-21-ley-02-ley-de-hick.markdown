@@ -10,7 +10,7 @@ tags:       [leyes y principios de usabilidad]
 
 <p><em><strong>El tiempo que se tarda en tomar una decisión aumenta de manera logarítmica a medida que se incrementa el número de alternativas.</strong></em></p>
 
-<p><img src="{{ site.baseurl }}/img/ley-02-ley-de-hick.png" loading="lazy" alt="Ilustración de la Ley 02 de usabilidad: Ley de Hick"></p>
+<p><img src="{{ site.baseurl }}/img/ley-02-ley-de-hick.png" loading="lazy" alt="Ilustración de la Ley 02 de usabilidad: Ley de Hick" width="724" height="428"></p>
 
 <p>Llevado al campo de los interfaces de usuario, resulta que a medida que aumenta el número de opciones disponibles, más tiempo le llevará al usuario tomar una decisión con respecto a cuál elegir.</p>
 

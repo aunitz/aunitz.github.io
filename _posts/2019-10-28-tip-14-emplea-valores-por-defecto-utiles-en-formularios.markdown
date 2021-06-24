@@ -12,7 +12,7 @@ tags:       [buenas prácticas de usabilidad, formularios]
 
 <p>Resultará mucho más rápido para el usuario validar que los valores por defecto son correctos que tener que rellenarlos partiendo de cero. Incluso si el contenido por defecto no es acertado, al usuario le costará lo mismo sustituirlo por el correcto que introducirlo en un campo previamente vacío.</p>
 
-<p><img src="{{ site.baseurl }}/img/tip-14-emplea-valores-por-defecto-utiles-en-formularios.png" loading="lazy" alt="Emplea valores por defecto útiles en los formularios"></p>
+<p><img src="{{ site.baseurl }}/img/tip-14-emplea-valores-por-defecto-utiles-en-formularios.png" loading="lazy" alt="Emplea valores por defecto útiles en los formularios" width="722" height="428"></p>
 
 <p>Podemos desarrollar una lógica para rellenar valores por defecto que vaya desde lo más básico hasta algoritmos mucho más elaborados. Algunos ejemplos relativamente sencillos de implementar son:</p>
 

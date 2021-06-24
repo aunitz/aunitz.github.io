@@ -14,11 +14,11 @@ tags:       [buenas prácticas de usabilidad, formularios]
 
 <p>¿Primero el principal y después el secundario?</p>
 
-<p><img src="{{ site.baseurl }}/img/botones-aceptar-cancelar-orden-01.png" loading="lazy" alt=""></p>
+<p><img src="{{ site.baseurl }}/img/botones-aceptar-cancelar-orden-01.png" loading="lazy" alt="" width="187" height="49"></p>
 
 <p>¿Primero el secundario y a continuación el principal?</p>
 
-<p><img src="{{ site.baseurl }}/img/botones-aceptar-cancelar-orden-02.png" loading="lazy" alt=""></p>
+<p><img src="{{ site.baseurl }}/img/botones-aceptar-cancelar-orden-02.png" loading="lazy" alt="" width="188" height="49"></p>
 
 <h2>Primero el principal y después el secundario</h2>
 
@@ -34,15 +34,15 @@ tags:       [buenas prácticas de usabilidad, formularios]
 
 <p>La guía de estilo de <strong>Microsoft Windows</strong> establece que primero debe ir el principal y después el secundario.</p>
 
-<p><img src="{{ site.baseurl }}/img/botones-aceptar-cancelar-orden-03.png" loading="lazy" alt=""></p>
+<p><img src="{{ site.baseurl }}/img/botones-aceptar-cancelar-orden-03.png" loading="lazy" alt="" width="482" height="242"></p>
 
 <p>Las pautas de <strong>Apple MacOS</strong> establecen justo lo contrario.</p>
 
-<p><img src="{{ site.baseurl }}/img/botones-aceptar-cancelar-orden-04.png" loading="lazy" alt=""></p>
+<p><img src="{{ site.baseurl }}/img/botones-aceptar-cancelar-orden-04.png" loading="lazy" alt="" width="537" height="209"></p>
 
 <p>Mientras que <strong>Google Android</strong> se decanta por la misma ubicación que Apple.</p>
 
-<p><img src="{{ site.baseurl }}/img/botones-aceptar-cancelar-orden-05.png" loading="lazy" alt=""></p>
+<p><img src="{{ site.baseurl }}/img/botones-aceptar-cancelar-orden-05.png" loading="lazy" alt="" width="300" height="372"></p>
 
 <h2>Lo más importante es mantener la consistencia</h2>
 
@@ -54,11 +54,11 @@ tags:       [buenas prácticas de usabilidad, formularios]
 
 <p>Un <a href="{{ site.baseurl }}{% post_url 2017-01-18-principios-usabilidad %}">principio básico de usabilidad</a> es el de proteger el trabajo del usuario mediante la prevención de errores. Es decir, reduciendo la probabilidad de que los cometa. Para ello, más importante que el orden de los botones, es <strong>otorgarles diferente peso visual</strong>. De modo que el botón de acción principal destaque visualmente sobre el secundario.</p>
 
-<p><img src="{{ site.baseurl }}/img/botones-aceptar-cancelar-orden-06.png" loading="lazy" alt=""></p>
+<p><img src="{{ site.baseurl }}/img/botones-aceptar-cancelar-orden-06.png" loading="lazy" alt="" width="180" height="48"></p>
 
 <p>Además, es muy importante utilizar unos <strong>nombres de botón</strong> que dejen lo más claro posible la acción que van a ejecutar.</p>
 
-<p><img src="{{ site.baseurl }}/img/botones-aceptar-cancelar-orden-07.png" loading="lazy" alt=""></p>
+<p><img src="{{ site.baseurl }}/img/botones-aceptar-cancelar-orden-07.png" loading="lazy" alt="" width="517" height="225"></p>
 
 <h2>Conclusión</h2>
 

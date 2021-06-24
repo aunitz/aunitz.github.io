@@ -18,4 +18,4 @@ tags:       [buenas prácticas de usabilidad]
     <li>Utilizando colores complementarios de la <a href="https://es.wikipedia.org/wiki/C%C3%ADrculo_crom%C3%A1tico" target="_blank" rel="noopener noreferrer">rueda de color</a>. Por ejemplo, el amarillo y el violeta.</li>
 </ul>
 
-<p><img src="{{ site.baseurl }}/img/tip-6-destacar-llamadas-a-la-accion.png" loading="lazy" alt="Ilustración del tip 6 de usabilidad: destacar las llamadas a la acción"></p>
+<p><img src="{{ site.baseurl }}/img/tip-6-destacar-llamadas-a-la-accion.png" loading="lazy" alt="Ilustración del tip 6 de usabilidad: destacar las llamadas a la acción" width="722" height="428"></p>

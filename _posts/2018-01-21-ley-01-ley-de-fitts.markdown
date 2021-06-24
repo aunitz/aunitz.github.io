@@ -10,7 +10,7 @@ tags:       [leyes y principios de usabilidad]
 
 <p><em><strong>El tiempo que se requiere para alcanzar a pulsar un objetivo depende de una relación logarítmica entre su superficie y la distancia a la que se encuentra.</strong></em></p>
 
-<p><img src="{{ site.baseurl }}/img/ley-01-ley-de-fitts.png" loading="lazy" alt="Ilustración de la Ley 01 de usabilidad: Ley de Fitts"></p>
+<p><img src="{{ site.baseurl }}/img/ley-01-ley-de-fitts.png" loading="lazy" alt="Ilustración de la Ley 01 de usabilidad: Ley de Fitts" width="722" height="428"></p>
 
 <p>Expresado de manera más simple: cuanto más lejos y más pequeño sea el objeto que hay que pulsar, más tardará el usuario en conseguirlo.</p>
 

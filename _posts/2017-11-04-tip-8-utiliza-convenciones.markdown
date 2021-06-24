@@ -14,4 +14,4 @@ tags:       [buenas prácticas de usabilidad]
 
 <p>Por supuesto, habrá momentos en que una convención ya no sirva para su propósito y dé paso a un nuevo patrón. Pero, antes de alejarte de una convención, asegúrate de que haya un buen motivo para ello.</p>
 
-<p><img src="{{ site.baseurl }}/img/tip-8-utiliza-convenciones.png" loading="lazy" alt="Ilustración del tip 8 de usabilidad: no reinventes la rueda; utiliza convenciones"></p>
+<p><img src="{{ site.baseurl }}/img/tip-8-utiliza-convenciones.png" loading="lazy" alt="Ilustración del tip 8 de usabilidad: no reinventes la rueda; utiliza convenciones" width="722" height="428"></p>

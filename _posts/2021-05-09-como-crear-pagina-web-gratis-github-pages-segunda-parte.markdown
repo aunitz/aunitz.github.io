@@ -69,23 +69,23 @@ tags:       [desarrollo de aplicaciones web]
 
 <p>Para ello deberemos acceder a la pestaña “Settings” de nuestro repositorio y después entrar en la opción “Pages”.</p>
 
-<p><img src="{{ site.baseurl }}/img/como-crear-pagina-web-gratis-github-pages-segunda-parte-01.png" loading="lazy" alt=""></p>
+<p><img src="{{ site.baseurl }}/img/como-crear-pagina-web-gratis-github-pages-segunda-parte-01.png" loading="lazy" alt="" width="925" height="71"></p>
 
-<p><img src="{{ site.baseurl }}/img/como-crear-pagina-web-gratis-github-pages-segunda-parte-02.png" loading="lazy" alt=""></p>
+<p><img src="{{ site.baseurl }}/img/como-crear-pagina-web-gratis-github-pages-segunda-parte-02.png" loading="lazy" alt="" width="289" height="170"></p>
 
 <p>Una vez dentro, debemos escribir el nombre de nuestro nombre de dominio personalizado que hayamos escogido como canónico en el formulario de “Custom domain” y pulsar en “Save”.</p>
 
-<p><img src="{{ site.baseurl }}/img/como-crear-pagina-web-gratis-github-pages-segunda-parte-03.png" loading="lazy" alt=""></p>
+<p><img src="{{ site.baseurl }}/img/como-crear-pagina-web-gratis-github-pages-segunda-parte-03.png" loading="lazy" alt="" width="443" height="112"></p>
 
 <p>La acción de guardar lanzará a su vez tres procesos en GitHub Pages.</p>
 
 <p>El primer proceso que se completará es el de añadir un <em>commit</em> automático a nuestro repositorio que <strong>incorporará un fichero nuevo llamado CNAME</strong>.</p>
 
-<p><img src="{{ site.baseurl }}/img/como-crear-pagina-web-gratis-github-pages-segunda-parte-04.png" loading="lazy" alt=""></p>
+<p><img src="{{ site.baseurl }}/img/como-crear-pagina-web-gratis-github-pages-segunda-parte-04.png" loading="lazy" alt="" width="514" height="220"></p>
 
 <p>Este fichero contendrá en su interior el nombre de dominio personalizado que hayamos introducido en el formulario anterior.</p>
 
-<p><img src="{{ site.baseurl }}/img/como-crear-pagina-web-gratis-github-pages-segunda-parte-05.png" loading="lazy" alt=""></p>
+<p><img src="{{ site.baseurl }}/img/como-crear-pagina-web-gratis-github-pages-segunda-parte-05.png" loading="lazy" alt="" width="344" height="217"></p>
 
 <p>Como ya habrás intuido, <strong>no debemos eliminar ni modificar este fichero CNAME</strong> por nuestra cuenta.</p>
 
@@ -93,25 +93,25 @@ tags:       [desarrollo de aplicaciones web]
 
 <p>Si no ha transcurrido el tiempo suficiente para que la modificación de DNS se haya propagado, obtendremos un mensaje de error similar al siguiente:</p>
 
-<p><img src="{{ site.baseurl }}/img/como-crear-pagina-web-gratis-github-pages-segunda-parte-06.png" loading="lazy" alt=""></p>
+<p><img src="{{ site.baseurl }}/img/como-crear-pagina-web-gratis-github-pages-segunda-parte-06.png" loading="lazy" alt="" width="833" height="150"></p>
 
 <p>En caso de error, deberemos esperar unas horas más y probar de nuevo con el botón “Check again”. Al final el proceso se completará correctamente y obtendremos un check verde de OK.</p>
 
-<p><img src="{{ site.baseurl }}/img/como-crear-pagina-web-gratis-github-pages-segunda-parte-07.png" loading="lazy" alt=""></p>
+<p><img src="{{ site.baseurl }}/img/como-crear-pagina-web-gratis-github-pages-segunda-parte-07.png" loading="lazy" alt="" width="426" height="99"></p>
 
 <h2>Paso 4: activar el protocolo HTTS para nuestro configurar nuestro dominio personalizado en GitHub Pages</h2>
 
 <p>El tercer y último proceso que se habrá lanzado tras pulsar el botón de “Save” del paso anterior habrá sido el de <strong>crear un certificado SSL gratuito para nuestro sitio web.</strong> GitHub Pages nos indicará el estado del proceso mediante una barra de progreso.</p>
 
-<p><img src="{{ site.baseurl }}/img/como-crear-pagina-web-gratis-github-pages-segunda-parte-08.png" loading="lazy" alt=""></p>
+<p><img src="{{ site.baseurl }}/img/como-crear-pagina-web-gratis-github-pages-segunda-parte-08.png" loading="lazy" alt="" width="845" height="244"></p>
 
 <p>Cuando el proceso haya finalizado, nos permitirá chequear la casilla de “<strong>Enforce HTTPS</strong>”. La cual es más que recomendable que activemos para que nuestro sitio web se sirva encriptado y seguro.</p>
 
-<p><img src="{{ site.baseurl }}/img/como-crear-pagina-web-gratis-github-pages-segunda-parte-09.png" loading="lazy" alt=""></p>
+<p><img src="{{ site.baseurl }}/img/como-crear-pagina-web-gratis-github-pages-segunda-parte-09.png" loading="lazy" alt="" width="675" height="94"></p>
 
 <p>Una vez completados todos los pasos anteriores y haber esperado los plazos necesarios para que los nuevos registros DNS se propaguen, podremos escribir el dominio en nuestro navegador y disfrutar de la web que hemos desarrollado.</p>
 
-<p><img src="{{ site.baseurl }}/img/como-crear-pagina-web-gratis-github-pages-segunda-parte-10.png" loading="lazy" alt=""></p>
+<p><img src="{{ site.baseurl }}/img/como-crear-pagina-web-gratis-github-pages-segunda-parte-10.png" loading="lazy" alt="" width="722" height="519"></p>
 
 <p>En nuestro caso en <a href="https://www.aprendeusabilidadyux.com/" target="_blank" rel="noopener noreferrer" style="word-break: break-all;">https://www.aprendeusabilidadyux.com/</a></p>
 

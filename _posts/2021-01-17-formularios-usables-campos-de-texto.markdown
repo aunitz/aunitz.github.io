@@ -21,6 +21,6 @@ tags:       [buenas prácticas de usabilidad, formularios]
     <li>Indica cuáles son los campos obligatorios. Si casi todos son obligatorios, mejor indica cuáles son opcionales.</li>
 </ul>
 
-<p><img src="{{ site.baseurl }}/img/formularios-usables-campos-de-texto.png" loading="lazy" alt=""></p>
+<p><img src="{{ site.baseurl }}/img/formularios-usables-campos-de-texto.png" loading="lazy" alt="" width="521" height="463"></p>
 
 <p class="small">Nota: este post se irá actualizando a medida que mis criterios sobre usabilidad de los formularios vayan evolucionando o los vaya enlazando a posts que desarrollan cada consejo. La fecha de publicación que figura en la cabecera se corresponde a la del post inicial.</p>

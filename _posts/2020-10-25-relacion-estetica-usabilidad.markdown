@@ -15,7 +15,7 @@ tags:       [leyes y principios de usabilidad, sistemas de diseño]
     <li>El diseño estéticamente agradable crea una reacción positiva en el cerebro de los usuarios que los lleva a creer que el producto funciona mejor de lo que quizá realmente funcione.</li>
 </ul>
 
-<p><img src="{{ site.baseurl }}/img/relacion-estetica-usabilidad.jpg" loading="lazy" alt=""></p>
+<p><img src="{{ site.baseurl }}/img/relacion-estetica-usabilidad.jpg" loading="lazy" alt="" width="722" height="411"></p>
 
 <p><a href="https://www.nngroup.com/articles/aesthetic-usability-effect/" target="_blank" rel="noopener noreferrer">El efecto que tiene la estética sobre la usabilidad se estudió</a> por primera vez en el campo de la interacción entre humanos y ordenadores en 1995. Los investigadores Masaaki Kurosu y Kaori Kashimura del Hitachi Design Center probaron 26 variaciones de una interfaz de usuario, pidiendo a los 252 participantes del estudio que calificaran cada variante según la facilidad de uso, así como su atractivo estético. Encontraron una correlación más fuerte entre las calificaciones de atractivo estético y la facilidad de uso percibida que la correlación entre las calificaciones estéticas y la facilidad de uso real. Kurosu y Kashimura concluyeron que <strong>los usuarios están fuertemente influenciados por la estética del interfaz</strong>, incluso cuando intentan evaluar la usabilidad real del sistema.</p>
 

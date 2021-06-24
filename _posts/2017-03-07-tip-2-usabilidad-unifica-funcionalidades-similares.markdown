@@ -14,4 +14,4 @@ tags:       [buenas prácticas de usabilidad]
 
 <p>Revisa el interfaz de tu aplicación de vez en cuando para refactorizarlo mediante la fusión de funciones similares.</p>
 
-<p><img src="{{ site.baseurl }}/img/tip-2-unifica-funcionalidades-similares.png" loading="lazy" alt="Ilustración del tip 2 de usabilidad: unifica funcionalidades similares"></p>
+<p><img src="{{ site.baseurl }}/img/tip-2-unifica-funcionalidades-similares.png" loading="lazy" alt="Ilustración del tip 2 de usabilidad: unifica funcionalidades similares" width="722" height="428"></p>

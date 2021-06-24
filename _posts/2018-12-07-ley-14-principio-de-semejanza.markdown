@@ -12,7 +12,7 @@ tags:       [leyes y principios de usabilidad, leyes y principios de la Gestalt]
 
 <p>En la imagen de abajo, los círculos rojos se ven relacionados con otros círculos rojos y los círculos negros con los otros círculos negros debido a la similitud en el color. Los círculos rojo y negro se ven como diferentes entre sí, aunque son todos círculos.</p>
 
-<p><img src="{{ site.baseurl }}/img/ley-14-principio-de-semejanza.png" loading="lazy" alt="Ilustración de la Ley 14 de usabilidad: Principio de semejanza"></p>
+<p><img src="{{ site.baseurl }}/img/ley-14-principio-de-semejanza.png" loading="lazy" alt="Ilustración de la Ley 14 de usabilidad: Principio de semejanza" width="722" height="294"></p>
 
 <p>Una aplicación típica de este principio son los enlaces de un texto. Habitualmente se diseñarán para que compartan color y aparezcan subrayados. Esto le permite al usuario relacionarlos. Una vez que descubre que uno es un enlace, aprenderá que los otros también lo son.</p>
 

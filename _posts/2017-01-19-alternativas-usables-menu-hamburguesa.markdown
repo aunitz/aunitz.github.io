@@ -33,7 +33,7 @@ tags:       [buenas prácticas de usabilidad]
 <p>Si el menú tiene más opciones de las que pueden verse en un móvil la mejor solución me parece la del menú que muestra más o menos opciones en función de la resolución. De este modo, mostramos de primeras el máximo número posible de opciones de menú que permite cada dispositivo. Maximizando el cumplimiento del principio de interfaz visible.</p>
 
 <h3>Ejemplo: BBC</h3>
-<p><img src="{{ site.baseurl }}/img/bbc-menu.gif" loading="lazy" alt="Menú progresivo de la web de la BBC"></p>
+<p><img src="{{ site.baseurl }}/img/bbc-menu.gif" loading="lazy" alt="Menú progresivo de la web de la BBC" width="800" height="31"></p>
 
 <hr>
 

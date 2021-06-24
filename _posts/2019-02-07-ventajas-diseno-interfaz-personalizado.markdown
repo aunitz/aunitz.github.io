@@ -24,7 +24,7 @@ tags:       [sistemas de diseño, buenas prácticas de diseño]
 
 <h2>Ventajas de un diseño de interfaz personalizado</h2>
 
-<p><img src="{{ site.baseurl }}/img/ventajas-diseno-interfaz-personalizado-1.jpg" loading="lazy" alt=""></p>
+<p><img src="{{ site.baseurl }}/img/ventajas-diseno-interfaz-personalizado-1.jpg" loading="lazy" alt="" width="722" height="386"></p>
 
 <p>Vamos con las principales ventajas que podemos obtener:</p>
 
@@ -36,7 +36,7 @@ tags:       [sistemas de diseño, buenas prácticas de diseño]
 
 <h2>Inconvenientes de un diseño de interfaz personalizado</h2>
 
-<p><img src="{{ site.baseurl }}/img/ventajas-diseno-interfaz-personalizado-2.jpg" loading="lazy" alt=""></p>
+<p><img src="{{ site.baseurl }}/img/ventajas-diseno-interfaz-personalizado-2.jpg" loading="lazy" alt="" width="722" height="363"></p>
 
 <p>Destacaría las siguientes:</p>
 

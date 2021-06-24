@@ -12,7 +12,7 @@ tags:       [leyes y principios de usabilidad, leyes y principios de la Gestalt]
 
 <p>La experiencia pasada es única para cada individuo. Por lo que resulta difícil hacer suposiciones sobre cómo se percibirá un elemento por cada usuario. Sin embargo, hay experiencias comunes que “todos” compartimos. Por ejemplo, la imagen de abajo probablemente sea interpretada como un semáforo. Esperamos que el color rojo signifique parara y el verde continuar.</p>
 
-<p><img src="{{ site.baseurl }}/img/ley-16-principio-de-experiencia.png" loading="lazy" alt="Ilustración de la Ley 16 de usabilidad: Principio de experiencia"></p>
+<p><img src="{{ site.baseurl }}/img/ley-16-principio-de-experiencia.png" loading="lazy" alt="Ilustración de la Ley 16 de usabilidad: Principio de experiencia" width="157" height="331"></p>
 
 <p>Hay que tener presente que muchas de las experiencias comunes son propias de una determinada cultura. En algunos países el blanco es visto como puro e inocente y el negro como el mal y la muerte. Pero en otros países esta interpretación es a la inversa.</p>
 
