@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "Uso de sesgos cognitivos en marketing"
-subtitle:   "Cuestionamiento de las implicaciones éticas"
+subtitle:   "Cuestionamiento de sus implicaciones éticas"
 date:       2021-08-08 21:30:00
 author:     "Aunitz Giménez"
 header-img: "img/post-bg-75.jpg"
@@ -38,7 +38,7 @@ tags:       [ética, marketing]
 
 <p><img src="{{ site.baseurl }}/img/uso-sesgos-cognitivos-marketing-03.jpg" loading="lazy" alt="" width="720" height="393"></p>
 
-<p>A mí, sin embargo, <strong>me hace dudar sobre la moralidad de utilizar este tipo de prácticas</strong>. Que no por ser tremendamente extendidas deberíamos tomar como éticamente válidas.</p>
+<p>A mí, sin embargo, <strong>me hace dudar sobre la moralidad de aplicar este tipo de prácticas</strong>. Que no por ser tremendamente extendidas deberíamos tomar como éticamente válidas.</p>
 
 <hr>
 
