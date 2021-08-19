@@ -30,7 +30,7 @@ tags:       [leyes y principios de usabilidad]
     <li><strong>Interfaz visible</strong>. Se deben evitar elementos invisibles de navegación que han de ser inferidos por los usuarios, menús desplegables, indicaciones ocultas, etc.</li>
     <li>No se debe transmitir información solo mediante el <strong>color</strong>. De manera complementaria, hay que utilizar iconos, etiquetas de texto, etc. Con el fin de no dificultar el acceso a los usuarios con problemas de distinción de colores (aprox. un 10% del total).</li>
     <li>La aplicación debe proporcionar <strong>feedback</strong> a los usuarios, de manera que éstos siempre conozcan y comprendan lo que sucede en todos los pasos del proceso.</li>
-    <li>Los usuarios no deben sufrir <strong>sobrecarga de información</strong>. Cuando un usuario visita un sitio web y no sabe donde comenzar a leer, existe sobrecarga de información. Cuanto mayor sea el número de acciones que un usuario pueda realizar, mayor es la probabilidad que cometa un error. Limitando el número de acciones al público objetivo se facilita el uso de la aplicación.</li>
+    <li>Los usuarios no deben sufrir <strong>sobrecarga de información</strong>. Cuando un usuario visita un sitio web y no sabe dónde comenzar a leer, existe sobrecarga de información. Cuanto mayor sea el número de acciones que un usuario pueda realizar, mayor es la probabilidad que cometa un error. Limitando el número de acciones al público objetivo se facilita el uso de la aplicación.</li>
 </ol>
 
 <h2 class="section-heading">Referencias</h2>
