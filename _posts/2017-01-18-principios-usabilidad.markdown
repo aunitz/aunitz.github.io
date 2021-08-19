@@ -36,7 +36,7 @@ tags:       [leyes y principios de usabilidad]
 <h2 class="section-heading">Referencias</h2>
 
 <ul>
-    <li>Eduardo Manchón. Principios generales de usabilidad en sitios web. Ainda.info</li>
-    <li><a href="http://asktog.com/atc/principles-of-interaction-design/" target="_blank" rel="noopener noreferrer">Tognazinni, B. First Principles. Asktog.com</a></li>
-    <li><a href="https://www.nngroup.com/articles/ten-usability-heuristics/" target="_blank" rel="noopener noreferrer">Nielsen, J. Ten Usability Heuristics. Useit.com</a></li>
+    <li><a href="https://web.archive.org/web/20020111171203/http://www.ainda.info:80/principios_generales.html" target="_blank" rel="noopener noreferrer">Eduardo Manchón. Principios generales de usabilidad en sitios web. Ainda.info (2002)</a></li>
+    <li><a href="https://web.archive.org/web/19990220182614/http://www.asktog.com:80/basics/firstPrinciples.html" target="_blank" rel="noopener noreferrer">Tognazinni, B. First Principles. Asktog.com (1999)</a></li>
+    <li><a href="https://web.archive.org/web/19970218113952/http://www.useit.com/papers/heuristic/heuristic_list.html" target="_blank" rel="noopener noreferrer">Nielsen, J. Ten Usability Heuristics. Nielsen Norman Group (1994)</a></li>
 </ul>
