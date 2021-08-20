@@ -218,10 +218,10 @@ páginas que contiene.</p>
 
 <p>Desarrollar un sistema de diseño es un <a href="http://atomicdesign.bradfrost.com/chapter-4/#an-iterative-iterative-iterative-iterative-process" target="_blank" rel="noopener noreferrer">proceso iterativo similar a esculpir una escultura</a>.</p>
 
-<p>
+<figure>
     <img src="{{ site.baseurl }}/img/atomic-design-06-escultor.jpg" alt="Fotografía de un escultor tallando una escultura" width="720" height="703">
     <figcaption>Créditos de la imagen: <a href="https://flic.kr/p/dLrf6w" target="_blank" rel="noopener noreferrer">Mike Beauregard en Flickr</a></figcaption>
-</p>
+</figure>
 
 <p>Es clave que los <i>stakeholders</i> se sientan cómodos y sepan revisar el sistema de diseño cuando aún está en curso de desarrollo.</p>
 
