@@ -9,6 +9,14 @@
 
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 
+    {%if page.ogp-protocol %}
+    <!-- Open Graph Protocol (OGP) to LinkedIn -->
+    <meta property="og:title" content="{{ site.og_title_linkedin }}">
+    <meta property="og:image" content="{{ site.url }}/{{ site.og_image_linkedin }}">
+    <meta property="og:description" content="{{ site.description }}">
+    <meta property="og:url" content="{{ site.url }}">
+    {% endif %}
+
     <!-- Preconnect to required origins -->
     <link rel="preconnect"
         href="//fonts.gstatic.com"
