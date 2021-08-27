@@ -103,4 +103,4 @@ tags:       [leyes y principios de usabilidad, memorandos]
 
 <p>Y hasta aquí la comparación entre <a href="{{ site.baseurl }}{% post_url 2017-01-18-principios-usabilidad %}">mi listado de principios</a> y <a href="https://www.nngroup.com/articles/ten-usability-heuristics/" target="_blank" rel="noopener noreferrer">el de Jakob Nielsen</a>. Gracias por haberla leído. Como habrás podido comprobar, la relectura (años después) de los heurísticos de Nielsen me ha servido para detectar algunos puntos de mejora para mi listado.</p>
 
-<p>Me encantaría conocer <strong>qué principios aplicas en tus proyectos</strong>. <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">Puedes compartirlo en el hilo de debate en LinkedIn</a> que he abierto con motivo de este post. Muchas gracias.</p>
+<p>Me encantaría conocer <strong>qué principios aplicas en tus proyectos</strong>. <a href="https://www.linkedin.com/posts/aunitz_los-10-principios-generales-de-usabilidad-activity-6836927978279079936-CsoI" target="_blank" rel="noopener noreferrer">Puedes compartirlo en el hilo de debate en LinkedIn</a> que he abierto con motivo de este post. Muchas gracias.</p>
