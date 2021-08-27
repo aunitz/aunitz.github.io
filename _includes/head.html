@@ -11,9 +11,9 @@
 
     {%if page.ogp-protocol %}
     <!-- Open Graph Protocol (OGP) to LinkedIn -->
-    <meta property="og:title" content="{{ site.og_title_linkedin }}">
-    <meta property="og:image" content="{{ site.url }}/{{ site.og_image_linkedin }}">
-    <meta property="og:description" content="{{ site.description }}">
+    <meta property="og:title" content="{{ page.og-title-linkedin }}">
+    <meta property="og:image" content="{{ site.url }}/{{ page.og-image-linkedin }}">
+    <meta property="og:description" content="{{ page.og-description-linkedin }}">
     <meta property="og:url" content="{{ site.url }}">
     {% endif %}
 
