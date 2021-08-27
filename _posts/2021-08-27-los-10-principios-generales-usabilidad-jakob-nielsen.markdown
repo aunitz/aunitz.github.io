@@ -8,13 +8,13 @@ header-img: "img/post-bg-76.jpg"
 tags:       [leyes y principios de usabilidad, memorandos]
 ---
 
-<p><a href="https://www.nngroup.com/people/jakob-nielsen/">Jakob Nielsen</a>, para los que no lo conozcan, es uno de los expertos en usabilidad más veteranos y con mayor prestigio a nivel mundial.</p>
+<p><a href="https://www.nngroup.com/people/jakob-nielsen/" target="_blank" rel="noopener noreferrer">Jakob Nielsen</a>, para los que no lo conozcan, es uno de los expertos en usabilidad más veteranos y con mayor prestigio a nivel mundial.</p>
 
-<p><a href="https://web.archive.org/web/19970218113952/http:/www.useit.com/papers/heuristic/heuristic_list.html">En 1994 publicó por primera vez en su web</a> un listado de <strong>10 principios de usabilidad</strong> que denominó como <strong>heurísticos</strong>. Lo que significa que con principios que establecen sugerencias para encontrar la solución idónea al problema.</p>
+<p><a href="https://web.archive.org/web/19970218113952/http:/www.useit.com/papers/heuristic/heuristic_list.html" target="_blank" rel="noopener noreferrer">En 1994 publicó por primera vez en su web</a> un listado de <strong>10 principios de usabilidad</strong> que denominó como <strong>heurísticos</strong>. Lo que significa que con principios que establecen sugerencias para encontrar la solución idónea al problema.</p>
 
 <figure>
     <img src="{{ site.baseurl }}/img/10-principios-generales-usabilidad-jakob-nielsen-01.jpg" loading="lazy" alt="Fotografía de Jakob Nielsen hablando en público" width="720" height="479">
-    <figcaption>“<a href="https://www.flickr.com/photos/rustybrick/1443380730">Jakob Nielsen</a>” por <a href="https://www.flickr.com/photos/rustybrick/">Barry Schwartz</a> licencia bajo <a href="https://creativecommons.org/licenses/by-nc/2.0/">CC BY-NC 2.0</a>.</figcaption>
+    <figcaption>“<a href="https://www.flickr.com/photos/rustybrick/1443380730">Jakob Nielsen</a>” por <a href="https://www.flickr.com/photos/rustybrick/" target="_blank" rel="noopener noreferrer">Barry Schwartz</a> licencia bajo <a href="https://creativecommons.org/licenses/by-nc/2.0/">CC BY-NC 2.0</a>.</figcaption>
 </figure>
 
 <p>Los 10 principios heurísticos de usabilidad de Jakob Nielsen han tenido una <strong>enorme influencia en todos los analistas de usabilidad</strong> que hemos venido trabajando en esta materia en todos estos años. De hecho, los incluyo como una referencia fundamental en la determinación de <a href="{{ site.baseurl }}{% post_url 2017-01-18-principios-usabilidad %}">mi propio listado de principios generales de usabilidad que aplico en la definición de interfaces de usuario</a>.</p>
