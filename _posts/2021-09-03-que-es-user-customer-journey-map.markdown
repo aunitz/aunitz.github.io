@@ -5,7 +5,7 @@ subtitle:   "Cómo utilizarlo para mejorar la experiencia de usuario"
 date:       2021-09-03 16:00:00
 author:     "Aunitz Giménez"
 header-img: "img/post-bg-77.jpg"
-tags:       [herramientas de investigación UX]
+tags:       [métodos de investigación UX]
 ---
 
 <p>Un <strong><em>journey map</em></strong> es una herramienta para la <strong>visualización del recorrido</strong> cronológico de un usuario desde que inicia un proceso hasta que logra su <strong>objetivo</strong>.</p>
