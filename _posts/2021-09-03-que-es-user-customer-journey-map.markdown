@@ -47,7 +47,7 @@ Viuda sin hijos</blockquote>
 
 <p>Ejemplo:</p>
 
-<blockquote>El marido de Linda falleció hace dos años y ella ha tenido dificultades para llegar a fin de mes desde que él murió. Recientemente perdió su trabajo. Está preocupada por su situación económica y busca desesperadamente ayuda financiera hasta que pueda conseguir un nuevo empleo.<br>
+<blockquote>El marido de Linda falleció hace dos años y ella ha tenido dificultades para llegar a fin de mes desde que él murió. Recientemente perdió su trabajo. Está preocupada por su situación económica y busca desesperadamente ayuda financiera hasta que pueda conseguir un nuevo empleo.<br><br>
 Una amiga de Linda le dijo que buscara subvenciones del gobierno. Linda hizo una búsqueda en Google de subvenciones del gobierno y clicó en el primer resultado. Está confusa sobre las subvenciones disponibles para ella.</blockquote>
 
 <h2>Expectativas y objetivos</h2>
@@ -55,27 +55,23 @@ Una amiga de Linda le dijo que buscara subvenciones del gobierno. Linda hizo una
 
 <p>Ejemplo:</p>
 
-<blockquote>
-    <ul>
-        <li>Encontrar información online sobre subvenciones del gobierno.</li>
-        <li>Que la información sea fácil de entender.</li>
-        <li>En última instancia, lograr apoyo financiero del gobierno para ayudar a pagar sus facturas.</li>
-    </ul>
-</blockquote>
+<blockquote><ul>
+    <li>Encontrar información online sobre subvenciones del gobierno.</li>
+    <li>Que la información sea fácil de entender.</li>
+    <li>En última instancia, lograr apoyo financiero del gobierno para ayudar a pagar sus facturas.</li>
+</ul></blockquote>
 
 <h2>Etapas del proceso</h2>
 <p>Sirven para delimitar y nombrar las fases principales que constituyen el recorrido de la persona usuaria.</p>
 
 <p>Ejemplo:</p>
 
-<blockquote>
-    <ol>
-        <li>Identifica una necesidad de información</li>
-        <li>Busca la información</li>
-        <li>Encuentra la información</li>
-        <li>Busca ayuda para entender la información</li>
-    </ol>
-</blockquote>
+<blockquote><ol>
+    <li>Identifica una necesidad de información</li>
+    <li>Busca la información</li>
+    <li>Encuentra la información</li>
+    <li>Busca ayuda para entender la información</li>
+</ol></blockquote>
 
 <h2>Acciones, pensamientos y emociones del usuario</h2>
 <p>Para cada una de las etapas del proceso se describen resumidamente las acciones, pensamientos y emociones del usuario.</p>
@@ -96,13 +92,11 @@ Una amiga de Linda le dijo que buscara subvenciones del gobierno. Linda hizo una
 
 <p><a href="https://digital.gov/2015/08/12/journey-mapping-the-customer-experience-a-usa-gov-case-study/" target="_blank" rel="noopener noreferrer">En el caso de uso de Digital.gov</a> se enumeran una docena de oportunidades de mejora. Por ejemplo:</p>
 
-<blockquote>
-    <ul>
-        <li>Simplificar la página de contacto de benefits.gov.</li>
-        <li>Fusionar grant.gov, benefits.gov y govloans.gov.</li>
-        <li>Crear una infografía para explicar el funcionamiento del buscador de subvenciones.</li>
-    </ul>
-</blockquote>
+<blockquote><ul>
+    <li>Simplificar la página de contacto de benefits.gov.</li>
+    <li>Fusionar grant.gov, benefits.gov y govloans.gov.</li>
+    <li>Crear una infografía para explicar el funcionamiento del buscador de subvenciones.</li>
+</ul></blockquote>
 
 <h2>Beneficios de utilizar esta herramienta</h2>
 <p>El <em>journey map</em> proporciona una <strong>visión holística, visual y concisa</strong> de la experiencia de la persona usuaria en el uso de un producto o servicio.</p>
