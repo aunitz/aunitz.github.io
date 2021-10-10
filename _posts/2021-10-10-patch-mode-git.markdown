@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "Patch Mode de Git"
-subtitle:   "Permite commitear sólo parte de los cambios de un archivo"
+subtitle:   "Permite <em>commitear</em> sólo parte de los cambios de un archivo"
 date:       2021-10-10 22:10:00
 author:     "Aunitz Giménez"
 header-img: "img/post-bg-78.jpg"
@@ -10,7 +10,7 @@ tags:       [git]
 
 <p>Si <strong>has hecho varios cambios en un archivo y no quieres incluirlos todos en el mismo <em>commit</em></strong> porque se refieren a temas diferentes, hay una manera de pasar al <em>stage</em> sólo parte de los cambios, <em>commitearlos</em> y después proceder a <em>commitear</em> el resto.</p>
 
-<p>La funcionalidad de Git que permite pasar al <em>stage</em> sólo una parte de los cambios realizados en un archivo se llama Patch Mode. Por línea de comandos se activa mediante el <em>flag patch</em>:</p>
+<p>La funcionalidad de Git que permite pasar al <em>stage</em> sólo una parte de los cambios realizados en un archivo se llama <strong>Patch Mode</strong>. Por línea de comandos se activa mediante el <em>flag patch</em>:</p>
 
 <code>git add --patch nombreDelArchivo</code>
 
