@@ -35,6 +35,7 @@ tags:       [métodos de investigación UX]
 <p>Ejemplo:</p>
 
 <blockquote>Linda<br>
+50 años de edad<br>
 Vive en Tallahassee, Florida<br>
 Viuda sin hijos</blockquote>
 
