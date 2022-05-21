@@ -8,7 +8,7 @@ header-img: "img/post-bg-79.jpg"
 tags:       [buenas prácticas de usabilidad, memorandos]
 ---
 
-<p>El <strong>especialista en diseño para dispositivos móviles</strong> <a href="https://www.uxmatters.com/authors/archives/2012/04/steven_hoober.php" target="_blank" rel="noopener noreferrer">Steven Hoober</a> escribió una trilogía de artículos basados en la <strong>evidencia científica</strong> que aportan información fundamental sobre el uso que hacemos las personas de nuestros dispositivos móviles y cuáles son los patrones de diseño que mejor funcionan.</p>
+<p>El <strong>especialista en diseño para dispositivos móviles</strong> <a href="https://www.uxmatters.com/authors/archives/2012/04/steven_hoober.php" target="_blank" rel="noopener noreferrer">Steven Hoober</a> escribió una trilogía de artículos basados en <strong>evidencia científica</strong> que aportan información fundamental sobre el uso que hacemos las personas de nuestros dispositivos móviles y cuáles son los patrones de diseño que mejor funcionan.</p>
 
 <p>Este post de mi blog está dedicado a recopilar las principales ideas que quiero recordar del <a href="https://www.uxmatters.com/mt/archives/2017/03/design-for-fingers-touch-and-people-part-1.php" target="_blank" rel="noopener noreferrer">primer artículo de la serie de Steven Hoober</a>. Publicado en 2017 en la prestigiosa revista digital <a href="https://www.uxmatters.com/" target="_blank" rel="noopener noreferrer">UXmatters</a>.</p>
 
@@ -18,7 +18,7 @@ tags:       [buenas prácticas de usabilidad, memorandos]
 
 <p>Me parece muy relevante señalar que los descubrimientos y conclusiones a las que llega Steven Hoober proceden de <strong>varios años de estudios, investigaciones y meta investigaciones</strong>. <a href="https://www.uxmatters.com/mt/archives/2017/03/design-for-fingers-touch-and-people-part-1.php" target="_blank" rel="noopener noreferrer">En el artículo del autor se detallan con mayor precisión</a>.</p>
 
-<h2>La tecnología predominante actualmente es la pantalla táctil capacitiva</h2>
+<h2>La tecnología predominante actualmente es la <strong>pantalla táctil capacitiva</strong></h2>
 
 <p>La zona de contacto es el área del dedo del usuario que está en contacto con una pantalla táctil capacitiva.</p>
 
@@ -42,7 +42,7 @@ tags:       [buenas prácticas de usabilidad, memorandos]
 
 <h2>Cuestiónate la validez de algunos estándares oficiales</h2>
 
-<p>Algunas normas y guías de desarrollo están basadas en tecnologías obsoletas como las pantallas táctiles de IR Grid (años 80) o en tecnología resistiva (presente, por ejemplo, en algunas PDA o en los primeros smarphones).</p>
+<p>Algunas normas y guías de desarrollo están basadas en tecnologías obsoletas como las pantallas táctiles de IR Grid (años 80) o en tecnología resistiva (presente, por ejemplo, en algunas PDA o en los primeros smartphones).</p>
 
 <p>En consecuencia, <strong>los antiguos estándares táctiles que se basan en el tamaño de los dedos ya no son relevantes</strong>. Por ejemplo, debido a que los sistemas IR Grid eran la tecnología de pantalla táctil dominante en el momento en que se escribieron los estándares ISO y funcionaban detectando el dedo del usuario, estos estándares especifican que los objetivos deben tener 22x22 milímetros para adaptarse a dedos más grandes. El estándar era válido para la tecnología IR Grid, pero no lo es para la actual.</p>
 
