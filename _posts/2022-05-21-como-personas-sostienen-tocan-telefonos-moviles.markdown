@@ -18,9 +18,9 @@ tags:       [buenas prácticas de usabilidad, memorandos]
 
 <p>Me parece muy relevante señalar que los descubrimientos y conclusiones a las que llega Steven Hoober proceden de <strong>varios años de estudios, investigaciones y meta investigaciones</strong>. <a href="https://www.uxmatters.com/mt/archives/2017/03/design-for-fingers-touch-and-people-part-1.php" target="_blank" rel="noopener noreferrer">En el artículo del autor se detallan con mayor precisión</a>.</p>
 
-<h2>La tecnología predominante actualmente es la <strong>pantalla táctil capacitiva</strong></h2>
+<h2>La tecnología predominante actualmente es la pantalla táctil capacitiva</h2>
 
-<p>La zona de contacto es el área del dedo del usuario que está en contacto con una pantalla táctil capacitiva.</p>
+<p>La zona de contacto es el área del dedo del usuario que está en contacto con una <strong>pantalla táctil capacitiva</strong>.</p>
 
 <p>Esta área puede variar mucho, dependiendo de cómo toque la pantalla el usuario, por ejemplo, con la punta o la yema de un dedo o el pulgar, o si el usuario presiona con más fuerza.</p>
 
