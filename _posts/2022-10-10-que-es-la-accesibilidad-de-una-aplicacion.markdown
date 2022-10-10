@@ -28,7 +28,7 @@ tags:       [glosario]
 
 <p>La <strong><a href="https://www.w3.org/WAI/" target="_blank" rel="noopener noreferrer">WAI</a></strong> (Web Accessibility Initiative) es el grupo de trabajo específico de la <a href="https://www.w3.org/" target="_blank" rel="noopener noreferrer">W3C</a><sup id="fnref:fn-f1"><a href="#fn:fn-f1" class="footnote">1</a></sup> para los temas de accesibilidad. Establece a nivel internacional un conjunto de <strong>pautas o reglas básicas de accesibilidad</strong> que deben cumplir las aplicaciones para resultar accesibles.</p>
 
-<p>Si estas sensibilizado con la accesibilidad y no sabes por dónde empezar, te recomiendo este <a href="https://www.aunitz.net/accesibilidad-web-al-alcance-de-todos/">artículo introductorio a la accesibilidad web</a>, en el que aprenderás las <strong>reglas básicas</strong> que lograrán que tu aplicación/web sea mucho más accesible a todo tipo de personas usuarias.</p>
+<p>Si estas sensibilizado con la accesibilidad y no sabes por dónde empezar, te recomiendo este <a href="{{ site.baseurl }}{% post_url 2019-02-22-accesibilidad-web-al-alcance-de-todos %}">artículo introductorio a la accesibilidad web</a>, en el que aprenderás las <strong>reglas básicas</strong> que lograrán que tu aplicación/web sea mucho más accesible a todo tipo de personas usuarias.</p>
 
 <hr>
 
