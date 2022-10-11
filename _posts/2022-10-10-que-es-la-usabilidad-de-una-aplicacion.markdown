@@ -14,9 +14,7 @@ tags:       [glosario]
 
 <p>El término usabilidad, aunque de origen latino, en el contexto que se utiliza deriva directamente del inglés <strong>usability</strong>. La <a href="https://www.iso.org/" target="_blank" rel="noopener noreferrer">Organización Internacional para la Normalización</a> (ISO) define usabilidad como:</p>
 
-<blockquote>
-	<p>La usabilidad se refiere a la capacidad de un software de ser comprendido, aprendido, usado y ser atractivo para el usuario, en condiciones específicas de uso.</p>
-</blockquote>
+<blockquote>La usabilidad se refiere a la capacidad de un software de ser comprendido, aprendido, usado y ser atractivo para el usuario, en condiciones específicas de uso.</blockquote>
 
 <p>En términos más coloquiales podemos hablar de usabilidad como la <strong>facilidad de uso</strong>, en este caso, de una aplicación de software.</p>
 
