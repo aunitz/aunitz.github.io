@@ -10,7 +10,7 @@ tags:       [glosario]
 
 <p>En este blog he escrito <a href="{{ site.baseurl }}/tags/">varios artículos</a> encaminados a divulgar las buenas prácticas de la accesibilidad. Sin embargo, hasta el momento, no había dedicado un post a definir <strong>qué es la accesibilidad </strong>y <strong>cuáles son sus principales beneficios</strong>.</p>
 
-<p><img src="{{ site.baseurl }}/img/accesibilidad-web-al-alcance-de-todos-01.png" loading="lazy" alt="" width="699" height="80"></p>
+<p><img src="{{ site.baseurl }}/img/accesibilidad-web-al-alcance-de-todos-02.jpg" loading="lazy" alt="" width="722" height="363"></p>
 
 <p>La accesibilidad consiste en el <strong>acceso a la información sin limitación alguna por razón de deficiencia, discapacidad o minusvalía</strong>. Son muchas las personas usuarias de nuestras aplicaciones, desde contextos muy diferentes a los de la mayoría ya que...</p>
 
@@ -22,7 +22,7 @@ tags:       [glosario]
 	<li>Etc.</li>
 </ul>
 
-<p><strong>La accesibilidad no es de interés únicamente para las personas con discapacidad,</strong> sino que <strong>mejora el acceso a los usuarios en general</strong>. Por ello, aunque recibe un tratamiento específico, personalmente prefiero considerar la accesibilidad como una parte de la experiencia de usuario, es decir de la <a href="https://www.aunitz.net/como-personas-sostienen-tocan-telefonos-moviles/">usabilidad de la aplicación</a>.</p>
+<p><strong>La accesibilidad no es de interés únicamente para las personas con discapacidad,</strong> sino que <strong>mejora el acceso a los usuarios en general</strong>. Por ello, aunque recibe un tratamiento específico, personalmente prefiero considerar la accesibilidad como una parte de la experiencia de usuario, es decir de la <a href="{{ site.baseurl }}{% post_url 2022-10-10-que-es-la-usabilidad-de-una-aplicacion %}">usabilidad de la aplicación</a>.</p>
 
 <p><img src="{{ site.baseurl }}/img/que-es-la-accesibilidad-de-una-aplicacion-02.jpg" loading="lazy" alt="" width="722" height="411"></p>
 
