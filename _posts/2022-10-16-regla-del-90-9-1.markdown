@@ -18,7 +18,7 @@ tags:       [leyes y principios de usabilidad]
 
 <p>En el caso de los blogs, por ejemplo, de acuerdo a la cifras que aporta el artículo de Jakob Nielsen, la regla se aproxima más a un 95-5-0,1.</p>
 
-<p>La Wikipedia nos proporciona otro claro ejemplo de desigualdad aún más acusada. Según <a href="https://en.wikipedia.org/wiki/Wikipedia:About" target="_blank" rel="noopener noreferrer">su página de “Acerca de”</a>, en el último mes, “solo” ha tenido 121.736 colaboradores activos. Lo que representa un 0,01% de los más de mil millones de visitantes mensuales que recibe.</p>
+<p>La Wikipedia nos proporciona otro claro ejemplo de desigualdad aún más acusada. Según <a href="https://en.wikipedia.org/wiki/Wikipedia:About" target="_blank" rel="noopener noreferrer">su página de “Acerca de”</a>, en el último mes, “sólo” ha tenido 121.736 colaboradores activos. Lo que representa un 0,01% de los más de mil millones de visitantes mensuales que recibe.</p>
 
 <p>Un último ejemplo que leía recientemente en <a href="https://mailchi.mp/bonillaware/inclusion-modelo-datos?e=1c748833c8" target="_blank" rel="noopener noreferrer">uno de los boletines de David Bonilla</a> (experto en tecnología y negocios digitales): la <a href="https://survey.stackoverflow.co/2022/" target="_blank" rel="noopener noreferrer">encuesta a desarrolladores de Stack Overflow en 2022</a> tuvo un total de 73.268 participantes de un total de 19 millones de usuarios. Lo cual representa un 0,39%.</p>
 
@@ -30,12 +30,12 @@ tags:       [leyes y principios de usabilidad]
 
 <h2>Cómo mejorar la desigualdad participativa</h2>
 
-<p>Las pruebas evidencian que <strong>la desigualdad participativa se puede paliar, pero no nunca eliminar</strong>. Algunas estrategias que pueden contribuir a reducir la desigualdad participativa pueden ser:</p>
+<p>Las pruebas evidencian que <strong>la desigualdad participativa se puede paliar, pero nunca eliminar</strong>. Algunas estrategias que pueden contribuir a reducir la desigualdad participativa pueden ser:</p>
 
 <ul>
 	<li><strong>Haz que sea fácil contribuir</strong>. Por ejemplo, en YouTube es muy fácil opinar sobre un vídeo mediante el icono del pulgar hacia arriba o hacia abajo.</li>
 	<li><strong>Haz que la participación sea un efecto secundario</strong>. El ejemplo que menciona Jakob es el de las recomendaciones de Amazon del tipo “Los clientes que vieron este producto también vieron” o “Comprados juntos habitualmente”. Amazon consigue una participación de los usuarios indirecta a la actividad que estos realizan en su web.</li>
-	<li><strong>Sugiere respuestas</strong>. Proporciona sugerencias de posibles respuestas a un comentario o mensaje, como hace por ejemplo LinkedIn o Gmail. Es más fácil clicar un botón de “Gracias” que molestarse en escribir una respuesta.</li>
+	<li><strong>Sugiere respuestas</strong>. Proporciona sugerencias de posibles respuestas a un comentario o mensaje, como hacen por ejemplo LinkedIn o Gmail. Es más fácil clicar un botón de “Gracias” que molestarse en escribir una respuesta.</li>
 	<li><strong>Recompensas</strong>. A modo de descuentos, periodos preferentes de rebajas, etc. Los sistemas de recompensas hay que manejarlos con cuidado para que no beneficien en exceso precisamente a los participantes más activos habitualmente (ese 1%).</li>
 	<li><strong>Promocionar las colaboraciones de calidad</strong>. El problema que puede ocurrir es que se den aportaciones de calidad que queden ocultas en la gran cantidad de contribuciones de ese 1% hiperactivo. Es complicado dar con una fórmula que funcione, pero ya hay intentos de las redes sociales. Como por ejemplo en YouTube mediante la posibilidad de aumentar la relevancia de un comentario apoyándolo mediante el icono del pulgar hacia arriba.</li>
 	<li><strong>Mejorar la usabilidad de los canales de participación.</strong> Hay que estudiar muy cuidadosamente los posibles problemas de usabilidad que tengan los mecanismos de participación del sitio web para irlos puliendo y mejorando continuamente y de manera iterativa.</li>
