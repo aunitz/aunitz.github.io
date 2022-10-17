@@ -2,7 +2,7 @@
 layout:     post
 title:      "Regla del 90-9-1"
 subtitle:   "leyes y principios de usabilidad"
-date:       2022-10-17 14:30:00
+date:       2022-10-16 14:30:00
 author:     "Aunitz Giménez"
 header-img: "img/post-bg-82.jpg"
 tags:       [leyes y principios de usabilidad]
