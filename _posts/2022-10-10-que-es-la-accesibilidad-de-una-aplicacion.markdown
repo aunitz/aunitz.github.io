@@ -4,7 +4,7 @@ title:      "Qué es la accesibilidad de una aplicación"
 subtitle:   "Definición y beneficios de la accesibilidad"
 date:       2022-10-10 17:00:00
 author:     "Aunitz Giménez"
-header-img: "img/post-bg-26.jpg"
+header-img: "img/post-bg-80.jpg"
 tags:       [glosario]
 ---
 

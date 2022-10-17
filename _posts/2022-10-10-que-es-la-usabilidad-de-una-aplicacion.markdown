@@ -4,7 +4,7 @@ title:      "Qué es la usabilidad de una aplicación"
 subtitle:   "Definición y beneficios de la usabilidad"
 date:       2022-10-10 15:00:00
 author:     "Aunitz Giménez"
-header-img: "img/post-bg-80.jpg"
+header-img: "img/post-bg-81.jpg"
 tags:       [glosario]
 ---
 
