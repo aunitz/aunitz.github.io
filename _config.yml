@@ -29,6 +29,7 @@ google_tracking_id: G-PJWXCNEVTP
 #disqus: aunitz
 
 # Build settings
+timezone: Europe/Madrid
 markdown: kramdown
 #highlighter: rouge
 #permalink: pretty
