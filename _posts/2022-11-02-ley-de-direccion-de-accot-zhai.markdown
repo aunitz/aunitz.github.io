@@ -2,7 +2,7 @@
 layout:     post
 title:      "Ley de dirección de Accot-Zhai"
 subtitle:   "{Leyes de usabilidad}"
-date:       2022-11-02 16:00:00
+date:       2022-11-02 00:30:00
 author:     "Aunitz Giménez"
 header-img: "img/post-bg-83.jpg"
 tags:       [leyes y principios de usabilidad]
