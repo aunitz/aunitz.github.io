@@ -8,7 +8,7 @@ header-img: "img/post-bg-83.jpg"
 tags:       [leyes y principios de usabilidad]
 ---
 
-<p>La ley de dirección predice el tiempo necesario que invertirá un usuario en dirigir un puntero (como el cursor de un ratón) a través de un recorrido determinado (como un menú desplegable, una barra de desplazamiento y campo de formulario desplegable). Este tiempo depende de la longitud y la anchura del recorrido. Al que se le suele denominar “túnel”.</p>
+<p>La ley de dirección predice el tiempo necesario que invertirá un usuario en dirigir un puntero (como el cursor de un ratón) a través de un recorrido determinado (como un menú desplegable, una barra de desplazamiento o un campo de formulario desplegable). Este tiempo depende de la longitud y la anchura del recorrido. Al que se le suele denominar “túnel”.</p>
 
 <p><strong> Cuanto más largo y estrecho sea el túnel, más tiempo necesitará el usuario para recorrerlo con éxito. </strong></p>
 
