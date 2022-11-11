@@ -20,7 +20,7 @@ tags:       [glosario]
 
 <p><img src="{{ site.baseurl }}/img/que-es-la-usabilidad-de-una-aplicacion-02.jpg" loading="lazy" alt="" width="722" height="412"></p>
 
-<p>Tener en cuenta criterios de usabilidad en el desarrollo de software, <strong>genera grandes beneficios para los usuarios</strong>. Entre los cuales podemos destacar:</p>
+<p>Tener en cuenta criterios de usabilidad en el desarrollo de software <strong>genera grandes beneficios para los usuarios</strong>. Entre los cuales podemos destacar:</p>
 
 <ul>
 	<li><strong>Mayor calidad</strong> del producto final, con lo que la aceptación de este por los usuarios finales es mejor y más rápida.</li>
