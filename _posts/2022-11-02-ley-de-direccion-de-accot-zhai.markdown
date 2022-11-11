@@ -15,7 +15,7 @@ tags:       [leyes y principios de usabilidad]
 <p>Esta ley fue formulada por los investigadores en interacción persona-ordenador (HCI: Human Computer Interaction) Johnny Accot y Shumin Zhai en 1997. Es un corolario de la conocida <a href="{{ site.baseurl }}{% post_url 2018-01-21-ley-01-ley-de-fitts %}"> ley de Fitts</a>.</p>
 
 <p><strong> La idea práctica que se deriva de esta ley es que los recorridos largos y angostos le llevarán más tiempo al usuario que los recorridos cortos y anchos. </strong></p>
-<p>El llamado “túnel” es cualquier control del interfaz que requiera que el usuario mueva el cursor (o arrastre un dedo en una pantalla táctil) a lo largo de un <strong> recorrido que tiene bordes </strong>. De modo que, si se sobrepasa el borde, tendrá alguna consecuencia negativa; aunque sea leve.</p>
+<p>El llamado “túnel” es cualquier control del interfaz que requiera que el usuario mueva el cursor (o arrastre un dedo en una pantalla táctil) a lo largo de un <strong> recorrido que tiene bordes</strong>. De modo que, si se sobrepasa el borde, tendrá alguna consecuencia negativa; aunque sea leve.</p>
 
 <p>Revisemos algunos elementos de interfaz comunes que se ven afectados por esta ley.</p>
 
