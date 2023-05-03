@@ -104,3 +104,10 @@ tags:       [buenas prácticas de usabilidad, formularios]
 <p>Se podría hacer alguna excepción a esta regla, en casos como por ejemplo el típico formulario de acceso (login) en el que únicamente se pide usuario y contraseña.</p>
 
 <p><img src="{{ site.baseurl }}/img/tip-11-iniciar-sesion.png" loading="lazy" alt="Formulario de inicio de sesión" width="521" height="319"></p>
+
+<h2 class="section-heading">Referencias</h2>
+
+<ul>
+    <li><a href="https://www.uxmatters.com/mt/archives/2006/07/label-placement-in-forms.php" target="_blank" rel="noopener noreferrer">Matteo Penzo. Label Placement in Forms. UX matters (2006)</a></li>
+    <li><a href="https://ai.googleblog.com/2014/07/simple-is-better-making-your-web-forms.html" target="_blank" rel="noopener noreferrer">Javier Bargas-Avila y Mirjam Seckler. Simple is better - Making your web forms easy to use pays off. Google Research Blog (2014)</a></li>
+</ul>
