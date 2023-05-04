@@ -58,7 +58,7 @@ tags:       [métodos de investigación UX]
 
 <p>Para obtener mapas de calor significativos este tipo de pruebas requieren de al menos 39 usuarios.</p>
 
-<h2>Referencias</h2>
+<h2 class="section-heading">Referencias</h2>
 
 <ul>
 	<li><a href="https://www.nngroup.com/articles/why-you-only-need-to-test-with-5-users/" target="_blank" rel="noopener noreferrer">Jakob Nielsen. Why You Only Need to Test with 5 Users. Nielsen Norman Group (2000)</a></li>
