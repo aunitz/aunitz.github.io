@@ -34,7 +34,7 @@ tags:       [métodos de investigación UX]
 
 <p><img src="{{ site.baseurl }}/img/que-es-un-test-de-usuarios-03.gif" loading="lazy" alt="" width="631" height="377"></p>
 
-<p>La gráfica muestra que con 15 usuarios logramos detectar el 100% de los problemas de usabilidad. Sin embargo, Jakob Nielsen recomienda limitarse a 5 usuarios para optimizar el ratio de coste/beneficio. De hecho, 3 usuarios serían suficientes para detectar más de la mitad de los problemas.</p>
+<p>La gráfica muestra que con 15 usuarios logramos detectar el 100% de los problemas de usabilidad. Sin embargo, Jakob Nielsen recomienda limitarse a 5 usuarios para optimizar el ratio de coste-beneficio. De hecho, 3 usuarios serían suficientes para detectar más de la mitad de los problemas.</p>
 
 <p><strong>Con 5 usuarios habremos detectado el 85% de los problemas de usabilidad.</strong> Una vez implementada una posible solución de los problemas detectados, se recomienda realizar otro estudio de usabilidad para corroborarlo. De nuevo con 5 usuarios. Es decir, se obtiene un mejor ratio de coste-beneficio realizando 3 estudios de usabilidad de 5 usuarios que un único estudio de 15 usuarios.</p>
 
