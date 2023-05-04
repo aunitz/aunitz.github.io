@@ -36,13 +36,13 @@ tags:       [métodos de investigación UX]
 
 <p>La gráfica muestra que con 15 usuarios logramos detectar el 100% de los problemas de usabilidad. Sin embargo, Jakob Nielsen recomienda limitarse a 5 usuarios para optimizar el ratio de coste-beneficio. De hecho, 3 usuarios serían suficientes para detectar más de la mitad de los problemas.</p>
 
-<p><strong>Con 5 usuarios habremos detectado el 85% de los problemas de usabilidad.</strong> Una vez implementada una posible solución de los problemas detectados, se recomienda realizar otro estudio de usabilidad para corroborarlo. De nuevo con 5 usuarios. Es decir, se obtiene un mejor ratio de coste-beneficio realizando 3 estudios de usabilidad de 5 usuarios que un único estudio de 15 usuarios.</p>
+<p><strong>Con 5 usuarios habremos detectado el 85% de los problemas de usabilidad.</strong> Una vez implementada una posible solución a los problemas detectados, se recomienda realizar otro estudio de usabilidad para corroborarlo. De nuevo con 5 usuarios. Es decir, se obtiene un mejor ratio de coste-beneficio realizando 3 estudios de usabilidad de 5 usuarios que un único estudio de 15 usuarios.</p>
 
-<h2>Cuándo probar a más usuarios</h2>
+<h2>Cuándo probar con más usuarios</h2>
 
 <p>Hay algunas circunstancias especiales en las que se justifica recurrir a más de 5 usuarios.</p>
 
-<p><u>La aplicación tiene varios grupos de usuarios muy distintos</u></p>
+<h3>La aplicación tiene varios grupos de usuarios muy distintos</h3>
 
 <p>Pongamos por caso que queremos analizar un comercio electrónico de neumáticos destinado tanto a usuarios particulares como a profesionales (talleres mecánicos, distribuidores, etc.). En ese caso sería recomendable seleccionar al menos 3 usuarios de cada tipo.</p>
 
