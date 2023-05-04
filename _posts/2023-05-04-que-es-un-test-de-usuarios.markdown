@@ -2,7 +2,7 @@
 layout:     post
 title:      "Qué es un test de usuarios"
 subtitle:   "Un prueba sencilla y más barata de lo que crees"
-date:       2023-05-04 16:30:00
+date:       2023-05-04 13:30:00
 author:     "Aunitz Giménez"
 header-img: "img/post-bg-84.jpg"
 tags:       [métodos de investigación UX]
