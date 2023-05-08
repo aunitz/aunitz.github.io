@@ -2,7 +2,7 @@
 layout:     post
 title:      "Qué es un test heurístico"
 subtitle:   "Se trata de una evaluación realizada por especialistas en usabilidad"
-date:       2023-05-08 11:00:00
+date:       2023-05-08 12:00:00
 author:     "Aunitz Giménez"
 header-img: "img/post-bg-85.jpg"
 tags:       [métodos de investigación UX]
