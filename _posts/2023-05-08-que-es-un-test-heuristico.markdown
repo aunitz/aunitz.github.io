@@ -8,7 +8,7 @@ header-img: "img/post-bg-85.jpg"
 tags:       [métodos de investigación UX]
 ---
 
-<p>La evaluación por expertos o test heurístico es un tipo de inspección donde los especialistas evaluamos si la aplicación cumple con una lista de principios de usabilidad comúnmente aceptados.</p>
+<p>La evaluación por expertos o test heurístico es un tipo de inspección donde los especialistas evaluamos si la aplicación cumple con una lista de principios de <a href="{{ site.baseurl }}{% post_url 2022-10-10-que-es-la-usabilidad-de-una-aplicacion %}">usabilidad</a> comúnmente aceptados.</p>
 
 <p>En mi caso aplico <a href="{{ site.baseurl }}{% post_url 2017-01-18-principios-usabilidad %}">mis principios generales de usabilidad</a> y mi propia experiencia acumulada como consultor en usabilidad.</p>
 

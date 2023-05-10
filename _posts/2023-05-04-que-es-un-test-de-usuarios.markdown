@@ -10,7 +10,7 @@ tags:       [métodos de investigación UX]
 
 <p><strong>Un test de usuarios consiste en encomendar una serie de tareas a una muestra de usuarios de la aplicación.</strong> Tanto las tareas como los usuarios se escogen en función de los resultados de la fase de análisis.</p>
 
-<p>Estos test se pueden realizar en campo, en remoto o en un laboratorio de usabilidad.</p>
+<p>Estos test se pueden realizar en campo, en remoto o en un laboratorio de <a href="{{ site.baseurl }}{% post_url 2022-10-10-que-es-la-usabilidad-de-una-aplicacion %}">usabilidad</a>.</p>
 
 <p><img src="{{ site.baseurl }}/img/que-es-un-test-de-usuarios-01.jpg" loading="lazy" alt="" width="722" height="411"></p>
 
