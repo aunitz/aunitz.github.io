@@ -10,7 +10,7 @@ tags:       [SEO]
 
 <p>Una de las prácticas fundamentales para el SEO (Search Engine Optimization) es realizar un buen <strong>keyword research</strong> o <strong>investigación de palabras clave</strong>.</p>
 
-<p>Este proceso consiste en identificar y seleccionar las palabras y frases clave que los usuarios utilizan en los motores de búsqueda al buscar información relacionada con un tema específico.</p>
+<p>Este proceso consiste en identificar y seleccionar las palabras y frases clave que los usuarios utilizan en los buscadores (por ejemplo Google) al buscar información relacionada con un tema específico.</p>
 
 <p><img src="{{ site.baseurl }}/img/que-es-el-keyword-research.jpg" loading="lazy" alt="" width="720" height="373"></p>
 
