@@ -12,9 +12,9 @@ tags:       [buenas prácticas de usabilidad, buenas prácticas de accesibilidad
 
 <p>Ejemplo de texto justificado:</p>
 
-<p><img src="{{ site.baseurl }}/img/mejor-alineacion-texto-web-01.jpg" loading="lazy" alt="" width="720" height="370"></p>
+<p><img src="{{ site.baseurl }}/img/mejor-alineacion-texto-web-01.jpg" loading="lazy" alt="Ejemplo de texto justificado" width="720" height="370"></p>
 
-<p>Sin embargo, el <strong>texto justificado tiene algunos inconvenientes específicos en entorno web</strong> que lo hacen desaconsejable. Los motivos principales son los siguientes:</p>
+<p>Sin embargo, el <strong>texto justificado tiene, para el entorno web, algunos inconvenientes específicos</strong> que lo hacen desaconsejable. Los motivos principales son los siguientes:</p>
 <ol>
 	<li><strong>Espacios irregulares entre palabras:</strong> cuando se justifica el texto, los espacios entre palabras se ajustan automáticamente para llenar todo el ancho del contenedor. Esto puede resultar en espacios irregulares y poco naturales entre las palabras, lo que dificulta la lectura. Hay que tener en cuenta que en formato web no se pueden partir las palabras mediante un guion (-), como se hace en papel, porque la anchura de los textos es fluida y se adapta a la anchura de la pantalla del dispositivo.</li>
 	<li><strong>Ríos blancos:</strong> los "ríos blancos" son espacios en blanco que se forman en medio de un bloque de texto justificado debido a las variaciones en la longitud de las palabras y la distribución de espacios. Estos ríos pueden distraer al lector y dificultar la concentración en el contenido.</li>
@@ -25,8 +25,8 @@ tags:       [buenas prácticas de usabilidad, buenas prácticas de accesibilidad
 	<li><strong>Accesibilidad:</strong> la justificación puede afectar negativamente la accesibilidad para personas con discapacidades visuales, ya que los ríos blancos y las irregularidades dificultan la utilización de tecnologías de asistencia, como lectores de pantalla.</li>
 </ol>
 
-<p>En resumen, mientras que la justificación puede parecer una opción atractiva desde un punto de vista estético, los problemas de legibilidad y experiencia del usuario generalmente superan estos beneficios en el contexto de diseño web. Siendo <strong>la alineación de texto más recomendable para el entorno web la alineación justificada a la izquierda</strong> (también conocida como <strong>alineación izquierda</strong>).</p>
+<p>En resumen, mientras que la justificación puede parecer una opción atractiva desde un punto de vista estético, los problemas de legibilidad y de experiencia de usuario generalmente superan estos beneficios en el contexto del diseño web. Siendo <strong>la alineación de texto más recomendable para el entorno web la alineación justificada a la izquierda</strong> (también conocida como <strong>alineación izquierda</strong>).</p>
 
 <p>Ejemplo de texto alineado a la izquierda:</p>
 
-<p><img src="../img/mejor-alineacion-texto-web-02.png" loading="lazy" alt="" width="720" height="532"></p>
+<p><img src="../img/mejor-alineacion-texto-web-02.png" loading="lazy" alt="Ejemplo de texto alineado a la izquierda" width="720" height="532"></p>
