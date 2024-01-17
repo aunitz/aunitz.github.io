@@ -10,7 +10,7 @@ tags:       [buenas prácticas de accesibilidad]
 
 <h2>Qué es la accesibilidad web</h2>
 
-<p>La accesibilidad consiste en el <strong>acceso a la información sin limitación alguna por razón de deficiencia, discapacidad o minusvalía</strong>. Son muchas las personas que acceden a la información de nuestras páginas desde contextos muy diferentes ya que…</p>
+<p>La accesibilidad consiste en el <strong>acceso a la información sin limitación alguna por razón de discapacidad u otro tipo de deficiencia</strong>. Son muchas las personas que acceden a la información de nuestras páginas desde contextos muy diferentes ya que…</p>
 
 <ul>
     <li>Pueden tener problemas de oído, visión, movilidad.</li>
