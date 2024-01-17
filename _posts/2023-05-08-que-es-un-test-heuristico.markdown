@@ -14,7 +14,7 @@ tags:       [métodos de investigación UX]
 
 <p><img src="{{ site.baseurl }}/img/que-es-un-test-heuristico-01.jpg" loading="lazy" alt="" width="722" height="415"></p>
 
-<p>Esta técnica <strong>detecta los problemas más graves de usabilidad</strong> y eventualmente permitirá realizar posteriormente <a href="{{ site.baseurl }}{% post_url 2023-05-04-que-es-un-test-de-usabilidad-con-personas-usuarias %}">test con personas usuarias</a> más eficientes.</p>
+<p>Esta técnica <strong>detecta los problemas más graves de usabilidad</strong> y eventualmente permitirá realizar posteriormente <a href="{{ site.baseurl }}{% post_url 2023-05-04-que-es-un-test-de-usabilidad-con-personas-usuarias %}">test de usabilidad con personas usuarias</a> más eficientes.</p>
 
 <p>Se trata de un tipo de test que tiene una <strong>muy buena relación coste-beneficio</strong>.</p>
 
