@@ -8,9 +8,9 @@ header-img: "img/post-bg-89.jpg"
 tags:       [métodos de investigación UX]
 ---
 
-<p>Esta <strong>técnica de investigación en experiencia de usuario</strong> (UX research) sirve para entender cómo los usuarios agrupan y clasifican el contenido.</p>
+<p>Esta <strong>técnica de investigación en experiencia de usuario</strong> (UX research) sirve para entender <strong>cómo los usuarios agrupan y clasifican el contenido</strong>.</p>
 
-<p>Es un método utilizado en UX para ayudar a diseñar o evaluar la arquitectura de la información de un sitio web o aplicación. Implica pedir a los usuarios que organicen temas en categorías que tengan sentido para ellos. Esta técnica puede ser realizada tanto de manera presencial como online.</p>
+<p>Es un método utilizado en UX para ayudar a diseñar o evaluar la arquitectura de la información de un sitio web o aplicación. Implica pedir a los usuarios que organicen contenidos en categorías que tengan sentido para ellos. Esta técnica puede ser realizada tanto de manera presencial como online.</p>
 
 <p><img src="{{ site.baseurl }}/img/que-es-un-card-sorting-01.jpg" loading="lazy" alt="" width="720" height="409"></p>
 
