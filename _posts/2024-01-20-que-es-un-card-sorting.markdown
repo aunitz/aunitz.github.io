@@ -22,6 +22,10 @@ tags:       [métodos de investigación UX]
 	<li><strong>Análisis:</strong> los resultados se analizan para entender cómo los usuarios perciben y estructuran la información.</li>
 </ol>
 
+<p>El número de usuarios recomendable más habitual es de 12. Dos usuarios para realizar una primera prueba piloto para asegurarnos de que no hay problemas de comprensión con los rótulos de las tarjetas. 10 usuarios para realizar el test.</p>
+
+<p>La proporción de usuarios y tarjetas que es recomendable seguir es de 10 usuarios por cada 40 tarjetas.</p>
+
 <h2>Tipos de card sorting</h2>
 
 <ul>

@@ -20,6 +20,8 @@ tags:       [métodos de investigación UX]
 	<li><strong>Análisis:</strong> observamos y analizamos cómo los participantes navegan por el árbol, identificando dónde encuentran dificultades o confusiones.</li>
 </ol>
 
+<p>El número de usuarios recomendable para la prueba es de 10. No es necesario contar con más ya que los resultados no variarán de forma relevante.</p>
+
 <h2>Beneficios del tree testing</h2>
 
 <ul>
