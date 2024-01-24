@@ -12,7 +12,7 @@ tags:       [métodos de investigación UX]
 
 <h2>¿Qué es un focus group en UX?</h2>
 
-<p>Un focus group <strong>es una sesión estructurada de discusión en grupo</strong>, dirigida por un moderador, donde un pequeño número de participantes (generalmente entre 6 y 10) <strong>comparten sus opiniones, percepciones y experiencias</strong> sobre un producto, servicio o concepto. Esta técnica destaca por su capacidad de generar insights profundos a través de la interacción y el debate entre los usuarios, facilitando una comprensión más matizada de sus necesidades y expectativas.</p>
+<p>Un focus group <strong>es una sesión estructurada de discusión en grupo</strong>, dirigida por un moderador, donde un <strong>pequeño número de participantes</strong> (generalmente entre 6 y 10) <strong>comparten sus opiniones, percepciones y experiencias</strong> sobre un producto, servicio o concepto. Esta técnica destaca por su capacidad de generar insights profundos a través de la interacción y el debate entre los usuarios, facilitando una comprensión más matizada de sus necesidades y expectativas.</p>
 
 <p><img src="{{ site.baseurl }}/img/que-es-un-focus-group-01.jpg" loading="lazy" alt="" width="720" height="444"></p>
 
