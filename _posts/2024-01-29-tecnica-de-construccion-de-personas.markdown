@@ -12,7 +12,7 @@ tags:       [métodos de investigación UX]
 
 <h2>¿Qué son las Personas en UX?</h2>
 
-<p>Las <em>personas</em> son perfiles ficticios pero detallados de usuarios típicos. No son usuarios reales, sino representaciones basadas en datos de investigación de usuarios que reflejan diferentes segmentos del público objetivo. Cada persona incluye información como edad, ocupación, comportamientos, objetivos, desafíos y motivaciones.</p>
+<p>Las <em>personas</em> son perfiles ficticios pero detallados de usuarios típicos. No son usuarios reales, sino representaciones basadas en datos de investigación de usuarios que reflejan diferentes segmentos del público objetivo. Cada <em>persona</em> incluye información como edad, ocupación, comportamientos, objetivos, desafíos y motivaciones.</p>
 
 <p><img src="{{ site.baseurl }}/img/tecnica-de-construccion-de-personas-ux-01.jpg" loading="lazy" alt="" width="720" height="411"></p>
 
@@ -31,7 +31,7 @@ tags:       [métodos de investigación UX]
 <p>Los bloques que puede tener cada Persona pueden ser:</p>
 
 <ol>
-	<li>Nombre y apellido.</li>
+	<li>Nombre y apellido: ficticios, pero de gran ayuda para empatizar con ella.</li>
 	<li>Fotografía: puede ser de una persona que hayamos entrevistado y nos haya dado permiso para fotografiarla o podemos obtenerla de un banco de imágenes.</li>
 	<li>Datos sociodemográficos: como edad, lugar de residencia, nivel de destreza tecnológica.</li>
 	<li>Background personal: datos relevantes sobre su pasado.</li>
@@ -46,7 +46,7 @@ tags:       [métodos de investigación UX]
 
 <ul>
 	<li><strong>Centrarse en el usuario:</strong> ayudan a mantener el enfoque en las necesidades y experiencias de los usuarios reales durante todo el proceso de diseño.</li>
-	<li><strong>Mejora la toma de decisiones:</strong> al tener un claro entendimiento de a quién estamos diseñando, podemos tomar decisiones de diseño más informadas.</li>
+	<li><strong>Mejora la toma de decisiones:</strong> al tener un claro entendimiento de para quién estamos diseñando, podemos tomar decisiones más informadas.</li>
 	<li><strong>Fomenta la empatía: </strong>las <em>personas</em> nos permiten ponernos en la piel de nuestros usuarios, evitando el diseño basado en suposiciones.</li>
 </ul>
 
