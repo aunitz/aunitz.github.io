@@ -22,7 +22,7 @@ tags:       [métodos de investigación UX]
 
 <ul>
 	<li><strong>Visión integral</strong>: proporciona una comprensión completa del entorno del proyecto, asegurando que no se pasen por alto <em>stakeholders</em> importantes.</li>
-	<li><strong>Identificación de relaciones</strong>: revela cómo interactúan los diferentes stakeholders entre sí, lo que puede ser crucial para gestionar expectativas y comunicaciones.</li>
+	<li><strong>Identificación de relaciones</strong>: revela cómo interactúan los diferentes <em>stakeholders</em> entre sí, lo que puede ser crucial para gestionar expectativas y comunicaciones.</li>
 	<li><strong>Priorización de necesidades</strong>: ayuda a identificar y priorizar las necesidades y expectativas de los <em>stakeholders</em> más influyentes o afectados.</li>
 	<li><strong>Gestión de riesgos</strong>: al entender quiénes son los <em>stakeholders</em> y qué quieren, puedes prever y mitigar posibles conflictos o problemas.</li>
 </ul>
