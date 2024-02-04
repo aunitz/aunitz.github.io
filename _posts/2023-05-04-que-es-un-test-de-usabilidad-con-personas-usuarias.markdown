@@ -54,7 +54,7 @@ tags:       [métodos de investigación UX]
 
 <h3>Card sorting</h3>
 
-<p>En este tipo de pruebas se recomiendan al menos 15 usuarios.</p>
+<p>Para un <a href="{{ site.baseurl }}{% post_url 2024-01-20-que-es-un-card-sorting %}">card sorting</a> se recomiendan al menos 15 usuarios.</p>
 
 <h3>Eyetraking</h3>
 
