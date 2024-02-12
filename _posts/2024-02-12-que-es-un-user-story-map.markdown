@@ -39,7 +39,7 @@ tags:       [métodos de investigación UX]
 <ul>
 	<li><strong>Sé flexible</strong>: el mapa <strong>debe evolucionar</strong> a medida que se obtiene más información sobre los usuarios y el producto.</li>
 	<li><strong>Involucra a usuarios reales</strong>: si es posible, valida tu mapa con feedback de usuarios reales.</li>
-	<li><strong>Manténlo visible</strong>: coloca el mapa donde el equipo pueda verlo y consultarlo con frecuencia.</li>
+	<li><strong>Mantenlo visible</strong>: coloca el mapa donde el equipo pueda verlo y consultarlo con frecuencia.</li>
 </ul>
 
 <h2>Conclusión</h2>
