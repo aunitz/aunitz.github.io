@@ -5,7 +5,7 @@ subtitle:   "Las ventajas de mantener separados ambos mundos"
 date:       2018-12-28 18:00:00
 author:     "Aunitz Giménez"
 header-img: "img/post-bg-38.jpg"
-tags:       [desarrollo de aplicaciones web]
+tags:       [desarrollo de soluciones digitales]
 ---
 
 <h2>El patrón MVC</h2>

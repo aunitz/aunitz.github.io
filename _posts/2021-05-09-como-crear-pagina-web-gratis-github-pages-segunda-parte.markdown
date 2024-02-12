@@ -5,7 +5,7 @@ subtitle:   "Cómo configurar un nombre de dominio propio"
 date:       2021-05-09 21:30:00
 author:     "Aunitz Giménez"
 header-img: "img/post-bg-72.jpg"
-tags:       [desarrollo de aplicaciones web]
+tags:       [desarrollo de soluciones digitales]
 ---
 
 <p>Este post es la segunda parte de uno anterior en el que explicaba <a href="{{ site.baseurl }}{% post_url 2021-05-08-como-crear-pagina-web-gratis-github-pages %}">el paso a paso de cómo crear una página web gratuita en GitHub Pages</a>.</p>

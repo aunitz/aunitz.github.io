@@ -5,7 +5,7 @@ subtitle:   "Mucho más que una guía de estilo"
 date:       2019-12-26 20:00:00
 author:     "Aunitz Giménez"
 header-img: "img/post-bg-48.jpg"
-tags:       [sistemas de diseño, desarrollo de aplicaciones web, buenas prácticas de diseño]
+tags:       [sistemas de diseño, desarrollo de soluciones digitales, buenas prácticas de diseño]
 ---
 
 <p>Un <strong>sistema de diseño</strong> (design system) es un <strong>proceso</strong> y conjuntamente una <strong>fuente de recursos</strong> que ayuda a los equipos a diseñar y <strong>desarrollar</strong> los <strong>productos digitales</strong> de una compañía.</p>

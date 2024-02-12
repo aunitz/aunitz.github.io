@@ -17,7 +17,7 @@ tags:       [sistemas de diseño, buenas prácticas de diseño]
 <ul>
     <li>No contar en el equipo de desarrollo con diseñadores visuales. Es decir, no disponer de especialistas en diseño gráfico de interfaces de usuario.</li>
     <li>No contar con el presupuesto suficiente para desarrollar un sistema de diseño propio. O al menos un diseño de interfaz mínimamente personalizado.</li>
-    <li>No contar con el tiempo necesario para desarrollar un sistema de diseño propio. Debido a los ajustados plazos de entrega que se acostumbran a manejar en el desarrollo de aplicaciones web.</li>
+    <li>No contar con el tiempo necesario para desarrollar un sistema de diseño propio. Debido a los ajustados plazos de entrega que se acostumbran a manejar en el desarrollo de soluciones digitales.</li>
 </ul>
 
 <p>Como podemos observar, todos estos factores son carencias. Insuficiencias del proyecto que conducen a lo que considero una <strong>privación importante</strong>: la ausencia de un diseño de interfaz personalizado.</p>

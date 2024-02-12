@@ -5,7 +5,7 @@ subtitle:   "Resumen de los resultados de la encuesta"
 date:       2019-11-17 21:00:00
 author:     "Aunitz Giménez"
 header-img: "img/post-bg-46.jpg"
-tags:       [desarrollo de aplicaciones web]
+tags:       [desarrollo de soluciones digitales]
 ---
 
 <p>Desde hace algunos años, el ingeniero de UI <a href="https://ashleynolan.co.uk/" target="_blank" rel="noopener noreferrer">Ashley Watson-Nolan</a>, con el apoyo económico de su amigo el diseñador y desarrollador web <a href="https://wesbos.com/" target="_blank" rel="noopener noreferrer">Wes Bos</a>, elabora una <a href="https://ashleynolan.co.uk/blog/frontend-tooling-survey-2019-results" target="_blank" rel="noopener noreferrer">interesante encuesta</a> sobre las <strong>herramientas que utilizan los desarrolladores front-end</strong>.</p>

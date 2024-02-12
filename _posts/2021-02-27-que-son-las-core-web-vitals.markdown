@@ -5,7 +5,7 @@ subtitle:   "Métricas básicas de experiencia de usuario"
 date:       2021-02-27 23:00:00
 author:     "Aunitz Giménez"
 header-img: "img/post-bg-67.jpg"
-tags:       [desarrollo de aplicaciones web, SEO]
+tags:       [desarrollo de soluciones digitales, SEO]
 ---
 
 <p>Google lleva mucho tiempo promoviendo <strong>buenas prácticas de usabilidad y experiencia de usuario </strong>en general. Para ello ha venido lanzando multitud de herramientas de medición (<a href="https://developers.google.com/web/tools/chrome-devtools" target="_blank" rel="noopener noreferrer">Chrome DevTools</a>, <a href="https://developers.google.com/web/tools/lighthouse" target="_blank" rel="noopener noreferrer">Lighthouse</a>, <a href="https://developers.google.com/speed/pagespeed/insights/?hl=es" target="_blank" rel="noopener noreferrer">PageSpeed Insights</a>, <a href="https://search.google.com/search-console/about" target="_blank" rel="noopener noreferrer">Google Search Console</a>, <a href="https://developers.google.com/web/tools/chrome-user-experience-report" target="_blank" rel="noopener noreferrer">Chrome User Experience Report</a>) así como iniciativas más generales como el <a href="https://amp.dev/" target="_blank" rel="noopener noreferrer">formato AMP</a> o los portales <a href="https://developers.google.com/web/fundamentals" target="_blank" rel="noopener noreferrer">Web Fundamentals</a> y <a href="https://web.dev/" target="_blank" rel="noopener noreferrer">web.dev</a>.</p>

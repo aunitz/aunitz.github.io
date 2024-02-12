@@ -5,7 +5,7 @@ subtitle:   "Guía práctica paso a paso"
 date:       2021-05-08 23:00:00
 author:     "Aunitz Giménez"
 header-img: "img/post-bg-71.jpg"
-tags:       [desarrollo de aplicaciones web]
+tags:       [desarrollo de soluciones digitales]
 ---
 
 <p>Este post es un tanto <em>off topic</em> dentro de la temática de este blog, pero creo que puede ser de interés para aquellos de vosotros que queráis <strong>publicar una web</strong> de manera sencilla, rápida y <strong>gratuita</strong>.</p>
