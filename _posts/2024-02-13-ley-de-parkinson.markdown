@@ -14,7 +14,7 @@ tags:       [leyes y principios de usabilidad, desarrollo de soluciones digitale
 
 <p>Las conclusiones a las que llegó Parkinson derivan de su amplia experiencia en la administración pública británica. Describen con carácter irónico y mordaz situaciones que tienden a producirse en algunas entidades fuertemente burocratizadas y estamentadas.</p>
 
-<p>La Ley de Parkinson nos enseña que <strong>las tareas se expanden para ocupar todo el tiempo disponible</strong> . Este concepto es de aplicación tanto en <a href="{{ site.baseurl }}{% post_url 2022-10-10-que-es-la-usabilidad-de-una-aplicacion %}">usabilidad del software</a> como, especialmente, en la <strong>gestión de proyectos</strong> , ya que nos recuerda la importancia de enfocarnos en la eficiencia y evitar complicaciones innecesarias. Al tener presente esta ley, podemos hacer nuestras interfaces más simples y nuestros proyectos más ágiles, asegurando que cada acción y diseño tenga un propósito específico y contribuya al objetivo final.</p>
+<p>La Ley de Parkinson nos enseña que <strong>las tareas se expanden para ocupar todo el tiempo disponible</strong>. Este concepto es de aplicación tanto en <a href="{{ site.baseurl }}{% post_url 2022-10-10-que-es-la-usabilidad-de-una-aplicacion %}">usabilidad del software</a> como, especialmente, en la <strong>gestión de proyectos</strong>, ya que nos recuerda la importancia de enfocarnos en la eficiencia y evitar complicaciones innecesarias. Al tener presente esta ley, podemos hacer nuestras interfaces más simples y nuestros proyectos más ágiles, asegurando que cada acción y diseño tenga un propósito específico y contribuya al objetivo final.</p>
 
 <h2>La Ley de Parkinson en usabilidad y experiencia de usuario</h2>
 
