@@ -55,6 +55,10 @@ a {
     text-decoration: $link-hover-decoration;
   }
 
+  &:visited {
+    color: #681da8;
+  }
+
   &:focus {
     @include tab-focus;
   }
