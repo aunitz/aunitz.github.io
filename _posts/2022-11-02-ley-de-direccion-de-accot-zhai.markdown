@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "Ley de dirección de Accot-Zhai"
-subtitle:   "{Leyes de usabilidad}"
+subtitle:   "Evita los recorridos largos y angostos"
 date:       2022-11-02 00:30:00
 author:     "Aunitz Giménez"
 header-img: "img/post-bg-83.jpg"
