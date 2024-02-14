@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "Principio de simetría"
-subtitle:   "{Leyes de usabilidad. Gestalt}"
+subtitle:   "Nuestro cerebro tiende a buscar la simetría"
 date:       2018-12-03 12:30:00
 author:     "Aunitz Giménez"
 header-img: "img/post-bg-31.jpg"
@@ -18,6 +18,6 @@ tags:       [leyes y principios de usabilidad, leyes y principios de la Gestalt]
 
 <p>Debido a este principio, en la imagen de arriba, percibirás tres pares de llaves de apertura y cierre. Incluso a pesar de que el <a href="{{ site.baseurl }}{% post_url 2018-01-22-ley-06-principio-de-la-proximidad %}">principio de la proximidad</a> que hemos visto en un post anterior podría sugerir que deberíamos agrupar visualmente las figuras de otro modo. Esto sugiere que la simetría tiene prioridad sobre la proximidad.</p>
 
-<p>Este principio de la percepción visual fue establecido por la escuela de psicología de la Gestalt. Una corriente de la psicología moderna, surgida en Alemania a principios del siglo XX.</p>
+<p>Este principio de la percepción visual fue establecido por la escuela de psicología de la <strong>Gestalt</strong>. Una corriente de la psicología moderna, surgida en Alemania a principios del siglo XX.</p>
 
-<p>Si quieres conocer más sobre sobre la escuela de la Gestalt y su principios sobre la percepción visual aplicados al diseño, puedes consultar <a href="https://www.smashingmagazine.com/2014/03/design-principles-visual-perception-and-the-principles-of-gestalt/" target="_blank" rel="noopener noreferrer">el siguiente artículo de Smashing Magazine</a>.</p>
+<p>Si quieres conocer más sobre sobre la escuela de la Gestalt y sus principios sobre la percepción visual aplicados al diseño, puedes consultar <a href="https://www.smashingmagazine.com/2014/03/design-principles-visual-perception-and-the-principles-of-gestalt/" target="_blank" rel="noopener noreferrer">el siguiente artículo de Smashing Magazine</a>.</p>
