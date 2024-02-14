@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "Ley de Hick"
-subtitle:   "{Leyes de usabilidad}"
+subtitle:   "El tiempo de reacción aumenta con el número de alternativas"
 date:       2018-01-21 20:00:00
 author:     "Aunitz Giménez"
 header-img: "img/post-bg-17.jpg"

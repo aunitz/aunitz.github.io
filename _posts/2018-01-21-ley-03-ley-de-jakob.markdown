@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "Ley de Jakob"
-subtitle:   "{Leyes de usabilidad}"
+subtitle:   "Utiliza convenciones establecidas"
 date:       2018-01-21 20:30:00
 author:     "Aunitz Giménez"
 header-img: "img/post-bg-18.jpg"

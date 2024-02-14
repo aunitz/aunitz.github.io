@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "Ley de Fitts"
-subtitle:   "{Leyes de usabilidad}"
+subtitle:   "El tiempo de selección depende de la distancia y el tamaño del objetivo"
 date:       2018-01-21 19:30:00
 author:     "Aunitz Giménez"
 header-img: "img/post-bg-16.jpg"

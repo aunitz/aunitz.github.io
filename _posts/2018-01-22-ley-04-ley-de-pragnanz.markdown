@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "Ley de Prägnanz"
-subtitle:   "{Leyes de usabilidad. Gestalt}"
+subtitle:   "Nuestra percepción tiende a organizarse en formas simples"
 date:       2018-01-22 19:00:00
 author:     "Aunitz Giménez"
 header-img: "img/post-bg-19.jpg"
@@ -18,7 +18,7 @@ tags:       [leyes y principios de usabilidad, leyes y principios de la Gestalt]
 
 <p><img src="{{ site.baseurl }}/img/ley-04-ley-de-pragnanz.png" loading="lazy" alt="Ilustración de la Ley 03 de usabilidad: Ley de Prägnanz" width="722" height="339"></p>
 
-<p>La Ley de Prägnanz es la principal ley general de la Gestalt. "Prägnanz" es una palabra alemana que puede traducirse como "concisión".</p>
+<p>La Ley de Prägnanz es la principal ley general de la <strong>Gestalt</strong>. Una corriente de la psicología moderna, surgida en Alemania a principios del siglo XX. "Prägnanz" es una palabra alemana que puede traducirse como "concisión".</p>
 
 <p>Aplicado al diseño, esta ley defiende la sencillez y la simplicidad como cualidades positivas del mismo.</p>
 
