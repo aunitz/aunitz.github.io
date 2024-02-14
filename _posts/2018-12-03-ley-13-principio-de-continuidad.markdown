@@ -1,7 +1,7 @@
 ---
 layout:               post
 title:                "Principio de continuidad"
-subtitle:             "{Leyes de usabilidad. Gestalt}"
+subtitle:             "La percepción sigue líneas y patrones visuales continuos"
 date:                 2018-12-03 13:00:00
 author:               "Aunitz Giménez"
 header-img-cdn:       "https://res.cloudinary.com/aunitz/image/upload/f_auto,q_auto/v1613934705/post-bg-14_sh5uki.jpg"
@@ -17,6 +17,6 @@ tags:                 [leyes y principios de usabilidad, leyes y principios de l
 
 <p>En la imagen de arriba, vemos un cruce de líneas y curvas, en lugar de cuatro segmentos de líneas y curvas distintos que se encuentran en un punto.</p>
 
-<p>Este principio de la percepción visual fue establecido por la escuela de psicología de la Gestalt. Una corriente de la psicología moderna, surgida en Alemania a principios del siglo XX.</p>
+<p>Este principio de la percepción visual fue establecido por la escuela de psicología de la <strong>Gestalt</strong>. Una corriente de la psicología moderna, surgida en Alemania a principios del siglo XX.</p>
 
-<p>Si quieres conocer más sobre sobre la escuela de la Gestalt y su principios sobre la percepción visual aplicados al diseño, puedes consultar <a href="https://www.smashingmagazine.com/2014/03/design-principles-visual-perception-and-the-principles-of-gestalt/" target="_blank" rel="noopener noreferrer">el siguiente artículo de Smashing Magazine</a>.</p>
+<p>Si quieres conocer más sobre sobre la escuela de la Gestalt y sus principios sobre la percepción visual aplicados al diseño, puedes consultar <a href="https://www.smashingmagazine.com/2014/03/design-principles-visual-perception-and-the-principles-of-gestalt/" target="_blank" rel="noopener noreferrer">el siguiente artículo de Smashing Magazine</a>.</p>
