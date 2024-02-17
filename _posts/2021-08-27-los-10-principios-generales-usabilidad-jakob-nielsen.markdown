@@ -14,7 +14,7 @@ tags:       [leyes y principios de usabilidad, memorandos]
 
 <figure>
     <img src="{{ site.baseurl }}/img/10-principios-generales-usabilidad-jakob-nielsen-01.jpg" loading="lazy" alt="Fotografía de Jakob Nielsen hablando en público" width="720" height="479">
-    <figcaption>“<a href="https://www.flickr.com/photos/rustybrick/1443380730">Jakob Nielsen</a>” por <a href="https://www.flickr.com/photos/rustybrick/" target="_blank" rel="noopener noreferrer">Barry Schwartz</a> licencia bajo <a href="https://creativecommons.org/licenses/by-nc/2.0/">CC BY-NC 2.0</a>.</figcaption>
+    <figcaption>“<a href="https://www.flickr.com/photos/rustybrick/1443380730" target="_blank" rel="noopener noreferrer">Jakob Nielsen</a>” por <a href="https://www.flickr.com/photos/rustybrick/" target="_blank" rel="noopener noreferrer">Barry Schwartz</a> licencia bajo <a href="https://creativecommons.org/licenses/by-nc/2.0/" target="_blank" rel="noopener noreferrer">CC BY-NC 2.0</a>.</figcaption>
 </figure>
 
 <p>Los 10 principios heurísticos de usabilidad de Jakob Nielsen han tenido una <strong>enorme influencia en todos los analistas de usabilidad</strong> que hemos venido trabajando en esta materia en todos estos años. De hecho, los incluyo como una referencia fundamental en la determinación de <a href="{{ site.baseurl }}{% post_url 2017-01-18-principios-usabilidad %}">mi propio listado de principios generales de usabilidad que aplico en la definición de interfaces de usuario</a>.</p>
