@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "Ley de Tesler"
-subtitle:   "{Leyes de usabilidad}"
+subtitle:   "Reduce la complejidad hasta lo razonable"
 date:       2018-01-23 19:00:00
 author:     "Aunitz Giménez"
 header-img: "img/post-bg-23.jpg"
