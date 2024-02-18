@@ -5,12 +5,12 @@ subtitle:   "Cuestionamiento de sus implicaciones éticas"
 date:       2021-08-08 21:30:00
 author:     "Aunitz Giménez"
 header-img: "img/post-bg-75.jpg"
-tags:       [ética, marketing]
+tags:       [ética, marketing, sesgos cognitivos]
 ---
 
-<p>Me resulta muy interesante y útil para mi trabajo conocer e investigar las implicaciones que tiene la <strong>psicología</strong> sobre la <strong>usabilidad</strong> de los interfaces de usuario. Es por ello por lo que <a href="{{ site.baseurl }}/tags/">he escrito mucho en este blog sobre principios y leyes de usabilidad</a> que en muchas ocasiones proceden directamente de las investigaciones de los psicólogos.</p>
+<p>Me resulta muy interesante y útil para mi trabajo conocer e investigar las implicaciones que tiene la <strong>psicología</strong> sobre la <strong>experiencia de usuario (UX) y la usabilidad</strong> de los interfaces de usuario. Es por ello por lo que <a href="{{ site.baseurl }}/tags/">he escrito mucho en este blog sobre principios y leyes de UX y usabilidad</a> que en muchas ocasiones proceden directamente de las investigaciones de los psicólogos.</p>
 
-<p>Además de las leyes y principios de usabilidad de las que se derivan las buenas prácticas de usabilidad, existe en psicología un concepto que también puede aplicarse al diseño de interfaces de usuario. Se trata de los <strong>sesgos cognitivos</strong>.</p>
+<p>Por otra parte, existe en psicología un concepto que también puede aplicarse al diseño de experiencias e interfaces de usuario. Se trata de los <strong>sesgos cognitivos</strong>.</p>
 
 <p><img src="{{ site.baseurl }}/img/uso-sesgos-cognitivos-marketing-01.jpg" loading="lazy" alt="" width="720" height="548"></p>
 
