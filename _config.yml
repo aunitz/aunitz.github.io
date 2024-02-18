@@ -37,4 +37,4 @@ permalink: /:title/
 paginate: 5
 exclude: [".vscode","bootstrap-sass","less","node_modules","package.json","README.md","LICENSE"]
 
-gems: [jekyll-paginate, jekyll-feed]
+gems: [jekyll-paginate, jekyll-feed, jekyll-redirect-from]
