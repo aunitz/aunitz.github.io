@@ -5,7 +5,7 @@ subtitle:   "El objetivo es simplificar y enfocarse en lo esencial"
 date:       2024-02-13 19:00:00 +0200
 author:     "Aunitz Giménez"
 header-img: "img/post-bg-96.jpg"
-tags:       [leyes y principios de usabilidad, desarrollo de soluciones digitales]
+tags:       [leyes y principios de experiencia de usuario (UX) y usabilidad, desarrollo de soluciones digitales]
 ---
 
 <p><strong><em>El trabajo se expande hasta ocupar todo el tiempo disponible para que se termine.</em></strong></p>
@@ -22,7 +22,7 @@ tags:       [leyes y principios de usabilidad, desarrollo de soluciones digitale
 
 <p><img src="{{ site.baseurl }}/img/ley-02-ley-de-hick.png" loading="lazy" alt="" width="724" height="428"></p>
 
-<p>Existen un gran número de leyes y principios de usabilidad que apoyan o van en la línea de buscar la simplicidad. Algunas de ellas ya tratadas en este blog: la <a href="{{ site.baseurl }}{% post_url 2018-01-22-ley-05-ley-de-miller %}">ley de Miller</a>, la <a href="{{ site.baseurl }}{% post_url 2018-01-22-ley-04-ley-de-pragnanz %}">ley de Prägnanz</a>, la <a href="{{ site.baseurl }}{% post_url 2018-01-21-ley-02-ley-de-hick %}">ley de Hick</a>, la <a href="{{ site.baseurl }}{% post_url 2018-01-23-ley-08-ley-de-tesler %}">ley de Tesler</a>, <a href="{{ site.baseurl }}{% post_url 2020-09-13-la-navaja-de-ockham %}">la navaja de Ockham</a>…</p>
+<p>Existen un gran número de leyes y principios de experiencia de usuario (UX) y usabilidad que apoyan o van en la línea de buscar la simplicidad. Algunas de ellas ya tratadas en este blog: la <a href="{{ site.baseurl }}{% post_url 2018-01-22-ley-05-ley-de-miller %}">ley de Miller</a>, la <a href="{{ site.baseurl }}{% post_url 2018-01-22-ley-04-ley-de-pragnanz %}">ley de Prägnanz</a>, la <a href="{{ site.baseurl }}{% post_url 2018-01-21-ley-02-ley-de-hick %}">ley de Hick</a>, la <a href="{{ site.baseurl }}{% post_url 2018-01-23-ley-08-ley-de-tesler %}">ley de Tesler</a>, <a href="{{ site.baseurl }}{% post_url 2020-09-13-la-navaja-de-ockham %}">la navaja de Ockham</a>…</p>
 
 <h2>La Ley de Parkinson en la gestión de proyectos</h2>
 

@@ -5,7 +5,7 @@ subtitle:   "La desigualdad participativa en internet"
 date:       2022-10-16 14:30:00
 author:     "Aunitz Giménez"
 header-img: "img/post-bg-82.jpg"
-tags:       [leyes y principios de usabilidad]
+tags:       [leyes y principios de experiencia de usuario (UX) y usabilidad]
 ---
 
 <p>La <strong>regla del 90-9-1</strong> fue <a href="https://www.nngroup.com/articles/participation-inequality/" target="_blank" rel="noopener noreferrer">formulada en 2006</a> por el experto mundial en usabilidad web <a href="{{ site.baseurl }}{% post_url 2021-08-27-los-10-principios-generales-usabilidad-jakob-nielsen %}">Jakob Nielsen</a>.</p>

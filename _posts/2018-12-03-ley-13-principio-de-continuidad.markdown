@@ -6,7 +6,7 @@ date:                 2018-12-03 13:00:00
 author:               "Aunitz Giménez"
 header-img-cdn:       "https://res.cloudinary.com/aunitz/image/upload/f_auto,q_auto/v1613934705/post-bg-14_sh5uki.jpg"
 header-img-cdn-mini:  "https://res.cloudinary.com/aunitz/image/upload/c_scale,f_auto,q_auto,w_414/v1613934705/post-bg-14_sh5uki.jpg"
-tags:                 [leyes y principios de usabilidad, leyes y principios de la Gestalt]
+tags:                 [leyes y principios de experiencia de usuario (UX) y usabilidad, leyes y principios de la Gestalt]
 ---
 
 <p><em><strong>Los elementos dispuestos en una línea o curva se perciben como relacionados.</strong></em></p>

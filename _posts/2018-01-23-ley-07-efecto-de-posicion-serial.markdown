@@ -5,7 +5,7 @@ subtitle:   "Recordarán mejor el primero y el último"
 date:       2018-01-23 18:00:00
 author:     "Aunitz Giménez"
 header-img: "img/post-bg-22.jpg"
-tags:       [leyes y principios de usabilidad]
+tags:       [leyes y principios de experiencia de usuario (UX) y usabilidad]
 ---
 
 <p><em><strong>Los usuarios tienden a recordar mejor el primer y último elemento de una serie.</strong></em></p>

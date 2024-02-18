@@ -5,7 +5,7 @@ subtitle:   "Nuestro cerebro tiende a buscar la simetría"
 date:       2018-12-03 12:30:00
 author:     "Aunitz Giménez"
 header-img: "img/post-bg-31.jpg"
-tags:       [leyes y principios de usabilidad, leyes y principios de la Gestalt]
+tags:       [leyes y principios de experiencia de usuario (UX) y usabilidad, leyes y principios de la Gestalt]
 ---
 
 <p><em><strong>Tendemos a percibir los objetos como formas simétricas que se distribuyen alrededor de un centro.</strong></em></p>

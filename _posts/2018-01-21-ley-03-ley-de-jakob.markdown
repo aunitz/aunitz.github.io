@@ -5,7 +5,7 @@ subtitle:   "Utiliza convenciones establecidas"
 date:       2018-01-21 20:30:00
 author:     "Aunitz Giménez"
 header-img: "img/post-bg-18.jpg"
-tags:       [leyes y principios de usabilidad]
+tags:       [leyes y principios de experiencia de usuario (UX) y usabilidad]
 ---
 
 <p><em><strong>Los usuarios pasan más tiempo en OTROS sitios que en el TUYO.</strong></em></p>

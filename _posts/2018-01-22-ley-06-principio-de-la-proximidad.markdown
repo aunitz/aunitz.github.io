@@ -5,7 +5,7 @@ subtitle:   "Elementos cercanos se perciben como relacionados"
 date:       2018-01-22 21:45:00
 author:     "Aunitz Giménez"
 header-img: "img/post-bg-21.jpg"
-tags:       [leyes y principios de usabilidad, leyes y principios de la Gestalt]
+tags:       [leyes y principios de experiencia de usuario (UX) y usabilidad, leyes y principios de la Gestalt]
 ---
 
 <p><em><strong>Los objetos que están más juntos son percibidos como más relacionados que los que están más separados.</strong></em></p>

@@ -5,7 +5,7 @@ subtitle:   "Te fijarás en el que difiere"
 date:       2018-01-23 20:30:00
 author:     "Aunitz Giménez"
 header-img: "img/post-bg-24.jpg"
-tags:       [leyes y principios de usabilidad]
+tags:       [leyes y principios de experiencia de usuario (UX) y usabilidad]
 ---
 
 <p><em><strong>Cuando hay varios objetos similares presentes, es más probable que se recuerde el que difiere del resto.</strong></em></p>
