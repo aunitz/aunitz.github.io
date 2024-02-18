@@ -5,7 +5,7 @@ subtitle:   "Estos son mis principios. Si no le gustan tengo otros. ;)"
 date:       2017-01-18 09:30:00
 author:     "Aunitz Giménez"
 header-img: "img/post-bg-02.jpg"
-tags:       [leyes y principios de usabilidad]
+tags:       [leyes y principios de experiencia de usuario (UX) y usabilidad]
 ---
 
 <p>Los principios generales de usabilidad que vengo aplicando en la definición de interfaces de usuario, durante los últimos años, se resumen en los que listo a continuación.</p>
