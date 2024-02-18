@@ -5,7 +5,7 @@ subtitle:   "No sé que no sé nada ;)"
 date:       2024-02-17 10:00:00 +0200
 author:     "Aunitz Giménez"
 header-img: "img/post-bg-97.jpg"
-tags:       [leyes y principios de usabilidad]
+tags:       [leyes y principios de experiencia de usuario (UX) y usabilidad]
 ---
 
 <p><strong><em>Es la tendencia de los individuos incompetentes a sobreestimar su propia habilidad, y de los individuos altamente competentes a subestimar su propia habilidad.</em></strong></p>
