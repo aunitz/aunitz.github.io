@@ -18,6 +18,6 @@ tags:       [leyes y principios de experiencia de usuario (UX) y usabilidad, ley
 
 <p>Debido a este principio, en usabilidad es común aconsejar que se utilicen convenciones de diseño establecidas. Como hace el gran <a href="https://www.nngroup.com/people/jakob-nielsen/" target="_blank" rel="noopener noreferrer">Jakob Nielsen</a> en su irónica <a href="{{ site.baseurl }}{% post_url 2018-01-21-ley-03-ley-de-jakob %}">Ley de Jakob</a>. Aunque nuevamente es importante recordar que no todos compartimos las mismas experiencias.</p>
 
-<p>Este principio de la percepción visual fue establecido por la escuela de psicología de la <strong>Gestalt</strong>strong>. Una corriente de la psicología moderna, surgida en Alemania a principios del siglo XX.</p>
+<p>Este principio de la percepción visual fue establecido por la escuela de psicología de la <strong>Gestalt</strong>. Una corriente de la psicología moderna, surgida en Alemania a principios del siglo XX.</p>
 
 <p>Si quieres conocer más sobre sobre la escuela de la Gestalt y sus principios sobre la percepción visual aplicados al diseño, puedes consultar <a href="https://www.smashingmagazine.com/2014/03/design-principles-visual-perception-and-the-principles-of-gestalt/" target="_blank" rel="noopener noreferrer">el siguiente artículo de Smashing Magazine</a>.</p>
