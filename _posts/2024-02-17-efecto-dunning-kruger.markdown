@@ -57,4 +57,4 @@ tags:       [leyes y principios de experiencia de usuario (UX) y usabilidad, ses
 
 <p>En conclusión, <strong>la autoevaluación y el aprendizaje continuo</strong> no solo son antídotos contra el Efecto Dunning-Kruger, sino que también son fundamentales para el desarrollo de soluciones de UX que sean verdaderamente usables y efectivas. Al abrazar estos principios, podemos superar nuestras limitaciones percibidas y avanzar hacia la creación de experiencias digitales que satisfagan y deleiten a los usuarios en un mundo tecnológicamente avanzado y en constante cambio.</p>
 
-<p>Si quieres conocer más sobre esta ley, puedes partir de <a href="https://es.wikipedia.org/wiki/Efecto_Dunning-Kruger" target="_blank" rel="noopener noreferrer">su artículo en la Wikipedia</a> .</p>
+<p>Si quieres conocer más sobre este efecto, puedes partir de <a href="https://es.wikipedia.org/wiki/Efecto_Dunning-Kruger" target="_blank" rel="noopener noreferrer">su artículo en la Wikipedia</a> .</p>
