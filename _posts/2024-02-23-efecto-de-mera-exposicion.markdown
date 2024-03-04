@@ -38,7 +38,7 @@ tags:       [leyes y principios de experiencia de usuario (UX) y usabilidad, ses
 
 <p>Para ilustrar esta fatiga, Zajonc hizo alusión a una relación logarítmica que se incrementa hasta llegar a un “efecto techo”. Otros investigadores hacen referencia a una relación que puede representarse en forma de U invertida.</p>
 
-<p>Para aprovechar al máximo el efecto de mera exposición en UX, los diseñadores deben ser conscientes de estos equilibrios y emplear estrategias que armonicen lo familiar con lo novedoso. Esto implica realizar <a href="https://www.aunitz.net/que-es-un-test-de-usabilidad-con-personas-usuarias/">test de usabilidad con personas usuarias</a> frecuentes para evaluar cómo la familiaridad afecta la experiencia de usuario y ajustar el diseño en consecuencia. Al hacerlo, podemos crear productos que no solo sean fáciles de usar y atractivos, sino que mejoraren la experiencia global del usuario.</p>
+<p>Para aprovechar al máximo el efecto de mera exposición en UX, los diseñadores deben ser conscientes de estos equilibrios y emplear estrategias que armonicen lo familiar con lo novedoso. Esto implica realizar <a href="{{ site.baseurl }}{% post_url 2023-05-04-que-es-un-test-de-usabilidad-con-personas-usuarias %}">test de usabilidad con personas usuarias</a> frecuentes para evaluar cómo la familiaridad afecta la experiencia de usuario y ajustar el diseño en consecuencia. Al hacerlo, podemos crear productos que no solo sean fáciles de usar y atractivos, sino que mejoraren la experiencia global del usuario.</p>
 
 <p><img src="{{ site.baseurl }}/img/efecto-de-mera-exposicion.jpg" loading="lazy" alt="" width="720" height="405"></p>
 
@@ -51,8 +51,8 @@ tags:       [leyes y principios de experiencia de usuario (UX) y usabilidad, ses
 <p>Este sesgo cognitivo subyace en otros principios y leyes de usabilidad ya tratados en este blog como son:</p>
 
 <ul>
-    <li><a href="https://www.aunitz.net/ley-03-ley-de-jakob/">La Ley de Jakob</a>. Cuyo corolario puede ser: utiliza convenciones establecidas.</li>
-    <li><a href="https://www.aunitz.net/ley-16-principio-de-experiencia/">El principio de experiencia</a>. Un principio de percepción visual establecido por la escuela de psicología de la Gestalt y que se resume en: los elementos tienden a ser percibidos de acuerdo con la experiencia pasada del observador.</li>
+    <li><a href="{{ site.baseurl }}{% post_url 2018-01-21-ley-03-ley-de-jakob %}">La Ley de Jakob</a>. Cuyo corolario puede ser: utiliza convenciones establecidas.</li>
+    <li><a href="{{ site.baseurl }}{% post_url 2018-12-08-ley-16-principio-de-experiencia %}">El principio de experiencia</a>. Un principio de percepción visual establecido por la escuela de psicología de la Gestalt y que se resume en: los elementos tienden a ser percibidos de acuerdo con la experiencia pasada del observador.</li>
 </ul>
 
-<p>Y por último un post dedicado específicamente al uso de convenciones que sean consistentes con el aprendizaje previo de los usuarios y que se titula “<a href="https://www.aunitz.net/tip-8-utiliza-convenciones/">No reinventes la rueda: utiliza convenciones</a>”.</p>
+<p>Y por último un post dedicado específicamente al uso de convenciones que sean consistentes con el aprendizaje previo de los usuarios y que se titula “<a href="{{ site.baseurl }}{% post_url 2017-11-04-tip-8-utiliza-convenciones %}">No reinventes la rueda: utiliza convenciones</a>”.</p>
