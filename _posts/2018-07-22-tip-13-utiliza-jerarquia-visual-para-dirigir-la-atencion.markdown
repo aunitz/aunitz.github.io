@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "Utiliza la jerarquía visual para dirigir la atención"
-subtitle:   "{Tip 13 de usabilidad}"
+subtitle:   "Separar los elementos de un interfaz"
 date:       2018-07-22 18:00:00
 author:     "Aunitz Giménez"
 header-img: "img/post-bg-29.jpg"

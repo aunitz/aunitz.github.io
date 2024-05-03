@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "Botones Aceptar y Cancelar, ¿en qué orden los situamos?"
-subtitle:   "{Tip 18 de usabilidad}"
+subtitle:   "Lo más importante es mantener la consistencia"
 date:       2020-02-20 16:40:00
 author:     "Aunitz Giménez"
 header-img: "img/post-bg-50.jpg"

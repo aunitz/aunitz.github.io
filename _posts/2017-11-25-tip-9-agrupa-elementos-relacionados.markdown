@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "Agrupa los elementos relacionados"
-subtitle:   "{Tip 9 de usabilidad}"
+subtitle:   "Este consejo de usabilidad se deriva del principio de consistencia"
 date:       2017-11-25 21:15:00
 author:     "Aunitz Giménez"
 header-img: "img/post-bg-13.jpg"

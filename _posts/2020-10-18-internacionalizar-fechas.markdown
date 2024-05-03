@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "Internacionalizar fechas"
-subtitle:   "{Tip 19 de usabilidad}"
+subtitle:   "No existe una solución ideal para este problema"
 date:       2020-10-18 10:30:00
 author:     "Aunitz Giménez"
 header-img: "img/post-bg-57.jpg"

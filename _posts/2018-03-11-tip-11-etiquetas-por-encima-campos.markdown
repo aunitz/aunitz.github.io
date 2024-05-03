@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "Las etiquetas de los campos, mejor por encima"
-subtitle:   "{Tip 11 de usabilidad}"
+subtitle:   "Nunca prescindas de las etiquetas"
 date:       2018-03-11 12:00:00
 author:     "Aunitz Giménez"
 header-img: "img/post-bg-28.jpg"

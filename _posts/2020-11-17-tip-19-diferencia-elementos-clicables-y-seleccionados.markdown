@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "Diferencia claramente los elementos clicables y/o seleccionados"
-subtitle:   "{Tip 20 de usabilidad}"
+subtitle:   "Como por ejemplo los botones y los enlaces"
 date:       2020-11-17 17:00:00
 author:     "Aunitz Giménez"
 header-img: "img/post-bg-59.jpg"

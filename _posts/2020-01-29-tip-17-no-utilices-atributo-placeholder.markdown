@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "No utilices el atributo placeholder"
-subtitle:   "{Tip 17 de usabilidad}"
+subtitle:   "En ningún caso debe sustituir al label"
 date:       2020-01-29 22:15:00
 author:     "Aunitz Giménez"
 header-img: "img/post-bg-49.jpg"

@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "Reduce el número de campos de los formularios"
-subtitle:   "{Tip 4 de usabilidad}"
+subtitle:   "Cuantos menos campos mejor"
 date:       2017-03-09 09:30:00
 author:     "Aunitz Giménez"
 header-img: "img/post-bg-01.jpg"

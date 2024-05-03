@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "Alineación (posición) recomendada para los botones de un formulario"
-subtitle:   "{Tip 20 de usabilidad}"
+subtitle:   "En general, abajo a la izquierda"
 date:       2021-02-07 22:00:00
 author:     "Aunitz Giménez"
 header-img: "img/post-bg-65.jpg"

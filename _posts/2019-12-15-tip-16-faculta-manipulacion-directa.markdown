@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "Faculta la manipulación directa de los elementos a modificar"
-subtitle:   "{Tip 16 de usabilidad}"
+subtitle:   "A la menor distancia posible"
 date:       2019-12-15 20:30:00
 author:     "Aunitz Giménez"
 header-img: "img/post-bg-47.jpg"

@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "No ocultes opciones importantes tras menús desplegables"
-subtitle:   "{Tip 7 de usabilidad}"
+subtitle:   "Evitar ocultar información relevante al usuario"
 date:       2017-11-01 17:30:00
 author:     "Aunitz Giménez"
 header-img: "img/post-bg-03.jpg"

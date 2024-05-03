@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "Plantéate alternativas al carrusel"
-subtitle:   "{Tip 10 de usabilidad}"
+subtitle:   "Los carruseles no son ni buenos ni malos en sí mismos"
 date:       2018-01-07 18:30:00
 author:     "Aunitz Giménez"
 header-img: "img/post-bg-15.jpg"

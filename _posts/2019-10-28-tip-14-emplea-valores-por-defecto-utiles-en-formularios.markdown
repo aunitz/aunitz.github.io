@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "Emplea valores por defecto útiles en los formularios"
-subtitle:   "{Tip 14 de usabilidad}"
+subtitle:   "Ahorramos trabajo a la persona usuaria"
 date:       2019-10-28 18:00:00
 author:     "Aunitz Giménez"
 header-img: "img/post-bg-39.jpg"

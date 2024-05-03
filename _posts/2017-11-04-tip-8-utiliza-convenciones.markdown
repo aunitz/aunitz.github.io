@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "No reinventes la rueda: utiliza convenciones"
-subtitle:   "{Tip 8 de usabilidad}"
+subtitle:   "Utiliza estándares comúnmente aceptados"
 date:       2017-11-04 11:30:00
 author:     "Aunitz Giménez"
 header-img: "img/post-bg-12.jpg"
