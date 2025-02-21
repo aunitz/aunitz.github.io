@@ -8,7 +8,7 @@ header-img: "img/post-bg-102.jpg"
 tags:       [legislación, cookies]
 ---
 
-<p><strong>Aviso sobre este artículo:</strong> aunque tengo conocimientos académicos en derecho, no soy jurista ni especialista en la materia, por lo que algunas afirmaciones podrían contener imprecisiones o interpretaciones erróneas. Si detectas alguna, te invito a comentarlo en <a href="https://egoitza.gipuzkoa.eus/" target="_blank" rel="noopener noreferrer">esta publicación de LinkedIn</a>. Actualizaré el artículo si resulta pertinente. ¡Muchas gracias de antemano por tu colaboración!</p>
+<p><strong>Aviso sobre este artículo:</strong> aunque tengo conocimientos académicos en derecho, no soy jurista ni especialista en la materia, por lo que algunas afirmaciones podrían contener imprecisiones o interpretaciones erróneas. Si detectas alguna, te invito a comentarlo en <a href="https://www.linkedin.com/posts/aunitz_aviso-de-cookies-en-portales-de-la-administraci%C3%B3n-activity-7298790172739960832-va37" target="_blank" rel="noopener noreferrer">esta publicación de LinkedIn</a>. Actualizaré el artículo si resulta pertinente. ¡Muchas gracias de antemano por tu colaboración!</p>
 
 <p>Para elaborar este post, me he basado en tres documentos muy útiles y divulgativos publicados por la Agencia Española de Protección de Datos (AEPD):</p>
 
@@ -93,7 +93,7 @@ tags:       [legislación, cookies]
 
 <h2>¿Hay que pedir consentimiento para utilizar Google Analytics?</h2>
 
-<p>No estoy completamente seguro en este aspecto. Si tienes información al respecto, te agradeceré mucho que la compartas en <a href="https://egoitza.gipuzkoa.eus/" target="_blank" rel="noopener noreferrer">esta publicación de Linkedin</a>; actualizaré el artículo si resulta pertinente.</p>
+<p>No estoy completamente seguro en este aspecto. Si tienes información al respecto, te agradeceré mucho que la compartas en <a href="https://www.linkedin.com/posts/aunitz_aviso-de-cookies-en-portales-de-la-administraci%C3%B3n-activity-7298790172739960832-va37" target="_blank" rel="noopener noreferrer">esta publicación de Linkedin</a>; actualizaré el artículo si resulta pertinente.</p>
 
 <p>Entiendo que Google Analytics forma parte de los servicios de terceros que utilizan cookies. Como consecuencia, el portal web pasaría a considerarse un “servicio de la sociedad de la información” según la LSSI, lo que implica la obligación de obtener el consentimiento para el uso de cookies.</p>
 
