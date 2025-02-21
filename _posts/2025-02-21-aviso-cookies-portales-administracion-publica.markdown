@@ -57,9 +57,9 @@ tags:       [legislación, cookies]
 
 <p>Como mencioné anteriormente, si el portal web de una AAPP es considerado un servicio de la sociedad de la información según la LSSI, debe cumplir los mismos requisitos que una entidad privada, incluido el consentimiento para el uso de cookies, entre otros.</p>
 
-<p>La clave está en determinar cuándo se considera un “servicio de la sociedad de la información” y cuándo no.</p>
-
 <p>Lo primero que hay que tener en cuenta es que la aplicabilidad de la LSSI debe analizarse por separado para cada dominio, canal y servicio que ofrezca una AAPP.</p>
+
+<p>La clave está en determinar cuándo se considera un “servicio de la sociedad de la información” y cuándo no.</p>
 
 <p>Os recomiendo consultar las <a href="https://www.aepd.es/guias/orientaciones-analitica-web-aapp.pdf" target="_blank" rel="noopener noreferrer">Orientaciones sobre cookies y analítica web en portales de las Administraciones Públicas</a> para comprender mejor este concepto.</p>
 
