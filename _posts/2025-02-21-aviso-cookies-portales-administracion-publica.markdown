@@ -87,11 +87,7 @@ tags:       [legislación, cookies]
 
 <p>En el caso de los servicios web de terceros, pueden incluirse <strong>algunos servicios de analítica web</strong>.</p>
 
-<p>Los servicios de analítica web son un caso delicado porque son muy utilizados en todo tipo de webs. La <a href="https://www.aepd.es/guias/guia-cookies-analiticas-externas.pdf" target="_blank" rel="noopener noreferrer">Guía sobre el uso de cookies para herramientas de medición de audiencia</a> de la AEPD explica en qué condiciones las cookies utilizadas con el fin de obtener estadísticas de tráfico o de rendimiento podrían estar exentas de consentimiento.</p>
-
 <p>Los servicios de analítica web son un caso delicado, ya que se utilizan ampliamente en todo tipo de sitios web. La <a href="https://www.aepd.es/guias/guia-cookies-analiticas-externas.pdf" target="_blank" rel="noopener noreferrer">Guía sobre el uso de cookies para herramientas de medición de audiencia</a> de la AEPD explica en qué condiciones las cookies empleadas para obtener estadísticas de tráfico o medir el rendimiento podrían estar exentas de consentimiento.</p>
-
-<p>La lista de requisitos se puede consultar en la Guía. Considero que es muy restrictiva y difícil de cumplir. Por ejemplo, prescribe que la información recopilada se conservará durante un período máximo de veinticinco meses.</p>
 
 <p>La lista de requisitos puede consultarse en la Guía. A mi juicio, es muy restrictiva y difícil de cumplir. Por ejemplo, establece que la información recopilada solo podrá conservarse por un máximo de veinticinco meses.</p>
 
