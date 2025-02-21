@@ -2,7 +2,7 @@
 layout:     post
 title:      "Aviso de cookies en portales de la Administración Pública española"
 subtitle:   "No siempre es obligatorio obtener el consentimiento de la persona usuaria"
-date:       2025-02-2107 17:30:00 +0100
+date:       2025-02-21 17:30:00 +0100
 author:     "Aunitz Giménez"
 header-img: "img/post-bg-102.jpg"
 tags:       [legislación, cookies]
