@@ -5,7 +5,7 @@ subtitle:   "No hay atajos para lograr la accesibilidad"
 date:       2024-01-17 15:30:00 +0200
 author:     "Aunitz Giménez"
 header-img: "img/post-bg-88.jpg"
-tags:       [buenas prácticas de accesibilidad]
+tags:       [accesibilidad]
 ---
 
 <p>En <a href="https://www.nngroup.com/" target="_blank" rel="noopener noreferrer">la web de Nielsen Norman Group</a> han publicado recientemente un interesante vídeo sobre la utilidad de los widgets de accesibilidad.</p>

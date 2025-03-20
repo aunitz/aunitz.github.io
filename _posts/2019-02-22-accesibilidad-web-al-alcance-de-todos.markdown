@@ -5,7 +5,7 @@ subtitle:   "Con estas pautas básicas incrementarás considerablemente la acces
 date:       2019-02-22 12:30:00
 author:     "Aunitz Giménez"
 header-img: "img/post-bg-36.jpg"
-tags:       [buenas prácticas de accesibilidad]
+tags:       [accesibilidad]
 ---
 
 <h2>Qué es la accesibilidad web</h2>

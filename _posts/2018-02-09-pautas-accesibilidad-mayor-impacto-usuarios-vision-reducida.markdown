@@ -5,7 +5,7 @@ subtitle:   "Todos tendremos visión reducida en algún momento"
 date:       2018-02-09 18:00:00
 author:     "Aunitz Giménez"
 header-img: "img/post-bg-27.jpg"
-tags:       [buenas prácticas de accesibilidad]
+tags:       [accesibilidad]
 ---
 
 <p>Con este artículo voy a iniciar una serie dedicada a divulgar aquellas pautas de accesibilidad que tienen un <strong>mayor impacto práctico</strong> en el día a día de los usuarios con algún tipo de discapacidad.</p>
