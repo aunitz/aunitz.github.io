@@ -14,17 +14,17 @@ tags:       [legislación, accesibilidad]
 
 <p><img src="{{ site.baseurl }}/img/accesibilidad-digital-legislacion-espana-01.jpg" loading="lazy" alt="" width="720" height="404"></p>
 
-<p>El tema de la legislación sobre accesibilidad digital en España es complejo. Este post pretende ser un resumen lo más breve, conciso y práctico posible que sirva para conocer de manera rápida qué normativa se debe aplicar en cada proyecto digital.</p>
+<p>El tema de la legislación sobre accesibilidad digital en España es complejo. Esta publicación pretende ofrecer un resumen lo más breve, conciso y práctico posible, que permita conocer de forma rápida qué normativa debe aplicarse en cada proyecto digital.</p>
 
-<p>La fuente principal de la información es el extraordinario post “<a href="https://olgacarreras.blogspot.com/2005/01/referencia-sobre-legislacin-espaola.html" target="_blank" rel="noopener noreferrer">Legislación sobre accesibilidad digital en España, Europa y otros países</a>” de la especialista en accesibilidad digital Olga Carreras. El post de Olga es muy detallado y preciso, lo publicó originalmente el año 2008 y lo va actualizando periódicamente cada vez que surge alguna modificación en la normativa. Si quieres profundizar sobre este tema, te recomiendo encarecidamente que consultes su post.</p>
+<p>La fuente principal de esta información es la completísima publicación “<a href="https://olgacarreras.blogspot.com/2005/01/referencia-sobre-legislacin-espaola.html" target="_blank" rel="noopener noreferrer">Legislación sobre accesibilidad digital en España, Europa y otros países</a>”, de la especialista en accesibilidad digital Olga Carreras. Su artículo, muy detallado y preciso, fue publicado originalmente en 2008 y lo actualiza periódicamente cada vez que se produce alguna modificación en la normativa. Si deseas profundizar en este tema, te recomiendo encarecidamente que consultes su publicación.</p>
 
-<h2>Obligaciones en la Administración Pública</h2>
+<h2>Obligaciones en la Administración pública</h2>
 
 <p><img src="{{ site.baseurl }}/img/accesibilidad-digital-legislacion-espana-02.jpg" loading="lazy" alt="" width="720" height="410"></p>
 
 <h3>Resumen</h3>
 
-<p><strong>Todos los sitios web y aplicaciones móviles de la Administración Pública deben ser accesibles.</strong></p>
+<p><strong>Todos los sitios web y las aplicaciones móviles de la Administración pública deben ser accesibles.</strong></p>
 
 <ul>
 	<li><strong>Sitios web:</strong> deben cumplir con la versión más reciente de la EN 301 549, actualmente equiparada al <strong>nivel AA</strong> de las WCAG 2.1, pero que incluye más requisitos que estas.</li>
@@ -57,7 +57,7 @@ tags:       [legislación, accesibilidad]
 
 <h3>Plazos de cumplimiento</h3>
 
-<p>El decreto establece diferentes plazos transitorios según distintos escenarios. Sin embargo, a día de hoy, todos los plazos han vencido. Por lo que todos los sitios web y aplicaciones móviles de la Administración Pública deben ser accesibles.</p>
+<p>El decreto establece distintos plazos transitorios según el escenario. Sin embargo, a día de hoy, todos ellos han vencido, por lo que todos los sitios web y las aplicaciones móviles de la Administración pública deben ser accesibles.</p>
 
 <h2>Obligaciones en el sector privado</h2>
 
@@ -65,7 +65,7 @@ tags:       [legislación, accesibilidad]
 
 <h3>Resumen</h3>
 
-<p>Deben ser accesibles los sitios web y aplicaciones móviles cuyo contenido se refiera a "bienes y servicios a disposición del público". Es decir, <strong>no aplica a todos los sitios web y aplicaciones móviles</strong>, como ocurre en la Administración Pública. A continuación, se detallarán los casos en los que esta normativa es aplicable.</p>
+<p>Deben ser accesibles los sitios web y aplicaciones móviles cuyo contenido se refiera a "bienes y servicios a disposición del público". Es decir, <strong>no aplica a todos los sitios web y aplicaciones móviles</strong>, como ocurre en la Administración pública. A continuación, se detallarán los casos en los que esta normativa es aplicable.</p>
 
 <ul>
 	<li><strong>Sitios web:</strong> deben cumplir con la versión más reciente de la UNE-EN 301549, actualmente equiparada al nivel AA de las WCAG 2.1, pero que incluye más requisitos que estas.</li>
@@ -121,7 +121,7 @@ tags:       [legislación, accesibilidad]
 
 <h2>Aclaraciones sobre la norma EN 301 549 y la norma UNE-EN 301549</h2>
 
-<p>Resumen:<strong> son lo mismo</strong>. Y son <strong>equivalentes al nivel AA de las WCAG 2.1</strong>, pero incluyen algunos requisitos más que estas.</p>
+<p><strong>Resumen: son lo mismo y equivalen al nivel AA de las WCAG 2.1, aunque incorporan algunos requisitos adicionales.</strong></p>
 
 <p><img src="{{ site.baseurl }}/img/accesibilidad-digital-legislacion-espana-04.jpg" loading="lazy" alt="" width="720" height="404"></p>
 
@@ -133,7 +133,7 @@ tags:       [legislación, accesibilidad]
 
 <h2>Convención sobre los derechos de las personas con discapacidad de la ONU</h2>
 
-<p>En la Asamblea General de las Naciones Unidas del 13 de diciembre de 2006 se aprobó la "<a href="https://www.un.org/esa/socdev/enable/documents/tccconvs.pdf" target="_blank" rel="noopener noreferrer">Convención sobre los derechos de las personas con discapacidad (PDF, 230 KB)</a>". Este acuerdo merece ser mencionado porque supuso un hito en la protección de los derechos de las personas con discapacidad, y en ella está el origen de muchas de las leyes actuales sobre accesibilidad.</p>
+<p>En la Asamblea General de las Naciones Unidas del 13 de diciembre de 2006 se aprobó la "<a href="https://www.un.org/esa/socdev/enable/documents/tccconvs.pdf" target="_blank" rel="noopener noreferrer">Convención sobre los derechos de las personas con discapacidad (PDF, 230 KB)</a>". Este acuerdo merece ser mencionado porque supuso un hito en la protección de los derechos de las personas con discapacidad, y en él se encuentra el origen de muchas de las leyes actuales sobre accesibilidad.</p>
 
 <p><img src="{{ site.baseurl }}/img/accesibilidad-digital-legislacion-espana-05.jpg" loading="lazy" alt="" width="720" height="410"></p>
 
