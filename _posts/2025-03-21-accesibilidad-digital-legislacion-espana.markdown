@@ -10,7 +10,7 @@ tags:       [legislación, accesibilidad]
 
 <p><strong>Última actualización de este post:</strong> 21 de marzo de 2025</p>
 
-<p><strong>Aviso sobre este artículo:</strong> aunque tengo conocimientos académicos en derecho, no soy jurista ni especialista en la materia, por lo que algunas afirmaciones podrían contener imprecisiones o interpretaciones erróneas. Si detectas alguna, te invito a comentarlo en <a href="https://www.linkedin.com/posts/aunitz_aviso-de-cookies-en-portales-de-la-administraci%C3%B3n-activity-7298790172739960832-va37" target="_blank" rel="noopener noreferrer">esta publicación de LinkedIn</a>. Actualizaré el artículo si resulta pertinente. ¡Muchas gracias de antemano por tu colaboración!</p>
+<p><strong>Aviso sobre este artículo:</strong> aunque tengo conocimientos académicos en derecho, no soy jurista ni especialista en la materia, por lo que algunas afirmaciones podrían contener imprecisiones o interpretaciones erróneas. Si detectas alguna, te invito a comentarlo en <a href="https://www.linkedin.com/posts/aunitz_accesibilidad-digital-legislaci%C3%B3n-vigente-activity-7308802245586771968-d3_2" target="_blank" rel="noopener noreferrer">esta publicación de LinkedIn</a>. Actualizaré el artículo si resulta pertinente. ¡Muchas gracias de antemano por tu colaboración!</p>
 
 <p><img src="{{ site.baseurl }}/img/accesibilidad-digital-legislacion-espana-01.jpg" loading="lazy" alt="" width="720" height="404"></p>
 
