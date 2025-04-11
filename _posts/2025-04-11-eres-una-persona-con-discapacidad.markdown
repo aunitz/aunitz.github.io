@@ -18,7 +18,7 @@ tags:       [accesibilidad]
 
 <p>Tú también lo eres. Imagina que estás en una biblioteca en la que, lógicamente, debes guardar silencio. No dispones de auriculares y necesitas consultar un vídeo de YouTube. Te vendrá muy bien que este disponga de subtítulos o que cuente con una transcripción a texto de su contenido. Como las personas sordas.</p>
 
-<p><img src="{{ site.baseurl }}/img/eres-una-persona-con-discapacidad-01.jpg" loading="lazy" alt="" width="720" height="480"></p>
+<p><img src="{{ site.baseurl }}/img/eres-una-persona-con-discapacidad-01.jpg" loading="lazy" alt="Una joven frustrada mira su móvil en un autobús abarrotado de gente, con un ambiente caótico a su alrededor." width="720" height="480"></p>
 
 <p>Algunos ejemplos más:</p>
 <ul>
@@ -33,7 +33,7 @@ tags:       [accesibilidad]
 
 <p>Vale… las personas en silla de ruedas habitualmente no tienen especiales dificultades para acceder a internet o a aplicaciones móviles. Pongamos el ejemplo de una persona con artritis. Una dolencia muy común. Tener botones grandes, buena distancia entre enlaces y posibilidad de control por voz le ayudará a navegar mejor.</p>
 
-<p><img src="{{ site.baseurl }}/img/eres-una-persona-con-discapacidad-02.jpg" loading="lazy" alt="" width="720" height="480"></p>
+<p><img src="{{ site.baseurl }}/img/eres-una-persona-con-discapacidad-02.jpg" loading="lazy" alt="Una joven con el brazo derecho en cabestrillo y escayolado sostiene el móvil con la mano izquierda, mostrando frustración en su rostro." width="720" height="480"></p>
 
 <p>Algunos ejemplos más:</p>
 <ul>
@@ -51,7 +51,7 @@ tags:       [accesibilidad]
 
 <p>Imagina que estas en la calle, hace un sol radiante y necesitas consultar el horario de los autobuses en tu móvil en una página web. Lamentablemente los diseñadores de la web en cuestión no han tenido en cuenta los criterios de contraste entre el texto y el color de fondo y con el reflejo del sol en la pantalla, no puedes leer la información.</p>
 
-<p><img src="{{ site.baseurl }}/img/eres-una-persona-con-discapacidad-03.jpg" loading="lazy" alt="" width="720" height="480"></p>
+<p><img src="{{ site.baseurl }}/img/eres-una-persona-con-discapacidad-03.jpg" loading="lazy" alt="Una joven en una calle soleada, intentando leer el horario del autobús en su móvil, pero no puede por el reflejo del sol y el bajo contraste del sitio web." width="720" height="480"></p>
 
 <p>Algunos ejemplos más:</p>
 <ul>
@@ -68,7 +68,7 @@ tags:       [accesibilidad]
 
 <p>Ahora imagina que necesitas rellenar de manera urgente un formulario en internet. Es tarde, estás cansado y te duele la cabeza. ¿Verdad que agradecerás un interfaz fácil de utilizar y unas instrucciones claras y concisas?</p>
 
-<p><img src="{{ site.baseurl }}/img/eres-una-persona-con-discapacidad-04.jpg" loading="lazy" alt="" width="720" height="480"></p>
+<p><img src="{{ site.baseurl }}/img/eres-una-persona-con-discapacidad-04.jpg" loading="lazy" alt="Una joven, muy cansada y con dolor de cabeza, intenta rellenar un formulario urgente en su portátil mientras trabaja de noche en casa." width="720" height="480"></p>
 
 <p>Algunos ejemplos más:</p>
 <ul>
@@ -83,7 +83,7 @@ tags:       [accesibilidad]
 
 <p>Pero también lo son las personas que estén padeciendo un episodio de depresión o de ansiedad. O simplemente necesitas realizar alguna gestión en internet en un momento en el que te encuentras nervioso o nerviosa y no puedes pensar con claridad.</p>
 
-<p><img src="{{ site.baseurl }}/img/eres-una-persona-con-discapacidad-05.jpg" loading="lazy" alt="" width="720" height="480"></p>
+<p><img src="{{ site.baseurl }}/img/eres-una-persona-con-discapacidad-05.jpg" loading="lazy" alt="Una joven trabaja en su portátil con rostro de angustia en una gran oficina abierta y ruidosa, rodeada de muchas personas trabajando." width="720" height="480"></p>
 
 <p>Algunos ejemplos más:</p>
 <ul>
@@ -92,6 +92,6 @@ tags:       [accesibilidad]
 	<li>Estás atravesando un momento de crisis personal. Una web empática, con mensajes claros y lenguaje no agresivo, te hace sentir más acompañado/a.</li>
 </ul>
 
-<p><img src="{{ site.baseurl }}/img/eres-una-persona-con-discapacidad-06.jpg" loading="lazy" alt="" width="720" height="480"></p>
+<p><img src="{{ site.baseurl }}/img/eres-una-persona-con-discapacidad-06.jpg" loading="lazy" alt="Una joven sonriente y relajada mira su móvil en un parque durante un día soleado, rodeada de vegetación y tranquilidad." width="720" height="480"></p>
 
-<p>Si alguna vez has necesitado subtítulos, has ampliado el tamaño de letra o has agradecido un formulario claro y conciso, ya sabes lo que es depender de un diseño accesible. No es cuestión de si te pasará, sino de cuándo. <strong>Diseñar para la diversidad es diseñar para la realidad</strong>.</p>
+<p>Si alguna vez has necesitado subtítulos, has ampliado el tamaño de la letra o has agradecido un formulario claro y conciso, ya sabes lo que significa depender de un diseño accesible. No se trata de si te ocurrirá, sino de cuándo. <strong>Diseñar para la diversidad es diseñar para la realidad</strong>.</p>
