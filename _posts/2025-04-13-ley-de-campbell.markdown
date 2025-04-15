@@ -10,7 +10,7 @@ tags:       [leyes y principios de experiencia de usuario (UX) y usabilidad]
 
 <p><strong>Formulada en 1976</strong> por el psicólogo social estadounidense <strong>Donald T. Campbell</strong>, la ley establece que:</p>
 
-<p><strong><em>Cuanto más se utilice un indicador cuantitativo para la toma de decisiones sociales, más propenso estará a ser manipulado y más distorsionará los procesos que se supone debe monitorizar.</strong></em></p>
+<p><strong><em>Cuanto más se utilice un indicador cuantitativo para la toma de decisiones sociales, más propenso estará a ser manipulado y más distorsionará los procesos que se supone debe monitorizar.</strong></p>
 
 <p><img src="{{ site.baseurl }}/img/ley-de-campbell-01.jpg" loading="lazy" alt="" width="720" height="480"></p>
 
