@@ -127,7 +127,7 @@ tags:       [legislación, accesibilidad]
 
 <p>La <strong>norma EN 301 549</strong> es promulgada por los organismos europeos de normalización: ETSI (European Telecommunications Standards Institute), CEN (European Committee for Standardization) y CENELEC (European Committee for Electrotechnical Standardization). Estos organismos desarrollan y mantienen la norma conjuntamente, estableciendo requisitos técnicos para garantizar la accesibilidad de productos y servicios digitales en Europa.</p>
 
-<p>Se actualiza periódicamente, siendo su última versión la 3.2.1. Que data de marzo de 2021. Se publica en <strong>inglés</strong> y es de <strong>libre acceso</strong>. <a href="https://www.etsi.org/deliver/etsi_en/301500_301599/301549/03.02.01_60/en_301549v030201p.pdf" target="_blank" rel="noopener noreferrer">Norma EN 301 549 V3.2.1 (2021-03) (PDF, 2.2MB)</a>.</p>
+<p>Se actualiza periódicamente, siendo su última versión la 3.2.1. Que data de marzo de 2021. Se publica en <strong>inglés</strong> y es de <strong>libre acceso</strong>. <a href="https://www.etsi.org/deliver/etsi_en/301500_301599/301549/03.02.01_60/en_301549v030201p.pdf" target="_blank" rel="noopener noreferrer">Norma EN 301 549 V3.2.1 (2021-03) (PDF, 2.2 MB)</a>.</p>
 
 <p>En <strong>España</strong>, esta norma se adopta directamente bajo la denominación <strong>UNE-EN 301549:2022</strong>, publicada por la Asociación Española de Normalización (UNE), siendo <strong>técnicamente idéntica a la versión europea original</strong>. La versión en español es de pago y <a href="https://tienda.aenor.com/norma-une-en-301549-2022-n0068037" target="_blank" rel="noopener noreferrer">se puede adquirir en la web de AENOR</a>.</p>
 
