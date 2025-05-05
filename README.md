@@ -3,3 +3,9 @@
 ### https://www.aunitz.net/
 Este es mi blog personal. Escribo sobre experiencia de usuario (UX), usabilidad, accesibilidad y desarrollo de soluciones en entornos digitales.
 [Más información en mi perfil de LinkedIn](https://www.linkedin.com/in/aunitz/).
+
+## Cómo arrancar en local el proyecto
+
+```console
+bundle exec jekyll serve
+```
