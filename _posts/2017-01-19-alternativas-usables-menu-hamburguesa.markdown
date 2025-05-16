@@ -1,11 +1,12 @@
 ---
-layout:     post
-title:      "Alternativas usables al menú hamburguesa"
-subtitle:   "No abuses de las hamburguesas ;)"
-date:       2017-01-19 09:30:00
-author:     "Aunitz Giménez"
-header-img: "img/post-bg-09.jpg"
-tags:       [buenas prácticas de usabilidad]
+layout:        post
+title:         "Alternativas usables al menú hamburguesa"
+subtitle:      "No abuses de las hamburguesas ;)"
+description:   "Este post analiza las limitaciones del menú hamburguesa en usabilidad y propone alternativas más visibles, destacando la adaptativa según resolución."
+date:          2017-01-19 09:30:00
+author:        "Aunitz Giménez"
+header-img:    "img/post-bg-09.jpg"
+tags:          [buenas prácticas de usabilidad]
 ---
 
 <p>Ya habrás leído en más de una ocasión<sup id="fnref:fn-f1"><a href="#fn:fn-f1" class="footnote">1</a></sup> que el menú hamburguesa no resulta usable para muchos usuarios. Comparto esta opinión por la sencilla razón de que contradice el principio de usabilidad de <strong>interfaz visible</strong><sup id="fnref:fn-f2"><a href="#fn:fn-f2" class="footnote">2</a></sup>. El cual afirma que deben evitarse elementos invisibles de navegación que han de ser inferidos por los usuarios, menús desplegables, indicaciones ocultas, etc.</p>
