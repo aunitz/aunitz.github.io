@@ -15,7 +15,7 @@ body {
 	color: @gray-dark;
 }
 
-// -- Typography
+// Typography
 
 p {
 	line-height: 1.5;
@@ -46,11 +46,9 @@ ol {
 	}
 }
 
-// -- Visited links (refactorizar)
-
 .container {
 	a:visited {
-		color: #681da8;
+		color: #681da8; // En Chrome no se puede cambiar el color de los enlaces visitados
 	}
 }
 
@@ -71,8 +69,6 @@ footer .container {
 		color: @brand-primary;
 	}
 }
-
-//
 
 h1,
 h2,
@@ -100,8 +96,8 @@ a img {
 }
 
 blockquote {
-	color: @gray;
 	font-style: italic;
+	font-size: 20px;
 }
 
 hr.small {
@@ -497,7 +493,7 @@ form .row:first-child .floating-label-form-group {
 	}
 }
 
-// -- Highlight Color Customization
+// Highlight Color Customization
 
 ::-moz-selection {
 	color: white;
@@ -523,4 +519,10 @@ img::-moz-selection {
 
 body {
 	webkit-tap-highlight-color: @brand-primary;
+}
+
+// Mis estilos
+
+.footnotes {
+	font-size: 18px;
 }
