@@ -1,11 +1,12 @@
 ---
-layout:     post
-title:      "Qué es la usabilidad de una aplicación"
-subtitle:   "Definición y beneficios de la usabilidad"
-date:       2022-10-10 15:00:00
-author:     "Aunitz Giménez"
-header-img: "img/post-bg-81.jpg"
-tags:       [glosario]
+layout:        post
+title:         "Qué es la usabilidad de una aplicación"
+subtitle:      "Definición y beneficios de la usabilidad"
+description:   "Definición y explicación detallada de qué es la usabilidad y cuáles son sus principales beneficios en el diseño de aplicaciones."
+date:          2022-10-10 15:00:00
+author:        "Aunitz Giménez"
+header-img:    "img/post-bg-81.jpg"
+tags:          [glosario]
 ---
 
 <p>En este blog he escrito <a href="{{ site.baseurl }}/tags/">decenas de artículos</a> relacionados con algún aspecto concreto de la usabilidad, sus leyes y principios, buenas prácticas, etc. Sin embargo, hasta el momento, no había dedicado un post a definir <strong>qué es la usabilidad</strong> y <strong>cuáles son sus principales beneficios</strong>.</p>

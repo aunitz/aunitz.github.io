@@ -1,11 +1,11 @@
 ---
-layout:     post
-title:      "Técnica de construcción de Personas"
-subtitle:   "Muy útil para empatizar con los usuarios"
-date:       2024-01-29 18:30:00 +0200
-author:     "Aunitz Giménez"
-header-img: "img/post-bg-92.jpg"
-tags:       [métodos de investigación UX]
+layout:        post
+title:         "Técnica de construcción de Personas"
+subtitle:      "Muy útil para empatizar con los usuarios"
+date:          2024-01-29 18:30:00 +0200
+author:        "Aunitz Giménez"
+header-img:    "img/post-bg-92.jpg"
+tags:          [métodos de investigación UX]
 ---
 
 <p>Esta <strong>técnica de investigación de experiencia de usuario</strong> (UX research), permite conocer los <strong>rasgos característicos del público objetivo</strong> de un producto digital. Las <em>personas</em>, también son llamadas arquetipos o <em>user personas</em>.</p>

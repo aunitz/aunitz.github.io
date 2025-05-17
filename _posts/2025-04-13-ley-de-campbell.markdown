@@ -1,11 +1,12 @@
 ---
-layout:     post
-title:      "Ley de Campbell"
-subtitle:   "¿Tus métricas están guiando el diseño o lo están desviando?"
-date:       2025-04-13 17:00:00 +0200
-author:     "Aunitz Giménez"
-header-img: "img/post-bg-105.jpg"
-tags:       [leyes y principios de experiencia de usuario (UX) y usabilidad]
+layout:        post
+title:         "Ley de Campbell"
+subtitle:      "¿Tus métricas están guiando el diseño o lo están desviando?"
+description:   "Análisis de cómo la medición cuantitativa puede distorsionar los objetivos y la importancia de combinarla con investigación cualitativa."
+date:          2025-04-13 17:00:00 +0200
+author:        "Aunitz Giménez"
+header-img:    "img/post-bg-105.jpg"
+tags:          [leyes y principios de experiencia de usuario (UX) y usabilidad]
 ---
 
 <p><strong>Formulada en 1976</strong> por el psicólogo social estadounidense <strong>Donald T. Campbell</strong>, la ley establece que:</p>

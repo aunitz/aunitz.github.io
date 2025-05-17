@@ -1,11 +1,11 @@
 ---
-layout:     post
-title:      "Qué es un user story map"
-subtitle:   "Guía el desarrollo teniendo presente a los usuarios"
-date:       2024-02-12 13:00:00 +0200
-author:     "Aunitz Giménez"
-header-img: "img/post-bg-95.jpg"
-tags:       [métodos de investigación UX]
+layout:        post
+title:         "Qué es un user story map"
+subtitle:      "Guía el desarrollo teniendo presente a los usuarios"
+date:          2024-02-12 13:00:00 +0200
+author:        "Aunitz Giménez"
+header-img:    "img/post-bg-95.jpg"
+tags:          [métodos de investigación UX]
 ---
 
 <p>Comprender al usuario es clave para desarrollar soluciones exitosas. Una técnica que destaca por su eficacia en iluminar las necesidades y experiencias de los usuarios es el <strong><em>user story map</em></strong> o mapeo de historias de usuario. También conocido como <em>user story mapping</em>, <em>story map</em> o <em>story mapping</em>. Este enfoque no solo enriquece nuestra comprensión, sino que también guía el desarrollo de soluciones de manera estratégica y empática para con las personas usuarias.</p>

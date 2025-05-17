@@ -1,11 +1,11 @@
 ---
-layout:     post
-title:      "Qué es el keyword research"
-subtitle:   "Investigación de palabras clave"
-date:       2023-06-29 15:00:00 +0200
-author:     "Aunitz Giménez"
-header-img: "img/post-bg-86.jpg"
-tags:       [SEO]
+layout:        post
+title:         "Qué es el keyword research"
+subtitle:      "Investigación de palabras clave"
+date:          2023-06-29 15:00:00 +0200
+author:        "Aunitz Giménez"
+header-img:    "img/post-bg-86.jpg"
+tags:          [SEO]
 ---
 
 <p>Una de las prácticas fundamentales para el SEO (Search Engine Optimization) es realizar un buen <strong>keyword research</strong> o <strong>investigación de palabras clave</strong>.</p>

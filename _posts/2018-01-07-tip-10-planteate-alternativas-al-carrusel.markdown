@@ -1,11 +1,11 @@
 ---
-layout:     post
-title:      "Plantéate alternativas al carrusel"
-subtitle:   "Los carruseles no son ni buenos ni malos en sí mismos"
-date:       2018-01-07 18:30:00
-author:     "Aunitz Giménez"
-header-img: "img/post-bg-15.jpg"
-tags:       [buenas prácticas de usabilidad]
+layout:        post
+title:         "Plantéate alternativas al carrusel"
+subtitle:      "Los carruseles no son ni buenos ni malos en sí mismos"
+date:          2018-01-07 18:30:00
+author:        "Aunitz Giménez"
+header-img:    "img/post-bg-15.jpg"
+tags:          [buenas prácticas de usabilidad]
 ---
 
 <p>Los <strong>carruseles de contenidos</strong> (tambi&eacute;n conocidos como <em>slideshow</em>, <em>sliders</em>, <em>carousel</em>) est&aacute;n siendo profusamente utilizados en todo tipo de p&aacute;ginas web. Sin embargo, <strong>existente muchas dudas sobre su utilidad real</strong>.</p>

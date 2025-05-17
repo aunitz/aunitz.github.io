@@ -1,11 +1,11 @@
 ---
-layout:     post
-title:      "Qué es un test heurístico"
-subtitle:   "Se trata de una evaluación realizada por especialistas en usabilidad"
-date:       2023-05-08 13:00:00 +0200
-author:     "Aunitz Giménez"
-header-img: "img/post-bg-85.jpg"
-tags:       [métodos de investigación UX]
+layout:        post
+title:         "Qué es un test heurístico"
+subtitle:      "Se trata de una evaluación realizada por especialistas en usabilidad"
+date:          2023-05-08 13:00:00 +0200
+author:        "Aunitz Giménez"
+header-img:    "img/post-bg-85.jpg"
+tags:          [métodos de investigación UX]
 ---
 
 <p>La evaluación por expertos o test heurístico es un tipo de inspección donde los especialistas evaluamos si la aplicación cumple con una lista de principios de <a href="{{ site.baseurl }}{% post_url 2022-10-10-que-es-la-usabilidad-de-una-aplicacion %}">usabilidad</a> comúnmente aceptados.</p>

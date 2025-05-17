@@ -1,11 +1,11 @@
 ---
-layout:     post
-title:      "La mejor alineación del texto para una lectura fluida en páginas web"
-subtitle:   "Spoiler: alineación a la izquierda"
-date:       2023-08-16 15:30:00 +0200
-author:     "Aunitz Giménez"
-header-img: "img/post-bg-87.jpg"
-tags:       [buenas prácticas de usabilidad, accesibilidad]
+layout:        post
+title:         "La mejor alineación del texto para una lectura fluida en páginas web"
+subtitle:      "Spoiler: alineación a la izquierda"
+date:          2023-08-16 15:30:00 +0200
+author:        "Aunitz Giménez"
+header-img:    "img/post-bg-87.jpg"
+tags:          [buenas prácticas de usabilidad, accesibilidad]
 ---
 
 <p>Tradicionalmente, los textos maquetados en <strong>soporte papel</strong> (libros, revistas, informes, etc.) utilizan la <strong>alineación justificada</strong>. La alineación justificada distribuye el texto uniformemente en el espacio disponible, aprovechando al máximo el ancho de la página y reduciendo los espacios vacíos. Esto ayuda a que el texto se vea más organizado y menos fragmentado.</p>

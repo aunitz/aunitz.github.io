@@ -1,11 +1,11 @@
 ---
-layout:     post
-title:      "Recomienda en lugar de mostrar opciones iguales"
-subtitle:   "Reduce la parálisis por análisis"
-date:       2017-03-08 09:30:00
-author:     "Aunitz Giménez"
-header-img: "img/post-bg-06.jpg"
-tags:       [buenas prácticas de usabilidad]
+layout:        post
+title:         "Recomienda en lugar de mostrar opciones iguales"
+subtitle:      "Reduce la parálisis por análisis"
+date:          2017-03-08 09:30:00
+author:        "Aunitz Giménez"
+header-img:    "img/post-bg-06.jpg"
+tags:          [buenas prácticas de usabilidad]
 ---
 
 <p>Al mostrar múltiples opciones iguales, hay usuarios que dudarán sobre cuál escoger.</p>

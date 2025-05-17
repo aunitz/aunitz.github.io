@@ -1,11 +1,11 @@
 ---
-layout:     post
-title:      "Cómo las personas sostienen y tocan sus teléfonos móviles"
-subtitle:   "Memorando sobre el primer artículo de Steven Hoober dedicado a la interacción táctil"
-date:       2022-05-21 21:00:00
-author:     "Aunitz Giménez"
-header-img: "img/post-bg-79.jpg"
-tags:       [buenas prácticas de usabilidad, memorandos]
+layout:        post
+title:         "Cómo las personas sostienen y tocan sus teléfonos móviles"
+subtitle:      "Memorando sobre el primer artículo de Steven Hoober dedicado a la interacción táctil"
+date:          2022-05-21 21:00:00
+author:        "Aunitz Giménez"
+header-img:    "img/post-bg-79.jpg"
+tags:          [buenas prácticas de usabilidad, memorandos]
 ---
 
 <p>El <strong>especialista en diseño para dispositivos móviles</strong> <a href="https://www.uxmatters.com/authors/archives/2012/04/steven_hoober.php" target="_blank" rel="noopener noreferrer">Steven Hoober</a> escribió una trilogía de artículos basados en <strong>evidencia científica</strong> que aportan información fundamental sobre el uso que hacemos las personas de nuestros dispositivos móviles y cuáles son los patrones de diseño que mejor funcionan.</p>

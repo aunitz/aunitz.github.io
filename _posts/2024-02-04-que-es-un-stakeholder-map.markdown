@@ -1,11 +1,11 @@
 ---
-layout:     post
-title:      "Qué es un stakeholder map"
-subtitle:   "Análisis de las partes interesadas en un proyecto"
-date:       2024-02-04 17:30:00 +0200
-author:     "Aunitz Giménez"
-header-img: "img/post-bg-94.jpg"
-tags:       [métodos de investigación UX]
+layout:        post
+title:         "Qué es un stakeholder map"
+subtitle:      "Análisis de las partes interesadas en un proyecto"
+date:          2024-02-04 17:30:00 +0200
+author:        "Aunitz Giménez"
+header-img:    "img/post-bg-94.jpg"
+tags:          [métodos de investigación UX]
 ---
 
 <p>El <em>stakeholder map</em> o mapa de actores es un método de análisis que no solo nos ayuda a <strong>identificar a todas las partes interesadas en un proyecto</strong>, sino que también clarifica <strong>sus interrelaciones, intereses y el impacto</strong> que pueden tener en el proyecto.</p>

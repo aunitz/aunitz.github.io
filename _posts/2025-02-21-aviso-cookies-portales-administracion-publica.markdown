@@ -1,11 +1,12 @@
 ---
-layout:     post
-title:      "Aviso de cookies en portales de la Administración Pública española"
-subtitle:   "No siempre es obligatorio obtener el consentimiento de la persona usuaria"
-date:       2025-02-21 17:30:00 +0100
-author:     "Aunitz Giménez"
-header-img: "img/post-bg-102.jpg"
-tags:       [legislación, cookies]
+layout:        post
+title:         "Aviso de cookies en portales de la Administración Pública española"
+subtitle:      "No siempre es obligatorio obtener el consentimiento de la persona usuaria"
+description:   "Guía sobre el uso y gestión de cookies en portales de la Administración Pública, incluyendo requisitos legales y mejores prácticas."
+date:          2025-02-21 17:30:00 +0100
+author:        "Aunitz Giménez"
+header-img:    "img/post-bg-102.jpg"
+tags:          [legislación, cookies]
 ---
 
 <p><strong>Aviso sobre este artículo:</strong> aunque tengo conocimientos académicos en derecho, no soy jurista ni especialista en la materia, por lo que algunas afirmaciones podrían contener imprecisiones o interpretaciones erróneas. Si detectas alguna, te invito a comentarlo en <a href="https://www.linkedin.com/posts/aunitz_aviso-de-cookies-en-portales-de-la-administraci%C3%B3n-activity-7298790172739960832-va37" target="_blank" rel="noopener noreferrer">esta publicación de LinkedIn</a>. Actualizaré el artículo si resulta pertinente. ¡Muchas gracias de antemano por tu colaboración!</p>

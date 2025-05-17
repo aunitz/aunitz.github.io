@@ -1,11 +1,11 @@
 ---
-layout:     post
-title:      "Qué es un test de usabilidad con personas usuarias"
-subtitle:   "Un prueba sencilla y más barata de lo que crees"
-date:       2023-05-04 13:30:00
-author:     "Aunitz Giménez"
-header-img: "img/post-bg-84.jpg"
-tags:       [métodos de investigación UX]
+layout:        post
+title:         "Qué es un test de usabilidad con personas usuarias"
+subtitle:      "Un prueba sencilla y más barata de lo que crees"
+date:          2023-05-04 13:30:00
+author:        "Aunitz Giménez"
+header-img:    "img/post-bg-84.jpg"
+tags:          [métodos de investigación UX]
 ---
 
 <p><strong>Un test de usabilidad con personas usuarias consiste en encomendar una serie de tareas a una muestra de usuarios de la aplicación.</strong> Tanto las tareas como los usuarios se escogen en función de los resultados de la fase de análisis.</p>

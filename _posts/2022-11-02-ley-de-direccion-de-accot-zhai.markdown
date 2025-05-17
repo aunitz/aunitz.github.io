@@ -1,11 +1,12 @@
 ---
-layout:     post
-title:      "Ley de dirección de Accot-Zhai"
-subtitle:   "Evita los recorridos largos y angostos"
-date:       2022-11-02 00:30:00
-author:     "Aunitz Giménez"
-header-img: "img/post-bg-83.jpg"
-tags:       [leyes y principios de experiencia de usuario (UX) y usabilidad]
+layout:        post
+title:         "Ley de dirección de Accot-Zhai"
+subtitle:      "Evita los recorridos largos y angostos"
+description:   "Ley que predice el tiempo necesario para dirigir un puntero a través de un recorrido, según su longitud y anchura."
+date:          2022-11-02 00:30:00
+author:        "Aunitz Giménez"
+header-img:    "img/post-bg-83.jpg"
+tags:          [leyes y principios de experiencia de usuario (UX) y usabilidad]
 ---
 
 <p>La ley de dirección predice el tiempo necesario que invertirá un usuario en dirigir un puntero (como el cursor de un ratón) a través de un recorrido determinado (como un menú desplegable, una barra de desplazamiento o un campo de formulario desplegable). Este tiempo depende de la longitud y la anchura del recorrido. Al que se le suele denominar “túnel”.</p>

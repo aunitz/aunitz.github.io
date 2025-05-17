@@ -1,11 +1,12 @@
 ---
-layout:     post
-title:      "La matriz de poder e interés"
-subtitle:   "Una técnica para el mapeo de los stakeholders de un proyecto"
-date:       2024-02-04 17:30:00 +0200
-author:     "Aunitz Giménez"
-header-img: "img/post-bg-93.jpg"
-tags:       [métodos de investigación UX]
+layout:        post
+title:         "La matriz de poder e interés"
+subtitle:      "Una técnica para el mapeo de los stakeholders de un proyecto"
+description:   "Explicación de la matriz de Mendelow como herramienta para mapear y gestionar stakeholders en proyectos de desarrollo."
+date:          2024-02-04 17:30:00 +0200
+author:        "Aunitz Giménez"
+header-img:    "img/post-bg-93.jpg"
+tags:          [métodos de investigación UX]
 ---
 
 <p>Es uno de los métodos de <a href="{{ site.baseurl }}{% post_url 2024-02-04-que-es-un-stakeholder-map %}">mapeo de <em>stakeholders</em></a> más populares. También conocida como Matriz de Mendelow, ya que su invención se le atribuye al investigador Aubrey Mendelow.</p>

@@ -1,11 +1,11 @@
 ---
-layout:     post
-title:      "Principio de Robustez (Ley de Postel)"
-subtitle:   "Crea sistemas resilientes y accesibles"
-date:       2024-03-04 06:30:00 +0200
-author:     "Aunitz Giménez"
-header-img: "img/post-bg-100.jpg"
-tags:       [leyes y principios de experiencia de usuario (UX) y usabilidad, desarrollo de soluciones digitales]
+layout:        post
+title:         "Principio de Robustez (Ley de Postel)"
+subtitle:      "Crea sistemas resilientes y accesibles"
+date:          2024-03-04 06:30:00 +0200
+author:        "Aunitz Giménez"
+header-img:    "img/post-bg-100.jpg"
+tags:          [leyes y principios de experiencia de usuario (UX) y usabilidad, desarrollo de soluciones digitales]
 ---
 
 <p><strong><em>Sé conservador en lo que haces, sé liberal en lo que aceptas de otros.</em></strong></p>

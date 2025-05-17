@@ -1,11 +1,12 @@
 ---
-layout:     post
-title:      "Tamaño mínimo de los elementos interactivos"
-subtitle:   "Para un diseño inclusivo"
-date:       2025-05-11 20:00:00 +0200
-author:     "Aunitz Giménez"
-header-img: "img/post-bg-107.jpg"
-tags:       [buenas prácticas de usabilidad, accesibilidad]
+layout:        post
+title:         "Tamaño mínimo de los elementos interactivos"
+subtitle:      "Para un diseño inclusivo"
+description:   "Guía sobre el tamaño mínimo recomendado para elementos interactivos en interfaces digitales, considerando accesibilidad y usabilidad."
+date:          2025-05-11 20:00:00 +0200
+author:        "Aunitz Giménez"
+header-img:    "img/post-bg-107.jpg"
+tags:          [buenas prácticas de usabilidad, accesibilidad]
 ---
 
 <p>En un artículo de hace unos años escribía sobre el <a href="{{ site.baseurl }}{% post_url 2020-09-03-tamano-minimo-elementos-interactivos-dispositivo-tactil %}">tamaño mínimo recomendado para los elementos interactivos en dispositivos táctiles</a>. En el presente artículo me quiero referir al <strong>tamaño mínimo recomendado de cualquier elemento interactivo</strong> de un interfaz, independientemente de si se accede desde un dispositivo táctil o no.</p>

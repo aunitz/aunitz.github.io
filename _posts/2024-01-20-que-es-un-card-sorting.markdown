@@ -1,11 +1,11 @@
 ---
-layout:     post
-title:      "Qué es un card sorting"
-subtitle:   "Cómo los usuarios agrupan y clasifican el contenido"
-date:       2024-01-20 19:30:00 +0200
-author:     "Aunitz Giménez"
-header-img: "img/post-bg-89.jpg"
-tags:       [métodos de investigación UX]
+layout:        post
+title:         "Qué es un card sorting"
+subtitle:      "Cómo los usuarios agrupan y clasifican el contenido"
+date:          2024-01-20 19:30:00 +0200
+author:        "Aunitz Giménez"
+header-img:    "img/post-bg-89.jpg"
+tags:          [métodos de investigación UX]
 ---
 
 <p>Esta <strong>técnica de investigación en experiencia de usuario</strong> (UX research) sirve para entender <strong>cómo los usuarios agrupan y clasifican el contenido</strong>.</p>

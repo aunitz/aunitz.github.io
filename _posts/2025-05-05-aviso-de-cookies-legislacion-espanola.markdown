@@ -1,11 +1,11 @@
 ---
-layout:     post
-title:      "Aviso de cookies: legislación aplicable en España"
-subtitle:   "El mejor recurso es la guía sobre el uso de las cookies de la AEPD"
-date:       2025-05-05 17:00:00 +0200
-author:     "Aunitz Giménez"
-header-img: "img/post-bg-106.jpg"
-tags:       [legislación, cookies]
+layout:        post
+title:         "Aviso de cookies: legislación aplicable en España"
+subtitle:      "El mejor recurso es la guía sobre el uso de las cookies de la AEPD"
+date:          2025-05-05 17:00:00 +0200
+author:        "Aunitz Giménez"
+header-img:    "img/post-bg-106.jpg"
+tags:          [legislación, cookies]
 ---
 
 <p><strong>Aviso sobre este artículo:</strong> aunque tengo conocimientos académicos en derecho, no soy jurista ni especialista en la materia, por lo que algunas afirmaciones podrían contener imprecisiones o interpretaciones erróneas. Si detectas alguna, te invito a comentarlo en <a href="https://www.linkedin.com/posts/aunitz_aviso-de-cookies-legislaci%C3%B3n-aplicable-en-activity-7325248118197760000-K2pq" target="_blank" rel="noopener noreferrer">esta publicación de LinkedIn</a>. Actualizaré el artículo si resulta pertinente. ¡Muchas gracias de antemano por tu colaboración!</p>

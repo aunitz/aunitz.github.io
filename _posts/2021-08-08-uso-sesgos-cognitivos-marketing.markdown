@@ -1,11 +1,11 @@
 ---
-layout:     post
-title:      "Uso de sesgos cognitivos en marketing"
-subtitle:   "Cuestionamiento de sus implicaciones éticas"
-date:       2021-08-08 21:30:00
-author:     "Aunitz Giménez"
-header-img: "img/post-bg-75.jpg"
-tags:       [ética, marketing, sesgos cognitivos]
+layout:        post
+title:         "Uso de sesgos cognitivos en marketing"
+subtitle:      "Cuestionamiento de sus implicaciones éticas"
+date:          2021-08-08 21:30:00
+author:        "Aunitz Giménez"
+header-img:    "img/post-bg-75.jpg"
+tags:          [ética, marketing, sesgos cognitivos]
 ---
 
 <p>Me resulta muy interesante y útil para mi trabajo conocer e investigar las implicaciones que tiene la <strong>psicología</strong> sobre la <strong>experiencia de usuario (UX) y la usabilidad</strong> de los interfaces de usuario. Es por ello por lo que <a href="{{ site.baseurl }}/tags/">he escrito mucho en este blog sobre principios y leyes de UX y usabilidad</a> que en muchas ocasiones proceden directamente de las investigaciones de los psicólogos.</p>

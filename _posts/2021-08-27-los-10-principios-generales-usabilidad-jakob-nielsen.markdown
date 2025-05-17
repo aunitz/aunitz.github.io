@@ -1,11 +1,11 @@
 ---
-layout:     post
-title:      "Los 10 principios generales de usabilidad de Jakob Nielsen"
-subtitle:   "Memorando sobre los heurísticos de Jakob Nielsen"
-date:       2021-08-27 09:30:00
-author:     "Aunitz Giménez"
-header-img: "img/post-bg-76.jpg"
-tags:       [leyes y principios de experiencia de usuario (UX) y usabilidad, memorandos]
+layout:        post
+title:         "Los 10 principios generales de usabilidad de Jakob Nielsen"
+subtitle:      "Memorando sobre los heurísticos de Jakob Nielsen"
+date:          2021-08-27 09:30:00
+author:        "Aunitz Giménez"
+header-img:    "img/post-bg-76.jpg"
+tags:          [leyes y principios de experiencia de usuario (UX) y usabilidad, memorandos]
 ---
 
 <p><a href="https://www.nngroup.com/people/jakob-nielsen/" target="_blank" rel="noopener noreferrer">Jakob Nielsen</a>, para los que no lo conozcan, es uno de los expertos en usabilidad más veteranos y con mayor prestigio a nivel mundial.</p>

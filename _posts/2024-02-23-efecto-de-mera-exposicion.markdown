@@ -1,11 +1,12 @@
 ---
-layout:     post
-title:      "Efecto de mera exposición"
-subtitle:   "Cuanto más nos expongamos a algo, más nos gustará"
-date:       2024-02-23 05:00:00 +0200
-author:     "Aunitz Giménez"
-header-img: "img/post-bg-98.jpg"
-tags:       [leyes y principios de experiencia de usuario (UX) y usabilidad, sesgos cognitivos]
+layout:        post
+title:         "Efecto de mera exposición"
+subtitle:      "Cuanto más nos expongamos a algo, más nos gustará"
+description:   "Explicación del efecto psicológico por el cual las personas prefieren lo familiar y su aplicación en el diseño de interfaces."
+date:          2024-02-23 05:00:00 +0200
+author:        "Aunitz Giménez"
+header-img:    "img/post-bg-98.jpg"
+tags:          [leyes y principios de experiencia de usuario (UX) y usabilidad, sesgos cognitivos]
 ---
 
 <p><strong><em>La exposición repetida a un estímulo aumenta nuestra aceptación y gusto por él, incluso sin una justificación lógica o racional.</em></strong></p>

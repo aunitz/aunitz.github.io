@@ -1,11 +1,11 @@
 ---
-layout:     post
-title:      "Experiencia de usuario versus interfaz de usuario"
-subtitle:   "Para torpes…"
-date:       2021-06-14 19:00:00
-author:     "Aunitz Giménez"
-header-img: "img/post-bg-73.jpg"
-tags:       [desarrollo de soluciones digitales]
+layout:        post
+title:         "Experiencia de usuario versus interfaz de usuario"
+subtitle:      "Para torpes…"
+date:          2021-06-14 19:00:00
+author:        "Aunitz Giménez"
+header-img:    "img/post-bg-73.jpg"
+tags:          [desarrollo de soluciones digitales]
 ---
 
 <p>Los que tenemos una edad recordamos con cariño aquella colección de libros sobre informática del sello <a href="https://www.anayamultimedia.es/" target="_blank" rel="noopener noreferrer">Anaya Multimedia</a> que estaban ilustrados por el genial dibujante <a href="https://es.wikipedia.org/wiki/Forges" target="_blank" rel="noopener noreferrer">Forges</a>.</p>

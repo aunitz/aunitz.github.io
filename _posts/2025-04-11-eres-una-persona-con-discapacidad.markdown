@@ -1,11 +1,12 @@
 ---
-layout:     post
-title:      "Eres una persona con discapacidad"
-subtitle:   "¿Crees que no? Continúa leyendo… 😉"
-date:       2025-04-11 18:00:00 +0200
-author:     "Aunitz Giménez"
-header-img: "img/post-bg-104.jpg"
-tags:       [accesibilidad]
+layout:        post
+title:         "Eres una persona con discapacidad"
+subtitle:      "¿Crees que no? Continúa leyendo… 😉"
+description:   "Reflexión sobre cómo todos podemos experimentar discapacidades temporales y la importancia del diseño inclusivo en la web."
+date:          2025-04-11 18:00:00 +0200
+author:        "Aunitz Giménez"
+header-img:    "img/post-bg-104.jpg"
+tags:          [accesibilidad]
 ---
 
 <p>Formarme sobre accesibilidad en entornos digitales me ha permitido comprender que todos enfrentamos <strong>barreras en el acceso</strong> a productos y servicios digitales, ya sean <strong>permanentes</strong> o <strong>temporales</strong>.</p>

@@ -1,11 +1,11 @@
 ---
-layout:     post
-title:      "Patch Mode de Git"
-subtitle:   "Permite <em>commitear</em> sólo parte de los cambios de un archivo"
-date:       2021-10-10 22:10:00
-author:     "Aunitz Giménez"
-header-img: "img/post-bg-78.jpg"
-tags:       [git]
+layout:        post
+title:         "Patch Mode de Git"
+subtitle:      "Permite <em>commitear</em> sólo parte de los cambios de un archivo"
+date:          2021-10-10 22:10:00
+author:        "Aunitz Giménez"
+header-img:    "img/post-bg-78.jpg"
+tags:          [git]
 ---
 
 <p>Si <strong>has hecho varios cambios en un archivo y no quieres incluirlos todos en el mismo <em>commit</em></strong> porque se refieren a temas diferentes, hay una manera de pasar al <em>stage</em> sólo parte de los cambios, <em>commitearlos</em> y después proceder a <em>commitear</em> el resto.</p>

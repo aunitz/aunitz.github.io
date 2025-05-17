@@ -1,11 +1,12 @@
 ---
-layout:     post
-title:      "Ley de Parkinson"
-subtitle:   "El objetivo es simplificar y enfocarse en lo esencial"
-date:       2024-02-13 19:00:00 +0200
-author:     "Aunitz Giménez"
-header-img: "img/post-bg-96.jpg"
-tags:       [leyes y principios de experiencia de usuario (UX) y usabilidad, desarrollo de soluciones digitales]
+layout:        post
+title:         "Ley de Parkinson"
+subtitle:      "El objetivo es simplificar y enfocarse en lo esencial"
+description:   "Análisis de cómo el trabajo se expande hasta ocupar todo el tiempo disponible y sus implicaciones en el desarrollo de proyectos."
+date:          2024-02-13 19:00:00 +0200
+author:        "Aunitz Giménez"
+header-img:    "img/post-bg-96.jpg"
+tags:          [leyes y principios de experiencia de usuario (UX) y usabilidad, desarrollo de soluciones digitales]
 ---
 
 <p><strong><em>El trabajo se expande hasta ocupar todo el tiempo disponible para que se termine.</em></strong></p>

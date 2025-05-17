@@ -1,11 +1,11 @@
 ---
-layout:     post
-title:      "Una sola columna en lugar de dos"
-subtitle:   "Guía a los lectores"
-date:       2017-03-06 09:30:00
-author:     "Aunitz Giménez"
-header-img: "img/post-bg-04.jpg"
-tags:       [buenas prácticas de usabilidad]
+layout:        post
+title:         "Una sola columna en lugar de dos"
+subtitle:      "Guía a los lectores"
+date:          2017-03-06 09:30:00
+author:        "Aunitz Giménez"
+header-img:    "img/post-bg-04.jpg"
+tags:          [buenas prácticas de usabilidad]
 ---
 
 <p>Existe una excelente web llamada <a href="http://www.goodui.org" target="_blank" rel="noopener noreferrer">Good User Interface</a> que recoge ideas y consejos sencillos sobre usabilidad y conversión.</p>

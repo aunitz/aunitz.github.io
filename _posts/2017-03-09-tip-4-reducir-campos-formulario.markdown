@@ -1,11 +1,11 @@
 ---
-layout:     post
-title:      "Reduce el número de campos de los formularios"
-subtitle:   "Cuantos menos campos mejor"
-date:       2017-03-09 09:30:00
-author:     "Aunitz Giménez"
-header-img: "img/post-bg-01.jpg"
-tags:       [buenas prácticas de usabilidad, formularios]
+layout:        post
+title:         "Reduce el número de campos de los formularios"
+subtitle:      "Cuantos menos campos mejor"
+date:          2017-03-09 09:30:00
+author:        "Aunitz Giménez"
+header-img:    "img/post-bg-01.jpg"
+tags:          [buenas prácticas de usabilidad, formularios]
 ---
 
 <p>Los seres humanos somos reacios a realizar trabajo de más. Esta idea se aplica también a rellenar campos de un formulario.</p>

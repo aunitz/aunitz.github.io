@@ -1,11 +1,11 @@
 ---
-layout:     post
-title:      "Qué es un focus group"
-subtitle:   "Ayuda a “hablar” el idioma de nuestros usuarios"
-date:       2024-01-24 18:00:00 +0200
-author:     "Aunitz Giménez"
-header-img: "img/post-bg-91.jpg"
-tags:       [métodos de investigación UX]
+layout:        post
+title:         "Qué es un focus group"
+subtitle:      "Ayuda a “hablar” el idioma de nuestros usuarios"
+date:          2024-01-24 18:00:00 +0200
+author:        "Aunitz Giménez"
+header-img:    "img/post-bg-91.jpg"
+tags:          [métodos de investigación UX]
 ---
 
 <p>Esta <strong>técnica de investigación de experiencia de usuario</strong> (UX research), que combina la riqueza del diálogo humano con la precisión del análisis cualitativo, nos permite adentrarnos en los pensamientos y emociones de nuestros usuarios, ofreciéndonos una brújula para orientar nuestras decisiones de diseño.</p>

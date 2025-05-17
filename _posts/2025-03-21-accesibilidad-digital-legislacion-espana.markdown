@@ -1,11 +1,11 @@
 ---
-layout:     post
-title:      "Accesibilidad digital: legislación vigente en España"
-subtitle:   "Resumen de obligaciones legales"
-date:       2025-03-21 10:00:00 +0100
-author:     "Aunitz Giménez"
-header-img: "img/post-bg-103.jpg"
-tags:       [legislación, accesibilidad]
+layout:        post
+title:         "Accesibilidad digital: legislación vigente en España"
+subtitle:      "Resumen de obligaciones legales"
+date:          2025-03-21 10:00:00 +0100
+author:        "Aunitz Giménez"
+header-img:    "img/post-bg-103.jpg"
+tags:          [legislación, accesibilidad]
 ---
 
 <p><strong>Última actualización de este post:</strong> 21 de marzo de 2025</p>

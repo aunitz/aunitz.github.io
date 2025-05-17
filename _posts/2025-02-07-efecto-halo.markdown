@@ -1,11 +1,11 @@
 ---
-layout:     post
-title:      "Efecto halo"
-subtitle:   "La primera impresión es lo que cuenta"
-date:       2025-02-07 20:00:00 +0100
-author:     "Aunitz Giménez"
-header-img: "img/post-bg-101.jpg"
-tags:       [leyes y principios de experiencia de usuario (UX) y usabilidad, sesgos cognitivos]
+layout:        post
+title:         "Efecto halo"
+subtitle:      "La primera impresión es lo que cuenta"
+date:          2025-02-07 20:00:00 +0100
+author:        "Aunitz Giménez"
+header-img:    "img/post-bg-101.jpg"
+tags:          [leyes y principios de experiencia de usuario (UX) y usabilidad, sesgos cognitivos]
 ---
 
 <p><strong><em>La primera impresión, ya sea positiva o negativa, influye en la evaluación de las demás características.</em></strong></p>

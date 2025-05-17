@@ -1,11 +1,11 @@
 ---
-layout:     post
-title:      "Ley de Fitts"
-subtitle:   "El tiempo de selección depende de la distancia y el tamaño del objetivo"
-date:       2018-01-21 19:30:00
-author:     "Aunitz Giménez"
-header-img: "img/post-bg-16.jpg"
-tags:       [leyes y principios de experiencia de usuario (UX) y usabilidad]
+layout:        post
+title:         "Ley de Fitts"
+subtitle:      "El tiempo de selección depende de la distancia y el tamaño del objetivo"
+date:          2018-01-21 19:30:00
+author:        "Aunitz Giménez"
+header-img:    "img/post-bg-16.jpg"
+tags:          [leyes y principios de experiencia de usuario (UX) y usabilidad]
 ---
 
 <p><em><strong>El tiempo que se requiere para alcanzar a pulsar un objetivo depende de una relación logarítmica entre su superficie y la distancia a la que se encuentra.</strong></em></p>

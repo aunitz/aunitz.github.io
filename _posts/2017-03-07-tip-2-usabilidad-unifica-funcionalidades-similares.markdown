@@ -1,11 +1,11 @@
 ---
-layout:     post
-title:      "Unifica funcionalidades similares"
-subtitle:   "Refactoriza el interfaz de vez en cuando"
-date:       2017-03-07 09:30:00
-author:     "Aunitz Giménez"
-header-img: "img/post-bg-05.jpg"
-tags:       [buenas prácticas de usabilidad]
+layout:        post
+title:         "Unifica funcionalidades similares"
+subtitle:      "Refactoriza el interfaz de vez en cuando"
+date:          2017-03-07 09:30:00
+author:        "Aunitz Giménez"
+header-img:    "img/post-bg-05.jpg"
+tags:          [buenas prácticas de usabilidad]
 ---
 
 <p>Con el transcurso del tiempo, es fácil crear involuntariamente múltiples secciones, elementos y características que realizan la misma función.</p>

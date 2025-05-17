@@ -1,11 +1,11 @@
 ---
-layout:     post
-title:      "Parálisis por análisis"
-subtitle:   "Indecisión debido a exceso de análisis o información"
-date:       2024-03-01 05:30:00 +0200
-author:     "Aunitz Giménez"
-header-img: "img/post-bg-99.jpg"
-tags:       [leyes y principios de experiencia de usuario (UX) y usabilidad, sesgos cognitivos]
+layout:        post
+title:         "Parálisis por análisis"
+subtitle:      "Indecisión debido a exceso de análisis o información"
+date:          2024-03-01 05:30:00 +0200
+author:        "Aunitz Giménez"
+header-img:    "img/post-bg-99.jpg"
+tags:          [leyes y principios de experiencia de usuario (UX) y usabilidad, sesgos cognitivos]
 ---
 
 <p><strong><em>El exceso de análisis inhibe la toma de decisiones.</em></strong></p>

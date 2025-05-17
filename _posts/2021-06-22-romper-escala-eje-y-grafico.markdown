@@ -1,11 +1,11 @@
 ---
-layout:     post
-title:      "Romper la escala del eje Y en un gráfico"
-subtitle:   "¿Es una buena idea?"
-date:       2021-06-22 17:30:00
-author:     "Aunitz Giménez"
-header-img: "img/post-bg-74.jpg"
-tags:       [buenas prácticas de diseño, buenas prácticas de usabilidad]
+layout:        post
+title:         "Romper la escala del eje Y en un gráfico"
+subtitle:      "¿Es una buena idea?"
+date:          2021-06-22 17:30:00
+author:        "Aunitz Giménez"
+header-img:    "img/post-bg-74.jpg"
+tags:          [buenas prácticas de diseño, buenas prácticas de usabilidad]
 ---
 
 <p>Imaginemos un caso práctico. Tenemos un equipo de ventas que ha obtenido los siguientes resultados.</p>
