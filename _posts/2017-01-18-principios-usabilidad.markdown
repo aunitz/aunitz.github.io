@@ -2,6 +2,7 @@
 layout:     post
 title:      "Mis principios generales de usabilidad"
 subtitle:   "Estos son mis principios. Si no le gustan tengo otros. ;)"
+description: "Lista comentada de 16 principios fundamentales de usabilidad para crear interfaces centradas en las necesidades del usuario."
 date:       2017-01-18 09:30:00
 author:     "Aunitz Giménez"
 header-img: "img/post-bg-02.jpg"
