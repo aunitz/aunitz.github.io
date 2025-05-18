@@ -1,11 +1,11 @@
 ---
-layout:     post
-title:      "El contenido precede al diseño"
-subtitle:   "Diseño sin contenido no es diseño, es decoración"
-date:       2019-11-02 22:30:00
-author:     "Aunitz Giménez"
-header-img: "img/post-bg-42.jpg"
-tags:       [buenas prácticas de usabilidad]
+layout:        post
+title:         "El contenido precede al diseño"
+subtitle:      "Diseño sin contenido no es diseño, es decoración"
+date:          2019-11-02 22:30:00
+author:        "Aunitz Giménez"
+header-img:    "img/post-bg-42.jpg"
+tags:          [buenas prácticas de usabilidad]
 ---
 
 <p>Todos conocemos la frase de que <strong>el contenido es el Rey</strong>. A pesar de lo manido del concepto, es totalmente cierto. El usuario acude a nuestra web o nuestra aplicación en busca de contenidos. Ya sea información, entretenimiento o para crear los suyos propios.</p>
