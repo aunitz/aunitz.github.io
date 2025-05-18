@@ -2,6 +2,7 @@
 layout:        post
 title:         "Ley de Jakob"
 subtitle:      "Utiliza convenciones establecidas"
+description:   "La Ley de Jakob destaca la importancia de seguir convenciones de diseño para mejorar la usabilidad de tus interfaces."
 date:          2018-01-21 20:30:00
 author:        "Aunitz Giménez"
 header-img:    "img/post-bg-18.jpg"

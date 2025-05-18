@@ -2,6 +2,7 @@
 layout:        post
 title:         "Efecto de posición serial"
 subtitle:      "Recordarán mejor el primero y el último"
+description:   "El efecto de posición serial indica que los usuarios recuerdan mejor el primer y último elemento de una lista o serie."
 date:          2018-01-23 18:00:00
 author:        "Aunitz Giménez"
 header-img:    "img/post-bg-22.jpg"

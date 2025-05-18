@@ -2,6 +2,7 @@
 layout:        post
 title:         "Ley de Fitts"
 subtitle:      "El tiempo de selección depende de la distancia y el tamaño del objetivo"
+description:   "Explicación de la Ley de Fitts: cómo la distancia y el tamaño de los objetivos afectan la rapidez de selección del usuario."
 date:          2018-01-21 19:30:00
 author:        "Aunitz Giménez"
 header-img:    "img/post-bg-16.jpg"

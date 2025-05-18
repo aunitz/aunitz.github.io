@@ -2,6 +2,7 @@
 layout:        post
 title:         "Una sola columna en lugar de dos"
 subtitle:      "Guía a los lectores"
+description:   "Descubre por qué un diseño de una sola columna mejora la narrativa y la atención del usuario en tu web."
 date:          2017-03-06 09:30:00
 author:        "Aunitz Giménez"
 header-img:    "img/post-bg-04.jpg"

@@ -2,6 +2,7 @@
 layout:        post
 title:         "Destacar las llamadas a la acción"
 subtitle:      "El objetivo es que sea fácil de distinguir"
+description:   "Aprende a resaltar llamadas a la acción en tu web usando tono, profundidad y colores para mejorar la conversión."
 date:          2017-07-30 18:50:00
 author:        "Aunitz Giménez"
 header-img:    "img/post-bg-11.jpg"

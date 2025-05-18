@@ -2,6 +2,7 @@
 layout:        post
 title:         "Utiliza la jerarquía visual para dirigir la atención"
 subtitle:      "Separar los elementos de un interfaz"
+description:   "La jerarquía visual ayuda a destacar elementos importantes, guiar la atención y mejorar la legibilidad en interfaces."
 date:          2018-07-22 18:00:00
 author:        "Aunitz Giménez"
 header-img:    "img/post-bg-29.jpg"

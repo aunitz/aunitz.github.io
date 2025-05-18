@@ -2,6 +2,7 @@
 layout:        post
 title:         "Deshacer, en lugar de solicitar confirmación"
 subtitle:      "Principio de reversibilidad"
+description:   "Permite deshacer acciones en vez de pedir confirmación constante para mejorar la experiencia y productividad del usuario."
 date:          2017-04-10 09:30:00
 author:        "Aunitz Giménez"
 header-img:    "img/post-bg-07.jpg"

@@ -2,6 +2,7 @@
 layout:        post
 title:         "No ocultes opciones importantes tras menús desplegables"
 subtitle:      "Evitar ocultar información relevante al usuario"
+description:   "Evita esconder opciones clave en menús desplegables para mejorar la visibilidad y la usabilidad de tu interfaz."
 date:          2017-11-01 17:30:00
 author:        "Aunitz Giménez"
 header-img:    "img/post-bg-03.jpg"

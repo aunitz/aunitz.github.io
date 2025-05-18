@@ -2,6 +2,7 @@
 layout:        post
 title:         "Reduce el número de campos de los formularios"
 subtitle:      "Cuantos menos campos mejor"
+description:   "Minimiza los campos en tus formularios para aumentar la usabilidad y reducir el abandono, sobre todo en móviles."
 date:          2017-03-09 09:30:00
 author:        "Aunitz Giménez"
 header-img:    "img/post-bg-01.jpg"

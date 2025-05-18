@@ -2,6 +2,7 @@
 layout:        post
 title:         "Unifica funcionalidades similares"
 subtitle:      "Refactoriza el interfaz de vez en cuando"
+description:   "Evita duplicidades en tu aplicación revisando y fusionando funciones similares para mejorar la usabilidad."
 date:          2017-03-07 09:30:00
 author:        "Aunitz Giménez"
 header-img:    "img/post-bg-05.jpg"

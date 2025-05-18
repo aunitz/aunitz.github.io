@@ -2,6 +2,7 @@
 layout:        post
 title:         "Ley de Tesler"
 subtitle:      "Reduce la complejidad hasta lo razonable"
+description:   "La Ley de Tesler afirma que toda aplicación tiene una complejidad mínima que debe asumir el usuario o el desarrollador."
 date:          2018-01-23 19:00:00
 author:        "Aunitz Giménez"
 header-img:    "img/post-bg-23.jpg"

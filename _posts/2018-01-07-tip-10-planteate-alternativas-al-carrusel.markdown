@@ -2,6 +2,7 @@
 layout:        post
 title:         "Plantéate alternativas al carrusel"
 subtitle:      "Los carruseles no son ni buenos ni malos en sí mismos"
+description:   "Analiza ventajas y desventajas de los carruseles y descubre alternativas más efectivas según el contexto de uso."
 date:          2018-01-07 18:30:00
 author:        "Aunitz Giménez"
 header-img:    "img/post-bg-15.jpg"

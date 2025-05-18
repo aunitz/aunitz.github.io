@@ -2,6 +2,7 @@
 layout:        post
 title:         "Principio de proximidad"
 subtitle:      "Elementos cercanos se perciben como relacionados"
+description:   "El principio de proximidad indica que agrupamos visualmente elementos cercanos, facilitando la comprensión en el diseño."
 date:          2018-01-22 21:45:00
 author:        "Aunitz Giménez"
 header-img:    "img/post-bg-21.jpg"

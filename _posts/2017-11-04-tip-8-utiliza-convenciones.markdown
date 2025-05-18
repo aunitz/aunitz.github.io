@@ -2,6 +2,7 @@
 layout:        post
 title:         "No reinventes la rueda: utiliza convenciones"
 subtitle:      "Utiliza estándares comúnmente aceptados"
+description:   "Aprovecha convenciones y estándares para facilitar el uso y la comprensión de tus aplicaciones por parte de los usuarios."
 date:          2017-11-04 11:30:00
 author:        "Aunitz Giménez"
 header-img:    "img/post-bg-12.jpg"

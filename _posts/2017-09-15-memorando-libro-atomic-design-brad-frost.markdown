@@ -2,6 +2,7 @@
 layout:        post
 title:         "Memorando sobre el libro Atomic Design de Brad Frost"
 subtitle:      "Notas que quiero recordar sobre lo leído en el libro"
+description:   "Reflexiones y aprendizajes clave del libro Atomic Design de Brad Frost sobre sistemas de diseño y guías de estilo."
 date:          2017-09-15 18:30:00
 author:        "Aunitz Giménez"
 header-img:    "img/post-bg-08.jpg"

@@ -2,6 +2,7 @@
 layout:        post
 title:         "Efecto Von Restorff"
 subtitle:      "Te fijarás en el que difiere"
+description:   "El efecto Von Restorff explica por qué recordamos mejor el elemento diferente en un grupo, clave en diseño de interfaces."
 date:          2018-01-23 20:30:00
 author:        "Aunitz Giménez"
 header-img:    "img/post-bg-24.jpg"

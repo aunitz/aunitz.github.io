@@ -2,6 +2,7 @@
 layout:        post
 title:         "Ley de Prägnanz"
 subtitle:      "Nuestra percepción tiende a organizarse en formas simples"
+description:   "La Ley de Prägnanz explica cómo percibimos formas simples para reducir el esfuerzo cognitivo en el diseño y la usabilidad."
 date:          2018-01-22 19:00:00
 author:        "Aunitz Giménez"
 header-img:    "img/post-bg-19.jpg"

@@ -2,6 +2,7 @@
 layout:        post
 title:         "Ley de Miller"
 subtitle:      "No recordarás más de 7 elementos"
+description:   "La Ley de Miller indica que la memoria de trabajo humana solo retiene entre 4 y 7 elementos, clave en diseño UX."
 date:          2018-01-22 20:00:00
 author:        "Aunitz Giménez"
 header-img:    "img/post-bg-20.jpg"

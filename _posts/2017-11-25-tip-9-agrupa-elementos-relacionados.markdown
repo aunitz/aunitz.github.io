@@ -2,6 +2,7 @@
 layout:        post
 title:         "Agrupa los elementos relacionados"
 subtitle:      "Este consejo de usabilidad se deriva del principio de consistencia"
+description:   "Mejora la usabilidad agrupando elementos relacionados para facilitar la búsqueda y la coherencia en la interfaz."
 date:          2017-11-25 21:15:00
 author:        "Aunitz Giménez"
 header-img:    "img/post-bg-13.jpg"

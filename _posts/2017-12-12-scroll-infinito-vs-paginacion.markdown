@@ -2,6 +2,7 @@
 layout:        post
 title:         "Scroll infinito vs paginación"
 subtitle:      "Cuándo utilizar uno u otro"
+description:   "Comparativa de scroll infinito y paginación: ventajas, inconvenientes y cuándo usar cada técnica en tus interfaces."
 date:          2017-12-12 10:00:00
 author:        "Aunitz Giménez"
 header-img:    "img/post-bg-14.jpg"

@@ -2,6 +2,7 @@
 layout:        post
 title:         "Ley de Hick"
 subtitle:      "El tiempo de reacción aumenta con el número de alternativas"
+description:   "La Ley de Hick explica cómo el tiempo para decidir aumenta según el número de opciones en un interfaz de usuario."
 date:          2018-01-21 20:00:00
 author:        "Aunitz Giménez"
 header-img:    "img/post-bg-17.jpg"

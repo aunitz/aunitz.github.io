@@ -2,6 +2,7 @@
 layout:        post
 title:         "Las 3 pautas de accesibilidad de mayor impacto para usuarios con visión reducida"
 subtitle:      "Todos tendremos visión reducida en algún momento"
+description:   "Tres pautas clave para mejorar la accesibilidad web a usuarios con visión reducida: enlaces, contraste y zoom."
 date:          2018-02-09 18:00:00
 author:        "Aunitz Giménez"
 header-img:    "img/post-bg-27.jpg"

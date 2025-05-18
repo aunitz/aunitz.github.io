@@ -2,6 +2,7 @@
 layout:        post
 title:         "Efecto Zeigárnik"
 subtitle:      "Tendencia a recordar tareas incompletas más que completadas"
+description:   "El efecto Zeigárnik explica por qué recordamos mejor tareas incompletas, útil para motivar acciones en interfaces."
 date:          2018-02-05 20:30:00
 author:        "Aunitz Giménez"
 header-img:    "img/post-bg-25.jpg"

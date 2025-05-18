@@ -2,6 +2,7 @@
 layout:        post
 title:         "Efecto de superioridad de la imagen"
 subtitle:      "Agrega imágenes para ser recordado"
+description:   "El efecto de superioridad de la imagen demuestra que la información visual se recuerda mucho mejor que solo texto."
 date:          2018-02-05 21:30:00
 author:        "Aunitz Giménez"
 header-img:    "img/post-bg-26.jpg"

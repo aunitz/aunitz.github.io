@@ -2,6 +2,7 @@
 layout:        post
 title:         "Muestra el estado de los elementos del interfaz"
 subtitle:      "Ayudaras a los usuarios a comprender si deben tomar medidas o no"
+description:   "Mostrar el estado de los elementos en la interfaz ayuda a los usuarios a entender acciones pasadas y próximas decisiones."
 date:          2018-07-08 12:00:00
 author:        "Aunitz Giménez"
 header-img:    "img/post-bg-32.jpg"

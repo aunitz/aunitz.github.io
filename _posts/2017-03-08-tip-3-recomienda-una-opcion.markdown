@@ -2,6 +2,7 @@
 layout:        post
 title:         "Recomienda en lugar de mostrar opciones iguales"
 subtitle:      "Reduce la parálisis por análisis"
+description:   "Destaca o recomienda opciones para ayudar a los usuarios a decidir y evitar la parálisis por exceso de alternativas."
 date:          2017-03-08 09:30:00
 author:        "Aunitz Giménez"
 header-img:    "img/post-bg-06.jpg"

@@ -2,6 +2,7 @@
 layout:        post
 title:         "Las etiquetas de los campos, mejor por encima"
 subtitle:      "Nunca prescindas de las etiquetas"
+description:   "Analiza ventajas de ubicar etiquetas sobre los campos en formularios y por qué nunca debes prescindir de ellas."
 date:          2018-03-11 12:00:00
 author:        "Aunitz Giménez"
 header-img:    "img/post-bg-28.jpg"
