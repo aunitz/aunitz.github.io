@@ -1,11 +1,11 @@
 ---
-layout:     post
-title:      "La navaja de Ockham"
-subtitle:   "Lo simple suele ser preferible a lo complejo"
-date:       2020-09-13 20:45:00
-author:     "Aunitz Giménez"
-header-img: "img/post-bg-55.jpg"
-tags:       [leyes y principios de experiencia de usuario (UX) y usabilidad, buenas prácticas de diseño]
+layout:        post
+title:         "La navaja de Ockham"
+subtitle:      "Lo simple suele ser preferible a lo complejo"
+date:          2020-09-13 20:45:00
+author:        "Aunitz Giménez"
+header-img:    "img/post-bg-55.jpg"
+tags:          [leyes y principios de experiencia de usuario (UX) y usabilidad, buenas prácticas de diseño]
 ---
 
 <p>La <strong>navaja de Ockham</strong> es un principio metodológico y filosófico atribuido al fraile franciscano Guillermo de Ockham (1280-1349), según el cual <strong>“en igualdad de condiciones, la explicación más sencilla suele ser la más probable”</strong>.</p>

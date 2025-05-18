@@ -1,11 +1,11 @@
 ---
-layout:     post
-title:      "Botones Aceptar y Cancelar, ¿en qué orden los situamos?"
-subtitle:   "Lo más importante es mantener la consistencia"
-date:       2020-02-20 16:40:00
-author:     "Aunitz Giménez"
-header-img: "img/post-bg-50.jpg"
-tags:       [buenas prácticas de usabilidad, formularios]
+layout:        post
+title:         "Botones Aceptar y Cancelar, ¿en qué orden los situamos?"
+subtitle:      "Lo más importante es mantener la consistencia"
+date:          2020-02-20 16:40:00
+author:        "Aunitz Giménez"
+header-img:    "img/post-bg-50.jpg"
+tags:          [buenas prácticas de usabilidad, formularios]
 ---
 
 <p>Los formularios y las ventanas de diálogo habitualmente disponen de dos botones de acción. Uno destinado a ejecutar la acción principal (por ejemplo “Aceptar”) y otro para la acción secundaria (por ejemplo “Cancelar”).</p>

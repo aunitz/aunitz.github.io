@@ -1,11 +1,11 @@
 ---
-layout:     post
-title:      "Formularios usables: mensajes de error"
-subtitle:   "Consejos de usabilidad sobre cómo mostrar los mensajes de error"
-date:       2021-02-06 21:30:00
-author:     "Aunitz Giménez"
-header-img: "img/post-bg-64.jpg"
-tags:       [buenas prácticas de usabilidad, formularios]
+layout:        post
+title:         "Formularios usables: mensajes de error"
+subtitle:      "Consejos de usabilidad sobre cómo mostrar los mensajes de error"
+date:          2021-02-06 21:30:00
+author:        "Aunitz Giménez"
+header-img:    "img/post-bg-64.jpg"
+tags:          [buenas prácticas de usabilidad, formularios]
 ---
 
 <p>En circunstancias ideales, nuestros formularios deberían ser tan fáciles de usar que las posibilidades de que el usuario cometa errores debería ser mínima. Aún así, en el mundo real, todos sabemos que por problemas de usabilidad o por despistes del usuario, los errores se producen.</p>

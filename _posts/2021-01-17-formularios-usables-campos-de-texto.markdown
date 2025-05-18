@@ -1,11 +1,11 @@
 ---
-layout:     post
-title:      "Formularios usables: campos de texto"
-subtitle:   "Consejos de usabilidad para los campos de texto"
-date:       2021-01-17 18:30:00
-author:     "Aunitz Giménez"
-header-img: "img/post-bg-61.jpg"
-tags:       [buenas prácticas de usabilidad, formularios]
+layout:        post
+title:         "Formularios usables: campos de texto"
+subtitle:      "Consejos de usabilidad para los campos de texto"
+date:          2021-01-17 18:30:00
+author:        "Aunitz Giménez"
+header-img:    "img/post-bg-61.jpg"
+tags:          [buenas prácticas de usabilidad, formularios]
 ---
 
 <p>El campo de entrada básico de un formulario es el campo de texto. Puede ser de una sola línea (<code>&lt;input type="text"&gt;</code>) o de varias líneas (<code>&lt;textarea&gt;</code>).</p>

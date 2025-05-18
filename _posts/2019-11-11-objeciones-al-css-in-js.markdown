@@ -1,11 +1,11 @@
 ---
-layout:     post
-title:      "Objeciones al CSS-in-JS"
-subtitle:   "Mantengámonos fieles al estándar CSS"
-date:       2019-11-11 21:00:00
-author:     "Aunitz Giménez"
-header-img: "img/post-bg-43.jpg"
-tags:       [sistemas de diseño, desarrollo de soluciones digitales]
+layout:        post
+title:         "Objeciones al CSS-in-JS"
+subtitle:      "Mantengámonos fieles al estándar CSS"
+date:          2019-11-11 21:00:00
+author:        "Aunitz Giménez"
+header-img:    "img/post-bg-43.jpg"
+tags:          [sistemas de diseño, desarrollo de soluciones digitales]
 ---
 
 <p>Ya he escrito <a href="{{ site.baseurl }}{% post_url 2017-09-15-memorando-libro-atomic-design-brad-frost %}">en otras ocasiones</a> sobre Brad Frost. El padre del <a href="https://bradfrost.com/blog/post/atomic-web-design/" target="_blank" rel="noopener noreferrer">Atomic Design</a>. Una metodología de referencia para la creación de <strong>sistemas de diseño</strong>.</p>

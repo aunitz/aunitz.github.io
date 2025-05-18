@@ -1,11 +1,11 @@
 ---
-layout:     post
-title:      "No utilices el atributo placeholder"
-subtitle:   "En ningún caso debe sustituir al label"
-date:       2020-01-29 22:15:00
-author:     "Aunitz Giménez"
-header-img: "img/post-bg-49.jpg"
-tags:       [buenas prácticas de usabilidad, formularios]
+layout:        post
+title:         "No utilices el atributo placeholder"
+subtitle:      "En ningún caso debe sustituir al label"
+date:          2020-01-29 22:15:00
+author:        "Aunitz Giménez"
+header-img:    "img/post-bg-49.jpg"
+tags:          [buenas prácticas de usabilidad, formularios]
 ---
 
 <p>El atributo <code>placeholder</code> de HTML pretende ser un texto breve que proporcione una pista sobre el valor esperado en un campo de entrada de formulario.</p>

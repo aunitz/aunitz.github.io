@@ -1,11 +1,11 @@
 ---
-layout:     post
-title:      "Relación entre estética y usabilidad"
-subtitle:   "El buen diseño es percibido como más usable"
-date:       2020-10-25 18:30:00
-author:     "Aunitz Giménez"
-header-img: "img/post-bg-58.jpg"
-tags:       [leyes y principios de experiencia de usuario (UX) y usabilidad, sistemas de diseño]
+layout:        post
+title:         "Relación entre estética y usabilidad"
+subtitle:      "El buen diseño es percibido como más usable"
+date:          2020-10-25 18:30:00
+author:        "Aunitz Giménez"
+header-img:    "img/post-bg-58.jpg"
+tags:          [leyes y principios de experiencia de usuario (UX) y usabilidad, sistemas de diseño]
 ---
 
 <p>Los usuarios normalmente perciben como <strong>más usables las aplicaciones que tienen un diseño estéticamente agradable</strong>.</p>

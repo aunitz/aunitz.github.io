@@ -1,11 +1,11 @@
 ---
-layout:     post
-title:      "Conventional Commits"
-subtitle:   "Una convención para dar significado a los mensajes de los commits"
-date:       2019-11-14 17:30:00
-author:     "Aunitz Giménez"
-header-img: "img/post-bg-44.jpg"
-tags:       [git]
+layout:        post
+title:         "Conventional Commits"
+subtitle:      "Una convención para dar significado a los mensajes de los commits"
+date:          2019-11-14 17:30:00
+author:        "Aunitz Giménez"
+header-img:    "img/post-bg-44.jpg"
+tags:          [git]
 ---
 
 <p>El mes pasado dejo de ser <em>beta</em> una iniciativa muy interesante llamada <a href="https://www.conventionalcommits.org/" target="_blank" rel="noopener noreferrer">Conventional Commits</a>.</p>

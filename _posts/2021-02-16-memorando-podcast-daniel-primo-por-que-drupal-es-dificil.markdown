@@ -1,11 +1,11 @@
 ---
-layout:     post
-title:      "Memorando del podcast de Daniel Primo “¿Por qué Drupal es difícil?”"
-subtitle:   "Notas que quiero recordar sobre lo escuchado en el podcast"
-date:       2021-02-16 17:30:00
-author:     "Aunitz Giménez"
-header-img: "img/post-bg-66.jpg"
-tags:       [desarrollo de soluciones digitales, memorandos]
+layout:        post
+title:         "Memorando del podcast de Daniel Primo “¿Por qué Drupal es difícil?”"
+subtitle:      "Notas que quiero recordar sobre lo escuchado en el podcast"
+date:          2021-02-16 17:30:00
+author:        "Aunitz Giménez"
+header-img:    "img/post-bg-66.jpg"
+tags:          [desarrollo de soluciones digitales, memorandos]
 ---
 
 <p>Hace unos años escribí un <a href="{{ site.baseurl }}{% post_url 2017-09-15-memorando-libro-atomic-design-brad-frost %}">memorando sobre el libro Atomic Design de Brad Frost</a>. Es habitual encontrar en Internet: reseñas, resúmenes y memorandos sobre libros. ¿Y por qué no sobre podcasts?</p>

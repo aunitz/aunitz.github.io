@@ -1,11 +1,11 @@
 ---
-layout:     post
-title:      "Los campos de texto de Material Design están mal diseñados"
-subtitle:   "Memorando sobre el artículo de Adam Silver"
-date:       2021-03-19 23:30:00
-author:     "Aunitz Giménez"
-header-img: "img/post-bg-68.jpg"
-tags:       [buenas prácticas de usabilidad, formularios, memorandos]
+layout:        post
+title:         "Los campos de texto de Material Design están mal diseñados"
+subtitle:      "Memorando sobre el artículo de Adam Silver"
+date:          2021-03-19 23:30:00
+author:        "Aunitz Giménez"
+header-img:    "img/post-bg-68.jpg"
+tags:          [buenas prácticas de usabilidad, formularios, memorandos]
 ---
 
 <p>Desde la humildad de un experto en usabilidad de provincias, siempre he considerado que los campos de texto de los formularios de <a href="https://material.io/" target="_blank" rel="noopener noreferrer">Material Design</a><sup id="fnref:fn-f1"><a href="#fn:fn-f1" class="footnote">1</a></sup> no son todo lo usables que deberían. Pero oye, como es Google quien lo hace, no me había atrevido a criticarlos abiertamente en este blog.</p>

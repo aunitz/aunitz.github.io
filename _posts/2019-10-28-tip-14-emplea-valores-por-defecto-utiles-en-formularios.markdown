@@ -1,11 +1,11 @@
 ---
-layout:     post
-title:      "Emplea valores por defecto útiles en los formularios"
-subtitle:   "Ahorramos trabajo a la persona usuaria"
-date:       2019-10-28 18:00:00
-author:     "Aunitz Giménez"
-header-img: "img/post-bg-39.jpg"
-tags:       [buenas prácticas de usabilidad, formularios]
+layout:        post
+title:         "Emplea valores por defecto útiles en los formularios"
+subtitle:      "Ahorramos trabajo a la persona usuaria"
+date:          2019-10-28 18:00:00
+author:        "Aunitz Giménez"
+header-img:    "img/post-bg-39.jpg"
+tags:          [buenas prácticas de usabilidad, formularios]
 ---
 
 <p>Una de las tareas más engorrosas para los usuarios de aplicaciones consiste en rellenar formularios. La manera más eficaz de reducir el tiempo que necesitamos para completar un formulario es que no tengamos que rellenar algunos de sus campos. Esto último se consigue si una buena parte de los campos del formulario ya vienen rellenados con un contenido por defecto que nos resulte útil.</p>

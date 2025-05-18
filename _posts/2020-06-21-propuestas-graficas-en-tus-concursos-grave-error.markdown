@@ -1,11 +1,11 @@
 ---
-layout:     post
-title:      "¿Pides propuestas gráficas en tus concursos? No vuelvas a hacerlo"
-subtitle:   "Se trata de un grave error"
-date:       2020-06-21 19:30:00
-author:     "Aunitz Giménez"
-header-img: "img/post-bg-52.jpg"
-tags:       [buenas prácticas de diseño]
+layout:        post
+title:         "¿Pides propuestas gráficas en tus concursos? No vuelvas a hacerlo"
+subtitle:      "Se trata de un grave error"
+date:          2020-06-21 19:30:00
+author:        "Aunitz Giménez"
+header-img:    "img/post-bg-52.jpg"
+tags:          [buenas prácticas de diseño]
 ---
 
 <p>Aún hoy en día, aunque parezca mentira, es demasiado frecuente que los clientes soliciten en sus concursos <strong>presentar una propuesta gráfica junto con la oferta</strong>. ¿Tú empresa o institución también lo hace? ¿Sí? Te contaré porque es un grave error. Spoiler: es como empezar la casa por el tejado.</p>

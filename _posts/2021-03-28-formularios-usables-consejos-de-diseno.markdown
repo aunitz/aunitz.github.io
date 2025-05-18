@@ -1,11 +1,11 @@
 ---
-layout:     post
-title:      "Formularios usables: consejos de diseño"
-subtitle:   "Consideraciones de diseño para unos formularios más usables"
-date:       2021-03-28 22:30:00
-author:     "Aunitz Giménez"
-header-img: "img/post-bg-69.jpg"
-tags:       [buenas prácticas de usabilidad, formularios]
+layout:        post
+title:         "Formularios usables: consejos de diseño"
+subtitle:      "Consideraciones de diseño para unos formularios más usables"
+date:          2021-03-28 22:30:00
+author:        "Aunitz Giménez"
+header-img:    "img/post-bg-69.jpg"
+tags:          [buenas prácticas de usabilidad, formularios]
 ---
 
 <p>El primer y más importante consejo para tener en cuenta a la hora de diseñar formularios puede parecer una obviedad: <strong>los formularios deben parecer formularios</strong>.</p>

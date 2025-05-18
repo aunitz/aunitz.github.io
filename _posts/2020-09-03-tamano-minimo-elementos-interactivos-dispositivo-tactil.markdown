@@ -1,11 +1,11 @@
 ---
-layout:     post
-title:      "Tamaño mínimo recomendado para los elementos interactivos en dispositivo táctil"
-subtitle:   "Para una cómoda manipulación"
-date:       2020-09-03 20:30:00
-author:     "Aunitz Giménez"
-header-img: "img/post-bg-54.jpg"
-tags:       [buenas prácticas de usabilidad]
+layout:        post
+title:         "Tamaño mínimo recomendado para los elementos interactivos en dispositivo táctil"
+subtitle:      "Para una cómoda manipulación"
+date:          2020-09-03 20:30:00
+author:        "Aunitz Giménez"
+header-img:    "img/post-bg-54.jpg"
+tags:          [buenas prácticas de usabilidad]
 ---
 
 <p><strong>El dispositivo de pantalla táctil más extendido</strong> y con el que más familiarizados estamos es el <strong>teléfono móvil</strong>. Pero hay otros muchos dispositivos, cada vez más, que cuentan con un interfaz de usuario táctil: tabletas, relojes, navegadores GPS, ordenadores portátiles, cámaras de fotos, impresoras, paneles de control de los coches, etc. En todos ellos, son nuestros dedos los que interactúan con las aplicaciones.</p>

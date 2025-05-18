@@ -1,11 +1,11 @@
 ---
-layout:     post
-title:      "Qué es Mobile First"
-subtitle:   "Requiere centrarse en lo importante"
-date:       2020-04-06 12:30:00
-author:     "Aunitz Giménez"
-header-img: "img/post-bg-51.jpg"
-tags:       [desarrollo de soluciones digitales, buenas prácticas de diseño]
+layout:        post
+title:         "Qué es Mobile First"
+subtitle:      "Requiere centrarse en lo importante"
+date:          2020-04-06 12:30:00
+author:        "Aunitz Giménez"
+header-img:    "img/post-bg-51.jpg"
+tags:          [desarrollo de soluciones digitales, buenas prácticas de diseño]
 ---
 
 <p>El concepto de “Mobile First” aplicado al desarrollo web fue <a href="https://www.lukew.com/ff/entry.asp?933" target="_blank" rel="noopener noreferrer">acuñado por primera vez en 2009 por Luke Wroblewski</a>.</p>

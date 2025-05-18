@@ -1,11 +1,11 @@
 ---
-layout:     post
-title:      "Internacionalizar fechas"
-subtitle:   "No existe una solución ideal para este problema"
-date:       2020-10-18 10:30:00
-author:     "Aunitz Giménez"
-header-img: "img/post-bg-57.jpg"
-tags:       [buenas prácticas de usabilidad, formularios]
+layout:        post
+title:         "Internacionalizar fechas"
+subtitle:      "No existe una solución ideal para este problema"
+date:          2020-10-18 10:30:00
+author:        "Aunitz Giménez"
+header-img:    "img/post-bg-57.jpg"
+tags:          [buenas prácticas de usabilidad, formularios]
 ---
 
 <p>Si tu web o aplicación incluye fechas en su contenido y va dirigida a un público internacional, te surgirá la duda de <strong>qué formato de fecha utilizar</strong>.</p>

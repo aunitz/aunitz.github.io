@@ -1,11 +1,11 @@
 ---
-layout:     post
-title:      "Diferencias entre checkout, revert y reset"
-subtitle:   "Apuntes sobre Git"
-date:       2019-11-16 19:00:00
-author:     "Aunitz Giménez"
-header-img: "img/post-bg-45.jpg"
-tags:       [git]
+layout:        post
+title:         "Diferencias entre checkout, revert y reset"
+subtitle:      "Apuntes sobre Git"
+date:          2019-11-16 19:00:00
+author:        "Aunitz Giménez"
+header-img:    "img/post-bg-45.jpg"
+tags:          [git]
 ---
 
 <p>Los comandos <code>git checkout</code>, <code>git revert</code> y <code>git reset</code> sirven para deshacer cambios en nuestro control de versiones. Son muy útiles, pero también muy parecidos y pueden generar confusión.</p>

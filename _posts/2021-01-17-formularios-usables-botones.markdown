@@ -1,11 +1,11 @@
 ---
-layout:     post
-title:      "Formularios usables: botones"
-subtitle:   "Consejos de usabilidad para los botones"
-date:       2021-01-17 19:00:00
-author:     "Aunitz Giménez"
-header-img: "img/post-bg-62.jpg"
-tags:       [buenas prácticas de usabilidad, formularios]
+layout:        post
+title:         "Formularios usables: botones"
+subtitle:      "Consejos de usabilidad para los botones"
+date:          2021-01-17 19:00:00
+author:        "Aunitz Giménez"
+header-img:    "img/post-bg-62.jpg"
+tags:          [buenas prácticas de usabilidad, formularios]
 ---
 
 <p>Los botones (<code>&lt;button&gt;</code>) son fundamentales en los formularios. Al menos deberá existir uno (el principal) que permita que el usuario envíe los datos una vez haya completado el formulario.</p>

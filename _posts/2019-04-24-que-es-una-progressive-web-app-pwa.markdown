@@ -1,11 +1,11 @@
 ---
-layout:     post
-title:      "Qué es una Progressive Web App (PWA)"
-subtitle:   "Proporciona una experiencia de usuario similar a las aplicaciones nativas"
-date:       2019-04-24 13:00:00
-author:     "Aunitz Giménez"
-header-img: "img/post-bg-40.jpg"
-tags:       [desarrollo de soluciones digitales]
+layout:        post
+title:         "Qué es una Progressive Web App (PWA)"
+subtitle:      "Proporciona una experiencia de usuario similar a las aplicaciones nativas"
+date:          2019-04-24 13:00:00
+author:        "Aunitz Giménez"
+header-img:    "img/post-bg-40.jpg"
+tags:          [desarrollo de soluciones digitales]
 ---
 
 <p>Las aplicaciones web progresivas (PWA, por sus siglas en inglés) <strong>son aplicaciones web</strong> que se cargan como páginas web o sitios web normales, pero <strong>ofrecen una experiencia de usuario que las asemeja a las aplicaciones nativas</strong>.</p>

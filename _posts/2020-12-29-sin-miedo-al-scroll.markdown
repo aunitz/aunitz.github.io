@@ -1,11 +1,11 @@
 ---
-layout:     post
-title:      "Sin miedo al scroll"
-subtitle:   "Los usuarios hacen scroll de manera natural"
-date:       2020-12-29 15:30:00
-author:     "Aunitz Giménez"
-header-img: "img/post-bg-60.jpg"
-tags:       [buenas prácticas de usabilidad]
+layout:        post
+title:         "Sin miedo al scroll"
+subtitle:      "Los usuarios hacen scroll de manera natural"
+date:          2020-12-29 15:30:00
+author:        "Aunitz Giménez"
+header-img:    "img/post-bg-60.jpg"
+tags:          [buenas prácticas de usabilidad]
 ---
 
 <p>Algunas personas siguen creyendo en el <strong>falso mito de que los usuarios no se desplazan verticalmente en las páginas</strong> (hacer scroll) y que sólo se fijan en el contenido que aparece en la parte superior de la página. Es decir, que sólo prestan atención al contenido que el navegador les muestra en la zona visible de la pantalla de su dispositivo y que no están habituados a desplazarse más allá de esa primera zona.</p>

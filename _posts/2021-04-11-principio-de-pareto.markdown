@@ -1,11 +1,11 @@
 ---
-layout:     post
-title:      "Principio de Pareto"
-subtitle:   "Céntrate en lo importante"
-date:       2021-04-11 16:30:00
-author:     "Aunitz Giménez"
-header-img: "img/post-bg-70.jpg"
-tags:       [leyes y principios de experiencia de usuario (UX) y usabilidad]
+layout:        post
+title:         "Principio de Pareto"
+subtitle:      "Céntrate en lo importante"
+date:          2021-04-11 16:30:00
+author:        "Aunitz Giménez"
+header-img:    "img/post-bg-70.jpg"
+tags:          [leyes y principios de experiencia de usuario (UX) y usabilidad]
 ---
 
 <p>El <strong>principio de Pareto</strong> es también conocido como <strong>la regla del 80/20</strong>. La enunció por primera vez en 1896 el economista italiano Vilfredo Pareto.</p>

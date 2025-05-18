@@ -1,11 +1,11 @@
 ---
-layout:     post
-title:      "Umbral de Doherty"
-subtitle:   "Formidable aumento de la productividad"
-date:       2020-08-29 23:00:00
-author:     "Aunitz Giménez"
-header-img: "img/post-bg-53.jpg"
-tags:       [leyes y principios de experiencia de usuario (UX) y usabilidad]
+layout:        post
+title:         "Umbral de Doherty"
+subtitle:      "Formidable aumento de la productividad"
+date:          2020-08-29 23:00:00
+author:        "Aunitz Giménez"
+header-img:    "img/post-bg-53.jpg"
+tags:          [leyes y principios de experiencia de usuario (UX) y usabilidad]
 ---
 
 <p><em><strong>El tiempo de respuesta de una aplicación debe ser menor a 400 milisegundos para que el usuario se mantenga “conectado” a la aplicación y sea más productivo.</strong></em></p>

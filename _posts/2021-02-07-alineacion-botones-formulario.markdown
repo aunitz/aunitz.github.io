@@ -1,11 +1,11 @@
 ---
-layout:     post
-title:      "Alineación (posición) recomendada para los botones de un formulario"
-subtitle:   "En general, abajo a la izquierda"
-date:       2021-02-07 22:00:00
-author:     "Aunitz Giménez"
-header-img: "img/post-bg-65.jpg"
-tags:       [buenas prácticas de usabilidad, formularios]
+layout:        post
+title:         "Alineación (posición) recomendada para los botones de un formulario"
+subtitle:      "En general, abajo a la izquierda"
+date:          2021-02-07 22:00:00
+author:        "Aunitz Giménez"
+header-img:    "img/post-bg-65.jpg"
+tags:          [buenas prácticas de usabilidad, formularios]
 ---
 
 <p><a href="{{ site.baseurl }}{% post_url 2020-02-20-tip-18-botones-aceptar-cancelar-orden %}">En un artículo anterior</a> trataba sobre el orden adecuado en el que colocar los botones de acción principal (por ejemplo “Aceptar”) y de acción secundaria (por ejemplo “Cancelar”). Una cuestión directamente relacionada es la de, una vez decidido el orden, cuál debe ser la alineación recomendada para los botones.</p>

@@ -1,11 +1,11 @@
 ---
-layout:     post
-title:      "Diferencia claramente los elementos clicables y/o seleccionados"
-subtitle:   "Como por ejemplo los botones y los enlaces"
-date:       2020-11-17 17:00:00
-author:     "Aunitz Giménez"
-header-img: "img/post-bg-59.jpg"
-tags:       [buenas prácticas de usabilidad]
+layout:        post
+title:         "Diferencia claramente los elementos clicables y/o seleccionados"
+subtitle:      "Como por ejemplo los botones y los enlaces"
+date:          2020-11-17 17:00:00
+author:        "Aunitz Giménez"
+header-img:    "img/post-bg-59.jpg"
+tags:          [buenas prácticas de usabilidad]
 ---
 
 <p>El usuario debe distinguir con total claridad y a primera vista todos aquellos elementos del interfaz que son <strong>clicables</strong>. Como por ejemplo los botones y los enlaces. Así como diferenciar sin esfuerzo cuáles son los <strong>elementos que ha seleccionado</strong>. Como por ejemplo la sección del menú en la que se encuentra ubicado ahora mismo.</p>

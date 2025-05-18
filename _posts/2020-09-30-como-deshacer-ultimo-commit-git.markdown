@@ -1,11 +1,11 @@
 ---
-layout:     post
-title:      "Cómo deshacer el último commit con Git"
-subtitle:   "Apuntes sobre Git"
-date:       2020-09-30 17:00:00
-author:     "Aunitz Giménez"
-header-img: "img/post-bg-56.jpg"
-tags:       [git]
+layout:        post
+title:         "Cómo deshacer el último commit con Git"
+subtitle:      "Apuntes sobre Git"
+date:          2020-09-30 17:00:00
+author:        "Aunitz Giménez"
+header-img:    "img/post-bg-56.jpg"
+tags:          [git]
 ---
 
 <p>Me he dado cuenta de que estoy un tanto encandilado con el tema de cómo deshacer el último <em>commit</em> de un repositorio Git. <a href="{{ site.baseurl }}{% post_url 2017-07-29-git-como-deshacer-commit %}">Publiqué un vídeo muy sencillo</a> al respecto en verano del 2017 y un artículo más completo en el 2019. Te emplazo a consultar <a href="{{ site.baseurl }}{% post_url 2019-11-16-diferencias-checkout-revert-reset %}">el post del 2019</a> si quieres más detalle del que proporciono en esta ocasión.</p>
