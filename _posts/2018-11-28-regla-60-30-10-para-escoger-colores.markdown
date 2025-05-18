@@ -1,11 +1,11 @@
 ---
-layout: post
-title: "La regla del 60-30-10 para escoger colores"
-subtitle: "Te ayudará a definir los colores de tu interfaz"
-date: 2018-11-28 16:45:00
-author: "Aunitz Giménez"
-header-img: "img/post-bg-30.jpg"
-tags:       [buenas prácticas de diseño, colores]
+layout:        post
+title:         "La regla del 60-30-10 para escoger colores"
+subtitle:      "Te ayudará a definir los colores de tu interfaz"
+date:          2018-11-28 16:45:00
+author:        "Aunitz Giménez"
+header-img:    "img/post-bg-30.jpg"
+tags:          [buenas prácticas de diseño, colores]
 ---
 
 <p>Existe una regla clásica en el mundo de la decoración de interiores que se puede trasladar directamente al ámbito de los interfaces de usuario.</p>

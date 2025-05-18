@@ -1,11 +1,11 @@
 ---
-layout:     post
-title:      "Ley de Prägnanz"
-subtitle:   "Nuestra percepción tiende a organizarse en formas simples"
-date:       2018-01-22 19:00:00
-author:     "Aunitz Giménez"
-header-img: "img/post-bg-19.jpg"
-tags:       [leyes y principios de experiencia de usuario (UX) y usabilidad, leyes y principios de la Gestalt]
+layout:        post
+title:         "Ley de Prägnanz"
+subtitle:      "Nuestra percepción tiende a organizarse en formas simples"
+date:          2018-01-22 19:00:00
+author:        "Aunitz Giménez"
+header-img:    "img/post-bg-19.jpg"
+tags:          [leyes y principios de experiencia de usuario (UX) y usabilidad, leyes y principios de la Gestalt]
 ---
 
 <p><em><strong>Las personas percibirán e interpretarán imágenes ambiguas o complejas como la forma más simple posible.</strong></em></p>

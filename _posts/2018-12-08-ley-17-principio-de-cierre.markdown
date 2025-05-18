@@ -1,11 +1,11 @@
 ---
-layout:     post
-title:      "Principio de cierre"
-subtitle:   "Nuestro cerebro completará la figura"
-date:       2018-12-08 21:00:00
-author:     "Aunitz Giménez"
-header-img: "img/post-bg-37.jpg"
-tags:       [leyes y principios de experiencia de usuario (UX) y usabilidad, leyes y principios de la Gestalt]
+layout:        post
+title:         "Principio de cierre"
+subtitle:      "Nuestro cerebro completará la figura"
+date:          2018-12-08 21:00:00
+author:        "Aunitz Giménez"
+header-img:    "img/post-bg-37.jpg"
+tags:          [leyes y principios de experiencia de usuario (UX) y usabilidad, leyes y principios de la Gestalt]
 ---
 
 <p><em><strong>Nuestros cerebros percibirán los objetos y las figuras en su forma completa, incluso si falta parte de ese objeto.</strong></em></p>

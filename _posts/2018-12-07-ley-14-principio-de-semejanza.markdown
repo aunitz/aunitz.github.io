@@ -1,11 +1,11 @@
 ---
-layout:     post
-title:      "Principio de semejanza"
-subtitle:   "Objetos similares se perciben como relacionados entre sí"
-date:       2018-12-07 12:00:00
-author:     "Aunitz Giménez"
-header-img: "img/post-bg-35.jpg"
-tags:       [leyes y principios de experiencia de usuario (UX) y usabilidad, leyes y principios de la Gestalt]
+layout:        post
+title:         "Principio de semejanza"
+subtitle:      "Objetos similares se perciben como relacionados entre sí"
+date:          2018-12-07 12:00:00
+author:        "Aunitz Giménez"
+header-img:    "img/post-bg-35.jpg"
+tags:          [leyes y principios de experiencia de usuario (UX) y usabilidad, leyes y principios de la Gestalt]
 ---
 
 <p><em><strong>Los elementos que comparten un mayor número de características visuales similares (tamaño, color, textura, forma u orientación) se perciben como relacionados entre sí.</strong></em></p>

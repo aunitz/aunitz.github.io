@@ -1,11 +1,11 @@
 ---
-layout:     post
-title:      "Ley de Miller"
-subtitle:   "No recordarás más de 7 elementos"
-date:       2018-01-22 20:00:00
-author:     "Aunitz Giménez"
-header-img: "img/post-bg-20.jpg"
-tags:       [leyes y principios de experiencia de usuario (UX) y usabilidad]
+layout:        post
+title:         "Ley de Miller"
+subtitle:      "No recordarás más de 7 elementos"
+date:          2018-01-22 20:00:00
+author:        "Aunitz Giménez"
+header-img:    "img/post-bg-20.jpg"
+tags:          [leyes y principios de experiencia de usuario (UX) y usabilidad]
 ---
 
 <p><em><strong>Una persona solo puede mantener 7 elementos en su memoria de trabajo.</strong></em></p>

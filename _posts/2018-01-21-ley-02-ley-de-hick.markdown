@@ -1,11 +1,11 @@
 ---
-layout:     post
-title:      "Ley de Hick"
-subtitle:   "El tiempo de reacción aumenta con el número de alternativas"
-date:       2018-01-21 20:00:00
-author:     "Aunitz Giménez"
-header-img: "img/post-bg-17.jpg"
-tags:       [leyes y principios de experiencia de usuario (UX) y usabilidad]
+layout:        post
+title:         "Ley de Hick"
+subtitle:      "El tiempo de reacción aumenta con el número de alternativas"
+date:          2018-01-21 20:00:00
+author:        "Aunitz Giménez"
+header-img:    "img/post-bg-17.jpg"
+tags:          [leyes y principios de experiencia de usuario (UX) y usabilidad]
 ---
 
 <p><em><strong>El tiempo que se tarda en tomar una decisión aumenta de manera logarítmica a medida que se incrementa el número de alternativas.</strong></em></p>

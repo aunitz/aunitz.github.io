@@ -1,11 +1,11 @@
 ---
-layout:     post
-title:      "Accesibilidad web al alcance de todos"
-subtitle:   "Con estas pautas básicas incrementarás considerablemente la accesibilidad de tu web"
-date:       2019-02-22 12:30:00
-author:     "Aunitz Giménez"
-header-img: "img/post-bg-36.jpg"
-tags:       [accesibilidad]
+layout:        post
+title:         "Accesibilidad web al alcance de todos"
+subtitle:      "Con estas pautas básicas incrementarás considerablemente la accesibilidad de tu web"
+date:          2019-02-22 12:30:00
+author:        "Aunitz Giménez"
+header-img:    "img/post-bg-36.jpg"
+tags:          [accesibilidad]
 ---
 
 <h2>Qué es la accesibilidad web</h2>

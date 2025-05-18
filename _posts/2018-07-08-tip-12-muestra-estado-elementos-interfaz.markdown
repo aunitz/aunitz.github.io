@@ -1,11 +1,11 @@
 ---
-layout:     post
-title:      "Muestra el estado de los elementos del interfaz"
-subtitle:   "Ayudaras a los usuarios a comprender si deben tomar medidas o no"
-date:       2018-07-08 12:00:00
-author:     "Aunitz Giménez"
-header-img: "img/post-bg-32.jpg"
-tags:       [buenas prácticas de usabilidad]
+layout:        post
+title:         "Muestra el estado de los elementos del interfaz"
+subtitle:      "Ayudaras a los usuarios a comprender si deben tomar medidas o no"
+date:          2018-07-08 12:00:00
+author:        "Aunitz Giménez"
+header-img:    "img/post-bg-32.jpg"
+tags:          [buenas prácticas de usabilidad]
 ---
 
 <p>En cualquier interfaz de usuario, a menudo mostramos elementos que puede tener diferentes estados. Los correos electrónicos puedes estar leídos o no, las facturas pueden estar pagadas o no, etc.</p>

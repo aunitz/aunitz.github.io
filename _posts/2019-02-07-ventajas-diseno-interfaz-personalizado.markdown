@@ -1,11 +1,11 @@
 ---
-layout:     post
-title:      "Ventajas de un diseño de interfaz personalizado"
-subtitle:   "Evita el uso de sistemas de diseño de terceros"
-date:       2019-02-07 11:30:00
-author:     "Aunitz Giménez"
-header-img: "img/post-bg-41.jpg"
-tags:       [sistemas de diseño, buenas prácticas de diseño]
+layout:        post
+title:         "Ventajas de un diseño de interfaz personalizado"
+subtitle:      "Evita el uso de sistemas de diseño de terceros"
+date:          2019-02-07 11:30:00
+author:        "Aunitz Giménez"
+header-img:    "img/post-bg-41.jpg"
+tags:          [sistemas de diseño, buenas prácticas de diseño]
 ---
 
 <p>Durante los últimos años observo una <strong>fuerte tendencia en el front-end de las aplicaciones web a utilizar <a href="https://uxdesign.cc/everything-you-need-to-know-about-design-systems-54b109851969" target="_blank" rel="noopener noreferrer">sistemas de diseño</a> de terceros</strong>.</p>

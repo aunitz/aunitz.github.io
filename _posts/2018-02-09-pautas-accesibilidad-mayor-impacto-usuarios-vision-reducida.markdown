@@ -1,11 +1,11 @@
 ---
-layout:     post
-title:      "Las 3 pautas de accesibilidad de mayor impacto para usuarios con visión reducida"
-subtitle:   "Todos tendremos visión reducida en algún momento"
-date:       2018-02-09 18:00:00
-author:     "Aunitz Giménez"
-header-img: "img/post-bg-27.jpg"
-tags:       [accesibilidad]
+layout:        post
+title:         "Las 3 pautas de accesibilidad de mayor impacto para usuarios con visión reducida"
+subtitle:      "Todos tendremos visión reducida en algún momento"
+date:          2018-02-09 18:00:00
+author:        "Aunitz Giménez"
+header-img:    "img/post-bg-27.jpg"
+tags:          [accesibilidad]
 ---
 
 <p>Con este artículo voy a iniciar una serie dedicada a divulgar aquellas pautas de accesibilidad que tienen un <strong>mayor impacto práctico</strong> en el día a día de los usuarios con algún tipo de discapacidad.</p>

@@ -1,11 +1,11 @@
 ---
-layout:     post
-title:      "Principio de dirección común"
-subtitle:   "Elementos conectados visualmente son percibidos como un grupo"
-date:       2018-12-08 20:00:00
-author:     "Aunitz Giménez"
-header-img: "img/post-bg-34.jpg"
-tags:       [leyes y principios de experiencia de usuario (UX) y usabilidad, leyes y principios de la Gestalt]
+layout:        post
+title:         "Principio de dirección común"
+subtitle:      "Elementos conectados visualmente son percibidos como un grupo"
+date:          2018-12-08 20:00:00
+author:        "Aunitz Giménez"
+header-img:    "img/post-bg-34.jpg"
+tags:          [leyes y principios de experiencia de usuario (UX) y usabilidad, leyes y principios de la Gestalt]
 ---
 
 <p><em><strong>Los elementos que se mueven en la misma dirección se perciben como una figura.</strong></em></p>
