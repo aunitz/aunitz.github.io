@@ -9,7 +9,7 @@ header-img:    "img/post-bg-109.jpg"
 tags:          [desarrollo de soluciones digitales, memorandos]
 ---
 
-<p>Hace años que estoy suscrito al excelente boletín semanal sobre desarrollo <em>frontend</em> llamado <a href="https://frontendfoc.us/" target="_blank" rel="noopener noreferrer"><em>Frontend Focus</em></a>. En su <a href="https://frontendfoc.us/issues/702" target="_blank" rel="noopener noreferrer">número 702</a>, publicado en julio de 2025, enlazan un artículo del ingeniero Colton Voege que lleva un título provocador: <a href="https://colton.dev/blog/tailwind-is-the-worst-of-all-worlds/" target="_blank" rel="noopener noreferrer"><em>Tailwind is the Worst of All Worlds</em></a>.</p>
+<p>Hace años que estoy suscrito al excelente boletín semanal sobre desarrollo <em>frontend</em> llamado <a href="https://frontendfoc.us/" target="_blank" rel="noopener noreferrer"><em>Frontend Focus</em></a>. En su <a href="https://frontendfoc.us/issues/702" target="_blank" rel="noopener noreferrer">número 702</a>, publicado en julio de 2025, enlazan un artículo del ingeniero <a href="https://www.linkedin.com/in/colton-voege-15a039b2/" target="_blank" rel="noopener noreferrer">Colton Voege</a> que lleva un título provocador: <a href="https://colton.dev/blog/tailwind-is-the-worst-of-all-worlds/" target="_blank" rel="noopener noreferrer"><em>Tailwind is the Worst of All Worlds</em></a>.</p>
 
 <p>No soy experto en desarrollo <em>frontend</em>, pero llevo muchos años dirigiendo proyectos en los que trabajan excelentes profesionales del desarrollo de interfaces y, en especial, del uso de CSS. Estoy al tanto de las novedades y de la práctica cotidiana con este lenguaje. Teniendo en cuenta este contexto, diré que <strong><em>Tailwind</em> nunca me ha gustado</strong>. He experimentado un poco con él y hay aspectos que me han incomodado desde el principio. No lo había expresado antes porque no he visto que se critique en exceso este <em>framework</em>. Hasta que leí el artículo de Colton Voege y pensé: «¡Vaya! No soy el único al que no le convence <em>Tailwind</em>». Con la ventaja de que Colton es un ingeniero experto en desarrollo web y fundamenta técnicamente sus afirmaciones. Por ello, me sumo a él en la crítica a <em>Tailwind</em> y paso a resumir los principales inconvenientes que señala y en los que coincido plenamente.</p>
 
@@ -21,7 +21,7 @@ tags:          [desarrollo de soluciones digitales, memorandos]
     </a>
 </p>
 
-<p>He resaltado el fragmento de código que de inmediato me llamó la atención: esas <strong>largas listas de clases CSS</strong> que parecen más estilos en línea que clases definidas en una hoja de estilos externa. Nunca le he encontrado sentido a este tipo de código.</p>
+<p>He resaltado los fragmentos de código que de inmediato me llamaron la atención: esas <strong>largas listas de clases CSS</strong> que parecen más estilos en línea que clases definidas en una hoja de estilos externa. Nunca le he encontrado sentido a este tipo de código.</p>
 
 <h2>Principales inconvenientes de <em>Tailwind</em> según Colton Voege</h2>
 
@@ -56,7 +56,7 @@ tags:          [desarrollo de soluciones digitales, memorandos]
 <p><em>Tailwind</em> cuenta con una de las documentaciones más completas y cuidadas del ecosistema <em>frontend</em>. Su página web es atractiva, clara y ofrece ejemplos listos para copiar, lo que transmite una sensación de inmediatez.</p>
 
 <h3>Promesa de velocidad</h3>
-<p><em>Tailwind</em> transmite la sensación de que permite desarrollar interfaces con gran rapidez, ya que posibilita aplicar estilos sin salir del HTML/JSX. Se percibe como una opción más productiva que escribir CSS en hojas de estilo separadas o configurar un sistema de diseño desde cero.</p>
+<p><em>Tailwind</em> transmite la sensación de que permite desarrollar interfaces con gran rapidez, ya que posibilita aplicar estilos sin salir del HTML/JSX. Se percibe como una opción más productiva que escribir CSS en hojas de estilo separadas o configurar un <a href="{{ site.baseurl }}{% post_url 2019-12-26-que-es-un-design-system %}">sistema de diseño</a> desde cero.</p>
 
 <p><img src="{{ site.baseurl }}/img/memorando-tailwind-todo-mal-05.png" loading="lazy" alt="" width="720" height="480"></p>
 
@@ -64,7 +64,7 @@ tags:          [desarrollo de soluciones digitales, memorandos]
 <p>Existe una comunidad muy numerosa que crea contenido, tutoriales y plantillas basadas en <em>Tailwind</em>. <em>Influencers</em>, <em>youtubers</em> y grandes proyectos han adoptado y promocionado esta herramienta, lo que genera validación social y provoca que nuevos desarrolladores la incorporen casi por inercia. Así se ha consolidado la percepción de que es un estándar de facto: «si todos lo usan, debe de ser bueno».</p>
 
 <h4>La contribución de la IA generativa</h4>
-<p>Las clases de <em>Tailwind</em> son especialmente fáciles de recordar, reproducir y generar para los modelos de lenguaje (LLM). Gracias a ello, se han vuelto muy populares en esta era de asistentes de inteligencia artificial, que pueden sugerir o generar código al instante usando sus utilidades.</p>
+<p>Las clases de <em>Tailwind</em> son especialmente fáciles de recordar, reproducir y generar para los modelos de lenguaje (LLM). Gracias a ello, se han vuelto muy populares entre los desarrolladores que utilizan IA para programar y que no se cuestionan las decisiones que la herramienta toma por ellos.</p>
 
 <h3>Plantillas y componentes predefinidos</h3>
 <p><em>Tailwind</em> ofrece un amplio ecosistema de plantillas, <em>themes</em> y librerías UI que atraen a quienes quieren resultados rápidos y vistosos.</p>
@@ -73,3 +73,5 @@ tags:          [desarrollo de soluciones digitales, memorandos]
 
 <h3>Facilidad de entrada para principiantes</h3>
 <p>Al no requerir un conocimiento profundo de CSS, los principiantes tienen la sensación de dominar la maquetación con mayor rapidez. Esto convierte a <em>Tailwind</em> en una herramienta atractiva para quienes se inician en este ámbito.</p>
+
+<p>👉 ¿Cuál es tu opinión al respecto? Te invito a compartirla en los <a href="https://www.linkedin.com/posts/aunitz_memorando-del-art%C3%ADculo-de-colton-voege-tailwind-activity-7366348752766353408-F8bY" target="_blank" rel="noopener noreferrer">comentarios de esta publicación en LinkedIn</a>.</p>
