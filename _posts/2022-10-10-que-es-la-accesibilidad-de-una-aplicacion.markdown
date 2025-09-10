@@ -5,7 +5,7 @@ subtitle:      "Definición y beneficios de la accesibilidad"
 date:          2022-10-10 17:00:00
 author:        "Aunitz Giménez"
 header-img:    "img/post-bg-80.jpg"
-tags:          [glosario]
+tags:          [accesibilidad]
 ---
 
 <p>En este blog he escrito <a href="{{ site.baseurl }}/tags/">varios artículos</a> encaminados a divulgar las buenas prácticas de la accesibilidad. Sin embargo, hasta el momento, no había dedicado un post a definir <strong>qué es la accesibilidad </strong>y <strong>cuáles son sus principales beneficios</strong>.</p>
