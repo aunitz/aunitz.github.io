@@ -19,7 +19,7 @@ tags:          [buenas prácticas de diseño, desarrollo de soluciones digitales
 
 <h2>Estándar internacional del DCU</h2>
 
-<p>La <a href="https://www.iso.org/standard/21197.html" target="_blank" rel="noopener noreferrer">norma ISO 13407,<em>Human-centred design processesfor interactive systems</em></a> (1999), fue el primer estándar internacional que definió un proceso de diseño centrado en el usuario.</p>
+<p>La <a href="https://www.iso.org/standard/21197.html" target="_blank" rel="noopener noreferrer">norma ISO 13407, <em>Human-centred design processesfor interactive systems</em></a> (1999), fue el primer estándar internacional que definió un proceso de diseño centrado en el usuario.</p>
 
 <p>La norma ISO 13407 establece que el diseño centrado en el usuario se caracteriza por: la <strong>participación activa de los usuarios</strong> y una comprensión clara de sus necesidades y requisitos; una distribución adecuada de funciones entre los usuarios y la tecnología; la <strong>iteración</strong> de las soluciones de diseño; y un <strong>enfoque multidisciplinar</strong> del proceso de diseño.</p>
 
