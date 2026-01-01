@@ -530,6 +530,36 @@ body {
         -webkit-tap-highlight-color: @brand-primary;
 }
 
+// Estilos para artículos importados (The Conversation)
+.theconversation-article-body {
+	img {
+		max-width: 100%;
+		height: auto;
+		display: block;
+		margin: 0.75em 0;
+	}
+	figure {
+		margin: 0 0 1.25em;
+	}
+	figure.align-right {
+		float: right;
+		margin: 0 0 1em 1em;
+		max-width: 320px;
+		width: 40%;
+	}
+	.zoomable a img {
+		cursor: zoom-in;
+	}
+	@media only screen and (max-width: 767px) {
+		figure.align-right {
+			float: none;
+			max-width: 100%;
+			width: auto;
+			margin: 0 0 1em 0;
+		}
+	}
+}
+
 // Mis estilos
 
 .footnotes {
