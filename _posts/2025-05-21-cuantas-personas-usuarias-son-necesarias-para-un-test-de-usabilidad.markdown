@@ -135,7 +135,7 @@ tags:          [métodos de investigación UX]
             <p><a href="https://dl.acm.org/citation.cfm?id=169166" target="_blank" rel="noopener noreferrer">Nielsen, Jakob, y Landauer, Thomas K.: "Un modelo matemático para la detección de problemas de usabilidad",</a> <em>Actas de la Conferencia ACM INTERCHI'93</em> (Ámsterdam, Países Bajos, 24-29 de abril de 1993), págs. 206-213.&nbsp;<a href="#fnref:fn-f1" class="reversefootnote">&#8617;</a></p>
         </li>
         <li id="fn:fn-f2">
-            <p><a href="https://doi.org/10.3758/BF03195514" target="_blank" rel="noopener noreferrer">Faulkner, L. Beyond the five-user assumption: Benefits of increased sample sizes in usability testing</a>. <em>Behavior Research Methods, Instruments, &amp; Computers</em> <strong>35</strong>, 379–383 (2003).&nbsp;<a href="#fnref:fn-f2" class="reversefootnote">&#8617;</a></p>
+            <p><a href="https://doi.org/10.3758/BF03195514" target="_blank" rel="noopener noreferrer">Faulkner, L. Beyond the five-user assumption: Benefits of increased sample sizes in usability testing</a>. <em>Behavior Research Methods, Instruments, &amp; Computers</em> 35, 379–383 (2003).&nbsp;<a href="#fnref:fn-f2" class="reversefootnote">&#8617;</a></p>
         </li>        
     </ol>
 </div>
