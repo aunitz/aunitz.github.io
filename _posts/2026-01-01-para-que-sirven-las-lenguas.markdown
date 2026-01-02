@@ -1,7 +1,7 @@
 ---
 layout:        post
 title:         "¿Para qué sirven las lenguas?"
-subtitle:      "Comunican, crean y transforman realidad"
+subtitle:      "Comunican, crean y transforman la realidad"
 description:   "Las lenguas son herramientas fundamentales para comunicar, expresar pensamientos, crear identidad y transformar la realidad."
 date:          2026-01-01 18:00:00 +0200
 author:        "Patricia Álvarez Sánchez"
