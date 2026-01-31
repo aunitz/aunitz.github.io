@@ -20,7 +20,9 @@ canonical:     "https://theconversation.com/para-que-sirven-las-lenguas-172319"
     </figcaption>
   </figure>
 
-  <p><a href="https://theconversation.com/profiles/patricia-alvarez-sanchez-1113240" target="_blank" rel="noopener noreferrer">Patricia Álvarez Sánchez</a>, Profesora de Traducción e Interpretación, <a href="https://theconversation.com/institutions/universidad-de-malaga-3954" target="_blank" rel="noopener noreferrer">Universidad de Málaga</a>. Este artículo fue publicado originalmente en  <a href="https://theconversation.com" target="_blank" rel="noopener noreferrer">The Conversation</a>. Lea el <a href="https://theconversation.com/para-que-sirven-las-lenguas-172319" target="_blank" rel="noopener noreferrer">original</a>.</p>
+  <p><em><a href="https://theconversation.com/profiles/patricia-alvarez-sanchez-1113240" target="_blank" rel="noopener noreferrer">Patricia Álvarez Sánchez</a>, Profesora de Traducción e Interpretación, <a href="https://theconversation.com/institutions/universidad-de-malaga-3954" target="_blank" rel="noopener noreferrer">Universidad de Málaga</a>. Este artículo fue publicado <a href="https://theconversation.com/para-que-sirven-las-lenguas-172319" target="_blank" rel="noopener noreferrer">originalmente</a> en <a href="https://theconversation.com" target="_blank" rel="noopener noreferrer">The Conversation</a>.</em></p>
+
+  <hr>
 
   <p>Las lenguas son constelaciones de palabras que compartimos todos aquellos hablantes que estamos inmersos en un entorno lingüístico concreto. A pesar de su sorprendente variedad –existen unas 7000–, la lingüística trata de analizarlas y determinar su estructura. </p>
 
@@ -41,12 +43,12 @@ canonical:     "https://theconversation.com/para-que-sirven-las-lenguas-172319"
   <h2>Las palabras curan penas</h2>
 
   <figure class="align-right">
-      <img src="{{ site.baseurl }}/img/para-que-sirven-las-lenguas-02.webp" loading="lazy" alt="Fotografía de Sigmund Freud por Max Halberstadt (1921)" width="300" height="435">
-      <figcaption>
-        <span class="caption">Sigmund Freud fotografiado por Max Halberstadt en 1921.</span>
-        <span class="attribution"><a class="source" href="https://commons.wikimedia.org/wiki/File:Sigmund_Freud,_by_Max_Halberstadt.jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons</a></span>
-      </figcaption>
-  </figure>  
+    <img src="{{ site.baseurl }}/img/para-que-sirven-las-lenguas-02.webp" loading="lazy" alt="Fotografía de Sigmund Freud por Max Halberstadt (1921)" width="300" height="435">
+    <figcaption>
+      <span class="caption">Sigmund Freud fotografiado por Max Halberstadt en 1921.</span>
+      <span class="attribution"><a class="source" href="https://commons.wikimedia.org/wiki/File:Sigmund_Freud,_by_Max_Halberstadt.jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons</a></span>
+    </figcaption>
+  </figure>
     
   <p>Además, las palabras pueden curar casi todas las penas si las expresamos en alto a modo de confesión, sobre todo desde un diván freudiano, y gracias al lenguaje un psicólogo podría <a href="https://theconversation.com/con-depresion-nos-expresamos-de-otra-manera-y-un-ordenador-lo-detecta-99957" target="_blank" rel="noopener noreferrer">detectar si una persona sufre una depresión</a>. </p>
 
@@ -78,5 +80,8 @@ canonical:     "https://theconversation.com/para-que-sirven-las-lenguas-172319"
 
   <p>Las palabras cobran vida cuando las decimos y tienen multitud de funciones. Decía Wittgenstein también que el estudio del lenguaje es única vía de acceso al conocimiento. Es posible que no exista nada en nuestro pensamiento que no pueda ser nombrado de alguna manera.<!-- Below is The Conversation's page counter tag. Please DO NOT REMOVE. --><img src="https://counter.theconversation.com/content/172319/count.gif?distributor=republish-lightbox-basic" alt="The Conversation" width="1" height="1" style="border: none !important; box-shadow: none !important; margin: 0 !important; max-height: 1px !important; max-width: 1px !important; min-height: 1px !important; min-width: 1px !important; opacity: 0 !important; outline: none !important; padding: 0 !important" referrerpolicy="no-referrer-when-downgrade" /><!-- Fin del código. Si no ve ningún código arriba, por favor, obtenga el nuevo código de la pestaña Avanzado después de hacer clic en el botón de republicar. El contador de páginas no recoge ningún dato personal. Más información: http://theconversation.com/es/republishing-guidelines --></p>
 
-  <p><a href="https://theconversation.com/profiles/patricia-alvarez-sanchez-1113240" target="_blank" rel="noopener noreferrer">Patricia Álvarez Sánchez</a>, Profesora de Traducción e Interpretación, <a href="https://theconversation.com/institutions/universidad-de-malaga-3954" target="_blank" rel="noopener noreferrer">Universidad de Málaga</a>. Este artículo fue publicado originalmente en  <a href="https://theconversation.com" target="_blank" rel="noopener noreferrer">The Conversation</a>. Lea el <a href="https://theconversation.com/para-que-sirven-las-lenguas-172319" target="_blank" rel="noopener noreferrer">original</a>.</p>
+  <hr>
+
+  <p><em><a href="https://theconversation.com/profiles/patricia-alvarez-sanchez-1113240" target="_blank" rel="noopener noreferrer">Patricia Álvarez Sánchez</a>, Profesora de Traducción e Interpretación, <a href="https://theconversation.com/institutions/universidad-de-malaga-3954" target="_blank" rel="noopener noreferrer">Universidad de Málaga</a>. Este artículo fue publicado <a href="https://theconversation.com/para-que-sirven-las-lenguas-172319" target="_blank" rel="noopener noreferrer">originalmente</a> en <a href="https://theconversation.com" target="_blank" rel="noopener noreferrer">The Conversation</a>.</em></p>
+
 </div>
