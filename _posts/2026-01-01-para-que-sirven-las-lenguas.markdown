@@ -20,7 +20,7 @@ canonical:     "https://theconversation.com/para-que-sirven-las-lenguas-172319"
     </figcaption>
   </figure>
 
-  <p><em><a href="https://theconversation.com/profiles/patricia-alvarez-sanchez-1113240" target="_blank" rel="noopener noreferrer">Patricia Álvarez Sánchez</a>, Profesora de Traducción e Interpretación, <a href="https://theconversation.com/institutions/universidad-de-malaga-3954" target="_blank" rel="noopener noreferrer">Universidad de Málaga</a>. Este artículo fue publicado <a href="https://theconversation.com/para-que-sirven-las-lenguas-172319" target="_blank" rel="noopener noreferrer">originalmente</a> en <a href="https://theconversation.com" target="_blank" rel="noopener noreferrer">The Conversation</a>.</em></p>
+  <p><em><a href="https://theconversation.com/profiles/patricia-alvarez-sanchez-1113240" target="_blank" rel="noopener noreferrer">Patricia Álvarez Sánchez</a>, Profesora de Traducción e Interpretación, <a href="https://theconversation.com/institutions/universidad-de-malaga-3954" target="_blank" rel="noopener noreferrer">Universidad de Málaga</a>. Este artículo fue publicado <a href="https://theconversation.com/para-que-sirven-las-lenguas-172319" target="_blank" rel="noopener noreferrer">originalmente</a> el 13 de diciembre de 2021 en <a href="https://theconversation.com" target="_blank" rel="noopener noreferrer">The Conversation</a>.</em></p>
 
   <hr>
 
@@ -82,6 +82,6 @@ canonical:     "https://theconversation.com/para-que-sirven-las-lenguas-172319"
 
   <hr>
 
-  <p><em><a href="https://theconversation.com/profiles/patricia-alvarez-sanchez-1113240" target="_blank" rel="noopener noreferrer">Patricia Álvarez Sánchez</a>, Profesora de Traducción e Interpretación, <a href="https://theconversation.com/institutions/universidad-de-malaga-3954" target="_blank" rel="noopener noreferrer">Universidad de Málaga</a>. Este artículo fue publicado <a href="https://theconversation.com/para-que-sirven-las-lenguas-172319" target="_blank" rel="noopener noreferrer">originalmente</a> en <a href="https://theconversation.com" target="_blank" rel="noopener noreferrer">The Conversation</a>.</em></p>
+  <p><em><a href="https://theconversation.com/profiles/patricia-alvarez-sanchez-1113240" target="_blank" rel="noopener noreferrer">Patricia Álvarez Sánchez</a>, Profesora de Traducción e Interpretación, <a href="https://theconversation.com/institutions/universidad-de-malaga-3954" target="_blank" rel="noopener noreferrer">Universidad de Málaga</a>. Este artículo fue publicado <a href="https://theconversation.com/para-que-sirven-las-lenguas-172319" target="_blank" rel="noopener noreferrer">originalmente</a> el 13 de diciembre de 2021 en <a href="https://theconversation.com" target="_blank" rel="noopener noreferrer">The Conversation</a>.</em></p>
 
 </div>

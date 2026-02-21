@@ -3,16 +3,16 @@ layout:        post
 title:         "¿Puede la inteligencia artificial superar a la humana?"
 subtitle:      "Sistemas especializados que aún necesitan supervisión humana"
 description:   "La IA actual es estrecha y especializada. Aunque supera habilidades humanas específicas, carece de inteligencia generalista y requiere supervisión humana."
-date:          2026-01-31 19:00:00 +0200
-author:        "Verónica Bolón Canedo"
-header-img:    "img/post-bg-113.jpg"
+date:          2026-02-21 19:00:00 +0200
+author:        "Aunitz Giménez"
+header-img:    "img/post-bg-114.jpg"
 tags:          [inteligencia artificial]
 canonical:     "https://theconversation.com/puede-la-inteligencia-artificial-superar-a-la-humana-196633"
 ---
 
 <div class="theconversation-article-body">
 
-  <p><em><a href="https://theconversation.com/profiles/veronica-bolon-canedo-1094789" target="_blank" rel="noopener noreferrer">Verónica Bolón Canedo</a>, Profesora Titular de Ciencias de la Computación e Inteligencia Artificial, <a href="https://theconversation.com/institutions/universidade-da-coruna-4258" target="_blank" rel="noopener noreferrer">Universidade da Coruña</a>. Este artículo fue publicado <a href="https://theconversation.com/puede-la-inteligencia-artificial-superar-a-la-humana-196633" target="_blank" rel="noopener noreferrer">originalmente</a> en <a href="https://theconversation.com" target="_blank" rel="noopener noreferrer">The Conversation</a>.</em></p>
+  <p><em><a href="https://theconversation.com/profiles/veronica-bolon-canedo-1094789" target="_blank" rel="noopener noreferrer">Verónica Bolón Canedo</a>, Profesora Titular de Ciencias de la Computación e Inteligencia Artificial, <a href="https://theconversation.com/institutions/universidade-da-coruna-4258" target="_blank" rel="noopener noreferrer">Universidade da Coruña</a>. Este artículo fue publicado <a href="https://theconversation.com/puede-la-inteligencia-artificial-superar-a-la-humana-196633" target="_blank" rel="noopener noreferrer">originalmente</a> el 14 de diciembre de 2022 en <a href="https://theconversation.com" target="_blank" rel="noopener noreferrer">The Conversation</a>.</em></p>
 
   <hr>
 
@@ -80,6 +80,6 @@ canonical:     "https://theconversation.com/puede-la-inteligencia-artificial-sup
 
   <hr>
 
-  <p><em><a href="https://theconversation.com/profiles/veronica-bolon-canedo-1094789" target="_blank" rel="noopener noreferrer">Verónica Bolón Canedo</a>, Profesora Titular de Ciencias de la Computación e Inteligencia Artificial, <a href="https://theconversation.com/institutions/universidade-da-coruna-4258" target="_blank" rel="noopener noreferrer">Universidade da Coruña</a>. Este artículo fue publicado <a href="https://theconversation.com/puede-la-inteligencia-artificial-superar-a-la-humana-196633" target="_blank" rel="noopener noreferrer">originalmente</a> en <a href="https://theconversation.com" target="_blank" rel="noopener noreferrer">The Conversation</a>.</em></p>
+  <p><em><a href="https://theconversation.com/profiles/veronica-bolon-canedo-1094789" target="_blank" rel="noopener noreferrer">Verónica Bolón Canedo</a>, Profesora Titular de Ciencias de la Computación e Inteligencia Artificial, <a href="https://theconversation.com/institutions/universidade-da-coruna-4258" target="_blank" rel="noopener noreferrer">Universidade da Coruña</a>. Este artículo fue publicado <a href="https://theconversation.com/puede-la-inteligencia-artificial-superar-a-la-humana-196633" target="_blank" rel="noopener noreferrer">originalmente</a> el 14 de diciembre de 2022 en <a href="https://theconversation.com" target="_blank" rel="noopener noreferrer">The Conversation</a>.</em></p>
 
 </div>
