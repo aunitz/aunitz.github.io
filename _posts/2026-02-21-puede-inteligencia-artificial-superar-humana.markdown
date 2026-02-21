@@ -4,7 +4,7 @@ title:         "¿Puede la inteligencia artificial superar a la humana?"
 subtitle:      "Sistemas especializados que aún necesitan supervisión humana"
 description:   "La IA actual es estrecha y especializada. Aunque supera habilidades humanas específicas, carece de inteligencia generalista y requiere supervisión humana."
 date:          2026-02-21 19:00:00 +0200
-author:        "Aunitz Giménez"
+author:        "Verónica Bolón Canedo"
 header-img:    "img/post-bg-114.jpg"
 tags:          [inteligencia artificial]
 canonical:     "https://theconversation.com/puede-la-inteligencia-artificial-superar-a-la-humana-196633"
