@@ -32,6 +32,8 @@ tags:          [inteligencia artificial]
 
 <p>Los investigadores de Google propusieron la arquitectura Transformer en un contexto muy ligado a la traducción automática (Google Translate). Sin embargo, fue <strong>OpenAI</strong> quien dio el siguiente paso al convertir esta arquitectura en un modelo generativo de lenguaje, creando <strong>GPT</strong> en <strong>2018</strong>.</p>
 
+<p><img src="{{ site.baseurl }}/img/como-funciona-la-inteligencia-artificial-04.webp" loading="lazy" alt="" width="720" height="405"></p>
+
 <h2>Cómo genera texto un LLM</h2>
 
 <p>Gracias a la arquitectura Transformer, cuando un modelo está generando texto <strong>es capaz de tener en cuenta todas las palabras anteriores</strong> de la frase antes de proponer la siguiente.</p>
