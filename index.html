@@ -6,6 +6,7 @@ home-page: yes
 ---
 
 {% for post in paginator.posts %}
+{% unless post.hide_from_home or post.layout == "redirected" %}
 <div class="post-preview">
     <a href="{{ post.url | prepend: site.baseurl }}">
         <h2 class="post-title">{{ post.title }}</h2>
@@ -34,6 +35,7 @@ home-page: yes
   {{ post.date | date: "%Y" }}</p>
 </div>
 <hr>
+{% endunless %}
 {% endfor %}
 
 <!-- Pager -->
