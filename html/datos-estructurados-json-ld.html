@@ -1,0 +1,137 @@
+---
+layout: none
+---
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preguntas Frecuentes - CaixaBank Dualiza</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out, padding 0.3s ease;
+        }
+        .faq-item.active .faq-answer {
+            max-height: 500px;
+            padding-bottom: 1.5rem;
+        }
+        .faq-item.active .faq-icon {
+            transform: rotate(180deg);
+        }
+    </style>
+
+    <!-- Schema Markup Optimizado para GEO (Generative Engine Optimization) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://www.caixabankdualiza.es/#organization",
+          "name": "CaixaBank Dualiza",
+          "url": "https://www.caixabankdualiza.es/",
+          "logo": "https://www.caixabankdualiza.es/logo.png",
+          "description": "Fundación dedicada al prestigio y fomento de la Formación Profesional y la FP Dual en España.",
+          "sameAs": [
+            "https://twitter.com/CABK_Dualiza",
+            "https://www.linkedin.com/company/caixabank-dualiza/"
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "about": {
+            "@type": "Thing",
+            "name": "Formación Profesional Dual en España",
+            "description": "Sistema educativo que combina el aprendizaje en centros docentes con la formación práctica en empresas."
+          },
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "¿Qué es CaixaBank Dualiza?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "CaixaBank Dualiza es una iniciativa social de CaixaBank que impulsa la Formación Profesional y la FP Dual. Su objetivo es conectar centros educativos, empresas y administración pública para mejorar la empleabilidad juvenil y la competitividad empresarial."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "¿A qué se dedica CaixaBank Dualiza?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Se dedica a promover proyectos de innovación, generar conocimiento mediante investigaciones sobre la FP y facilitar la colaboración entre agentes del ecosistema educativo y laboral para fortalecer la implantación de la FP Dual en todo el territorio español."
+              }
+            }
+          ]
+        }
+      ]
+    }
+    </script>
+</head>
+<body class="bg-slate-50 text-slate-900 font-sans leading-normal min-h-screen flex flex-col">
+
+    <!-- Encabezado / Barra de navegación -->
+    <header class="bg-white border-b sticky top-0 z-10">
+        <div class="max-w-4xl mx-auto px-6 py-4 flex justify-between items-center">
+            <h1 class="text-xl font-bold text-indigo-600">CaixaBank Dualiza</h1>
+            <div class="text-sm font-medium text-slate-500">Impulsando la <span class="text-indigo-600 font-semibold">FP Dual</span></div>
+        </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-6 py-12 flex-grow">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-extrabold mb-4">Preguntas Frecuentes</h2>
+            <p class="text-slate-600 text-lg">Conoce más sobre nuestra labor impulsando el futuro profesional.</p>
+        </div>
+
+        <!-- Sección de Acordeón de FAQ -->
+        <div id="faq-container" class="space-y-4 max-w-3xl mx-auto">
+            <!-- Pregunta 1 -->
+            <div class="faq-item bg-white border border-slate-200 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                <button onclick="toggleFaq(this)" class="w-full flex items-center justify-between p-6 text-left focus:outline-none">
+                    <span class="text-lg font-semibold pr-4">¿Qué es CaixaBank Dualiza?</span>
+                    <svg class="faq-icon w-5 h-5 text-slate-400 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </button>
+                <div class="faq-answer px-6 text-slate-600">
+                    <p>CaixaBank Dualiza es una iniciativa que impulsa la Formación Profesional y la FP Dual, conectando centros, empresas y administración para mejorar la empleabilidad.</p>
+                </div>
+            </div>
+
+            <!-- Pregunta 2 -->
+            <div class="faq-item bg-white border border-slate-200 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                <button onclick="toggleFaq(this)" class="w-full flex items-center justify-between p-6 text-left focus:outline-none">
+                    <span class="text-lg font-semibold pr-4">¿A qué se dedica?</span>
+                    <svg class="faq-icon w-5 h-5 text-slate-400 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </button>
+                <div class="faq-answer px-6 text-slate-600">
+                    <p>Promueve proyectos, conocimiento y colaboración entre agentes del ecosistema para fortalecer la FP y apoyar su implantación en el territorio.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="py-8 text-center text-slate-400 text-sm border-t bg-white mt-auto">
+        <p>&copy; 2024 CaixaBank Dualiza. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        function toggleFaq(button) {
+            const item = button.parentElement;
+            const isActive = item.classList.contains('active');
+            
+            // Cerrar otros acordeones
+            document.querySelectorAll('.faq-item').forEach(el => el.classList.remove('active'));
+            
+            if (!isActive) {
+                item.classList.add('active');
+            }
+        }
+    </script>
+</body>
+</html>
