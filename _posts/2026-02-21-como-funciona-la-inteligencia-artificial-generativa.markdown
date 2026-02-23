@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "Cómo funciona la Inteligencia Artificial generativa"
+title:         "Cómo funciona la inteligencia artificial generativa"
 subtitle:      "Conceptos clave para entenderla y utilizarla con criterio"
 description:   "Explicación de cómo funcionan los LLM: arquitectura Transformer, predicción probabilística de palabras en espacios multidimensionales y sus limitaciones."
 date:          2026-02-21 18:00:00 +0200
@@ -9,11 +9,11 @@ header-img:    "img/post-bg-113.jpg"
 tags:          [inteligencia artificial]
 ---
 
-<p>La <strong>Inteligencia Artificial generativa</strong> es una herramienta profundamente disruptiva para las trabajadoras y los trabajadores del conocimiento. Para utilizarla con éxito y, sobre todo, con criterio, merece la pena invertir tiempo en comprenderla más allá de un uso meramente instrumental como usuarios.</p>
+<p>La <strong>inteligencia artificial generativa</strong> es una herramienta profundamente disruptiva para las trabajadoras y los trabajadores del conocimiento. Para utilizarla con éxito y, sobre todo, con criterio, merece la pena invertir tiempo en comprenderla más allá de un uso meramente instrumental como usuarios.</p>
 
 <p>He leído numerosos artículos y he visto muchos vídeos sobre el funcionamiento interno de la IA, sobre sus <em>tripas</em>. Uno de los contenidos más didácticos con los que me he encontrado recientemente es una ponencia del médico y catedrático <a href="https://universidadeuropea.com/profesores/juan-jose-beunza-nuin/" target="_blank" rel="noopener noreferrer">Juan José Beunza Nuin</a> en el marco de la <a href="https://www.fundacionbiomedica.es/event/i-jornada-cientifica-de-medicina-digital/" target="_blank" rel="noopener noreferrer">I Jornada Científica de Medicina Digital</a>, celebrada en diciembre de 2025 en Pontevedra (España).</p>
 
-<p>El doctor Juan José Beunza Nuin es una voz autorizada en la aplicación de la IA en entornos sanitarios: director del grupo de trabajo IASalud-UEM y editor y autor principal del <em>Manual Práctico de Inteligencia Artificial en Entornos Sanitarios</em> (Elsevier, 2020; segunda edición en 2023). La ponencia a la que me refiero <a href="https://www.youtube.com/live/fu50SzfOjSU?si=3MwXucYfxTIGlLDQ&t=9165" target="_blank" rel="noopener noreferrer">puede verse completa en YouTube</a>.</p>
+<p>El doctor Juan José Beunza Nuin es una voz autorizada en la aplicación de la IA en entornos sanitarios: director del grupo de trabajo IASalud-UEM y editor y autor principal del <em>Manual Práctico de inteligencia artificial en Entornos Sanitarios</em> (Elsevier, 2020; segunda edición en 2023). La ponencia a la que me refiero <a href="https://www.youtube.com/live/fu50SzfOjSU?si=3MwXucYfxTIGlLDQ&t=9165" target="_blank" rel="noopener noreferrer">puede verse completa en YouTube</a>.</p>
 
 <p>Durante los primeros minutos de la charla explica de forma muy clara y accesible qué es un <strong>LLM (Large Language Model)</strong> o <strong>modelo extenso de lenguaje</strong>, es decir, lo que son ChatGPT, Gemini, Copilot, DeepSeek, Claude, Grok, etc. Como ocurre en toda explicación dirigida a un público amplio sobre una tecnología compleja, el ponente introduce algunas simplificaciones. Aun así, considero que expone con gran claridad las bases de la tecnología subyacente a un LLM.</p>
 
