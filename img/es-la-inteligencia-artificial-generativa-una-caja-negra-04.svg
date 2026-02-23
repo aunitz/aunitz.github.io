@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900">
+  <defs>
+    <!-- Fondo suave -->
+    <linearGradient id="softBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f8fafc" />
+      <stop offset="100%" style="stop-color:#f1f5f9" />
+    </linearGradient>
+
+    <!-- Resplandor para la "creatividad" -->
+    <filter id="creativeGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <!-- Gradiente de los flujos -->
+    <linearGradient id="flowGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#6366f1" />
+      <stop offset="100%" style="stop-color:#ec4899" />
+    </linearGradient>
+  </defs>
+
+  <!-- Fondo -->
+  <rect width="1600" height="900" fill="url(#softBg)" />
+
+  <!-- EL FLUJO DE ORIGEN (La intención del modelo) -->
+  <path d="M 0,450 C 300,450 400,450 600,450" fill="none" stroke="#1e293b" stroke-width="4" stroke-dasharray="10,5" opacity="0.3" />
+
+  <!-- PUNTO DE BIFURCACIÓN ARMÓNICA (El diseño de variabilidad) -->
+  <g transform="translate(600, 450)">
+    <!-- Aura de fluidez -->
+    <circle r="60" fill="#6366f1" opacity="0.1">
+      <animate attributeName="r" values="55;65;55" dur="4s" repeatCount="indefinite" />
+    </circle>
+    
+    <!-- RAMAS DE CONTINUACIÓN PLAUSIBLE (Naturalidad y Creatividad) -->
+    <g fill="none" stroke-width="6" stroke-linecap="round" filter="url(#creativeGlow)">
+      <!-- Rama 1: Creativa/Expansiva -->
+      <path d="M 0,0 C 200,-100 400,-300 800,-250" stroke="#ec4899" opacity="0.8">
+        <animate attributeName="stroke-dasharray" from="0,1500" to="1500,0" dur="3s" repeatCount="indefinite" />
+      </path>
+      
+      <!-- Rama 2: Fluida/Directa -->
+      <path d="M 0,0 C 250,-50 500,50 800,50" stroke="#8b5cf6" opacity="0.9">
+        <animate attributeName="stroke-dasharray" from="0,1500" to="1500,0" dur="2.5s" repeatCount="indefinite" />
+      </path>
+      
+      <!-- Rama 3: Natural/Alternativa -->
+      <path d="M 0,0 C 200,150 450,250 800,280" stroke="#6366f1" opacity="0.7">
+        <animate attributeName="stroke-dasharray" from="0,1500" to="1500,0" dur="3.5s" repeatCount="indefinite" />
+      </path>
+    </g>
+
+    <!-- Nodos de llegada (Resultados de calidad) -->
+    <g transform="translate(800, 0)">
+      <circle cy="-250" r="12" fill="#ec4899" />
+      <circle cy="50" r="12" fill="#8b5cf6" />
+      <circle cy="280" r="12" fill="#6366f1" />
+    </g>
+
+    <!-- Centro de la decisión -->
+    <circle r="15" fill="#1e293b" />
+  </g>
+
+  <!-- ELEMENTOS DE "CALIDAD" (Símbolos de naturalidad) -->
+  <g opacity="0.4" fill="#64748b">
+    <circle cx="1300" cy="200" r="4" />
+    <circle cx="1320" cy="220" r="4" />
+    <circle cx="1280" cy="230" r="4" />
+    
+    <circle cx="1300" cy="450" r="4" />
+    <circle cx="1320" cy="470" r="4" />
+    
+    <circle cx="1300" cy="700" r="4" />
+    <circle cx="1280" cy="720" r="4" />
+  </g>
+
+  <!-- Partículas de flujo armónico -->
+  <circle r="5" fill="white">
+    <animateMotion dur="3s" repeatCount="indefinite" path="M 600,450 C 800,350 1000,150 1400,200" />
+  </circle>
+  <circle r="5" fill="white">
+    <animateMotion dur="2.5s" repeatCount="indefinite" path="M 600,450 C 850,400 1100,500 1400,500" />
+  </circle>
+</svg>

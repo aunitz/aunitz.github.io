@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900">
+  <defs>
+    <!-- Fondo con gradiente profundo -->
+    <linearGradient id="deepBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f8fafc;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e2e8f0;stop-opacity:1" />
+    </linearGradient>
+
+    <!-- Resplandor para los nodos activos -->
+    <filter id="nodeGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <!-- Gradiente para las conexiones -->
+    <linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:0.2" />
+      <stop offset="50%" style="stop-color:#8b5cf6;stop-opacity:0.5" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:0.2" />
+    </linearGradient>
+  </defs>
+
+  <!-- Fondo -->
+  <rect width="1600" height="900" fill="url(#deepBg)" />
+
+  <!-- Nube de parámetros distribuida (Fondo difuso) -->
+  <g opacity="0.15">
+    <circle cx="400" cy="300" r="150" fill="#94a3b8" />
+    <circle cx="1200" cy="600" r="200" fill="#94a3b8" />
+    <circle cx="800" cy="450" r="250" fill="#94a3b8" />
+  </g>
+
+  <!-- Red de conexiones distribuidas (El "Espacio de Parámetros") -->
+  <g stroke="url(#lineGrad)" stroke-width="1">
+    <!-- Conexiones aleatorias pero estructuradas que llenan el espacio -->
+    <path d="M 200,200 L 400,150 L 600,250 L 500,500 L 200,450 Z" fill="none" />
+    <path d="M 1400,700 L 1200,750 L 1000,600 L 1100,400 L 1400,500 Z" fill="none" />
+    <path d="M 800,100 L 1000,200 L 900,450 L 700,400 Z" fill="none" />
+    <path d="M 300,700 L 500,800 L 700,650 L 550,550 Z" fill="none" />
+    
+    <!-- Líneas de larga distancia que conectan zonas remotas -->
+    <line x1="400" y1="150" x2="1000" y2="200" opacity="0.3" />
+    <line x1="500" y1="500" x2="900" y2="450" opacity="0.3" />
+    <line x1="550" y1="550" x2="1100" y2="400" opacity="0.3" />
+  </g>
+
+  <!-- Nodos de "Conocimiento" (Patrones numéricos activos) -->
+  <g filter="url(#nodeGlow)">
+    <!-- Zona de activación 1 -->
+    <circle cx="400" cy="150" r="6" fill="#3b82f6">
+      <animate attributeName="r" values="6;9;6" dur="3s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="600" cy="250" r="4" fill="#6366f1" />
+    <circle cx="500" cy="500" r="7" fill="#8b5cf6">
+      <animate attributeName="opacity" values="1;0.4;1" dur="2.5s" repeatCount="indefinite" />
+    </circle>
+
+    <!-- Zona de activación 2 -->
+    <circle cx="1000" cy="600" r="5" fill="#3b82f6" />
+    <circle cx="1100" cy="400" r="8" fill="#8b5cf6">
+       <animate attributeName="r" values="8;11;8" dur="4s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="1200" cy="750" r="5" fill="#6366f1" />
+
+    <!-- Nodos dispersos (La naturaleza distribuida) -->
+    <circle cx="800" cy="100" r="4" fill="#3b82f6" opacity="0.6" />
+    <circle cx="900" cy="450" r="6" fill="#8b5cf6" />
+    <circle cx="200" cy="450" r="4" fill="#3b82f6" opacity="0.6" />
+    <circle cx="1400" cy="500" r="5" fill="#6366f1" />
+  </g>
+
+  <!-- Representación de "Nubes Numéricas" (Pequeños puntos/data) -->
+  <g fill="#475569" opacity="0.2">
+    <circle cx="850" cy="420" r="2" /> <circle cx="870" cy="440" r="1.5" /> <circle cx="830" cy="460" r="2" />
+    <circle cx="420" cy="170" r="1.5" /> <circle cx="380" cy="130" r="2" />
+    <circle cx="1080" cy="380" r="2" /> <circle cx="1120" cy="420" r="1.5" />
+  </g>
+
+  <!-- Partículas en movimiento (Simulando el flujo de información distribuida) -->
+  <circle r="3" fill="#3b82f6">
+    <animateMotion dur="5s" repeatCount="indefinite" path="M 400,150 L 1000,200" />
+    <animate attributeName="opacity" values="0;1;0" dur="5s" repeatCount="indefinite" />
+  </circle>
+  <circle r="3" fill="#8b5cf6">
+    <animateMotion dur="7s" repeatCount="indefinite" path="M 1100,400 L 500,500" />
+    <animate attributeName="opacity" values="0;1;0" dur="7s" repeatCount="indefinite" />
+  </circle>
+</svg>
