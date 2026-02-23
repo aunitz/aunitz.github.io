@@ -11,7 +11,7 @@ tags:          [inteligencia artificial]
 
 <p>La <strong>inteligencia Artificial generativa</strong> es una herramienta profundamente disruptiva para los profesionales del conocimiento. Para aprovecharla con éxito y criterio, merece la pena invertir tiempo en comprenderla más allá de su uso puramente instrumental.</p>
 
-<p>Como expliqué en un <a href="/como-funciona-la-inteligencia-artificial-generativa/">artículo anterior sobre el funcionamiento de un <strong>LLM</strong></a> (<em>Large Language Model</em> o modelo extenso de lenguaje), sistemas como ChatGPT, Gemini, Copilot, DeepSeek o Claude son, en esencia, motores de procesamiento que <strong>predicen el siguiente token</strong> (la siguiente “pieza” de texto). Hasta ahí, el mecanismo general resulta razonablemente claro.</p>
+<p>Como expliqué en un <a href="{{ site.baseurl }}{% post_url 2026-02-21-como-funciona-la-inteligencia-artificial-generativa %}">artículo anterior sobre el funcionamiento de un <strong>LLM</strong></a> (<em>Large Language Model</em> o modelo extenso de lenguaje), sistemas como ChatGPT, Gemini, Copilot, DeepSeek o Claude son, en esencia, motores de procesamiento que <strong>predicen el siguiente token</strong> (la siguiente “pieza” de texto). Hasta ahí, el mecanismo general resulta razonablemente claro.</p>
 
 <p>Sin embargo, al profundizar en la literatura técnica aparece una afirmación recurrente: los LLM son una <strong>caja negra</strong>. Algunos investigadores sostienen incluso que resulta imposible anticipar con precisión qué responderá el modelo ante una instrucción concreta.</p>
 
@@ -56,7 +56,7 @@ tags:          [inteligencia artificial]
 
 <p><img src="{{ site.baseurl }}/img/es-la-inteligencia-artificial-generativa-una-caja-negra-02.svg" loading="lazy" alt="" width="750" height="422"></p>
 
-<p><a href="/como-funciona-la-inteligencia-artificial-generativa/">La arquitectura Transformer</a> (la base de los LLMs actuales) opera mediante el encadenamiento de decenas o cientos de capas de funciones altamente no lineales. Esta estructura permite capturar matices lingüísticos asombrosos, pero a costa de sacrificar la interpretabilidad: <strong>para el cerebro humano, seguir el rastro de miles de millones de operaciones simultáneas es simplemente imposible</strong>.</p>
+<p><a href="{{ site.baseurl }}{% post_url 2026-02-21-como-funciona-la-inteligencia-artificial-generativa %}">La arquitectura Transformer</a> (la base de los LLMs actuales) opera mediante el encadenamiento de decenas o cientos de capas de funciones altamente no lineales. Esta estructura permite capturar matices lingüísticos asombrosos, pero a costa de sacrificar la interpretabilidad: <strong>para el cerebro humano, seguir el rastro de miles de millones de operaciones simultáneas es simplemente imposible</strong>.</p>
 
 <p>Matemáticamente, la función global está perfectamente definida; a nivel cognitivo humano, resulta inabarcable. Incluso si conociéramos todos los parámetros exactos, el <strong>volumen de interacciones cruzadas</strong> hace prácticamente imposible reconstruir mentalmente el camino causal que lleva de un token de entrada a uno de salida.</p>
 
