@@ -24,13 +24,13 @@ tags:          [legislación, cookies]
 
 <p>A su vez, el RGPD desplaza la normativa nacional de protección de datos anterior a su aplicación, por lo que la remisión que el artículo 22.2 de la LSSI realiza a la Ley Orgánica 15/1999, de 13 de diciembre, de protección de datos de carácter personal (derogada por la LOPDGDD) debe entenderse ahora realizada al RGPD y a la LOPDGDD. Esto implica que la información y el consentimiento para el uso de cookies se rigen por lo dispuesto en el RGPD y la LOPDGDD.</p>
 
-<p>Asimismo, aunque no tiene valor normativo, la <strong>Agencia Española de Protección de Datos</strong> (AEPD) publica una <a href="https://www.aepd.es/guias/guia-cookies.pdf" target="_blank" rel="noopener noreferrer">guía sobre el uso de las cookies (PDF, 1.2 MB)</a>, la cual actualiza periódicamente. Al momento de redactar esta entrada, la versión vigente es la de mayo de 2024.</p>
+<p>Asimismo, aunque no tiene valor normativo, la <strong>Agencia Española de Protección de Datos</strong> (AEPD) publica una <a href="{{ site.baseurl }}/downloads/2024-mayo-guia-uso-cookies-aepd.pdf" target="_blank">guía sobre el uso de las cookies (PDF, 1.2 MB)</a>, la cual actualiza periódicamente. Al momento de redactar esta entrada, la versión vigente es la de mayo de 2024.</p>
 
 <p><img src="{{ site.baseurl }}/img/aviso-de-cookies-legislacion-espanola-02.jpg" loading="lazy" alt="" width="720" height="480"></p>
 
 <p><strong>La guía</strong> de la AEPD tiene un <strong>carácter divulgativo</strong> y está redactada en un lenguaje considerablemente más accesible que el de las leyes y los reglamentos. Incluye ejemplos y pautas claras sobre cómo aplicar correctamente la legislación vigente.</p>
 
-<p>Si deseas asegurarte de implementar correctamente la gestión de cookies en tu sitio web, te recomiendo consultar <a href="https://www.aepd.es/guias/guia-cookies.pdf" target="_blank" rel="noopener noreferrer">la guía de la AEPD (PDF, 1.2 MB)</a>. Y, si te surge alguna duda, te invito a compartirla en <a href="https://www.linkedin.com/posts/aunitz_aviso-de-cookies-legislaci%C3%B3n-aplicable-en-activity-7325248118197760000-K2pq" target="_blank" rel="noopener noreferrer">esta publicación de LinkedIn</a>; con gusto intentaré resolverla.</p>
+<p>Si deseas asegurarte de implementar correctamente la gestión de cookies en tu sitio web, te recomiendo consultar <a href="{{ site.baseurl }}/downloads/2024-mayo-guia-uso-cookies-aepd.pdf" target="_blank">la guía de la AEPD (PDF, 1.2 MB)</a>. Y, si te surge alguna duda, te invito a compartirla en <a href="https://www.linkedin.com/posts/aunitz_aviso-de-cookies-legislaci%C3%B3n-aplicable-en-activity-7325248118197760000-K2pq" target="_blank" rel="noopener noreferrer">esta publicación de LinkedIn</a>; con gusto intentaré resolverla.</p>
 
 <h2>Nota para las Administraciones Públicas (AAPP)</h2>
 

@@ -14,9 +14,9 @@ tags:          [legislación, cookies]
 <p>Para elaborar este post, me he basado en tres documentos muy útiles y divulgativos publicados por la Agencia Española de Protección de Datos (AEPD):</p>
 
 <ul>
-	<li><a href="https://www.aepd.es/guias/guia-cookies.pdf" target="_blank" rel="noopener noreferrer">Guía sobre el uso de las cookies</a>, actualizada periódicamente. Al momento de redactar este post, la versión vigente es la de mayo de 2024.</li>
-	<li><a href="https://www.aepd.es/guias/orientaciones-analitica-web-aapp.pdf" target="_blank" rel="noopener noreferrer">Orientaciones sobre cookies y analítica web en portales de las Administraciones Públicas</a>, versión de febrero de 2023.</li>
-	<li><a href="https://www.aepd.es/guias/guia-cookies-analiticas-externas.pdf" target="_blank" rel="noopener noreferrer">Guía sobre el uso de cookies para herramientas de medición de audiencia</a>, versión de enero de 2024.</li>
+	<li><a href="{{ site.baseurl }}/downloads/2024-mayo-guia-uso-cookies-aepd.pdf" target="_blank">Guía sobre el uso de las cookies (PDF, 1.2 MB)</a>, actualizada periódicamente. Al momento de redactar este post, la versión vigente es la de mayo de 2024.</li>
+	<li><a href="{{ site.baseurl }}/downloads/2023-febrero-orientaciones-cookies-analitica-portales-aapp.pdf" target="_blank">Orientaciones sobre cookies y analítica web en portales de las Administraciones Públicas (PDF, 0.8 MB)</a>, versión de febrero de 2023.</li>
+	<li><a href="{{ site.baseurl }}/downloads/2024-enero-guia-cookies-analiticas-externas.pdf" target="_blank" rel="noopener noreferrer">Guía sobre el uso de cookies para herramientas de medición de audiencia (PDF, 0.2 MB)</a>, versión de enero de 2024.</li>
 </ul>
 
 <p><img src="{{ site.baseurl }}/img/aviso-cookies-portales-administracion-publica-01.jpg" loading="lazy" alt="" width="720" height="410"></p>
@@ -50,7 +50,7 @@ tags:          [legislación, cookies]
 
 <h2>C. Portal web de una administración pública que SÍ tenga consideración de servicio de la sociedad de la información</h2>
 
-<p>En este caso hay que remitirse a la totalidad de lo indicado en la <a href="https://www.aepd.es/guias/guia-cookies.pdf" target="_blank" rel="noopener noreferrer">Guía sobre el uso de las cookies</a> de la AEPD.</p>
+<p>En este caso hay que remitirse a la totalidad de lo indicado en la <a href="{{ site.baseurl }}/downloads/2024-mayo-guia-uso-cookies-aepd.pdf" target="_blank">Guía sobre el uso de las cookies (PDF, 1.2 MB)</a> de la AEPD.</p>
 
 <p>Lo cual implica obtener el consentimiento para el uso de las cookies, informar a los interesados mediante la política de cookies y, en el caso de tratar datos de carácter personal, informar mediante la política de privacidad.</p>
 
@@ -62,7 +62,7 @@ tags:          [legislación, cookies]
 
 <p>La clave está en determinar cuándo se considera un “servicio de la sociedad de la información” y cuándo no.</p>
 
-<p>Os recomiendo consultar las <a href="https://www.aepd.es/guias/orientaciones-analitica-web-aapp.pdf" target="_blank" rel="noopener noreferrer">Orientaciones sobre cookies y analítica web en portales de las Administraciones Públicas</a> para comprender mejor este concepto.</p>
+<p>Os recomiendo consultar las <a href="{{ site.baseurl }}/downloads/2023-febrero-orientaciones-cookies-analitica-portales-aapp.pdf" target="_blank" rel="noopener noreferrer">Orientaciones sobre cookies y analítica web en portales de las Administraciones Públicas (PDF, 0.8 MB)</a> para comprender mejor este concepto.</p>
 
 <p><img src="{{ site.baseurl }}/img/aviso-cookies-portales-administracion-publica-02.jpg" loading="lazy" alt="" width="720" height="410"></p>
 
@@ -88,7 +88,7 @@ tags:          [legislación, cookies]
 
 <p>En el caso de los servicios web de terceros, pueden incluirse <strong>algunos servicios de analítica web</strong>.</p>
 
-<p>Los servicios de analítica web son un caso delicado, ya que se utilizan ampliamente en todo tipo de sitios web. La <a href="https://www.aepd.es/guias/guia-cookies-analiticas-externas.pdf" target="_blank" rel="noopener noreferrer">Guía sobre el uso de cookies para herramientas de medición de audiencia</a> de la AEPD explica en qué condiciones las cookies empleadas para obtener estadísticas de tráfico o medir el rendimiento podrían estar exentas de consentimiento.</p>
+<p>Los servicios de analítica web son un caso delicado, ya que se utilizan ampliamente en todo tipo de sitios web. La <a href="{{ site.baseurl }}/downloads/2024-enero-guia-cookies-analiticas-externas.pdf" target="_blank">Guía sobre el uso de cookies para herramientas de medición de audiencia (PDF, 0.2 MB)</a> de la AEPD explica en qué condiciones las cookies empleadas para obtener estadísticas de tráfico o medir el rendimiento podrían estar exentas de consentimiento.</p>
 
 <p>La lista de requisitos puede consultarse en la Guía. A mi juicio, es muy restrictiva y difícil de cumplir. Por ejemplo, establece que la información recopilada solo podrá conservarse por un máximo de veinticinco meses.</p>
 
@@ -100,4 +100,4 @@ tags:          [legislación, cookies]
 
 <p><img src="{{ site.baseurl }}/img/aviso-cookies-portales-administracion-publica-03.jpg" loading="lazy" alt="" width="720" height="410"></p>
 
-<p>Quizá, aunque no estoy seguro, sea posible configurar Google Analytics de manera que cumpla con los requisitos de la <a href="https://www.aepd.es/guias/guia-cookies-analiticas-externas.pdf" target="_blank" rel="noopener noreferrer">Guía sobre el uso de cookies para herramientas de medición de audiencia</a>, lo que evitaría la necesidad de solicitar el consentimiento. Sin embargo, con los valores de configuración predeterminados y más habituales de Google Analytics, dichos requisitos no se cumplen.</p>
+<p>Quizá, aunque no estoy seguro, sea posible configurar Google Analytics de manera que cumpla con los requisitos de la <a href="{{ site.baseurl }}/downloads/2024-enero-guia-cookies-analiticas-externas.pdf" target="_blank">Guía sobre el uso de cookies para herramientas de medición de audiencia (PDF, 0.2 MB)</a>, lo que evitaría la necesidad de solicitar el consentimiento. Sin embargo, con los valores de configuración predeterminados y más habituales de Google Analytics, dichos requisitos no se cumplen.</p>
