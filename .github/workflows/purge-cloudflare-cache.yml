@@ -1,0 +1,24 @@
+name: Purge Cloudflare Cache
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  purge-cache:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Purge Cloudflare cache for key URLs
+        run: |
+          curl -s -X POST \
+            "https://api.cloudflare.com/client/v4/zones/${{ secrets.CLOUDFLARE_ZONE_ID }}/purge_cache" \
+            -H "Authorization: Bearer ${{ secrets.CLOUDFLARE_API_TOKEN }}" \
+            -H "Content-Type: application/json" \
+            -d '{
+              "files": [
+                "https://www.aunitz.net/",
+                "https://www.aunitz.net/tags/",
+                "https://www.aunitz.net/feed.xml",
+                "https://www.aunitz.net/sitemap.xml"
+              ]
+            }'
