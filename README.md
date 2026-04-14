@@ -35,3 +35,12 @@ Automatiza la publicación de un nuevo post a partir de un documento Word. Tarea
 7. Inserta las imágenes del post (que deben estar previamente en `img/`) con sus dimensiones reales.
 
 Para ejecutarla, escribe `/publish-post` o di "quiero publicar un nuevo post" en Claude Code.
+
+## TODO
+Un **Dashboard** con métricas estáticas del sitio web:
+- Número de posts total
+  - Número de posts totales por año
+  - Número de posts totales por mes y año
+- Número total de imágenes
+- Número totas de etiquetas (tags) diferentes
+- Nube de palabras de etiquetas (tags)
