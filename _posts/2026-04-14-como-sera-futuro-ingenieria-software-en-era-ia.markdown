@@ -134,5 +134,4 @@ tags:          [inteligencia artificial, desarrollo de soluciones digitales]
   <li><a href="https://martinfowler.com/bliki/FutureOfSoftwareDevelopment.html" target="_blank" rel="noopener noreferrer">Future Of Software Development - Martin Fowler</a></li>
   <li><a href="https://annievella.com/posts/finding-comfort-in-the-uncertainty/" target="_blank" rel="noopener noreferrer">Finding Comfort in the Uncertainty - Annie Vella</a></li>
   <li><a href="https://thenewstack.io/ai-velocity-debt-accelerator/" target="_blank" rel="noopener noreferrer">Reflexiones de Rachel Laycock, CTO de Thoughtworks</a></li>
-  <li>...</li>
 </ul>
