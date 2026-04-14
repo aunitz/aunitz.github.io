@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(grep -h \"header-img:\" C:/TRABAJO/aunitz.github.io/_posts/*.markdown)",
+      "Bash(sort -t'-' -k3 -n)",
+      "Bash(ls C:/TRABAJO/aunitz.github.io/img/post-bg-*)",
+      "Bash(python3 -c \"import docx; print\\('OK'\\)\")",
+      "Bash(python -c \"import docx; print\\('OK'\\)\")",
+      "Bash(pip install:*)",
+      "Bash(python -c ':*)",
+      "Bash(grep -h \"^tags:\" C:/TRABAJO/aunitz.github.io/_posts/*.markdown)"
+    ]
+  }
+}
