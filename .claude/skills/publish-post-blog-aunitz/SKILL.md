@@ -8,13 +8,24 @@ description: >
 when_to_use: >
   Trigger phrases: "publicar un post", "nuevo post", "nuevo artículo", "crear post", "publicar
   artículo", "añadir entrada al blog", "publish post", "new post", "new blog post".
-argument-hint: ""
-allowed-tools: Read Write Edit Glob Grep Bash(ls *) AskUserQuestion
+argument-hint: "[--test] ruta/al/documento.docx"
+allowed-tools: Read Write Edit Glob Grep Bash AskUserQuestion
 ---
 
 # Skill: Publicar nuevo post en el blog
 
 Eres un asistente especializado en publicar nuevos posts en el blog Jekyll de aunitz.net. Sigue estos pasos en orden estricto.
+
+## Modos de ejecución
+
+La skill tiene dos modos:
+
+- **Modo real (por defecto):** ejecuta todo el proceso y deja el post creado en `_posts/` para que el usuario lo revise, haga commit y push manualmente.
+- **Modo prueba:** se activa cuando el usuario incluye `--test`, `test`, `prueba` o expresiones similares (p. ej. "en modo prueba", "modo test") en la invocación de la skill. Ejecuta todo el proceso igual que el modo real, con dos diferencias:
+  1. **No se usan imágenes nuevas reales.** En los pasos 4 y 5, en lugar de asignar/buscar imágenes específicas del nuevo post, se seleccionan imágenes cualquiera ya existentes en la carpeta `img/` (aunque no tengan relación con el contenido). Ver detalles en cada paso.
+  2. **Al finalizar, se ofrece borrar el post creado** (ver Paso 9).
+
+Identifica el modo al inicio y tenlo en cuenta en los pasos marcados con "⚠ Modo prueba".
 
 ## Paso 1: Solicitar el documento Word
 
@@ -56,6 +67,8 @@ Ejemplos de referencia:
 
 Busca en los ficheros de `_posts/` cuál es el número más alto usado en `header-img: "img/post-bg-NNN.jpg"`. El nuevo post usará el siguiente número consecutivo. Verifica que la imagen existe en la carpeta `img/`. Si no existe, avisa al usuario de que deberá crearla manualmente.
 
+**⚠ Modo prueba:** no busques la siguiente imagen consecutiva. En su lugar, elige una imagen `post-bg-*.jpg` existente cualquiera dentro de `img/` (por ejemplo la más reciente ya en uso) y úsala como `header-img`. No hay que crear ni pedir nuevas imágenes.
+
 ## Paso 5: Preguntar por las imágenes del post
 
 Pregunta al usuario:
@@ -67,6 +80,12 @@ A partir de esa respuesta:
 2. Busca en la carpeta `img/` todas las imágenes que sigan ese patrón (01, 02, 03...).
 3. Para cada imagen encontrada, obtén sus dimensiones reales usando el comando: `identify -format "%w %h"` (ImageMagick) o, si no está disponible, usa `file` o pide las dimensiones al usuario.
 4. Si no puedes obtener las dimensiones, usa `width="720" height="405"` como valores por defecto y avisa al usuario para que los ajuste.
+
+**⚠ Modo prueba:** no preguntes por el nombre base ni esperes imágenes nuevas. En su lugar:
+1. Determina cuántas imágenes inline necesita el post (analizando el Word: imágenes embebidas y/o secciones donde encajarían).
+2. Selecciona ese número de imágenes cualquiera ya existentes en la carpeta `img/` (excluyendo las `post-bg-*.jpg`). Pueden ser imágenes de posts antiguos; no importa que el contenido no se corresponda con el post.
+3. Usa las dimensiones reales de esas imágenes (o `720×405` por defecto si no puedes obtenerlas).
+4. Inserta esas imágenes en las posiciones donde habrían ido las reales.
 
 ## Paso 6: Convertir el contenido Word a HTML limpio
 
@@ -153,3 +172,22 @@ Finaliza con un mensaje como:
 > El post se ha creado correctamente. Revisa el contenido del fichero antes de hacer commit y push al repositorio.
 
 **IMPORTANTE:** No hagas commit ni push. El usuario se encargará de eso manualmente.
+
+En **modo real**, aquí termina la skill.
+
+## Paso 9: Limpieza en modo prueba
+
+**Solo aplica en modo prueba.**
+
+Tras mostrar el resumen del Paso 8, avisa al usuario con un mensaje como:
+
+> El post de prueba se ha creado en `_posts/FICHERO.markdown`. Revísalo ahora en local (por ejemplo ejecutando `bundle exec jekyll serve` y abriéndolo en el navegador). Cuando hayas terminado de revisarlo, dímelo para proceder.
+
+Espera a que el usuario confirme que ha terminado la revisión. A continuación pregúntale explícitamente (usa `AskUserQuestion` si procede):
+
+> ¿Quieres que elimine el fichero de prueba `_posts/FICHERO.markdown`?
+
+- Si responde **sí** (o equivalente): elimina el fichero con `rm` y confirma que el post de prueba ha sido borrado.
+- Si responde **no** (o equivalente): deja el fichero en su sitio y avisa al usuario de que el fichero permanece en `_posts/` y que deberá borrarlo manualmente cuando ya no lo necesite.
+
+No toques las imágenes — en modo prueba no se han creado imágenes nuevas, así que no hay nada que limpiar en `img/`.
