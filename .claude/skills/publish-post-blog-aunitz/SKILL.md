@@ -1,5 +1,5 @@
 ---
-name: publish-post
+name: publish-post-blog-aunitz
 description: >
   Publica un nuevo post en el blog Jekyll de aunitz.net. Usa esta skill cuando el usuario diga que
   quiere publicar un nuevo post, crear un artículo, añadir una entrada al blog, o algo similar.
@@ -81,6 +81,7 @@ Convierte el contenido del Word a HTML siguiendo estas reglas estrictas:
 - No añadas clases CSS salvo `class="center-block"` en imágenes dentro de `<figure>`.
 - No uses `<div>`, `<span>`, ni atributos `style`.
 - No incluyas el título ni el subtítulo del post en el HTML (eso va en el frontmatter).
+- **Emojis:** no añadas emojis propios, pero si el documento Word original incluye algún emoji de manera puntual, consérvalo en el HTML tal como aparece en el original.
 
 ### Enlaces externos
 A TODOS los enlaces que apunten fuera de aunitz.net, añádeles:
