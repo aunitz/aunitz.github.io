@@ -1,0 +1,72 @@
+<svg width="1600" height="1000" viewBox="0 0 1600 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
+<!-- Fondo Neutro -->
+<rect width="1600" height="1000" fill="#F8FAFC"/>
+
+<!-- Título y Encabezado -->
+
+<text x="100" y="100" fill="#64748B" font-family="sans-serif" font-size="20" font-weight="600" letter-spacing="0.1em">ENCUESTA</text>
+<text x="100" y="160" fill="#1E293B" font-family="sans-serif" font-size="48" font-weight="bold">¿En qué fase de adopción de la IA te encuentras?</text>
+
+<!-- Contenedor del Gráfico -->
+
+<g transform="translate(100, 240)">
+<!-- Fase 5 -->
+<g transform="translate(0, 0)">
+<text x="0" y="30" fill="#475569" font-family="sans-serif" font-size="24" font-weight="500">5: No leo el código</text>
+<rect x="0" y="50" width="1200" height="40" rx="4" fill="#E2E8F0"/>
+<rect x="0" y="50" width="156" height="40" rx="4" fill="#3B82F6"/> <!-- 13% of 1200 -->
+<text x="1220" y="80" fill="#1E293B" font-family="sans-serif" font-size="24" font-weight="bold">13%</text>
+</g>
+
+<!-- Fase 4 -->
+<g transform="translate(0, 120)">
+  <text x="0" y="30" fill="#475569" font-family="sans-serif" font-size="24" font-weight="500">4: No escribo el código</text>
+  <rect x="0" y="50" width="1200" height="40" rx="4" fill="#E2E8F0"/>
+  <rect x="0" y="50" width="384" height="40" rx="4" fill="#3B82F6"/> <!-- 32% of 1200 -->
+  <text x="1220" y="80" fill="#1E293B" font-family="sans-serif" font-size="24" font-weight="bold">32%</text>
+</g>
+
+<!-- Fase 3 -->
+<g transform="translate(0, 240)">
+  <text x="0" y="30" fill="#475569" font-family="sans-serif" font-size="24" font-weight="500">3: El agente escribe más que yo</text>
+  <rect x="0" y="50" width="1200" height="40" rx="4" fill="#E2E8F0"/>
+  <rect x="0" y="50" width="312" height="40" rx="4" fill="#3B82F6"/> <!-- 26% of 1200 -->
+  <text x="1220" y="80" fill="#1E293B" font-family="sans-serif" font-size="24" font-weight="bold">26%</text>
+</g>
+
+<!-- Fase 2 -->
+<g transform="translate(0, 360)">
+  <text x="0" y="30" fill="#475569" font-family="sans-serif" font-size="24" font-weight="500">2: Uso el asistente de código</text>
+  <rect x="0" y="50" width="1200" height="40" rx="4" fill="#E2E8F0"/>
+  <rect x="0" y="50" width="228" height="40" rx="4" fill="#3B82F6"/> <!-- 19% of 1200 -->
+  <text x="1220" y="80" fill="#1E293B" font-family="sans-serif" font-size="24" font-weight="bold">19%</text>
+</g>
+
+<!-- Fase 1 -->
+<g transform="translate(0, 480)">
+  <text x="0" y="30" fill="#475569" font-family="sans-serif" font-size="24" font-weight="500">1: Uso el chat tipo ChatGPT</text>
+  <rect x="0" y="50" width="1200" height="40" rx="4" fill="#E2E8F0"/>
+  <rect x="0" y="50" width="120" height="40" rx="4" fill="#3B82F6"/> <!-- 10% of 1200 -->
+  <text x="1220" y="80" fill="#1E293B" font-family="sans-serif" font-size="24" font-weight="bold">10%</text>
+</g>
+
+
+</g>
+
+<!-- Pie de página (Con mayor margen superior para dar aire al diseño) -->
+
+<line x1="100" y1="880" x2="1500" y2="880" stroke="#CBD5E1" stroke-width="1"/>
+<text x="100" y="930" fill="#94A3B8" font-family="sans-serif" font-size="18" font-weight="500">62 VOTOS · ENCUESTA CERRADA</text>
+
+<!-- Icono Robot Minimalista -->
+
+<g transform="translate(1420, 895) scale(0.8)" stroke="#3B82F6" stroke-width="2.5" fill="none">
+<rect x="10" y="20" width="40" height="30" rx="5"/>
+<path d="M20 10 L30 10 M25 10 L25 20"/>
+<circle cx="22" cy="35" r="2" fill="#3B82F6"/>
+<circle cx="38" cy="35" r="2" fill="#3B82F6"/>
+<path d="M22 42 Q30 46 38 42"/>
+<rect x="5" y="28" width="5" height="14" rx="2"/>
+<rect x="50" y="28" width="5" height="14" rx="2"/>
+</g>
+</svg>
