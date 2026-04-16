@@ -53,3 +53,4 @@ Escribe `/publish-post-blog-aunitz` o di "quiero publicar un nuevo post" en Clau
 - Nube de palabras de etiquetas (tags)
 2. Corregir los enlaces de las URLs que redireccionan.
 3. Escribir mi biografía profesional en la wikipedia.
+4. Añadir Schema Markup.
