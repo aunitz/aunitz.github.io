@@ -20,9 +20,9 @@ bundle exec jekyll serve
 4. Levanta el servidor local de Jekyll.
 5. *(Opcional)* Limpiar antes de volver a generar: `bundle exec jekyll clean`.
 
-## Skill de Claude Code: publish-post
+## Skill de Claude Code: publish-post-blog-aunitz
 
-Ubicación: `.claude/skills/publish-post/SKILL.md`
+Ubicación: `.claude/skills/publish-post-blog-aunitz/SKILL.md`
 
 Automatiza la publicación de un nuevo post a partir de un documento Word. Tareas que realiza:
 
@@ -34,7 +34,14 @@ Automatiza la publicación de un nuevo post a partir de un documento Word. Tarea
 6. Convierte los enlaces internos (aunitz.net) a la sintaxis `{% post_url %}` de Jekyll.
 7. Inserta las imágenes del post (que deben estar previamente en `img/`) con sus dimensiones reales.
 
-Para ejecutarla, escribe `/publish-post` o di "quiero publicar un nuevo post" en Claude Code.
+### Modos de ejecución
+
+- **Modo real (por defecto):** ejecuta todo el proceso y deja el post creado en `_posts/` para revisión manual.
+- **Modo prueba:** se activa añadiendo `--test` (o palabras como "prueba", "test") en la invocación. Usa imágenes ya existentes en `img/` en lugar de las reales y, al finalizar, ofrece borrar el fichero de prueba creado.
+
+### Cómo ejecutarla
+
+Escribe `/publish-post-blog-aunitz` o di "quiero publicar un nuevo post" en Claude Code. Para modo prueba: `/publish-post-blog-aunitz --test`.
 
 ## TODO
 Un **Dashboard** con métricas estáticas del sitio web:
