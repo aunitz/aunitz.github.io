@@ -1,6 +1,8 @@
 {
   "permissions": {
     "allow": [
+      "Write",
+      "Edit",
       "Bash(grep -h \"header-img:\" C:/TRABAJO/aunitz.github.io/_posts/*.markdown)",
       "Bash(sort -t'-' -k3 -n)",
       "Bash(ls C:/TRABAJO/aunitz.github.io/img/post-bg-*)",
