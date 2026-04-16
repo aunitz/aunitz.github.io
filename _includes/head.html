@@ -77,6 +77,15 @@
     {% feed_meta %}
     {% include ga.html %}
 
+    <!-- Schema Markup (datos estructurados) -->
+    {% unless page.canonical %}{% if page.layout == "post" %}
+    {% include schema-blogposting.html %}
+    {% endif %}{% endunless %}
+    {% if page.profile-page %}
+    {% include schema-profilepage.html %}
+    {% endif %}
+    {% include schema-website.html %}
+
     <!-- jQuery -->
     <script defer src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 

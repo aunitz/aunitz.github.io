@@ -1,0 +1,15 @@
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfilePage",
+  "url": "{{ page.url | absolute_url }}",
+  "mainEntity": {
+    "@type": "Person",
+    "name": "{{ site.author }}",
+    "url": "{{ site.url }}/about/",
+    "jobTitle": "{{ site.author_job_title }}",
+    "description": "{{ page.description | escape }}",
+    "sameAs": "https://www.linkedin.com/in/{{ site.linkedin_username }}/"
+  }
+}
+</script>

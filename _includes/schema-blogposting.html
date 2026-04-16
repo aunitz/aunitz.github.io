@@ -1,0 +1,27 @@
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "{{ page.url | absolute_url }}"
+  },
+  "headline": "{{ page.title | escape }}",
+  "description": "{{ page.description | escape }}",{% assign _img_parts = page.content | split: 'src="' %}{% if _img_parts.size > 1 %}{% assign _img_src = _img_parts[1] | split: '"' | first %}
+  "image": "{{ site.url }}{{ _img_src }}",{% endif %}
+  "datePublished": "{{ page.date | date_to_xmlschema }}",
+  "url": "{{ page.url | absolute_url }}",
+  "inLanguage": "es",
+  "author": {
+    "@type": "Person",
+    "name": "{{ site.author }}",
+    "url": "{{ site.url }}/about/",
+    "sameAs": "https://www.linkedin.com/in/{{ site.linkedin_username }}/"
+  },
+  "publisher": {
+    "@type": "Person",
+    "name": "{{ site.author }}"
+  },
+  "keywords": "{{ page.tags | join: ', ' | escape }}"
+}
+</script>
