@@ -57,15 +57,39 @@ layout: default
 
                 {% include disqus.html %}
 
+                {% comment %}
+                  Navegación Anterior/Siguiente omitiendo posts de redirección
+                  (marcados con hide_from_home: true), para que los redireccionamientos
+                  de URLs renombradas no rompan el orden cronológico.
+                {% endcomment %}
+                {% assign visible_posts = site.posts | where_exp: "p", "p.hide_from_home != true" %}
+                {% assign cur_index = nil %}
+                {% for p in visible_posts %}
+                    {% if p.url == page.url %}
+                        {% assign cur_index = forloop.index0 %}
+                        {% break %}
+                    {% endif %}
+                {% endfor %}
+                {% assign prev_post = nil %}
+                {% assign next_post = nil %}
+                {% if cur_index %}
+                    {% assign prev_i = cur_index | plus: 1 %}
+                    {% assign prev_post = visible_posts[prev_i] %}
+                    {% if cur_index > 0 %}
+                        {% assign next_i = cur_index | minus: 1 %}
+                        {% assign next_post = visible_posts[next_i] %}
+                    {% endif %}
+                {% endif %}
+
                 <ul class="pager">
-                    {% if page.previous.url %}
+                    {% if prev_post %}
                     <li class="previous">
-                        <a href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.previous.title}}">&larr; Anterior</a>
+                        <a href="{{ prev_post.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{ prev_post.title }}">&larr; Anterior</a>
                     </li>
                     {% endif %}
-                    {% if page.next.url %}
+                    {% if next_post %}
                     <li class="next">
-                        <a href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.next.title}}">Siguiente &rarr;</a>
+                        <a href="{{ next_post.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{ next_post.title }}">Siguiente &rarr;</a>
                     </li>
                     {% endif %}
                 </ul>
