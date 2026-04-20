@@ -33,7 +33,45 @@ Pide al usuario que adjunte el documento Word (.docx) con el contenido del nuevo
 
 > Adjunta el documento Word del nuevo post para que pueda procesarlo.
 
-Espera a que el usuario proporcione el fichero. Lee su contenido completo. A partir de aquí, el contenido del Word es tu fuente principal.
+Espera a que el usuario proporcione el fichero. **Importante:** el formato `.docx` es un ZIP que contiene XML; la herramienta Read no puede leerlo directamente. Debes extraer el contenido así:
+
+```bash
+cp "RUTA/AL/FICHERO.docx" /tmp/post.docx
+cd /tmp && unzip -p post.docx word/document.xml > doc.xml
+```
+
+A continuación usa Node.js para parsear los párrafos y sus runs de formato (negrita, cursiva, etc.), que es la única forma fiable de recuperar el formato del documento. Este script de referencia lista cada párrafo con sus runs marcados:
+
+```js
+const fs = require('fs');
+const content = fs.readFileSync('/tmp/doc.xml', 'utf8');
+const paraRegex = /<w:p[ >][\s\S]*?<\/w:p>/g;
+let match, i = 0;
+while ((match = paraRegex.exec(content)) !== null) {
+    const p = match[0];
+    const runs = [...p.matchAll(/<w:r[ >][\s\S]*?<\/w:r>/g)];
+    const styleMatch = p.match(/<w:pStyle w:val="([^"]+)"/);
+    const style = styleMatch ? styleMatch[1] : 'Normal';
+    let out = [];
+    runs.forEach(r => {
+        const rText = [...r[0].matchAll(/<w:t[^>]*>([\s\S]*?)<\/w:t>/g)].map(m => m[1]).join('');
+        const bold = r[0].includes('<w:b/>') || (r[0].includes('<w:b ') && !r[0].includes('<w:b w:val="0"'));
+        const italic = r[0].includes('<w:i/>') || (r[0].includes('<w:i ') && !r[0].includes('<w:i w:val="0"'));
+        if (rText) out.push((bold ? '**' : '') + (italic ? '_' : '') + rText + (italic ? '_' : '') + (bold ? '**' : ''));
+    });
+    const text = out.join('');
+    if (text.trim()) console.log('[' + style + '] Para ' + i + ': ' + text.substring(0, 200));
+    i++;
+}
+```
+
+También extrae los hipervínculos del fichero de relaciones para saber a qué URL apunta cada `r:id`:
+
+```bash
+unzip -p /tmp/post.docx word/_rels/document.xml.rels
+```
+
+A partir de aquí, el XML parseado es tu fuente principal. **Nunca uses la extracción de texto plano (`unzip | sed 's/<[^>]*>//g'`) como fuente principal**, ya que pierde toda la información de formato.
 
 ## Paso 2: Analizar el contenido y preparar metadatos
 
@@ -89,11 +127,13 @@ A partir de esa respuesta:
 
 ## Paso 6: Convertir el contenido Word a HTML limpio
 
-Convierte el contenido del Word a HTML siguiendo estas reglas estrictas:
+Convierte el contenido del Word a HTML siguiendo estas reglas estrictas.
+
+**Antes de escribir el HTML**, asegúrate de haber analizado el XML completo con el script del Paso 1 para identificar todos los runs con negrita (`<w:b/>`) y cursiva (`<w:i/>`). La negrita se mapea a `<strong>` y la cursiva a `<em>`. Un run puede tener ambas a la vez (`<strong><em>texto</em></strong>`). Si hay duda sobre si un fragmento lleva negrita, consulta el XML; no lo infiereas del contexto.
 
 ### Estructura HTML
 - Usa `<p>` para párrafos.
-- Usa `<strong>` para negritas y `<em>` para cursivas.
+- Usa `<strong>` para negritas y `<em>` para cursivas. Aplícalos exactamente donde el XML indica runs con `<w:b/>` o `<w:i/>`, sin añadir ni omitir ninguno.
 - Usa `<h2>` y `<h3>` para encabezados (nunca `<h1>`, que es el título del post).
 - Usa `<ul>` y `<li>` para listas con viñetas, `<ol>` y `<li>` para listas numeradas.
 - Usa `<blockquote>` para citas.

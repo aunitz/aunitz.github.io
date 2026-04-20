@@ -14,7 +14,9 @@
       "Skill(publish-post)",
       "Skill(publish-post:*)",
       "Bash(python)",
-      "Bash(grep -hoE 'post-bg-[0-9]+' C:/TRABAJO/aunitz.github.io/_posts/*.markdown)"
+      "Bash(grep -hoE 'post-bg-[0-9]+' C:/TRABAJO/aunitz.github.io/_posts/*.markdown)",
+      "Bash(cd /tmp)",
+      "Bash(node -e ' *)"
     ]
   }
 }
