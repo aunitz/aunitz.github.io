@@ -48,7 +48,7 @@ ol {
 
 .container {
 	a:visited {
-		color: #681da8; // En Chrome no se puede cambiar el color de los enlaces visitados
+		color: #551a8b;
 	}
 }
 
@@ -293,6 +293,13 @@ hr.small {
 		&:focus {
 			text-decoration: none;
 			color: @brand-primary;
+		}
+		&:visited {
+			color: #551a8b;
+			> .post-title,
+			> .post-subtitle {
+				color: #551a8b;
+			}
 		}
 		> .post-title {
 			font-size: 30px;
