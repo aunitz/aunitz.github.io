@@ -62,7 +62,7 @@ tags:          [buenas prácticas de usabilidad, accesibilidad]
 
 <p>Es probable que te haya llamado la atención el término “píxel CSS”. <a href="https://www.w3.org/TR/WCAG21/#dfn-css-pixels" target="_blank" rel="noopener noreferrer">Las WCAG los definen</a> del siguiente modo (traducción simplificada para facilitar su comprensión):</p>
 
-<blockquote>Un píxel CSS es la unidad de medida canónica para todas las longitudes y medidas en CSS. Esta unidad es independiente de la densidad y distinta de los píxeles de hardware presentes en una pantalla.</blockquote>
+<blockquote><p>Un píxel CSS es la unidad de medida canónica para todas las longitudes y medidas en CSS. Esta unidad es independiente de la densidad y distinta de los píxeles de hardware presentes en una pantalla.</p></blockquote>
 
 <p>El propósito del píxel CSS es proporcionar <strong>consistencia visual</strong> entre distintos dispositivos, <strong>sin importar la resolución o densidad de pantalla</strong>.</p>
 

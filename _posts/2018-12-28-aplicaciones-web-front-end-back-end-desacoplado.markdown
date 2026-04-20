@@ -39,12 +39,12 @@ tags:          [desarrollo de soluciones digitales]
 <p>Aunque se habla de que el origen del concepto de SPA (Single-Page Applications) data del 2003, lo cierto es que, al menos yo, no empecé a participar en proyectos que lo usaban hasta aproximadamente el 2013. Año en el que MSDN Magazine de Microsoft publicó un <a href="https://msdn.microsoft.com/en-gb/magazine/dn463786.aspx" target="_blank" rel="noopener noreferrer">esclarecedor artículo sobre el tema</a>.</p>
 <p>Los dos primeros párrafos del artículo definen claramente el concepto. Me permito la libertad de citarlos, tras una traducción libre.</p>
 
-<blockquote>Las SPA son aplicaciones web que cargan una sola página HTML y actualizan dinámicamente esa página a medida que el usuario interactúa con la aplicación.</blockquote>
-<blockquote>Los SPA utilizan AJAX y HTML5 para crear aplicaciones web fluidas y dinámicas, sin recargas de página constantes. Sin embargo, esto significa que gran parte del trabajo ocurre en el lado del cliente, en JavaScript.</blockquote>
+<blockquote><p>Las SPA son aplicaciones web que cargan una sola página HTML y actualizan dinámicamente esa página a medida que el usuario interactúa con la aplicación.</p></blockquote>
+<blockquote><p>Los SPA utilizan AJAX y HTML5 para crear aplicaciones web fluidas y dinámicas, sin recargas de página constantes. Sin embargo, esto significa que gran parte del trabajo ocurre en el lado del cliente, en JavaScript.</p></blockquote>
 
 <p>Y después apunta un matiz muy interesante:</p>
 
-<blockquote>Para el desarrollador tradicional de ASP.NET, puede ser difícil dar el salto. Afortunadamente, hay muchos frameworks de JavaScript de código abierto que facilitan la creación de SPA.</blockquote>
+<blockquote><p>Para el desarrollador tradicional de ASP.NET, puede ser difícil dar el salto. Afortunadamente, hay muchos frameworks de JavaScript de código abierto que facilitan la creación de SPA.</p></blockquote>
 
 <p>Donde menciona "desarrollador tradicional de ASP.NET" podríamos mencionar igualmente desarrollador tradicional de Java, PHP, etc.</p>
 <p>Desde mi experiencia, la realidad es que <strong>el desarrollador tradicional de back-end rara vez es capaz de asimilar todas las competencias en HTML, CSS y JavaScript que son necesarias</strong> para desarrollar una aplicación web moderna. Es por ello por lo que desde hace años existe una nueva especialidad de desarrollador: el <strong>programador front-end</strong>.</p>

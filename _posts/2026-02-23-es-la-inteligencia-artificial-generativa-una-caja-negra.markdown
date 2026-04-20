@@ -46,7 +46,7 @@ tags:          [inteligencia artificial]
 
 <p>Un error frecuente es imaginar que el modelo contiene directrices internas del tipo:</p>
 
-<blockquote>“Si el texto habla de invierno, la siguiente palabra probable es nieve.”</blockquote>
+<blockquote><p>”Si el texto habla de invierno, la siguiente palabra probable es nieve.”</p></blockquote>
 
 <p>Ese tipo de representación simbólica <strong>no existe en forma de reglas explícitas y legibles</strong> dentro de un LLM.</p>
 

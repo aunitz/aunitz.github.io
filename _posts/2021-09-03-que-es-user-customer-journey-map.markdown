@@ -34,10 +34,10 @@ tags:          [métodos de investigación UX]
 
 <p>Ejemplo:</p>
 
-<blockquote>Linda<br>
+<blockquote><p>Linda<br>
 50 años de edad<br>
 Vive en Tallahassee, Florida<br>
-Viuda sin hijos</blockquote>
+Viuda sin hijos</p></blockquote>
 
 <h2>Escenario de uso</h2>
 <p>Describe brevemente la situación en la que se encuentra la persona usuaria en relación con el producto o servicio en estudio.</p>
@@ -48,8 +48,8 @@ Viuda sin hijos</blockquote>
 
 <p>Ejemplo:</p>
 
-<blockquote>El marido de Linda falleció hace dos años y ella ha tenido dificultades para llegar a fin de mes desde que él murió. Recientemente perdió su trabajo. Está preocupada por su situación económica y busca desesperadamente ayuda financiera hasta que pueda conseguir un nuevo empleo.<br><br>
-Una amiga de Linda le dijo que buscara subvenciones del gobierno. Linda hizo una búsqueda en Google de subvenciones del gobierno y clicó en el primer resultado. Está confusa sobre las subvenciones disponibles para ella.</blockquote>
+<blockquote><p>El marido de Linda falleció hace dos años y ella ha tenido dificultades para llegar a fin de mes desde que él murió. Recientemente perdió su trabajo. Está preocupada por su situación económica y busca desesperadamente ayuda financiera hasta que pueda conseguir un nuevo empleo.</p>
+<p>Una amiga de Linda le dijo que buscara subvenciones del gobierno. Linda hizo una búsqueda en Google de subvenciones del gobierno y clicó en el primer resultado. Está confusa sobre las subvenciones disponibles para ella.</p></blockquote>
 
 <h2>Expectativas y objetivos</h2>
 <p>Refiere someramente los objetivos y expectativas del usuario que inicia el recorrido.</p>
@@ -90,7 +90,7 @@ Una amiga de Linda le dijo que buscara subvenciones del gobierno. Linda hizo una
 
 <p><a href="https://digital.gov/2015/08/12/journey-mapping-the-customer-experience-a-usa-gov-case-study/" target="_blank" rel="noopener noreferrer">En el caso de uso de Digital.gov</a> se relatan todas las acciones, pensamientos y emociones de Linda. Un ejemplo de una acción concreta es:</p>
 
-<blockquote>Enciende el ordenador y busca en Google el término “subvenciones del gobierno”. Se siente un poco nerviosa e insegura, y tiene la esperanza de que su búsqueda funcione. En el <em>journey map</em> representan su emoción con el emoticono de una cara sonriente.</blockquote>
+<blockquote><p>Enciende el ordenador y busca en Google el término “subvenciones del gobierno”. Se siente un poco nerviosa e insegura, y tiene la esperanza de que su búsqueda funcione. En el <em>journey map</em> representan su emoción con el emoticono de una cara sonriente.</p></blockquote>
 
 <h2>Conclusiones</h2>
 <p>Recoge los <strong>aprendizajes</strong> y <strong>descubrimientos</strong> que hemos realizado durante el proceso de investigación y elaboración del <em>journey map</em>. Y que nos servirán para mejorar la experiencia de los usuarios en el futuro.</p>

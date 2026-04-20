@@ -16,6 +16,6 @@ tags:          [buenas prácticas de usabilidad]
 
 <p>Esta idea es una de las que más consenso genera entre los expertos internacionales en UX. Como <a href="https://twitter.com/zeldman/statuses/804159148" target="_blank" rel="noopener noreferrer">afirmó en 2008 Jeffrey Zeldman</a> (cofundador de <a href="https://alistapart.com/" target="_blank" rel="noopener noreferrer">A List Apart Magazine</a> y <a href="https://www.webstandards.org/" target="_blank" rel="noopener noreferrer">Web Standards Project</a>):</p>
 
-<blockquote>“El contenido precede al diseño. Diseño sin contenido no es diseño, es decoración.”</blockquote>
+<blockquote><p>“El contenido precede al diseño. Diseño sin contenido no es diseño, es decoración.”</p></blockquote>
 
 <p>Otro ejemplo que abunda en este concepto es el interesante <a href="https://www.nngroup.com/articles/twitter-postings-iterative-design/" target="_blank" rel="noopener noreferrer">artículo de 2009 de Jakob Nielsen</a> en el que explica el meditado proceso iterativo seguido hasta obtener el texto ideal para anunciar en Twitter sus próximas conferencias. Al final del post concluirá afirmando que el texto forma parte del UI.</p>

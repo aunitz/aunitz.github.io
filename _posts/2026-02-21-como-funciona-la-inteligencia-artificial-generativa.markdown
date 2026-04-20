@@ -40,7 +40,7 @@ tags:          [inteligencia artificial]
 
 <p>En la frase:</p>
 
-<blockquote>"En invierno y con mucho frío cae la blanca → ?"</blockquote>
+<blockquote><p>"En invierno y con mucho frío cae la blanca → ?"</p></blockquote>
 
 <p>el modelo tiene en cuenta simultáneamente “invierno”, “mucho”, “frío” y “blanca”, relacionándolas entre sí para <strong>predecir matemáticamente la siguiente palabra</strong>. En este caso, la predicción correcta será “blanca → nieve”, y no, por ejemplo, “blanca → camiseta”, “blanca → harina” o “blanca → nube”. Al considerar todas las palabras previas a la vez, la probabilidad de acierto aumenta de forma significativa.</p>
 
