@@ -2,16 +2,32 @@
 {
   "@context": "https://schema.org",
   "@type": "WebSite",
+  "@id": "https://www.aunitz.net/#website",
   "name": "{{ site.subtitle }}",
-  "url": "{{ site.url }}"
+  "url": "{{ '/' | absolute_url }}",
+  "inLanguage": "es"
 }
 </script>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Person",
+  "@id": "https://www.aunitz.net/#person",
   "name": "{{ site.author }}",
-  "url": "{{ site.url }}/about/",
-  "sameAs": "https://www.linkedin.com/in/{{ site.linkedin_username }}/"
+  "url": "{{ '/about/' | absolute_url }}",
+  "jobTitle": "{{ site.author_job_title }}",
+  "description": "{{ site.author_description | escape }}",
+  "image": {
+    "@type": "ImageObject",
+    "url": "{{ site.author_logo | absolute_url }}",
+    "width": 550,
+    "height": 550
+  },
+  "worksFor": {
+    "@type": "Organization",
+    "name": "Adimedia",
+    "url": "{{ site.adimedia_url }}"
+  },
+  "sameAs": ["https://www.linkedin.com/in/{{ site.linkedin_username }}/"]
 }
 </script>

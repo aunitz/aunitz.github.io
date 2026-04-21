@@ -2,14 +2,11 @@
 {
   "@context": "https://schema.org",
   "@type": "ProfilePage",
+  "@id": "{{ page.url | absolute_url }}#profilepage",
   "url": "{{ page.url | absolute_url }}",
+  "inLanguage": "es",
   "mainEntity": {
-    "@type": "Person",
-    "name": "{{ site.author }}",
-    "url": "{{ site.url }}/about/",
-    "jobTitle": "{{ site.author_job_title }}",
-    "description": "{{ page.description | escape }}",
-    "sameAs": "https://www.linkedin.com/in/{{ site.linkedin_username }}/"
+    "@id": "https://www.aunitz.net/#person"
   }
 }
 </script>

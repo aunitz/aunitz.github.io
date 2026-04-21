@@ -14,7 +14,10 @@
       "Skill(publish-post)",
       "Skill(publish-post:*)",
       "Bash(python)",
-      "Bash(grep -hoE 'post-bg-[0-9]+' C:/TRABAJO/aunitz.github.io/_posts/*.markdown)"
+      "Bash(grep -hoE 'post-bg-[0-9]+' C:/TRABAJO/aunitz.github.io/_posts/*.markdown)",
+      "Bash(python -c \"from PIL import Image; img = Image.open\\('img/aunitz-gimenez-mendiburu.webp'\\); print\\(img.size\\)\")",
+      "Bash(magick identify *)",
+      "Bash(ffprobe -v quiet -show_entries stream=width,height -of csv=p=0 \"D:\\\\OneDrive\\\\Adimedia\\\\aunitz.net\\\\www\\\\aunitz.github.io\\\\img\\\\aunitz-gimenez-mendiburu.webp\")"
     ]
   }
 }
