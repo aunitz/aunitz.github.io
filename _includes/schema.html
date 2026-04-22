@@ -1,0 +1,106 @@
+{% unless page.canonical %}{% if page.layout == "post" %}{% assign _img_parts = page.content | split: 'src="' %}{% if _img_parts.size > 1 %}{% assign _img_src = _img_parts[1] | split: '"' | first %}{% endif %}{% endif %}{% endunless %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://www.aunitz.net/#website",
+      "name": "{{ site.subtitle }}",
+      "url": "{{ '/' | absolute_url }}",
+      "inLanguage": "es",
+      "description": "{{ site.author_description | escape }}"
+    },
+    {
+      "@type": "Person",
+      "@id": "https://www.aunitz.net/#person",
+      "name": "{{ site.author }}",
+      "url": "{{ '/about/' | absolute_url }}",
+      "jobTitle": "{{ site.author_job_title }}",
+      "description": "{{ site.author_description | escape }}",
+      "image": {
+        "@type": "ImageObject",
+        "url": "{{ site.author_logo | absolute_url }}",
+        "width": 550,
+        "height": 550
+      },
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Adimedia",
+        "url": "{{ site.adimedia_url }}"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/in/{{ site.linkedin_username }}/",
+        "https://github.com/aunitz"
+      ],
+      "knowsAbout": [
+        "Experiencia de usuario (UX)",
+        "Usabilidad web",
+        "Accesibilidad digital",
+        "Sesgos cognitivos",
+        "Leyes de UX",
+        "Diseño de formularios",
+        "Dirección de proyectos digitales",
+        "Diseño de productos digitales",
+        "Inteligencia artificial aplicada al desarrollo digital"
+      ]
+    }{% if page.home-page %},
+    {
+      "@type": "Blog",
+      "@id": "https://www.aunitz.net/#blog",
+      "name": "{{ site.subtitle }}",
+      "url": "{{ '/' | absolute_url }}",
+      "inLanguage": "es",
+      "description": "{{ site.author_description | escape }}",
+      "image": { "@type": "ImageObject", "url": "{{ site.author_logo | absolute_url }}", "width": 550, "height": 550 },
+      "author": { "@id": "https://www.aunitz.net/#person" }
+    }{% endif %}{% unless page.canonical %}{% if page.layout == "post" %},
+    {
+      "@type": "BlogPosting",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "{{ page.url | absolute_url }}"
+      },
+      "headline": "{{ page.title | escape }}",
+      "description": "{{ page.description | escape }}",{% if _img_src %}
+      "image": { "@type": "ImageObject", "url": "{{ _img_src | absolute_url }}" },{% elsif page.header-img %}
+      "image": { "@type": "ImageObject", "url": "{{ page.header-img | absolute_url }}" },{% endif %}
+      "datePublished": "{{ page.date | date_to_xmlschema }}",
+      "dateModified": "{{ page.last_modified_at | default: page.date | date_to_xmlschema }}",
+      "url": "{{ page.url | absolute_url }}",
+      "inLanguage": "es",
+      "author": { "@id": "https://www.aunitz.net/#person" },
+      "publisher": { "@id": "https://www.aunitz.net/#person" },
+      "keywords": "{{ page.tags | join: ', ' | escape }}",
+      "wordCount": {{ page.content | number_of_words }},
+      "isPartOf": { "@id": "https://www.aunitz.net/#blog" }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Inicio",
+          "item": "{{ '/' | absolute_url }}"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "{{ page.title | escape }}",
+          "item": "{{ page.url | absolute_url }}"
+        }
+      ]
+    }{% endif %}{% endunless %}{% if page.profile-page %},
+    {
+      "@type": "ProfilePage",
+      "@id": "{{ page.url | absolute_url }}#profilepage",
+      "url": "{{ page.url | absolute_url }}",
+      "inLanguage": "es",
+      "mainEntity": {
+        "@id": "https://www.aunitz.net/#person"
+      }
+    }{% endif %}
+  ]
+}
+</script>

@@ -4,6 +4,7 @@ title:         "Qué es el Diseño Centrado en el Usuario (DCU)"
 subtitle:      "Definición y beneficios del DCU"
 description:   "Diseño centrado en el usuario: proceso iterativo basado en investigación, participación y equipos multidisciplinares para crear productos usables y accesibles."
 date:          2025-09-11 13:00:00 +0200
+last_modified_at: 2025-09-12 15:00:00 +0200
 author:        "Aunitz Giménez"
 header-img:    "img/post-bg-111.jpg"
 tags:          [buenas prácticas de diseño, desarrollo de soluciones digitales]
