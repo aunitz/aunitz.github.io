@@ -17,6 +17,7 @@
   "author": { "@id": "https://www.aunitz.net/#person" },
   "publisher": { "@id": "https://www.aunitz.net/#person" },
   "keywords": "{{ page.tags | join: ', ' | escape }}",
+  "wordCount": {{ page.content | number_of_words }},
   "isPartOf": { "@id": "https://www.aunitz.net/#blog" }
 }
 </script>

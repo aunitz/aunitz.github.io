@@ -5,7 +5,8 @@
   "@id": "https://www.aunitz.net/#website",
   "name": "{{ site.subtitle }}",
   "url": "{{ '/' | absolute_url }}",
-  "inLanguage": "es"
+  "inLanguage": "es",
+  "description": "{{ site.author_description | escape }}"
 }
 </script>
 <script type="application/ld+json">
@@ -28,6 +29,20 @@
     "name": "Adimedia",
     "url": "{{ site.adimedia_url }}"
   },
-  "sameAs": ["https://www.linkedin.com/in/{{ site.linkedin_username }}/"]
+  "sameAs": [
+    "https://www.linkedin.com/in/{{ site.linkedin_username }}/",
+    "https://github.com/aunitz"
+  ],
+  "knowsAbout": [
+    "Experiencia de usuario (UX)",
+    "Usabilidad web",
+    "Accesibilidad digital",
+    "Sesgos cognitivos",
+    "Leyes de UX",
+    "Diseño de formularios",
+    "Dirección de proyectos digitales",
+    "Diseño de productos digitales",
+    "Inteligencia artificial aplicada al desarrollo digital"
+  ]
 }
 </script>
