@@ -19,7 +19,14 @@
       "Bash(node -e ' *)",
       "Bash(python -c \"from PIL import Image; img = Image.open\\('img/aunitz-gimenez-mendiburu.webp'\\); print\\(img.size\\)\")",
       "Bash(magick identify *)",
-      "Bash(ffprobe -v quiet -show_entries stream=width,height -of csv=p=0 \"D:\\\\OneDrive\\\\Adimedia\\\\aunitz.net\\\\www\\\\aunitz.github.io\\\\img\\\\aunitz-gimenez-mendiburu.webp\")"
+      "Bash(ffprobe -v quiet -show_entries stream=width,height -of csv=p=0 \"D:\\\\OneDrive\\\\Adimedia\\\\aunitz.net\\\\www\\\\aunitz.github.io\\\\img\\\\aunitz-gimenez-mendiburu.webp\")",
+      "Skill(republish-theconversation-aunitz)",
+      "Skill(republish-theconversation-aunitz:*)",
+      "Bash(identify -format \"%w %h\" img/accesibilidad-digital-legislacion-espana-01.jpg)",
+      "Bash(python3 -c \"from PIL import Image; img=Image.open\\('img/accesibilidad-digital-legislacion-espana-01.jpg'\\); print\\(img.size[0], img.size[1]\\)\")",
+      "PowerShell(Add-Type -AssemblyName System.Drawing; $img = [System.Drawing.Image]::FromFile\\(\"D:\\\\OneDrive\\\\Adimedia\\\\aunitz.net\\\\www\\\\aunitz.github.io\\\\img\\\\accesibilidad-digital-legislacion-espana-01.jpg\"\\); \"$\\($img.Width\\) $\\($img.Height\\)\"; $img.Dispose\\(\\))",
+      "Bash(curl -sL \"https://images.theconversation.com/files/719814/original/file-20260223-56-5h3d3o.jpg\" -o \"img/ia-facilita-pero-no-garantiza-aprendizaje-en-organizaciones-01.jpg\")",
+      "Bash(identify -format \"%w %h\" \"img/ia-facilita-pero-no-garantiza-aprendizaje-en-organizaciones-01.jpg\")"
     ]
   }
 }
