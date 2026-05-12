@@ -1,24 +1,33 @@
 {
+    // Compilación de los estilos LESS del tema Clean Blog (StartBootstrap)
+    // Extensión requerida: Easy LESS
+    // Entrada: less/clean-blog.less → Salida: css/clean-blog.min.css
+    // Nota: ${workspaceRoot} está deprecated; el equivalente moderno es ${workspaceFolder}
     "less.compile": {
-        "compress": true,
-        "sourceMap": false,
+        "compress": true,       // Genera CSS minificado
+        "sourceMap": false,     // Sin source maps en producción
         "main": "${workspaceRoot}\\less\\clean-blog.less",
         "out": "${workspaceRoot}\\css\\clean-blog.min.css"
     },
+
+    // Compilación de los estilos SCSS de Bootstrap (bootstrap-sass/)
+    // Extensión requerida: Live Sass Compiler
     "liveSassCompile.settings.formats":[
         {
-            "extensionName": ".min.css",
-            "format": "compressed",
-            "savePath": "/css"
+            "extensionName": ".min.css",    // Genera ficheros .min.css
+            "format": "compressed",         // CSS minificado
+            "savePath": "/css"              // Salida en la carpeta css/ del proyecto
         }
     ],
+    // Carpetas excluidas de la compilación SCSS automática
     "liveSassCompile.settings.excludeList": [
        "**/node_modules/**",
        ".vscode/**"
     ],
-    "liveSassCompile.settings.generateMap": false,
+    "liveSassCompile.settings.generateMap": false,  // Sin source maps en producción
+    // Prefijos CSS automáticos para compatibilidad con los navegadores más usados
     "liveSassCompile.settings.autoprefix": [
-        "> 1%",
-        "last 2 versions"
+        "> 1%",         // Navegadores con más del 1% de cuota de mercado
+        "last 2 versions"   // Las dos últimas versiones de cada navegador
     ]
 }
