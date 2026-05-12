@@ -27,51 +27,104 @@ La skill tiene dos modos:
 
 Identifica el modo al inicio y tenlo en cuenta en los pasos marcados con "⚠ Modo prueba".
 
-## Paso 1: Solicitar el documento Word
+## Reanudación de sesión interrumpida
+
+Al inicio de la skill, comprueba si existe el fichero de estado:
+```
+.claude/skills/publish-post-blog-aunitz/state/state.json
+```
+Si existe, ofrece al usuario reanudarlo mostrando el título del post y el paso en que se interrumpió. Si el usuario acepta, salta directamente al paso guardado. Si no existe o el usuario prefiere empezar desde cero, continúa normalmente (y borra el fichero de estado si existía).
+
+---
+
+## Paso 1: Solicitar y extraer el documento Word
 
 Pide al usuario que adjunte el documento Word (.docx) con el contenido del nuevo post. Dile algo como:
 
 > Adjunta el documento Word del nuevo post para que pueda procesarlo.
 
-Espera a que el usuario proporcione el fichero. **Importante:** el formato `.docx` es un ZIP que contiene XML; la herramienta Read no puede leerlo directamente. Debes extraer el contenido así:
+Espera a que el usuario proporcione el fichero.
+
+### Extracción del contenido
+
+El formato `.docx` es un ZIP con XML; la herramienta Read no puede leerlo directamente. Extráelo así:
 
 ```bash
 cp "RUTA/AL/FICHERO.docx" /tmp/post.docx
-cd /tmp && unzip -p post.docx word/document.xml > doc.xml
+unzip -p /tmp/post.docx word/document.xml > /tmp/doc.xml
+unzip -p /tmp/post.docx word/_rels/document.xml.rels > /tmp/doc.rels
 ```
 
-A continuación usa Node.js para parsear los párrafos y sus runs de formato (negrita, cursiva, etc.), que es la única forma fiable de recuperar el formato del documento. Este script de referencia lista cada párrafo con sus runs marcados:
+### ⚠ Nota sobre paths en Windows (Git Bash + Node.js)
+
+Los comandos Bash anteriores crean ficheros en `/tmp/` (el MSYS virtual filesystem). **Node.js es un proceso Windows** y no ve ese filesystem, por lo que `readFileSync('/tmp/doc.xml')` falla. Solución: usa siempre `cygpath -w` para convertir el path antes de pasarlo a Node.js, y escribe siempre los scripts en ficheros temporales en lugar de usar `-e`:
+
+```bash
+DOCXML=$(cygpath -w /tmp/doc.xml)
+DOCRELS=$(cygpath -w /tmp/doc.rels)
+# Luego: node $(cygpath -w /tmp/script.js) "$DOCXML"
+```
+
+### Parser de párrafos (análisis)
+
+Escribe este script en `/tmp/parse_paragraphs.js` y ejecútalo. **Muestra cada párrafo con su número, estilo, y texto colapsando runs adyacentes del mismo formato en una sola marca:**
 
 ```js
 const fs = require('fs');
-const content = fs.readFileSync('/tmp/doc.xml', 'utf8');
+const content = fs.readFileSync(process.argv[2], 'utf8');
 const paraRegex = /<w:p[ >][\s\S]*?<\/w:p>/g;
 let match, i = 0;
 while ((match = paraRegex.exec(content)) !== null) {
     const p = match[0];
-    const runs = [...p.matchAll(/<w:r[ >][\s\S]*?<\/w:r>/g)];
     const styleMatch = p.match(/<w:pStyle w:val="([^"]+)"/);
     const style = styleMatch ? styleMatch[1] : 'Normal';
-    let out = [];
+    const imgMatch = p.match(/r:embed="(rId\d+)"/);
+    const hasImg = imgMatch ? ` [IMG:${imgMatch[1]}]` : '';
+    // Detectar si es elemento de lista
+    const isList = p.includes('<w:numId ') && !p.includes('<w:numId w:val="0"');
+    // Extraer runs y colapsar adyacentes con mismo formato
+    const runs = [...p.matchAll(/<w:r[ >][\s\S]*?<\/w:r>/g)];
+    let segments = [];
     runs.forEach(r => {
         const rText = [...r[0].matchAll(/<w:t[^>]*>([\s\S]*?)<\/w:t>/g)].map(m => m[1]).join('');
         const bold = r[0].includes('<w:b/>') || (r[0].includes('<w:b ') && !r[0].includes('<w:b w:val="0"'));
         const italic = r[0].includes('<w:i/>') || (r[0].includes('<w:i ') && !r[0].includes('<w:i w:val="0"'));
-        if (rText) out.push((bold ? '**' : '') + (italic ? '_' : '') + rText + (italic ? '_' : '') + (bold ? '**' : ''));
+        if (!rText) return;
+        const last = segments[segments.length - 1];
+        if (last && last.bold === bold && last.italic === italic) {
+            last.text += rText;
+        } else {
+            segments.push({ text: rText, bold, italic });
+        }
     });
-    const text = out.join('');
-    if (text.trim()) console.log('[' + style + '] Para ' + i + ': ' + text.substring(0, 200));
+    const text = segments.map(s => (s.bold ? '**' : '') + (s.italic ? '_' : '') + s.text + (s.italic ? '_' : '') + (s.bold ? '**' : '')).join('');
+    const listMark = isList ? ' [LIST]' : '';
+    if (text.trim() || hasImg) console.log(`[${style}] Para ${i}${hasImg}${listMark}: ${text.substring(0, 300)}`);
     i++;
 }
 ```
 
-También extrae los hipervínculos del fichero de relaciones para saber a qué URL apunta cada `r:id`:
-
+Ejecución (Windows):
 ```bash
-unzip -p /tmp/post.docx word/_rels/document.xml.rels
+DOCXML=$(cygpath -w /tmp/doc.xml)
+node $(cygpath -w /tmp/parse_paragraphs.js) "$DOCXML"
 ```
 
-A partir de aquí, el XML parseado es tu fuente principal. **Nunca uses la extracción de texto plano (`unzip | sed 's/<[^>]*>//g'`) como fuente principal**, ya que pierde toda la información de formato.
+### Extracción de hipervínculos
+
+```bash
+DOCRELS=$(cygpath -w /tmp/doc.rels)
+node -e "
+const fs = require('fs');
+const c = fs.readFileSync('$DOCRELS','utf8');
+const re = /Id=\"(rId\\d+)\"[^>]*Type=\"[^\"]*hyperlink[^\"]*\"[^>]*Target=\"([^\"]+)\"/g;
+let m; while((m=re.exec(c))!==null) console.log(m[1],'->',m[2]);
+"
+```
+
+A partir de aquí, el XML parseado es tu fuente principal. **Nunca uses extracción de texto plano** (`sed 's/<[^>]*>//g'`), ya que pierde toda la información de formato.
+
+---
 
 ## Paso 2: Analizar el contenido y preparar metadatos
 
@@ -80,8 +133,15 @@ A partir del contenido del Word:
 1. **Identifica el título del post.** Será el título principal (heading 1 o el primer encabezado destacado del documento).
 2. **Identifica el subtítulo.** Si existe un segundo encabezado o línea destacada justo después del título, úsalo como subtítulo. Si no hay subtítulo claro, pregunta al usuario.
 3. **Genera la descripción SEO.** Debe ser un resumen del post de entre 100 y 150 caracteres. Escríbela en español.
-4. **Identifica las etiquetas (tags).** Mira los posts existentes en `_posts/` para ver qué tags se usan habitualmente y propón las más adecuadas para este contenido. Los tags se escriben en minúscula.
-5. **Determina la fecha.** Usa la fecha de hoy en formato `YYYY-MM-DD HH:MM:SS +0200`.
+4. **Identifica las etiquetas (tags).** Usa este comando para ver los tags más usados en el blog y propón los más adecuados para este contenido. Los tags se escriben en minúscula:
+   ```bash
+   grep -h "^tags:" _posts/*.markdown | sed 's/tags: *\[//' | sed 's/\]//' | tr ',' '\n' | sed 's/^ *//' | sed 's/ *$//' | sort | uniq -c | sort -rn | head -20
+   ```
+5. **Determina la fecha y hora.** La fecha es hoy. Pregunta explícitamente al usuario la hora de publicación:
+   > ¿A qué hora quieres que aparezca publicado el post? (Por defecto: 10:00)
+   Usa el formato `YYYY-MM-DD HH:MM:SS +0200`.
+
+---
 
 ## Paso 3: Generar el nombre del fichero
 
@@ -101,64 +161,173 @@ Ejemplos de referencia:
 - "Cómo funciona la inteligencia artificial generativa" → `como-funciona-inteligencia-artificial-generativa`
 - "¿Qué es el diseño centrado en el usuario?" → `que-es-diseno-centrado-en-usuario`
 
+---
+
 ## Paso 4: Determinar el header-img
 
 Busca en los ficheros de `_posts/` cuál es el número más alto usado en `header-img: "img/post-bg-NNN.jpg"`. El nuevo post usará el siguiente número consecutivo. Verifica que la imagen existe en la carpeta `img/`. Si no existe, avisa al usuario de que deberá crearla manualmente.
 
 **⚠ Modo prueba:** no busques la siguiente imagen consecutiva. En su lugar, elige una imagen `post-bg-*.jpg` existente cualquiera dentro de `img/` (por ejemplo la más reciente ya en uso) y úsala como `header-img`. No hay que crear ni pedir nuevas imágenes.
 
-## Paso 5: Preguntar por las imágenes del post
+---
+
+## Paso 5: Imágenes del post — inventario y dimensiones
+
+### 5a. Preguntar el nombre base
 
 Pregunta al usuario:
 
 > ¿Cuál es el nombre base de la primera imagen del post? (Por ejemplo: `como-sera-futuro-ingenieria-software-01.webp`)
 
-A partir de esa respuesta:
-1. Extrae el patrón base (todo excepto el número y la extensión).
-2. Busca en la carpeta `img/` todas las imágenes que sigan ese patrón (01, 02, 03...).
-3. Para cada imagen encontrada, obtén sus dimensiones reales usando el comando: `identify -format "%w %h"` (ImageMagick) o, si no está disponible, usa `file` o pide las dimensiones al usuario.
-4. Si no puedes obtener las dimensiones, usa `width="720" height="405"` como valores por defecto y avisa al usuario para que los ajuste.
+A partir de esa respuesta, extrae el patrón base (todo excepto el número y la extensión) y busca en `img/` todas las imágenes que sigan ese patrón (01, 02, 03…):
 
-**⚠ Modo prueba:** no preguntes por el nombre base ni esperes imágenes nuevas. En su lugar:
-1. Determina cuántas imágenes inline necesita el post (analizando el Word: imágenes embebidas y/o secciones donde encajarían).
-2. Selecciona ese número de imágenes cualquiera ya existentes en la carpeta `img/` (excluyendo las `post-bg-*.jpg`). Pueden ser imágenes de posts antiguos; no importa que el contenido no se corresponda con el post.
-3. Usa las dimensiones reales de esas imágenes (o `720×405` por defecto si no puedes obtenerlas).
-4. Inserta esas imágenes en las posiciones donde habrían ido las reales.
+```bash
+ls img/PATRON-*.{webp,gif,jpg,png} 2>/dev/null | sort
+```
+
+**⚠ Modo prueba:** no preguntes. Selecciona imágenes existentes en `img/` (excluyendo `post-bg-*.jpg`) en número igual al de posiciones de imagen detectadas en el Word. Úsalas aunque no tengan relación con el contenido.
+
+### 5b. Verificar inventario — comparar Word vs `img/`
+
+Cuenta las posiciones de imagen en el Word con este script (`/tmp/count_images.js`):
+
+```js
+const fs = require('fs');
+const content = fs.readFileSync(process.argv[2], 'utf8');
+const embeds = [...content.matchAll(/r:embed="(rId\d+)"/g)];
+console.log(`Imágenes en el Word: ${embeds.length}`);
+embeds.forEach((m, i) => console.log(`  ${i+1}. ${m[1]}`));
+```
+
+```bash
+node $(cygpath -w /tmp/count_images.js) $(cygpath -w /tmp/doc.xml)
+```
+
+Compara el número de imágenes del Word con el número de ficheros encontrados en `img/`:
+
+- **Si coinciden:** asume correspondencia secuencial (imagen 1 del Word → `nombre-01.webp`, imagen 2 → `nombre-02.webp`, etc.) y continúa.
+- **Si no coinciden:** informa al usuario del desfase (p. ej. "El Word tiene 28 imágenes pero en `img/` hay 25 con ese patrón") y avisa de que algunas posiciones de imagen quedarán sin imagen. Asume de todas formas correspondencia secuencial para las que sí existen, y omite (`<!-- imagen no disponible -->`) las posiciones sobrantes del Word.
+
+### 5c. Obtener dimensiones reales (sin dependencias externas)
+
+Para cada imagen encontrada, obtén sus dimensiones con este script Node.js portátil (`/tmp/img_dimensions.js`):
+
+```js
+const fs = require('fs');
+const path = require('path');
+
+function getDimensions(filepath) {
+    const buf = fs.readFileSync(filepath);
+    const ext = path.extname(filepath).toLowerCase();
+    // PNG
+    if (buf[0] === 0x89 && buf[1] === 0x50 && buf[2] === 0x4E && buf[3] === 0x47) {
+        return { w: buf.readUInt32BE(16), h: buf.readUInt32BE(20) };
+    }
+    // GIF
+    if (buf[0] === 0x47 && buf[1] === 0x49 && buf[2] === 0x46) {
+        return { w: buf.readUInt16LE(6), h: buf.readUInt16LE(8) };
+    }
+    // JPEG
+    if (buf[0] === 0xFF && buf[1] === 0xD8) {
+        let offset = 2;
+        while (offset < buf.length) {
+            if (buf[offset] !== 0xFF) break;
+            const marker = buf[offset + 1];
+            if (marker === 0xC0 || marker === 0xC2) {
+                return { w: buf.readUInt16BE(offset + 7), h: buf.readUInt16BE(offset + 5) };
+            }
+            offset += 2 + buf.readUInt16BE(offset + 2);
+        }
+    }
+    // WebP
+    if (buf.toString('ascii', 0, 4) === 'RIFF' && buf.toString('ascii', 8, 12) === 'WEBP') {
+        const vp8type = buf.toString('ascii', 12, 16);
+        if (vp8type === 'VP8 ') {
+            return { w: buf.readUInt16LE(26) & 0x3FFF, h: buf.readUInt16LE(28) & 0x3FFF };
+        } else if (vp8type === 'VP8L') {
+            const bits = buf.readUInt32LE(21);
+            return { w: (bits & 0x3FFF) + 1, h: ((bits >> 14) & 0x3FFF) + 1 };
+        } else if (vp8type === 'VP8X') {
+            return { w: buf.readUIntLE(24, 3) + 1, h: buf.readUIntLE(27, 3) + 1 };
+        }
+    }
+    return null;
+}
+
+const files = process.argv.slice(2);
+files.forEach(f => {
+    const dim = getDimensions(f);
+    if (dim) console.log(`${path.basename(f)}: ${dim.w}x${dim.h}`);
+    else console.log(`${path.basename(f)}: dimensiones desconocidas (usa 720x405 por defecto)`);
+});
+```
+
+```bash
+node $(cygpath -w /tmp/img_dimensions.js) img/PATRON-*.{webp,gif,jpg,png} 2>/dev/null
+```
+
+Con esto tienes la lista completa de imágenes con sus dimensiones. Ahora guarda el estado (ver sección **Estado de la skill** al final).
+
+---
 
 ## Paso 6: Convertir el contenido Word a HTML limpio
 
-Convierte el contenido del Word a HTML siguiendo estas reglas estrictas.
+### Reglas generales
 
-**Antes de escribir el HTML**, asegúrate de haber analizado el XML completo con el script del Paso 1 para identificar todos los runs con negrita (`<w:b/>`) y cursiva (`<w:i/>`). La negrita se mapea a `<strong>` y la cursiva a `<em>`. Un run puede tener ambas a la vez (`<strong><em>texto</em></strong>`). Si hay duda sobre si un fragmento lleva negrita, consulta el XML; no lo infiereas del contexto.
-
-### Estructura HTML
-- Usa `<p>` para párrafos.
-- Usa `<strong>` para negritas y `<em>` para cursivas. Aplícalos exactamente donde el XML indica runs con `<w:b/>` o `<w:i/>`, sin añadir ni omitir ninguno.
+- Usa `<p>` para párrafos normales.
 - Usa `<h2>` y `<h3>` para encabezados (nunca `<h1>`, que es el título del post).
-- Usa `<ul>` y `<li>` para listas con viñetas, `<ol>` y `<li>` para listas numeradas.
+- Usa `<strong>` para negritas y `<em>` para cursivas, **colapsando runs adyacentes del mismo formato** (véase script del Paso 1). Si varios runs consecutivos son todos bold, envuélvelos en un único `<strong>`.
+- **Listas con viñetas:** un párrafo es elemento de lista si su XML contiene `<w:numPr>` con `<w:numId w:val="N">` (N > 0). Agrupa párrafos de lista consecutivos en `<ul>…</ul>`. Cierra el `</ul>` en cuanto aparezca un párrafo sin lista. Si la lista es claramente numerada, usa `<ol>`. Ejemplo:
+  ```html
+  <ul>
+      <li><strong>Primer elemento.</strong></li>
+      <li><strong>Segundo elemento</strong>, continuación no negrita.</li>
+  </ul>
+  ```
 - Usa `<blockquote>` para citas.
 - No añadas clases CSS salvo `class="center-block"` en imágenes dentro de `<figure>`.
 - No uses `<div>`, `<span>`, ni atributos `style`.
-- No incluyas el título ni el subtítulo del post en el HTML (eso va en el frontmatter).
-- **Emojis:** no añadas emojis propios, pero si el documento Word original incluye algún emoji de manera puntual, consérvalo en el HTML tal como aparece en el original.
+- No incluyas el título ni el subtítulo en el HTML (van en el frontmatter).
+- **Emojis:** conserva los emojis del Word original tal cual; no añadas ni elimines ninguno.
+- **Comillas tipográficas:** conserva las comillas tipográficas tal como aparecen en el Word ("…", «…»). No las conviertas a comillas ASCII.
+
+### Negritas y cursivas — algoritmo de colapso
+
+Al generar el HTML, lee el XML run a run y aplica este algoritmo antes de renderizar:
+
+1. Extrae todos los runs como `{text, bold, italic}`.
+2. Fusiona runs adyacentes con **exactamente el mismo** par `(bold, italic)`: concatena su texto.
+3. Renderiza cada segmento resultante:
+   - Solo bold → `<strong>texto</strong>`
+   - Solo italic → `<em>texto</em>`
+   - Ambos → `<strong><em>texto</em></strong>`
+   - Ninguno → texto plano
 
 ### Enlaces externos
-A TODOS los enlaces que apunten fuera de aunitz.net, añádeles:
+
+A **todos** los enlaces que apunten fuera de aunitz.net, añádeles:
 ```html
 target="_blank" rel="noopener noreferrer"
 ```
 
 ### Enlaces internos (a otros posts del blog)
+
 Si el contenido enlaza a URLs del tipo `https://www.aunitz.net/SLUG/` o `http://www.aunitz.net/SLUG/`:
-1. Busca en `_posts/` un fichero cuyo slug coincida.
-2. Convierte el enlace a la sintaxis Jekyll:
-```html
-<a href="{{ site.baseurl }}{% post_url YYYY-MM-DD-slug %}">texto del enlace</a>
-```
-donde `YYYY-MM-DD-slug` es el nombre del fichero sin la extensión `.markdown`.
+1. Extrae el SLUG de la URL.
+2. **Verifica que existe** en `_posts/`:
+   ```bash
+   ls _posts/*-SLUG.markdown 2>/dev/null
+   ```
+   Si no existe, avisa al usuario antes de continuar.
+3. Convierte el enlace a la sintaxis Jekyll:
+   ```html
+   <a href="{{ site.baseurl }}{% post_url YYYY-MM-DD-slug %}">texto del enlace</a>
+   ```
+   donde `YYYY-MM-DD-slug` es el nombre del fichero sin la extensión `.markdown`.
 
 ### Imágenes
-Inserta las imágenes en los lugares adecuados del HTML. El usuario habrá indicado en el Word dónde van (generalmente entre secciones). Usa este formato:
+
+Inserta las imágenes en los lugares adecuados del HTML (posición secuencial respecto al Word). Usa este formato:
 
 ```html
 <p><img src="{{ site.baseurl }}/img/NOMBRE-IMAGEN.webp" loading="lazy" alt="" width="W" height="H"></p>
@@ -171,6 +340,27 @@ Si una imagen necesita caption, usa:
     <figcaption>Texto del caption</figcaption>
 </figure>
 ```
+
+Si una posición de imagen no tiene fichero correspondiente (inventario desfasado), inserta un comentario:
+```html
+<!-- imagen no disponible -->
+```
+
+### Estrategia para posts largos (más de 5 secciones h2)
+
+Si el post tiene más de 5 secciones `<h2>`, genera el HTML **sección por sección** en lugar de todo de golpe, para evitar alcanzar el límite de tokens de salida:
+
+1. Escribe el fichero con el frontmatter y el bloque introductorio (párrafos anteriores al primer `<h2>`).
+2. Para cada sección `<h2>`, **añade** al fichero con un append de Bash:
+   ```bash
+   cat >> "_posts/FICHERO.markdown" << 'ENDSECTION'
+   <h2>Título de la sección</h2>
+   <p>...</p>
+   ENDSECTION
+   ```
+3. Actualiza el estado guardado tras cada sección (ver sección **Estado de la skill**).
+
+---
 
 ## Paso 7: Crear el fichero del post
 
@@ -196,24 +386,55 @@ Notas sobre el frontmatter:
 - El `title` y `subtitle` van entre comillas dobles. Si contienen comillas dobles internas, escápalas correctamente.
 - Los tags van en minúsculas y entre corchetes.
 
-## Paso 8: Mostrar resumen y avisar al usuario
+Para posts con más de 5 secciones, aplica la estrategia de escritura incremental descrita en el Paso 6.
 
-Una vez creado el fichero, muestra un resumen con:
+---
 
-- Nombre del fichero creado.
-- Título, subtítulo y descripción.
-- Número de imágenes insertadas.
-- Número de enlaces internos convertidos a sintaxis Jekyll.
-- Número de enlaces externos con atributos añadidos.
-- Header-img asignado.
+## Paso 8: Mostrar resumen detallado y avisar al usuario
 
-Finaliza con un mensaje como:
+Una vez creado el fichero, muestra un resumen completo:
+
+**Fichero creado:** `_posts/FICHERO.markdown`
+
+| Campo | Valor |
+|---|---|
+| Título | … |
+| Subtítulo | … |
+| Descripción SEO | … (N caracteres) |
+| Fecha de publicación | … |
+| Header-img | … |
+| Tags | … |
+| Secciones h2 | N |
+| Párrafos procesados | N |
+
+**Imágenes insertadas (N):**
+| Fichero | Dimensiones | Párrafo Word |
+|---|---|---|
+| nombre-01.webp | 750×400 | Para 10 |
+| … | … | … |
+
+**Imágenes omitidas / sin fichero:** lista si las hay.
+
+**Imágenes no utilizadas en `img/` con el mismo patrón:** lista si las hay (posibles huérfanas).
+
+**Enlaces internos convertidos a `post_url` (N):**
+- "texto del enlace" → `2024-01-01-slug`
+
+**Enlaces externos con `target/_blank` (N).**
+
+**Warnings:** lista cualquier incidencia (slug no encontrado, imagen sin fichero, dimensiones desconocidas…).
+
+Finaliza con:
 
 > El post se ha creado correctamente. Revisa el contenido del fichero antes de hacer commit y push al repositorio.
 
 **IMPORTANTE:** No hagas commit ni push. El usuario se encargará de eso manualmente.
 
+Borra el fichero de estado (`.claude/skills/publish-post-blog-aunitz/state/state.json`) si existe, ya que el proceso ha finalizado con éxito.
+
 En **modo real**, aquí termina la skill.
+
+---
 
 ## Paso 9: Limpieza en modo prueba
 
@@ -223,7 +444,7 @@ Tras mostrar el resumen del Paso 8, avisa al usuario con un mensaje como:
 
 > El post de prueba se ha creado en `_posts/FICHERO.markdown`. Revísalo ahora en local (por ejemplo ejecutando `bundle exec jekyll serve` y abriéndolo en el navegador). Cuando hayas terminado de revisarlo, dímelo para proceder.
 
-Espera a que el usuario confirme que ha terminado la revisión. A continuación pregúntale explícitamente (usa `AskUserQuestion` si procede):
+Espera a que el usuario confirme que ha terminado la revisión. A continuación pregúntale explícitamente:
 
 > ¿Quieres que elimine el fichero de prueba `_posts/FICHERO.markdown`?
 
@@ -231,3 +452,40 @@ Espera a que el usuario confirme que ha terminado la revisión. A continuación 
 - Si responde **no** (o equivalente): deja el fichero en su sitio y avisa al usuario de que el fichero permanece en `_posts/` y que deberá borrarlo manualmente cuando ya no lo necesite.
 
 No toques las imágenes — en modo prueba no se han creado imágenes nuevas, así que no hay nada que limpiar en `img/`.
+
+---
+
+## Estado de la skill (persistencia entre sesiones)
+
+Guarda el estado en `.claude/skills/publish-post-blog-aunitz/state/state.json` después de completar el análisis (Paso 5c) y después de cada sección HTML escrita (Paso 7). Formato:
+
+```json
+{
+  "version": 1,
+  "docx_path": "ruta/al/fichero.docx",
+  "step": 6,
+  "current_section": 3,
+  "metadata": {
+    "title": "Título del post",
+    "subtitle": "Subtítulo",
+    "slug": "slug-del-post",
+    "date": "2026-01-01 10:00:00 +0200",
+    "header_img": "img/post-bg-NNN.jpg",
+    "tags": ["tag1", "tag2"],
+    "description": "Descripción SEO"
+  },
+  "images": [
+    { "para": 10, "file": "nombre-01.webp", "width": 750, "height": 400 }
+  ],
+  "hyperlinks": [
+    { "rid": "rId7", "url": "https://...", "text": "texto", "internal": false, "post_url": null }
+  ],
+  "sections_done": ["intro", "1. Título sección 1"],
+  "warnings": []
+}
+```
+
+El directorio `.claude/skills/publish-post-blog-aunitz/state/` debe crearse si no existe:
+```bash
+mkdir -p .claude/skills/publish-post-blog-aunitz/state
+```
