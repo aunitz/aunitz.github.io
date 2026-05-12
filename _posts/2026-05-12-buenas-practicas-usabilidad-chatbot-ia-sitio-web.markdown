@@ -218,4 +218,4 @@ tags:          [buenas prácticas de usabilidad, inteligencia artificial]
 
 <p><img src="{{ site.baseurl }}/img/buenas-practicas-usabilidad-chatbot-ia-25.webp" loading="lazy" alt="" width="750" height="98"></p>
 
-<p>Estas han sido mis buenas prácticas de usabilidad para chatbots de IA. ¿Se te ocurre alguna más que debería incluir?👉 Te invito a proponerla en los <a href="https://www.linkedin.com/posts/aunitz_%F0%9D%90%8B%F0%9D%90%A8%F0%9D%90%AC-%F0%9D%90%9D%F0%9D%90%9E-%F0%9D%90%9A%F0%9D%90%9D%F0%9D%90%A8%F0%9D%90%9D%F0%9D%90%9C%F0%9D%90%A2%F0%9D%90%A8%F0%9D%90%A7-share-7450198780303429632-vId5" target="_blank" rel="noopener noreferrer">comentarios de esta publicación en LinkedIn</a>.</p>
+<p>Estas han sido mis buenas prácticas de usabilidad para chatbots de IA. ¿Se te ocurre alguna más que debería incluir?👉 Te invito a proponerla en los <a href="https://www.linkedin.com/posts/aunitz_buenas-pr%C3%A1cticas-de-usabilidad-para-el-chatbot-share-7459971416323600384-3Xfw" target="_blank" rel="noopener noreferrer">comentarios de esta publicación en LinkedIn</a>.</p>
