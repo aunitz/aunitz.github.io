@@ -6,7 +6,7 @@ description:   "Qué es el GEO (Generative Engine Optimization) y cómo aplicar 
 date:          2026-04-20 13:00:00 +0200
 author:        "Aunitz Giménez"
 header-img:    "img/post-bg-118.jpg"
-tags:          [inteligencia artificial, SEO, marketing]
+tags:          [inteligencia artificial, SEO/GEO, marketing]
 ---
 
 <p>El pasado 11 de febrero tuve el placer de asistir al taller titulado <a href="https://enpresadigitala.spri.eus/es/seo-geo-como-ganar-visibilidad-organica-en-la-era-de-chatgpt/" target="_blank" rel="noopener noreferrer">"SEO + GEO: cómo ganar visibilidad orgánica en la era de ChatGPT"</a> impartido por <a href="https://www.linkedin.com/in/begolashayas/" target="_blank" rel="noopener noreferrer">Begoña Lashayas</a>, docente en Mondragon Unibertsitatea. La principal reflexión particular que extraigo de la jornada es que acaba de nacer una <strong>nueva especialidad en el ámbito del marketing digital</strong>: el <strong>GEO (Generative Engine Optimization)</strong>.</p>
