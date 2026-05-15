@@ -82,3 +82,4 @@ Escribe `/republish-theconversation-aunitz` o di "quiero republicar un artículo
 - Nube de palabras de etiquetas (tags)
 2. Corregir los enlaces de las URLs que redireccionan.
 4. Mejorar el Schema Markup de los posts que no son míos.
+5. Optimizar la clase .section-heading. En realidad eliminarla para integrarla en los h2
