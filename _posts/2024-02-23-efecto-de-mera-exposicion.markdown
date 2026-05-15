@@ -56,4 +56,4 @@ tags:          [leyes y principios de experiencia de usuario (UX) y usabilidad, 
     <li><a href="{{ site.baseurl }}{% post_url 2018-12-08-ley-16-principio-de-experiencia %}">El principio de experiencia</a>. Un principio de percepción visual establecido por la escuela de psicología de la Gestalt y que se resume en: los elementos tienden a ser percibidos de acuerdo con la experiencia pasada del observador.</li>
 </ul>
 
-<p>Y por último un post dedicado específicamente al uso de convenciones que sean consistentes con el aprendizaje previo de los usuarios y que se titula “<a href="{{ site.baseurl }}{% post_url 2017-11-04-tip-8-utiliza-convenciones %}">No reinventes la rueda: utiliza convenciones</a>”.</p>
+<p>Y por último un post dedicado específicamente al uso de convenciones que sean consistentes con el aprendizaje previo de los usuarios y que se titula “<a href="{{ site.baseurl }}{% post_url 2017-11-04-utiliza-convenciones %}">No reinventes la rueda: utiliza convenciones</a>”.</p>

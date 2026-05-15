@@ -51,7 +51,7 @@ tags:          [buenas prácticas de usabilidad]
 <h2>Diseño y contenido que invite a hacer scroll</h2>
 <p>En el estudio antes citado, llegaron a la importante conclusión de que <strong>a los usuarios no les molesta hacer scroll, siempre y cuando perciban visualmente que hay más contenido por debajo de la zona inicialmente visible</strong>. Es decir, el diseño tiene que ser especialmente cuidadoso para que el usuario perciba que el contenido prosigue por debajo de la zona de corte visual. Por ejemplo, mediante el uso de textos cortados.</p>
 
-<p>Por último, y aunque suene obvio, nada de lo sugerido anteriormente tendrá ningún efecto si el contenido de nuestra página no es lo que busca el usuario o no se lo presentamos de manera que lo perciba como valioso para sus objetivos. Todos conocemos la frase de que <strong>el contenido es el Rey</strong>. Y de mi cosecha añado que <a href="{{ site.baseurl }}{% post_url 2019-11-02-tip-15-contenido-precede-diseno %}">debe preceder al diseño</a>.</p>
+<p>Por último, y aunque suene obvio, nada de lo sugerido anteriormente tendrá ningún efecto si el contenido de nuestra página no es lo que busca el usuario o no se lo presentamos de manera que lo perciba como valioso para sus objetivos. Todos conocemos la frase de que <strong>el contenido es el Rey</strong>. Y de mi cosecha añado que <a href="{{ site.baseurl }}{% post_url 2019-11-02-contenido-precede-diseno %}">debe preceder al diseño</a>.</p>
 
 <hr>
 

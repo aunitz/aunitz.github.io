@@ -8,7 +8,7 @@ header-img:    "img/post-bg-65.jpg"
 tags:          [buenas prácticas de usabilidad, formularios]
 ---
 
-<p><a href="{{ site.baseurl }}{% post_url 2020-02-20-tip-18-botones-aceptar-cancelar-orden %}">En un artículo anterior</a> trataba sobre el orden adecuado en el que colocar los botones de acción principal (por ejemplo “Aceptar”) y de acción secundaria (por ejemplo “Cancelar”). Una cuestión directamente relacionada es la de, una vez decidido el orden, cuál debe ser la alineación recomendada para los botones.</p>
+<p><a href="{{ site.baseurl }}{% post_url 2020-02-20-botones-aceptar-cancelar-orden %}">En un artículo anterior</a> trataba sobre el orden adecuado en el que colocar los botones de acción principal (por ejemplo “Aceptar”) y de acción secundaria (por ejemplo “Cancelar”). Una cuestión directamente relacionada es la de, una vez decidido el orden, cuál debe ser la alineación recomendada para los botones.</p>
 
 <h2>Abajo a la izquierda</h2>
 <p>De acuerdo con <a href="https://www.lukew.com/ff/entry.asp?571" target="_blank" rel="noopener noreferrer">uno de los estudios de eye-tracking</a> más conocidos que se han publicado al respecto, la posición adecuada para el botón de acción principal sería <strong>a la izquierda y al final del formulario</strong>. De este modo se respeta el orden natural de lectura del usuario y se posiciona el botón en el eje vertical que siguen la mayoría de los formularios para ser completados.</p>

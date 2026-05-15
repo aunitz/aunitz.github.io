@@ -67,7 +67,7 @@ tags:          [sistemas de diseño, desarrollo de soluciones digitales, buenas 
     <li>Facilita el <strong>código fuente</strong> de cada componente.</li>
     <li>Permite visualizar los componentes a <strong>distintas resoluciones</strong> de monitor.</li>
     <li>Proporciona mecanismos para visualizar las distintas <strong>variantes de un componente</strong>.</li>
-    <li>Proporciona <strong><a href="{{ site.baseurl }}{% post_url 2019-11-02-tip-15-contenido-precede-diseno %}">contenidos reales</a> de ejemplo</strong> para las distintas plantillas.</li>
+    <li>Proporciona <strong><a href="{{ site.baseurl }}{% post_url 2019-11-02-contenido-precede-diseno %}">contenidos reales</a> de ejemplo</strong> para las distintas plantillas.</li>
     <li>Proporciona <strong>información contextual sobre el uso</strong> adecuado de los componentes.</li>
 </ul>
 

@@ -13,8 +13,8 @@ tags:          [buenas prácticas de usabilidad, formularios]
 <p>El primer grupo de consejos que te proporciono va encaminado a <strong>reducir la posibilidad de que el error se produzca</strong>:</p>
 <ul>
     <li><a href="{{ site.baseurl }}{% post_url 2017-03-09-reducir-campos-formulario %}">Reduce el número de campos de los formularios</a>.</li>
-    <li><a href="{{ site.baseurl }}{% post_url 2019-10-28-tip-14-emplea-valores-por-defecto-utiles-en-formularios %}">Emplea valores por defecto útiles en los formularios</a>.</li>
-    <li><a href="{{ site.baseurl }}{% post_url 2020-01-29-tip-17-no-utilices-atributo-placeholder %}">No utilices el atributo placeholder</a>.</li>
+    <li><a href="{{ site.baseurl }}{% post_url 2019-10-28-emplea-valores-por-defecto-utiles-en-formularios %}">Emplea valores por defecto útiles en los formularios</a>.</li>
+    <li><a href="{{ site.baseurl }}{% post_url 2020-01-29-no-utilices-atributo-placeholder %}">No utilices el atributo placeholder</a>.</li>
     <li><a href="{{ site.baseurl }}{% post_url 2021-01-17-formularios-usables-campos-de-fecha %}">Utiliza campos diferentes para el día, mes y año</a>. Habitualmente es la manera más rápida para el usuario de rellenar un campo de fecha.</li>
 </ul>
 

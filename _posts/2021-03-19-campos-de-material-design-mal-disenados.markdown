@@ -38,7 +38,7 @@ tags:          [buenas prácticas de usabilidad, formularios, memorandos]
 
 <p><img src="{{ site.baseurl }}/img/campos-de-material-design-mal-disenados-05.png" loading="lazy" alt="" width="410" height="347"></p>
 
-<p>Una recomendación básica de usabilidad sobre la que <a href="{{ site.baseurl }}{% post_url 2018-03-11-tip-11-etiquetas-por-encima-campos %}">ya escribí en este mismo blog hace tres años</a>.</p>
+<p>Una recomendación básica de usabilidad sobre la que <a href="{{ site.baseurl }}{% post_url 2018-03-11-etiquetas-por-encima-campos %}">ya escribí en este mismo blog hace tres años</a>.</p>
 
 <p>Tratar de reinventar la rueda no suele ser buena idea y en usabilidad contradecir el <a href="{{ site.baseurl }}{% post_url 2017-01-18-principios-usabilidad %}">principio de consistencia</a> tampoco.</p>
 
