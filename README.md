@@ -13,6 +13,11 @@ bundle exec jekyll serve
 
 **Nota:** es la instrucción que contiene el fichero `serve.bat`.
 
+### Compilar LESS manualmente en VS Code
+1. Guarda el archivo `less/clean-blog.less`.
+2. Pulsa `Ctrl+Shift+P`.
+3. Escribe `Compile LESS to CSS` y selecciona ese comando.
+
 ### Instalar lo necesario en Windows
 1. Instala Ruby con [RubyInstaller](https://rubyinstaller.org/). Comprobar: `ruby -v`
 2. Ejecuta: `gem install bundler jekyll`. Comprobar: `jekyll -v`
