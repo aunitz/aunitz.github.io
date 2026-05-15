@@ -186,7 +186,7 @@ tags:          [buenas prácticas de usabilidad, inteligencia artificial]
 
 <p><img src="{{ site.baseurl }}/img/buenas-practicas-usabilidad-chatbot-ia-01.webp" loading="lazy" alt="" width="750" height="654"></p>
 
-<p>Cuantas más opciones tenga el usuario a la vista, <a href="{{ site.baseurl }}{% post_url 2017-03-07-tip-2-usabilidad-unifica-funcionalidades-similares %}">más le costará tomar una decisión</a>.</p>
+<p>Cuantas más opciones tenga el usuario a la vista, <a href="{{ site.baseurl }}{% post_url 2017-03-07-unifica-funcionalidades-similares %}">más le costará tomar una decisión</a>.</p>
 
 <h2>11. Permite maximizar la ventana de chat</h2>
 
