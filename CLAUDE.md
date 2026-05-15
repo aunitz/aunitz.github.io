@@ -15,10 +15,10 @@ El blog es también una herramienta de posicionamiento SEO y de autoridad profes
 - **Generador:** Jekyll (sitio estático)
 - **Hospedaje:** GitHub Pages con dominio personalizado `aunitz.net`; Cloudflare para cache (hay un GitHub Actions workflow que invalida la cache tras cada deploy)
 - **Plugins Jekyll:** `github-pages`, `jekyll-paginate`, `jekyll-feed`, `jekyll-redirect-from`, `jekyll-sitemap`
-- **CSS:** Bootstrap 3.4.1 (CDN) + plantilla Clean Blog (StartBootstrap). Estilos propios en `css/clean-blog.min.css`
+- **CSS:** Bootstrap 3.4.1 CSS compilado localmente desde `bootstrap-sass/` → `css/bootstrap.min.css` (via Live Sass Compiler) + plantilla Clean Blog compilada desde `less/` → `css/clean-blog.min.css` (via Easy LESS)
 - **Tipografías:** Lora (cuerpo), Open Sans (nav), Caveat (decorativa) — Google Fonts
 - **Iconos:** Font Awesome 4.3.0 (CDN)
-- **JavaScript:** jQuery 1.12.4 (CDN) + Bootstrap JS + `js/clean-blog.min.js`
+- **JavaScript:** jQuery 1.12.4 (CDN) + Bootstrap JS 3.4.1 (CDN) + `js/clean-blog.min.js`
 - **Analytics:** Google Analytics 4 (ID: G-PJWXCNEVTP)
 - **Datos estructurados:** Schema.org via includes: BlogPosting, BreadcrumbList, WebSite, Organization
 - **Lenguajes de plantilla:** Liquid (layouts e includes), HTML + SCSS
