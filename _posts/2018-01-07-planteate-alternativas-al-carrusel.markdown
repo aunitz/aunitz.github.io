@@ -11,7 +11,7 @@ tags:          [buenas prácticas de usabilidad]
 
 <p>Los <strong>carruseles de contenidos</strong> (también conocidos como <em>slideshow</em>, <em>sliders</em>, <em>carousel</em>) están siendo profusamente utilizados en todo tipo de páginas web. Sin embargo, <strong>existente muchas dudas sobre su utilidad real</strong>.</p>
 
-<p>Numerosos estudios de usabilidad los han puesto en entredicho. Por ejemplo, el de Erik Runyon, que mostraba que <a href="https://erikrunyon.com/2013/01/carousel-stats/">solo el 1% de los usuarios interactúan con el carrusel</a>. O los estudios de Nielsen Norman Group que demuestran cierta ceguera a los carruseles por parte de los usuarios.</p>
+<p>Numerosos estudios de usabilidad los han puesto en entredicho. Por ejemplo, el de Erik Runyon, que mostraba que <a href="https://erikrunyon.com/2013/01/carousel-stats/" target="_blank" rel="noopener noreferrer">solo el 1% de los usuarios interactúan con el carrusel</a>. O los estudios de Nielsen Norman Group que demuestran cierta ceguera a los carruseles por parte de los usuarios.</p>
 
 <p>Algunos estudios que abundan en sus desventajas:</p>
 <ul>
