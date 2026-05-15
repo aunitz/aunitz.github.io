@@ -80,5 +80,6 @@ Escribe `/republish-theconversation-aunitz` o di "quiero republicar un artículo
 - Número total de imágenes
 - Número totas de etiquetas (tags) diferentes
 - Nube de palabras de etiquetas (tags)
-2. Corregir los enlaces de las URLs que redireccionan.
 4. Mejorar el Schema Markup de los posts que no son míos.
+5. Buscar enlaces rotos y sustituirlos por accesos a https://web.archive.org/
+6. Analizar la pertinencia de LICENSE
