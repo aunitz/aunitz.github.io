@@ -81,5 +81,4 @@ Escribe `/republish-theconversation-aunitz` o di "quiero republicar un artículo
 - Número totas de etiquetas (tags) diferentes
 - Nube de palabras de etiquetas (tags)
 2. Corregir los enlaces de las URLs que redireccionan.
-3. Escribir mi biografía profesional en la wikipedia.
 4. Mejorar el Schema Markup de los posts que no son míos.
