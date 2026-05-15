@@ -337,13 +337,7 @@ hr.small {
 
 // Sections
 
-.section-heading {
-	font-size: 36px;
-	margin-top: 60px;
-	font-weight: 700;
-}
-
-.section-heading::first-letter {
+.tags::first-letter {
 	text-transform: capitalize;
 }
 
@@ -579,4 +573,25 @@ body {
 
 .footnotes {
 	font-size: 18px;
+}
+
+// Encabezados dentro del cuerpo de los posts y páginas
+// Scope: <article> (post.html) y .page-content (page.html), fuera de .intro-header
+article,
+.page-content {
+	h1 { font-size: 32px; font-weight: 700; }
+	h2 { font-size: 28px; font-weight: 700; }
+	h3 { font-size: 24px; font-weight: 700; }
+	h4 { font-size: 20px; font-weight: 700; }
+	h5 { font-size: 18px; font-weight: 700; }
+	h6 { font-size: 15px; font-weight: 700; }
+
+	@media only screen and (min-width: 768px) {
+		h1 { font-size: 42px; }
+		h2 { font-size: 36px; }
+		h3 { font-size: 30px; }
+		h4 { font-size: 24px; }
+		h5 { font-size: 20px; }
+		h6 { font-size: 16px; }
+	}
 }
