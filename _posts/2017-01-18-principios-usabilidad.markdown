@@ -34,7 +34,7 @@ tags:          [leyes y principios de experiencia de usuario (UX) y usabilidad]
     <li>Los usuarios no deben sufrir <strong>sobrecarga de información</strong>. Cuando un usuario visita un sitio web y no sabe dónde comenzar a leer, existe sobrecarga de información. Cuanto mayor sea el número de acciones que un usuario pueda realizar, mayor es la probabilidad que cometa un error. Limitando el número de acciones al público objetivo se facilita el uso de la aplicación.</li>
 </ol>
 
-<h2 class="section-heading">Referencias</h2>
+<h2>Referencias</h2>
 
 <ul>
     <li><a href="https://web.archive.org/web/20020111171203/http://www.ainda.info:80/principios_generales.html" target="_blank" rel="noopener noreferrer">Eduardo Manchón. Principios generales de usabilidad en sitios web. Ainda.info (2002)</a></li>

@@ -29,7 +29,7 @@ tags:          [buenas prácticas de usabilidad]
 
 <p>La opción (4) la descarto porque hay usuarios a los que no les resultará evidente que hay que hacer scroll horizontal para acceder a las secciones ocultas.</p>
 
-<h2 class="section-heading">Conclusión</h2>
+<h2>Conclusión</h2>
 
 <p>Si el menú tiene más opciones de las que pueden verse en un móvil la mejor solución me parece la del menú que muestra más o menos opciones en función de la resolución. De este modo, mostramos de primeras el máximo número posible de opciones de menú que permite cada dispositivo. Maximizando el cumplimiento del principio de interfaz visible.</p>
 

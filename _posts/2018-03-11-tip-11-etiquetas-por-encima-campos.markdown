@@ -106,7 +106,7 @@ tags:          [buenas prácticas de usabilidad, formularios]
 
 <p><img src="{{ site.baseurl }}/img/tip-11-iniciar-sesion.png" loading="lazy" alt="Formulario de inicio de sesión" width="521" height="319"></p>
 
-<h2 class="section-heading">Referencias</h2>
+<h2>Referencias</h2>
 
 <ul>
     <li><a href="https://www.uxmatters.com/mt/archives/2006/07/label-placement-in-forms.php" target="_blank" rel="noopener noreferrer">Matteo Penzo. Label Placement in Forms. UX matters (2006)</a></li>

@@ -73,7 +73,7 @@ Atributos opcionales: `hide_from_home: true` (oculta de portada), `last_modified
 ### Convenciones CSS
 
 - Bootstrap 3 para grid (`col-lg-*`, `col-md-*`, offsets)
-- Clases propias de Clean Blog: `.post-preview`, `.intro-header`, `.section-heading`, `.center-block`, etc.
+- Clases propias de Clean Blog: `.post-preview`, `.intro-header`, `.tags`, `.center-block`, etc.
 - Sin metodología BEM; estilo centrado en Bootstrap
 - No editar los `.min.css` directamente
 
