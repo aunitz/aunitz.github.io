@@ -31,8 +31,11 @@ jobs:
             sha=$(echo "$line" | awk '{print $2}')
             [ -z "$id" ] && continue
             [ "$sha" = "$CURRENT_SHA" ] && continue
-            state=$(gh api "repos/${{ github.repository }}/deployments/$id/statuses" --jq '.[0].state')
-            if [ "$state" = "success" ]; then
+            # GitHub Pages adds an "inactive" status to prior deployments when a
+            # new one becomes active, so checking only .[0] misses deploys that
+            # did succeed. Look for any "success" status in the history instead.
+            success_count=$(gh api "repos/${{ github.repository }}/deployments/$id/statuses" --jq '[.[] | select(.state == "success")] | length')
+            if [ "$success_count" -gt 0 ]; then
               PREV_SHA="$sha"
               break
             fi
