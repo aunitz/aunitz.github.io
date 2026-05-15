@@ -6,8 +6,8 @@
     "less.compile": {
         "compress": true,       // Genera CSS minificado
         "sourceMap": false,     // Sin source maps en producción
-        "main": "${workspaceRoot}\\less\\clean-blog.less",
-        "out": "${workspaceRoot}\\css\\clean-blog.min.css"
+        "main": "${workspaceFolder}\\less\\clean-blog.less",
+        "out": "${workspaceFolder}\\css\\clean-blog.min.css"
     },
 
     // Compilación de los estilos SCSS de Bootstrap (bootstrap-sass/)
@@ -21,8 +21,8 @@
     ],
     // Carpetas excluidas de la compilación SCSS automática
     "liveSassCompile.settings.excludeList": [
-       "**/node_modules/**",
-       ".vscode/**"
+       "/node_modules/**",
+       "/.vscode/**"
     ],
     "liveSassCompile.settings.generateMap": false,  // Sin source maps en producción
     // Prefijos CSS automáticos para compatibilidad con los navegadores más usados
