@@ -209,7 +209,6 @@ jobs:
             -d '{
               "files": [
                 "https://www.aunitz.net/css/bootstrap.min.css",
-                "https://www.aunitz.net/css/bootstrapcdn-bootstrap.min.css",
                 "https://www.aunitz.net/css/clean-blog.min.css"
               ]
             }'
