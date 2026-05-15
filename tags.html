@@ -6,7 +6,7 @@ description: "Sumario de todos los artículos publicados clasificados por materi
 header-img: "img/tags-bg.jpg"
 ---
 {% for tag in site.tags %}
-<h2 class="section-heading">{{ tag[0] }}</h2>
+<h2 class="tags">{{ tag[0] }}</h2>
 <ul>
     {% for post in tag[1] %}
     <li><a href="{{ post.url }}">{{ post.title }}</a></li>
