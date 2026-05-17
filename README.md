@@ -102,6 +102,8 @@ Este repositorio combina varias licencias:
   - Número de posts totales por mes y año
 - Número total de imágenes
 - Número totas de etiquetas (tags) diferentes
+- Número total de enlaces internos
+- Número total de enlaces externos
 - Nube de palabras de etiquetas (tags)
 4. Mejorar el Schema Markup de los posts que no son míos.
 5. Buscar enlaces rotos y sustituirlos por accesos a https://web.archive.org/
