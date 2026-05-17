@@ -13,10 +13,15 @@ bundle exec jekyll serve
 
 **Nota:** es la instrucción que contiene el fichero `serve.bat`.
 
-### Compilar LESS manualmente en VS Code
-1. Guarda el archivo `less/clean-blog.less`.
-2. Pulsa `Ctrl+Shift+P`.
-3. Escribe `Compile LESS to CSS` y selecciona ese comando.
+### Build incremental (builds más rápidos en desarrollo)
+
+Por defecto Jekyll regenera el sitio completo en cada cambio (~17 s). Con `--incremental` solo regenera los ficheros modificados:
+
+```console
+bundle exec jekyll serve --incremental
+```
+
+**Limitación:** si cambias un `_include` o un `_layout`, Jekyll puede no regenerar todos los ficheros que los usan. En ese caso, haz un build completo (sin `--incremental`).
 
 ### Instalar lo necesario en Windows
 1. Instala Ruby con [RubyInstaller](https://rubyinstaller.org/). Comprobar: `ruby -v`
@@ -24,6 +29,11 @@ bundle exec jekyll serve
 3. Instala las dependencias con Bundler: `bundle install`. Se basa en el contenido de `Gemfile`.
 4. Levanta el servidor local de Jekyll.
 5. *(Opcional)* Limpiar antes de volver a generar: `bundle exec jekyll clean`.
+
+## Compilar LESS manualmente en VS Code
+1. Guarda el archivo `less/clean-blog.less`.
+2. Pulsa `Ctrl+Shift+P`.
+3. Escribe `Compile LESS to CSS` y selecciona ese comando.
 
 ## Skill de Claude Code: publish-post-blog-aunitz
 
@@ -72,6 +82,16 @@ Automatiza la republicación en el blog de un artículo de [The Conversation](ht
 
 Escribe `/republish-theconversation-aunitz` o di "quiero republicar un artículo de The Conversation" en Claude Code. Para modo prueba: `/republish-theconversation-aunitz --test`.
 
+## Licencias
+
+Este repositorio combina dos licencias diferentes:
+
+| Ámbito | Licencia | Fichero |
+|---|---|---|
+| Contenido del blog (posts, textos e imágenes propias) | Todos los derechos reservados — copyright Aunitz Giménez Mendiburu | `LICENSE-CONTENT` |
+| Artículos republicados de [The Conversation](https://theconversation.com/es) | [CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0/) — copyright de cada autor original | En el byline de cada post |
+| Código del tema (plantilla Clean Blog) | [MIT](https://opensource.org/licenses/MIT) — copyright Blackrock Digital LLC | `LICENSE` |
+
 ## TODO
 1. Un **Dashboard** con métricas estáticas del sitio web:
 - Número de posts total
@@ -82,4 +102,3 @@ Escribe `/republish-theconversation-aunitz` o di "quiero republicar un artículo
 - Nube de palabras de etiquetas (tags)
 4. Mejorar el Schema Markup de los posts que no son míos.
 5. Buscar enlaces rotos y sustituirlos por accesos a https://web.archive.org/
-6. Analizar la pertinencia de LICENSE

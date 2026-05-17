@@ -148,7 +148,7 @@ El cuerpo del post sigue **exactamente** este esquema (basado en los posts ya pu
 **No reutilices** el párrafo de atribución que viene en el HTML pegado de The Conversation. Constrúyelo desde cero usando **exactamente** esta plantilla, rellenando los placeholders con los datos extraídos en el Paso 2:
 
 ```html
-<p><em><a href="[URL de la ficha del autor en The Conversation]" target="_blank" rel="noopener noreferrer">[NOMBRE DEL AUTOR]</a>, [CARGO DEL AUTOR], <a href="[URL DE LA FICHA DE LA INSTITUCIÓN DEL AUTOR EN The Conversation]" target="_blank" rel="noopener noreferrer">[NOMBRE DE LA INSTITUCIÓN DEL AUTOR EN The Conversation]</a>. Este artículo fue publicado <a href="[URL ORIGINAL DEL POST EN The Conversation]" target="_blank" rel="noopener noreferrer">originalmente</a> el [FECHA ORIGINAL DE PUBLICACIÓN EN The Conversation] en <a href="https://theconversation.com" target="_blank" rel="noopener noreferrer">The Conversation</a>.</em></p>
+<p><em><a href="[URL de la ficha del autor en The Conversation]" target="_blank" rel="noopener noreferrer">[NOMBRE DEL AUTOR]</a>, [CARGO DEL AUTOR], <a href="[URL DE LA FICHA DE LA INSTITUCIÓN DEL AUTOR EN The Conversation]" target="_blank" rel="noopener noreferrer">[NOMBRE DE LA INSTITUCIÓN DEL AUTOR EN The Conversation]</a>. Este artículo fue publicado <a href="[URL ORIGINAL DEL POST EN The Conversation]" target="_blank" rel="noopener noreferrer">originalmente</a> el [FECHA ORIGINAL DE PUBLICACIÓN EN The Conversation] en <a href="https://theconversation.com" target="_blank" rel="noopener noreferrer">The Conversation</a> bajo licencia <a href="https://creativecommons.org/licenses/by-nd/4.0/" target="_blank" rel="noopener noreferrer">CC BY-ND 4.0</a>.</em></p>
 ```
 
 Reglas de la plantilla:
