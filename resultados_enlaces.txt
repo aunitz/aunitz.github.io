@@ -1,0 +1,112 @@
+======================================================================
+INFORME DE ENLACES — 2026-05-17 21:20
+======================================================================
+Ficheros analizados : 178
+Total enlaces vistos: 4933
+Únicos comprobados  : 1006
+
+ENLACES INTERNOS ROTOS (7):
+  [roto]  //fonts.gstatic.com
+          encontrado en: /404.html
+  [roto]  //maxcdn.bootstrapcdn.com/
+          encontrado en: /404.html
+  [roto]  //ajax.googleapis.com/
+          encontrado en: /404.html
+  [roto]  //fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic%7COpen+Sans:300,400,600,700,800,300italic,400italic,600italic,700italic,800italic%7CCaveat:400,700&display=swap
+          encontrado en: /404.html
+  [roto]  //maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css
+          encontrado en: /404.html
+  [roto]  //ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js
+          encontrado en: /404.html
+  [roto]  //maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js
+          encontrado en: /404.html
+
+ENLACES EXTERNOS ROTOS (43):
+  [HTTP 405]  https://www.linkedin.com/in/aunitz
+          encontrado en: /404.html
+  [HTTP 405]  https://www.linkedin.com/in/aunitz/
+          encontrado en: /about/index.html
+  [HTTP 403]  https://medium.com/@kollinz/hamburger-menu-alternatives-for-mobile-navigation-a3a3beb555b8#.h13amirvf
+          encontrado en: /alternativas-usables-menu-hamburguesa/index.html
+  [HTTP 999]  https://www.linkedin.com/in/danielprimo/
+          encontrado en: /cinco-niveles-adopcion-ia-en-desarrollo-software/index.html
+  [ERROR: SSL_connect returned=1 errno=0 peeraddr=52.213.114.86:443 state=error: unexpected eof while reading]  https://www.aprendeusabilidadyux.com/
+          encontrado en: /como-crear-pagina-web-gratis-github-pages-segunda-parte/index.html
+  [HTTP 429]  https://midu.dev/como-deshacer-el-ultimo-commit-git
+          encontrado en: /como-deshacer-ultimo-commit-git/index.html
+  [HTTP 403]  https://twitter.com/zeldman/statuses/804159148
+          encontrado en: /contenido-precede-diseno/index.html
+  [HTTP 405]  https://www.linkedin.com/in/laurafaulkner/
+          encontrado en: /cuantas-personas-usuarias-son-necesarias-para-un-test-de-usabilidad/index.html
+  [HTTP 403]  https://dl.acm.org/citation.cfm?id=169166
+          encontrado en: /cuantas-personas-usuarias-son-necesarias-para-un-test-de-usabilidad/index.html
+  [HTTP 403]  https://www.sciencedirect.com/science/article/abs/pii/S1071581912001127
+          encontrado en: /efecto-halo/index.html
+  [HTTP 405]  https://www.linkedin.com/in/mdn-squiggle/
+          encontrado en: /el-diseno-como-proceso/index.html
+  [HTTP 403]  https://twitter.com/ftrain
+          encontrado en: /la-navaja-de-ockham/index.html
+  [HTTP 403]  https://www.economist.com/news/1955/11/19/parkinsons-law
+          encontrado en: /ley-de-parkinson/index.html
+  [ERROR: Net::OpenTimeout]  https://web.archive.org/web/19970218113952/http:/www.useit.com/papers/heuristic/heuristic_list.html
+          encontrado en: /los-10-principios-generales-usabilidad-jakob-nielsen/index.html
+  [HTTP 500]  http://bradfrost.com/blog/post/atomic-web-design/
+          encontrado en: /memorando-libro-atomic-design-brad-frost/index.html
+  [HTTP 405]  https://material.io/guidelines/
+          encontrado en: /memorando-libro-atomic-design-brad-frost/index.html
+  [HTTP 404]  http://v3.danielmall.com/articles/rif-element-collages/
+          encontrado en: /memorando-libro-atomic-design-brad-frost/index.html
+  [HTTP 403]  https://medium.com/@marcelosomers/chasing-the-holy-grail-bbc0b7cce365
+          encontrado en: /memorando-libro-atomic-design-brad-frost/index.html
+  [HTTP 405]  https://www.linkedin.com/in/colton-voege-15a039b2/
+          encontrado en: /memorando-tailwind-todo-mal/index.html
+  [HTTP 500]  https://bradfrost.com/blog/post/atomic-web-design/
+          encontrado en: /objeciones-al-css-in-js/index.html
+  [ERROR: Net::OpenTimeout]  https://www.widerfunnel.com/rotating-offers-the-scourge-of-home-page-design/
+          encontrado en: /planteate-alternativas-al-carrusel/index.html
+  [HTTP 403]  https://searchengineland.com/homepage-sliders-are-bad-for-seo-usability-163496
+          encontrado en: /planteate-alternativas-al-carrusel/index.html
+  [HTTP 404]  https://krogsgard.com/2013/sliders-suck/
+          encontrado en: /planteate-alternativas-al-carrusel/index.html
+  [HTTP 404]  http://www.mediacurrent.com/blog/alternatives-slideshows
+          encontrado en: /planteate-alternativas-al-carrusel/index.html
+  [ERROR: Net::OpenTimeout]  https://web.archive.org/web/20020111171203/http://www.ainda.info:80/principios_generales.html
+          encontrado en: /principios-usabilidad/index.html
+  [ERROR: Net::OpenTimeout]  https://web.archive.org/web/19990220182614/http://www.asktog.com:80/basics/firstPrinciples.html
+          encontrado en: /principios-usabilidad/index.html
+  [ERROR: Net::OpenTimeout]  https://web.archive.org/web/19970218113952/http://www.useit.com/papers/heuristic/heuristic_list.html
+          encontrado en: /principios-usabilidad/index.html
+  [HTTP 403]  https://dle.rae.es/inteligencia
+          encontrado en: /puede-inteligencia-artificial-superar-humana/index.html
+  [HTTP 404]  https://zoo.cs.yale.edu/classes/cs470/materials/aima2010.pdf
+          encontrado en: /puede-inteligencia-artificial-superar-humana/index.html
+  [HTTP 403]  https://mitpress.mit.edu/9780262035613/
+          encontrado en: /puede-inteligencia-artificial-superar-humana/index.html
+  [HTTP 404]  http://rebooting.ai/
+          encontrado en: /puede-inteligencia-artificial-superar-humana/index.html
+  [HTTP 404]  https://portal.mineco.gob.es/es-es/digitalizacionIA/Paginas/ENIA.aspx
+          encontrado en: /puede-inteligencia-artificial-superar-humana/index.html
+  [HTTP 403]  https://www.inc.com/guadalupe-gonzalez/amazon-artificial-intelligence-ai-hiring-tool-hr.html
+          encontrado en: /puede-inteligencia-artificial-superar-humana/index.html
+  [HTTP 404]  https://developer.mozilla.org/es/docs/Web/API/Sensor_APIs
+          encontrado en: /que-es-una-progressive-web-app-pwa/index.html
+  [HTTP 404]  https://support.google.com/webmasters/answer/9205520
+          encontrado en: /que-son-las-core-web-vitals/index.html
+  [HTTP 403]  https://www.webpagetest.org/
+          encontrado en: /que-son-las-core-web-vitals/index.html
+  [HTTP 999]  https://www.linkedin.com/in/begolashayas/
+          encontrado en: /quiero-que-la-ia-me-cite/index.html
+  [HTTP 403]  https://www.highcharts.com/forum/viewtopic.php?t=39310
+          encontrado en: /romper-escala-eje-y-grafico/index.html
+  [HTTP 404]  https://www.amcharts.com/demos/column-chart-with-axis-break/
+          encontrado en: /romper-escala-eje-y-grafico/index.html
+  [HTTP 405]  https://material.io/design/usability/accessibility.html#layout-and-typography
+          encontrado en: /tamano-minimo-elementos-interactivos-dispositivo-tactil/index.html
+  [HTTP 405]  https://material.io/design/layout/pixel-density.html#pixel-density
+          encontrado en: /tamano-minimo-elementos-interactivos-dispositivo-tactil/index.html
+  [HTTP 404]  https://support.google.com/analytics/answer/1205784?hl=es
+          encontrado en: /umbral-de-doherty/index.html
+  [HTTP 403]  https://uxdesign.cc/everything-you-need-to-know-about-design-systems-54b109851969
+          encontrado en: /ventajas-diseno-interfaz-personalizado/index.html
+
+======================================================================
