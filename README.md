@@ -84,13 +84,16 @@ Escribe `/republish-theconversation-aunitz` o di "quiero republicar un artículo
 
 ## Licencias
 
-Este repositorio combina dos licencias diferentes:
+Este repositorio combina varias licencias:
 
-| Ámbito | Licencia | Fichero |
+| Ámbito | Licencia | Fichero / referencia |
 |---|---|---|
 | Contenido del blog (posts, textos e imágenes propias) | Todos los derechos reservados — copyright Aunitz Giménez Mendiburu | `LICENSE-CONTENT` |
 | Artículos republicados de [The Conversation](https://theconversation.com/es) | [CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0/) — copyright de cada autor original | En el byline de cada post |
 | Código del tema (plantilla Clean Blog) | [MIT](https://opensource.org/licenses/MIT) — copyright Blackrock Digital LLC | `LICENSE` |
+| Bootstrap 3.4.1 (CSS compilado localmente + JS vía CDN) | [MIT](https://opensource.org/licenses/MIT) — copyright Twitter, Inc. | Cabecera en `css/bootstrap.min.css` |
+| Font Awesome 4.3.0 (iconos vía CDN) | Fuentes: [SIL OFL 1.1](https://scripts.sil.org/OFL) — CSS: [MIT](https://opensource.org/licenses/MIT) | CDN de BootstrapCDN |
+| jQuery 1.12.4 (vía CDN) | [MIT](https://opensource.org/licenses/MIT) — copyright OpenJS Foundation | CDN de Google |
 
 ## TODO
 1. Un **Dashboard** con métricas estáticas del sitio web:
