@@ -107,3 +107,6 @@ Este repositorio combina varias licencias:
 - Nube de palabras de etiquetas (tags)
 4. Mejorar el Schema Markup de los posts que no son míos.
 5. Buscar enlaces rotos y sustituirlos por accesos a https://web.archive.org/
+6. Implementar redireccionamientos 301 en los posts renombrados
+7. Renombrar y redireccionar los posts de leyes UX
+8. Eliminar los redireccionadores de los tips y de las leyes. De modo que quede el directorio de posts limpio de redireccionadores.
