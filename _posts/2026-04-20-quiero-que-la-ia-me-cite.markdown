@@ -141,7 +141,7 @@ tags:          [inteligencia artificial, SEO/GEO, marketing]
 
 <p>Esta estrategia se encuentra encaminada a facilitar al modelo que extraiga nuestro contenido. Para ello se pueden aplicar algunas técnicas.</p>
 
-<h4>HTML Semántico</h4>
+<h4>HTML semántico</h4>
 
 <p>Nada nuevo bajo el sol. El HTML semántico (<code>article</code>, <code>header</code>, <code>section</code>, <code>time</code>, etc.) facilita al modelo que interprete correctamente nuestro contenido. Reduce la posible ambigüedad.</p>
 
