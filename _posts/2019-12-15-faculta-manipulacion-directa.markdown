@@ -8,7 +8,7 @@ header-img:    "img/post-bg-47.jpg"
 tags:          [buenas prácticas de usabilidad]
 ---
 
-<p>Si sobre un elemento podemos realizar determinadas acciones (modificarlo, eliminarlo, compartirlo, etc.), es preferible ubicar los botones o enlaces que las ejecutan muy cerca o sobre el mismo elemento al que afectan. De ese modo reducimos la distancia física (recordar la <a href="{{ site.baseurl }}{% post_url 2018-01-21-ley-01-ley-de-fitts %}">Ley de Fitts</a>) necesaria para manipular el elemento. Así como la carga cognitiva necesaria. Dado que aportamos un contexto inmediato a las acciones, por estar directamente relacionadas con el elemento al que afectan.</p>
+<p>Si sobre un elemento podemos realizar determinadas acciones (modificarlo, eliminarlo, compartirlo, etc.), es preferible ubicar los botones o enlaces que las ejecutan muy cerca o sobre el mismo elemento al que afectan. De ese modo reducimos la distancia física (recordar la <a href="{{ site.baseurl }}{% post_url 2018-01-21-ley-de-fitts %}">Ley de Fitts</a>) necesaria para manipular el elemento. Así como la carga cognitiva necesaria. Dado que aportamos un contexto inmediato a las acciones, por estar directamente relacionadas con el elemento al que afectan.</p>
 
 <p><img src="{{ site.baseurl }}/img/tip-16-faculta-manipulacion-directa.png" loading="lazy" alt="Faculta la manipulación directa de los elementos a modificar" width="722" height="428"></p>
 

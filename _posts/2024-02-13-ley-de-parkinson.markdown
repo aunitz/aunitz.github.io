@@ -23,7 +23,7 @@ tags:          [leyes y principios de experiencia de usuario (UX) y usabilidad, 
 
 <p><img src="{{ site.baseurl }}/img/ley-02-ley-de-hick.png" loading="lazy" alt="" width="724" height="428"></p>
 
-<p>Existen un gran número de leyes y principios de experiencia de usuario (UX) y usabilidad que apoyan o van en la línea de buscar la simplicidad. Algunas de ellas ya tratadas en este blog: la <a href="{{ site.baseurl }}{% post_url 2018-01-22-ley-05-ley-de-miller %}">ley de Miller</a>, la <a href="{{ site.baseurl }}{% post_url 2018-01-22-ley-04-ley-de-pragnanz %}">ley de Prägnanz</a>, la <a href="{{ site.baseurl }}{% post_url 2018-01-21-ley-02-ley-de-hick %}">ley de Hick</a>, la <a href="{{ site.baseurl }}{% post_url 2018-01-23-ley-08-ley-de-tesler %}">ley de Tesler</a>, <a href="{{ site.baseurl }}{% post_url 2020-09-13-la-navaja-de-ockham %}">la navaja de Ockham</a>…</p>
+<p>Existen un gran número de leyes y principios de experiencia de usuario (UX) y usabilidad que apoyan o van en la línea de buscar la simplicidad. Algunas de ellas ya tratadas en este blog: la <a href="{{ site.baseurl }}{% post_url 2018-01-22-ley-de-miller %}">ley de Miller</a>, la <a href="{{ site.baseurl }}{% post_url 2018-01-22-ley-de-pragnanz %}">ley de Prägnanz</a>, la <a href="{{ site.baseurl }}{% post_url 2018-01-21-ley-de-hick %}">ley de Hick</a>, la <a href="{{ site.baseurl }}{% post_url 2018-01-23-ley-de-tesler %}">ley de Tesler</a>, <a href="{{ site.baseurl }}{% post_url 2020-09-13-la-navaja-de-ockham %}">la navaja de Ockham</a>…</p>
 
 <h2>La Ley de Parkinson en la gestión de proyectos</h2>
 

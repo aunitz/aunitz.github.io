@@ -16,7 +16,7 @@ tags:          [leyes y principios de experiencia de usuario (UX) y usabilidad, 
 
 <h2>El Principio de Robustez en UX y usabilidad</h2>
 
-<p>Aplicado al diseño de experiencia de usuario (UX) y la usabilidad, este principio enfatiza la importancia de desarrollar interfaces que no solo cumplan con <a href="{{ site.baseurl }}{% post_url 2018-01-21-ley-03-ley-de-jakob %}">estándares de diseño</a> claros y consistentes, sino que también sean capaces de interactuar eficazmente con una amplia gama de comportamientos de usuario. Esto significa diseñar experiencias que puedan acomodar diferencias en cómo los usuarios acceden y utilizan los productos, desde variaciones en la entrada de datos hasta distintas formas de navegación.</p>
+<p>Aplicado al diseño de experiencia de usuario (UX) y la usabilidad, este principio enfatiza la importancia de desarrollar interfaces que no solo cumplan con <a href="{{ site.baseurl }}{% post_url 2018-01-21-ley-de-jakob %}">estándares de diseño</a> claros y consistentes, sino que también sean capaces de interactuar eficazmente con una amplia gama de comportamientos de usuario. Esto significa diseñar experiencias que puedan acomodar diferencias en cómo los usuarios acceden y utilizan los productos, desde variaciones en la entrada de datos hasta distintas formas de navegación.</p>
 
 <p><img src="{{ site.baseurl }}/img/principio-de-robustez-01.jpg" loading="lazy" alt="" width="720" height="480"></p>
 
