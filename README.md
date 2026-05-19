@@ -138,4 +138,3 @@ Este repositorio combina varias licencias:
 - Nube de palabras de etiquetas (tags)
 2. Mejorar el Schema Markup de los posts que no son míos.
 3. Buscar enlaces rotos y sustituirlos por accesos a https://web.archive.org/
-4. Renombrar y redireccionar los posts de leyes UX
