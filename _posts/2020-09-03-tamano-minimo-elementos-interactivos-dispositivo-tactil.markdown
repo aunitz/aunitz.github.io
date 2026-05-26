@@ -36,7 +36,7 @@ tags:          [buenas prácticas de usabilidad]
 
 <h2>Conclusión</h2>
 
-<p>Ya sabíamos por la <a href="{{ site.baseurl }}{% post_url 2018-01-21-ley-01-ley-de-fitts %}">ley de Fitts</a> (y por sentido común) que cuanto más grande sea el objeto a pulsar, menos tardará el usuario en conseguirlo. Ahora bien, la solución no puede ser diseñar enormes todos los elementos interactivos de un interfaz táctil porque, especialmente en móvil, el espacio disponible es muy limitado y tiene que quedar sitio para el contenido.</p>
+<p>Ya sabíamos por la <a href="{{ site.baseurl }}{% post_url 2018-01-21-ley-de-fitts %}">ley de Fitts</a> (y por sentido común) que cuanto más grande sea el objeto a pulsar, menos tardará el usuario en conseguirlo. Ahora bien, la solución no puede ser diseñar enormes todos los elementos interactivos de un interfaz táctil porque, especialmente en móvil, el espacio disponible es muy limitado y tiene que quedar sitio para el contenido.</p>
 
 <p>En espera de estudios más rigurosos o de un mayor consenso de las grandes empresas de software al respecto, para no equivocarnos demasiado deberemos diseñar <strong>elementos interactivos de al menos 48×48 dp</strong>.</p>
 

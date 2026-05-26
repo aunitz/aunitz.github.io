@@ -109,6 +109,37 @@ Los agentes de Claude Code pueden tener asignados permisos sobre las herramienta
 | `Skill(nombre-skill)` | Ejecutar una skill concreta |
 | `Skill(nombre-skill:*)` | Ejecutar cualquier subcomando de una skill concreta |
 
+## Sistema de redireccionamiento
+
+### Situación actual
+
+Algunos posts han sido renombrados a lo largo del tiempo (por ejemplo, los "tips" y las "leyes UX"). Para mantener las URLs antiguas funcionales existe el layout `_layouts/redirected.html`, que genera una página HTML estática con tres mecanismos de redirección en cascada:
+
+1. **`<meta http-equiv="refresh" content="0;url=...">`** — redirige al navegador sin delay.
+2. **`<script>location = '...'`** — redirige inmediatamente vía JavaScript.
+3. **`<link rel="canonical" href="...">`** — indica a los motores de búsqueda cuál es la URL canónica.
+
+El post redirigido siempre incluye `sitemap: false` y `hide_from_home: true` para que no aparezca en el sitemap ni en la portada.
+
+### Incidencia en el SEO
+
+Este sistema es funcional pero **subóptimo desde el punto de vista SEO**:
+
+- Las redirecciones cliente-side (meta-refresh + JS) **no son equivalentes a un HTTP 301**. Un 301 transfiere el link equity de forma limpia y definitiva; estas técnicas lo hacen de forma parcial e indeterminada según cómo cada motor de búsqueda decida procesarlas.
+- El `<link rel="canonical">` mitiga parcialmente el problema señalando la URL de destino.
+- En la práctica, **el impacto es bajo si las URLs antiguas no tienen backlinks externos relevantes**, que es el caso habitual de los posts renombrados de este blog.
+- Google ha mejorado mucho su interpretación de estas redirecciones, pero nunca garantiza el mismo trato que a un 301.
+
+### Alternativas
+
+| Alternativa | Ventajas | Inconvenientes |
+|---|---|---|
+| **Redirect Rules en Cloudflare** (recomendada) | HTTP 301 real; transparente para el visitante; sin cambios en Jekyll | Requiere mantenimiento manual de cada regla en el panel de Cloudflare |
+| **Plugin `jekyll-redirect-from`** | Integrado en Jekyll; sintaxis sencilla en frontmatter | Genera el mismo HTML cliente-side que el layout actual; no mejora el SEO |
+| **Eliminar los posts redirigidores** | Simplifica el repositorio | Solo válido si las URLs antiguas no tienen tráfico ni backlinks |
+
+La opción más correcta a largo plazo es combinar **Redirect Rules en Cloudflare** (para los 301 reales) con la **eliminación progresiva de los posts redirigidores** una vez confirmado que no reciben tráfico. Ver también los puntos 6, 7 y 8 del TODO.
+
 ## Licencias
 
 Este repositorio combina varias licencias:
@@ -132,8 +163,5 @@ Este repositorio combina varias licencias:
 - Número total de enlaces internos
 - Número total de enlaces externos
 - Nube de palabras de etiquetas (tags)
-4. Mejorar el Schema Markup de los posts que no son míos.
-5. Buscar enlaces rotos y sustituirlos por accesos a https://web.archive.org/
-6. Implementar redireccionamientos 301 en los posts renombrados
-7. Renombrar y redireccionar los posts de leyes UX
-8. Eliminar los redireccionadores de los tips y de las leyes. De modo que quede el directorio de posts limpio de redireccionadores.
+2. Mejorar el Schema Markup de los posts que no son míos.
+3. Buscar enlaces rotos y sustituirlos por accesos a https://web.archive.org/

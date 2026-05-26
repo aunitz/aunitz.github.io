@@ -52,8 +52,8 @@ tags:          [leyes y principios de experiencia de usuario (UX) y usabilidad, 
 <p>Este sesgo cognitivo subyace en otros principios y leyes de usabilidad ya tratados en este blog como son:</p>
 
 <ul>
-    <li><a href="{{ site.baseurl }}{% post_url 2018-01-21-ley-03-ley-de-jakob %}">La Ley de Jakob</a>. Cuyo corolario puede ser: utiliza convenciones establecidas.</li>
-    <li><a href="{{ site.baseurl }}{% post_url 2018-12-08-ley-16-principio-de-experiencia %}">El principio de experiencia</a>. Un principio de percepción visual establecido por la escuela de psicología de la Gestalt y que se resume en: los elementos tienden a ser percibidos de acuerdo con la experiencia pasada del observador.</li>
+    <li><a href="{{ site.baseurl }}{% post_url 2018-01-21-ley-de-jakob %}">La Ley de Jakob</a>. Cuyo corolario puede ser: utiliza convenciones establecidas.</li>
+    <li><a href="{{ site.baseurl }}{% post_url 2018-12-08-principio-de-experiencia %}">El principio de experiencia</a>. Un principio de percepción visual establecido por la escuela de psicología de la Gestalt y que se resume en: los elementos tienden a ser percibidos de acuerdo con la experiencia pasada del observador.</li>
 </ul>
 
 <p>Y por último un post dedicado específicamente al uso de convenciones que sean consistentes con el aprendizaje previo de los usuarios y que se titula “<a href="{{ site.baseurl }}{% post_url 2017-11-04-utiliza-convenciones %}">No reinventes la rueda: utiliza convenciones</a>”.</p>
