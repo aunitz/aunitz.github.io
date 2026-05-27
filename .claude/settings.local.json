@@ -13,7 +13,8 @@
       "Skill(publish-post:*)",
       "Skill(republish-theconversation-aunitz)",
       "Skill(republish-theconversation-aunitz:*)",
-      "WebFetch(domain:www.chatbase.co)"
+      "WebFetch(domain:www.chatbase.co)",
+      "WebSearch"
     ]
   }
 }

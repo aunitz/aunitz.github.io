@@ -82,6 +82,33 @@ Automatiza la republicación en el blog de un artículo de [The Conversation](ht
 
 Escribe `/republish-theconversation-aunitz` o di "quiero republicar un artículo de The Conversation" en Claude Code. Para modo prueba: `/republish-theconversation-aunitz --test`.
 
+## Permisos de los agentes de Claude Code
+
+La configuración de permisos de Claude Code se distribuye en dos ficheros dentro de `.claude/`:
+
+| Fichero | Propósito | En git |
+|---|---|---|
+| `settings.json` | Configuración del proyecto, compartida entre todos los colaboradores del repositorio | Sí |
+| `settings.local.json` | Configuración local y personal de cada desarrollador (permisos de su entorno, preferencias propias) | Sí |
+
+Claude Code carga ambos ficheros y combina sus permisos.
+
+Los agentes de Claude Code pueden tener asignados permisos sobre las herramientas integradas. Estas son las herramientas disponibles:
+
+| Herramienta | Descripción |
+|---|---|
+| `Read` | Leer el contenido de ficheros |
+| `Write` | Crear ficheros nuevos |
+| `Edit` | Editar ficheros existentes |
+| `Bash` | Ejecutar comandos de terminal |
+| `Glob` | Buscar ficheros por patrón de nombre |
+| `Grep` | Buscar texto dentro del contenido de ficheros |
+| `WebSearch` | Realizar búsquedas en la web |
+| `WebFetch` | Obtener el contenido de una URL |
+| `WebFetch(domain:ejemplo.com)` | Obtener el contenido de una URL restringida a un dominio concreto |
+| `Skill(nombre-skill)` | Ejecutar una skill concreta |
+| `Skill(nombre-skill:*)` | Ejecutar cualquier subcomando de una skill concreta |
+
 ## Sistema de redireccionamiento
 
 ### Situación actual
