@@ -10,7 +10,7 @@ tags:          [métodos de investigación UX]
 
 <p>Esta <strong>técnica de investigación experiencia de usuario</strong> (UX research) permite <strong>evaluar la claridad de nuestra arquitectura de la información</strong>. Sin distracciones visuales, esta técnica se centra puramente en cómo la información está organizada y se accede a ella a través de la jerarquía de navegación.</p>
 
-<p><img src="{{ site.baseurl }}/img/que-es-un-tree-testing-01.jpg" loading="lazy" alt="" width="720" height="411"></p>
+<p><img src="{{ site.baseurl }}/img/que-es-un-tree-testing-01.webp" loading="lazy" alt="" width="750" height="422"></p>
 
 <h2>¿Cómo se realiza?</h2>
 

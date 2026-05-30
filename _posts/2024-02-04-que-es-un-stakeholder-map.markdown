@@ -16,7 +16,7 @@ tags:          [métodos de investigación UX]
 
 <p>Un mapa de actores es una <strong>representación visual que muestra a todas las partes interesadas</strong> de un proyecto, producto o servicio, <strong>y las conexiones entre ellas</strong>. Los actores pueden incluir desde usuarios finales y clientes hasta miembros del equipo, proveedores, reguladores, y cualquier otro individuo o grupo que tenga interés o influencia sobre el proyecto.</p>
 
-<p><img src="{{ site.baseurl }}/img/que-es-un-stakeholder-map.jpg" loading="lazy" alt="" width="720" height="411"></p>
+<p><img src="{{ site.baseurl }}/img/que-es-un-stakeholder-map-01.webp" loading="lazy" alt="" width="750" height="422"></p>
 
 <h2>Beneficios del stakeholder map</h2>
 
@@ -36,6 +36,8 @@ tags:          [métodos de investigación UX]
 	<li><strong>Analizar relaciones e influencias</strong>: con el mapa completado, evalúa cómo las relaciones entre <em>stakeholders</em> afectan el proyecto. Busca oportunidades y riesgos en estas interacciones.</li>
 	<li><strong>Actualizar regularmente</strong>: el mapa debe ser un documento vivo, actualizado a medida que cambian las circunstancias del proyecto o emergen nuevos <em>stakeholders</em>.</li>
 </ol>
+
+<p><img src="{{ site.baseurl }}/img/que-es-un-stakeholder-map-02.webp" loading="lazy" alt="" width="750" height="422"></p>
 
 <h2>Consejos para un mapa efectivo</h2>
 
