@@ -1,4 +1,4 @@
-{% unless page.canonical %}{% if page.layout == "post" %}{% assign _img_parts = page.content | split: 'src="' %}{% if _img_parts.size > 1 %}{% assign _img_src = _img_parts[1] | split: '"' | first %}{% endif %}{% endif %}{% endunless %}
+{% if page.layout == "post" and page.republished != true %}{% assign _img_parts = page.content | split: 'src="' %}{% if _img_parts.size > 1 %}{% assign _img_src = _img_parts[1] | split: '"' | first %}{% endif %}{% endif %}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -54,7 +54,63 @@
       "description": "{{ site.author_description | escape }}",
       "image": { "@type": "ImageObject", "url": "{{ site.author_logo | absolute_url }}", "width": 550, "height": 550 },
       "author": { "@id": "https://www.aunitz.net/#person" }
-    }{% endif %}{% unless page.canonical %}{% if page.layout == "post" %},
+    }{% endif %}{% if page.layout == "post" %}{% if page.republished %},
+    {
+      "@type": "Article",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "{{ page.url | absolute_url }}"
+      },
+      "headline": "{{ page.title | escape }}",
+      "description": "{{ page.description | escape }}",{% if page.header-img %}
+      "image": { "@type": "ImageObject", "url": "{{ page.header-img | absolute_url }}" },{% endif %}
+      "datePublished": "{{ page.original_date | default: page.date | date_to_xmlschema }}",
+      "dateModified": "{{ page.last_modified_at | default: page.date | date_to_xmlschema }}",
+      "url": "{{ page.url | absolute_url }}",
+      "inLanguage": "es",
+      "author": {
+        "@type": "Person",
+        "name": "{{ page.author | escape }}",{% if page.author_url %}
+        "url": "{{ page.author_url }}",{% endif %}{% if page.author_affiliation %}
+        "affiliation": { "@type": "Organization", "name": "{{ page.author_affiliation | escape }}" },{% endif %}
+        "@id": "{{ page.author_url | default: page.url | absolute_url }}#author"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "{{ page.source_org | default: 'The Conversation' }}",
+        "url": "https://theconversation.com"
+      },
+      "sourceOrganization": {
+        "@type": "Organization",
+        "name": "{{ page.source_org | default: 'The Conversation' }}",
+        "url": "https://theconversation.com"
+      },{% if page.canonical %}
+      "isBasedOn": "{{ page.canonical }}",{% endif %}{% if page.license %}
+      "license": "{{ page.license }}",
+      "creditText": "{{ page.author | escape }} / {{ page.source_org | default: 'The Conversation' }}",{% endif %}
+      "copyrightHolder": { "@id": "{{ page.author_url | default: page.url | absolute_url }}#author" },{% if page.original_date %}
+      "copyrightYear": {{ page.original_date | date: "%Y" }},{% endif %}
+      "keywords": "{{ page.tags | join: ', ' | escape }}",
+      "wordCount": {{ page.content | number_of_words }},
+      "isPartOf": { "@id": "https://www.aunitz.net/#blog" }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Inicio",
+          "item": "{{ '/' | absolute_url }}"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "{{ page.title | escape }}",
+          "item": "{{ page.url | absolute_url }}"
+        }
+      ]
+    }{% elsif page.canonical == nil %},
     {
       "@type": "BlogPosting",
       "mainEntityOfPage": {
@@ -91,7 +147,7 @@
           "item": "{{ page.url | absolute_url }}"
         }
       ]
-    }{% endif %}{% endunless %}{% if page.profile-page %},
+    }{% endif %}{% endif %}{% if page.profile-page %},
     {
       "@type": "ProfilePage",
       "@id": "{{ page.url | absolute_url }}#profilepage",

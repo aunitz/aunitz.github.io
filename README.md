@@ -67,7 +67,7 @@ Automatiza la republicación en el blog de un artículo de [The Conversation](ht
 1. Pide al usuario el código HTML que The Conversation facilita en su pestaña **"Básico"** del cuadro de republicación (ese código ya incluye el píxel oculto del contador).
 2. Extrae del HTML el título, subtítulo, autor, cargo, institución, URL canónica, ID del contador y fecha original de publicación.
 3. Genera el fichero `.markdown` en `_posts/` con la fecha del día y el slug del título.
-4. Rellena el frontmatter con `author` = autor original (no Aunitz), `canonical` = URL en The Conversation, descripción SEO, tags y `header-img` consecutivo.
+4. Rellena el frontmatter con `author` = autor original (no Aunitz), `canonical` = URL en The Conversation, descripción SEO, tags, `header-img` consecutivo y los campos de datos estructurados de republicación (`republished`, `original_date`, `license`, `author_url`, `author_affiliation`, `source_org`).
 5. Construye desde cero un byline propio con la plantilla del blog y lo coloca duplicado al inicio (seguido de `<hr>`) y al final (precedido de `<hr>`) del cuerpo.
 6. Limpia el HTML del artículo (elimina `<div>`/`<span>` decorativos, atributos `style` y `srcset`, clases CSS de The Conversation), conserva `<h2>`/`<h3>`, listas y blockquotes, y añade `target="_blank" rel="noopener noreferrer"` a los enlaces externos.
 7. Descarga las imágenes del cuerpo desde `images.theconversation.com` a `img/` con el patrón `{slug}-NN.{ext}`, preserva captions y atribuciones (CC BY-SA), y obtiene dimensiones reales.
@@ -140,6 +140,34 @@ Este sistema es funcional pero **subóptimo desde el punto de vista SEO**:
 
 La opción más correcta a largo plazo es combinar **Redirect Rules en Cloudflare** (para los 301 reales) con la **eliminación progresiva de los posts redirigidores** una vez confirmado que no reciben tráfico. Ver también los puntos 6, 7 y 8 del TODO.
 
+## Datos estructurados (Schema Markup)
+
+El JSON-LD se genera en `_includes/schema.html` (incluido desde `_includes/head.html`). Usa un `@graph` con nodos globales (`WebSite`, `Person` de Aunitz, y `Blog` solo en portada) más nodos por página según el tipo de contenido:
+
+| Tipo de post | Schema de artículo | Autoría | Particularidades |
+|---|---|---|---|
+| **Posts propios** (sin `canonical` ni `republished`) | `BlogPosting` | `Person` Aunitz (`#person`) | `publisher` = Aunitz; imagen tomada de la primera del cuerpo o `header-img` |
+| **Republicados de The Conversation** (`republished: true`) | `Article` | `Person` con el autor **original** + `affiliation` | `publisher`/`sourceOrganization` = The Conversation; `isBasedOn` al original; `license`, `creditText`, `copyrightHolder`, `copyrightYear`; `datePublished` = fecha original |
+| **Páginas duplicadas** (`canonical` sin `republished`) | — (suprimido) | — | Se omite el schema de artículo para evitar duplicados |
+
+Tanto los posts propios como los republicados emiten además un `BreadcrumbList`.
+
+### Posts republicados: campos de frontmatter
+
+Los posts de The Conversation se identifican con `republished: true`, que activa el bloque `Article` específico. Campos que lo alimentan:
+
+```yaml
+canonical:          "https://theconversation.com/SLUG-NNNNNN"  # original; también es el rel=canonical
+republished:        true
+original_date:      YYYY-MM-DD          # fecha original de publicación → datePublished / copyrightYear
+license:            "https://creativecommons.org/licenses/by-nd/4.0/"
+author_url:         "https://theconversation.com/profiles/..."  # ficha del autor
+author_affiliation: "Institución del autor"
+source_org:         "The Conversation"
+```
+
+Cuando un post es republicado, `_includes/head.html` apunta el `<link rel="canonical">` y el `<meta name="author">` al artículo y autor originales (no a Aunitz). La skill `republish-theconversation-aunitz` rellena todos estos campos automáticamente.
+
 ## Licencias
 
 Este repositorio combina varias licencias:
@@ -163,5 +191,4 @@ Este repositorio combina varias licencias:
 - Número total de enlaces internos
 - Número total de enlaces externos
 - Nube de palabras de etiquetas (tags)
-2. Mejorar el Schema Markup de los posts que no son míos.
 3. Buscar enlaces rotos y sustituirlos por accesos a https://web.archive.org/

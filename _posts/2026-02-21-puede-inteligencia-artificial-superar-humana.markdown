@@ -8,6 +8,12 @@ author:        "Verónica Bolón Canedo"
 header-img:    "img/post-bg-114.jpg"
 tags:          [inteligencia artificial]
 canonical:     "https://theconversation.com/puede-la-inteligencia-artificial-superar-a-la-humana-196633"
+republished:        true
+original_date:      2022-12-14
+license:            "https://creativecommons.org/licenses/by-nd/4.0/"
+author_url:         "https://theconversation.com/profiles/veronica-bolon-canedo-1094789"
+author_affiliation: "Universidade da Coruña"
+source_org:         "The Conversation"
 ---
 
 <div class="theconversation-article-body">

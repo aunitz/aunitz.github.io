@@ -59,7 +59,7 @@ tags:          [tag1, tag2, tag3]
 ---
 ```
 
-Atributos opcionales: `hide_from_home: true` (oculta de portada), `last_modified_at` (para schema), `canonical` (evita schema en duplicados).
+Atributos opcionales: `hide_from_home: true` (oculta de portada), `last_modified_at` (para schema), `canonical` (URL canónica; en duplicados sin `republished` suprime el schema de artículo). Posts republicados de The Conversation: `republished: true` + `original_date`, `license`, `author_url`, `author_affiliation`, `source_org` (activan el bloque `Article` específico en `_includes/schema.html`).
 
 ### Convenciones HTML/Markdown en posts
 

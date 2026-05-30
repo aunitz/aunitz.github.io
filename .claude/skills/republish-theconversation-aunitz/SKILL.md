@@ -233,6 +233,12 @@ author:        "NOMBRE DEL AUTOR ORIGINAL"
 header-img:    "img/post-bg-NNN.jpg"
 tags:          [tag1, tag2]
 canonical:     "https://theconversation.com/SLUG-NNNNNN"
+republished:        true
+original_date:      YYYY-MM-DD
+license:            "https://creativecommons.org/licenses/by-nd/4.0/"
+author_url:         "https://theconversation.com/profiles/..."
+author_affiliation: "NOMBRE DE LA INSTITUCIÓN DEL AUTOR"
+source_org:         "The Conversation"
 ---
 
 CUERPO HTML GENERADO EN EL PASO 7
@@ -241,7 +247,13 @@ CUERPO HTML GENERADO EN EL PASO 7
 Notas sobre el frontmatter:
 
 - **`author`** es el autor original del artículo en The Conversation, **no** "Aunitz Giménez". Esta es la diferencia clave con los posts originales del blog y un requisito de la licencia CC.
-- **`canonical`** apunta al artículo original en The Conversation. Es obligatorio para evitar problemas de contenido duplicado en SEO y para respetar la licencia.
+- **`canonical`** apunta al artículo original en The Conversation. Es obligatorio para evitar problemas de contenido duplicado en SEO y para respetar la licencia. Además, `_includes/head.html` lo usa como `<link rel="canonical">` (apuntando al original) cuando el post es republicado.
+- **`republished: true`** activa el bloque de datos estructurados específico para republicaciones en `_includes/schema.html` (un `Article` con autoría real, `isBasedOn`, `license`, `publisher`/`sourceOrganization` = The Conversation y `BreadcrumbList`). **Sin este flag el post no emite schema de artículo.** Es imprescindible.
+- **`original_date`** es la fecha original de publicación en The Conversation (dato 10 del Paso 2) en formato **ISO `YYYY-MM-DD`** (p. ej. "14 de diciembre de 2022" → `2022-12-14`). Alimenta `datePublished` y `copyrightYear` del schema. No la confundas con `date` (fecha de republicación en el blog).
+- **`license`** es la URL de la licencia Creative Commons del artículo (normalmente `https://creativecommons.org/licenses/by-nd/4.0/`). Si el byline indica otra licencia, usa esa URL.
+- **`author_url`** es la URL de la ficha del autor en The Conversation (dato 4 del Paso 2).
+- **`author_affiliation`** es el nombre de la institución del autor (dato 6 del Paso 2).
+- **`source_org`** es siempre `"The Conversation"` para esta skill.
 - Mantén el alineamiento visual de los valores (espacios para alinear como en los posts existentes).
 - Los valores con comillas dobles internas se escapan correctamente.
 - Los tags van en minúsculas y entre corchetes.

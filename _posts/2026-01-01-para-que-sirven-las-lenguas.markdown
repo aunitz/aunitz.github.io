@@ -8,6 +8,12 @@ author:        "Patricia Álvarez Sánchez"
 header-img:    "img/post-bg-112.jpg"
 tags:          [off topic]
 canonical:     "https://theconversation.com/para-que-sirven-las-lenguas-172319"
+republished:        true
+original_date:      2021-12-13
+license:            "https://creativecommons.org/licenses/by-nd/4.0/"
+author_url:         "https://theconversation.com/profiles/patricia-alvarez-sanchez-1113240"
+author_affiliation: "Universidad de Málaga"
+source_org:         "The Conversation"
 ---
 
 <div class="theconversation-article-body">

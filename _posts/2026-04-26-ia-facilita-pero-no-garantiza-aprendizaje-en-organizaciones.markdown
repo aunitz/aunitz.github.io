@@ -8,6 +8,12 @@ author:        "Jose Luis Alonso Andreano"
 header-img:    "img/post-bg-119.jpg"
 tags:          [inteligencia artificial]
 canonical:     "https://theconversation.com/la-ia-facilita-pero-no-garantiza-el-aprendizaje-en-las-organizaciones-272632"
+republished:        true
+original_date:      2026-04-20
+license:            "https://creativecommons.org/licenses/by-nd/4.0/"
+author_url:         "https://theconversation.com/profiles/jose-luis-alonso-andreano-1454244"
+author_affiliation: "Mondragon Unibertsitatea"
+source_org:         "The Conversation"
 ---
 
 <div class="theconversation-article-body">
