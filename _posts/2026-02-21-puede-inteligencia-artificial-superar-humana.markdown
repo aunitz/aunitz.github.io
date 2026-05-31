@@ -28,7 +28,7 @@ source_org:         "The Conversation"
 
   <h2>El nacimiento de la inteligencia artificial</h2>
 
-  <p>El objetivo de la inteligencia artificial siempre ha sido emular a la inteligencia humana. Aunque es un campo que se ha popularizado entre la sociedad en los últimos años, <a href="https://zoo.cs.yale.edu/classes/cs470/materials/aima2010.pdf" target="_blank" rel="noopener noreferrer">su nacimiento data de mediados del siglo pasado</a>. </p>
+  <p>El objetivo de la inteligencia artificial siempre ha sido emular a la inteligencia humana. Aunque es un campo que se ha popularizado entre la sociedad en los últimos años, <a href="https://web.archive.org/web/20220928014723/https://zoo.cs.yale.edu/classes/cs470/materials/aima2010.pdf" target="_blank" rel="noopener noreferrer">su nacimiento data de mediados del siglo pasado</a>. </p>
 
   <p>En 1950, el matemático británico Alan Turing publicaba su famoso artículo <em>Computing Machinery and Intelligence</em>, en el que describía cómo crear máquinas inteligentes. De este artículo nace también el test de Turing, que es la prueba de referencia todavía hoy en día para determinar si un sistema artificial exhibe inteligencia. Si una persona mantiene una conversación con una máquina y otra persona y no es capaz de discernir cuál de los dos es realmente una máquina, se dice que la máquina es inteligente.</p>
 
@@ -54,7 +54,7 @@ source_org:         "The Conversation"
 
   <p>Más tarde, en 1994, Steven Pinker afirmaba que "la principal lección después de treinta y cinco años de investigación en inteligencia artificial es que los problemas difíciles son fáciles y los problemas fáciles son difíciles".</p>
 
-  <p><a href="http://rebooting.ai/" target="_blank" rel="noopener noreferrer">Los científicos Gary Marcus y Ernest David explican</a> cómo, a pesar de los recientes e impresionantes avances en procesado del lenguaje natural, la inteligencia artificial todavía no puede leer un libro, entendiendo por <em>leer</em> entender su contenido. </p>
+  <p><a href="https://web.archive.org/web/20221215105543/http://rebooting.ai/" target="_blank" rel="noopener noreferrer">Los científicos Gary Marcus y Ernest David explican</a> cómo, a pesar de los recientes e impresionantes avances en procesado del lenguaje natural, la inteligencia artificial todavía no puede leer un libro, entendiendo por <em>leer</em> entender su contenido. </p>
 
   <p>Aunque existen herramientas potentes como GTB (Google Talk to Books), estas se basan en dar respuestas imitando frases que diría una persona, pero no son capaces de entender lo que leen. Cuando las personas leemos una historia, necesitamos seguir una serie de inferencias que están implícitas en ella y que demandan el uso de conocimiento de ámbito general. </p>
 
@@ -62,7 +62,7 @@ source_org:         "The Conversation"
 
   <h2>Confiar o no confiar, esa es la cuestión</h2>
 
-  <p>Aún en los casos en que los algoritmos de inteligencia artificial consiguen resultados sobrehumanos, no es oro todo lo que reluce. Las técnicas de aprendizaje profundo tienen la particularidad de que es muy difícil interpretar cómo el sistema ha llegado a una determinada decisión o predicción sobre los datos (lo que se conoce como modelo de caja negra). Este hecho es incompatible con la necesidad de que la inteligencia artificial sea ética y confiable, como demandan las <a href="https://op.europa.eu/es/publication-detail/-/publication/d3988569-0434-11ea-8c1f-01aa75ed71a1" target="_blank" rel="noopener noreferrer">Directrices éticas para una inteligencia artificial fiable de la Unión Europea</a> y la <a href="https://portal.mineco.gob.es/es-es/digitalizacionIA/Paginas/ENIA.aspx" target="_blank" rel="noopener noreferrer">Estrategia Nacional de Inteligencia Artificial española</a>.</p>
+  <p>Aún en los casos en que los algoritmos de inteligencia artificial consiguen resultados sobrehumanos, no es oro todo lo que reluce. Las técnicas de aprendizaje profundo tienen la particularidad de que es muy difícil interpretar cómo el sistema ha llegado a una determinada decisión o predicción sobre los datos (lo que se conoce como modelo de caja negra). Este hecho es incompatible con la necesidad de que la inteligencia artificial sea ética y confiable, como demandan las <a href="https://op.europa.eu/es/publication-detail/-/publication/d3988569-0434-11ea-8c1f-01aa75ed71a1" target="_blank" rel="noopener noreferrer">Directrices éticas para una inteligencia artificial fiable de la Unión Europea</a> y la <a href="https://web.archive.org/web/20221130043106/https://portal.mineco.gob.es/es-es/digitalizacionIA/Paginas/ENIA.aspx" target="_blank" rel="noopener noreferrer">Estrategia Nacional de Inteligencia Artificial española</a>.</p>
 
   <p>Recientemente han aparecido numerosos casos en los que sistemas de inteligencia artificial se comportaban de forma racista o sexista. Dado que los sistemas inteligentes son creados por personas, parece inevitable que los sesgos humanos se transmitan a los propios algoritmos o a través de los datos. </p>
 

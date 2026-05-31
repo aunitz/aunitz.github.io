@@ -91,7 +91,7 @@ tags:          [buenas prácticas de diseño, buenas prácticas de usabilidad]
 
 <p>Otras opciones más elaboradas y dinámicas que aprovechan la <strong>interactividad</strong> que tiene la web son las de, por ejemplo, la librería <a href="https://www.amcharts.com/" target="_blank" rel="noopener noreferrer">amCharts</a> que incorpora una solución nativa equivalente al doble gráfico apilado. En la cual, al pasar el cursor por encima de la zona “cortada”, el gráfico toma la forma que representa la proporción real de los diferentes valores.</p>
 
-<p>A continuación, se puede ver una animación en formato GIF que muestra la solución de amCharts. Que también <a href="https://www.amcharts.com/demos/column-chart-with-axis-break/" target="_blank" rel="noopener noreferrer">se puede experimentar en vivo en su página web</a>.</p>
+<p>A continuación, se puede ver una animación en formato GIF que muestra la solución de amCharts. Que también <a href="https://web.archive.org/web/20190821231926/https://www.amcharts.com/demos/column-chart-with-axis-break/" target="_blank" rel="noopener noreferrer">se puede experimentar en vivo en su página web</a>.</p>
 
 <p><img src="{{ site.baseurl }}/img/romper-escala-eje-y-grafico-06.gif" loading="lazy" alt="" width="703" height="480"></p>
 

@@ -248,7 +248,7 @@ páginas que contiene.</p>
 
 <h2>Collages de elementos</h2>
 
-<p><a href="http://v3.danielmall.com/articles/rif-element-collages/" target="_blank" rel="noopener noreferrer">Es una técnica</a> que permite avanzar algo más en el diseño que los <i>style tiles</i>, pero sin llegar aún a diseñar los componentes finales.</p>
+<p><a href="https://web.archive.org/web/20170312173528/https://v3.danielmall.com/articles/rif-element-collages/" target="_blank" rel="noopener noreferrer">Es una técnica</a> que permite avanzar algo más en el diseño que los <i>style tiles</i>, pero sin llegar aún a diseñar los componentes finales.</p>
 
 <h2>Tareas iniciales de cada rol de desarrollo</h2>
 

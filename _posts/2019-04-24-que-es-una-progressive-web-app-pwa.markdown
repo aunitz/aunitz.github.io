@@ -28,7 +28,7 @@ tags:          [desarrollo de soluciones digitales]
 
 <ol>
     <li>Acceso a la geolocalización (<a href="https://developers.google.com/maps/documentation/geolocation/intro" target="_blank" rel="noopener noreferrer">Geolocation API</a>).</li>
-    <li>Acceso a los <a href="https://developer.mozilla.org/es/docs/Web/API/Sensor_APIs" target="_blank" rel="noopener noreferrer">sensores de movimiento y orientación</a>: acelerómetro, giroscopio y brújula.</li>
+    <li>Acceso a los <a href="https://web.archive.org/web/20200814210526/https://developer.mozilla.org/es/docs/Web/API/Sensor_APIs" target="_blank" rel="noopener noreferrer">sensores de movimiento y orientación</a>: acelerómetro, giroscopio y brújula.</li>
     <li>Acceso a dispositivos conectados mediante USB (<a href="https://developers.google.com/web/updates/2016/03/access-usb-devices-on-the-web" target="_blank" rel="noopener noreferrer">WebUSB API</a>).</li>
     <li>Posibilidad de conectarse a otros dispositivos mediante Bluetooth e interactuar con ellos (<a href="https://developers.google.com/web/updates/2015/07/interact-with-ble-devices-on-the-web" target="_blank" rel="noopener noreferrer">Web Bluetooth API</a>).</li>
     <li><a href="https://developers.google.com/web/fundamentals/media/recording-audio/" target="_blank" rel="noopener noreferrer">Grabación de audio</a>.</li>
