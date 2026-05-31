@@ -191,4 +191,4 @@ Este repositorio combina varias licencias:
 - Número total de enlaces internos
 - Número total de enlaces externos
 - Nube de palabras de etiquetas (tags)
-3. Buscar enlaces rotos y sustituirlos por accesos a https://web.archive.org/
+2. Revisar nuevo https://search.google.com/
