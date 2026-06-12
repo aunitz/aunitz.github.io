@@ -192,4 +192,4 @@ Este repositorio combina varias licencias:
 - Número total de enlaces externos
 - Nube de palabras de etiquetas (tags)
 2. Revisar nuevo https://search.google.com/
-3. Instalar https://clarity.microsoft.com/lang/es-es
+3. Revisar instalación de https://clarity.microsoft.com/lang/es-es
