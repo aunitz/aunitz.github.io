@@ -7,14 +7,13 @@
       "Edit",
       "Glob",
       "Grep",
-      "Skill(publish-post-blog-aunitz)",
-      "Skill(publish-post-blog-aunitz:*)",
-      "Skill(publish-post)",
-      "Skill(publish-post:*)",
-      "Skill(republish-theconversation-aunitz)",
-      "Skill(republish-theconversation-aunitz:*)",
-      "WebFetch(domain:www.chatbase.co)",
-      "WebSearch"
+      "Skill(*)",
+      "WebFetch",
+      "WebSearch",
+      "PowerShell",
+      "Agent",
+      "TodoWrite",
+      "Monitor"
     ]
   }
 }
