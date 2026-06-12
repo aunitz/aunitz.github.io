@@ -28,6 +28,9 @@ adimedia_url: "https://www.adimedia.net/"
 # Activación de la medición mejorada de Google Analytics 4
 google_tracking_id: G-PJWXCNEVTP
 
+# Microsoft Clarity (heatmaps y grabaciones de sesión)
+clarity_project_id: x62p7a3dnf
+
 # Enter your Disqus shortname (not your username) to enable commenting on posts
 # You can find your shortname on the Settings page of your Disqus account
 #disqus: aunitz
