@@ -44,5 +44,5 @@ permalink: /:title/
 paginate: 5
 # Jekyll ignora automáticamente los archivos y directorios que empiezan por "." o "_",
 # por lo que no es necesario incluirlos en esta lista.
-exclude: ["bootstrap-sass","less","node_modules","package.json","README.md","LICENSE","Gemfile","Gemfile.lock","serve.bat","CLAUDE.md"]
+exclude: ["bootstrap-sass","less","node_modules","package.json","README.md","LICENSE","Gemfile","Gemfile.lock","serve.bat","CLAUDE.md","AGENTS.md"]
 gems: [jekyll-paginate, jekyll-feed, jekyll-redirect-from, jekyll-sitemap]
