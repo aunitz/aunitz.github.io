@@ -16,4 +16,4 @@ tags:          [buenas prácticas de usabilidad]
 <p>Además, la jerarquía visual <strong>rompe la monotonía</strong> de una pantalla sin elementos de descanso y <strong>facilita</strong> enormemente <strong>la legibilidad</strong> de los textos.</p>
 
 
-<p><img src="{{ site.baseurl }}/img/tip-13-utiliza-jerarquia-visual-para-dirigir-la-atencion.png" loading="lazy" alt="Utiliza la jerarquía visual para dirigir la atención" width="722" height="428"></p>
+<p><img src="{{ site.baseurl }}/img/tip-13-utiliza-jerarquia-visual-para-dirigir-la-atencion.png" loading="lazy" alt="Comparación entre una página con título principal y llamada a la acción destacada y otra tachada sin jerarquía visual clara" width="722" height="428"></p>

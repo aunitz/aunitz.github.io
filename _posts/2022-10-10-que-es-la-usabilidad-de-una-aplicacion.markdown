@@ -11,7 +11,7 @@ tags:          [buenas prácticas de diseño, desarrollo de soluciones digitales
 
 <p>En este blog he escrito <a href="{{ site.baseurl }}/tags/">decenas de artículos</a> relacionados con algún aspecto concreto de la usabilidad, sus leyes y principios, buenas prácticas, etc. Sin embargo, hasta el momento, no había dedicado un post a definir <strong>qué es la usabilidad</strong> y <strong>cuáles son sus principales beneficios</strong>.</p>
 
-<p><img src="{{ site.baseurl }}/img/que-es-la-usabilidad-de-una-aplicacion-01.jpg" loading="lazy" alt="" width="722" height="412"></p>
+<p><img src="{{ site.baseurl }}/img/que-es-la-usabilidad-de-una-aplicacion-01.jpg" loading="lazy" alt="Persona organizando notas adhesivas en una pared durante una sesión de diseño" width="722" height="412"></p>
 
 <p>El término usabilidad, aunque de origen latino, en el contexto que se utiliza deriva directamente del inglés <strong>usability</strong>. La <a href="https://www.iso.org/" target="_blank" rel="noopener noreferrer">Organización Internacional para la Normalización</a> (ISO) define usabilidad como:</p>
 
@@ -19,7 +19,7 @@ tags:          [buenas prácticas de diseño, desarrollo de soluciones digitales
 
 <p>En términos más coloquiales podemos hablar de usabilidad como la <strong>facilidad de uso</strong>, en este caso, de una aplicación de software.</p>
 
-<p><img src="{{ site.baseurl }}/img/que-es-la-usabilidad-de-una-aplicacion-02.jpg" loading="lazy" alt="" width="722" height="412"></p>
+<p><img src="{{ site.baseurl }}/img/que-es-la-usabilidad-de-una-aplicacion-02.jpg" loading="lazy" alt="Persona usando un teléfono móvil, representando la interacción con una aplicación" width="722" height="412"></p>
 
 <p>Tener en cuenta criterios de usabilidad en el desarrollo de software <strong>genera grandes beneficios para los usuarios</strong>. Entre los cuales podemos destacar:</p>
 

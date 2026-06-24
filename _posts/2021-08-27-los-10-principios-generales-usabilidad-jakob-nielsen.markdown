@@ -28,42 +28,42 @@ tags:          [leyes y principios de experiencia de usuario (UX) y usabilidad, 
 
 <p>Las <strong>interacciones predecibles generan confianza</strong> tanto en el producto como en la marca que hay detrás.</p>
 
-<p><img src="{{ site.baseurl }}/img/10-principios-generales-usabilidad-jakob-nielsen-02.png" loading="lazy" alt="" width="534" height="635"></p>
+<p><img src="{{ site.baseurl }}/img/10-principios-generales-usabilidad-jakob-nielsen-02.png" loading="lazy" alt="Wireframe móvil con un indicador de progreso para mostrar el estado del sistema" width="534" height="635"></p>
 
 <h2>2. Coincidencia entre el sistema y el mundo real</h2>
 <p>Este principio establece que <strong>el diseño debe hablar el idioma de los usuarios</strong>. Utilizando palabras, frases y conceptos familiares para el usuario, en lugar de jerga interna.</p>
 
 <p>Este principio creo que no está lo suficientemente bien recogido en mi listado de principios y me parece importante. Probablemente lo incorpore de algún modo próximamente.</p>
 
-<p><img src="{{ site.baseurl }}/img/10-principios-generales-usabilidad-jakob-nielsen-03.png" loading="lazy" alt="" width="265" height="540"></p>
+<p><img src="{{ site.baseurl }}/img/10-principios-generales-usabilidad-jakob-nielsen-03.png" loading="lazy" alt="Wireframe de editor de texto con barra de herramientas familiar y contenido seleccionado" width="265" height="540"></p>
 
 <h2>3. Autonomía y libertad del usuario</h2>
 <p>Los usuarios suelen realizar <strong>acciones por error</strong>. Necesitan una “salida de emergencia” claramente marcada para abandonar o deshacer la acción no deseada.</p>
 
 <p>En mis principios de “<strong>autonomía</strong>”, “<strong>protección del trabajo</strong>” y “<strong>reversibilidad</strong>” queda contemplado este principio de Nielsen.</p>
 
-<p><img src="{{ site.baseurl }}/img/10-principios-generales-usabilidad-jakob-nielsen-04.png" loading="lazy" alt="" width="450" height="318"></p>
+<p><img src="{{ site.baseurl }}/img/10-principios-generales-usabilidad-jakob-nielsen-04.png" loading="lazy" alt="Wireframe de formulario con campos desalineados y errores marcados" width="450" height="318"></p>
 
 <h2>4. Consistencia y estándares</h2>
 <p>Los usuarios no deberían tener que preguntarse si diferentes palabras, situaciones o acciones significan lo mismo. Debemos <strong>ajustarnos a las convenciones de la plataforma y la industria</strong>.</p>
 
 <p>En mis principios explico que las aplicaciones deben ser <strong>consistentes</strong> con las expectativas de los usuarios, es decir, con su aprendizaje previo. Y no sólo eso, las aplicaciones también tienen que ser consistentes internamente, en sus diferentes áreas o módulos.</p>
 
-<p><img src="{{ site.baseurl }}/img/10-principios-generales-usabilidad-jakob-nielsen-05.png" loading="lazy" alt="" width="722" height="431"></p>
+<p><img src="{{ site.baseurl }}/img/10-principios-generales-usabilidad-jakob-nielsen-05.png" loading="lazy" alt="Wireframe de menú con la opción Deshacer visible para permitir recuperar acciones" width="722" height="431"></p>
 
 <h2>5. Prevención de errores</h2>
 <p>Los buenos mensajes de error son importantes, pero los mejores diseños se esfuerzan en <strong>evitar que los usuarios cometan errores</strong>.</p>
 
 <p>He escrito en varias ocasiones sobre este punto, sobre todo con relación a los formularios, pero es un principio que no tengo explícitamente incluido en mi lista. Probablemente lo incorpore próximamente.</p>
 
-<p><img src="{{ site.baseurl }}/img/10-principios-generales-usabilidad-jakob-nielsen-06.png" loading="lazy" alt="" width="521" height="275"></p>
+<p><img src="{{ site.baseurl }}/img/10-principios-generales-usabilidad-jakob-nielsen-06.png" loading="lazy" alt="Teléfono mostrando una pantalla de diseño, como ejemplo de estética y usabilidad" width="521" height="275"></p>
 
 <h2>6. Reconocer en lugar de recordar</h2>
 <p>Este principio lo recojo en mi listado bajo la denominación de <strong>interfaz visible</strong>. Se deben evitar elementos invisibles de navegación que han de ser inferidos por los usuarios, menús desplegables, indicaciones ocultas, etc.</p>
 
 <p>La causa de este principio está en que <strong>los humanos tenemos una memoria a corto plazo bastante limitada</strong>. Por eso son mejores los interfaces en los cuales la información requerida está visible o es fácilmente recuperable cuando sea necesario, en lugar de tener que recordarla.</p>
 
-<p><img src="{{ site.baseurl }}/img/10-principios-generales-usabilidad-jakob-nielsen-07.png" loading="lazy" alt="" width="265" height="540"></p>
+<p><img src="{{ site.baseurl }}/img/10-principios-generales-usabilidad-jakob-nielsen-07.png" loading="lazy" alt="Wireframe con mensaje de error There is no Internet connection y sugerencias para soluciónarlo" width="265" height="540"></p>
 
 <h2>7. Flexibilidad y eficiencia de uso</h2>
 <p>La <strong>flexibilidad</strong> hace alusión a que se debería permitir que los usuarios puedan <strong>personalizar</strong> tanto <strong>el contenido</strong> como <strong>la funcionalidad</strong> a sus necesidades individuales.</p>
@@ -72,7 +72,7 @@ tags:          [leyes y principios de experiencia de usuario (UX) y usabilidad, 
 
 <p>Este principio es muy interesante y lo tengo parcialmente recogido en mi lista de principios. Sin embargo, tengo dudas de si debería incorporarlo en los mismos términos que Nielsen porque no soluciona un problema de usabilidad como tal, sino que sugiere que se utilicen mecanismos adicionales para mejorar la productividad de los usuarios.</p>
 
-<p><img src="{{ site.baseurl }}/img/10-principios-generales-usabilidad-jakob-nielsen-08.png" loading="lazy" alt="" width="165" height="130"></p>
+<p><img src="{{ site.baseurl }}/img/10-principios-generales-usabilidad-jakob-nielsen-08.png" loading="lazy" alt="Wireframe de formulario con ayuda contextual junto al campo de contraseña" width="165" height="130"></p>
 
 <h2>8. Diseño estético y minimalista</h2>
 <p>Las interfaces no deben contener información que sea irrelevante o que rara vez se necesite. Cada unidad adicional de información compite con las demás unidades de información y disminuye su visibilidad relativa.</p>
@@ -81,7 +81,7 @@ tags:          [leyes y principios de experiencia de usuario (UX) y usabilidad, 
 
 <p>Sobre la <a href="{{ site.baseurl }}{% post_url 2020-10-25-relacion-estetica-usabilidad %}">relación sinérgica que existe entre los diseños estéticamente agradables y la usabilidad</a>, escribí un post específico a finales del 2020.</p>
 
-<p><img src="{{ site.baseurl }}/img/10-principios-generales-usabilidad-jakob-nielsen-09.jpg" loading="lazy" alt="" width="722" height="411"></p>
+<p><img src="{{ site.baseurl }}/img/10-principios-generales-usabilidad-jakob-nielsen-09.jpg" loading="lazy" alt="Menú contextual con acciones Copiar, Pegar, Cortar, Deshacer y Rehacer" width="722" height="411"></p>
 
 <h2>9. Ayudar a los usuarios a reconocer, diagnosticar y recuperarse de los errores</h2>
 <p>Los <strong>mensajes de error</strong> deben expresarse en un <strong>lenguaje sencillo</strong> (sin códigos de error), indicar con precisión el problema y <strong>sugerir una solución</strong> de manera constructiva.</p>
@@ -90,7 +90,7 @@ tags:          [leyes y principios de experiencia de usuario (UX) y usabilidad, 
 
 <p>He escrito en detalle sobre <a href="{{ site.baseurl }}{% post_url 2021-02-06-formularios-usables-mensajes-de-error %}">cómo mostrar los mensajes de error en los formularios</a>, pero no tengo incorporado este principio a mi listado general. Probablemente lo incorpore próximamente.</p>
 
-<p><img src="{{ site.baseurl }}/img/10-principios-generales-usabilidad-jakob-nielsen-10.png" loading="lazy" alt="" width="635" height="414"></p>
+<p><img src="{{ site.baseurl }}/img/10-principios-generales-usabilidad-jakob-nielsen-10.png" loading="lazy" alt="Wireframe de formulario con campos separados para fecha de nacimiento" width="635" height="414"></p>
 
 <h2>10. Ayuda y documentación</h2>
 <p>Es <strong>mejor si el sistema no necesita ninguna explicación</strong> adicional. Sin embargo, puede ser necesario proporcionar documentación para ayudar a los usuarios a comprender cómo completar sus tareas.</p>
@@ -99,7 +99,7 @@ tags:          [leyes y principios de experiencia de usuario (UX) y usabilidad, 
 
 <p>En mi listado de principios afirmo que las aplicaciones deben requerir un <strong>mínimo proceso de aprendizaje</strong> y deben poder ser utilizadas desde el primer momento. Sin embargo, es cierto que en ocasiones (especialmente en aplicaciones complejas) es necesario aportar algo de ayuda al usuario. <strong>Mejor</strong> que sea <strong>contextual que general</strong> y siempre <strong>orientada a la resolución de la tarea</strong> del usuario. Probablemente completaré mis principios con algo más de información sobre el tema de la ayuda y la documentación.</p>
 
-<p><img src="{{ site.baseurl }}/img/10-principios-generales-usabilidad-jakob-nielsen-11.png" loading="lazy" alt="" width="521" height="431"></p>
+<p><img src="{{ site.baseurl }}/img/10-principios-generales-usabilidad-jakob-nielsen-11.png" loading="lazy" alt="Wireframe móvil con ayuda contextual desplegada dentro de una pantalla pequeña" width="521" height="431"></p>
 
 <p>Y hasta aquí la comparación entre <a href="{{ site.baseurl }}{% post_url 2017-01-18-principios-usabilidad %}">mi listado de principios</a> y <a href="https://www.nngroup.com/articles/ten-usability-heuristics/" target="_blank" rel="noopener noreferrer">el de Jakob Nielsen</a>. Gracias por haberla leído. Como habrás podido comprobar, la relectura (años después) de los heurísticos de Nielsen me ha servido para detectar algunos puntos de mejora para mi listado.</p>
 

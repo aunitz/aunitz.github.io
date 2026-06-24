@@ -18,7 +18,7 @@ tags:          [leyes y principios de experiencia de usuario (UX) y usabilidad, 
 
 <p>Aplicado al diseño de experiencia de usuario (UX) y la usabilidad, este principio enfatiza la importancia de desarrollar interfaces que no solo cumplan con <a href="{{ site.baseurl }}{% post_url 2018-01-21-ley-de-jakob %}">estándares de diseño</a> claros y consistentes, sino que también sean capaces de interactuar eficazmente con una amplia gama de comportamientos de usuario. Esto significa diseñar experiencias que puedan acomodar diferencias en cómo los usuarios acceden y utilizan los productos, desde variaciones en la entrada de datos hasta distintas formas de navegación.</p>
 
-<p><img src="{{ site.baseurl }}/img/principio-de-robustez-01.jpg" loading="lazy" alt="" width="720" height="480"></p>
+<p><img src="{{ site.baseurl }}/img/principio-de-robustez-01.jpg" loading="lazy" alt="Roca suspendida en equilibrio sobre un paisaje, como metáfora de robustez" width="720" height="480"></p>
 
 <p>Hay tres aspectos fundamentales en los que el Principio de Robustez pone el foco. Los repasamos a continuación con algo más de detalle.</p>
 
@@ -26,7 +26,7 @@ tags:          [leyes y principios de experiencia de usuario (UX) y usabilidad, 
 
 <p>Siguiendo el Principio de Robustez, el diseño UX se enfoca en ser inclusivo, asegurando que los productos sean utilizables y <a href="{{ site.baseurl }}{% post_url 2019-02-22-accesibilidad-web-al-alcance-de-todos %}">accesibles</a> para personas con una amplia gama de habilidades, preferencias y contextos. Esto implica considerar desde el principio diversas interacciones, como el uso de lectores de pantalla por personas con discapacidad visual o la adaptabilidad de interfaces para diferentes tamaños de pantalla.</p>
 
-<p><img src="{{ site.baseurl }}/img/principio-de-robustez-02.jpg" loading="lazy" alt="" width="720" height="473"></p>
+<p><img src="{{ site.baseurl }}/img/principio-de-robustez-02.jpg" loading="lazy" alt="Persona usando un teclado braille conectado a un ordenador" width="720" height="473"></p>
 
 <h3>Tolerancia a errores</h3>
 
@@ -36,7 +36,7 @@ tags:          [leyes y principios de experiencia de usuario (UX) y usabilidad, 
 
 <p>El principio también aboga por diseñar para la flexibilidad en cómo los usuarios interactúan con los productos digitales. Reconociendo que los usuarios pueden preferir diferentes métodos de interacción (tocar, deslizar, usar comandos de voz), un enfoque robusto en UX implica ofrecer múltiples vías para realizar acciones o acceder a información, mejorando la accesibilidad y la satisfacción del usuario.</p>
 
-<p><img src="{{ site.baseurl }}/img/principio-de-robustez-03.jpg" loading="lazy" alt="" width="720" height="367"></p>
+<p><img src="{{ site.baseurl }}/img/principio-de-robustez-03.jpg" loading="lazy" alt="Mesa con herramientas, lápices y notas alrededor de una tarjeta central" width="720" height="367"></p>
 
 <h2>Beneficios del Principio de Robustez</h2>
 

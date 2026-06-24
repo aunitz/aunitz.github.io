@@ -26,17 +26,17 @@ tags:          [leyes y principios de experiencia de usuario (UX) y usabilidad]
 
 <p>Veamos un ejemplo:</p>
 
-<p><img src="{{ site.baseurl }}/img/ley-de-direccion-01.gif" loading="lazy" alt="" width="720" height="406"></p>
+<p><img src="{{ site.baseurl }}/img/ley-de-direccion-01.gif" loading="lazy" alt="Menú horizontal de Microsoft Teams con la sección Equipos seleccionada" width="720" height="406"></p>
 
 <p>Para hacer que los menús sean más usables tenemos varias opciones a nuestra disposición.</p>
 
 <p>Por ejemplo, mantener los menús desplegables lo más cortos posibles y con “túneles” lo más anchos posibles. Además, podemos aplicar un breve retraso de tiempo entre el desplazamiento del ratón fuera del túnel y la desaparición del menú para permitir movimientos en diagonal que no provoquen un error. Ambas soluciones las ponemos ver en acción en este menú de la web corporativa de Microsoft.</p>
 
-<p><img src="{{ site.baseurl }}/img/ley-de-direccion-02.gif" loading="lazy" alt="" width="720" height="406"></p>
+<p><img src="{{ site.baseurl }}/img/ley-de-direccion-02.gif" loading="lazy" alt="Menú desplegable de Microsoft Teams con opciones de navegación y administración" width="720" height="406"></p>
 
 <p>Una solución alternativa a los menús desplegables jerárquicos la constituyen los llamados “mega menús” o menús rectangulares.  Los cuales permiten el movimiento libre del puntero dentro de un amplio espacio en dos dimensiones. Podemos ver también un ejemplo de mega menú en la web corporativa de Microsoft.</p>
 
-<p><img src="{{ site.baseurl }}/img/ley-de-direccion-03.png" loading="lazy" alt="" width="720" height="308"></p>
+<p><img src="{{ site.baseurl }}/img/ley-de-direccion-03.png" loading="lazy" alt="Pantalla de configuración de Microsoft Teams abierta en una ventana modal" width="720" height="308"></p>
 
 <p>En los mega menús deja de aplicarse la ley de dirección, pero debemos vigilar la <a href="{{ site.baseurl }}{% post_url 2018-01-21-ley-de-fitts %}"> ley de Fitts</a> y evitar objetivos demasiado pequeños sobre los que interactuar.</p>
 
@@ -46,13 +46,13 @@ tags:          [leyes y principios de experiencia de usuario (UX) y usabilidad]
 
 <p>Ejemplo de controles deslizantes densos en Skyscanner.</p>
 
-<p><img src="{{ site.baseurl }}/img/ley-de-direccion-04.gif" loading="lazy" alt="" width="272" height="362"></p>
+<p><img src="{{ site.baseurl }}/img/ley-de-direccion-04.gif" loading="lazy" alt="Panel de filtros con deslizadores para hora de salida, llegada y duración del vuelo" width="272" height="362"></p>
 
 <p>Debemos plantearnos si existen soluciones mejores para este tipo de interacciones. Como pueden ser unos sencillos campos de texto.</p>
 
 <p>En la web de Airbnb por ejemplo combinan los controles deslizantes con campos de texto libres.</p>
 
-<p><img src="{{ site.baseurl }}/img/ley-de-direccion-05.png" loading="lazy" alt="" width="473" height="291"></p>
+<p><img src="{{ site.baseurl }}/img/ley-de-direccion-05.png" loading="lazy" alt="Selector de rango de precios con histograma y dos controles deslizantes" width="473" height="291"></p>
 
 <h2>Las barras de progreso</h2>
 
@@ -60,4 +60,4 @@ tags:          [leyes y principios de experiencia de usuario (UX) y usabilidad]
 
 <p>En YouTube amplían el tamaño de la barra cuando nos situamos sobre ella. Facilitando la interacción.</p>
 
-<p><img src="{{ site.baseurl }}/img/ley-de-direccion-06.gif" loading="lazy" alt="" width="622" height="93"></p>
+<p><img src="{{ site.baseurl }}/img/ley-de-direccion-06.gif" loading="lazy" alt="Reproductor de vídeo con una barra de progreso horizontal estrecha" width="622" height="93"></p>

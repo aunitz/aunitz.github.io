@@ -12,7 +12,7 @@ tags:          [buenas prácticas de usabilidad, accesibilidad]
 
 <p>Ejemplo de texto justificado:</p>
 
-<p><img src="{{ site.baseurl }}/img/mejor-alineacion-texto-web-01.jpg" loading="lazy" alt="Ejemplo de texto justificado" width="720" height="370"></p>
+<p><img src="{{ site.baseurl }}/img/mejor-alineacion-texto-web-01.jpg" loading="lazy" alt="Bloque de texto justificado con espacios irregulares entre palabras que dificultan la lectura fluida" width="720" height="370"></p>
 
 <p>Sin embargo, el <strong>texto justificado tiene, para el entorno web, algunos inconvenientes específicos</strong> que lo hacen desaconsejable. Los motivos principales son los siguientes:</p>
 <ol>
@@ -29,4 +29,4 @@ tags:          [buenas prácticas de usabilidad, accesibilidad]
 
 <p>Ejemplo de texto alineado a la izquierda:</p>
 
-<p><img src="../img/mejor-alineacion-texto-web-02.png" loading="lazy" alt="Ejemplo de texto alineado a la izquierda" width="720" height="532"></p>
+<p><img src="../img/mejor-alineacion-texto-web-02.png" loading="lazy" alt="Bloque de texto alineado a la izquierda con margen derecho irregular y espaciado más natural entre palabras" width="720" height="532"></p>

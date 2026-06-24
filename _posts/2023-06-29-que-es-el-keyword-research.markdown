@@ -12,7 +12,7 @@ tags:          [SEO/GEO]
 
 <p>Este proceso consiste en identificar y seleccionar las palabras y frases clave que los usuarios utilizan en los buscadores (por ejemplo Google) al buscar información relacionada con un tema específico.</p>
 
-<p><img src="{{ site.baseurl }}/img/que-es-el-keyword-research.jpg" loading="lazy" alt="" width="720" height="373"></p>
+<p><img src="{{ site.baseurl }}/img/que-es-el-keyword-research.jpg" loading="lazy" alt="Fichas de letras formando la palabra Keyword sobre una mesa" width="720" height="373"></p>
 
 <p>El keyword research es un proceso exhaustivo de análisis y estudio de las palabras clave más relevantes para tu nicho de mercado. Consiste en identificar y seleccionar las palabras o frases que tienen un <strong>alto volumen de búsquedas y baja competencia</strong>, lo que significa que son términos que tienen un <strong>buen potencial de tráfico</strong> y pueden generar visitas cualificadas a tu sitio web.</p>
 

@@ -24,7 +24,7 @@ tags:          [inteligencia artificial]
 <p>En <strong>2017</strong>, ocho autores que trabajaban en <strong>Google</strong> publicaron el artículo científico <a href="https://research.google/pubs/attention-is-all-you-need/" target="_blank" rel="noopener noreferrer"><em>Attention is All You Need</em></a>, en el que se introdujo una nueva arquitectura de red neuronal denominada <strong>Transformer</strong>. Este trabajo supuso un auténtico cambio de paradigma.</p>
 
 <figure>
-    <img src="{{ site.baseurl }}/img/como-funciona-la-inteligencia-artificial-01.webp" loading="lazy" alt="" width="450" height="663" class="center-block">
+    <img src="{{ site.baseurl }}/img/como-funciona-la-inteligencia-artificial-01.webp" loading="lazy" alt="Diagrama vertical de una arquitectura Transformer con capas de procesamiento de tokens" width="450" height="663" class="center-block">
     <figcaption>
         Arquitectura del Transformer
     </figcaption>
@@ -32,7 +32,7 @@ tags:          [inteligencia artificial]
 
 <p>Los investigadores de Google propusieron la arquitectura Transformer en un contexto muy ligado a la traducción automática (Google Translate). Sin embargo, fue <strong>OpenAI</strong> quien dio el siguiente paso al convertir esta arquitectura en un modelo generativo de lenguaje, creando <strong>GPT</strong> en <strong>2018</strong>.</p>
 
-<p><img src="{{ site.baseurl }}/img/como-funciona-la-inteligencia-artificial-04.webp" loading="lazy" alt="" width="720" height="405"></p>
+<p><img src="{{ site.baseurl }}/img/como-funciona-la-inteligencia-artificial-04.webp" loading="lazy" alt="Ilustración con el texto GPT Generative Pretrained Transformer sobre fondo oscuro" width="720" height="405"></p>
 
 <h2>Cómo genera texto un LLM</h2>
 
@@ -44,7 +44,7 @@ tags:          [inteligencia artificial]
 
 <p>el modelo tiene en cuenta simultáneamente “invierno”, “mucho”, “frío” y “blanca”, relacionándolas entre sí para <strong>predecir matemáticamente la siguiente palabra</strong>. En este caso, la predicción correcta será “blanca → nieve”, y no, por ejemplo, “blanca → camiseta”, “blanca → harina” o “blanca → nube”. Al considerar todas las palabras previas a la vez, la probabilidad de acierto aumenta de forma significativa.</p>
 
-<p><img src="{{ site.baseurl }}/img/como-funciona-la-inteligencia-artificial-02.webp" loading="lazy" alt="" width="734" height="327"></p>
+<p><img src="{{ site.baseurl }}/img/como-funciona-la-inteligencia-artificial-02.webp" loading="lazy" alt="Mapa de relaciones entre palabras cercanas en un espacio semántico" width="734" height="327"></p>
 
 <p>Ahora bien, simplificando mucho, <strong>todo es una cuestión de probabilidades y matemáticas</strong>. El LLM <strong>no piensa</strong>, <strong>no entiende</strong> lo que dice y <strong>no sabe si lo que genera es verdadero o falso</strong>.</p>
 
@@ -60,7 +60,7 @@ tags:          [inteligencia artificial]
 
 <p>Un Transformer convierte las palabras en números, más concretamente en <strong>vectores</strong>. Por ejemplo, la palabra <em>médico</em> podría estar definida por un vector de tres dimensiones como (6, 8, 1), y la palabra <em>paciente</em> por el vector (8, 6, 1).</p>
 
-<p><img src="{{ site.baseurl }}/img/como-funciona-la-inteligencia-artificial-03.webp" loading="lazy" alt="" width="686" height="600"></p>
+<p><img src="{{ site.baseurl }}/img/como-funciona-la-inteligencia-artificial-03.webp" loading="lazy" alt="Diagrama de vectores que compara relaciones entre palabras como París, Francia, Roma e Italia" width="686" height="600"></p>
 
 <p>Todas las palabras se representan en un espacio matemático. Las palabras conceptualmente cercanas —como <em>médico</em> y <em>paciente</em>— tienen entre sí un ángulo menor que palabras menos relacionadas, como <em>paciente</em> e <em>invierno</em>. Los conceptos cercanos tienden a quedar “próximos” en ese espacio. Lo que hace un LLM, simplificando mucho, es calcular estas distancias entre las palabras y, a partir de ahí, construir su respuesta.</p>
 

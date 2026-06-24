@@ -13,7 +13,7 @@ tags:          [leyes y principios de experiencia de usuario (UX) y usabilidad]
 
 <p><strong>La regla afirma que, en la mayoría de las redes sociales y comunidades online, el 90% de los usuarios se dedica a consumir contenido, el 9% contribuyen de vez en cuando y el 1% restantes de los usuarios generan la mayor parte del contenido.</strong></p>
 
-<p><img src="{{ site.baseurl }}/img/regla-del-90-9-1-01.png" loading="lazy" alt="" width="670" height="411"></p>
+<p><img src="{{ site.baseurl }}/img/regla-del-90-9-1-01.png" loading="lazy" alt="Pirámide de participación de la regla 90-9-1 con consumidores, contribuidores y generadores de contenido" width="670" height="411"></p>
 
 <p>Esta regla de participación es muy aproximada. Y en muchos casos, el porcentaje de participantes es aún menor.</p>
 
@@ -27,7 +27,7 @@ tags:          [leyes y principios de experiencia de usuario (UX) y usabilidad]
 
 <p>El <strong>gran problema que genera la desigualdad participativa</strong> es que los usuarios que participan generando reseñas, comentarios, opiniones, enlaces a otras webs, etc. <strong>no son representativos de la mayoría de los usuarios</strong>. En la mayor parte de los sitios web abiertos a la participación, sólo estarás escuchando la voz del 1% de los usuarios.</p>
 
-<p><img src="{{ site.baseurl }}/img/regla-del-90-9-1-02.jpg" loading="lazy" alt="" width="722" height="411"></p>
+<p><img src="{{ site.baseurl }}/img/regla-del-90-9-1-02.jpg" loading="lazy" alt="Mesa con varios dispositivos y manos trabajando en contenidos digitales" width="722" height="411"></p>
 
 <h2>Cómo mejorar la desigualdad participativa</h2>
 

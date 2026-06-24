@@ -12,7 +12,7 @@ tags:          [legislación, accesibilidad]
 
 <p><strong>Aviso sobre este artículo:</strong> aunque tengo conocimientos académicos en derecho, no soy jurista ni especialista en la materia, por lo que algunas afirmaciones podrían contener imprecisiones o interpretaciones erróneas. Si detectas alguna, te invito a comentarlo en <a href="https://www.linkedin.com/posts/aunitz_accesibilidad-digital-legislaci%C3%B3n-vigente-activity-7308802245586771968-d3_2" target="_blank" rel="noopener noreferrer">esta publicación de LinkedIn</a>. Actualizaré el artículo si resulta pertinente. ¡Muchas gracias de antemano por tu colaboración!</p>
 
-<p><img src="{{ site.baseurl }}/img/accesibilidad-digital-legislacion-espana-01.jpg" loading="lazy" alt="" width="720" height="404"></p>
+<p><img src="{{ site.baseurl }}/img/accesibilidad-digital-legislacion-espana-01.jpg" loading="lazy" alt="Icono de accesibilidad rodeado por estrellas de la Unión Europea" width="720" height="404"></p>
 
 <p>El tema de la legislación sobre accesibilidad digital en España es complejo. Esta publicación pretende ofrecer un resumen lo más breve, conciso y práctico posible, que permita conocer de forma rápida qué normativa debe aplicarse en cada proyecto digital.</p>
 
@@ -20,7 +20,7 @@ tags:          [legislación, accesibilidad]
 
 <h2>Obligaciones en la Administración pública</h2>
 
-<p><img src="{{ site.baseurl }}/img/accesibilidad-digital-legislacion-espana-02.jpg" loading="lazy" alt="" width="720" height="410"></p>
+<p><img src="{{ site.baseurl }}/img/accesibilidad-digital-legislacion-espana-02.jpg" loading="lazy" alt="Texto The Public proyectado en una pared, aludiendo al sector público" width="720" height="410"></p>
 
 <h3>Resumen</h3>
 
@@ -61,7 +61,7 @@ tags:          [legislación, accesibilidad]
 
 <h2>Obligaciones en el sector privado</h2>
 
-<p><img src="{{ site.baseurl }}/img/accesibilidad-digital-legislacion-espana-03.jpg" loading="lazy" alt="" width="720" height="410"></p>
+<p><img src="{{ site.baseurl }}/img/accesibilidad-digital-legislacion-espana-03.jpg" loading="lazy" alt="Fachada de un edificio institucional con muchas ventanas" width="720" height="410"></p>
 
 <h3>Resumen</h3>
 
@@ -123,7 +123,7 @@ tags:          [legislación, accesibilidad]
 
 <p><strong>Resumen: son lo mismo y equivalen al nivel AA de las WCAG 2.1, aunque incorporan algunos requisitos adicionales.</strong></p>
 
-<p><img src="{{ site.baseurl }}/img/accesibilidad-digital-legislacion-espana-04.jpg" loading="lazy" alt="" width="720" height="404"></p>
+<p><img src="{{ site.baseurl }}/img/accesibilidad-digital-legislacion-espana-04.jpg" loading="lazy" alt="Pantalla con el texto WCAG 2.1 Web Content Accessibility Guidelines" width="720" height="404"></p>
 
 <p>La <strong>norma EN 301 549</strong> es promulgada por los organismos europeos de normalización: ETSI (European Telecommunications Standards Institute), CEN (European Committee for Standardization) y CENELEC (European Committee for Electrotechnical Standardization). Estos organismos desarrollan y mantienen la norma conjuntamente, estableciendo requisitos técnicos para garantizar la accesibilidad de productos y servicios digitales en Europa.</p>
 
@@ -135,7 +135,7 @@ tags:          [legislación, accesibilidad]
 
 <p>En la Asamblea General de las Naciones Unidas del 13 de diciembre de 2006 se aprobó la "<a href="https://www.un.org/esa/socdev/enable/documents/tccconvs.pdf" target="_blank" rel="noopener noreferrer">Convención sobre los derechos de las personas con discapacidad (PDF, 230 KB)</a>". Este acuerdo merece ser mencionado porque supuso un hito en la protección de los derechos de las personas con discapacidad, y en él se encuentra el origen de muchas de las leyes actuales sobre accesibilidad.</p>
 
-<p><img src="{{ site.baseurl }}/img/accesibilidad-digital-legislacion-espana-05.jpg" loading="lazy" alt="" width="720" height="410"></p>
+<p><img src="{{ site.baseurl }}/img/accesibilidad-digital-legislacion-espana-05.jpg" loading="lazy" alt="Edificio de Naciones Unidas en Ginebra como referencia a organismos internacionales" width="720" height="410"></p>
 
 <h3>Principales aportaciones de la Convención</h3>
 

@@ -14,7 +14,7 @@ tags:          [leyes y principios de experiencia de usuario (UX) y usabilidad, 
 
 <p>No se atribuye el descubrimiento de la parálisis por análisis a una sola persona. El término se ha utilizado durante siglos para describir la inacción causada por un exceso de análisis. En sus diálogos, Sócrates criticaba la búsqueda excesiva de conocimiento como un obstáculo para la acción. Otro filósofo griego, Aristóteles, en su obra "Ética a Nicómaco", habla del "justo medio" y cómo la excesiva deliberación puede llevar a la indecisión.</p>
 
-<p><img src="{{ site.baseurl }}/img/paralisis-por-analisis-01.jpg" loading="lazy" alt="" width="720" height="400"></p>
+<p><img src="{{ site.baseurl }}/img/paralisis-por-analisis-01.jpg" loading="lazy" alt="Laberinto tridimensional como metáfora de la parálisis por análisis" width="720" height="400"></p>
 
 <p>En resumen, no hay un único "descubridor" de la parálisis por análisis. Se trata de un fenómeno que ha sido reconocido y descrito por filósofos, escritores, psicólogos y otros expertos a lo largo de la historia.</p>
 
@@ -26,7 +26,7 @@ tags:          [leyes y principios de experiencia de usuario (UX) y usabilidad, 
 
 <p>La parálisis por análisis describe un <strong>estado mental</strong> en el que la sobrecarga de información o el exceso de opciones disponibles impiden tomar decisiones o actuar. Este fenómeno surge cuando, ante la necesidad de elegir la mejor opción posible, un individuo o equipo se ve atrapado en un ciclo interminable de análisis y evaluación, buscando constantemente más datos o considerando infinitas variables. En lugar de facilitar una decisión informada, esta sobreabundancia de análisis conduce a la indecisión y, en última instancia, a la inacción.</p>
 
-<p><img src="{{ site.baseurl }}/img/paralisis-por-analisis-02.jpg" loading="lazy" alt="" width="720" height="411"></p>
+<p><img src="{{ site.baseurl }}/img/paralisis-por-analisis-02.jpg" loading="lazy" alt="Persona abrumada en un escritorio lleno de información y pantallas" width="720" height="411"></p>
 
 <p>En la raíz de la parálisis por análisis a menudo subyace el miedo al error o al fracaso, impulsado por la <strong>creencia de que existe una solución perfecta</strong> que se puede alcanzar con suficiente deliberación. Sin embargo, <strong>esta búsqueda de la perfección puede ser contraproducente</strong>, ya que el tiempo y los recursos se consumen en el proceso de toma de decisiones, en lugar de avanzar hacia objetivos concretos y la iteración basada en feedback real.</p>
 
@@ -58,7 +58,7 @@ tags:          [leyes y principios de experiencia de usuario (UX) y usabilidad, 
 
 <p>Esta aproximación promueve la idea de que no todas las decisiones tienen que ser perfectas desde el principio, sino que pueden ser ajustadas y mejoradas con el tiempo a través de ciclos sucesivos de retroalimentación y aprendizaje. Al centrarse en hacer avances incrementales en lugar de buscar la solución perfecta de una sola vez, se puede avanzar más rápidamente.</p>
 
-<p><img src="{{ site.baseurl }}/img/paralisis-por-analisis-03.jpg" loading="lazy" alt="" width="720" height="411"></p>
+<p><img src="{{ site.baseurl }}/img/paralisis-por-analisis-03.jpg" loading="lazy" alt="Escenario de trabajo con muchas mesas y luces, representando complejidad y exceso de opciones" width="720" height="411"></p>
 
 <h2>Conclusión</h2>
 

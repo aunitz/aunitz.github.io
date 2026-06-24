@@ -15,7 +15,7 @@ tags:          [inteligencia artificial]
 
 <p>Sin embargo, al profundizar en la literatura técnica aparece una afirmación recurrente: los LLM son una <strong>caja negra</strong>. Algunos investigadores sostienen incluso que resulta imposible anticipar con precisión qué responderá el modelo ante una instrucción concreta.</p>
 
-<p><img src="{{ site.baseurl }}/img/es-la-inteligencia-artificial-generativa-una-caja-negra-01.svg" loading="lazy" alt="" width="750" height="422"></p>
+<p><img src="{{ site.baseurl }}/img/es-la-inteligencia-artificial-generativa-una-caja-negra-01.svg" loading="lazy" alt="Diagrama de una caja negra con nodos de entrada y salida conectados sin mostrar el proceso interno" width="750" height="422"></p>
 
 <p>¿Estamos ante una exageración mediática o hay fundamentos técnicos sólidos detrás de esta afirmación?</p>
 
@@ -54,7 +54,7 @@ tags:          [inteligencia artificial]
 
 <p>En vez de imaginar una biblioteca con libros perfectamente ordenados, piensa en una enorme <strong>nube de asociaciones</strong>. Cada consulta activa múltiples zonas simultáneamente, y la respuesta emerge de la combinación matemática de todas ellas.</p>
 
-<p><img src="{{ site.baseurl }}/img/es-la-inteligencia-artificial-generativa-una-caja-negra-02.svg" loading="lazy" alt="" width="750" height="422"></p>
+<p><img src="{{ site.baseurl }}/img/es-la-inteligencia-artificial-generativa-una-caja-negra-02.svg" loading="lazy" alt="Ilustración de una nube de asociaciones que representa el conocimiento distribuido de un LLM" width="750" height="422"></p>
 
 <p><a href="{{ site.baseurl }}{% post_url 2026-02-21-como-funciona-la-inteligencia-artificial-generativa %}">La arquitectura Transformer</a> (la base de los LLMs actuales) opera mediante el encadenamiento de decenas o cientos de capas de funciones altamente no lineales. Esta estructura permite capturar matices lingüísticos asombrosos, pero a costa de sacrificar la interpretabilidad: <strong>para el cerebro humano, seguir el rastro de miles de millones de operaciones simultáneas es simplemente imposible</strong>.</p>
 
@@ -76,7 +76,7 @@ tags:          [inteligencia artificial]
 
 <p>Por ejemplo, añadir la coletilla <em>“Explícalo brevemente”</em> frente a <em>“Explícalo con rigor técnico”</em> no solo cambia el estilo superficial del texto: reconfigura las conexiones internas de múltiples cabezas de atención y altera el recorrido de la información a través de las capas.</p>
 
-<p><img src="{{ site.baseurl }}/img/es-la-inteligencia-artificial-generativa-una-caja-negra-03.svg" loading="lazy" alt="" width="750" height="422"></p>
+<p><img src="{{ site.baseurl }}/img/es-la-inteligencia-artificial-generativa-una-caja-negra-03.svg" loading="lazy" alt="Diagrama de sensibilidad al contexto donde pequeños cambios de prompt producen trayectorias de respuesta distintas" width="750" height="422"></p>
 
 <p>Desde fuera vemos únicamente la respuesta final. El proceso intermedio permanece opaco.</p>
 
@@ -133,7 +133,7 @@ tags:          [inteligencia artificial]
 
 <p>En la práctica, la IA generativa optimiza la naturalidad, la fluidez y la creatividad. Que el modelo no responda siempre de la misma manera no indica que sea caótico; significa que está diseñado para elegir fluidamente entre varias continuaciones plausibles.</p>
 
-<p><img src="{{ site.baseurl }}/img/es-la-inteligencia-artificial-generativa-una-caja-negra-04.svg" loading="lazy" alt="" width="750" height="422"></p>
+<p><img src="{{ site.baseurl }}/img/es-la-inteligencia-artificial-generativa-una-caja-negra-04.svg" loading="lazy" alt="Diagrama de variación probabilística en la generación de respuestas de un modelo de lenguaje" width="750" height="422"></p>
 
 <h2>¿Supone un problema esta variación?</h2>
 

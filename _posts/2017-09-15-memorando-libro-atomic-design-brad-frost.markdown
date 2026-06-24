@@ -11,7 +11,7 @@ tags:          [sistemas de diseño, memorandos]
 
 <p>El libro <strong>Atomic Design</strong> de <strong>Brad Frost</strong> fue publicado en su primera edición en 2013. Desde entonces, se ha convertido en un libro de referencia para la creación de <strong>sistemas de diseño</strong>.</p>
 
-<p><img src="{{ site.baseurl }}/img/atomic-design-01-ebook.jpg" loading="lazy" alt="Fotografía de una página interior del libro Atomic Design de Brad Frost" width="720" height="540"></p>
+<p><img src="{{ site.baseurl }}/img/atomic-design-01-ebook.jpg" loading="lazy" alt="Tablet mostrando una página del libro Atomic Design en formato digital" width="720" height="540"></p>
 
 <p>Este post no pretender resumir el contenido del libro. Hay otros que lo han hecho muy bien. Por ejemplo, el mismo <a href="http://bradfrost.com/blog/post/atomic-web-design/" target="_blank" rel="noopener noreferrer">Brad Frost en su blog</a>.
 </p>
@@ -167,7 +167,7 @@ páginas que contiene.</p>
 
 <p>Los desarrolladores front-end están acostumbrados a utilizar herramientas que permiten probar con facilidad distintas resoluciones de pantalla. Sin embargo, otros <i>stakeholders</i> del proyecto puede que no. Pattern Lab incorpora una herramienta para el cambio de resoluciones que puede resultar muy útil para hacer entender a ciertos <i>stakeholders</i> las propiedades <i>responsive</i> de un sistema de diseño.</p>
 
-<p><img src="{{ site.baseurl }}/img/atomic-design-02-pattern-lab-capture.png" loading="lazy" alt="Captura de pantalla del redimensionador de Pattern Lab" width="266" height="29"></p>
+<p><img src="{{ site.baseurl }}/img/atomic-design-02-pattern-lab-capture.png" loading="lazy" alt="Barra del redimensionador de Pattern Lab con opciones de tamaño desde XS hasta full" width="266" height="29"></p>
 
 <h2>El “secreto” para el éxito de un sistema de diseño: la colaboración y la comunicación</h2>
 
@@ -185,11 +185,11 @@ páginas que contiene.</p>
 
 <p>El libro incluye tres imágenes que al autor le han resultado muy útiles para hacer entender la complejidad del entorno web a los clientes, colegas, etc.</p>
 
-<p><img src="{{ site.baseurl }}/img/atomic-design-03-esto-no-es-web.png" loading="lazy" alt="Fotografía de un monitor de ordenador de escritorio: esto no es la web" width="720" height="540"></p>
+<p><img src="{{ site.baseurl }}/img/atomic-design-03-esto-no-es-web.png" loading="lazy" alt="Ilustración de un ordenador de escritorio con el texto This is not the web" width="720" height="540"></p>
 
-<p><img src="{{ site.baseurl }}/img/atomic-design-04-esto-es-web.png" loading="lazy" alt="Fotografía de múltiples dispositivos de distintos tamaños: esto es la web" width="720" height="540"></p>
+<p><img src="{{ site.baseurl }}/img/atomic-design-04-esto-es-web.png" loading="lazy" alt="Ilustración de varios dispositivos conectados con el texto This is the web" width="720" height="540"></p>
 
-<p><img src="{{ site.baseurl }}/img/atomic-design-05-esto-sera-web.png" loading="lazy" alt="Fotografía de múltiples dispositivos de distintos tamaños y signos de interrogación: esto será la web" width="720" height="540"></p>
+<p><img src="{{ site.baseurl }}/img/atomic-design-05-esto-sera-web.png" loading="lazy" alt="Ilustración de múltiples dispositivos rodeados de interrogantes con el texto This will be the web" width="720" height="540"></p>
 
 <h2>Considerar el rendimiento como un principio esencial del diseño</h2>
 
@@ -220,7 +220,7 @@ páginas que contiene.</p>
 <p>Desarrollar un sistema de diseño es un <a href="http://atomicdesign.bradfrost.com/chapter-4/#an-iterative-iterative-iterative-iterative-process" target="_blank" rel="noopener noreferrer">proceso iterativo similar a esculpir una escultura</a>.</p>
 
 <figure>
-    <img src="{{ site.baseurl }}/img/atomic-design-06-escultor.jpg" loading="lazy" alt="Fotografía de un escultor tallando una escultura" width="720" height="703">
+    <img src="{{ site.baseurl }}/img/atomic-design-06-escultor.jpg" loading="lazy" alt="Escultor tallando una figura, como metáfora del trabajo iterativo de diseño" width="720" height="703">
     <figcaption>Créditos de la imagen: <a href="https://flic.kr/p/dLrf6w" target="_blank" rel="noopener noreferrer">Mike Beauregard en Flickr</a></figcaption>
 </figure>
 

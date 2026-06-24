@@ -12,7 +12,7 @@ tags:          [métodos de investigación UX]
 
 <p>Estos test se pueden realizar en campo, en remoto o en un laboratorio de <a href="{{ site.baseurl }}{% post_url 2022-10-10-que-es-la-usabilidad-de-una-aplicacion %}">usabilidad</a>.</p>
 
-<p><img src="{{ site.baseurl }}/img/que-es-un-test-con-personas-usuarias-01.jpg" loading="lazy" alt="" width="722" height="411"></p>
+<p><img src="{{ site.baseurl }}/img/que-es-un-test-con-personas-usuarias-01.jpg" loading="lazy" alt="Dos personas observando en un portátil una sesión de test de usabilidad" width="722" height="411"></p>
 
 <p>La prueba se realiza en un entorno controlado donde se monitoriza la actividad de los usuarios sobre la aplicación y (opcionalmente) se graba en video la sesión. Este material es analizado después por expertos en UX para detectar problemas de usabilidad más sutiles que pudieron no manifestarse en la fase de conceptualización y, a su vez, se contrastan los problemas que sí se detectaron.</p>
 
@@ -22,7 +22,7 @@ tags:          [métodos de investigación UX]
 
 <p>Uno o varios evaluadores observan la actividad del usuario, toman notas y asisten al usuario en lo que pueda necesitar. La sesión es monitorizada y registrada (previa autorización por escrito) tanto en audio como en video para su posterior análisis y evaluación.</p>
 
-<p><img src="{{ site.baseurl }}/img/que-es-un-test-con-personas-usuarias-02.jpg" loading="lazy" alt="" width="722" height="411"></p>
+<p><img src="{{ site.baseurl }}/img/que-es-un-test-con-personas-usuarias-02.jpg" loading="lazy" alt="Persona usando una aplicación de compra en un teléfono móvil" width="722" height="411"></p>
 
 <p>Una vez completadas las tareas se realiza una entrevista final y se le entrega un cuestionario de satisfacción.</p>
 
@@ -34,7 +34,7 @@ tags:          [métodos de investigación UX]
 
 <p>Como puede verse en esta gráfica publicada por Jakob Nielsen en el artículo “<a href="https://www.nngroup.com/articles/why-you-only-need-to-test-with-5-users/" target="_blank" rel="noopener noreferrer">Why You Only Need to Test with 5 Users</a>” en el año 2000, a medida que se agregan más usuarios, se aprende menos porque los problemas encontrados se irán repitiendo cada vez con mayor frecuencia.</p>
 
-<p><img src="{{ site.baseurl }}/img/que-es-un-test-con-personas-usuarias-03.gif" loading="lazy" alt="" width="631" height="377"></p>
+<p><img src="{{ site.baseurl }}/img/que-es-un-test-con-personas-usuarias-03.gif" loading="lazy" alt="Curva de Nielsen que muestra el porcentaje de problemas de usabilidad encontrados según el número de usuarios testados" width="631" height="377"></p>
 
 <p>La gráfica muestra que con 15 usuarios logramos detectar el 100% de los problemas de usabilidad. Sin embargo, Jakob Nielsen recomienda limitarse a 5 usuarios para optimizar el ratio de coste-beneficio. De hecho, 3 usuarios serían suficientes para detectar más de la mitad de los problemas.</p>
 

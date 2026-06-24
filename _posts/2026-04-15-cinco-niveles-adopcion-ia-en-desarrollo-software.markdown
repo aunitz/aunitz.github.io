@@ -11,7 +11,7 @@ tags:          [inteligencia artificial, desarrollo de soluciones digitales]
 
 <p>En los últimos años, el emprendedor Dan Shapiro se ha convertido en una voz influyente en el ámbito de la IA generativa. Recientemente, el 23 de enero de 2026, ha propuesto un <a href="https://www.danshapiro.com/blog/2026/01/the-five-levels-from-spicy-autocomplete-to-the-software-factory/" target="_blank" rel="noopener noreferrer">modelo de madurez de cinco niveles para el desarrollo de software asistido por IA</a> que ha tenido bastante repercusión; o, más bien, de seis, ya que está indexado desde cero.</p>
 
-<p><img src="{{ site.baseurl }}/img/cinco-niveles-adopcion-ia-en-desarrollo-software-01.webp" loading="lazy" alt="" width="720" height="330"></p>
+<p><img src="{{ site.baseurl }}/img/cinco-niveles-adopcion-ia-en-desarrollo-software-01.webp" loading="lazy" alt="Ilustración de una persona pasando de escribir código a dirigir un resultado, representando la evolución en el uso de IA" width="720" height="330"></p>
 
 <p>Me ha parecido interesante porque describe un proceso de <strong>transición</strong> de los desarrolladores <strong>desde un rol de ejecutor a uno de gestor</strong>. Un planteamiento que va en la misma línea de lo que han identificado Martin Fowler y el resto de los participantes en el retiro sobre el futuro del desarrollo de software en Utah el pasado mes de febrero y del que <a href="{{ site.baseurl }}{% post_url 2026-04-14-como-sera-futuro-ingenieria-software-en-era-ia %}">escribí un post recientemente</a>.</p>
 
@@ -26,11 +26,11 @@ tags:          [inteligencia artificial, desarrollo de soluciones digitales]
   <li><strong>Nivel 5: <em>The Dark Software Factory</em>.</strong> El proceso de desarrollo de software se convierte en una "caja negra" que transforma especificaciones directamente en software funcional sin intervención humana. En este nivel, <strong>nadie lee nunca el código generado</strong> por la IA; el enfoque humano se centra en diseñar el sistema y en herramientas de simulación y pruebas para asegurar que funciona.</li>
 </ul>
 
-<p><img src="{{ site.baseurl }}/img/cinco-niveles-adopcion-ia-en-desarrollo-software-02.webp" loading="lazy" alt="" width="720" height="321"></p>
+<p><img src="{{ site.baseurl }}/img/cinco-niveles-adopcion-ia-en-desarrollo-software-02.webp" loading="lazy" alt="Ilustración de una persona conectando un documento con un sistema de IA y una interfaz de resultado" width="720" height="321"></p>
 
 <p>En el —muy recomendable— <a href="https://webreactiva.substack.com/p/los-agentes-de-ia-mienten-pero-nosotros" target="_blank" rel="noopener noreferrer">podcast de Daniel Primo (Web Reactiva)</a> se hicieron eco de este modelo de niveles de adopción y lanzaron una encuesta entre los oyentes que arrojó los siguientes resultados:</p>
 
-<p><img src="{{ site.baseurl }}/img/cinco-niveles-adopcion-ia-en-desarrollo-software-03.svg" loading="lazy" alt="" width="720" height="450"></p>
+<p><img src="{{ site.baseurl }}/img/cinco-niveles-adopcion-ia-en-desarrollo-software-03.svg" loading="lazy" alt="Gráfico de encuesta sobre fases de adopción de IA en desarrollo de software, con mayor porcentaje en la fase No escribo el código" width="720" height="450"></p>
 
 <p>Los participantes en el episodio (<a href="https://www.linkedin.com/in/danielprimo/" target="_blank" rel="noopener noreferrer">Daniel Primo</a> y <a href="https://jmgomez.dev/" target="_blank" rel="noopener noreferrer">José Manuel Gómez</a>) se sitúan a sí mismos en una transición entre los niveles 4 y 5, dependiendo de la responsabilidad del proyecto. Sus niveles 4 y 5 se corresponden en realidad con los niveles 3 y 4 del modelo de Dan Shapiro. Es decir, que <strong>han dejado de escribir código de forma manual</strong> en gran parte de su flujo de trabajo. En resumen, ya no "pican" código línea a línea como antes, sino que actúan como gestores de una fábrica de software donde su principal herramienta es el <strong>criterio</strong> y el <strong>diseño de instrucciones</strong>.</p>
 

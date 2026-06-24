@@ -24,7 +24,7 @@ tags:          [desarrollo de soluciones digitales, buenas prácticas de diseño
 
 <p>Como explicó Luke en su día, <strong>Mobile First obliga a centrarse en lo importante</strong>. En un móvil sencillamente no hay espacio para todo y requiere que el diseño se concentre sólo en los datos y acciones más importantes de la aplicación. Obliga a priorizar.</p>
 
-<p><img src="{{ site.baseurl }}/img/que-es-mobile-first-02.jpg" loading="lazy" alt="" width="720" height="480"></p>
+<p><img src="{{ site.baseurl }}/img/que-es-mobile-first-02.jpg" loading="lazy" alt="Grupo de personas usando teléfonos móviles, representando el diseño pensado primero para móvil" width="720" height="480"></p>
 
 <p>El resultado final de aplicar este principio es una experiencia de usuario <strong>centrada en las tareas clave que los usuarios desean realizar</strong>. Prescindiendo de elementos superfluos o acciones secundarias que en las versiones de escritorio a veces tienen una presencia desproporcionada en relación con su importancia.</p>
 

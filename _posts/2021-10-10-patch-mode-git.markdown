@@ -22,16 +22,16 @@ tags:          [git]
 
 <p>Imaginad la siguiente situación de partida. Un archivo en el que hay dos cambios que quiero <em>commitear</em> por separado.</p>
 
-<a href="{{ site.baseurl }}/img/patch-mode-git-01.png"><img src="{{ site.baseurl }}/img/patch-mode-git-01.png" loading="lazy" alt="" width="1759" height="417"></a>
+<a href="{{ site.baseurl }}/img/patch-mode-git-01.png"><img src="{{ site.baseurl }}/img/patch-mode-git-01.png" loading="lazy" alt="Editor de código con un diff abierto para revisar cambios en Git" width="1759" height="417"></a>
 
 <p>Selecciono las líneas 3 y 4 de la parte de la derecha y pulso botón derecho del ratón. Después clico en «Stage Selected Ranges».</p>
 
-<a href="{{ site.baseurl }}/img/patch-mode-git-02.png"><img src="{{ site.baseurl }}/img/patch-mode-git-02.png" loading="lazy" alt="" width="653" height="527"></a>
+<a href="{{ site.baseurl }}/img/patch-mode-git-02.png"><img src="{{ site.baseurl }}/img/patch-mode-git-02.png" loading="lazy" alt="Menú contextual de un editor con una opción seleccionada durante la revisión de cambios" width="653" height="527"></a>
 
 <p>De ese modo, habré llevado a <em>Stage</em> sólo los cambios seleccionados y podré <em>commitearlos</em>.</p>
 
-<a href="{{ site.baseurl }}/img/patch-mode-git-03.png"><img src="{{ site.baseurl }}/img/patch-mode-git-03.png" loading="lazy" alt="" width="1375" height="383"></a>
+<a href="{{ site.baseurl }}/img/patch-mode-git-03.png"><img src="{{ site.baseurl }}/img/patch-mode-git-03.png" loading="lazy" alt="Editor de código mostrando cambios en rojo y verde antes de preparar un commit" width="1375" height="383"></a>
 
 <p>Mientras que los cambios de la línea 12 permanecen sin pasar al <em>Stage</em>.</p>
 
-<a href="{{ site.baseurl }}/img/patch-mode-git-04.png"><img src="{{ site.baseurl }}/img/patch-mode-git-04.png" loading="lazy" alt="" width="1660" height="387"></a>
+<a href="{{ site.baseurl }}/img/patch-mode-git-04.png"><img src="{{ site.baseurl }}/img/patch-mode-git-04.png" loading="lazy" alt="Editor de código con diferencias resaltadas en varias columnas" width="1660" height="387"></a>

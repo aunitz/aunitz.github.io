@@ -12,7 +12,7 @@ tags:          [leyes y principios de experiencia de usuario (UX) y usabilidad, 
 
 <p>Un ejemplo claro en el que se aplica este principio de percepción visual es el de los iconos. Lo cuales simplifican al extremo la representación de objetos reales mediante formas incompletas.</p>
 
-<p><img src="{{ site.baseurl }}/img/ley-17-principio-de-cierre.png" loading="lazy" alt="Ilustración de la Ley 17 de usabilidad: Principio de cierre" width="504" height="186"></p>
+<p><img src="{{ site.baseurl }}/img/ley-17-principio-de-cierre.png" loading="lazy" alt="Conjunto de iconos simples donde reconocemos formas completas aunque estén representadas con pocos trazos" width="504" height="186"></p>
 
 <p>Se trata de la tendencia humana a buscar y encontrar patrones. La clave para el cierre es proporcionar suficiente información para que el cerebro pueda completar el resto. Si falta mucho, los elementos se verán como partes separadas en lugar de un todo. Si se proporciona demasiada información, no es necesario que ocurra el cierre.</p>
 

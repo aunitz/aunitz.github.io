@@ -13,7 +13,7 @@ tags:          [leyes y principios de experiencia de usuario (UX) y usabilidad]
 
 <p>La cuestión es quién deberá anfrentarse a ella: el desarrollador o el usuario.</p>
 
-<p><img src="{{ site.baseurl }}/img/ley-08-ley-de-tesler.png" loading="lazy" alt="Ilustración de la Ley 08 de usabilidad: Ley de Tesler" class="center-block" width="408" height="339"></p>
+<p><img src="{{ site.baseurl }}/img/ley-08-ley-de-tesler.png" loading="lazy" alt="Balanza con un desarrollador y un usuario, mostrando cómo la complejidad puede desplazarse entre quien crea y quien usa la interfaz" class="center-block" width="408" height="339"></p>
 
 <p>El tiempo invertido por un desarrollador para reducir la complejidad percibida por el usuario de la aplicación, suele ser menor que el tiempo total ahorrado por el conjunto de usuarios de la aplicación. Sin embargo, llegado a un cierto límite, el tiempo que es necesario invertir por los desarrolladores puede no compensar la mejora en la productividad obtenida. Se debe encontrar el equilibrio.</p>
 

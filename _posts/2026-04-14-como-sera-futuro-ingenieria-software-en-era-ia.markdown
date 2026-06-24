@@ -25,7 +25,7 @@ tags:          [inteligencia artificial, desarrollo de soluciones digitales]
 
 <p>Los organizadores del evento y algunas de las personas participantes han publicado artículos sobre los temas tratados en el retiro. Al final del post enlazo con las fuentes.</p>
 
-<p><img src="{{ site.baseurl }}/img/como-sera-futuro-ingenieria-software-01.webp" loading="lazy" alt="" width="720" height="331"></p>
+<p><img src="{{ site.baseurl }}/img/como-sera-futuro-ingenieria-software-01.webp" loading="lazy" alt="Ilustración de una desarrolladora frente a código y un asistente de IA, representando el trabajo conjunto humano-máquina" width="720" height="331"></p>
 
 <p>Los participantes <strong>analizaron cómo la inteligencia artificial está transformando radicalmente el desarrollo de software</strong>. A continuación, profundizo en los temas que más interesantes me han resultado.</p>
 
@@ -41,7 +41,7 @@ tags:          [inteligencia artificial, desarrollo de soluciones digitales]
 
 <p>Los equipos pueden <strong>acumular deuda cognitiva más rápido que deuda técnica</strong>, hasta alcanzar un punto en el que no pueden realizar cambios sencillos sin romper algo inesperado, porque nadie comprende la teoría subyacente al sistema ni las decisiones de diseño originales.</p>
 
-<p><img src="{{ site.baseurl }}/img/como-sera-futuro-ingenieria-software-02.webp" loading="lazy" alt="" width="720" height="449"></p>
+<p><img src="{{ site.baseurl }}/img/como-sera-futuro-ingenieria-software-02.webp" loading="lazy" alt="Ilustración de una figura subiendo una escalera, como metáfora de los niveles de evolución profesional en ingeniería de software" width="720" height="449"></p>
 
 <p>Al igual que los <strong>intereses</strong> en la deuda financiera, la deuda cognitiva encarece progresivamente la incorporación de nuevas funcionalidades y exige una inversión explícita de tiempo y recursos para recuperar el conocimiento perdido.</p>
 
@@ -75,7 +75,7 @@ tags:          [inteligencia artificial, desarrollo de soluciones digitales]
   <li><strong>Mantener la coherencia:</strong> asegurar que la integridad arquitectónica del sistema se mantenga a pesar de los múltiples flujos de trabajo paralelos generados por la IA.</li>
 </ul>
 
-<p><img src="{{ site.baseurl }}/img/como-sera-futuro-ingenieria-software-03.webp" loading="lazy" alt="" width="720" height="427"></p>
+<p><img src="{{ site.baseurl }}/img/como-sera-futuro-ingenieria-software-03.webp" loading="lazy" alt="Ilustración de una persona rodeada de iconos de código, búsqueda y configuración, representando coordinación técnica asistida por IA" width="720" height="427"></p>
 
 <p>Vinculado a la supervisión, se habló de que las organizaciones están adoptando una <strong>clasificación por niveles de riesgo</strong>, donde la intensidad de la revisión humana es proporcional al impacto de un posible error. Así, los sistemas críticos requieren de una revisión humana profunda y rigurosa.</p>
 
@@ -97,7 +97,7 @@ tags:          [inteligencia artificial, desarrollo de soluciones digitales]
 
 <p>El TDD es un viejo conocido del desarrollo de software, defendido infinidad de veces como la técnica de desarrollo más eficiente y sostenible a largo plazo. Los participantes en el retiro sostienen que <strong>el TDD debe ser una responsabilidad humana fundamental</strong> para actuar como contrapeso determinista frente a la IA.</p>
 
-<p><img src="{{ site.baseurl }}/img/como-sera-futuro-ingenieria-software-04.webp" loading="lazy" alt="" width="720" height="395"></p>
+<p><img src="{{ site.baseurl }}/img/como-sera-futuro-ingenieria-software-04.webp" loading="lazy" alt="Ilustración de una mano con escudo y marcas de verificación, representando supervisión y validación del código generado" width="720" height="395"></p>
 
 <p>Los motivos principales que esgrimen son:</p>
 
@@ -125,7 +125,7 @@ tags:          [inteligencia artificial, desarrollo de soluciones digitales]
   <li>Debemos ayudar a las generaciones actuales y futuras de ingenieros no con promesas vacías, sino definiendo con claridad los nuevos problemas que deben resolver. Se les contrató para escribir código; ahora se les pide delegarlo. Merecen que <strong>definamos qué viene después</strong>.</li>
 </ul>
 
-<p><img src="{{ site.baseurl }}/img/como-sera-futuro-ingenieria-software-05.webp" loading="lazy" alt="" width="720" height="480"></p>
+<p><img src="{{ site.baseurl }}/img/como-sera-futuro-ingenieria-software-05.webp" loading="lazy" alt="Ilustración de varias personas alrededor de una brújula, representando orientación estratégica en equipos de software" width="720" height="480"></p>
 
 <h2>Fuentes consultadas para el artículo</h2>
 

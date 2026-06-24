@@ -12,7 +12,7 @@ tags:          [métodos de investigación UX]
 
 <p>En mi caso aplico <a href="{{ site.baseurl }}{% post_url 2017-01-18-principios-usabilidad %}">mis principios generales de usabilidad</a> y mi propia experiencia acumulada como consultor en usabilidad.</p>
 
-<p><img src="{{ site.baseurl }}/img/que-es-un-test-heuristico-01.jpg" loading="lazy" alt="" width="722" height="415"></p>
+<p><img src="{{ site.baseurl }}/img/que-es-un-test-heuristico-01.jpg" loading="lazy" alt="Persona escribiendo notas durante una evaluación heurística" width="722" height="415"></p>
 
 <p>Esta técnica <strong>detecta los problemas más graves de usabilidad</strong> y eventualmente permitirá realizar posteriormente <a href="{{ site.baseurl }}{% post_url 2023-05-04-que-es-un-test-de-usabilidad-con-personas-usuarias %}">test de usabilidad con personas usuarias</a> más eficientes.</p>
 
@@ -22,7 +22,7 @@ tags:          [métodos de investigación UX]
 
 <p>Habitualmente, el entregable de este tipo de análisis consistirá en un informe en el que se detallan las incidencias detectadas clasificadas por su gravedad.</p>
 
-<p><img src="{{ site.baseurl }}/img/que-es-un-test-heuristico-02.jpg" loading="lazy" alt="" width="722" height="411"></p>
+<p><img src="{{ site.baseurl }}/img/que-es-un-test-heuristico-02.jpg" loading="lazy" alt="Profesional revisando una aplicación en un portátil con una libreta" width="722" height="411"></p>
 
 <p>No existe una única manera de clasificar la gravedad de las incidencias. En mi caso, suelo utilizar la siguiente escala. Me gusta porque tiene pocos valores y es sencilla de interpretar.</p>
 

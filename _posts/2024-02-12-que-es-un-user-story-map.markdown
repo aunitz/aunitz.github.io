@@ -14,7 +14,7 @@ tags:          [métodos de investigación UX]
 
 <p>El mapeo de historias de usuario es un <strong>ejercicio colaborativo</strong> que ordena las funcionalidades de un producto o servicios en <strong>historias de usuario</strong> (breves afirmaciones que capturan lo que un usuario necesita hacer con el producto desde su perspectiva). Estas historias se organizan en un <strong>mapa visual</strong> que representa el viaje del usuario, ayudando a los equipos a ver el producto desde una vista panorámica y detallada simultáneamente.</p>
 
-<p><img src="{{ site.baseurl }}/img/que-es-un-user-story-map-01.webp" loading="lazy" alt="" width="750" height="362"></p>
+<p><img src="{{ site.baseurl }}/img/que-es-un-user-story-map-01.webp" loading="lazy" alt="Ejemplo de user story map con actividades, tareas y tarjetas organizadas en columnas" width="750" height="362"></p>
 
 <h2>Beneficios del user story map</h2>
 
@@ -34,7 +34,7 @@ tags:          [métodos de investigación UX]
 	<li><strong>Priorizar</strong>: junto con el equipo, decide qué historias son esenciales para el lanzamiento inicial y cuáles pueden desarrollarse más adelante.</li>
 </ol>
 
-<p><img src="{{ site.baseurl }}/img/que-es-un-user-story-map-02.webp" loading="lazy" alt="" width="750" height="455"></p>
+<p><img src="{{ site.baseurl }}/img/que-es-un-user-story-map-02.webp" loading="lazy" alt="Equipo colocando tarjetas en un tablero durante la construcción de un user story map" width="750" height="455"></p>
 
 <h2>Consejos para un mapeo efectivo</h2>
 

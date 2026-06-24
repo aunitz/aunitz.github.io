@@ -14,7 +14,7 @@ tags:          [leyes y principios de experiencia de usuario (UX) y usabilidad, 
 
 <p>Este principio nos lleva a querer un equilibrio en la composición, aunque no necesitan ser perfectamente simétricas para estar en equilibrio.</p>
 
-<p><img src="{{ site.baseurl }}/img/ley-12-principio-de-simetria.png" loading="lazy" alt="Ilustración de la Ley 12 de usabilidad: Principio de simetría" width="722" height="144"></p>
+<p><img src="{{ site.baseurl }}/img/ley-12-principio-de-simetria.png" loading="lazy" alt="Tres pares de llaves enfrentadas que se perciben como formas simétricas agrupadas" width="722" height="144"></p>
 
 <p>Debido a este principio, en la imagen de arriba, percibirás tres pares de llaves de apertura y cierre. Incluso a pesar de que el <a href="{{ site.baseurl }}{% post_url 2018-01-22-principio-de-la-proximidad %}">principio de la proximidad</a> que hemos visto en un post anterior podría sugerir que deberíamos agrupar visualmente las figuras de otro modo. Esto sugiere que la simetría tiene prioridad sobre la proximidad.</p>
 

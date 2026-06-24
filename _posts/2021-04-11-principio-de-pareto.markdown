@@ -14,7 +14,7 @@ tags:          [leyes y principios de experiencia de usuario (UX) y usabilidad]
 
 <p>La relación de 80/20 no es una distribución que haya que tomar de manera literal, ya que puede variar de un contexto a otro. Sin embargo, de manera aproximada, <strong>suele ser de aplicación para sistemas desequilibrados</strong>.</p>
 
-<p><img src="{{ site.baseurl }}/img/principio-de-pareto.gif" loading="lazy" alt="Diagrama de Pareto" width="719" height="356"></p>
+<p><img src="{{ site.baseurl }}/img/principio-de-pareto.gif" loading="lazy" alt="Diagrama de Pareto con barras descendentes y una línea acumulada que muestra la concentración de resultados en pocas causas" width="719" height="356"></p>
 
 <p>Algunos ejemplos clásicos:</p>
 <ul>

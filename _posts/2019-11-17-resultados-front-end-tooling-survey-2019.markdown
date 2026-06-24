@@ -87,8 +87,8 @@ tags:          [desarrollo de soluciones digitales]
 
 <p>A modo de resumen visual representaré los logotipos de las herramientas mayoritarias de cada área.</p>
 
-<p><img src="{{ site.baseurl }}/img/resultados-front-end-tooling-survey-2019-01.png" loading="lazy" alt="CSS tools" width="722" height="263"></p>
+<p><img src="{{ site.baseurl }}/img/resultados-front-end-tooling-survey-2019-01.png" loading="lazy" alt="Resultados de la encuesta Front-End Tooling Survey 2019 con logotipos de herramientas CSS como Sass, PostCSS, Less y Stylelint" width="722" height="263"></p>
 
-<p><img src="{{ site.baseurl }}/img/resultados-front-end-tooling-survey-2019-02.png" loading="lazy" alt="JavaScript tools" width="722" height="263"></p>
+<p><img src="{{ site.baseurl }}/img/resultados-front-end-tooling-survey-2019-02.png" loading="lazy" alt="Resultados de la encuesta Front-End Tooling Survey 2019 con logotipos de herramientas JavaScript como npm, Yarn, React, ESLint y Webpack" width="722" height="263"></p>
 
-<p><img src="{{ site.baseurl }}/img/resultados-front-end-tooling-survey-2019-03.png" loading="lazy" alt="Testing tools" width="722" height="263"></p>
+<p><img src="{{ site.baseurl }}/img/resultados-front-end-tooling-survey-2019-03.png" loading="lazy" alt="Resultados de la encuesta Front-End Tooling Survey 2019 con logotipos de herramientas de testing como Jest, Lighthouse y Cypress" width="722" height="263"></p>

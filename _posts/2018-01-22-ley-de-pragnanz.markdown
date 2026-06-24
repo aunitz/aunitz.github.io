@@ -17,7 +17,7 @@ tags:          [leyes y principios de experiencia de usuario (UX) y usabilidad, 
 
 <p>Ejemplo: dados cuatro puntos, veremos un cuadrado, en lugar de otros esquemas visuales más complejos.</p>
 
-<p><img src="{{ site.baseurl }}/img/ley-04-ley-de-pragnanz.png" loading="lazy" alt="Ilustración de la Ley 03 de usabilidad: Ley de Prägnanz" width="722" height="339"></p>
+<p><img src="{{ site.baseurl }}/img/ley-04-ley-de-pragnanz.png" loading="lazy" alt="Tres ejemplos de formas simplificadas que muestran cómo percibimos figuras complejas como estructuras más simples" width="722" height="339"></p>
 
 <p>La Ley de Prägnanz es la principal ley general de la <strong>Gestalt</strong>. Una corriente de la psicología moderna, surgida en Alemania a principios del siglo XX. "Prägnanz" es una palabra alemana que puede traducirse como "concisión".</p>
 

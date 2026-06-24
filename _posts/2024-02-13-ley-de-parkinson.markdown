@@ -21,7 +21,7 @@ tags:          [leyes y principios de experiencia de usuario (UX) y usabilidad, 
 
 <p>En el contexto de usabilidad y experiencia de usuario (UX), esta ley sugiere que, sin límites claros, las interfaces y funcionalidades tienden a volverse más complejas y menos eficientes. Al aplicar esta ley, <strong>el objetivo es simplificar y enfocarse en lo esencial</strong>, eliminando características innecesarias que no aportan valor al usuario final. Este enfoque conduce a diseños más intuitivos y eficaces, mejorando la experiencia general del usuario al facilitar la navegación y la interacción con el producto o servicio. La clave está en diseñar con propósito y precisión, garantizando que cada elemento cumpla una utilidad real y mejore la usabilidad.</p>
 
-<p><img src="{{ site.baseurl }}/img/ley-02-ley-de-hick.png" loading="lazy" alt="" width="724" height="428"></p>
+<p><img src="{{ site.baseurl }}/img/ley-02-ley-de-hick.png" loading="lazy" alt="Ilustración de la Ley de Hick con opciones múltiples y una opción destacada" width="724" height="428"></p>
 
 <p>Existen un gran número de leyes y principios de experiencia de usuario (UX) y usabilidad que apoyan o van en la línea de buscar la simplicidad. Algunas de ellas ya tratadas en este blog: la <a href="{{ site.baseurl }}{% post_url 2018-01-22-ley-de-miller %}">ley de Miller</a>, la <a href="{{ site.baseurl }}{% post_url 2018-01-22-ley-de-pragnanz %}">ley de Prägnanz</a>, la <a href="{{ site.baseurl }}{% post_url 2018-01-21-ley-de-hick %}">ley de Hick</a>, la <a href="{{ site.baseurl }}{% post_url 2018-01-23-ley-de-tesler %}">ley de Tesler</a>, <a href="{{ site.baseurl }}{% post_url 2020-09-13-la-navaja-de-ockham %}">la navaja de Ockham</a>…</p>
 
@@ -29,7 +29,7 @@ tags:          [leyes y principios de experiencia de usuario (UX) y usabilidad, 
 
 <p>En la gestión de proyectos, la Ley de Parkinson destaca cómo los plazos y recursos pueden inflarse innecesariamente si no se establecen <strong>límites claros y objetivos precisos</strong>. Al aplicar esta ley, se busca mejorar la eficiencia y productividad, enfocándose en establecer plazos realistas y evitar la procrastinación. Esto implica una planificación cuidadosa y la <strong>definición de objetivos específicos</strong> para cada etapa del proyecto, asegurando que el equipo se mantenga enfocado y se minimicen los retrasos y el trabajo superfluo.</p>
 
-<p><img src="{{ site.baseurl }}/img/ley-de-parkinson.png" loading="lazy" alt="" width="650" height="342"></p>
+<p><img src="{{ site.baseurl }}/img/ley-de-parkinson.png" loading="lazy" alt="Diagrama de la Ley de Parkinson comparando una tarea con plazo disponible corto y largo" width="650" height="342"></p>
 
 <h2>Conclusión</h2>
 

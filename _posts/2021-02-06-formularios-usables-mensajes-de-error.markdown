@@ -29,6 +29,6 @@ tags:          [buenas prácticas de usabilidad, formularios]
     <li>Y finalmente, <strong>respeta el <a href="{{ site.baseurl }}{% post_url 2017-01-18-principios-usabilidad %}">principio de protección del trabajo</a> de los usuarios</strong>. Se debe asegurar que los usuarios nunca pierden su trabajo como consecuencia de un error.</li>
 </ul>
 
-<p><img src="{{ site.baseurl }}/img/formularios-usables-mensajes-de-error.png" loading="lazy" alt="" width="521" height="471"></p>
+<p><img src="{{ site.baseurl }}/img/formularios-usables-mensajes-de-error.png" loading="lazy" alt="Wireframe de formulario con mensajes de error visibles junto a varios campos" width="521" height="471"></p>
 
 <p class="small">Nota: este post se irá actualizando a medida que mis criterios sobre usabilidad de los formularios vayan evolucionando o los vaya enlazando a posts que desarrollan cada consejo. La fecha de publicación que figura en la cabecera se corresponde a la del post inicial.</p>

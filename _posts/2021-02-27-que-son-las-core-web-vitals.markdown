@@ -16,7 +16,7 @@ tags:          [desarrollo de soluciones digitales, SEO/GEO]
 
 <h2>LCP (Largest Contentful Paint): velocidad de carga</h2>
 
-<p><img src="{{ site.baseurl }}/img/que-son-las-core-web-vitals-01.png" width="384" height="336" loading="lazy" alt=""></p>
+<p><img src="{{ site.baseurl }}/img/que-son-las-core-web-vitals-01.png" width="384" height="336" loading="lazy" alt="Tarjeta verde de Core Web Vitals dedicada a LCP con escala de resultados bueno, necesita mejora y pobre"></p>
 
 <p>Mide el tiempo que tarda en cargarse el elemento de contenido más grande que esté ubicado en la parte de la página que se ve sin necesidad de hacer scroll hacia abajo. Para ser considerado bueno debe ser inferior a 2,5 segundos.</p>
 
@@ -26,7 +26,7 @@ tags:          [desarrollo de soluciones digitales, SEO/GEO]
 
 <h2>FID (First Input Delay): velocidad de interacción</h2>
 
-<p><img src="{{ site.baseurl }}/img/que-son-las-core-web-vitals-02.png" width="384" height="336" loading="lazy" alt=""></p>
+<p><img src="{{ site.baseurl }}/img/que-son-las-core-web-vitals-02.png" width="384" height="336" loading="lazy" alt="Tarjeta verde de Core Web Vitals dedicada a FID con escala de resultados bueno, necesita mejora y pobre"></p>
 
 <p>Es el tiempo que transcurre desde que el usuario realiza una primera acción sobre la página (puede ser un clic en un enlace, pulsar sobre un botón, etc.) y la página responde a dicha acción. Para ser considerado bueno debe ser inferior a 100 milisegundos.</p>
 
@@ -36,7 +36,7 @@ tags:          [desarrollo de soluciones digitales, SEO/GEO]
 
 <h2>CLS (Cumulative Layout Shift): estabilidad visual</h2>
 
-<p><img src="{{ site.baseurl }}/img/que-son-las-core-web-vitals-03.png" width="384" height="336" loading="lazy" alt=""></p>
+<p><img src="{{ site.baseurl }}/img/que-son-las-core-web-vitals-03.png" width="384" height="336" loading="lazy" alt="Tarjeta verde de Core Web Vitals dedicada a CLS con escala de resultados bueno, necesita mejora y pobre"></p>
 
 <p>Seguro que te habrá pasado en más de una ocasión que has tratado de interactuar con algún elemento de la página y justo en el momento que ibas a pulsarlo se ha movido de sitio debido a que la página no se había cargado del todo. Lo cual provoca clics en lugares incorrectos y una mala experiencia de usuario.</p>
 

@@ -10,7 +10,7 @@ tags:          [legislación, cookies]
 
 <p><strong>Aviso sobre este artículo:</strong> aunque tengo conocimientos académicos en derecho, no soy jurista ni especialista en la materia, por lo que algunas afirmaciones podrían contener imprecisiones o interpretaciones erróneas. Si detectas alguna, te invito a comentarlo en <a href="https://www.linkedin.com/posts/aunitz_aviso-de-cookies-legislaci%C3%B3n-aplicable-en-activity-7325248118197760000-K2pq" target="_blank" rel="noopener noreferrer">esta publicación de LinkedIn</a>. Actualizaré el artículo si resulta pertinente. ¡Muchas gracias de antemano por tu colaboración!</p>
 
-<p><img src="{{ site.baseurl }}/img/aviso-de-cookies-legislacion-espanola-01.jpg" loading="lazy" alt="" width="720" height="480"></p>
+<p><img src="{{ site.baseurl }}/img/aviso-de-cookies-legislacion-espanola-01.jpg" loading="lazy" alt="Ilustración de una jurista con balanza y documentos sobre leyes y cookies" width="720" height="480"></p>
 
 <p>Las <strong>normas que regulan el uso de cookies en España</strong> son las siguientes:</p>
 
@@ -26,7 +26,7 @@ tags:          [legislación, cookies]
 
 <p>Asimismo, aunque no tiene valor normativo, la <strong>Agencia Española de Protección de Datos</strong> (AEPD) publica una <a href="{{ site.baseurl }}/downloads/2024-mayo-guia-uso-cookies-aepd.pdf" target="_blank">guía sobre el uso de las cookies (PDF, 1.2 MB)</a>, la cual actualiza periódicamente. Al momento de redactar esta entrada, la versión vigente es la de mayo de 2024.</p>
 
-<p><img src="{{ site.baseurl }}/img/aviso-de-cookies-legislacion-espanola-02.jpg" loading="lazy" alt="" width="720" height="480"></p>
+<p><img src="{{ site.baseurl }}/img/aviso-de-cookies-legislacion-espanola-02.jpg" loading="lazy" alt="Ilustración de una red digital con el texto AEPD y símbolos de privacidad" width="720" height="480"></p>
 
 <p><strong>La guía</strong> de la AEPD tiene un <strong>carácter divulgativo</strong> y está redactada en un lenguaje considerablemente más accesible que el de las leyes y los reglamentos. Incluye ejemplos y pautas claras sobre cómo aplicar correctamente la legislación vigente.</p>
 
@@ -36,6 +36,6 @@ tags:          [legislación, cookies]
 
 <p>Los portales web de la Administración pública española están sujetos a <strong>condiciones legislativas especiales</strong>. En algunos casos específicos, cabe la posibilidad de que no sea obligatorio obtener el consentimiento de la persona usuaria para el uso de cookies.</p>
 
-<p><img src="{{ site.baseurl }}/img/aviso-de-cookies-legislacion-espanola-03.jpg" loading="lazy" alt="" width="720" height="480"></p>
+<p><img src="{{ site.baseurl }}/img/aviso-de-cookies-legislacion-espanola-03.jpg" loading="lazy" alt="Ilustración de una persona frente a un edificio institucional y una pantalla de consentimiento" width="720" height="480"></p>
 
 <p>Hace unos meses dediqué una publicación específica a la <a href="{{ site.baseurl }}{% post_url 2025-02-21-aviso-cookies-portales-administracion-publica %}">gestión de cookies en los portales de la Administración pública española</a>.</p>

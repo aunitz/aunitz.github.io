@@ -16,13 +16,13 @@ tags:          [accesibilidad]
 
 <p>Estos widgets suelen ofrecer funciones como la capacidad de cambiar el tamaño del texto, modificar el contraste de colores, reducir el movimiento o habilitar un lector de pantalla.</p>
 
-<p><img src="{{ site.baseurl }}/img/los-widgets-de-accesibilidad-no-son-la-solucion-01.png" loading="lazy" alt="Ejemplo de widget de accesibilidad" width="720" height="532"></p>
+<p><img src="{{ site.baseurl }}/img/los-widgets-de-accesibilidad-no-son-la-solucion-01.png" loading="lazy" alt="Página web con un panel de opciones de accesibilidad abierto desde un botón flotante azul" width="720" height="532"></p>
 
 <p>En Nielsen Norman Group han realizado un <a href="{{ site.baseurl }}{% post_url 2023-05-04-que-es-un-test-de-usabilidad-con-personas-usuarias %}">estudio de usabilidad con personas usuarias</a> de lectores de pantalla, incluidas personas ciegas, para evaluar la utilidad de estos widgets.</p>
 
 <p>Los resultados fueron demoledores: <strong>ninguno de los participantes utilizó los widgets de accesibilidad</strong>. Todos y cada uno de ellos preferían con diferencia los lectores de pantalla a los que estaban acostumbrados, como los que proporciona el sistema operativo.</p>
 
-<p><img src="{{ site.baseurl }}/img/los-widgets-de-accesibilidad-no-son-la-solucion-02.jpg" loading="lazy" alt="Mujer ciega utilizando un lector de pantalla" width="720" height="411"></p>
+<p><img src="{{ site.baseurl }}/img/los-widgets-de-accesibilidad-no-son-la-solucion-02.jpg" loading="lazy" alt="Mujer con gafas oscuras usando un ordenador con auriculares, representando el uso de lector de pantalla" width="720" height="411"></p>
 
 <p>Los lectores de pantallas que utilizan habitualmente estos usuarios ofrecen un control más sofisticado de características como la velocidad del habla o la capacidad de saltar entre encabezados de página.</p>
 

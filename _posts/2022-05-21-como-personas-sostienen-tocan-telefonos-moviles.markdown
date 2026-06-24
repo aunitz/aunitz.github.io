@@ -24,7 +24,7 @@ tags:          [buenas prácticas de usabilidad, memorandos]
 
 <p>Esta área puede variar mucho, dependiendo de cómo toque la pantalla el usuario, por ejemplo, con la punta o la yema de un dedo o el pulgar, o si el usuario presiona con más fuerza.</p>
 
-<p><img src="{{ site.baseurl }}/img/como-personas-sostienen-tocan-telefonos-moviles-01.png" loading="lazy" alt="" width="720" height="326"></p>
+<p><img src="{{ site.baseurl }}/img/como-personas-sostienen-tocan-telefonos-moviles-01.png" loading="lazy" alt="Dedo tocando la parte inferior de una pantalla móvil, cerca de la zona de alcance natural" width="720" height="326"></p>
 
 <p>Las pantallas táctiles capacitivas <strong>informan solo de un único punto de contacto</strong> en el centro geométrico de la zona de contacto con el dedo.</p>
 
@@ -56,7 +56,7 @@ tags:          [buenas prácticas de usabilidad, memorandos]
 
 <p>Los seis métodos más comunes que usan las personas para sostener y tocar su teléfono móvil son los siguientes.</p>
 
-<p><img src="{{ site.baseurl }}/img/como-personas-sostienen-tocan-telefonos-moviles-02.png" loading="lazy" alt="" width="716" height="478"></p>
+<p><img src="{{ site.baseurl }}/img/como-personas-sostienen-tocan-telefonos-moviles-02.png" loading="lazy" alt="Seis diagramas que muestran formas habituales de sostener y tocar un teléfono móvil" width="716" height="478"></p>
 
 <p>A continuación, los hallazgos fundamentales de Steven Hoober:</p>
 
@@ -75,7 +75,7 @@ tags:          [buenas prácticas de usabilidad, memorandos]
 
 <p>En el siguiente gráfico se muestra la precisión táctil para las diversas partes de la pantalla de un teléfono móvil o tableta.</p>
 
-<p><img src="{{ site.baseurl }}/img/como-personas-sostienen-tocan-telefonos-moviles-03.png" loading="lazy" alt="" width="720" height="774"></p>
+<p><img src="{{ site.baseurl }}/img/como-personas-sostienen-tocan-telefonos-moviles-03.png" loading="lazy" alt="Esquema de zonas de alcance en una pantalla de teléfono móvil para el pulgar" width="720" height="774"></p>
 
 <p>Las personas pueden leer mejor el contenido en el centro de la pantalla y, a menudo, desplazan el contenido para llevar la parte que están leyendo al centro de la pantalla.</p>
 
@@ -91,7 +91,7 @@ tags:          [buenas prácticas de usabilidad, memorandos]
 	<li>Las <strong>acciones terciarias ocultos en los menús</strong> a los que los usuarios suelen acceder desde una de las esquinas.</li>
 </ul>
 
-<p><img src="{{ site.baseurl }}/img/como-personas-sostienen-tocan-telefonos-moviles-04.png" loading="lazy" alt="" width="720" height="737"></p>
+<p><img src="{{ site.baseurl }}/img/como-personas-sostienen-tocan-telefonos-moviles-04.png" loading="lazy" alt="Pantalla móvil de Amazon con anotaciones sobre el uso de menús y controles cercanos al pulgar" width="720" height="737"></p>
 
 <h3>3. Los usuarios fallan al tocar</h3>
 
@@ -99,4 +99,4 @@ tags:          [buenas prácticas de usabilidad, memorandos]
 
 <p>Es por este motivo que <strong>debemos minimizar los errores que causen problemas colocando elementos peligrosos o no relacionados lejos de otros elementos</strong>, eliminando o reduciendo así las consecuencias de toques accidentales.</p>
 
-<p><img src="{{ site.baseurl }}/img/como-personas-sostienen-tocan-telefonos-moviles-05.png" loading="lazy" alt="" width="712" height="434"></p>
+<p><img src="{{ site.baseurl }}/img/como-personas-sostienen-tocan-telefonos-moviles-05.png" loading="lazy" alt="Pantalla móvil de YouTube con barra inferior y navegación accesible al pulgar" width="712" height="434"></p>

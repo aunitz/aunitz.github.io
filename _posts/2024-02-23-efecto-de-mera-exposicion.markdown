@@ -15,7 +15,7 @@ tags:          [leyes y principios de experiencia de usuario (UX) y usabilidad, 
 
 <p>En el ámbito de la experiencia de usuario (UX), este efecto tiene implicaciones significativas: <strong>los usuarios suelen sentirse más cómodos y satisfechos con interfaces y diseños que les resultan familiares</strong>.</p>
 
-<p><img src="{{ site.baseurl }}/img/accesibilidad-web-al-alcance-de-todos-12.jpg" loading="lazy" alt="" width="722" height="363"></p>
+<p><img src="{{ site.baseurl }}/img/accesibilidad-web-al-alcance-de-todos-12.jpg" loading="lazy" alt="Persona usando una tablet con una interfaz visual abierta" width="722" height="363"></p>
 
 <p>Este fenómeno se manifiesta de múltiples maneras en la interacción digital: desde la disposición de elementos en una página web hasta los patrones de navegación en aplicaciones, la familiaridad juega un papel crucial en cómo los usuarios perciben y valoran su experiencia. La exposición repetida a ciertos diseños, colores, disposiciones y flujos de trabajo no solo inspira confianza, sino que también puede incrementar la eficiencia y satisfacción del usuario al <strong>reducir la curva de aprendizaje y la resistencia al cambio</strong>.</p>
 
@@ -27,7 +27,7 @@ tags:          [leyes y principios de experiencia de usuario (UX) y usabilidad, 
 
 <p>Muchas aplicaciones y sitios web utilizan iconos estándar, como una lupa para la búsqueda o un carrito para las compras. La repetida exposición a estos símbolos ha creado una familiaridad que los usuarios instantáneamente reconocen y comprenden, facilitando una navegación intuitiva.</p>
 
-<p><img src="{{ site.baseurl }}/img/que-es-una-progressive-web-app-pwa-03.jpg" loading="lazy" alt="" width="722" height="363"></p>
+<p><img src="{{ site.baseurl }}/img/que-es-una-progressive-web-app-pwa-03.jpg" loading="lazy" alt="Persona usando una aplicación de compra en un teléfono móvil" width="722" height="363"></p>
 
 <h3>Patrones de diseño en UX/UI</h3>
 
@@ -41,7 +41,7 @@ tags:          [leyes y principios de experiencia de usuario (UX) y usabilidad, 
 
 <p>Para aprovechar al máximo el efecto de mera exposición en UX, los diseñadores deben ser conscientes de estos equilibrios y emplear estrategias que armonicen lo familiar con lo novedoso. Esto implica realizar <a href="{{ site.baseurl }}{% post_url 2023-05-04-que-es-un-test-de-usabilidad-con-personas-usuarias %}">test de usabilidad con personas usuarias</a> frecuentes para evaluar cómo la familiaridad afecta la experiencia de usuario y ajustar el diseño en consecuencia. Al hacerlo, podemos crear productos que no solo sean fáciles de usar y atractivos, sino que mejoraren la experiencia global del usuario.</p>
 
-<p><img src="{{ site.baseurl }}/img/efecto-de-mera-exposicion.jpg" loading="lazy" alt="" width="720" height="405"></p>
+<p><img src="{{ site.baseurl }}/img/efecto-de-mera-exposicion.jpg" loading="lazy" alt="Personas conversando en una reunión con portátil, como ejemplo de exposición repetida a una idea" width="720" height="405"></p>
 
 <h2>Conclusión</h2>
 

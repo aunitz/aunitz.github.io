@@ -12,7 +12,7 @@ tags:          [leyes y principios de experiencia de usuario (UX) y usabilidad, 
 
 <p>Por ejemplo, las bandadas de pájaros que vuelan como un todo, es decir, como si se tratara de un organismo único.</p>
 
-<p><img src="{{ site.baseurl }}/img/ley-15-principio-de-direccion-comun.png" loading="lazy" alt="Ilustración de la Ley 15 de usabilidad: Principio de dirección común" width="722" height="267"></p>
+<p><img src="{{ site.baseurl }}/img/ley-15-principio-de-direccion-comun.png" loading="lazy" alt="Grupo de aves orientadas en una misma dirección que se perciben como un conjunto en movimiento" width="722" height="267"></p>
 
 <p>Los elementos no necesitan moverse para que el principio del destino común esté presente. Por ejemplo, si se agrupan cuatro personas, pero se observa que dos se dirigen hacia la derecha, se considerará que tienen un destino común. Incluso si dos miran en la misma dirección, se percibirá que tienen un destino común.</p>
 

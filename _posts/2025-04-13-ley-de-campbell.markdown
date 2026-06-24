@@ -13,7 +13,7 @@ tags:          [leyes y principios de experiencia de usuario (UX) y usabilidad]
 
 <p><strong><em>Cuanto más se utilice un indicador cuantitativo para la toma de decisiones sociales, más propenso estará a ser manipulado y más distorsionará los procesos que se supone debe monitorizar.</em></strong></p>
 
-<p><img src="{{ site.baseurl }}/img/ley-de-campbell-01.jpg" loading="lazy" alt="" width="720" height="480"></p>
+<p><img src="{{ site.baseurl }}/img/ley-de-campbell-01.jpg" loading="lazy" alt="Ilustración de personas disparando flechas hacia una díana con un gráfico, representando la presión de los indicadores" width="720" height="480"></p>
 
 <p>En otras palabras, cuando una métrica se convierte en el principal objetivo, deja de ser una buena medida de lo que pretende evaluar. Esto se debe a que las personas y las organizaciones ajustan su comportamiento para optimizar esa métrica, lo que puede llevar a efectos no deseados o a la manipulación de los datos.</p>
 
@@ -24,7 +24,7 @@ tags:          [leyes y principios de experiencia de usuario (UX) y usabilidad]
 <h3>Educación</h3>
 <p>Si los centros formativos son evaluados únicamente por los resultados en pruebas estandarizadas, los docentes podrían enfocarse en enseñar para el examen en lugar de brindar una educación integral.</p>
 
-<p><img src="{{ site.baseurl }}/img/ley-de-campbell-02.jpg" loading="lazy" alt="" width="720" height="480"></p>
+<p><img src="{{ site.baseurl }}/img/ley-de-campbell-02.jpg" loading="lazy" alt="Ilustración de una profesora explicando un gráfico a alumnos, con un grupo desdibujado al fondo" width="720" height="480"></p>
 
 <h3>Policía</h3>
 <p>Si el éxito de un departamento de policía se mide solo por la cantidad de arrestos, los agentes podrían verse incentivados a realizar arrestos por delitos menores, en lugar de enfocarse en la prevención del delito y la seguridad comunitaria.</p>
@@ -38,7 +38,7 @@ tags:          [leyes y principios de experiencia de usuario (UX) y usabilidad]
 <h3>Redes sociales</h3>
 <p>El número de "me gusta" o seguidores puede llevar a la gente a publicar contenido sensacionalista para ganar popularidad, en lugar de contenido valioso.</p>
 
-<p><img src="{{ site.baseurl }}/img/ley-de-campbell-03.jpg" loading="lazy" alt="" width="720" height="480"></p>
+<p><img src="{{ site.baseurl }}/img/ley-de-campbell-03.jpg" loading="lazy" alt="Ilustración de una persona celebrando una métrica de redes sociales con muchos me gusta" width="720" height="480"></p>
 
 <h3>Ciencia y publicaciones académicas</h3>
 <p>Si los investigadores son evaluados solo por la cantidad de artículos publicados, pueden priorizar la cantidad sobre la calidad, llevando a estudios apresurados o incluso fraudulentos.</p>
@@ -71,7 +71,7 @@ tags:          [leyes y principios de experiencia de usuario (UX) y usabilidad]
 <h3>Utilizar datos cualitativos junto con los cuantitativos</h3>
 <p><strong>Las entrevistas con usuarios, encuestas y pruebas de usabilidad</strong> pueden proporcionar un contexto valioso que las métricas cuantitativas no siempre capturan.</p>
 
-<p><img src="{{ site.baseurl }}/img/ley-de-campbell-04.jpg" loading="lazy" alt="" width="720" height="480"></p>
+<p><img src="{{ site.baseurl }}/img/ley-de-campbell-04.jpg" loading="lazy" alt="Ilustración de una brújula junto a documentos de evaluación, representando orientación por métricas" width="720" height="480"></p>
 
 <h2>Conclusión</h2>
 

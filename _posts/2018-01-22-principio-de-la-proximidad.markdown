@@ -13,7 +13,7 @@ tags:          [leyes y principios de experiencia de usuario (UX) y usabilidad, 
 
 <p>Cuando los elementos están colocados cerca uno del otro, son vistos como parte de un grupo en lugar de como elementos individuales.</p>
 
-<p><img src="{{ site.baseurl }}/img/ley-06-principio-de-la-proximidad.png" loading="lazy" alt="Ilustración de la Ley 06 de usabilidad: Principio de la proximidad" width="722" height="294"></p>
+<p><img src="{{ site.baseurl }}/img/ley-06-principio-de-la-proximidad.png" loading="lazy" alt="Dos grupos de puntos negros separados por espacio, mostrando cómo la proximidad hace que percibamos conjuntos distintos" width="722" height="294"></p>
 
 <p>Este principio de la percepción visual fue establecido por la escuela de psicología de la <strong>Gestalt</strong>. Una corriente de la psicología moderna, surgida en Alemania a principios del siglo XX.</p>
 

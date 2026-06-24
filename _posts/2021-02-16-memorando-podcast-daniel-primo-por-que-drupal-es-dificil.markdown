@@ -12,7 +12,7 @@ tags:          [desarrollo de soluciones digitales, memorandos]
 
 <p>Recientemente necesité informarme sobre los motivos por los que Drupal es considerado un CMS difícil o “para desarrolladores”. Y no he encontrado mejor recurso en español que el <a href="https://www.danielprimo.io/blog/por-que-drupal-es-dificil" target="_blank" rel="noopener noreferrer">episodio número 22 (13/02/2018) del podcast Web Reactiva</a> del programador y formador <a href="https://www.danielprimo.io/" target="_blank" rel="noopener noreferrer">Daniel Primo</a>.</p>
 
-<p><img src="{{ site.baseurl }}/img/memorando-por-que-drupal-es-dificil-01.png" width="600" height="150" loading="lazy" alt=""></p>
+<p><img src="{{ site.baseurl }}/img/memorando-por-que-drupal-es-dificil-01.png" width="600" height="150" loading="lazy" alt="Logotipo de Drupal en azul sobre fondo oscuro"></p>
 
 <p>Lo que pretendo en este artículo es pasar a limpio las principales enseñanzas o reflexiones que me ha aportado la escucha del episodio. A modo de recordatorio para el futuro. En consecuencia, se trata de un escrito completamente subjetivo y basado en mi <em>know how</em> previo.</p>
 
@@ -21,7 +21,7 @@ tags:          [desarrollo de soluciones digitales, memorandos]
 
 <p>Arquitectura básica de Drupal: <strong>módulos</strong> (PHP y JS para el navegador) y <strong>plantillas</strong> (themes CSS, JS y HTML) que se integran sobre el <strong>núcleo</strong> y se comunican con él a través de diversas <strong>APIs</strong>.</p>
 
-<p><img src="{{ site.baseurl }}/img/memorando-por-que-drupal-es-dificil-02.png" width="650" height="364" loading="lazy" alt=""></p>
+<p><img src="{{ site.baseurl }}/img/memorando-por-que-drupal-es-dificil-02.png" width="650" height="364" loading="lazy" alt="Diagrama de la arquitectura de Drupal con módulos, plantilla y núcleo"></p>
 
 <p>Características destacadas:</p>
 <ul>
@@ -50,7 +50,7 @@ tags:          [desarrollo de soluciones digitales, memorandos]
 <h2>¿Qué perfil se requiere para desarrollar sobre Drupal?</h2>
 <p>Para poder empezar a exprimir el potencial de Drupal, es necesario que los usuarios que desarrollen los sitios web tengan <strong>cierto grado de conocimiento de Drupal</strong> y sepan <strong>programar en PHP</strong>.</p>
 
-<p><img src="{{ site.baseurl }}/img/memorando-por-que-drupal-es-dificil-03.jpg" width="720" height="318" loading="lazy" alt=""></p>
+<p><img src="{{ site.baseurl }}/img/memorando-por-que-drupal-es-dificil-03.jpg" width="720" height="318" loading="lazy" alt="Fragmento de código fuente con sintaxis coloreada"></p>
 
 <h2>¿Por qué es considerado Drupal difícil?</h2>
 <p>El núcleo de Drupal 8 se basa en componentes <strong>Symfony</strong> (uno de los <em>framework</em> más potentes que existen para PHP). Por tanto, ha dado un giro definitivo hacia la <strong>programación orientada a objetos</strong>. Paradigma de programación que hay que entender y dominar para sacarle el máximo provecho a la herramienta. En consecuencia, marca ineludiblemente unas reglas del juego que tienes que aprender.</p>
@@ -58,4 +58,4 @@ tags:          [desarrollo de soluciones digitales, memorandos]
 <p>Además, los recursos de aprendizaje para los usuarios que ya han superado las fases iniciales de conocimiento de la herramienta son escasos y <strong>cobran mucha importancia las personas con experiencia</strong>. Debería haber al menos una persona en el equipo con este perfil de experto que oriente a los más novatos.</p>
 <p>Desde hace años circula un gráfico anónimo en clave de humor que representa la <strong>curva de aprendizaje de Drupal </strong>con respecto a otros populares CMS.</p>
 
-<p><img src="{{ site.baseurl }}/img/memorando-por-que-drupal-es-dificil-04.png" width="600" height="581" loading="lazy" alt=""></p>
+<p><img src="{{ site.baseurl }}/img/memorando-por-que-drupal-es-dificil-04.png" width="600" height="581" loading="lazy" alt="Gráfico de curva de aprendizaje que compara varias tecnologías"></p>

@@ -15,4 +15,4 @@ tags:          [buenas prácticas de usabilidad]
 
 <p>Para combatir esta parálisis, trata de enfatizar, recomendar o destacar ciertas opciones sobre las demás.</p>
 
-<p><img src="{{ site.baseurl }}/img/tip-3-recomienda-una-opcion.png" loading="lazy" alt="Ilustración del tip 3 de usabilidad: recomienda en lugar de mostrar opciones iguales" width="722" height="428"></p>
+<p><img src="{{ site.baseurl }}/img/tip-3-recomienda-una-opcion.png" loading="lazy" alt="Pantalla con tres productos donde una opción aparece destacada como recomendada frente a una comparación sin jerarquía visual" width="722" height="428"></p>

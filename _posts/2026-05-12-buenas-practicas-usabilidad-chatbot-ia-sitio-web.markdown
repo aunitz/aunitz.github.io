@@ -27,30 +27,30 @@ tags:          [buenas prácticas de usabilidad, inteligencia artificial]
 
 <p>Por ejemplo, el mensaje inicial de la Administració Oberta de Catalunya es muy genérico.</p>
 
-<p><img src="{{ site.baseurl }}/img/buenas-practicas-usabilidad-chatbot-ia-06.webp" loading="lazy" alt="" width="750" height="480"></p>
+<p><img src="{{ site.baseurl }}/img/buenas-practicas-usabilidad-chatbot-ia-06.webp" loading="lazy" alt="Chatbot de la Administració Oberta de Catalunya con un saludo inicial genérico y sin sugerencias específicas de uso" width="750" height="480"></p>
 
 <p><strong>Indica en el mensaje introductorio los temas o tareas en los que el chatbot puede ayudar</strong>.</p>
 
 <p>El asistente de la web del Gobierno de Grecia es también demasiado genérico.</p>
 
-<p><img src="{{ site.baseurl }}/img/buenas-practicas-usabilidad-chatbot-ia-07.webp" loading="lazy" alt="" width="750" height="478"></p>
+<p><img src="{{ site.baseurl }}/img/buenas-practicas-usabilidad-chatbot-ia-07.webp" loading="lazy" alt="Asistente digital mAigov de gov.gr con un mensaje inicial genérico: Good afternoon, how can I help you?" width="750" height="478"></p>
 
 <p>Un buen ejemplo lo tenemos en el chatbot de la Seguridad Social.</p>
 
-<p><img src="{{ site.baseurl }}/img/buenas-practicas-usabilidad-chatbot-ia-08.webp" loading="lazy" alt="" width="750" height="436"></p>
+<p><img src="{{ site.baseurl }}/img/buenas-practicas-usabilidad-chatbot-ia-08.webp" loading="lazy" alt="Asistente virtual de la Seguridad Social con botones de consulta sugeridos como Ingreso Mínimo Vital, Vida laboral y Pensión jubilación" width="750" height="436"></p>
 
 <p>Ahora bien, el mensaje inicial no debería abrumar con explicaciones detalladas, sino indicar de forma sencilla qué puede esperar el usuario. El caso de Iberia es un buen ejemplo en este sentido.</p>
 
-<p><img src="{{ site.baseurl }}/img/buenas-practicas-usabilidad-chatbot-ia-09.webp" loading="lazy" alt="" width="750" height="733"></p>
+<p><img src="{{ site.baseurl }}/img/buenas-practicas-usabilidad-chatbot-ia-09.webp" loading="lazy" alt="Chatbot IBot de Iberia con opciones iniciales claras para comprar vuelo, recomendar destino, ver reserva o hacer check-in" width="750" height="733"></p>
 
 <p>Si queremos ir a por nota, <strong>el mensaje inicial debería adaptarse a la página en la que se encuentra la persona usuaria</strong>. Es lo que hace Rufus, el asistente de IA de Amazon. La página de inicio me muestra unas sugerencias diferentes a la que se muestra en la página de un producto concreto como el Apple MacBook Neo.</p>
 
 <div class="row">
     <div class="col-sm-6">
-        <p><img src="{{ site.baseurl }}/img/buenas-practicas-usabilidad-chatbot-ia-10.webp" loading="lazy" alt="" width="360" height="800" class="img-responsive"></p>
+        <p><img src="{{ site.baseurl }}/img/buenas-practicas-usabilidad-chatbot-ia-10.webp" loading="lazy" alt="Rufus de Amazon en la página de inicio mostrando sugerencias generales agrupadas por temas" width="360" height="800" class="img-responsive"></p>
     </div>
     <div class="col-sm-6">
-        <p><img src="{{ site.baseurl }}/img/buenas-practicas-usabilidad-chatbot-ia-11.webp" loading="lazy" alt="" width="360" height="800" class="img-responsive"></p>
+        <p><img src="{{ site.baseurl }}/img/buenas-practicas-usabilidad-chatbot-ia-11.webp" loading="lazy" alt="Rufus de Amazon en una página de producto mostrando preguntas sugeridas relaciónadas con el artículo consultado" width="360" height="800" class="img-responsive"></p>
     </div>
 </div>
 
@@ -60,15 +60,15 @@ tags:          [buenas prácticas de usabilidad, inteligencia artificial]
 
 <p>En la web de Iberia tienen un chatbot de IA presente en casi todas las páginas del sitio web.</p>
 
-<p><img src="{{ site.baseurl }}/img/buenas-practicas-usabilidad-chatbot-ia-02.webp" loading="lazy" alt="" width="750" height="333"></p>
+<p><img src="{{ site.baseurl }}/img/buenas-practicas-usabilidad-chatbot-ia-02.webp" loading="lazy" alt="Página de Iberia con el chatbot IBot visible como widget flotante en la esquina inferior derecha" width="750" height="333"></p>
 
 <p>No así en el apartado de gestión de reservas.</p>
 
-<p><img src="{{ site.baseurl }}/img/buenas-practicas-usabilidad-chatbot-ia-03.webp" loading="lazy" alt="" width="750" height="422"></p>
+<p><img src="{{ site.baseurl }}/img/buenas-practicas-usabilidad-chatbot-ia-03.webp" loading="lazy" alt="Página de gestión de reservas de Iberia sin acceso visible al chatbot" width="750" height="422"></p>
 
 <p>Un hecho curioso, máxime teniendo en cuenta que el chatbot está diseñado precisamente para ayudar con la gestión de reservas.</p>
 
-<p><img src="{{ site.baseurl }}/img/buenas-practicas-usabilidad-chatbot-ia-04.webp" loading="lazy" alt="" width="750" height="769"></p>
+<p><img src="{{ site.baseurl }}/img/buenas-practicas-usabilidad-chatbot-ia-04.webp" loading="lazy" alt="Chatbot IBot de Iberia solicitando localizador y apellido para consultar una reserva" width="750" height="769"></p>
 
 <h2>3. Conserva el historial del diálogo entre todas las páginas</h2>
 
@@ -76,7 +76,7 @@ tags:          [buenas prácticas de usabilidad, inteligencia artificial]
 
 <p>Afortunadamente, no es fácil encontrar ejemplos de chatbots que presenten este problema. Un caso es el de la Seguridad Social en España. En su chatbot, el historial de la conversación no solo se pierde cuando navegamos a otra página del sitio web, sino también, lo cual es aún peor, se pierde cada vez que cerramos la ventana del chatbot.</p>
 
-<p><img src="{{ site.baseurl }}/img/buenas-practicas-usabilidad-chatbot-ia-05.gif" loading="lazy" alt="" width="750" height="401"></p>
+<p><img src="{{ site.baseurl }}/img/buenas-practicas-usabilidad-chatbot-ia-05.gif" loading="lazy" alt="Animación del chatbot de la Seguridad Social perdiendo el historial de conversación al cerrar la ventana del asistente" width="750" height="401"></p>
 
 <h2>4. Un chatbot consciente del contexto ofrece respuestas mucho más relevantes</h2>
 
@@ -84,16 +84,16 @@ tags:          [buenas prácticas de usabilidad, inteligencia artificial]
 
 <p>En Leroy Merlin, por ejemplo, si nos encontramos en una página de producto, el usuario esperaría que el chatbot fuese sensible al contexto. Pero no es así.</p>
 
-<p><a href="{{ site.baseurl }}/img/buenas-practicas-usabilidad-chatbot-ia-12-xl.webp" target="_blank" rel="noopener noreferrer"><img src="{{ site.baseurl }}/img/buenas-practicas-usabilidad-chatbot-ia-12.webp" loading="lazy" alt="" width="750" height="348"></a></p>
+<p><a href="{{ site.baseurl }}/img/buenas-practicas-usabilidad-chatbot-ia-12-xl.webp" target="_blank" rel="noopener noreferrer"><img src="{{ site.baseurl }}/img/buenas-practicas-usabilidad-chatbot-ia-12.webp" loading="lazy" alt="Chatbot de Leroy Merlin en una página de mesa de jardín respondiendo que no puede ayudar con una pregunta sobre el peso del producto" width="750" height="348"></a></p>
 
 <p>Sin embargo, en Amazon, su chatbot responde en relación a la página de producto en la que nos encontramos.</p>
 
 <div class="row">
     <div class="col-sm-6">
-        <p><img src="{{ site.baseurl }}/img/buenas-practicas-usabilidad-chatbot-ia-13.webp" loading="lazy" alt="" width="360" height="800" class="img-responsive"></p>
+        <p><img src="{{ site.baseurl }}/img/buenas-practicas-usabilidad-chatbot-ia-13.webp" loading="lazy" alt="Página de producto de Amazon con un cargador Belkin, antes de consultar a Rufus sobre sus características" width="360" height="800" class="img-responsive"></p>
     </div>
     <div class="col-sm-6">
-        <p><img src="{{ site.baseurl }}/img/buenas-practicas-usabilidad-chatbot-ia-14.webp" loading="lazy" alt="" width="360" height="800" class="img-responsive"></p>
+        <p><img src="{{ site.baseurl }}/img/buenas-practicas-usabilidad-chatbot-ia-14.webp" loading="lazy" alt="Rufus de Amazon respondiendo cuánto pesa un cargador Belkin y ofreciendo preguntas de seguimiento relaciónadas" width="360" height="800" class="img-responsive"></p>
     </div>
 </div>
 
@@ -112,7 +112,7 @@ tags:          [buenas prácticas de usabilidad, inteligencia artificial]
 
 <p>Anteriormente hemos visto ejemplos de buenas preguntas o <strong>sugerencias de inicio</strong>. Por ejemplo, en la Seguridad Social.</p>
 
-<p><img src="{{ site.baseurl }}/img/buenas-practicas-usabilidad-chatbot-ia-08.webp" loading="lazy" alt="" width="750" height="436"></p>
+<p><img src="{{ site.baseurl }}/img/buenas-practicas-usabilidad-chatbot-ia-08.webp" loading="lazy" alt="Asistente virtual de la Seguridad Social con botones de consulta sugeridos como Ingreso Mínimo Vital, Vida laboral y Pensión jubilación" width="750" height="436"></p>
 
 <p>Las <strong>preguntas adicionales y relacionadas</strong> que el chatbot puede sugerir después de proporcionar una respuesta pueden ser muy útiles si son relevantes y no repetitivas.</p>
 
@@ -120,19 +120,19 @@ tags:          [buenas prácticas de usabilidad, inteligencia artificial]
 
 <p>Un buen ejemplo son las <strong>preguntas de seguimiento</strong> que hace Rufus, el asistente de Amazon.</p>
 
-<p><img src="{{ site.baseurl }}/img/buenas-practicas-usabilidad-chatbot-ia-15.webp" loading="lazy" alt="" width="360" height="800"></p>
+<p><img src="{{ site.baseurl }}/img/buenas-practicas-usabilidad-chatbot-ia-15.webp" loading="lazy" alt="Rufus de Amazon respondiendo sobre la calidad de imagen de un MacBook y mostrando preguntas de seguimiento como botones" width="360" height="800"></p>
 
 <p>Las preguntas de seguimiento deberían responder al contexto de la conversación y no volver constantemente sobre temas que el usuario ya ha ignorado. Además, presentarlas como botones clicables hace mucho más sencillo continuar conversando.</p>
 
 <p>En el siguiente ejemplo de Scouting America se echa en falta que las opciones de registro se presenten como botones y no en forma de pregunta en modo texto.</p>
 
-<p><a href="{{ site.baseurl }}/img/buenas-practicas-usabilidad-chatbot-ia-16-xl.webp" target="_blank" rel="noopener noreferrer"><img src="{{ site.baseurl }}/img/buenas-practicas-usabilidad-chatbot-ia-16.webp" loading="lazy" alt="" width="750" height="348"></a></p>
+<p><a href="{{ site.baseurl }}/img/buenas-practicas-usabilidad-chatbot-ia-16-xl.webp" target="_blank" rel="noopener noreferrer"><img src="{{ site.baseurl }}/img/buenas-practicas-usabilidad-chatbot-ia-16.webp" loading="lazy" alt="Chatbot de Scouting America explicando las opciones de registro medíante texto en lugar de ofrecerlas como botones clicables" width="750" height="348"></a></p>
 
 <h2>6. Usa componentes expandibles para no abrumar con respuestas largas</h2>
 
 <p>Las conversaciones con chatbots de IA pueden volverse largas rápidamente. En el artículo de NN/Group proponen mostrar la información adicional mediante componentes expandibles de tipo «acordeón». Sin embargo, no aportan ningún ejemplo de chatbot que aplique esta técnica. Por el contrario, mencionan el ejemplo de Rufus (el asistente de Amazon) que contiene enlaces de «más información» que en realidad lanzan una nueva pregunta al chatbot. Así comprobaron cómo los usuarios perdían el contexto y les resultaba difícil comparar opciones.</p>
 
-<p><img src="{{ site.baseurl }}/img/buenas-practicas-usabilidad-chatbot-ia-19.gif" loading="lazy" alt="" width="380" height="844"></p>
+<p><img src="{{ site.baseurl }}/img/buenas-practicas-usabilidad-chatbot-ia-19.gif" loading="lazy" alt="Animación de Rufus mostrando una respuesta larga con tarjetas de productos MacBook y enlaces de más información" width="380" height="844"></p>
 
 <h2>7. No hagas autoscroll hasta el final de la respuesta</h2>
 
@@ -142,13 +142,13 @@ tags:          [buenas prácticas de usabilidad, inteligencia artificial]
 
 <p>El chat de Qwen lo hace así en estos momentos.</p>
 
-<p><img src="{{ site.baseurl }}/img/buenas-practicas-usabilidad-chatbot-ia-20.gif" loading="lazy" alt="" width="750" height="508"></p>
+<p><img src="{{ site.baseurl }}/img/buenas-practicas-usabilidad-chatbot-ia-20.gif" loading="lazy" alt="Animación de Qwen desplazando automáticamente la conversación hasta el final mientras genera una respuesta larga" width="750" height="508"></p>
 
 <p>Si una respuesta es más larga que el área visible del chat, <strong>mantén la posición del usuario al principio del nuevo mensaje en lugar de desplazarlo al final</strong>.</p>
 
 <p>En sus inicios, ChatGPT también adolecía de este problema, pero actualmente ya lo han corregido.</p>
 
-<p><img src="{{ site.baseurl }}/img/buenas-practicas-usabilidad-chatbot-ia-21.gif" loading="lazy" alt="" width="750" height="508"></p>
+<p><img src="{{ site.baseurl }}/img/buenas-practicas-usabilidad-chatbot-ia-21.gif" loading="lazy" alt="Animación de ChatGPT manteniendo visible el inicio de una respuesta larga mientras se genera el contenido" width="750" height="508"></p>
 
 <h2>8. Incluye imágenes en las respuestas, no solo enlaces o descripciones textuales</h2>
 
@@ -158,11 +158,11 @@ tags:          [buenas prácticas de usabilidad, inteligencia artificial]
 
 <p>Tenemos un buen ejemplo en el chatbot de Leroy Merlin.</p>
 
-<p><a href="{{ site.baseurl }}/img/buenas-practicas-usabilidad-chatbot-ia-17-xl.webp" target="_blank" rel="noopener noreferrer"><img src="{{ site.baseurl }}/img/buenas-practicas-usabilidad-chatbot-ia-17.webp" loading="lazy" alt="" width="750" height="348"></a></p>
+<p><a href="{{ site.baseurl }}/img/buenas-practicas-usabilidad-chatbot-ia-17-xl.webp" target="_blank" rel="noopener noreferrer"><img src="{{ site.baseurl }}/img/buenas-practicas-usabilidad-chatbot-ia-17.webp" loading="lazy" alt="Chatbot de Leroy Merlin respondiendo a una consulta sobre pintura naranja con tarjetas de producto que incluyen fotografías y precios" width="750" height="348"></a></p>
 
 <p>En otro sitio web, a la misma pregunta sobre pintura naranja, la respuesta inicial es de solo texto.</p>
 
-<p><a href="{{ site.baseurl }}/img/buenas-practicas-usabilidad-chatbot-ia-18-xl.webp" target="_blank" rel="noopener noreferrer"><img src="{{ site.baseurl }}/img/buenas-practicas-usabilidad-chatbot-ia-18.webp" loading="lazy" alt="" width="750" height="482"></a></p>
+<p><a href="{{ site.baseurl }}/img/buenas-practicas-usabilidad-chatbot-ia-18-xl.webp" target="_blank" rel="noopener noreferrer"><img src="{{ site.baseurl }}/img/buenas-practicas-usabilidad-chatbot-ia-18.webp" loading="lazy" alt="Chatbot de Lowe’s respondiendo a una consulta sobre pintura naranja con una lista textual de productos, sin imágenes visibles en la primera respuesta" width="750" height="482"></a></p>
 
 <p>Nota: en favor de esta web hay que decir que, inmediatamente después de esta respuesta, haciendo scroll, se muestran fotografías de los productos.</p>
 
@@ -170,11 +170,11 @@ tags:          [buenas prácticas de usabilidad, inteligencia artificial]
 
 <p>Esta pauta no está incluida en el decálogo de NN/Group, pero me parece un requisito muy recomendable. Sabemos por la experiencia de muchos años de diseñar formularios que <a href="{{ site.baseurl }}{% post_url 2021-03-28-formularios-usables-consejos-de-diseno %}">el espacio disponible para escribir condiciona al usuario</a>. De modo que si el campo para escribir la petición o pregunta de la persona usuaria es reducido, desincentivará e incluso dificultará la escritura de <em>prompts</em> más extensos.</p>
 
-<p><video src="{{ site.baseurl }}/img/buenas-practicas-usabilidad-chatbot-ia-23.webm" width="834" height="248" autoplay loop muted playsinline></video></p>
+<p><video src="{{ site.baseurl }}/img/buenas-practicas-usabilidad-chatbot-ia-23.webm" width="834" height="248" autoplay loop muted playsinline title="Ejemplo de campo de texto de chatbot que mantiene una sola línea aunque el usuario escriba una consulta larga"></video></p>
 
 <p>La solución es que <strong>el campo del <em>prompt</em> crezca progresivamente a medida que el usuario escribe</strong>.</p>
 
-<p><video src="{{ site.baseurl }}/img/buenas-practicas-usabilidad-chatbot-ia-24.webm" width="834" height="353" autoplay loop muted playsinline></video></p>
+<p><video src="{{ site.baseurl }}/img/buenas-practicas-usabilidad-chatbot-ia-24.webm" width="834" height="353" autoplay loop muted playsinline title="Ejemplo de campo de texto de chatbot que aumenta de altura progresivamente mientras el usuario escribe una consulta larga"></video></p>
 
 <h2>10. Evita tener múltiples chatbots compitiendo por la atención del usuario</h2>
 
@@ -184,7 +184,7 @@ tags:          [buenas prácticas de usabilidad, inteligencia artificial]
 
 <p>Me ha resultado difícil encontrar un ejemplo en español de este problema. Quizá el que más se asemeja es el caso de la web de PcComponentes, que llega a mostrar tres puntos de acceso diferentes a un mismo servicio de chatbot de IA.</p>
 
-<p><img src="{{ site.baseurl }}/img/buenas-practicas-usabilidad-chatbot-ia-01.webp" loading="lazy" alt="" width="750" height="654"></p>
+<p><img src="{{ site.baseurl }}/img/buenas-practicas-usabilidad-chatbot-ia-01.webp" loading="lazy" alt="Página de producto de PcComponentes con tres accesos visuales al asistente de IA: búsqueda superior, bloque promocional y botón flotante" width="750" height="654"></p>
 
 <p>Cuantas más opciones tenga el usuario a la vista, <a href="{{ site.baseurl }}{% post_url 2017-03-07-unifica-funcionalidades-similares %}">más le costará tomar una decisión</a>.</p>
 
@@ -192,13 +192,13 @@ tags:          [buenas prácticas de usabilidad, inteligencia artificial]
 
 <p>El formato más extendido actualmente para mostrar un chatbot de IA integrado en la web es un widget flotante en el extremo inferior derecho de la ventana del navegador. Al clicar sobre él, se abre una pequeña ventana vertical superpuesta en la que se conversa con el chatbot. Como en el caso de la Administració Oberta de Catalunya.</p>
 
-<p><img src="{{ site.baseurl }}/img/buenas-practicas-usabilidad-chatbot-ia-06.webp" loading="lazy" alt="" width="750" height="480"></p>
+<p><img src="{{ site.baseurl }}/img/buenas-practicas-usabilidad-chatbot-ia-06.webp" loading="lazy" alt="Chatbot de la Administració Oberta de Catalunya con un saludo inicial genérico y sin sugerencias específicas de uso" width="750" height="480"></p>
 
 <p>En este tipo de interfaces, el espacio disponible puede ser reducido. Bien porque el usuario quiere extender la conversación y necesita un entorno más cómodo o bien porque las respuestas del bot se beneficiarían de una ventana de diálogo de mayor tamaño. Por ejemplo, si muestran respuestas enriquecidas con mapas, imágenes de producto, descripciones largas o listas extensas.</p>
 
 <p>Una solución sencilla es incorporar un botón que permita maximizar la ventana del chatbot.</p>
 
-<p><a href="{{ site.baseurl }}/img/buenas-practicas-usabilidad-chatbot-ia-22-xl.webp" target="_blank" rel="noopener noreferrer"><img src="{{ site.baseurl }}/img/buenas-practicas-usabilidad-chatbot-ia-22.webp" loading="lazy" alt="" width="750" height="348"></a></p>
+<p><a href="{{ site.baseurl }}/img/buenas-practicas-usabilidad-chatbot-ia-22-xl.webp" target="_blank" rel="noopener noreferrer"><img src="{{ site.baseurl }}/img/buenas-practicas-usabilidad-chatbot-ia-22.webp" loading="lazy" alt="Chatbot de la Administració Oberta de Catalunya maximizado a pantalla completa para ofrecer más espacio de conversación" width="750" height="348"></a></p>
 
 <h2>12. Añade un botón para copiar la respuesta al portapapeles</h2>
 
@@ -208,7 +208,7 @@ tags:          [buenas prácticas de usabilidad, inteligencia artificial]
 
 <p>Recientemente lo he planteado en el <em>wireframe</em> de la solución de <a href="https://www.adimedia.net/" target="_blank" rel="noopener noreferrer">Adimedia</a> de asistente IA.</p>
 
-<p><img src="{{ site.baseurl }}/img/buenas-practicas-usabilidad-chatbot-ia-26.webp" loading="lazy" alt="" width="750" height="550"></p>
+<p><img src="{{ site.baseurl }}/img/buenas-practicas-usabilidad-chatbot-ia-26.webp" loading="lazy" alt="Wireframe de un asistente de IA con el botón para copiar la respuesta al portapapeles resaltado" width="750" height="550"></p>
 
 <h2>13. No todos los usuarios quieren escribir: ofrece la opción de dictar los mensajes</h2>
 
@@ -216,6 +216,6 @@ tags:          [buenas prácticas de usabilidad, inteligencia artificial]
 
 <p>La entrada por voz es una funcionalidad muy recomendable. No tanto en el móvil, sino en especial en dispositivos de escritorio. En el móvil no es tan necesaria porque el propio sistema operativo permite dictar desde el teclado. Pero en equipos de escritorio la funcionalidad debería estar disponible. Como la tienen todos los "grandes jugadores" de IA.</p>
 
-<p><img src="{{ site.baseurl }}/img/buenas-practicas-usabilidad-chatbot-ia-25.webp" loading="lazy" alt="" width="750" height="98"></p>
+<p><img src="{{ site.baseurl }}/img/buenas-practicas-usabilidad-chatbot-ia-25.webp" loading="lazy" alt="Campo de entrada de ChatGPT con el botón de dictado por voz resaltado" width="750" height="98"></p>
 
 <p>Estas han sido mis buenas prácticas de usabilidad para chatbots de IA. ¿Se te ocurre alguna más que debería incluir?👉 Te invito a proponerla en los <a href="https://www.linkedin.com/posts/aunitz_buenas-pr%C3%A1cticas-de-usabilidad-para-el-chatbot-share-7459971416323600384-3Xfw" target="_blank" rel="noopener noreferrer">comentarios de esta publicación en LinkedIn</a>.</p>

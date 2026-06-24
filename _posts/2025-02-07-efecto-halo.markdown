@@ -14,7 +14,7 @@ tags:          [leyes y principios de experiencia de usuario (UX) y usabilidad, 
 
 <p>Como todo sesgo cognitivo, es un atajo mental que nos permite procesar la información de forma más rápida y con un menor esfuerzo y gasto de energía.</p>
 
-<p><img src="{{ site.baseurl }}/img/efecto-halo-01.jpg" loading="lazy" alt="" width="720" height="387"></p>
+<p><img src="{{ site.baseurl }}/img/efecto-halo-01.jpg" loading="lazy" alt="Persona trabajando con portátil en una terraza, representando una primera impresión positiva" width="720" height="387"></p>
 
 <p>En UX y diseño de interfaces, este efecto implica que, si un producto genera una buena impresión inicial (por ejemplo, con un diseño atractivo), los usuarios tenderán a percibirlo como más fácil de usar, confiable y eficiente, incluso si objetivamente no lo es.</p>
 
@@ -24,7 +24,7 @@ tags:          [leyes y principios de experiencia de usuario (UX) y usabilidad, 
 
 <p>Un diseño atractivo transmite una sensación de calidad y profesionalidad. Las interfaces limpias, bien organizadas y visualmente agradables generan confianza en el usuario y mejoran la percepción de usabilidad.</p>
 
-<p><img src="{{ site.baseurl }}/img/efecto-halo-02.jpg" loading="lazy" alt="" width="720" height="410"></p>
+<p><img src="{{ site.baseurl }}/img/efecto-halo-02.jpg" loading="lazy" alt="Mano sosteniendo un iPod como ejemplo de producto asociado a una marca reconocible" width="720" height="410"></p>
 
 <p>Por ejemplo, los productos de Apple suelen percibirse como intuitivos y fáciles de usar, en gran medida debido a su diseño visual atractivo, aun cuando algunas funciones pueden implicar una curva de aprendizaje considerable.</p>
 
@@ -32,7 +32,7 @@ tags:          [leyes y principios de experiencia de usuario (UX) y usabilidad, 
 
 <p>Los usuarios forman juicios con rapidez. Si una página web carga rápido, tiene una tipografía clara y un diseño equilibrado, se percibirá como más fiable y segura.</p>
 
-<p><img src="{{ site.baseurl }}/img/efecto-halo-03.jpg" loading="lazy" alt="" width="720" height="411"></p>
+<p><img src="{{ site.baseurl }}/img/efecto-halo-03.jpg" loading="lazy" alt="Muestrarios de color y material en una mesa de diseño" width="720" height="411"></p>
 
 <p>Un <a href="https://www.sciencedirect.com/science/article/abs/pii/S1071581912001127" target="_blank" rel="noopener noreferrer">estudio publicado en el <em>International Journal of Human-Computer Studies</em></a> determinó que los usuarios tardan apenas 50 milisegundos en formarse una opinión sobre un sitio web.</p>
 
@@ -44,7 +44,7 @@ tags:          [leyes y principios de experiencia de usuario (UX) y usabilidad, 
 
 <h2>¿Cómo aplicar el efecto halo en UX?</h2>
 
-<p><img src="{{ site.baseurl }}/img/efecto-halo-04.jpg" loading="lazy" alt="" width="720" height="410"></p>
+<p><img src="{{ site.baseurl }}/img/efecto-halo-04.jpg" loading="lazy" alt="Grupo de personas sonriendo alrededor de un portátil, como ejemplo de impresión favorable de equipo o marca" width="720" height="410"></p>
 
 <p>Para aprovechar el efecto halo en el diseño de experiencias digitales, recomiendo:</p>
 

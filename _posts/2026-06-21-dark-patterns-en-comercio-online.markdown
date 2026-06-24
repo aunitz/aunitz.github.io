@@ -83,7 +83,7 @@ tags:          [sesgos cognitivos, buenas prácticas de usabilidad]
 
 <p>Amazon colecciona un buen número de patrones oscuros. Entre ellos el del <em>scroll</em> infinito.</p>
 
-<p><video src="{{ site.baseurl }}/img/dark-patterns-06-scroll-infinito.webm" controls loop muted playsinline></video></p>
+<p><video src="{{ site.baseurl }}/img/dark-patterns-06-scroll-infinito.webm" controls loop muted playsinline title="Ejemplo de scroll infinito en una página que carga contenido continuamente al bajar"></video></p>
 
 <h3>7. Dotación <em>(Endowment)</em></h3>
 

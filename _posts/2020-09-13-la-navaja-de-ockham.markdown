@@ -32,10 +32,10 @@ tags:          [leyes y principios de experiencia de usuario (UX) y usabilidad, 
 
 <p>Dieter Rams desarrolló el grueso de su carrera en la empresa Braun A.G. entre los años 1955 y 1998. Siendo el responsable de elegantes diseños para cafeteras, calculadoras, radios, equipamiento audiovisual, electrodomésticos de consumo o productos de oficina.</p>
 
-<p><img src="{{ site.baseurl }}/img/la-navaja-de-ockham-03.jpg" loading="lazy" alt="" width="720" height="576"></p>
+<p><img src="{{ site.baseurl }}/img/la-navaja-de-ockham-03.jpg" loading="lazy" alt="Estantería minimalista con pocos objetos ordenados" width="720" height="576"></p>
 
 <p>Si no conoces su trabajo, no te sorprenderá saber que su influencia ha sido admitida por Jonathan Ive, actual Jefe de Diseño de <strong>Apple</strong>.</p>
 
-<p><img src="{{ site.baseurl }}/img/la-navaja-de-ockham-04.jpg" loading="lazy" alt="" width="720" height="402"></p>
+<p><img src="{{ site.baseurl }}/img/la-navaja-de-ockham-04.jpg" loading="lazy" alt="Tablet y teléfono sobre una mesa blanca como ejemplo de simplicidad visual" width="720" height="402"></p>
 
 <p>Si quieres conocer más sobre este principio, puedes partir de <a href="https://es.wikipedia.org/wiki/Navaja_de_Ockham" target="_blank" rel="noopener noreferrer">su artículo en la Wikipedia</a>.</p>

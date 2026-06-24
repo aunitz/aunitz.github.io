@@ -10,7 +10,7 @@ tags:          [métodos de investigación UX]
 
 <p>Esta <strong>técnica de investigación experiencia de usuario</strong> (UX research) permite <strong>evaluar la claridad de nuestra arquitectura de la información</strong>. Sin distracciones visuales, esta técnica se centra puramente en cómo la información está organizada y se accede a ella a través de la jerarquía de navegación.</p>
 
-<p><img src="{{ site.baseurl }}/img/que-es-un-tree-testing-01.webp" loading="lazy" alt="" width="750" height="422"></p>
+<p><img src="{{ site.baseurl }}/img/que-es-un-tree-testing-01.webp" loading="lazy" alt="Ilustración de una persona organizando nodos de una estructura jerárquica" width="750" height="422"></p>
 
 <h2>¿Cómo se realiza?</h2>
 
@@ -32,7 +32,7 @@ tags:          [métodos de investigación UX]
 
 <p>Esta técnica, al prescindir de los elementos visuales, nos permite concentrarnos en la esencia de la usabilidad, revelando cómo los usuarios se orientan y mueven a través de nuestro contenido.</p>
 
-<p><img src="{{ site.baseurl }}/img/que-es-un-tree-testing-02.jpg" loading="lazy" alt="" width="720" height="353"></p>
+<p><img src="{{ site.baseurl }}/img/que-es-un-tree-testing-02.jpg" loading="lazy" alt="Persona señalando la pantalla de un portátil durante una prueba de tree testing" width="720" height="353"></p>
 
 <p>Al incorporar el tree testing en las etapas tempranas de nuestro desarrollo estamos afianzando los cimientos sobre los cuales se construye la arquitectura de la información de nuestro sitio web o aplicación. Además, estamos trazando una ruta clara y directa hacia una navegación intuitiva y eficaz.</p>
 

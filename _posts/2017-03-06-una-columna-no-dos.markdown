@@ -21,4 +21,4 @@ tags:          [buenas prácticas de usabilidad]
 
 <p>Guía a los lectores con un contenido atractivo y de valor y termina con una llamada a la acción clara al final.</p>
 
-<p><img src="{{ site.baseurl }}/img/tip-1-una-columna.png" loading="lazy" alt="Ilustración del tip 1 de usabilidad: una sola columna" width="722" height="428"></p>
+<p><img src="{{ site.baseurl }}/img/tip-1-una-columna.png" loading="lazy" alt="Comparación entre un formulario en una sola columna y otro en dos columnas tachado, para mostrar que una estructura lineal facilita el recorrido" width="722" height="428"></p>

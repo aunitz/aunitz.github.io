@@ -31,7 +31,7 @@ tags:          [leyes y principios de experiencia de usuario (UX) y usabilidad, 
 
 <p>Este sesgo puede llevar a <strong>diseñadores y desarrolladores</strong> a <strong>sobreestimar su comprensión de las necesidades de los usuarios</strong>, resultando en productos que son menos intuitivos o accesibles de lo previsto. Aquí, la brecha entre la percepción del diseñador y la experiencia real del usuario se ensancha, a menudo con consecuencias significativas para la usabilidad y satisfacción del usuario.</p>
 
-<p><img src="{{ site.baseurl }}/img/que-es-un-test-con-personas-usuarias-01.jpg" loading="lazy" alt="" width="722" height="411"></p>
+<p><img src="{{ site.baseurl }}/img/que-es-un-test-con-personas-usuarias-01.jpg" loading="lazy" alt="Dos personas observando en un portátil una sesión de test de usabilidad" width="722" height="411"></p>
 
 <p>Desde la perspectiva del <strong>usuario</strong>, el Efecto Dunning-Kruger puede manifestarse en la <strong>sobreconfianza al navegar interfaces complejas</strong> o al utilizar funcionalidades avanzadas sin el conocimiento o la habilidad necesaria. Esto puede llevar a frustraciones, errores y una percepción negativa del producto, afectando a la retención de usuarios.</p>
 
@@ -53,7 +53,7 @@ tags:          [leyes y principios de experiencia de usuario (UX) y usabilidad, 
 	<li><strong>Adaptabilidad y apertura al cambio:</strong> la disposición para adaptarse y responder a nuevas informaciones y feedback es crucial. Reconocer que el aprendizaje es un proceso sin fin puede transformar cómo nos acercamos al diseño UX, haciendo que estemos más abiertos a explorar soluciones innovadoras y a cuestionar nuestras suposiciones previas.</li>
 </ol>
 
-<p><img src="{{ site.baseurl }}/img/efecto-dunning-kruger-02.jpg" loading="lazy" alt="" width="720" height="426"></p>
+<p><img src="{{ site.baseurl }}/img/efecto-dunning-kruger-02.jpg" loading="lazy" alt="Persona tomando notas en una libreta, representando aprendizaje y evaluación" width="720" height="426"></p>
 
 <p>En conclusión, <strong>la autoevaluación y el aprendizaje continuo</strong> no solo son antídotos contra el Efecto Dunning-Kruger, sino que también son fundamentales para el desarrollo de soluciones de UX que sean verdaderamente usables y efectivas. Al abrazar estos principios, podemos superar nuestras limitaciones percibidas y avanzar hacia la creación de experiencias digitales que satisfagan y deleiten a los usuarios en un mundo tecnológicamente avanzado y en constante cambio.</p>
 

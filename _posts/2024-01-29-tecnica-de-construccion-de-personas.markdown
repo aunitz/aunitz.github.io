@@ -14,7 +14,7 @@ tags:          [métodos de investigación UX]
 
 <p>Las <em>personas</em> son perfiles ficticios pero detallados de usuarios típicos. No son usuarios reales, sino representaciones basadas en datos de investigación de usuarios que reflejan diferentes segmentos del público objetivo. Cada <em>persona</em> incluye información como edad, ocupación, comportamientos, objetivos, desafíos y motivaciones.</p>
 
-<p><img src="{{ site.baseurl }}/img/tecnica-de-construccion-de-personas-ux-01.webp" loading="lazy" alt="" width="750" height="422"></p>
+<p><img src="{{ site.baseurl }}/img/tecnica-de-construccion-de-personas-ux-01.webp" loading="lazy" alt="Ilustración de una persona conectada con atributos y necesidades para definir una persona UX" width="750" height="422"></p>
 
 <h2>¿Cómo se realiza?</h2>
 
@@ -40,7 +40,7 @@ tags:          [métodos de investigación UX]
 	<li>Frustraciones: que pueda tener la solución que utiliza actualmente y que buscamos solventar con la nueva.</li>
 </ol>
 
-<p><img src="{{ site.baseurl }}/img/tecnica-de-construccion-de-personas-ux-02.webp" loading="lazy" alt="" width="750" height="422"></p>
+<p><img src="{{ site.baseurl }}/img/tecnica-de-construccion-de-personas-ux-02.webp" loading="lazy" alt="Ficha ilustrada de una persona UX con datos de perfil y comportamiento" width="750" height="422"></p>
 
 <h2>Beneficios de las Personas en UX</h2>
 

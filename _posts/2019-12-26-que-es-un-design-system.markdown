@@ -16,7 +16,7 @@ tags:          [sistemas de diseño, desarrollo de soluciones digitales, buenas 
 
 <p>El <strong>propósito fundamental</strong> de un sistema de diseño es <strong>facilitar el trabajo de los equipos</strong>.</p>
 
-<p><img src="{{ site.baseurl }}/img/design-system-01.jpg" loading="lazy" alt="" width="720" height="406"></p>
+<p><img src="{{ site.baseurl }}/img/design-system-01.jpg" loading="lazy" alt="Bocetos de pantallas móviles dibujados a mano como parte de un sistema de diseño" width="720" height="406"></p>
 
 <p>Una de las claves del éxito de los sistemas de diseño es que están concebidos para facilitar el trabajo y dar soporte a todos los miembros de un equipo de desarrollo de producto. Su vocación es ser <strong>interdisciplinar</strong>. De modo que sirva de ayuda a diseñadores, desarrolladores, product owners, etc.</p>
 
@@ -36,7 +36,7 @@ tags:          [sistemas de diseño, desarrollo de soluciones digitales, buenas 
     <li>Constituye una base sólida que se debe <strong>extender y mejorar con el tiempo</strong>.</li>
 </ul>
 
-<p><img src="{{ site.baseurl }}/img/design-system-02.jpg" loading="lazy" alt="" width="720" height="346"></p>
+<p><img src="{{ site.baseurl }}/img/design-system-02.jpg" loading="lazy" alt="Iconos de accesibilidad y móvilidad dentro de una librería visual" width="720" height="346"></p>
 
 <h2>A los sistemas de diseño hay que dedicarles tiempo</h2>
 
@@ -48,13 +48,13 @@ tags:          [sistemas de diseño, desarrollo de soluciones digitales, buenas 
 
 <p>El “secreto” para desarrollar un sistema de diseño realmente efectivo no es otro que el que exista una auténtica colaboración y comunicación entre todas las partes implicadas y hacerlas trabajar de manera colaborativa, iterativa e incremental.</p>
 
-<p><img src="{{ site.baseurl }}/img/design-system-03.png" loading="lazy" alt="" class="center-block" width="447" height="446"></p>
+<p><img src="{{ site.baseurl }}/img/design-system-03.png" loading="lazy" alt="Diagrama circular del ciclo de trabajo de un sistema de diseño con fases de creación, revisión, prueba, documentación y distribución" class="center-block" width="447" height="446"></p>
 
 <h2>La base de un sistema de diseño: la guía de estilo</h2>
 
 <p>No existe una convención universal sobre los entregables que debe o no debe contener un sistema de diseño. En gran medida depende de las necesidades, recursos y conocimientos de cada compañía. El mínimo que debería incluir es lo que se conoce como <strong>guía de estilo</strong> (style guide).</p>
 
-<p><img src="{{ site.baseurl }}/img/design-system-04.png" loading="lazy" alt="" width="720" height="406"></p>
+<p><img src="{{ site.baseurl }}/img/design-system-04.png" loading="lazy" alt="Muestras de color y especificaciones visuales en una mesa de trabajo de diseño" width="720" height="406"></p>
 
 <p>Las guías de estilo reciben varios nombres alternativos: pattern libraries, UI libraries, component libraries.</p>
 
@@ -75,7 +75,7 @@ tags:          [sistemas de diseño, desarrollo de soluciones digitales, buenas 
 
 <p>La unidad básica de un sistema de diseño la constituyen los llamados <strong>componentes</strong>. Son con los que construiremos los interfaces de nuestra aplicación.</p>
 
-<p><img src="{{ site.baseurl }}/img/design-system-05.jpg" loading="lazy" alt="" width="720" height="296"></p>
+<p><img src="{{ site.baseurl }}/img/design-system-05.jpg" loading="lazy" alt="Piezas de LEGO de colores como metáfora de componentes reutilizables" width="720" height="296"></p>
 
 <p>Para entender el concepto de componente, es habitual compararlos con los bloques de LEGO. Nos es mala aproximación, pero le faltan matices. Los bloques de LEGO son piezas muy pequeñas y reutilizables. Mientras que los componentes de un sistema de diseño pueden ser de dimensión y/o funcionalidades muy diferentes. Por ello el autor <a href="https://bradfrost.com/" target="_blank" rel="noopener noreferrer">Brad Frost</a>, en su libro <a href="http://atomicdesign.bradfrost.com/table-of-contents/" target="_blank" rel="noopener noreferrer">Atomic Design</a> (2013), popularizó la metáfora de la química básica. De modo que los componentes pueden ser de tipo “átomo”, “molécula” u “organismo”. Ayudando a entender que la construcción de los componentes de un sistema de diseño implica <strong>jerarquía</strong>.</p>
 

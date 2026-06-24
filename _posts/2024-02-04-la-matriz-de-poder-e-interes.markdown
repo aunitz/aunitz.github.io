@@ -11,7 +11,7 @@ tags:          [métodos de investigación UX]
 
 <p>Es uno de los métodos de <a href="{{ site.baseurl }}{% post_url 2024-02-04-que-es-un-stakeholder-map %}">mapeo de <em>stakeholders</em></a> más populares. También conocida como Matriz de Mendelow, ya que su invención se le atribuye al investigador Aubrey Mendelow.</p>
 
-<p><img src="{{ site.baseurl }}/img/la-matriz-de-poder-e-interes.png" loading="lazy" alt="" width="720" height="723"></p>
+<p><img src="{{ site.baseurl }}/img/la-matriz-de-poder-e-interes.png" loading="lazy" alt="Matriz de poder e interés con cuatro cuadrantes para clasificar stakeholders" width="720" height="723"></p>
 
 <p>Veamos cómo debemos gestionar los <em>stakeholders</em> situados en cada uno de los cuatro cuadrantes.</p>
 

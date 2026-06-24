@@ -11,7 +11,7 @@ tags:          [inteligencia artificial, SEO/GEO, marketing]
 
 <p>El pasado 11 de febrero tuve el placer de asistir al taller titulado <a href="https://enpresadigitala.spri.eus/es/seo-geo-como-ganar-visibilidad-organica-en-la-era-de-chatgpt/" target="_blank" rel="noopener noreferrer">"SEO + GEO: cómo ganar visibilidad orgánica en la era de ChatGPT"</a> impartido por <a href="https://www.linkedin.com/in/begolashayas/" target="_blank" rel="noopener noreferrer">Begoña Lashayas</a>, docente en Mondragon Unibertsitatea. La principal reflexión particular que extraigo de la jornada es que acaba de nacer una <strong>nueva especialidad en el ámbito del marketing digital</strong>: el <strong>GEO (Generative Engine Optimization)</strong>.</p>
 
-<p><img src="{{ site.baseurl }}/img/quiero-que-la-ia-me-cite-geo-01.webp" loading="lazy" alt="" width="750" height="353"></p>
+<p><img src="{{ site.baseurl }}/img/quiero-que-la-ia-me-cite-geo-01.webp" loading="lazy" alt="Ilustración de una persona consultando un contenido citado en una pantalla de ordenador" width="750" height="353"></p>
 
 <p>Tengo compañeras y compañeros en <a href="https://www.adimedia.net/" target="_blank" rel="noopener noreferrer">Adimedia</a> que están especializados en marketing digital, pero en mi labor como director de proyectos digitales me gusta estar mínimamente al día de las novedades. Es el motivo que me ha impulsado a compartir en este artículo las principales ideas y reflexiones que extraigo del taller.</p>
 
@@ -21,7 +21,7 @@ tags:          [inteligencia artificial, SEO/GEO, marketing]
 
 <p>Lo que subyace al GEO es un <strong>cambio radical y muy profundo en el comportamiento de las personas usuarias</strong>. Durante muchos años, buscar información en internet ha consistido típicamente en introducir los términos de búsqueda en el buscador (Google), analizar los primeros resultados que nos devuelve el motor de búsqueda y entrar en una o varias webs. Casi siempre hay, al menos, un clic. El <strong>buscador</strong> actúa como un <strong>intermediario</strong> que te lleva a otro sitio donde se encuentra la información. Este modelo de comportamiento no ha desaparecido, sigue existiendo, pero cada vez se está popularizando más otro modelo diferente. En lugar de buscar en Google le preguntamos directamente a la IA. Y <strong>la IA nos proporciona directamente la información que necesitamos</strong>. ChatGPT responde directamente. Google responde directamente (Google AI Overviews). El usuario no abandona el chatbot. No termina en ninguna web. Es lo que se conoce como el <strong>fenómeno zero-click</strong>.</p>
 
-<p><img src="{{ site.baseurl }}/img/quiero-que-la-ia-me-cite-geo-02.webp" loading="lazy" alt="" width="750" height="429"></p>
+<p><img src="{{ site.baseurl }}/img/quiero-que-la-ia-me-cite-geo-02.webp" loading="lazy" alt="Ilustración de una persona comparando resultados de búsqueda tradicional y respuesta de IA" width="750" height="429"></p>
 
 <p>Realmente el fenómeno zero-click no es nuevo. Existe, desde hace muchos años, siempre que el usuario obtiene la respuesta que necesita directamente en la página de resultados del buscador mediante elementos como los fragmentos destacados (recuadros superiores que resumen la respuesta a una consulta), los paneles de conocimiento (información detallada en el lateral de la búsqueda) o las herramientas integradas (calculadoras, mapas, etc.). La novedad es que actualmente <strong>se está disparando el uso de las respuestas generadas por la IA</strong>. Tanto es así que, lo estamos viviendo en el día a día de nuestros clientes, <strong>el tráfico orgánico procedente de buscadores está cayendo de manera muy notable</strong>.</p>
 
@@ -49,7 +49,7 @@ tags:          [inteligencia artificial, SEO/GEO, marketing]
 
 <p>Sabemos que los modelos de IA generativa generalistas han sido entrenados con infinidad de contenido universal. Ese contenido inmenso forma parte de lo que la IA "sabe". Es por ello que las primeras versiones de ChatGPT y otros modelos tenían una "fecha de corte" de su conocimiento y no eran capaces de contestar sobre acontecimientos o conocimientos generados posteriormente a esa fecha. En la actualidad esa limitación ha sido solventada porque los chatbots más avanzados <strong>son capaces de buscar en internet</strong> cuando se les hace una pregunta que no pueden contestar con su conocimiento interno. Y aquí es donde se encuentra el quid de la cuestión, ¿cómo ejecuta dicha búsqueda el modelo? ¿con qué resultados de la búsqueda se queda?</p>
 
-<p><img src="{{ site.baseurl }}/img/quiero-que-la-ia-me-cite-geo-03.webp" loading="lazy" alt="" width="750" height="440"></p>
+<p><img src="{{ site.baseurl }}/img/quiero-que-la-ia-me-cite-geo-03.webp" loading="lazy" alt="Ilustración de documentos conectados a una red neuronal y a una lupa, representando visibilidad en IA" width="750" height="440"></p>
 
 <p>No hay una certeza absoluta sobre el mecanismo de búsqueda en internet que usan los modelos y además es algo que está en constante evolución. En el taller nos dijeron que la mayoría de los modelos utilizan los resultados de búsqueda de Google. Salvo excepciones como Microsoft Copilot, que usa Bing. Por tanto, el <strong>SEO tradicional</strong> sigue siendo importante para que pasemos el primer filtro: <strong>aparecer en los resultados que recibirá el modelo de IA</strong>. Ahora bien, hay una <strong>segunda parte</strong> del proceso que es aquella en la que <strong>el modelo selecciona</strong>, de entre las disponibles, algunos resultados y no otros para elaborar (sintetizar) su respuesta.</p>
 
@@ -65,7 +65,7 @@ tags:          [inteligencia artificial, SEO/GEO, marketing]
 
 <p>Nota: para no contaminar con contexto propio al chatbot, ejecuta la batería de preguntas en sesiones anónimas del chatbot y en sus versiones gratuitas abiertas al público.</p>
 
-<p><img src="{{ site.baseurl }}/img/quiero-que-la-ia-me-cite-geo-04.webp" loading="lazy" alt="" width="750" height="502"></p>
+<p><img src="{{ site.baseurl }}/img/quiero-que-la-ia-me-cite-geo-04.webp" loading="lazy" alt="Ilustración de una persona analizando varias respuestas de IA con una lupa" width="750" height="502"></p>
 
 <p>Analiza las respuestas:</p>
 
@@ -111,7 +111,7 @@ tags:          [inteligencia artificial, SEO/GEO, marketing]
     </li>
 </ul>
 
-<p><img src="{{ site.baseurl }}/img/quiero-que-la-ia-me-cite-geo-05.webp" loading="lazy" alt="" width="750" height="441"></p>
+<p><img src="{{ site.baseurl }}/img/quiero-que-la-ia-me-cite-geo-05.webp" loading="lazy" alt="Ilustración de un contenido destacado distribuyéndose hacia varios formatos y respuestas de IA" width="750" height="441"></p>
 
 <p>La calidad del contenido siempre ha sido relevante para el SEO. Para el GEO también, pero tiene algunos matices interesantes:</p>
 
@@ -135,7 +135,7 @@ tags:          [inteligencia artificial, SEO/GEO, marketing]
     <li>Enlaces a redes sociales activas</li>
 </ul>
 
-<p><img src="{{ site.baseurl }}/img/quiero-que-la-ia-me-cite-geo-06.webp" loading="lazy" alt="" width="750" height="375"></p>
+<p><img src="{{ site.baseurl }}/img/quiero-que-la-ia-me-cite-geo-06.webp" loading="lazy" alt="Ilustración de una página central conectada con varios resultados y fragmentos de contenido" width="750" height="375"></p>
 
 <h3>Estrategia 4: estructura tu contenido</h3>
 
@@ -151,7 +151,7 @@ tags:          [inteligencia artificial, SEO/GEO, marketing]
 
 <p>Se trata de código estandarizado —basado en el vocabulario de Schema.org— que se añade al HTML de una página para etiquetar y clasificar explícitamente el contenido, permitiendo que los motores de búsqueda y los modelos de IA identifiquen sin ambigüedad qué es cada elemento: un producto, una receta, un evento, una persona, un post, etc.</p>
 
-<p><img src="{{ site.baseurl }}/img/quiero-que-la-ia-me-cite-geo-07.webp" loading="lazy" alt="" width="750" height="312"></p>
+<p><img src="{{ site.baseurl }}/img/quiero-que-la-ia-me-cite-geo-07.webp" loading="lazy" alt="Ilustración de contenido estructurado, código y tarjetas enriquecidas conectados entre si" width="750" height="312"></p>
 
 <p>Hay infinidad de tipos de datos estructurados. Puedes empezar por los más básicos:</p>
 
@@ -187,7 +187,7 @@ tags:          [inteligencia artificial, SEO/GEO, marketing]
 
 <p>Va en la línea de darle "mascado" el contenido al modelo. Que tenga ya "empaquetada" la respuesta. A esta técnica se le denomina <strong>"answer block"</strong>. Consiste en redactar respuestas a preguntas específicas en bloques autocontenidos de entre 50 y 100 palabras que, al no depender de ningún contexto previo, ofrecen información completa y precisa en un formato fácilmente extraíble por motores de búsqueda e IA generativa, maximizando así las posibilidades de ser seleccionados como respuesta directa.</p>
 
-<p><img src="{{ site.baseurl }}/img/quiero-que-la-ia-me-cite-geo-08.webp" loading="lazy" alt="" width="750" height="398"></p>
+<p><img src="{{ site.baseurl }}/img/quiero-que-la-ia-me-cite-geo-08.webp" loading="lazy" alt="Ilustración de una página web cuyo contenido pasa a un asistente conversacional" width="750" height="398"></p>
 
 <p>❌ Ejemplo de mal bloque (no extraíble)</p>
 
@@ -223,4 +223,4 @@ tags:          [inteligencia artificial, SEO/GEO, marketing]
     <li>Trabaja la <strong>autoridad</strong>. Genera contenido único y habla desde la experiencia.</li>
 </ul>
 
-<p><img src="{{ site.baseurl }}/img/quiero-que-la-ia-me-cite-geo-09.webp" loading="lazy" alt="" width="750" height="511"></p>
+<p><img src="{{ site.baseurl }}/img/quiero-que-la-ia-me-cite-geo-09.webp" loading="lazy" alt="Ilustración de tres columnas SEO y GEO como pilares de visibilidad digital" width="750" height="511"></p>

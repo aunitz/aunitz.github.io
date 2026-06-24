@@ -10,7 +10,7 @@ tags:          [métodos de investigación UX]
 
 <p>Un <strong><em>journey map</em></strong> es una herramienta para la <strong>visualización del recorrido</strong> cronológico de un usuario desde que inicia un proceso hasta que logra su <strong>objetivo</strong>.</p>
 
-<p><img src="{{ site.baseurl }}/img/que-es-user-customer-journey-map-01.jpg" loading="lazy" alt="" width="720" height="400"></p>
+<p><img src="{{ site.baseurl }}/img/que-es-user-customer-journey-map-01.jpg" loading="lazy" alt="Equipo trabajando con notas adhesivas y mapas de experiencia sobre una mesa" width="720" height="400"></p>
 
 <p>Se puede utilizar indistintamente el término “user journey map” o “customer journey map”. Ambos hacen referencia a la visualización de una persona utilizando un producto o servicio para lograr un fin.</p>
 
@@ -18,7 +18,7 @@ tags:          [métodos de investigación UX]
 
 <p>Para no contravenir ningún contrato de confidencialidad, ilustraré este artículo con un <a href="https://digital.gov/2015/08/12/journey-mapping-the-customer-experience-a-usa-gov-case-study/" target="_blank" rel="noopener noreferrer">caso de estudio publicado “en abierto”</a> por de la agencia gubernamental de los Estados Unidos dedicada a la orientación para el desarrollo de mejores servicios digitales en el gobierno (<a href="https://digital.gov/" target="_blank" rel="noopener noreferrer">Digital.gov</a>).</p>
 
-<p><img src="{{ site.baseurl }}/img/que-es-user-customer-journey-map-02.jpg" loading="lazy" alt="" width="720" height="576"></p>
+<p><img src="{{ site.baseurl }}/img/que-es-user-customer-journey-map-02.jpg" loading="lazy" alt="Ejemplo de customer journey map de Disney con fases, emociones y puntos de contacto" width="720" height="576"></p>
 
 <p>La mayoría de los <em>journey map</em> utilizan un formato de documento dividido en tres partes:</p>
 <ul>
@@ -108,7 +108,7 @@ Viuda sin hijos</p></blockquote>
 <h2>Beneficios de utilizar esta herramienta</h2>
 <p>El <em>journey map</em> proporciona una <strong>visión holística, visual y concisa</strong> de la experiencia de la persona usuaria en el uso de un producto o servicio.</p>
 
-<p><img src="{{ site.baseurl }}/img/que-es-user-customer-journey-map-03.jpg" loading="lazy" alt="" width="720" height="378"></p>
+<p><img src="{{ site.baseurl }}/img/que-es-user-customer-journey-map-03.jpg" loading="lazy" alt="Persona colocando notas adhesivas en una pared durante la elaboración de un journey map" width="720" height="378"></p>
 
 <p>Es una herramienta muy útil para que todos los miembros del equipo y resto de actores implicados (<em>stakeholders</em>) compartan un <strong>mismo modelo mental</strong>.</p>
 

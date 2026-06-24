@@ -19,13 +19,13 @@ tags:          [métodos de investigación UX]
 
 <p>El título del artículo de Nielsen tampoco ayuda a desmontar esta idea: “Why You Only Need to Test with 5 Users”.</p>
 
-<p><img src="{{ site.baseurl }}/img/cuantas-personas-usuarias-son-necesarias-para-un-test-de-usabilidad-01.jpg" loading="lazy" alt="" width="720" height="137"></p>
+<p><img src="{{ site.baseurl }}/img/cuantas-personas-usuarias-son-necesarias-para-un-test-de-usabilidad-01.jpg" loading="lazy" alt="Captura del artículo Why You Only Need to Test with 5 Users de Nielsen Norman Group" width="720" height="137"></p>
 
 <p>Sin embargo, realizando una lectura cuidadosa del artículo, se extraen matices importantes.</p>
 
 <p>En primer lugar, debemos situarnos en el <strong>contexto histórico</strong> del año en que se escribió el artículo. Han pasado más de 25 años desde entonces. La usabilidad era un concepto poco conocido. Aún no existía el concepto de experiencia de usuario (UX). Los pioneros como Nielsen, que evangelizaban sobre usabilidad en aquellos años, se enfrentaban al desconocimiento de la mayoría de los clientes sobre sus beneficios, y se consideraba, por muchos, que invertir en usabilidad era caro y complejo.</p>
 
-<p><img src="{{ site.baseurl }}/img/cuantas-personas-usuarias-son-necesarias-para-un-test-de-usabilidad-02.jpg" loading="lazy" alt="" width="720" height="480"></p>
+<p><img src="{{ site.baseurl }}/img/cuantas-personas-usuarias-son-necesarias-para-un-test-de-usabilidad-02.jpg" loading="lazy" alt="Varias personas observando a un usuario durante un test de usabilidad con ordenador" width="720" height="480"></p>
 
 <p>Por ello, Nielsen comienza el artículo afirmando que “algunas personas creen que la usabilidad es muy costosa y compleja, y que las pruebas de usuario deberían reservarse para los pocos proyectos de diseño web con un gran presupuesto”.</p>
 
@@ -37,7 +37,7 @@ tags:          [métodos de investigación UX]
 
 <p>Esto se debe a que, conforme se añaden más usuarios, se aprende menos, ya que se observan las mismas incidencias una y otra vez.</p>
 
-<p><img src="{{ site.baseurl }}/img/que-es-un-test-con-personas-usuarias-03.gif" loading="lazy" alt="" width="631" height="377"></p>
+<p><img src="{{ site.baseurl }}/img/que-es-un-test-con-personas-usuarias-03.gif" loading="lazy" alt="Curva de Nielsen que muestra el porcentaje de problemas de usabilidad encontrados según el número de usuarios testados" width="631" height="377"></p>
 
 <p>Pero profundicemos algo más en los resultados del estudio de Nielsen: para localizar el <strong>100 % de los problemas de usabilidad</strong>, necesitamos tan solo <strong>15 personas usuarias</strong>. Y aquí es donde aparece la <strong>segunda idea importante</strong> del artículo. Si se dispone del presupuesto para hacer una prueba con 15 personas, es <strong>mejor invertir ese dinero en 3 pruebas con 5 usuarios</strong> en diferentes momentos del desarrollo que en una única prueba con 15 personas. Es decir, es preferible evolucionar el producto de forma iterativa, como proponen las metodologías ágiles de desarrollo de software: solucionar los problemas detectados en una primera iteración, realizar una nueva prueba, corregir, y así sucesivamente.</p>
 
@@ -57,7 +57,7 @@ tags:          [métodos de investigación UX]
 
 <p>No mucho después del artículo de Nielsen, la investigadora Laura Faulkner publicó en 2003 un estudio&nbsp;<sup id="fnref:fn-f2"><a href="#fn:fn-f2" class="footnote">2</a></sup> de campo realizado en el <em>Applied Research Laboratories</em> de la Universidad de Texas en Austin.</p>
 
-<p><img src="{{ site.baseurl }}/img/cuantas-personas-usuarias-son-necesarias-para-un-test-de-usabilidad-03.jpg" loading="lazy" alt="" width="720" height="480"></p>
+<p><img src="{{ site.baseurl }}/img/cuantas-personas-usuarias-son-necesarias-para-un-test-de-usabilidad-03.jpg" loading="lazy" alt="Grupo de personas participando en una sesión de test de usabilidad con ordenadores" width="720" height="480"></p>
 
 <p>Actualmente, <a href="https://www.linkedin.com/in/laurafaulkner/" target="_blank" rel="noopener noreferrer">Laura Faulkner</a> es doctora en Psicología Experimental en experiencia de usuario y Head of AWS UX Research en Amazon Web Services.</p>
 
@@ -106,7 +106,7 @@ tags:          [métodos de investigación UX]
 	<li><strong>Eyetracking:</strong> Para obtener mapas de calor significativos, se requieren al menos 39 usuarios.</li>
 </ul>
 
-<p><img src="{{ site.baseurl }}/img/cuantas-personas-usuarias-son-necesarias-para-un-test-de-usabilidad-04.jpg" loading="lazy" alt="" width="720" height="480"></p>
+<p><img src="{{ site.baseurl }}/img/cuantas-personas-usuarias-son-necesarias-para-un-test-de-usabilidad-04.jpg" loading="lazy" alt="Moderador acompañando a una usuaria durante una prueba de usabilidad frente a un ordenador" width="720" height="480"></p>
 
 <p>También rebate argumentos que considera débiles a favor de usar más de 5 usuarios:</p>
 <ul>

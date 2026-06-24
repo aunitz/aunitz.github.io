@@ -12,7 +12,7 @@ tags:          [ética, marketing, sesgos cognitivos]
 
 <p>Por otra parte, existe en psicología un concepto que también puede aplicarse al diseño de experiencias e interfaces de usuario. Se trata de los <strong>sesgos cognitivos</strong>.</p>
 
-<p><img src="{{ site.baseurl }}/img/uso-sesgos-cognitivos-marketing-01.jpg" loading="lazy" alt="" width="720" height="548"></p>
+<p><img src="{{ site.baseurl }}/img/uso-sesgos-cognitivos-marketing-01.jpg" loading="lazy" alt="Ilustración de un cerebro dividido en dos hemisferios, uno analítico y otro colorido" width="720" height="548"></p>
 
 <p>Un sesgo cognitivo es un <strong>efecto psicológico</strong> por el cual interpretamos incorrectamente la información disponible e influye en nuestra toma de decisiones o la emisión de juicios. Lo cual <strong>puede llevarnos a la toma de decisiones irracionales y/o incorrectas para nuestros intereses</strong>.</p>
 
@@ -22,7 +22,7 @@ tags:          [ética, marketing, sesgos cognitivos]
 
 <p>Si se hace con este propósito no parece que haya ninguna objeción ética o moral a su uso. Ahora bien, está ampliamente extendido y aceptado, el <strong>valerse de los sesgos cognitivos</strong> por parte de los especialistas de <strong>marketing</strong>, <strong>con el objetivo de vender más</strong> o de maximizar el beneficio por cliente.</p>
 
-<p><img src="{{ site.baseurl }}/img/uso-sesgos-cognitivos-marketing-02.jpg" loading="lazy" alt="" width="720" height="373"></p>
+<p><img src="{{ site.baseurl }}/img/uso-sesgos-cognitivos-marketing-02.jpg" loading="lazy" alt="Pizarra con el texto marketing strategy escrito con tiza" width="720" height="373"></p>
 
 <p>Los artículos en internet que escriben sobre el tema se contarán por miles. Por ejemplo, hace poco leía <a href="https://www.thinkwithgoogle.com/intl/es-es/insights/consumer-journey/nuevo-estudio-c%C3%B3mo-convencer-al-68-de-los-espa%C3%B1oles-para-que-consideren-tu-marca/" target="_blank" rel="noopener noreferrer">un interesante estudio de Think with Google</a><sup id="fnref:fn-f1"><a href="#fn:fn-f1" class="footnote">1</a></sup>. En el cual estudian de manera experimental (sobre 10.000 compradores españoles) el efecto en las ventas online de seis sesgos cognitivos. El experimento demostró que <strong>si se aplican estos sesgos pueden convencer hasta a un 68% de los compradores</strong> de que cambien su primera elección de marca por otra segunda marca.</p>
 
@@ -36,7 +36,7 @@ tags:          [ética, marketing, sesgos cognitivos]
 
 <p>En el estudio, claramente <strong>invitan a utilizar las ciencias conductuales y los sesgos cognitivos para ganar dinero</strong>. En ningún momento se plantean que pueda haber un dilema ético o moral por aprovecharse de los “errores” cognitivos de la mente humana.</p>
 
-<p><img src="{{ site.baseurl }}/img/uso-sesgos-cognitivos-marketing-03.jpg" loading="lazy" alt="" width="720" height="393"></p>
+<p><img src="{{ site.baseurl }}/img/uso-sesgos-cognitivos-marketing-03.jpg" loading="lazy" alt="Señal de carretera con la palabra RIGHT y un signo de interrogación" width="720" height="393"></p>
 
 <p>A mí, sin embargo, <strong>me hace dudar sobre la moralidad de aplicar este tipo de prácticas</strong>. Que no por ser tremendamente extendidas deberíamos tomar como éticamente válidas.</p>
 

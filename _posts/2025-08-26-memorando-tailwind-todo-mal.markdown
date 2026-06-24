@@ -17,7 +17,7 @@ tags:          [desarrollo de soluciones digitales, memorandos]
 
 <p>
     <a href="{{ site.baseurl }}/img/memorando-tailwind-todo-mal-01-grande.jpg">
-        <img src="{{ site.baseurl }}/img/memorando-tailwind-todo-mal-01.jpg" loading="lazy" alt="" width="720" height="423">
+        <img src="{{ site.baseurl }}/img/memorando-tailwind-todo-mal-01.jpg" loading="lazy" alt="Editor de código mostrando una gran cantidad de clases utilitarias en HTML" width="720" height="423">
     </a>
 </p>
 
@@ -32,7 +32,7 @@ tags:          [desarrollo de soluciones digitales, memorandos]
 <p>A diferencia de los estilos CSS que permiten agrupar reglas reutilizables, en <em>Tailwind </em>se recomienda duplicar las mismas cadenas de clases múltiples veces.</p>
 <p>La siguiente captura de pantalla de la documentación oficial de <em>Tailwind</em> me dejó sin palabras:</p>
 
-<p><img src="{{ site.baseurl }}/img/memorando-tailwind-todo-mal-02.gif" loading="lazy" alt="" width="720" height="717"></p>
+<p><img src="{{ site.baseurl }}/img/memorando-tailwind-todo-mal-02.gif" loading="lazy" alt="Animación de un editor con código Tailwind y una vista previa de interfaz" width="720" height="717"></p>
 
 <h3>Dependencia de un <em>bundler</em></h3>
 <p><em>Tailwind</em> no funciona sin un <em>plugin</em> y un sistema de <em>bundling</em>, al revés que CSS puro que se puede emplear directamente en una página.</p>
@@ -41,7 +41,7 @@ tags:          [desarrollo de soluciones digitales, memorandos]
 <p>Se requiere aprender no solo la semántica de CSS (como <code>background-color</code>), sino también las convenciones de <em>Tailwind</em> (<code>bg-</code>, <code>items-</code>, etc.).</p>
 <p><em>Tailwind</em> no es especialmente consistente a la hora de nombrar sus clases. Escribir código significa tener que esperar la sugerencia del editor para saber qué estilo aplica cada clase, o buscarlo manualmente.</p>
 
-<p><img src="{{ site.baseurl }}/img/memorando-tailwind-todo-mal-03.png" loading="lazy" alt="" width="720" height="480"></p>
+<p><img src="{{ site.baseurl }}/img/memorando-tailwind-todo-mal-03.png" loading="lazy" alt="Ilustración de un desarrollador abrumado por abreviaturas de Tailwind como bg, lg:flex y px-4" width="720" height="480"></p>
 
 <h3>Migraciones difíciles entre versiones</h3>
 <p>Cada vez que <em>Tailwind</em> actualiza su versión mayor y cambia algunas clases, es necesario usar <em>codemods</em> y después revisar manualmente miles de cambios.</p>
@@ -58,7 +58,7 @@ tags:          [desarrollo de soluciones digitales, memorandos]
 <h3>Promesa de velocidad</h3>
 <p><em>Tailwind</em> transmite la sensación de que permite desarrollar interfaces con gran rapidez, ya que posibilita aplicar estilos sin salir del HTML/JSX. Se percibe como una opción más productiva que escribir CSS en hojas de estilo separadas o configurar un <a href="{{ site.baseurl }}{% post_url 2019-12-26-que-es-un-design-system %}">sistema de diseño</a> desde cero.</p>
 
-<p><img src="{{ site.baseurl }}/img/memorando-tailwind-todo-mal-05.png" loading="lazy" alt="" width="720" height="480"></p>
+<p><img src="{{ site.baseurl }}/img/memorando-tailwind-todo-mal-05.png" loading="lazy" alt="Ilustración de un coche de carreras Tailwind cargado de objetos, como metáfora de complejidad acumulada" width="720" height="480"></p>
 
 <h3>Comunidad y moda</h3>
 <p>Existe una comunidad muy numerosa que crea contenido, tutoriales y plantillas basadas en <em>Tailwind</em>. <em>Influencers</em>, <em>youtubers</em> y grandes proyectos han adoptado y promocionado esta herramienta, lo que genera validación social y provoca que nuevos desarrolladores la incorporen casi por inercia. Así se ha consolidado la percepción de que es un estándar de facto: «si todos lo usan, debe de ser bueno».</p>
@@ -69,7 +69,7 @@ tags:          [desarrollo de soluciones digitales, memorandos]
 <h3>Plantillas y componentes predefinidos</h3>
 <p><em>Tailwind</em> ofrece un amplio ecosistema de plantillas, <em>themes</em> y librerías UI que atraen a quienes quieren resultados rápidos y vistosos.</p>
 
-<p><img src="{{ site.baseurl }}/img/memorando-tailwind-todo-mal-04.png" loading="lazy" alt="" width="720" height="480"></p>
+<p><img src="{{ site.baseurl }}/img/memorando-tailwind-todo-mal-04.png" loading="lazy" alt="Carpeta ilustrada con componentes y plantillas de Tailwind" width="720" height="480"></p>
 
 <h3>Facilidad de entrada para principiantes</h3>
 <p>Al no requerir un conocimiento profundo de CSS, los principiantes tienen la sensación de dominar la maquetación con mayor rapidez. Esto convierte a <em>Tailwind</em> en una herramienta atractiva para quienes se inician en este ámbito.</p>

@@ -15,11 +15,11 @@ tags:          [buenas prácticas de usabilidad, accesibilidad]
 
 <p>Las WCAG 2.1 consideran que el <strong>tamaño mínimo</strong> debe ser <strong>44x44 píxeles CSS</strong>.</p>
 
-<p><img src="{{ site.baseurl }}/img/tamano-minimo-elementos-interactivos-01.png" loading="lazy" alt="" width="720" height="261"></p>
+<p><img src="{{ site.baseurl }}/img/tamano-minimo-elementos-interactivos-01.png" loading="lazy" alt="Comparación de botones Aceptar y Cancelar donde se muestra una separación recomendada de 8 píxeles" width="720" height="261"></p>
 
 <p>Es importante tener en cuenta que el tamaño mínimo se refiere al <strong>área de interacción</strong>, no necesariamente a la representación visual del elemento interactivo. Un ejemplo de ello sería un icono que represente el acceso al buscador: el icono de la lupa puede tener un tamaño inferior a 44×44 px, siempre que el área de interacción sí cumpla con el tamaño recomendado.</p>
 
-<p><img src="{{ site.baseurl }}/img/tamano-minimo-elementos-interactivos-02.png" loading="lazy" alt="" width="720" height="262"></p>
+<p><img src="{{ site.baseurl }}/img/tamano-minimo-elementos-interactivos-02.png" loading="lazy" alt="Comparación de iconos pequeños donde se muestra una separación recomendada de 8 píxeles" width="720" height="262"></p>
 
 <p>Las WCAG admiten <strong>algunas excepciones</strong> en las que se admite que el elemento interactivo tenga un tamaño menor. Las más relevantes son las siguientes:</p>
 
@@ -28,7 +28,7 @@ tags:          [buenas prácticas de usabilidad, accesibilidad]
 	<li>Si el objetivo está incluido dentro de una oración o bloque de texto. Es decir, la excepción se aplica únicamente cuando el enlace forma parte del flujo natural de un texto, como en una frase o párrafo, no cuando está aislado o actúa como botón.</li>
 </ul>
 
-<p><img src="{{ site.baseurl }}/img/tamano-minimo-elementos-interactivos-03.png" loading="lazy" alt="" width="720" height="859"></p>
+<p><img src="{{ site.baseurl }}/img/tamano-minimo-elementos-interactivos-03.png" loading="lazy" alt="Cuatro wireframes móviles con ejemplos correctos e incorrectos de tamaño y separación de elementos interactivos" width="720" height="859"></p>
 
 <p>Esta pauta de las WCAG 2.1 es la <a href="https://www.w3.org/TR/WCAG21/#target-size" target="_blank" rel="noopener noreferrer">2.5.5</a> y pertenece al grupo de criterios que buscan que la web sea <strong>operable</strong> para todas las personas usuarias. Se trata de un criterio de nivel AAA, es decir, el más exigente. Sin embargo, ello no impide que sea <strong>más que recomendable tenerlo en cuenta</strong> en cualquier tipo de interfaz digital.</p>
 

@@ -12,7 +12,7 @@ tags:          [métodos de investigación UX]
 
 <p>Es un método utilizado en UX para ayudar a diseñar o evaluar la arquitectura de la información de un sitio web o aplicación. Implica pedir a los usuarios que organicen contenidos en categorías que tengan sentido para ellos. Esta técnica puede ser realizada tanto de manera presencial como online.</p>
 
-<p><img src="{{ site.baseurl }}/img/que-es-un-card-sorting-01.jpg" loading="lazy" alt="" width="720" height="409"></p>
+<p><img src="{{ site.baseurl }}/img/que-es-un-card-sorting-01.jpg" loading="lazy" alt="Mano colocando tarjetas en blanco durante una sesión de card sorting" width="720" height="409"></p>
 
 <h2>¿Cómo se realiza?</h2>
 
@@ -33,7 +33,7 @@ tags:          [métodos de investigación UX]
 	<li><strong>Cerrado:</strong> las categorías ya están definidas y los usuarios solo organizan las tarjetas.</li>
 </ul>
 
-<p><img src="{{ site.baseurl }}/img/que-es-un-card-sorting-02.jpg" loading="lazy" alt="" width="720" height="406"></p>
+<p><img src="{{ site.baseurl }}/img/que-es-un-card-sorting-02.jpg" loading="lazy" alt="Persona señalando tarjetas organizadas sobre una mesa en una dinámica de card sorting" width="720" height="406"></p>
 
 <h2>Beneficios del card sorting</h2>
 

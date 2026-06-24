@@ -19,7 +19,7 @@ tags:          [legislación, cookies]
 	<li><a href="{{ site.baseurl }}/downloads/2024-enero-guia-cookies-analiticas-externas.pdf" target="_blank" rel="noopener noreferrer">Guía sobre el uso de cookies para herramientas de medición de audiencia (PDF, 0.2 MB)</a>, versión de enero de 2024.</li>
 </ul>
 
-<p><img src="{{ site.baseurl }}/img/aviso-cookies-portales-administracion-publica-01.jpg" loading="lazy" alt="" width="720" height="410"></p>
+<p><img src="{{ site.baseurl }}/img/aviso-cookies-portales-administracion-publica-01.jpg" loading="lazy" alt="Fichas de letras formando la palabra Law alrededor de iconos de datos y privacidad" width="720" height="410"></p>
 
 <p>Las principales leyes que regulan el <strong>uso de cookies en España</strong> son:</p>
 
@@ -64,7 +64,7 @@ tags:          [legislación, cookies]
 
 <p>Os recomiendo consultar las <a href="{{ site.baseurl }}/downloads/2023-febrero-orientaciones-cookies-analitica-portales-aapp.pdf" target="_blank" rel="noopener noreferrer">Orientaciones sobre cookies y analítica web en portales de las Administraciones Públicas (PDF, 0.8 MB)</a> para comprender mejor este concepto.</p>
 
-<p><img src="{{ site.baseurl }}/img/aviso-cookies-portales-administracion-publica-02.jpg" loading="lazy" alt="" width="720" height="410"></p>
+<p><img src="{{ site.baseurl }}/img/aviso-cookies-portales-administracion-publica-02.jpg" loading="lazy" alt="Mazo de juez sobre libros legales, representando obligaciones normativas" width="720" height="410"></p>
 
 <p>A continuación, menciono algunos casos prácticos recogidos en el documento que pueden servir de ejemplo.</p>
 
@@ -98,6 +98,6 @@ tags:          [legislación, cookies]
 
 <p>Entiendo que Google Analytics forma parte de los servicios de terceros que utilizan cookies. Como consecuencia, el portal web pasaría a considerarse un “servicio de la sociedad de la información” según la LSSI, lo que implica la obligación de obtener el consentimiento para el uso de cookies.</p>
 
-<p><img src="{{ site.baseurl }}/img/aviso-cookies-portales-administracion-publica-03.jpg" loading="lazy" alt="" width="720" height="410"></p>
+<p><img src="{{ site.baseurl }}/img/aviso-cookies-portales-administracion-publica-03.jpg" loading="lazy" alt="Galletas sobre una mesa como metáfora visual de las cookies web" width="720" height="410"></p>
 
 <p>Quizá, aunque no estoy seguro, sea posible configurar Google Analytics de manera que cumpla con los requisitos de la <a href="{{ site.baseurl }}/downloads/2024-enero-guia-cookies-analiticas-externas.pdf" target="_blank">Guía sobre el uso de cookies para herramientas de medición de audiencia (PDF, 0.2 MB)</a>, lo que evitaría la necesidad de solicitar el consentimiento. Sin embargo, con los valores de configuración predeterminados y más habituales de Google Analytics, dichos requisitos no se cumplen.</p>

@@ -14,7 +14,7 @@ tags:          [buenas prácticas de diseño, desarrollo de soluciones digitales
 
 <p>El DCU surgió en la década de 1980 como una alternativa a los enfoques tradicionales de diseño guiados por las funcionalidades y la tecnología, en los cuales las decisiones recaían exclusivamente en «expertos», relegando las necesidades de los usuarios a un segundo plano. Esto derivaba con frecuencia en productos complejos y poco intuitivos, especialmente en el ámbito del desarrollo de software.</p>
 
-<p><img src="{{ site.baseurl }}/img/que-es-diseno-centrado-en-el-usuario-01.webp" loading="lazy" alt="" width="720" height="405"></p>
+<p><img src="{{ site.baseurl }}/img/que-es-diseno-centrado-en-el-usuario-01.webp" loading="lazy" alt="Ilustración de personas en reunión con una silla tachada, representando la ausencia del usuario en el proceso" width="720" height="405"></p>
 
 <p>Aunque a veces se confunden, la <a href="{{ site.baseurl }}{% post_url 2022-10-10-que-es-la-usabilidad-de-una-aplicacion %}">usabilidad</a> y el diseño centrado en el usuario (DCU) no son equivalentes. La usabilidad es un atributo de calidad del diseño; el DCU, en cambio, es el enfoque metodológico que permite alcanzarla. En otras palabras, la usabilidad define el <em>qué</em>, mientras que el DCU establece el <em>cómo</em>.</p>
 
@@ -24,7 +24,7 @@ tags:          [buenas prácticas de diseño, desarrollo de soluciones digitales
 
 <p>La norma ISO 13407 establece que el diseño centrado en el usuario se caracteriza por: la <strong>participación activa de los usuarios</strong> y una comprensión clara de sus necesidades y requisitos; una distribución adecuada de funciones entre los usuarios y la tecnología; la <strong>iteración</strong> de las soluciones de diseño; y un <strong>enfoque multidisciplinar</strong> del proceso de diseño.</p>
 
-<p><img src="{{ site.baseurl }}/img/que-es-diseno-centrado-en-el-usuario-02.webp" loading="lazy" alt="" width="720" height="405"></p>
+<p><img src="{{ site.baseurl }}/img/que-es-diseno-centrado-en-el-usuario-02.webp" loading="lazy" alt="Ilustración de un equipo conversando con una burbuja de pensamiento sobre el usuario" width="720" height="405"></p>
 
 <p><a href="https://www.iso.org/standard/52075.html" target="_blank" rel="noopener noreferrer">En 2010</a>, esta norma fue actualizada, y nuevamente en 2019, dando lugar a la <a href="https://www.iso.org/standard/77520.html" target="_blank" rel="noopener noreferrer">ISO 9241-210, <em>Ergonomicsof human-systeminteraction – Part 210: Human-centred design for interactive systems</em></a>, adaptada a las tendencias actuales de la industria. Es la versión actualmente vigente.</p>
 
@@ -49,7 +49,7 @@ tags:          [buenas prácticas de diseño, desarrollo de soluciones digitales
 
 <p>El enfoque de diseño centrado en el usuario tiene forma de proceso. Las etapas típicas que los constituyen son:</p>
 
-<p><img src="{{ site.baseurl }}/img/que-es-diseno-centrado-en-el-usuario-03.webp" loading="lazy" alt="" width="720" height="704"></p>
+<p><img src="{{ site.baseurl }}/img/que-es-diseno-centrado-en-el-usuario-03.webp" loading="lazy" alt="Diagrama circular del proceso de diseño centrado en el usuario con investigación, conceptualización, prototipado y evaluación" width="720" height="704"></p>
 
 <ol>
     <li><strong>Análisis e investigación</strong>: consiste, en esencia, en comprender a los usuarios, sus necesidades, motivaciones y contextos de uso. Así como tener en cuenta los condicionantes tecnológicos y de negocio.</li>
@@ -63,7 +63,7 @@ tags:          [buenas prácticas de diseño, desarrollo de soluciones digitales
 
 <p>Algunos de los beneficios esperados del diseño centrado en el usuario son:</p>
 
-<p><img src="{{ site.baseurl }}/img/que-es-diseno-centrado-en-el-usuario-04.webp" loading="lazy" alt="" width="720" height="405"></p>
+<p><img src="{{ site.baseurl }}/img/que-es-diseno-centrado-en-el-usuario-04.webp" loading="lazy" alt="Ilustración de una persona teniendo una idea al revisar una tablet" width="720" height="405"></p>
 
 <ul>
     <li><strong>Mayor satisfacción de las personas usuarias</strong>: productos y servicios que se adaptan mejor a sus necesidades.</li>

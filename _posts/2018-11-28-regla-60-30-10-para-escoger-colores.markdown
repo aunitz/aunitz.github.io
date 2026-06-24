@@ -10,7 +10,7 @@ tags:          [buenas prácticas de diseño, colores]
 
 <p>Existe una regla clásica en el mundo de la decoración de interiores que se puede trasladar directamente al ámbito de los interfaces de usuario.</p>
 
-<p><img src="{{ site.baseurl }}/img/60-30-10_01.png" loading="lazy" alt="La regla del 60-30-10 para escoger colores" width="722" height="107"></p>
+<p><img src="{{ site.baseurl }}/img/60-30-10_01.png" loading="lazy" alt="Barra horizontal dividida en 60 por ciento de color dominante, 30 por ciento de color secundario y 10 por ciento de color de acento" width="722" height="107"></p>
 
 <p>Consiste en escoger <strong>tres colores</strong> destacados que se distribuyan en la siguiente proporción:</p>
 <ul>
@@ -23,7 +23,7 @@ tags:          [buenas prácticas de diseño, colores]
 
 <p>Las proporciones de la distribución de colores no tienen que ser matemáticamente exactas. Se trata de una regla orientativa.</p>
 
-<p><img src="{{ site.baseurl }}/img/60-30-10-ejemplo-1.png" loading="lazy" alt="Ejemplo de la regla del 60-30-10 para escoger colores" width="722" height="350"></p>
+<p><img src="{{ site.baseurl }}/img/60-30-10-ejemplo-1.png" loading="lazy" alt="Paleta 60-30-10 con una gran zona clara, una franja gris y un acento naranja intenso" width="722" height="350"></p>
 
 <p>En la mayoría de los casos, se escogerán los tres colores en base a las siguientes pautas:</p>
 <ul>
@@ -34,4 +34,4 @@ tags:          [buenas prácticas de diseño, colores]
 
 <p>Estos tres colores deben escogerse de modo que sean armónicos y transmitan las sensaciones que el proyecto requiera.</p>
 
-<p><img src="{{ site.baseurl }}/img/60-30-10-ejemplo-2.png" loading="lazy" alt="Ejemplo de la regla del 60-30-10 para escoger colores" width="722" height="350"></p>
+<p><img src="{{ site.baseurl }}/img/60-30-10-ejemplo-2.png" loading="lazy" alt="Paleta 60-30-10 con color dominante oscuro, zona clara secundaria y acento amarillo" width="722" height="350"></p>
