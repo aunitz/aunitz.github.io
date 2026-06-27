@@ -13,6 +13,13 @@ bundle exec jekyll serve
 
 **Nota:** es la instrucción que contiene el fichero `serve.bat`.
 
+### Avisos al arrancar el servidor (ignorables)
+
+Al ejecutar `bundle exec jekyll serve` aparecen dos avisos que se pueden ignorar sin problema:
+
+- **`To use retry middleware with Faraday v2.0+, install faraday-retry gem`** — aviso interno de una dependencia transitiva. No afecta al funcionamiento. No añadir `faraday-retry` al Gemfile para evitar conflictos con las versiones que fija `github-pages`.
+- **`GitHub Metadata: No GitHub API authentication could be found`** — el gem `jekyll-github-metadata` intenta consultar la API de GitHub para rellenar variables `site.github.*`, que este blog no usa. En el build de GitHub Pages no aparece porque tiene autenticación propia.
+
 ### Build incremental (builds más rápidos en desarrollo)
 
 Por defecto Jekyll regenera el sitio completo en cada cambio (~17 s). Con `--incremental` solo regenera los ficheros modificados:
