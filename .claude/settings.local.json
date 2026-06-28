@@ -13,7 +13,9 @@
       "PowerShell",
       "Agent",
       "TodoWrite",
-      "Monitor"
+      "Monitor",
+      "Bash(mkdir -p .claude/skills/publish-post-blog-aunitz/state)",
+      "Bash(rm -f .claude/skills/publish-post-blog-aunitz/state/state.json)"
     ]
   }
 }
