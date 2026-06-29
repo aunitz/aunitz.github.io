@@ -15,7 +15,7 @@ tags:          [inteligencia artificial, memorandos]
 
 <p>Este artículo no pretende ser una crónica exhaustiva ni pormenorizada, sólo es una página de notas sobre ideas, temas o casos de uso que me llamaron la atención.</p>
 
-<p><img src="{{ site.baseurl }}/img/open-llm-basque-day-logo.webp" loading="lazy" alt="" width="750" height="427"></p>
+<p><img src="{{ site.baseurl }}/img/open-llm-basque-day-logo.webp" loading="lazy" alt="Logotipo del Open LLM Basque Day con una figura geométrica multicolor bajo el texto del evento" width="750" height="427"></p>
 
 <h2>Leitmotiv del Open LLM Basque Day</h2>
 
@@ -31,7 +31,7 @@ tags:          [inteligencia artificial, memorandos]
     <li><strong>Soberanía tecnológica</strong>.</li>
 </ul>
 
-<p><img src="{{ site.baseurl }}/img/open-llm-basque-day-modelos-abiertos.webp" loading="lazy" alt="" width="750" height="422"></p>
+<p><img src="{{ site.baseurl }}/img/open-llm-basque-day-modelos-abiertos.webp" loading="lazy" alt="Ilustración de un escudo conectado a varios nodos con lupas, en referencia al control y la revisión de modelos abiertos" width="750" height="422"></p>
 
 <h2>Ponencia- Modelos abiertos, una alternativa real para las empresas</h2>
 
@@ -59,7 +59,7 @@ tags:          [inteligencia artificial, memorandos]
 
 <p>El equipo de Eneko ha desarrollado <strong>LATXA</strong>. Un modelo abierto de 70B de parámetros entrenado con un corpus en euskera. Latxa se basa en Llama-3.1 y <a href="https://www.apps.euskadi.eus/latxa/" target="_blank" rel="noopener noreferrer">se puede probar de manera gratuita</a>.</p>
 
-<p><img src="{{ site.baseurl }}/img/open-llm-basque-day-latxa.svg" loading="lazy" alt="" width="300" height="300" class="center-block"></p>
+<p><img src="{{ site.baseurl }}/img/open-llm-basque-day-latxa.svg" loading="lazy" alt="Logotipo de LATXA, el modelo abierto en euskera desarrollado por el HITZ Zentroa" width="300" height="300" class="center-block"></p>
 
 <p>Existen empresas que apuestan por modelos especializados (<em>fine-tuning</em>) y personalizados para determinadas tareas. Normalmente modelos más pequeños que los de frontera. Mencionó tres empresas que están recorriendo este camino:</p>
 
@@ -81,7 +81,7 @@ tags:          [inteligencia artificial, memorandos]
 
 <p><a href="https://crfm.stanford.edu/fmti/" target="_blank" rel="noopener noreferrer">Índice de transparencia de los desarrolladores de modelos fundacionales</a>. Elaborado por la Universidad de Stanford. La transparencia media ha caído el último año.</p>
 
-<p><img src="{{ site.baseurl }}/img/open-llm-basque-day-transparency-index.webp" loading="lazy" alt="" width="500" height="496"></p>
+<p><img src="{{ site.baseurl }}/img/open-llm-basque-day-transparency-index.webp" loading="lazy" alt="Gráfico del Foundation Model Transparency Index 2025 con IBM en cabeza y varios desarrolladores de modelos fundacionales por debajo del 50%" width="500" height="496"></p>
 
 <p>La <strong>transparencia</strong> implica que se utilicen <strong>solo datos públicos</strong>, sin fuentes ilegales.</p>
 
@@ -97,7 +97,7 @@ tags:          [inteligencia artificial, memorandos]
     <li>Meditron, un LLM especializado en el sector médico y la salud.</li>
 </ul>
 
-<p><img src="{{ site.baseurl }}/img/open-llm-basque-day-zuri-city-gpt.webp" loading="lazy" alt="" width="750" height="464"></p>
+<p><img src="{{ site.baseurl }}/img/open-llm-basque-day-zuri-city-gpt.webp" loading="lazy" alt="Pantalla de ZüriCityGPT OSS Version con un campo para preguntar sobre la administración de la ciudad de Zúrich" width="750" height="464"></p>
 
 <h2>Ponencia - Ingeteam y Open LLM: cómo decidir entre modelos abiertos, cloud, local y Edge</h2>
 
@@ -105,7 +105,7 @@ tags:          [inteligencia artificial, memorandos]
 
 <p>Muy interesante la visión de una empresa muy pegada a la realidad del día a día. Han desarrollado una arquitectura híbrida que combina modelos abiertos y cerrados. El objetivo: <strong>no quedar atados a ningún proveedor</strong>.</p>
 
-<p><img src="{{ site.baseurl }}/img/open-llm-basque-day-sin-ataduras.webp" loading="lazy" alt="" width="750" height="422"></p>
+<p><img src="{{ site.baseurl }}/img/open-llm-basque-day-sin-ataduras.webp" loading="lazy" alt="Ilustración de dos personas conectadas a una pasarela central que distribuye el acceso a varios modelos de IA" width="750" height="422"></p>
 
 <p>La mayor parte del uso de IA la canalizan vía API y han desarrollado un interfaz de usuario propio que facilita a los trabajadores el acceso a los diferentes modelos.</p>
 
@@ -119,7 +119,7 @@ tags:          [inteligencia artificial, memorandos]
 
 <p>Habló de como escapar de "<strong>la trampa de los tokens</strong>". Recurriendo a modelos abiertos auditables, adaptables y soberanos. Como por ejemplo <strong>Soofi</strong> (Sovereign Open Source Foundation Models), que es un proyecto colaborativo alemán enfocado en desarrollar modelos fundacionales de inteligencia artificial soberanos para Europa orientados a un uso industrial y no como chatbots generales.</p>
 
-<p><img src="{{ site.baseurl }}/img/open-llm-basque-day-soberania-tecnologica.webp" loading="lazy" alt="" width="750" height="422"></p>
+<p><img src="{{ site.baseurl }}/img/open-llm-basque-day-soberania-tecnologica.webp" loading="lazy" alt="Ilustración de una profesional sosteniendo servidores junto a iconos de seguridad, datos e infraestructura" width="750" height="422"></p>
 
 <p>Nicolas coincidió con Eneko en que hay una <strong>oportunidad de negocio en el <em>fine-tuning</em></strong> para soluciones de nicho y empresas.</p>
 
@@ -137,7 +137,7 @@ tags:          [inteligencia artificial, memorandos]
 
 <p>Ejemplo de uno de los asistentes de 1MillionBot instalado en la web del <a href="https://aviles.es/" target="_blank" rel="noopener noreferrer">Ayuntamiento de Aviles</a>:</p>
 
-<p><img src="{{ site.baseurl }}/img/open-llm-basque-day-aviles.webp" loading="lazy" alt="" width="450" height="627"></p>
+<p><img src="{{ site.baseurl }}/img/open-llm-basque-day-aviles.webp" loading="lazy" alt="Ventana de Avibot, asistente del Ayuntamiento de Avilés, mostrando opciones para pedir cita previa, consultar incidencias y trámites municipales" width="450" height="627"></p>
 
 <h2>Mesa redonda - Modelos abiertos: coste, soberanía y decisiones reales</h2>
 
@@ -152,4 +152,4 @@ tags:          [inteligencia artificial, memorandos]
 
 <p>El debate resultó interesante y se habló de distintos temas. Me quedo con la idea compartida por los intervinientes de que en Euskadi tenemos que <strong>formar talento</strong> y <strong>atraer talento</strong> en el ámbito de la IA. Alguien dijo, lo apunte en mis notas, "necesitamos gente que sepa hacer estas cosas". Reflexión que sirve de pie para mencionar a dos de los compañeros de Adimedia que me acompañaron al evento: <a href="https://www.linkedin.com/in/oihane-zaldua/" target="_blank" rel="noopener noreferrer">Oihane Zaldua</a> y <a href="https://www.linkedin.com/in/sergio-hern%C3%A1ndez-castro/" target="_blank" rel="noopener noreferrer">Sergio Hernández</a>. Forman parte de ese grupo de profesionales vascos que "saben hacer estas cosas".</p>
 
-<p><img src="{{ site.baseurl }}/img/open-llm-basque-day-futuro-ia.webp" loading="lazy" alt="" width="750" height="422"></p>
+<p><img src="{{ site.baseurl }}/img/open-llm-basque-day-futuro-ia.webp" loading="lazy" alt="Ilustración de dos profesionales trabajando frente a ordenadores con una estructura de IA compartida entre ambos" width="750" height="422"></p>
