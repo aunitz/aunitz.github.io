@@ -200,4 +200,4 @@ Este repositorio combina varias licencias:
 - Nube de palabras de etiquetas (tags)
 2. Revisar nuevo https://search.google.com/
 3. Revisar instalación de https://clarity.microsoft.com/lang/es-es
-4. Añadir texto ALT a las imágenes
+4. Modificar la skill de publicación para que añada ALT a las imágenes (básate en el Plan de Codex)
