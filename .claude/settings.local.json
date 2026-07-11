@@ -15,7 +15,9 @@
       "TodoWrite",
       "Monitor",
       "Bash(mkdir -p .claude/skills/publish-post-blog-aunitz/state)",
-      "Bash(rm -f .claude/skills/publish-post-blog-aunitz/state/state.json)"
+      "Bash(rm -f .claude/skills/publish-post-blog-aunitz/state/state.json)",
+      "Bash(rm .claude/skills/publish-post-blog-aunitz/state/state.json *)",
+      "Bash(git status *)"
     ]
   }
 }

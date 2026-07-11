@@ -3,5 +3,8 @@
     "allow": [
       "WebSearch"
     ]
+  },
+  "enabledPlugins": {
+    "claude-seo@agricidaniel-claude-seo": true
   }
 }
