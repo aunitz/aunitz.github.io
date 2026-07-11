@@ -430,6 +430,16 @@ Finaliza con:
 
 **IMPORTANTE:** No hagas commit ni push. El usuario se encargará de eso manualmente.
 
+### Recordatorio de accesibilidad de medios (obligatorio)
+
+En **modo real**, tras el mensaje anterior, muestra siempre este recordatorio destacado:
+
+> ⚠️ **Pendiente: textos alternativos de los medios.** El post se ha creado con los `alt` de las imágenes vacíos (`alt=""`). Antes de publicarlo, ejecuta la skill **`accesibilidad-medios-posts-aunitz`** para añadir los textos alternativos y los `title` de los vídeos.
+>
+> Hazlo **desde Codex, no desde Claude Code**: Codex genera textos alternativos de más calidad para los medios. La skill vive en `.agents/skills/accesibilidad-medios-posts-aunitz/` y, por defecto, revisa el último post añadido a `_posts/` (justo el que se acaba de crear).
+
+No ejecutes tú esa skill ni intentes rellenar los `alt`: solo deja el recordatorio para que el usuario lo haga desde Codex.
+
 Borra el fichero de estado (`.claude/skills/publish-post-blog-aunitz/state/state.json`) si existe, ya que el proceso ha finalizado con éxito.
 
 En **modo real**, aquí termina la skill.
