@@ -325,6 +325,38 @@ Si el contenido enlaza a URLs del tipo `https://www.aunitz.net/SLUG/` o `http://
    ```
    donde `YYYY-MM-DD-slug` es el nombre del fichero sin la extensión `.markdown`.
 
+### Notas al pie
+
+El Word puede incluir notas al pie (referencias `<w:footnoteReference w:id="N"/>` dentro de `document.xml`, con el texto de la nota en `word/footnotes.xml` y sus posibles hipervínculos en `word/_rels/footnotes.xml.rels`). Si detectas alguna:
+
+1. Extrae también `word/footnotes.xml` y `word/_rels/footnotes.xml.rels`:
+   ```bash
+   unzip -p /tmp/post.docx word/footnotes.xml > /tmp/footnotes.xml
+   unzip -p /tmp/post.docx word/_rels/footnotes.xml.rels > /tmp/footnotes.rels
+   ```
+2. Numera las notas en el orden en que aparecen en el texto (1, 2, 3…) e identifícalas con el slug `fn-fN`.
+3. En el punto del texto donde aparece la llamada a la nota, inserta justo después de la palabra o frase de referencia (sin espacio):
+   ```html
+   <sup id="fnref:fn-fN"><a href="#fn:fn-fN" class="footnote">N</a></sup>
+   ```
+4. Al final del HTML del post (después del último párrafo), añade un único bloque con todas las notas, en orden:
+   ```html
+   <hr>
+
+   <div class="footnotes">
+       <ol>
+           <li id="fn:fn-f1">
+               <p>Texto de la nota, con sus enlaces si los tiene.&nbsp;<a href="#fnref:fn-f1" class="reversefootnote">&#8617;</a></p>
+           </li>
+           <li id="fn:fn-f2">
+               <p>Texto de la segunda nota.&nbsp;<a href="#fnref:fn-f2" class="reversefootnote">&#8617;</a></p>
+           </li>
+       </ol>
+   </div>
+   ```
+   Este es el mismo patrón ya usado en `_posts/2017-01-19-alternativas-usables-menu-hamburguesa.markdown`.
+5. Si la nota o el propio texto llevan un hipervínculo, aplica las mismas reglas de enlaces externos/internos ya descritas.
+
 ### Imágenes
 
 Inserta las imágenes en los lugares adecuados del HTML (posición secuencial respecto al Word). Usa este formato:
