@@ -60,11 +60,15 @@ sitemap:       false
 
 {%- comment %} ===== SALUD: sin meta description, huérfanos de enlace interno, cobertura de alt ===== {% endcomment -%}
 {%- assign postsNoDesc = 0 -%}
+{%- assign realPostsCount = 0 -%}
 {%- assign orphanPosts = 0 -%}
 {%- assign altCount = 0 -%}
 {%- for post in site.posts -%}
-  {%- assign d = post.description | default: '' | strip -%}
-  {%- if d == '' -%}{%- assign postsNoDesc = postsNoDesc | plus: 1 -%}{%- endif -%}
+  {%- unless post.redirect_to -%}
+    {%- assign realPostsCount = realPostsCount | plus: 1 -%}
+    {%- assign d = post.description | default: '' | strip -%}
+    {%- if d == '' -%}{%- assign postsNoDesc = postsNoDesc | plus: 1 -%}{%- endif -%}
+  {%- endunless -%}
   {%- assign pi = post.content | split: 'href="/' | size | minus: 1 -%}
   {%- assign pa = post.content | split: 'href="https://www.aunitz.net' | size | minus: 1 -%}
   {%- assign intInPost = pi | plus: pa -%}
@@ -192,7 +196,7 @@ sitemap:       false
     <div class="health {% if postsNoDesc > 0 %}warn{% else %}ok{% endif %}">
       <span class="h-num">{% include miles.html n=postsNoDesc %}</span>
       <span class="h-label">Posts sin meta description</span>
-      <span class="h-note">De {% include miles.html n=totalPosts %}. Afecta al posicionamiento SEO.</span>
+      <span class="h-note">De {% include miles.html n=realPostsCount %} (excluye redirecciones). Afecta al posicionamiento SEO.</span>
     </div>
     <div class="health {% if orphanPosts > 0 %}warn{% else %}ok{% endif %}">
       <span class="h-num">{% include miles.html n=orphanPosts %}</span>
