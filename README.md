@@ -8,10 +8,10 @@ Este es mi blog personal. Escribo sobre experiencia de usuario (UX), usabilidad,
 
 ### Levantar el servidor local de Jekyll
 ```console
-bundle exec jekyll serve
+bundle exec jekyll serve --livereload
 ```
 
-**Nota:** es la instrucción que contiene el fichero `serve.bat`.
+**Nota:** es la instrucción que contiene el fichero `serve.bat`. `--livereload` refresca el navegador automáticamente cada vez que Jekyll regenera el sitio (por defecto, en cada cambio de fichero), sin tener que recargar la página a mano.
 
 ### Avisos al arrancar el servidor (ignorables)
 

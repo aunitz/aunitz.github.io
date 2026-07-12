@@ -1,4 +1,4 @@
 @echo off
 echo Iniciando servidor Jekyll...
-bundle exec jekyll serve
+bundle exec jekyll serve --livereload
 pause
