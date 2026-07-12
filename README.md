@@ -89,6 +89,28 @@ Automatiza la republicación en el blog de un artículo de [The Conversation](ht
 
 Escribe `/republish-theconversation-aunitz` o di "quiero republicar un artículo de The Conversation" en Claude Code. Para modo prueba: `/republish-theconversation-aunitz --test`.
 
+## Skill de Claude Code: enlazado-interno-ultimo-post-aunitz
+
+Ubicación: `.claude/skills/enlazado-interno-ultimo-post-aunitz/SKILL.md`
+
+Mejora el enlazado interno de **un único post objetivo** (por defecto, el último publicado) conectándolo con el resto del blog en las dos direcciones, **sin editar ningún fichero de `_posts/` hasta que Aunitz apruebe expresamente cada cambio concreto**. No hace una revisión global del blog. Tareas que realiza:
+
+1. Identifica y confirma el post objetivo (el último de `_posts/` por fecha del nombre, o el que indique el usuario).
+2. Lee el post objetivo y extrae su tema, conceptos clave, entidades (leyes de UX, sesgos, herramientas) y los enlaces internos que ya tiene.
+3. Detecta candidatos en dos direcciones, dirigido por conceptos (con `Grep` sobre `_posts/`, sin leer todos los posts a ciegas):
+   - **Salientes:** enlaces desde el post objetivo hacia posts antiguos que amplían un concepto que ya menciona.
+   - **Entrantes:** enlaces desde posts antiguos hacia el post objetivo, en frases donde este es el "saber más" natural.
+4. Prepara una ficha por propuesta (origen, destino, motivo, texto actual vs. propuesto, texto ancla) sin editar nada.
+5. Publica una **hoja HTML (artifact)** con todas las propuestas y sus diffs a color, más una sección de descartadas por transparencia.
+6. Aplica **solo** las propuestas que Aunitz aprueba explícitamente en el chat, una a una; nunca asume aprobación por silencio ni convierte una aprobación parcial en total.
+7. Verifica cada cambio: que el `{% post_url %}` apunta a un fichero existente y que el HTML queda bien formado.
+
+Los criterios editoriales (qué enlace es válido, cómo elegir el ancla y el destino, qué ajustes de redacción se permiten) están en `.agents/plans/enlazado-interno-posts.md`; la skill define el flujo operativo y el mecanismo de validación. No añade contenido nuevo ni fuerza enlaces: solo enlaces útiles y naturales, con ajustes mínimos de redacción sobre texto ya existente. Omite como origen los posts de The Conversation (`republished: true`, `canonical` externo) y los `hide_from_home: true` salvo confirmación. No añade `target="_blank"` a los enlaces internos.
+
+### Cómo ejecutarla
+
+Escribe `/enlazado-interno-ultimo-post-aunitz` o di "mejora el enlazado interno del último post" en Claude Code.
+
 ## Permisos de los agentes de Claude Code
 
 La configuración de permisos de Claude Code se distribuye en dos ficheros dentro de `.claude/`:
