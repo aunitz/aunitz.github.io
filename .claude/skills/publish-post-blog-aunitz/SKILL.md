@@ -472,6 +472,16 @@ En **modo real**, tras el mensaje anterior, muestra siempre este recordatorio de
 
 No ejecutes tú esa skill ni intentes rellenar los `alt`: solo deja el recordatorio para que el usuario lo haga desde Codex.
 
+### Recordatorio de enlazado interno (obligatorio)
+
+En **modo real**, tras el recordatorio de accesibilidad, muestra siempre este segundo recordatorio destacado:
+
+> ⚠️ **Pendiente: enlazado interno del nuevo post.** El post se ha creado sin tejer sus enlaces internos con el resto del blog. Cuando lo tengas revisado, ejecuta la skill **`enlazado-interno-ultimo-post-aunitz`** para proponer enlaces salientes (del post nuevo hacia posts antiguos) y entrantes (de posts antiguos hacia el nuevo), validándolos uno a uno.
+>
+> Esta skill sí vive en Claude Code (`.claude/skills/enlazado-interno-ultimo-post-aunitz/`) y, por defecto, trabaja sobre el último post añadido a `_posts/` (justo el que se acaba de crear). Ejecútala con `/enlazado-interno-ultimo-post-aunitz`.
+
+No ejecutes tú esa skill dentro de esta: solo deja el recordatorio para que el usuario la lance cuando haya terminado de revisar el post (y, si procede, los textos alternativos).
+
 Borra el fichero de estado (`.claude/skills/publish-post-blog-aunitz/state/state.json`) si existe, ya que el proceso ha finalizado con éxito.
 
 En **modo real**, aquí termina la skill.
