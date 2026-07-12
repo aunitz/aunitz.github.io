@@ -104,7 +104,7 @@ tags:          [inteligencia artificial]
 
 <p>Hemos visto cómo, en cuestión de meses, los modelos frontera han modificado su comportamiento incrementando sustancialmente las veces que responden “no lo sé”.</p>
 
-<p>En el <a href="https://openai.com/es-ES/index/why-language-models-hallucinate/" target="_blank" rel="noopener noreferrer">artículo de la web de OpenAI</a> aportan unos datos muy interesantes a este respecto.</p>
+<p>En el <a href="https://openai.com/es-ES/index/why-language-models-hallucinate/" target="_blank" rel="noopener noreferrer">artículo de la web de OpenAI</a> aportan unos datos muy interesantes a este respecto. Se trata de los resultados a la prueba <a href="https://openai.com/index/introducing-simpleqa/" target="_blank" rel="noopener noreferrer">SimpleQA</a><sup id="fnref:fn-f1"><a href="#fn:fn-f1" class="footnote">1</a></sup> de dos de los modelos de OpenAI de 2025.</p>
 
 <p><img src="{{ site.baseurl }}/img/la-ia-dejara-casi-de-inventarse-informacion-grafico-tasa-abstencion.webp" loading="lazy" alt="Gráfico comparativo de OpenAI: gpt-5-thinking-mini muestra 52 % de abstención, 22 % de precisión y 26 % de error, frente a o4-mini con 1 %, 24 % y 75 % respectivamente" width="750" height="422"></p>
 
@@ -115,3 +115,13 @@ tags:          [inteligencia artificial]
 <p>Conclusión: los modelos no están mejorando su tasa de precisión; lo que hacen es decir “no lo sé” mucho más que antes, y añado que buscan en la web las respuestas que desconocen.</p>
 
 <p>OpenAI afirma en el artículo que no es cierto que sea inevitable que los modelos se inventen información. Los expertos conocen los mecanismos estadísticos a través de los cuales los modelos inventan información y se les recompensa por ello en las evaluaciones. No es algo totalmente inevitable ni misterioso. Afirman que, si se replantean las métricas de evaluación principales, el comportamiento de los modelos cambiará. Ya lo estamos viendo: los datos lo confirman y la tendencia irá a más.</p>
+
+<hr>
+
+<div class="footnotes">
+    <ol>
+        <li id="fn:fn-f1">
+            <p><a href="https://openai.com/index/introducing-simpleqa/" target="_blank" rel="noopener noreferrer">SimpleQA</a> es un <em>benchmark</em> de código abierto creado en 2024 por investigadores de OpenAI. Evalúa la factualidad de los LLM en preguntas cortas y concretas con una única respuesta verificable.&nbsp;<a href="#fnref:fn-f1" class="reversefootnote">&#8617;</a></p>
+        </li>
+    </ol>
+</div>
