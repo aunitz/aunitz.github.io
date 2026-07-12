@@ -142,13 +142,11 @@ Los agentes de Claude Code pueden tener asignados permisos sobre las herramienta
 
 ### Situación actual
 
-Algunos posts han sido renombrados a lo largo del tiempo (por ejemplo, los "tips" y las "leyes UX"). Para mantener las URLs antiguas funcionales existe el layout `_layouts/redirected.html`, que genera una página HTML estática con tres mecanismos de redirección en cascada:
+Algunos posts han sido renombrados a lo largo del tiempo (por ejemplo, los "tips" y las "leyes UX"). Para mantener las URLs antiguas funcionales, esos posts llevan `redirect_to: /url-destino/` en el frontmatter, junto con `sitemap: false` y `hide_from_home: true` para que no aparezcan en el sitemap ni en la portada.
 
-1. **`<meta http-equiv="refresh" content="0;url=...">`** — redirige al navegador sin delay.
-2. **`<script>location = '...'`** — redirige inmediatamente vía JavaScript.
-3. **`<link rel="canonical" href="...">`** — indica a los motores de búsqueda cuál es la URL canónica.
+El mecanismo real de redirección lo aporta el plugin **`jekyll-redirect-from`** (declarado en `_config.yml` y activo vía `github-pages`), no el layout `_layouts/redirected.html` que asignan estos posts en su frontmatter. El generador del plugin detecta cualquier documento con `redirect_to` y, en la fase `generate` (antes del render), le sobrescribe `layout` (a su propio layout interno `"redirect"`, inyectado en `site.layouts`) y también `content`/`output`, generando él mismo el HTML de redirección — con `<meta http-equiv="refresh">`, `<script>location = '...'` y `<link rel="canonical">`.
 
-El post redirigido siempre incluye `sitemap: false` y `hide_from_home: true` para que no aparezca en el sitemap ni en la portada.
+Como esa sobrescritura ocurre siempre que hay `redirect_to`, el layout `_layouts/redirected.html` **nunca llega a renderizarse para estos posts: es código muerto**. Se mantiene sin eliminar como documentación/red de seguridad. La señal fiable para detectar estos posts-stub en Liquid (por ejemplo al filtrar `site.posts` en `index.html` o `dashboard.html`) es `post.redirect_to`, no `post.layout`.
 
 ### Incidencia en el SEO
 
@@ -164,7 +162,6 @@ Este sistema es funcional pero **subóptimo desde el punto de vista SEO**:
 | Alternativa | Ventajas | Inconvenientes |
 |---|---|---|
 | **Redirect Rules en Cloudflare** (recomendada) | HTTP 301 real; transparente para el visitante; sin cambios en Jekyll | Requiere mantenimiento manual de cada regla en el panel de Cloudflare |
-| **Plugin `jekyll-redirect-from`** | Integrado en Jekyll; sintaxis sencilla en frontmatter | Genera el mismo HTML cliente-side que el layout actual; no mejora el SEO |
 | **Eliminar los posts redirigidores** | Simplifica el repositorio | Solo válido si las URLs antiguas no tienen tráfico ni backlinks |
 
 La opción más correcta a largo plazo es combinar **Redirect Rules en Cloudflare** (para los 301 reales) con la **eliminación progresiva de los posts redirigidores** una vez confirmado que no reciben tráfico. Ver también los puntos 6, 7 y 8 del TODO.
