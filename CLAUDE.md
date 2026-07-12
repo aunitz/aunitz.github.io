@@ -19,7 +19,7 @@ El blog es también una herramienta de posicionamiento SEO y de autoridad profes
 - **Tipografías:** Lora (cuerpo), Open Sans (nav), Caveat (decorativa) — Google Fonts
 - **Iconos:** Font Awesome 4.3.0 (CDN)
 - **JavaScript:** jQuery 1.12.4 (CDN) + Bootstrap JS 3.4.1 (CDN) + `js/clean-blog.min.js`
-- **Analytics:** Google Analytics 4 (ID: G-PJWXCNEVTP)
+- **Analytics:** Google Analytics 4 (ID: G-PJWXCNEVTP) + Microsoft Clarity (heatmaps y grabaciones de sesión, ID: x62p7a3dnf)
 - **Datos estructurados:** Schema.org via includes: BlogPosting, BreadcrumbList, WebSite, Organization
 - **Lenguajes de plantilla:** Liquid (layouts e includes), HTML + SCSS
 
@@ -30,8 +30,8 @@ El blog es también una herramienta de posicionamiento SEO y de autoridad profes
 ### Estructura de carpetas relevante
 
 ```
-_layouts/       # Templates Jekyll (default, page, post, empty, redirected)
-_includes/      # Componentes reutilizables (head, nav, footer, ga, schema-*, youtube)
+_layouts/       # Templates Jekyll (default, page, post, empty, fullscreen, redirected)
+_includes/      # Componentes reutilizables (head, nav, footer, ga, clarity, schema, youtube, disqus)
 _posts/         # Artículos en formato .markdown
 css/            # Estilos compilados (no editar directamente)
 js/             # JavaScript (clean-blog.js y su versión minificada)
@@ -82,9 +82,15 @@ Atributos opcionales: `hide_from_home: true` (oculta de portada), `last_modified
 ## Contexto de negocio
 
 - **Idioma:** 100% español
-- **Volumen:** 150+ posts desde 2017
+- **Volumen:** 160+ posts desde 2017
 - **Frecuencia de publicación:** irregular
 - **SEO:** URLs limpias (`/:title/`), meta descriptions por post, OG tags para LinkedIn, sitemap y feed RSS automáticos
-- **Automatización:** existe una skill de Claude Code (`publish-post-blog-aunitz`) que automatiza la conversión de Word → HTML y la creación del fichero de post con metadatos e imágenes
+- **Automatización:** existen skills de Claude Code para el blog en `.claude/skills/`: `publish-post-blog-aunitz` (conversión Word → HTML y creación del fichero de post con metadatos e imágenes), `republish-theconversation-aunitz` (republicación de artículos de The Conversation respetando la licencia CC) y `enlazado-interno-ultimo-post-aunitz` (mejora del enlazado interno del último post publicado)
 - **Paginación:** 5 posts por página en portada
 - **Timezone:** Europe/Madrid
+
+---
+
+## Nota de mantenimiento
+
+Existe un fichero gemelo `AGENTS.md` (instrucciones para Codex) con contenido casi idéntico a este. Cualquier cambio en las convenciones o el stack debe replicarse en ambos ficheros para mantenerlos sincronizados.
