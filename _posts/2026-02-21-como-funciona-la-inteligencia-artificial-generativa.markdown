@@ -72,7 +72,7 @@ tags:          [inteligencia artificial]
 
 <p>Los modelos generativos de lenguaje —como ChatGPT o Gemini— no son los únicos tipos de Transformers que existen. Hay otros, que darían para otro artículo y que quizá aborde en el futuro. Los <strong>LLM están especializados en generar texto</strong> y lo hacen, como hemos visto, mediante un mecanismo de <strong>relaciones asociativas basadas en probabilidad</strong>. Por este motivo, <strong>lo que generan no tiene por qué ser verdadero</strong>. No es su propósito ni el objetivo para el que fueron diseñados.</p>
 
-<p>Cuando un modelo ha sido entrenado con información verídica y aquello por lo que le preguntamos se encuentra dentro de sus datos de entrenamiento, aumenta la probabilidad de que responda correctamente (aunque no es una garantía). Si no es así, puede inventar una respuesta. Y lo hará de una forma que suena muy verosímil y convincente. A este fenómeno se le ha denominado <strong>“alucinación” de la IA</strong>.</p>
+<p>Cuando un modelo ha sido entrenado con información verídica y aquello por lo que le preguntamos se encuentra dentro de sus datos de entrenamiento, aumenta la probabilidad de que responda correctamente (aunque no es una garantía). Si no es así, puede inventar una respuesta. Y lo hará de una forma que suena muy verosímil y convincente. A este fenómeno se le ha denominado <strong><a href="{{ site.baseurl }}{% post_url 2026-07-11-la-ia-dejara-casi-de-inventarse-informacion %}">“alucinación” de la IA</a></strong>.</p>
 
 <p>A día de hoy —y sin saber si esto cambiará en el futuro— <strong>los LLM fallan</strong>. No son sistemas 100 % fiables. Por eso <strong>requieren una supervisión humana constante y con criterio</strong>.</p>
 

@@ -137,7 +137,7 @@ tags:          [inteligencia artificial]
 
 <h2>¿Supone un problema esta variación?</h2>
 
-<p>El hecho de que los LLM actuales <strong>no sean deterministas</strong> y <strong>cometan errores (alucinaciones)</strong> resulta inaceptable en ciertos escenarios críticos.</p>
+<p>El hecho de que los LLM actuales <strong>no sean deterministas</strong> y <strong>cometan errores (<a href="{{ site.baseurl }}{% post_url 2026-07-11-la-ia-dejara-casi-de-inventarse-informacion %}">alucinaciones</a>)</strong> resulta inaceptable en ciertos escenarios críticos.</p>
 
 <p>Podemos concluir que estos modelos "funcionan bastante bien" o, siendo precisos, que <strong>funcionan bien en promedio</strong>. Esto es fantástico para muchas tareas, pero insuficiente para otras.</p>
 
