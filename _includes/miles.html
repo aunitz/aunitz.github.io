@@ -1,0 +1,15 @@
+{%- comment %}
+  Formatea un número entero con separador de miles al estilo español (punto).
+  Uso: {% include miles.html n=variable %}  →  70043 se muestra como 70.043
+{% endcomment -%}
+{%- assign _s = include.n | append: '' -%}
+{%- assign _len = _s.size -%}
+{%- assign _chars = _s | split: '' -%}
+{%- assign _out = '' -%}
+{%- for _c in _chars -%}
+  {%- assign _fromRight = _len | minus: forloop.index0 -%}
+  {%- assign _mod = _fromRight | modulo: 3 -%}
+  {%- if _mod == 0 and forloop.index0 != 0 -%}{%- assign _out = _out | append: '.' -%}{%- endif -%}
+  {%- assign _out = _out | append: _c -%}
+{%- endfor -%}
+{{- _out -}}

@@ -25,6 +25,12 @@
                 </li>
 				{% endif %}
                 {% endif %}{% endfor %}
+                {% comment %} Enlace al Dashboard solo en desarrollo/local (no en producción) {% endcomment %}
+                {% if jekyll.environment != "production" %}
+                <li>
+                    <a href="{{ '/dashboard/' | prepend: site.baseurl }}">Dashboard</a>
+                </li>
+                {% endif %}
             </ul>
         </div>
         <!-- /.navbar-collapse -->

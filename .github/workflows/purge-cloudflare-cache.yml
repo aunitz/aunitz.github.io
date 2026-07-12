@@ -166,6 +166,7 @@ jobs:
           static = [
               f"{site}/",
               f"{site}/tags/",
+              f"{site}/dashboard/",
               f"{site}/feed.xml",
               f"{site}/sitemap.xml",
           ]

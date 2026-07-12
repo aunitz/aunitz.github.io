@@ -1,0 +1,297 @@
+---
+layout:        dashboard
+title:         "Dashboard"
+subtitle:      "Métricas del blog calculadas automáticamente en cada compilación"
+description:    "Panel de métricas estáticas del blog de Aunitz Giménez: posts por año y mes, imágenes, etiquetas y enlaces internos y externos."
+permalink:     /dashboard/
+hide_from_nav: true
+sitemap:       false
+---
+
+{%- comment %} ==================== CÁLCULO DE MÉTRICAS (build-time) ==================== {% endcomment -%}
+
+{%- assign totalPosts = site.posts | size -%}
+{%- assign totalTags = site.tags | size -%}
+
+{%- comment %} Imágenes usadas dentro del contenido de los posts (<img>) {% endcomment -%}
+{%- assign imgInPosts = 0 -%}
+{%- for post in site.posts -%}
+  {%- assign n = post.content | split: '<img' | size | minus: 1 -%}
+  {%- assign imgInPosts = imgInPosts | plus: n -%}
+{%- endfor -%}
+
+{%- comment %} Ficheros de imagen en la carpeta /img {% endcomment -%}
+{%- assign imgExts = ".jpg.jpeg.png.webp.gif.svg.avif" -%}
+{%- assign imgFiles = 0 -%}
+{%- for f in site.static_files -%}
+  {%- if f.path contains '/img/' -%}
+    {%- assign e = f.extname | downcase -%}
+    {%- if imgExts contains e -%}{%- assign imgFiles = imgFiles | plus: 1 -%}{%- endif -%}
+  {%- endif -%}
+{%- endfor -%}
+
+{%- comment %} Enlaces internos (root-relativos y al propio dominio) y externos (convención rel="noopener") {% endcomment -%}
+{%- assign internalLinks = 0 -%}
+{%- assign externalLinks = 0 -%}
+{%- for post in site.posts -%}
+  {%- assign ni = post.content | split: 'href="/' | size | minus: 1 -%}
+  {%- assign na = post.content | split: 'href="https://www.aunitz.net' | size | minus: 1 -%}
+  {%- assign internalLinks = internalLinks | plus: ni | plus: na -%}
+  {%- assign ne = post.content | split: 'rel="noopener' | size | minus: 1 -%}
+  {%- assign externalLinks = externalLinks | plus: ne -%}
+{%- endfor -%}
+
+{%- comment %} Agrupación por año (descendente) y máximos para escalar gráficos {% endcomment -%}
+{%- assign byYear = site.posts | group_by_exp: "p", "p.date | date: '%Y'" | sort: "name" | reverse -%}
+{%- assign maxYearCount = 1 -%}
+{%- for yg in byYear -%}
+  {%- assign c = yg.items | size -%}
+  {%- if c > maxYearCount -%}{%- assign maxYearCount = c -%}{%- endif -%}
+{%- endfor -%}
+
+{%- assign maxTagCount = 1 -%}
+{%- for tag in site.tags -%}
+  {%- assign c = tag[1] | size -%}
+  {%- if c > maxTagCount -%}{%- assign maxTagCount = c -%}{%- endif -%}
+{%- endfor -%}
+
+{%- assign monthNums = "01,02,03,04,05,06,07,08,09,10,11,12" | split: "," -%}
+{%- assign monthNames = "Ene,Feb,Mar,Abr,May,Jun,Jul,Ago,Sep,Oct,Nov,Dic" | split: "," -%}
+
+{%- comment %} ===== SALUD: sin meta description, huérfanos de enlace interno, cobertura de alt ===== {% endcomment -%}
+{%- assign postsNoDesc = 0 -%}
+{%- assign orphanPosts = 0 -%}
+{%- assign altCount = 0 -%}
+{%- for post in site.posts -%}
+  {%- assign d = post.description | default: '' | strip -%}
+  {%- if d == '' -%}{%- assign postsNoDesc = postsNoDesc | plus: 1 -%}{%- endif -%}
+  {%- assign pi = post.content | split: 'href="/' | size | minus: 1 -%}
+  {%- assign pa = post.content | split: 'href="https://www.aunitz.net' | size | minus: 1 -%}
+  {%- assign intInPost = pi | plus: pa -%}
+  {%- if intInPost == 0 -%}{%- assign orphanPosts = orphanPosts | plus: 1 -%}{%- endif -%}
+  {%- assign na = post.content | split: 'alt="' | size | minus: 1 -%}
+  {%- assign altCount = altCount | plus: na -%}
+{%- endfor -%}
+{%- if imgInPosts > 0 -%}{%- assign altCoverage = altCount | times: 100 | divided_by: imgInPosts -%}{%- else -%}{%- assign altCoverage = 100 -%}{%- endif -%}
+{%- if altCoverage > 100 -%}{%- assign altCoverage = 100 -%}{%- endif -%}
+
+{%- comment %} ===== CUERPO: palabras totales, media por post y tiempo de lectura ===== {% endcomment -%}
+{%- assign totalWords = 0 -%}
+{%- assign totalTagAssign = 0 -%}
+{%- for post in site.posts -%}
+  {%- assign w = post.content | strip_html | number_of_words -%}
+  {%- assign totalWords = totalWords | plus: w -%}
+  {%- assign totalTagAssign = totalTagAssign | plus: post.tags.size -%}
+{%- endfor -%}
+{%- assign avgWords = totalWords | times: 1.0 | divided_by: totalPosts | round -%}
+{%- assign avgReadMin = avgWords | times: 1.0 | divided_by: 200 | round: 1 -%}
+
+{%- comment %} ===== MEDIAS POR POST ===== {% endcomment -%}
+{%- assign avgTags = totalTagAssign | times: 1.0 | divided_by: totalPosts | round: 1 -%}
+{%- assign avgIntLinks = internalLinks | times: 1.0 | divided_by: totalPosts | round: 1 -%}
+{%- assign avgExtLinks = externalLinks | times: 1.0 | divided_by: totalPosts | round: 1 -%}
+{%- assign avgImgs = imgInPosts | times: 1.0 | divided_by: totalPosts | round: 1 -%}
+
+<style>
+.dashboard { margin-bottom: 40px;
+  font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
+.dashboard h1, .dashboard h2, .dashboard h3,
+.dashboard p, .dashboard span, .dashboard td, .dashboard th { font-family: inherit; }
+.dashboard code { font-family: 'Consolas', 'Menlo', 'Monaco', monospace; }
+.dashboard h2 { margin-top: 40px; font-size: 24px; font-weight: 700; }
+.dashboard .dash-note { color: #666; font-size: 14px; font-style: italic; }
+
+/* KPI cards */
+.kpi-grid { display: flex; flex-wrap: wrap; margin: 0 -8px; }
+.kpi { flex: 1 1 30%; min-width: 140px; margin: 8px; padding: 20px 16px; background: #f8f9fa;
+       border: 1px solid #eee; border-radius: 6px; text-align: center; }
+.kpi .kpi-num { display: block; font-size: 40px; font-weight: 700; line-height: 1.1; color: #2c3e50; }
+.kpi .kpi-label { display: block; margin-top: 6px; font-size: 13px; color: #777; text-transform: uppercase; letter-spacing: .5px; }
+.kpi.kpi-primary { background: #4a6fa5; border-color: #4a6fa5; }
+.kpi.kpi-primary .kpi-num { color: #fff; }
+.kpi.kpi-primary .kpi-label { color: rgba(255, 255, 255, .9); }
+
+/* Salud del blog (semáforos) */
+.health-grid { display: flex; flex-wrap: wrap; margin: 0 -8px; }
+.health { flex: 1 1 30%; min-width: 170px; margin: 8px; padding: 18px 16px; background: #f8f9fa;
+          border: 1px solid #eee; border-left-width: 4px; border-radius: 6px; }
+.health .h-num { display: block; font-size: 34px; font-weight: 700; line-height: 1.1; }
+.health .h-label { display: block; margin-top: 4px; font-size: 13px; color: #555; font-weight: 600; }
+.health .h-note { display: block; margin-top: 4px; font-size: 12px; color: #777; }
+.health.ok { border-left-color: #10b981; }
+.health.ok .h-num { color: #0e9f6e; }
+.health.warn { border-left-color: #f59e0b; }
+.health.warn .h-num { color: #c77800; }
+
+/* Medias por post */
+.avg-grid { display: flex; flex-wrap: wrap; margin: 0 -8px; }
+.avg { flex: 1 1 22%; min-width: 120px; margin: 8px; padding: 14px; text-align: center;
+       background: #f8f9fa; border: 1px solid #eee; border-radius: 6px; }
+.avg .a-num { display: block; font-size: 28px; font-weight: 700; color: #4a6fa5; }
+.avg .a-label { display: block; margin-top: 2px; font-size: 12px; color: #777; }
+
+/* Barras por año */
+.year-bars { margin: 0; padding: 0; list-style: none; }
+.year-bars li { display: flex; align-items: center; margin: 6px 0; }
+.year-bars .yr { width: 52px; font-weight: 700; color: #555; flex: 0 0 52px; }
+.year-bars .bar-track { flex: 1 1 auto; background: #f0f0f0; border-radius: 4px; overflow: hidden; }
+.year-bars .bar-fill { display: block; height: 22px; background: #4a6fa5; border-radius: 4px; min-width: 2px; }
+.year-bars .cnt { flex: 0 0 40px; text-align: right; font-weight: 700; color: #4a6fa5; padding-left: 10px; }
+
+/* Heatmap mes/año */
+.heatmap { border-collapse: collapse; width: 100%; font-size: 13px; }
+.heatmap th { padding: 4px; text-align: center; color: #999; font-weight: 600; }
+.heatmap td.yr { font-weight: 700; color: #555; text-align: left; padding-right: 8px; }
+.heatmap th.total-h { color: #555; border-left: 2px solid #e6e6e6; }
+.heatmap td.total { font-weight: 700; color: #2c3e50; text-align: center; border-left: 2px solid #e6e6e6; background: #fafbfc; }
+.heatmap td { padding: 3px; text-align: center; }
+.heatmap span.cell { display: block; height: 26px; line-height: 26px; border-radius: 4px; color: #333; }
+.heatmap .t0 { background: #f4f4f4; color: #ccc; }
+.heatmap .t1 { background: #d6e0ef; }
+.heatmap .t2 { background: #a7bcdd; }
+.heatmap .t3 { background: #6f91c4; color: #fff; }
+.heatmap .t4 { background: #3d5f96; color: #fff; }
+.heatmap-legend { text-align: right; font-size: 12px; color: #888; margin: 12px 2px 0; }
+.heatmap-legend .lg { display: inline-block; margin-left: 16px; white-space: nowrap; }
+.heatmap-legend .sw { display: inline-block; width: 20px; height: 13px; border-radius: 3px; vertical-align: middle; margin-right: 6px; }
+.heatmap-legend .s1 { background: #d6e0ef; }
+.heatmap-legend .s2 { background: #a7bcdd; }
+.heatmap-legend .s3 { background: #6f91c4; }
+.heatmap-legend .s4 { background: #3d5f96; }
+
+/* Nube de etiquetas */
+.tag-cloud { text-align: center; line-height: 2; padding: 10px 0; }
+.tag-cloud .tc { display: inline-block; margin: 2px 8px; color: #4a6fa5; max-width: 100%;
+                 vertical-align: middle; overflow-wrap: break-word; word-wrap: break-word; }
+.tag-cloud .tc .c { font-size: 11px; color: #bbb; vertical-align: super; }
+
+@media (max-width: 480px) {
+  .kpi .kpi-num { font-size: 30px; }
+  .heatmap { font-size: 11px; }
+}
+</style>
+
+<div class="dashboard">
+
+  <p class="dash-note">Última actualización: {{ site.time | date: '%-d/%m/%Y a las %H:%M' }} · Se recalcula automáticamente en cada publicación.</p>
+
+  {%- comment %} ==================== RESUMEN (KPIs) ==================== {% endcomment -%}
+  <h2>Resumen</h2>
+  <div class="kpi-grid">
+    <div class="kpi kpi-primary"><span class="kpi-num">{% include miles.html n=totalPosts %}</span><span class="kpi-label">Posts</span></div>
+    <div class="kpi"><span class="kpi-num">{% include miles.html n=totalTags %}</span><span class="kpi-label">Etiquetas</span></div>
+    <div class="kpi"><span class="kpi-num">{% include miles.html n=imgInPosts %}</span><span class="kpi-label">Imágenes en posts</span></div>
+    <div class="kpi"><span class="kpi-num">{% include miles.html n=imgFiles %}</span><span class="kpi-label">Ficheros en /img</span></div>
+    <div class="kpi"><span class="kpi-num">{% include miles.html n=internalLinks %}</span><span class="kpi-label">Enlaces internos</span></div>
+    <div class="kpi"><span class="kpi-num">{% include miles.html n=externalLinks %}</span><span class="kpi-label">Enlaces externos</span></div>
+  </div>
+
+  {%- comment %} ==================== SALUD DEL BLOG ==================== {% endcomment -%}
+  <h2>Salud del blog</h2>
+  <div class="health-grid">
+    <div class="health {% if postsNoDesc > 0 %}warn{% else %}ok{% endif %}">
+      <span class="h-num">{% include miles.html n=postsNoDesc %}</span>
+      <span class="h-label">Posts sin meta description</span>
+      <span class="h-note">De {% include miles.html n=totalPosts %}. Afecta al posicionamiento SEO.</span>
+    </div>
+    <div class="health {% if orphanPosts > 0 %}warn{% else %}ok{% endif %}">
+      <span class="h-num">{% include miles.html n=orphanPosts %}</span>
+      <span class="h-label">Posts sin enlace interno</span>
+      <span class="h-note">De {% include miles.html n=totalPosts %}. Candidatos a enlazado interno.</span>
+    </div>
+    <div class="health {% if altCoverage >= 100 %}ok{% else %}warn{% endif %}">
+      <span class="h-num">{{ altCoverage }}%</span>
+      <span class="h-label">Imágenes con texto alternativo</span>
+      <span class="h-note">{% include miles.html n=altCount %} de {% include miles.html n=imgInPosts %}. Accesibilidad.</span>
+    </div>
+  </div>
+
+  {%- comment %} ==================== CUERPO DEL BLOG ==================== {% endcomment -%}
+  <h2>Cuerpo del blog</h2>
+  <div class="kpi-grid">
+    <div class="kpi"><span class="kpi-num">{% include miles.html n=totalWords %}</span><span class="kpi-label">Palabras totales</span></div>
+    <div class="kpi"><span class="kpi-num">{% include miles.html n=avgWords %}</span><span class="kpi-label">Palabras por post</span></div>
+    <div class="kpi"><span class="kpi-num">{{ avgReadMin | replace: '.', ',' }}</span><span class="kpi-label">Min. de lectura por post</span></div>
+  </div>
+
+  {%- comment %} ==================== MEDIAS POR POST ==================== {% endcomment -%}
+  <h2>Medias por post</h2>
+  <div class="avg-grid">
+    <div class="avg"><span class="a-num">{{ avgTags | replace: '.', ',' }}</span><span class="a-label">etiquetas</span></div>
+    <div class="avg"><span class="a-num">{{ avgIntLinks | replace: '.', ',' }}</span><span class="a-label">enlaces internos</span></div>
+    <div class="avg"><span class="a-num">{{ avgExtLinks | replace: '.', ',' }}</span><span class="a-label">enlaces externos</span></div>
+    <div class="avg"><span class="a-num">{{ avgImgs | replace: '.', ',' }}</span><span class="a-label">imágenes</span></div>
+  </div>
+
+  {%- comment %} ==================== POSTS POR AÑO ==================== {% endcomment -%}
+  <h2>Posts por año</h2>
+  <ul class="year-bars">
+    {%- for yg in byYear -%}
+    {%- assign c = yg.items | size -%}
+    {%- assign w = c | times: 100 | divided_by: maxYearCount -%}
+    <li>
+      <span class="yr">{{ yg.name }}</span>
+      <span class="bar-track"><span class="bar-fill" style="width: {{ w }}%;"></span></span>
+      <span class="cnt">{{ c }}</span>
+    </li>
+    {%- endfor -%}
+  </ul>
+
+  {%- comment %} ==================== HEATMAP MES Y AÑO ==================== {% endcomment -%}
+  <h2>Posts por mes y año</h2>
+  <div style="overflow-x:auto;">
+  <table class="heatmap">
+    <thead>
+      <tr>
+        <th></th>
+        {%- for mn in monthNames -%}<th>{{ mn }}</th>{%- endfor -%}
+        <th class="total-h">Total</th>
+      </tr>
+    </thead>
+    <tbody>
+      {%- for yg in byYear -%}
+      {%- assign bm = yg.items | group_by_exp: "p", "p.date | date: '%m'" -%}
+      <tr>
+        <td class="yr">{{ yg.name }}</td>
+        {%- for mm in monthNums -%}
+          {%- assign g = bm | where: "name", mm | first -%}
+          {%- if g -%}{%- assign cnt = g.items | size -%}{%- else -%}{%- assign cnt = 0 -%}{%- endif -%}
+          {%- if cnt == 0 -%}{%- assign tier = 0 -%}
+          {%- elsif cnt <= 2 -%}{%- assign tier = 1 -%}
+          {%- elsif cnt <= 4 -%}{%- assign tier = 2 -%}
+          {%- elsif cnt <= 6 -%}{%- assign tier = 3 -%}
+          {%- else -%}{%- assign tier = 4 -%}{%- endif -%}
+          <td><span class="cell t{{ tier }}">{% if cnt > 0 %}{{ cnt }}{% endif %}</span></td>
+        {%- endfor -%}
+        <td class="total">{{ yg.items | size }}</td>
+      </tr>
+      {%- endfor -%}
+    </tbody>
+  </table>
+  </div>
+  <div class="heatmap-legend">
+    <span class="lg"><span class="sw s1"></span>1–2</span>
+    <span class="lg"><span class="sw s2"></span>3–4</span>
+    <span class="lg"><span class="sw s3"></span>5–6</span>
+    <span class="lg"><span class="sw s4"></span>7 o más</span>
+  </div>
+
+  {%- comment %} ==================== NUBE DE ETIQUETAS ==================== {% endcomment -%}
+  <h2>Nube de etiquetas</h2>
+  <div class="tag-cloud">
+    {%- assign sortedTags = site.tags | sort -%}
+    {%- for tag in sortedTags -%}
+      {%- assign c = tag[1] | size -%}
+      {%- assign fs = c | times: 14 | divided_by: maxTagCount | plus: 13 -%}
+      <span class="tc" style="font-size: {{ fs }}px;" title="{{ c }} posts">{{ tag[0] }}<span class="c">{{ c }}</span></span>
+    {%- endfor -%}
+  </div>
+
+  <hr>
+  <p class="dash-note">
+    Notas: «Imágenes en posts» cuenta las etiquetas <code>&lt;img&gt;</code> en el cuerpo de los artículos;
+    «Ficheros en /img» cuenta los archivos de imagen de la carpeta. Los enlaces externos se identifican por la
+    convención <code>rel="noopener"</code> y los internos por rutas al propio sitio.
+  </p>
+
+</div>
