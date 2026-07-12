@@ -2,6 +2,7 @@
 layout:        post
 title:         "¿Pides propuestas gráficas en tus concursos? No vuelvas a hacerlo"
 subtitle:      "Se trata de un grave error"
+description:   "Argumenta por qué pedir una propuesta gráfica en los concursos es un error: fuerza un diseño sin el proceso previo necesario."
 date:          2020-06-21 19:30:00
 author:        "Aunitz Giménez"
 header-img:    "img/post-bg-52.jpg"

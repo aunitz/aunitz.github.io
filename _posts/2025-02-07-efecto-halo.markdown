@@ -2,6 +2,7 @@
 layout:        post
 title:         "Efecto halo"
 subtitle:      "La primera impresión es lo que cuenta"
+description:   "Explica el sesgo cognitivo por el que la primera impresión condiciona la percepción de usabilidad y confianza en un producto digital."
 date:          2025-02-07 20:00:00 +0100
 author:        "Aunitz Giménez"
 header-img:    "img/post-bg-101.jpg"

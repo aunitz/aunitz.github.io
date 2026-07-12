@@ -2,6 +2,7 @@
 layout:        post
 title:         "Qué es un focus group"
 subtitle:      "Ayuda a “hablar” el idioma de nuestros usuarios"
+description:   "Qué es un focus group en investigación UX, cómo se organiza y qué criterios seguir para seleccionar a los usuarios participantes."
 date:          2024-01-24 18:00:00 +0200
 author:        "Aunitz Giménez"
 header-img:    "img/post-bg-91.jpg"

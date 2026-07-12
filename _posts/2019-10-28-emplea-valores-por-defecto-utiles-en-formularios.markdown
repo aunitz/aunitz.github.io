@@ -2,6 +2,7 @@
 layout:        post
 title:         "Emplea valores por defecto útiles en los formularios"
 subtitle:      "Ahorramos trabajo a la persona usuaria"
+description:   "Consejo de usabilidad: precargar los formularios con valores por defecto útiles ahorra tiempo y esfuerzo a la persona usuaria al completarlos."
 date:          2019-10-28 18:00:00
 author:        "Aunitz Giménez"
 header-img:    "img/post-bg-39.jpg"

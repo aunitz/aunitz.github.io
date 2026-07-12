@@ -2,6 +2,7 @@
 layout:        post
 title:         "Cómo deshacer el último commit con Git"
 subtitle:      "Apuntes sobre Git"
+description:   "Guía práctica con los comandos de Git para deshacer o modificar el último commit, publicado o no, incluyendo reset, amend y revert."
 date:          2020-09-30 17:00:00
 author:        "Aunitz Giménez"
 header-img:    "img/post-bg-56.jpg"

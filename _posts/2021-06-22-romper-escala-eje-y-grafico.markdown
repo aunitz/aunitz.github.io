@@ -2,6 +2,7 @@
 layout:        post
 title:         "Romper la escala del eje Y en un gráfico"
 subtitle:      "¿Es una buena idea?"
+description:   "Análisis de si conviene romper la escala del eje Y en un gráfico de barras y qué alternativas existen para no distorsionar los datos."
 date:          2021-06-22 17:30:00
 author:        "Aunitz Giménez"
 header-img:    "img/post-bg-74.jpg"

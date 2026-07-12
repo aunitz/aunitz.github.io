@@ -2,6 +2,7 @@
 layout:        post
 title:         "Principio de Robustez (Ley de Postel)"
 subtitle:      "Crea sistemas resilientes y accesibles"
+description:   "Explica el Principio de Robustez o Ley de Postel y su aplicación al diseño UX en accesibilidad, tolerancia a errores y flexibilidad de interacción."
 date:          2024-03-04 06:30:00 +0200
 author:        "Aunitz Giménez"
 header-img:    "img/post-bg-100.jpg"

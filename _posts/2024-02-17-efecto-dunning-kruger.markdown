@@ -2,6 +2,7 @@
 layout:        post
 title:         "Efecto Dunning-Kruger"
 subtitle:      "No sé que no sé nada ;)"
+description:   "Explica el sesgo cognitivo por el que las personas con menos habilidad sobreestiman su competencia, y su impacto en el diseño UX."
 date:          2024-02-17 10:00:00 +0200
 author:        "Aunitz Giménez"
 header-img:    "img/post-bg-97.jpg"

@@ -2,6 +2,7 @@
 layout:        post
 title:         "Principio de simetría"
 subtitle:      "Nuestro cerebro tiende a buscar la simetría"
+description:   "Principio de la Gestalt que explica cómo percibimos los objetos como formas simétricas alrededor de un centro, transmitiendo orden y equilibrio."
 date:          2018-12-03 12:30:00
 author:        "Aunitz Giménez"
 header-img:    "img/post-bg-31.jpg"

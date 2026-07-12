@@ -2,6 +2,7 @@
 layout:        post
 title:         "Qué es un tree testing"
 subtitle:      "Permite evaluar la claridad de la arquitectura de la información"
+description:   "Qué es el tree testing en investigación UX, cómo se realiza y cómo ayuda a evaluar la claridad de la arquitectura de la información."
 date:          2024-01-21 18:00:00 +0200
 author:        "Aunitz Giménez"
 header-img:    "img/post-bg-90.jpg"

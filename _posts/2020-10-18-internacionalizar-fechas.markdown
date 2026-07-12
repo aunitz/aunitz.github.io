@@ -2,6 +2,7 @@
 layout:        post
 title:         "Internacionalizar fechas"
 subtitle:      "No existe una solución ideal para este problema"
+description:   "Consejos para elegir un formato de fecha comprensible para usuarios internacionales, incluyendo el nombre del mes y el estándar ISO 8601."
 date:          2020-10-18 10:30:00
 author:        "Aunitz Giménez"
 header-img:    "img/post-bg-57.jpg"

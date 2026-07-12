@@ -2,6 +2,7 @@
 layout:        post
 title:         "Qué es un user story map"
 subtitle:      "Guía el desarrollo teniendo presente a los usuarios"
+description:   "Guía sobre el user story map: qué es, cómo se elabora y por qué ayuda a priorizar el desarrollo centrado en el usuario."
 date:          2024-02-12 13:00:00 +0200
 author:        "Aunitz Giménez"
 header-img:    "img/post-bg-95.jpg"

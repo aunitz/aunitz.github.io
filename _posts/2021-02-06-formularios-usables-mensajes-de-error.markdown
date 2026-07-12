@@ -2,6 +2,7 @@
 layout:        post
 title:         "Formularios usables: mensajes de error"
 subtitle:      "Consejos de usabilidad sobre cómo mostrar los mensajes de error"
+description:   "Consejos de usabilidad para mostrar mensajes de error en formularios: evitar la validación inline, ubicación, color y lenguaje claro."
 date:          2021-02-06 21:30:00
 author:        "Aunitz Giménez"
 header-img:    "img/post-bg-64.jpg"

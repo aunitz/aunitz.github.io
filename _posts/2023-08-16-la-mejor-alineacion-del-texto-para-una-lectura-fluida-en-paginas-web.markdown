@@ -2,6 +2,7 @@
 layout:        post
 title:         "La mejor alineación del texto para una lectura fluida en páginas web"
 subtitle:      "Spoiler: alineación a la izquierda"
+description:   "Por qué la alineación justificada perjudica la lectura en la web y por qué la alineación a la izquierda es más legible y accesible."
 date:          2023-08-16 15:30:00 +0200
 author:        "Aunitz Giménez"
 header-img:    "img/post-bg-87.jpg"

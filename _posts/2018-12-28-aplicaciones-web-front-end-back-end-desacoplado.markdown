@@ -2,6 +2,7 @@
 layout:        post
 title:         "Aplicaciones web con front-end y back-end desacoplado"
 subtitle:      "Las ventajas de mantener separados ambos mundos"
+description:   "Analiza la evolución del patrón MVC a las SPA y expone las ventajas de desacoplar completamente el front-end y el back-end en aplicaciones web."
 date:          2018-12-28 18:00:00
 author:        "Aunitz Giménez"
 header-img:    "img/post-bg-38.jpg"

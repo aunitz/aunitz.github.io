@@ -2,6 +2,7 @@
 layout:        post
 title:         "Cómo crear una página web gratuita en GitHub Pages (segunda parte)"
 subtitle:      "Cómo configurar un nombre de dominio propio"
+description:   "Segunda parte de la guía de GitHub Pages: cómo configurar un dominio propio mediante registros DNS y activar el HTTPS."
 date:          2021-05-09 21:30:00
 author:        "Aunitz Giménez"
 header-img:    "img/post-bg-72.jpg"

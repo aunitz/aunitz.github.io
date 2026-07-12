@@ -2,6 +2,7 @@
 layout:        post
 title:         "Ventajas de un diseño de interfaz personalizado"
 subtitle:      "Evita el uso de sistemas de diseño de terceros"
+description:   "Compara las ventajas e inconvenientes de crear un diseño de interfaz personalizado frente a usar sistemas de diseño de terceros como Material Design."
 date:          2019-02-07 11:30:00
 author:        "Aunitz Giménez"
 header-img:    "img/post-bg-41.jpg"

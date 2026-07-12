@@ -2,6 +2,7 @@
 layout:        post
 title:         "Formularios usables: consejos de diseño"
 subtitle:      "Consideraciones de diseño para unos formularios más usables"
+description:   "Consejos de diseño para formularios más usables: anchura de campos, texto de botones, capitalización y ubicación de etiquetas."
 date:          2021-03-28 22:30:00
 author:        "Aunitz Giménez"
 header-img:    "img/post-bg-69.jpg"

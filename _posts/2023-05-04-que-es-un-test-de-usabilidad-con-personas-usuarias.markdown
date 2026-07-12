@@ -2,6 +2,7 @@
 layout:        post
 title:         "Qué es un test de usabilidad con personas usuarias"
 subtitle:      "Un prueba sencilla y más barata de lo que crees"
+description:   "Qué es un test de usabilidad con personas usuarias, cómo se realiza y por qué probar con cinco usuarios ofrece el mejor ratio coste-beneficio."
 date:          2023-05-04 13:30:00
 author:        "Aunitz Giménez"
 header-img:    "img/post-bg-84.jpg"

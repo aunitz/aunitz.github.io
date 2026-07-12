@@ -2,6 +2,7 @@
 layout:        post
 title:         "Principio de continuidad"
 subtitle:      "La percepción sigue líneas y patrones visuales continuos"
+description:   "El principio de continuidad de la Gestalt explica por qué percibimos líneas y curvas continuas como elementos relacionados."
 date:          2018-12-03 13:00:00
 author:        "Aunitz Giménez"
 header-img-cdn:       "https://res.cloudinary.com/aunitz/image/upload/f_auto,q_auto/v1613934705/post-bg-14_sh5uki.jpg"

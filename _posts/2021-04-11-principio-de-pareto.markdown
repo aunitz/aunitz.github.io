@@ -2,6 +2,7 @@
 layout:        post
 title:         "Principio de Pareto"
 subtitle:      "Céntrate en lo importante"
+description:   "Explicación del principio de Pareto o regla del 80/20 y cómo aplicarlo para priorizar problemas de usabilidad y contenidos."
 date:          2021-04-11 16:30:00
 author:        "Aunitz Giménez"
 header-img:    "img/post-bg-70.jpg"

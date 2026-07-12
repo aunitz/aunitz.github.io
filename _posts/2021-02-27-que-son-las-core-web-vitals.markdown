@@ -2,6 +2,7 @@
 layout:        post
 title:         "Qué son las Core Web Vitals"
 subtitle:      "Métricas básicas de experiencia de usuario"
+description:   "Explicación de las tres Core Web Vitals de Google (LCP, FID y CLS) y su influencia en la experiencia de usuario y el SEO desde 2021."
 date:          2021-02-27 23:00:00
 author:        "Aunitz Giménez"
 header-img:    "img/post-bg-67.jpg"

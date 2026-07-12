@@ -2,6 +2,7 @@
 layout:        post
 title:         "Cómo las personas sostienen y tocan sus teléfonos móviles"
 subtitle:      "Memorando sobre el primer artículo de Steven Hoober dedicado a la interacción táctil"
+description:   "Resumen del primer artículo de Steven Hoober sobre cómo sostenemos y tocamos el móvil, y su impacto en el diseño de objetivos táctiles."
 date:          2022-05-21 21:00:00
 author:        "Aunitz Giménez"
 header-img:    "img/post-bg-79.jpg"

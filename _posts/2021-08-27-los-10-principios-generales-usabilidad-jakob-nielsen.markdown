@@ -2,6 +2,7 @@
 layout:        post
 title:         "Los 10 principios generales de usabilidad de Jakob Nielsen"
 subtitle:      "Memorando sobre los heurísticos de Jakob Nielsen"
+description:   "Memorando que repasa los 10 principios heurísticos de usabilidad de Jakob Nielsen y los compara con los propios del autor."
 date:          2021-08-27 09:30:00
 author:        "Aunitz Giménez"
 header-img:    "img/post-bg-76.jpg"

@@ -2,6 +2,7 @@
 layout:        post
 title:         "Uso de sesgos cognitivos en marketing"
 subtitle:      "Cuestionamiento de sus implicaciones éticas"
+description:   "Reflexión sobre el uso de sesgos cognitivos en marketing para incrementar ventas y las dudas éticas que plantea esta práctica."
 date:          2021-08-08 21:30:00
 author:        "Aunitz Giménez"
 header-img:    "img/post-bg-75.jpg"

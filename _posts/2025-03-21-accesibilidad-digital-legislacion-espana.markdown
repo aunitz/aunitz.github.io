@@ -2,6 +2,7 @@
 layout:        post
 title:         "Accesibilidad digital: legislación vigente en España"
 subtitle:      "Resumen de obligaciones legales"
+description:   "Resumen práctico de la legislación española y europea sobre accesibilidad digital para la Administración pública y el sector privado."
 date:          2025-03-21 10:00:00 +0100
 author:        "Aunitz Giménez"
 header-img:    "img/post-bg-103.jpg"

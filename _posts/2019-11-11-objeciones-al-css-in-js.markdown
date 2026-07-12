@@ -2,6 +2,7 @@
 layout:        post
 title:         "Objeciones al CSS-in-JS"
 subtitle:      "Mantengámonos fieles al estándar CSS"
+description:   "Análisis crítico del CSS-in-JS: falta de portabilidad, mezcla de contextos y alejamiento del estándar CSS, según las objeciones de Brad Frost."
 date:          2019-11-11 21:00:00
 author:        "Aunitz Giménez"
 header-img:    "img/post-bg-43.jpg"

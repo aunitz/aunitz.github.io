@@ -2,6 +2,7 @@
 layout:        post
 title:         "Experiencia de usuario versus interfaz de usuario"
 subtitle:      "Para torpes…"
+description:   "Diferencia entre experiencia de usuario (UX) e interfaz de usuario (UI), explicando por qué la UI es un subconjunto de la UX."
 date:          2021-06-14 19:00:00
 author:        "Aunitz Giménez"
 header-img:    "img/post-bg-73.jpg"

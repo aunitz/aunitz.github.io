@@ -2,6 +2,7 @@
 layout:        post
 title:         "Los campos de texto de Material Design están mal diseñados"
 subtitle:      "Memorando sobre el artículo de Adam Silver"
+description:   "Memorando sobre los problemas de usabilidad y accesibilidad de las etiquetas flotantes en los campos de texto de Material Design."
 date:          2021-03-19 23:30:00
 author:        "Aunitz Giménez"
 header-img:    "img/post-bg-68.jpg"

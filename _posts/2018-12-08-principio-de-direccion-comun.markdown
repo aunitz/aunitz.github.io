@@ -2,6 +2,7 @@
 layout:        post
 title:         "Principio de dirección común"
 subtitle:      "Elementos conectados visualmente son percibidos como un grupo"
+description:   "Principio de la Gestalt: los elementos que se mueven o se orientan en una misma dirección se perciben como parte de un mismo grupo o figura."
 date:          2018-12-08 20:00:00
 author:        "Aunitz Giménez"
 header-img:    "img/post-bg-34.jpg"

@@ -2,6 +2,7 @@
 layout:        post
 title:         "Memorando del podcast de Daniel Primo “¿Por qué Drupal es difícil?”"
 subtitle:      "Notas que quiero recordar sobre lo escuchado en el podcast"
+description:   "Resumen del podcast de Daniel Primo sobre por qué Drupal es difícil: su arquitectura, casos de uso y la curva de aprendizaje que exige."
 date:          2021-02-16 17:30:00
 author:        "Aunitz Giménez"
 header-img:    "img/post-bg-66.jpg"

@@ -2,6 +2,7 @@
 layout:        post
 title:         "Qué es el keyword research"
 subtitle:      "Investigación de palabras clave"
+description:   "Qué es el keyword research o investigación de palabras clave en SEO y sus principales beneficios para la visibilidad de un sitio web."
 date:          2023-06-29 15:00:00 +0200
 author:        "Aunitz Giménez"
 header-img:    "img/post-bg-86.jpg"

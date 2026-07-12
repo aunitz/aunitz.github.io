@@ -2,6 +2,7 @@
 layout:        post
 title:         "El contenido precede al diseño"
 subtitle:      "Diseño sin contenido no es diseño, es decoración"
+description:   "Por qué el contenido debe preceder al diseño de una interfaz, con las reflexiones de Jeffrey Zeldman y Jakob Nielsen sobre este principio de UX."
 date:          2019-11-02 22:30:00
 author:        "Aunitz Giménez"
 header-img:    "img/post-bg-42.jpg"

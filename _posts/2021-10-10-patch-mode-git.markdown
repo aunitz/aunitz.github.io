@@ -2,6 +2,7 @@
 layout:        post
 title:         "Patch Mode de Git"
 subtitle:      "Permite <em>commitear</em> sólo parte de los cambios de un archivo"
+description:   "Cómo usar el patch mode de Git para preparar (stage) y confirmar solo una parte de los cambios de un archivo, en línea de comandos o en VS Code."
 date:          2021-10-10 22:10:00
 author:        "Aunitz Giménez"
 header-img:    "img/post-bg-78.jpg"

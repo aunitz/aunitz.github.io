@@ -2,6 +2,7 @@
 layout:        post
 title:         "La regla del 60-30-10 para escoger colores"
 subtitle:      "Te ayudará a definir los colores de tu interfaz"
+description:   "Explica la regla del 60-30-10, una técnica de decoración de interiores adaptada al diseño para combinar colores en una interfaz."
 date:          2018-11-28 16:45:00
 author:        "Aunitz Giménez"
 header-img:    "img/post-bg-30.jpg"

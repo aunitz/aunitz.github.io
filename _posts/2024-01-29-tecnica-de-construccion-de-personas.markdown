@@ -2,6 +2,7 @@
 layout:        post
 title:         "Técnica de construcción de Personas"
 subtitle:      "Muy útil para empatizar con los usuarios"
+description:   "Guía sobre la técnica de creación de Personas en UX: qué son, cómo se elaboran paso a paso y qué beneficios aportan."
 date:          2024-01-29 18:30:00 +0200
 author:        "Aunitz Giménez"
 header-img:    "img/post-bg-92.jpg"

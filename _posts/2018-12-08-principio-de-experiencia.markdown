@@ -2,6 +2,7 @@
 layout:        post
 title:         "Principio de experiencia"
 subtitle:      "Utiliza convenciones establecidas"
+description:   "Principio de la Gestalt: la experiencia previa del usuario condiciona su percepción, por lo que conviene usar convenciones de diseño establecidas."
 date:          2018-12-08 20:30:00
 author:        "Aunitz Giménez"
 header-img:    "img/post-bg-33.jpg"

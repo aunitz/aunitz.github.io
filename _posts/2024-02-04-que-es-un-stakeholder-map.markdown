@@ -2,6 +2,7 @@
 layout:        post
 title:         "Qué es un stakeholder map"
 subtitle:      "Análisis de las partes interesadas en un proyecto"
+description:   "Explica qué es un stakeholder map, cómo elaborarlo paso a paso y qué beneficios aporta para gestionar las partes interesadas de un proyecto."
 date:          2024-02-04 17:30:00 +0200
 author:        "Aunitz Giménez"
 header-img:    "img/post-bg-94.jpg"

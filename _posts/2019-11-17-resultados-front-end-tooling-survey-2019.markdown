@@ -2,6 +2,7 @@
 layout:        post
 title:         "Resultados del Front-End Tooling Survey 2019"
 subtitle:      "Resumen de los resultados de la encuesta"
+description:   "Resumen de los resultados del Front-End Tooling Survey 2019 sobre las herramientas CSS, JavaScript y testing más usadas por los desarrolladores."
 date:          2019-11-17 21:00:00
 author:        "Aunitz Giménez"
 header-img:    "img/post-bg-46.jpg"

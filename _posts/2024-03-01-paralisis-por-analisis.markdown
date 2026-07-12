@@ -2,6 +2,7 @@
 layout:        post
 title:         "Parálisis por análisis"
 subtitle:      "Indecisión debido a exceso de análisis o información"
+description:   "Analiza el sesgo cognitivo que bloquea la toma de decisiones por exceso de información y propone estrategias para superarlo en proyectos UX."
 date:          2024-03-01 05:30:00 +0200
 author:        "Aunitz Giménez"
 header-img:    "img/post-bg-99.jpg"

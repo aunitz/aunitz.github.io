@@ -2,6 +2,7 @@
 layout:        post
 title:         "Botones Aceptar y Cancelar, ¿en qué orden los situamos?"
 subtitle:      "Lo más importante es mantener la consistencia"
+description:   "Analiza en qué orden situar los botones Aceptar y Cancelar según Microsoft, Apple y Google, concluyendo que lo esencial es la consistencia."
 date:          2020-02-20 16:40:00
 author:        "Aunitz Giménez"
 header-img:    "img/post-bg-50.jpg"

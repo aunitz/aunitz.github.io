@@ -2,6 +2,7 @@
 layout:        post
 title:         "Tamaño mínimo recomendado para los elementos interactivos en dispositivo táctil"
 subtitle:      "Para una cómoda manipulación"
+description:   "Compara las recomendaciones de Apple, Google y Microsoft sobre el tamaño táctil de botones y enlaces, y explica por qué usar unidades dp."
 date:          2020-09-03 20:30:00
 author:        "Aunitz Giménez"
 header-img:    "img/post-bg-54.jpg"

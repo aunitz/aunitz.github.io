@@ -2,6 +2,7 @@
 layout:        post
 title:         "Qué es un sistema de diseño"
 subtitle:      "Mucho más que una guía de estilo"
+description:   "Qué es un sistema de diseño, sus beneficios, sus componentes y ejemplos de referencia como Material Design, Fluent, Lightning y Polaris."
 date:          2019-12-26 20:00:00
 author:        "Aunitz Giménez"
 header-img:    "img/post-bg-48.jpg"

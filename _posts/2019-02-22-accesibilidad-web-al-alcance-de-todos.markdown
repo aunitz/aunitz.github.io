@@ -2,6 +2,7 @@
 layout:        post
 title:         "Accesibilidad web al alcance de todos"
 subtitle:      "Con estas pautas básicas incrementarás considerablemente la accesibilidad de tu web"
+description:   "Nueve pautas básicas y sencillas de accesibilidad web, desde HTML semántico hasta contraste de color, para mejorar el acceso a tu sitio."
 date:          2019-02-22 12:30:00
 author:        "Aunitz Giménez"
 header-img:    "img/post-bg-36.jpg"

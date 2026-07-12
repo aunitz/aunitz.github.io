@@ -2,6 +2,7 @@
 layout:        post
 title:         "Formularios usables: botones"
 subtitle:      "Consejos de usabilidad para los botones"
+description:   "Consejos de usabilidad para los botones de formularios: texto claro, un único botón principal y evitar botones deshabilitados."
 date:          2021-01-17 19:00:00
 author:        "Aunitz Giménez"
 header-img:    "img/post-bg-62.jpg"

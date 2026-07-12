@@ -2,6 +2,7 @@
 layout:        post
 title:         "Faculta la manipulación directa de los elementos a modificar"
 subtitle:      "A la menor distancia posible"
+description:   "Recomienda ubicar los controles de acción muy cerca del elemento al que afectan, para reducir distancia física y carga cognitiva del usuario."
 date:          2019-12-15 20:30:00
 author:        "Aunitz Giménez"
 header-img:    "img/post-bg-47.jpg"

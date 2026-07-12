@@ -2,6 +2,7 @@
 layout:        post
 title:         "Principio de semejanza"
 subtitle:      "Objetos similares se perciben como relacionados entre sí"
+description:   "Principio de la Gestalt: los elementos con características visuales similares, como color o forma, se perciben como relacionados entre sí."
 date:          2018-12-07 12:00:00
 author:        "Aunitz Giménez"
 header-img:    "img/post-bg-35.jpg"

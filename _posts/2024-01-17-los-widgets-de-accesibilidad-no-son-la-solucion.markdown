@@ -2,6 +2,7 @@
 layout:        post
 title:         "Los widgets de accesibilidad no son la solución"
 subtitle:      "No hay atajos para lograr la accesibilidad"
+description:   "Por qué los widgets de accesibilidad no bastan para hacer accesible un sitio web, según un estudio de Nielsen Norman Group con usuarios ciegos."
 date:          2024-01-17 15:30:00 +0200
 author:        "Aunitz Giménez"
 header-img:    "img/post-bg-88.jpg"

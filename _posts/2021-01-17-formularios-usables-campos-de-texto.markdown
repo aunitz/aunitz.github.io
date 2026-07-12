@@ -2,6 +2,7 @@
 layout:        post
 title:         "Formularios usables: campos de texto"
 subtitle:      "Consejos de usabilidad para los campos de texto"
+description:   "Consejos de usabilidad para los campos de texto en formularios: etiquetas por encima, sin placeholder y anchura acorde al contenido."
 date:          2021-01-17 18:30:00
 author:        "Aunitz Giménez"
 header-img:    "img/post-bg-61.jpg"

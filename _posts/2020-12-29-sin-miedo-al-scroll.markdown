@@ -2,6 +2,7 @@
 layout:        post
 title:         "Sin miedo al scroll"
 subtitle:      "Los usuarios hacen scroll de manera natural"
+description:   "Desmonta el mito de que los usuarios no hacen scroll: repasa su origen en los 90 y explica por qué hoy es un gesto natural."
 date:          2020-12-29 15:30:00
 author:        "Aunitz Giménez"
 header-img:    "img/post-bg-60.jpg"

@@ -2,6 +2,7 @@
 layout:        post
 title:         "Principio de cierre"
 subtitle:      "Nuestro cerebro completará la figura"
+description:   "Principio de la Gestalt según el cual el cerebro completa mentalmente las figuras incompletas, como ocurre con los iconos simplificados."
 date:          2018-12-08 21:00:00
 author:        "Aunitz Giménez"
 header-img:    "img/post-bg-37.jpg"

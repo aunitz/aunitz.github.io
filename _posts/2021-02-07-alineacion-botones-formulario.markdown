@@ -2,6 +2,7 @@
 layout:        post
 title:         "Alineación (posición) recomendada para los botones de un formulario"
 subtitle:      "En general, abajo a la izquierda"
+description:   "Guía sobre dónde colocar los botones de un formulario: por qué abajo a la izquierda es lo recomendable y qué excepciones existen."
 date:          2021-02-07 22:00:00
 author:        "Aunitz Giménez"
 header-img:    "img/post-bg-65.jpg"

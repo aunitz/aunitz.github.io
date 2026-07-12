@@ -2,6 +2,7 @@
 layout:        post
 title:         "No utilices el atributo placeholder"
 subtitle:      "En ningún caso debe sustituir al label"
+description:   "Por qué no debe usarse el atributo placeholder como sustituto del label en formularios, por sus problemas de usabilidad y accesibilidad."
 date:          2020-01-29 22:15:00
 author:        "Aunitz Giménez"
 header-img:    "img/post-bg-49.jpg"

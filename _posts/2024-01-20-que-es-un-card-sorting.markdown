@@ -2,6 +2,7 @@
 layout:        post
 title:         "Qué es un card sorting"
 subtitle:      "Cómo los usuarios agrupan y clasifican el contenido"
+description:   "Qué es la técnica de card sorting en investigación UX, cómo se realiza, sus tipos y beneficios para la arquitectura de la información."
 date:          2024-01-20 19:30:00 +0200
 author:        "Aunitz Giménez"
 header-img:    "img/post-bg-89.jpg"

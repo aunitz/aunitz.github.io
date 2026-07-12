@@ -2,6 +2,7 @@
 layout:        post
 title:         "Qué es un user/customer journey map"
 subtitle:      "Cómo utilizarlo para mejorar la experiencia de usuario"
+description:   "Guía sobre qué es un user/customer journey map, sus partes y cómo usarlo para mejorar la experiencia de usuario."
 date:          2021-09-03 16:00:00
 author:        "Aunitz Giménez"
 header-img:    "img/post-bg-77.jpg"

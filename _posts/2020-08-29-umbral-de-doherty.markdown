@@ -2,6 +2,7 @@
 layout:        post
 title:         "Umbral de Doherty"
 subtitle:      "Formidable aumento de la productividad"
+description:   "Explica el umbral de Doherty: por qué un tiempo de respuesta inferior a 400 milisegundos aumenta la productividad del usuario."
 date:          2020-08-29 23:00:00
 author:        "Aunitz Giménez"
 header-img:    "img/post-bg-53.jpg"

@@ -2,6 +2,7 @@
 layout:        post
 title:         "Conventional Commits"
 subtitle:      "Una convención para dar significado a los mensajes de los commits"
+description:   "Explicación de Conventional Commits, una convención para dar significado y estructura a los mensajes de commit legible por máquinas y humanos."
 date:          2019-11-14 17:30:00
 author:        "Aunitz Giménez"
 header-img:    "img/post-bg-44.jpg"

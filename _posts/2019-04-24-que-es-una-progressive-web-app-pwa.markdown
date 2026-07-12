@@ -2,6 +2,7 @@
 layout:        post
 title:         "Qué es una Progressive Web App (PWA)"
 subtitle:      "Proporciona una experiencia de usuario similar a las aplicaciones nativas"
+description:   "Explica qué es una Progressive Web App y qué funcionalidades (offline, notificaciones push, acceso a hardware) puede ofrecer frente a una app nativa."
 date:          2019-04-24 13:00:00
 author:        "Aunitz Giménez"
 header-img:    "img/post-bg-40.jpg"

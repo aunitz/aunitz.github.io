@@ -2,6 +2,7 @@
 layout:        post
 title:         "Cómo crear una página web gratuita en GitHub Pages"
 subtitle:      "Guía práctica paso a paso"
+description:   "Guía paso a paso para publicar gratis una página web con GitHub Pages, desde crear el repositorio hasta subir el contenido."
 date:          2021-05-08 23:00:00
 author:        "Aunitz Giménez"
 header-img:    "img/post-bg-71.jpg"

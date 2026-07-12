@@ -2,6 +2,7 @@
 layout:        post
 title:         "Aviso de cookies: legislación aplicable en España"
 subtitle:      "El mejor recurso es la guía sobre el uso de las cookies de la AEPD"
+description:   "Repasa la normativa española y europea sobre cookies y recomienda la guía de la AEPD para gestionarlas correctamente en un sitio web."
 date:          2025-05-05 17:00:00 +0200
 author:        "Aunitz Giménez"
 header-img:    "img/post-bg-106.jpg"

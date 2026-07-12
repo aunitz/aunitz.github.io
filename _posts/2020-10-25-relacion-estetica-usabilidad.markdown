@@ -2,6 +2,7 @@
 layout:        post
 title:         "Relación entre estética y usabilidad"
 subtitle:      "El buen diseño es percibido como más usable"
+description:   "Explica el efecto estética-usabilidad: los diseños atractivos se perciben como más usables, aunque su funcionalidad real sea la misma."
 date:          2020-10-25 18:30:00
 author:        "Aunitz Giménez"
 header-img:    "img/post-bg-58.jpg"

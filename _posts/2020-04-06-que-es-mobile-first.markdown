@@ -2,6 +2,7 @@
 layout:        post
 title:         "Qué es Mobile First"
 subtitle:      "Requiere centrarse en lo importante"
+description:   "Explica el origen del concepto Mobile First y por qué diseñar primero para móvil obliga a priorizar solo lo esencial."
 date:          2020-04-06 12:30:00
 author:        "Aunitz Giménez"
 header-img:    "img/post-bg-51.jpg"

@@ -2,6 +2,7 @@
 layout:        post
 title:         "La navaja de Ockham"
 subtitle:      "Lo simple suele ser preferible a lo complejo"
+description:   "Explica el principio filosófico de la navaja de Ockham y su aplicación al diseño digital: preferir la simplicidad frente a la complejidad."
 date:          2020-09-13 20:45:00
 author:        "Aunitz Giménez"
 header-img:    "img/post-bg-55.jpg"

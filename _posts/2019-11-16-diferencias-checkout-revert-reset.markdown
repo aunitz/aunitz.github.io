@@ -2,6 +2,7 @@
 layout:        post
 title:         "Diferencias entre checkout, revert y reset"
 subtitle:      "Apuntes sobre Git"
+description:   "Diferencias prácticas entre los comandos git checkout, git revert y git reset para deshacer cambios, con ejemplos de cuándo usar cada uno."
 date:          2019-11-16 19:00:00
 author:        "Aunitz Giménez"
 header-img:    "img/post-bg-45.jpg"
