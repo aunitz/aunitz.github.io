@@ -11,7 +11,8 @@
     <link rel="preload" as="image" fetchpriority="high" href="{{ site.baseurl }}/{{ page.header-img }}">
     {% endif %}
 
-    <meta name="description" property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ page.title }}. {{ page.subtitle }}.{% endif %}">
+    <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ page.title }}. {{ page.subtitle }}.{% endif %}">
+    <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ page.title }}. {{ page.subtitle }}.{% endif %}">
     {% if page.date %}
     <meta property="article:published_time" content="{{ page.date | date: '%Y-%m-%dT%H:%M:%SZ' }}" />
     {% endif %}

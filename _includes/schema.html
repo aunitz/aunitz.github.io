@@ -62,7 +62,7 @@
         "@id": "{{ page.url | absolute_url }}"
       },
       "headline": "{{ page.title | escape }}",
-      "description": "{{ page.description | escape }}",{% if page.header-img %}
+      "description": "{% if page.description %}{{ page.description | escape }}{% else %}{{ page.title | escape }}. {{ page.subtitle | escape }}.{% endif %}",{% if page.header-img %}
       "image": { "@type": "ImageObject", "url": "{{ page.header-img | absolute_url }}" },{% endif %}
       "datePublished": "{{ page.original_date | default: page.date | date_to_xmlschema }}",
       "dateModified": "{{ page.last_modified_at | default: page.date | date_to_xmlschema }}",
@@ -118,7 +118,7 @@
         "@id": "{{ page.url | absolute_url }}"
       },
       "headline": "{{ page.title | escape }}",
-      "description": "{{ page.description | escape }}",{% if _img_src %}
+      "description": "{% if page.description %}{{ page.description | escape }}{% else %}{{ page.title | escape }}. {{ page.subtitle | escape }}.{% endif %}",{% if _img_src %}
       "image": { "@type": "ImageObject", "url": "{{ _img_src | absolute_url }}" },{% elsif page.header-img %}
       "image": { "@type": "ImageObject", "url": "{{ page.header-img | absolute_url }}" },{% endif %}
       "datePublished": "{{ page.date | date_to_xmlschema }}",
