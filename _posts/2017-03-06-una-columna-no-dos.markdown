@@ -19,6 +19,6 @@ tags:          [buenas prácticas de usabilidad]
 
 <p>Mientras que un enfoque de varias columnas aumenta el riesgo de distraer al usuario sobre el propósito principal de tu página.</p>
 
-<p>Guía a los lectores con un contenido atractivo y de valor y termina con una llamada a la acción clara al final.</p>
+<p>Guía a los lectores con un contenido atractivo y de valor y termina con una <a href="{{ site.baseurl }}{% post_url 2017-07-30-destacar-llamadas-a-la-accion %}">llamada a la acción clara</a> al final.</p>
 
 <p><img src="{{ site.baseurl }}/img/tip-1-una-columna.png" loading="lazy" alt="Comparación entre un formulario en una sola columna y otro en dos columnas tachado, para mostrar que una estructura lineal facilita el recorrido" width="722" height="428"></p>

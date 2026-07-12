@@ -24,7 +24,7 @@ tags:          [leyes y principios de experiencia de usuario (UX) y usabilidad]
 </ul>
 
 <h2>¿Cómo aplicamos el principio de Pareto en usabilidad?</h2>
-<p>En usabilidad es habitual que <strong>la mayoría de las quejas de los usuarios (80%) proceda de unos pocos problemas de usabilidad (20%)</strong>. Es por ello por lo que nuestros esfuerzos deben centrarse en identificar y resolver estos pocos problemas y no dispersar nuestro trabajo en tratar de resolver “todos” los problemas de usabilidad.</p>
+<p>En usabilidad es habitual que <strong>la mayoría de las quejas de los usuarios (80%) proceda de unos pocos <a href="{{ site.baseurl }}{% post_url 2022-10-10-que-es-la-usabilidad-de-una-aplicacion %}">problemas de usabilidad</a> (20%)</strong>. Es por ello por lo que nuestros esfuerzos deben centrarse en identificar y resolver estos pocos problemas y no dispersar nuestro trabajo en tratar de resolver “todos” los problemas de usabilidad.</p>
 
 <p>Otra aplicación habitual del principio de Pareto en usabilidad se produce cuando <strong>la mayoría del tráfico (80%) de una web o aplicación se concentra en unos pocos contenidos (20%)</strong>. Cuanto esto ocurre, debemos concentrarnos en mejorar y actualizar estos pocos contenidos.</p>
 

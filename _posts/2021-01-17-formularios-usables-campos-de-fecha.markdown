@@ -15,7 +15,7 @@ tags:          [buenas prácticas de usabilidad, formularios]
 <p>Consejos de usabilidad para los campos de fecha:</p>
 
 <ul>
-    <li>Utiliza campos diferentes para el día, mes y año. Habitualmente es la manera más rápida para el usuario de rellenar un campo de fecha.</li>
+    <li>Utiliza <a href="{{ site.baseurl }}{% post_url 2020-10-18-internacionalizar-fechas %}">campos diferentes para el día, mes y año</a>. Habitualmente es la manera más rápida para el usuario de rellenar un campo de fecha.</li>
     <li>Etiquétalos correctamente para eliminar cualquier confusión sobre el formato de la fecha.</li>
     <li>No hagas que el cursor tabule automáticamente de un campo a otro.</li>
     <li>Permite entradas alternativas al usuario. Por ejemplo, permite tanto 03, como 3.</li>

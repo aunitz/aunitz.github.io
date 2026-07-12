@@ -8,7 +8,7 @@ header-img:    "img/post-bg-39.jpg"
 tags:          [buenas prácticas de usabilidad, formularios]
 ---
 
-<p>Una de las tareas más engorrosas para los usuarios de aplicaciones consiste en rellenar formularios. La manera más eficaz de reducir el tiempo que necesitamos para completar un formulario es que no tengamos que rellenar algunos de sus campos. Esto último se consigue si una buena parte de los campos del formulario ya vienen rellenados con un contenido por defecto que nos resulte útil.</p>
+<p>Una de las tareas más engorrosas para los usuarios de aplicaciones consiste en <a href="{{ site.baseurl }}{% post_url 2021-03-28-formularios-usables-consejos-de-diseno %}">rellenar formularios</a>. La manera más eficaz de reducir el tiempo que necesitamos para completar un formulario es que no tengamos que rellenar algunos de sus campos. Esto último se consigue si una buena parte de los campos del formulario ya vienen rellenados con un contenido por defecto que nos resulte útil.</p>
 
 <p>Resultará mucho más rápido para el usuario validar que los valores por defecto son correctos que tener que rellenarlos partiendo de cero. Incluso si el contenido por defecto no es acertado, al usuario le costará lo mismo sustituirlo por el correcto que introducirlo en un campo previamente vacío.</p>
 

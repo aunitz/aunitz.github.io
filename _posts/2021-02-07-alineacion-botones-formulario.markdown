@@ -17,7 +17,7 @@ tags:          [buenas prácticas de usabilidad, formularios]
 
 <p>En línea con las conclusiones del estudio, para la alineación a la izquierda, funciona mejor el <strong>botón de acción principal primero y el secundario después</strong>.</p>
 
-<p>Además, también es la mejor posición para los usuarios con problemas de visión que utilizan herramientas de zoom para agrandar el tamaño del contenido.</p>
+<p>Además, también es la mejor posición para los <a href="{{ site.baseurl }}{% post_url 2018-02-09-pautas-accesibilidad-mayor-impacto-usuarios-vision-reducida %}">usuarios con problemas de visión</a> que utilizan herramientas de zoom para agrandar el tamaño del contenido.</p>
 
 <h2>Algunas excepciones</h2>
 <p>Como casi todas las cuestiones de usabilidad, no hay verdades absolutas y todo depende del contexto y las circunstancias concretas. Por ello, puede haber excepciones perfectamente justificadas para la recomendación anterior. Veamos algunos ejemplos.</p>

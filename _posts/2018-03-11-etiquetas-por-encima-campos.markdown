@@ -92,7 +92,7 @@ tags:          [buenas prácticas de usabilidad, formularios]
 
 <h2>Nunca prescindas de las etiquetas</h2>
 
-<p>Por si se te había pasado por la cabeza prescindir de las etiquetas (labels) y utilizar los textos por defecto (placeholders) como sustitutos de estos, no lo hagas.</p>
+<p>Por si se te había pasado por la cabeza prescindir de las etiquetas (labels) y utilizar los <a href="{{ site.baseurl }}{% post_url 2020-01-29-no-utilices-atributo-placeholder %}">textos por defecto (placeholders)</a> como sustitutos de estos, no lo hagas.</p>
 
 <p><img src="{{ site.baseurl }}/img/tip-11-inputs-sin-labels.png" loading="lazy" alt="Formulario con campos de texto sin etiquetas visibles y con placeholders como única ayuda" width="521" height="463"></p>
 

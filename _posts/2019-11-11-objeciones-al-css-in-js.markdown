@@ -8,7 +8,7 @@ header-img:    "img/post-bg-43.jpg"
 tags:          [sistemas de diseño, desarrollo de soluciones digitales]
 ---
 
-<p>Ya he escrito <a href="{{ site.baseurl }}{% post_url 2017-09-15-memorando-libro-atomic-design-brad-frost %}">en otras ocasiones</a> sobre Brad Frost. El padre del <a href="https://bradfrost.com/blog/post/atomic-web-design/" target="_blank" rel="noopener noreferrer">Atomic Design</a>. Una metodología de referencia para la creación de <strong>sistemas de diseño</strong>.</p>
+<p>Ya he escrito <a href="{{ site.baseurl }}{% post_url 2017-09-15-memorando-libro-atomic-design-brad-frost %}">en otras ocasiones</a> sobre Brad Frost. El padre del <a href="https://bradfrost.com/blog/post/atomic-web-design/" target="_blank" rel="noopener noreferrer">Atomic Design</a>. Una metodología de referencia para la creación de <a href="{{ site.baseurl }}{% post_url 2019-12-26-que-es-un-design-system %}"><strong>sistemas de diseño</strong></a>.</p>
 
 <p>En esta ocasión me hago eco de <a href="https://bradfrost.com/blog/link/whats-wrong-with-css-in-js/" target="_blank" rel="noopener noreferrer">su escepticismo</a> sobre una tecnología muy en boga en el desarrollo front-end: el <strong>CSS-in-JS</strong>. Un modelo en el que el CSS se compone usando JavaScript en lugar de estar definido en archivos externos.</p>
 

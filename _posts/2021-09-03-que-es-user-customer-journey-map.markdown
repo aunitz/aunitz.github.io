@@ -28,7 +28,7 @@ tags:          [métodos de investigación UX]
 </ul>
 
 <h2>Persona usuaria o cliente</h2>
-<p>Es la persona protagonista del recorrido. Se debe describir esquemáticamente a una persona ficticia pero realista que sea usuaria típica del producto o servicio en estudio.</p>
+<p>Es la persona protagonista del recorrido. Se debe describir esquemáticamente a <a href="{{ site.baseurl }}{% post_url 2024-01-29-tecnica-de-construccion-de-personas %}">una persona ficticia pero realista</a> que sea usuaria típica del producto o servicio en estudio.</p>
 
 <p>Si existen o se quieren analizar diferentes tipos de personas, se elaborará un <em>journey map</em> para cada una.</p>
 

@@ -13,6 +13,6 @@ tags:          [buenas prácticas de usabilidad, formularios]
 
 <p>Cada campo que añadamos a un formulario es una posibilidad más de que el usuario abandone la tarea. Especialmente en dispositivos móviles.</p>
 
-<p>Cuantos menos campos tengan nuestros formularios, más usables resultarán. Añade sólo aquellos campos que sean estrictamente imprescindibles.</p>
+<p>Cuantos menos campos tengan nuestros <a href="{{ site.baseurl }}{% post_url 2021-03-28-formularios-usables-consejos-de-diseno %}">formularios, más usables resultarán</a>. Añade sólo aquellos campos que sean estrictamente imprescindibles.</p>
 
 <p><img src="{{ site.baseurl }}/img/tip-4-reducir-campos-formulario.png" loading="lazy" alt="Comparación entre un formulario de registro con pocos campos y otro formulario largo tachado por pedir demasiada información" width="722" height="428"></p>

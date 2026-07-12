@@ -64,7 +64,7 @@ tags:          [desarrollo de soluciones digitales, memorandos]
 <p>Existe una comunidad muy numerosa que crea contenido, tutoriales y plantillas basadas en <em>Tailwind</em>. <em>Influencers</em>, <em>youtubers</em> y grandes proyectos han adoptado y promocionado esta herramienta, lo que genera validación social y provoca que nuevos desarrolladores la incorporen casi por inercia. Así se ha consolidado la percepción de que es un estándar de facto: «si todos lo usan, debe de ser bueno».</p>
 
 <h4>La contribución de la IA generativa</h4>
-<p>Las clases de <em>Tailwind</em> son especialmente fáciles de recordar, reproducir y generar para los modelos de lenguaje (LLM). Gracias a ello, se han vuelto muy populares entre los desarrolladores que utilizan IA para programar y que no se cuestionan las decisiones que la herramienta toma por ellos.</p>
+<p>Las clases de <em>Tailwind</em> son especialmente fáciles de recordar, reproducir y generar para los <a href="{{ site.baseurl }}{% post_url 2026-02-21-como-funciona-la-inteligencia-artificial-generativa %}">modelos de lenguaje (LLM)</a>. Gracias a ello, se han vuelto muy populares entre los desarrolladores que utilizan IA para programar y que no se cuestionan las decisiones que la herramienta toma por ellos.</p>
 
 <h3>Plantillas y componentes predefinidos</h3>
 <p><em>Tailwind</em> ofrece un amplio ecosistema de plantillas, <em>themes</em> y librerías UI que atraen a quienes quieren resultados rápidos y vistosos.</p>

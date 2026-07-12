@@ -9,7 +9,7 @@ header-img:    "img/post-bg-81.jpg"
 tags:          [buenas prácticas de diseño, desarrollo de soluciones digitales]
 ---
 
-<p>En este blog he escrito <a href="{{ site.baseurl }}/tags/">decenas de artículos</a> relacionados con algún aspecto concreto de la usabilidad, sus leyes y principios, buenas prácticas, etc. Sin embargo, hasta el momento, no había dedicado un post a definir <strong>qué es la usabilidad</strong> y <strong>cuáles son sus principales beneficios</strong>.</p>
+<p>En este blog he escrito <a href="{{ site.baseurl }}/tags/">decenas de artículos</a> relacionados con algún aspecto concreto de la usabilidad, sus <a href="{{ site.baseurl }}{% post_url 2017-01-18-principios-usabilidad %}">leyes y principios</a>, buenas prácticas, etc. Sin embargo, hasta el momento, no había dedicado un post a definir <strong>qué es la usabilidad</strong> y <strong>cuáles son sus principales beneficios</strong>.</p>
 
 <p><img src="{{ site.baseurl }}/img/que-es-la-usabilidad-de-una-aplicacion-01.jpg" loading="lazy" alt="Persona organizando notas adhesivas en una pared durante una sesión de diseño" width="722" height="412"></p>
 

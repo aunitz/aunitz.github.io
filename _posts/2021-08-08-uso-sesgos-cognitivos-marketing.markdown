@@ -16,7 +16,7 @@ tags:          [ética, marketing, sesgos cognitivos]
 
 <p>Un sesgo cognitivo es un <strong>efecto psicológico</strong> por el cual interpretamos incorrectamente la información disponible e influye en nuestra toma de decisiones o la emisión de juicios. Lo cual <strong>puede llevarnos a la toma de decisiones irracionales y/o incorrectas para nuestros intereses</strong>.</p>
 
-<p>Un ejemplo de sesgo cognitivo muy conocido es el de la primera impresión o <strong>efecto halo</strong>. Si nos dejamos llevar por este efecto, atribuiremos cualidades positivas adicionales a la persona que nos ha causado una buena primera impresión, aunque se trate de cualidades que no hayamos podido verificar.</p>
+<p>Un ejemplo de sesgo cognitivo muy conocido es el de la primera impresión o <a href="{{ site.baseurl }}{% post_url 2025-02-07-efecto-halo %}"><strong>efecto halo</strong></a>. Si nos dejamos llevar por este efecto, atribuiremos cualidades positivas adicionales a la persona que nos ha causado una buena primera impresión, aunque se trate de cualidades que no hayamos podido verificar.</p>
 
 <p>Conocer qué sesgos cognitivos pueden llegar a influir en la usabilidad de un sitio web o una aplicación resulta muy interesante para la tarea de un especialista en UX/UI. Siempre y cuando el <strong>objetivo</strong> sea <strong>facilitar al usuario el uso de los interfaces</strong>.</p>
 

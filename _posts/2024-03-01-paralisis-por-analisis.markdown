@@ -24,7 +24,7 @@ tags:          [leyes y principios de experiencia de usuario (UX) y usabilidad, 
 
 <p>En el campo del diseño de experiencia de usuario (UX), tomar decisiones informadas y oportunas es esencial para el éxito de cualquier proyecto.</p>
 
-<p>La parálisis por análisis describe un <strong>estado mental</strong> en el que la sobrecarga de información o el exceso de opciones disponibles impiden tomar decisiones o actuar. Este fenómeno surge cuando, ante la necesidad de elegir la mejor opción posible, un individuo o equipo se ve atrapado en un ciclo interminable de análisis y evaluación, buscando constantemente más datos o considerando infinitas variables. En lugar de facilitar una decisión informada, esta sobreabundancia de análisis conduce a la indecisión y, en última instancia, a la inacción.</p>
+<p>La parálisis por análisis describe un <strong>estado mental</strong> en el que la sobrecarga de información o el <a href="{{ site.baseurl }}{% post_url 2018-01-21-ley-de-hick %}">exceso de opciones disponibles</a> impiden tomar decisiones o actuar. Este fenómeno surge cuando, ante la necesidad de elegir la mejor opción posible, un individuo o equipo se ve atrapado en un ciclo interminable de análisis y evaluación, buscando constantemente más datos o considerando infinitas variables. En lugar de facilitar una decisión informada, esta sobreabundancia de análisis conduce a la indecisión y, en última instancia, a la inacción.</p>
 
 <p><img src="{{ site.baseurl }}/img/paralisis-por-analisis-02.jpg" loading="lazy" alt="Persona abrumada en un escritorio lleno de información y pantallas" width="720" height="411"></p>
 

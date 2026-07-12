@@ -9,7 +9,7 @@ header-img:    "img/post-bg-07.jpg"
 tags:          [buenas prácticas de usabilidad]
 ---
 
-<p>Una aplicación ha de permitir deshacer las acciones realizadas. Si las acciones son reversibles, los usuarios pueden experimentar o equivocarse sin problemas. Se trata de un <a href="{{ site.baseurl }}/principios-usabilidad/">principio general de usabilidad</a> llamado de <strong>Reversibilidad</strong>.</p>
+<p>Una aplicación ha de permitir deshacer las acciones realizadas. Si las acciones son reversibles, los usuarios pueden experimentar o equivocarse sin problemas. Se trata de un <a href="{{ site.baseurl }}{% post_url 2017-01-18-principios-usabilidad %}">principio general de usabilidad</a> llamado de <strong>Reversibilidad</strong>.</p>
 
 <p>Una aplicación que nos esté pidiendo continuamente confirmación de nuestras acciones, nos resultará molesta y poco productiva.</p>
 

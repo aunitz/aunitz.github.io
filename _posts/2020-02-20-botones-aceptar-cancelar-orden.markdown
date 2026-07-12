@@ -62,7 +62,7 @@ tags:          [buenas prácticas de usabilidad, formularios]
 
 <h2>Conclusión</h2>
 
-<p>Si desarrollas <strong>aplicaciones nativas</strong>, <strong>utiliza la convención del sistema operativo</strong> correspondiente.</p>
+<p>Si desarrollas <strong>aplicaciones nativas</strong>, <strong><a href="{{ site.baseurl }}{% post_url 2017-11-04-utiliza-convenciones %}">utiliza la convención</a> del sistema operativo</strong> correspondiente.</p>
 
 <ul>
     <li>Microsoft: Aceptar / Cancelar</li>

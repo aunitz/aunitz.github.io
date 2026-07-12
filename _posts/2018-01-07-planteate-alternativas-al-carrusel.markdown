@@ -28,7 +28,7 @@ tags:          [buenas prácticas de usabilidad]
 <p>La conclusión es que <strong>los carruseles no son ni buenos ni malos en sí mismos</strong>. Su utilidad real depende del caso concreto de uso, su diseño y su implementación técnica. Por ello <strong>te recomiendo que</strong>, antes de utilizar carruseles de manera indiscriminada, <strong>te plantees si te conviene más usar una alternativa</strong>. Como las <a href="https://web.archive.org/web/20170615021759/http://www.mediacurrent.com/blog/alternatives-slideshows" target="_blank" rel="noopener noreferrer">seis alternativas que se proponen en este artículo</a>.</p>
 <ol>
     <li>Una sola imagen. Con o sin texto superpuesto.</li>
-    <li>Una sola imagen con una llamada a la acción (botón, enlace).</li>
+    <li>Una sola imagen con una <a href="{{ site.baseurl }}{% post_url 2017-07-30-destacar-llamadas-a-la-accion %}">llamada a la acción</a> (botón, enlace).</li>
     <li>Rejillas de imágenes.</li>
     <li>Un vídeo.</li>
     <li>Páginas de destino personalizadas.</li>

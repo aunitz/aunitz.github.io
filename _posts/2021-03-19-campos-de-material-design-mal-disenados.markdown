@@ -8,7 +8,7 @@ header-img:    "img/post-bg-68.jpg"
 tags:          [buenas prácticas de usabilidad, formularios, memorandos]
 ---
 
-<p>Desde la humildad de un experto en usabilidad de provincias, siempre he considerado que los campos de texto de los formularios de <a href="https://material.io/" target="_blank" rel="noopener noreferrer">Material Design</a><sup id="fnref:fn-f1"><a href="#fn:fn-f1" class="footnote">1</a></sup> no son todo lo usables que deberían. Pero oye, como es Google quien lo hace, no me había atrevido a criticarlos abiertamente en este blog.</p>
+<p>Desde la humildad de un experto en usabilidad de provincias, siempre he considerado que los <a href="{{ site.baseurl }}{% post_url 2021-01-17-formularios-usables-campos-de-texto %}">campos de texto de los formularios</a> de <a href="https://material.io/" target="_blank" rel="noopener noreferrer">Material Design</a><sup id="fnref:fn-f1"><a href="#fn:fn-f1" class="footnote">1</a></sup> no son todo lo usables que deberían. Pero oye, como es Google quien lo hace, no me había atrevido a criticarlos abiertamente en este blog.</p>
 
 <p>Afortunadamente una reconocida autoridad internacional del mundo de la usabilidad los ha desacreditado tajantemente y no puedo estar más de acuerdo con sus argumentos. Se trata de <a href="https://adamsilver.io/about/" target="_blank" rel="noopener noreferrer">Adam Silver</a>, experto en diseño y usabilidad con más de 20 años de experiencia en organizaciones tan reconocidas por su buen hacer en cuestiones de experiencia de usuario como <a href="https://www.gov.uk/" target="_blank" rel="noopener noreferrer">GOV.UK</a>.</p>
 

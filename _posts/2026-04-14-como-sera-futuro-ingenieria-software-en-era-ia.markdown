@@ -59,7 +59,7 @@ tags:          [inteligencia artificial, desarrollo de soluciones digitales]
 
 <h3>Crisis de identidad</h3>
 
-<p>Como veremos más adelante, los roles de los ingenieros están evolucionando hacia la supervisión, lo que puede desencadenar una crisis de identidad en aquellos desarrolladores que aman el acto de programar y que disfrutan con la escritura artesanal de código (<em>software craftsmanship</em>).</p>
+<p>Como veremos más adelante, los <a href="{{ site.baseurl }}{% post_url 2026-04-15-cinco-niveles-adopcion-ia-en-desarrollo-software %}">roles de los ingenieros están evolucionando hacia la supervisión</a>, lo que puede desencadenar una crisis de identidad en aquellos desarrolladores que aman el acto de programar y que disfrutan con la escritura artesanal de código (<em>software craftsmanship</em>).</p>
 
 <h2>Medidas para contrarrestar las consecuencias negativas y los riesgos</h2>
 

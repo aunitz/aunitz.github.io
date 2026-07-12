@@ -13,6 +13,6 @@ tags:          [buenas prácticas de usabilidad]
 
 <p>Cuantas más opciones tenga el usuario a la vista, más le costará tomar un decisión. Se trata de un <a href="{{ site.baseurl }}{% post_url 2017-01-18-principios-usabilidad %}">principio básico de usabilidad</a>.</p>
 
-<p>Para combatir esta parálisis, trata de enfatizar, recomendar o destacar ciertas opciones sobre las demás.</p>
+<p>Para combatir esta <a href="{{ site.baseurl }}{% post_url 2024-03-01-paralisis-por-analisis %}">parálisis por análisis</a>, trata de enfatizar, recomendar o destacar ciertas opciones sobre las demás.</p>
 
 <p><img src="{{ site.baseurl }}/img/tip-3-recomienda-una-opcion.png" loading="lazy" alt="Pantalla con tres productos donde una opción aparece destacada como recomendada frente a una comparación sin jerarquía visual" width="722" height="428"></p>

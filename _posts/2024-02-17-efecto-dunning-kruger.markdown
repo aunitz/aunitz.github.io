@@ -23,7 +23,7 @@ tags:          [leyes y principios de experiencia de usuario (UX) y usabilidad, 
     <figcaption>Imagen procedente de <a href="https://commons.wikimedia.org/wiki/File:Dunning%E2%80%93Kruger_Effect2.svg" target="_blank" rel="noopener noreferrer">Wikimedia Commons</a>, bajo licencia <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>.</figcaption>
 </figure>
 
-<p>Este fenómeno resalta una discrepancia crítica en la autoevaluación y <strong>subraya la importancia de una retroalimentación externa objetiva</strong> para lograr una comprensión más precisa de nuestras habilidades.</p>
+<p>Este fenómeno resalta una discrepancia crítica en la autoevaluación y <strong>subraya la importancia de una <a href="{{ site.baseurl }}{% post_url 2023-05-04-que-es-un-test-de-usabilidad-con-personas-usuarias %}">retroalimentación externa objetiva</a></strong> para lograr una comprensión más precisa de nuestras habilidades.</p>
 
 <p>En el contexto de la UX y la usabilidad, el Efecto Dunning-Kruger puede manifestarse tanto en los diseñadores como en los usuarios, afectando la creación y la percepción de interfaces y experiencias digitales.</p>
 

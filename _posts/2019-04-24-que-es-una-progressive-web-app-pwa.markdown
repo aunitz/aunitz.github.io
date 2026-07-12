@@ -38,7 +38,7 @@ tags:          [desarrollo de soluciones digitales]
 
 <p><img src="{{ site.baseurl }}/img/que-es-una-progressive-web-app-pwa-02.jpg" loading="lazy" alt="Teléfono móvil con una aplicación de voz abierta" width="722" height="363"></p>
 
-<h3>Funcionalidades que facilitan la vida al usuario (mejoran la usabilidad)</h3>
+<h3>Funcionalidades que facilitan la vida al usuario (mejoran la <a href="{{ site.baseurl }}{% post_url 2022-10-10-que-es-la-usabilidad-de-una-aplicacion %}">usabilidad</a>)</h3>
 
 <ol>
     <li>Permiten “instalar” la aplicación en el móvil (<a href="https://developers.google.com/web/fundamentals/app-install-banners/" target="_blank" rel="noopener noreferrer">Add to home screen</a>, A2HS).</li>

@@ -56,7 +56,7 @@ tags:          [buenas prácticas de usabilidad, inteligencia artificial]
 
 <h2>2. Mantén el chatbot accesible en todas las páginas</h2>
 
-<p>Es un principio básico el <strong>ser consistentes con el aprendizaje previo</strong> del usuario. Si le hemos acostumbrado a que el acceso al chatbot de nuestra web es un botón flotante en el extremo inferior derecho de la página, por ejemplo, no deberíamos hacerlo desaparecer en algunas secciones del sitio. Un chatbot que desaparece entre páginas es un chatbot que los usuarios acabarán dejando de utilizar.</p>
+<p>Es un principio básico el <strong><a href="{{ site.baseurl }}{% post_url 2018-12-08-principio-de-experiencia %}">ser consistentes con el aprendizaje previo</a></strong> del usuario. Si le hemos acostumbrado a que el acceso al chatbot de nuestra web es un botón flotante en el extremo inferior derecho de la página, por ejemplo, no deberíamos hacerlo desaparecer en algunas secciones del sitio. Un chatbot que desaparece entre páginas es un chatbot que los usuarios acabarán dejando de utilizar.</p>
 
 <p>En la web de Iberia tienen un chatbot de IA presente en casi todas las páginas del sitio web.</p>
 

@@ -9,7 +9,7 @@ header-img:    "img/post-bg-08.jpg"
 tags:          [sistemas de diseño, memorandos]
 ---
 
-<p>El libro <strong>Atomic Design</strong> de <strong>Brad Frost</strong> fue publicado en su primera edición en 2013. Desde entonces, se ha convertido en un libro de referencia para la creación de <strong>sistemas de diseño</strong>.</p>
+<p>El libro <strong>Atomic Design</strong> de <strong>Brad Frost</strong> fue publicado en su primera edición en 2013. Desde entonces, se ha convertido en un libro de referencia para la creación de <a href="{{ site.baseurl }}{% post_url 2019-12-26-que-es-un-design-system %}"><strong>sistemas de diseño</strong></a>.</p>
 
 <p><img src="{{ site.baseurl }}/img/atomic-design-01-ebook.jpg" loading="lazy" alt="Tablet mostrando una página del libro Atomic Design en formato digital" width="720" height="540"></p>
 

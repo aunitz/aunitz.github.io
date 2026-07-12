@@ -26,7 +26,7 @@ tags:          [desarrollo de soluciones digitales]
 
 <p>Conocido en inglés como <strong>User Interface</strong> o por sus siglas <strong>UI</strong>. Es aquella parte del producto o servicio con la que interactúa el usuario. Habitualmente mediante un interfaz visual, pero también puede implicar la interacción mediante el tacto, la voz, etc.</p>
 
-<p>Tiene mucho que ver con la estética y la usabilidad o facilidad de uso. Se ocupa de cuestiones como la tipografía, el color, el espacio en blanco, la distribución de contenidos, los iconos, los botones, etc.</p>
+<p>Tiene mucho que ver con la estética y la <a href="{{ site.baseurl }}{% post_url 2022-10-10-que-es-la-usabilidad-de-una-aplicacion %}">usabilidad o facilidad de uso</a>. Se ocupa de cuestiones como la tipografía, el color, el espacio en blanco, la distribución de contenidos, los iconos, los botones, etc.</p>
 
 <p>Lógicamente la UI juega un papel muy importante dentro de la UX. Pero la UX abarca más aspectos además de la UI. Bajo mi punto de vista, podríamos simplificar diciendo que la UI es un subconjunto de la UX.</p>
 

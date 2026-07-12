@@ -28,7 +28,7 @@ tags:          [buenas prácticas de usabilidad, formularios]
 
 <h2>2. En los formularios distingue claramente los campos de día, mes y año</h2>
 
-<p>Si vas a dejar que el usuario escriba la fecha, utiliza campos diferentes para el día, mes y año y etiquétalos correctamente.</p>
+<p>Si vas a dejar que el usuario escriba la fecha, utiliza <a href="{{ site.baseurl }}{% post_url 2021-01-17-formularios-usables-campos-de-fecha %}">campos diferentes para el día, mes y año</a> y etiquétalos correctamente.</p>
 
 <p><img src="{{ site.baseurl }}/img/internacionalizar-fechas-02.png" loading="lazy" alt="Formulario de cuenta de Google con campos separados para día, mes y año de nacimiento" width="478" height="354"></p>
 

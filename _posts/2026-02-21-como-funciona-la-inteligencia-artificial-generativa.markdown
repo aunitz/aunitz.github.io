@@ -46,7 +46,7 @@ tags:          [inteligencia artificial]
 
 <p><img src="{{ site.baseurl }}/img/como-funciona-la-inteligencia-artificial-02.webp" loading="lazy" alt="Mapa de relaciones entre palabras cercanas en un espacio semántico" width="734" height="327"></p>
 
-<p>Ahora bien, simplificando mucho, <strong>todo es una cuestión de probabilidades y matemáticas</strong>. El LLM <strong>no piensa</strong>, <strong>no entiende</strong> lo que dice y <strong>no sabe si lo que genera es verdadero o falso</strong>.</p>
+<p>Ahora bien, simplificando mucho, <strong><a href="{{ site.baseurl }}{% post_url 2026-02-23-es-la-inteligencia-artificial-generativa-una-caja-negra %}">todo es una cuestión de probabilidades y matemáticas</a></strong>. El LLM <strong>no piensa</strong>, <strong>no entiende</strong> lo que dice y <strong>no sabe si lo que genera es verdadero o falso</strong>.</p>
 
 <p>Al conjunto de palabras que el modelo tiene en cuenta para predecir la siguiente palabra de la secuencia se le denomina <strong>contexto</strong>.</p>
 

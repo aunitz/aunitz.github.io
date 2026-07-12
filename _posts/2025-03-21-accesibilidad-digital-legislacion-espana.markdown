@@ -14,7 +14,7 @@ tags:          [legislación, accesibilidad]
 
 <p><img src="{{ site.baseurl }}/img/accesibilidad-digital-legislacion-espana-01.jpg" loading="lazy" alt="Icono de accesibilidad rodeado por estrellas de la Unión Europea" width="720" height="404"></p>
 
-<p>El tema de la legislación sobre accesibilidad digital en España es complejo. Esta publicación pretende ofrecer un resumen lo más breve, conciso y práctico posible, que permita conocer de forma rápida qué normativa debe aplicarse en cada proyecto digital.</p>
+<p>El tema de la legislación sobre <a href="{{ site.baseurl }}{% post_url 2019-02-22-accesibilidad-web-al-alcance-de-todos %}">accesibilidad digital</a> en España es complejo. Esta publicación pretende ofrecer un resumen lo más breve, conciso y práctico posible, que permita conocer de forma rápida qué normativa debe aplicarse en cada proyecto digital.</p>
 
 <p>La fuente principal de esta información es la completísima publicación “<a href="https://olgacarreras.blogspot.com/2005/01/referencia-sobre-legislacin-espaola.html" target="_blank" rel="noopener noreferrer">Legislación sobre accesibilidad digital en España, Europa y otros países</a>”, de la especialista en accesibilidad digital Olga Carreras. Su artículo, muy detallado y preciso, fue publicado originalmente en 2008 y lo actualiza periódicamente cada vez que se produce alguna modificación en la normativa. Si deseas profundizar en este tema, te recomiendo encarecidamente que consultes su publicación.</p>
 

@@ -16,7 +16,7 @@ tags:          [sistemas de diseño, buenas prácticas de diseño]
 
 <ul>
     <li>No contar en el equipo de desarrollo con diseñadores visuales. Es decir, no disponer de especialistas en diseño gráfico de interfaces de usuario.</li>
-    <li>No contar con el presupuesto suficiente para desarrollar un sistema de diseño propio. O al menos un diseño de interfaz mínimamente personalizado.</li>
+    <li>No contar con el presupuesto suficiente para desarrollar un <a href="{{ site.baseurl }}{% post_url 2019-12-26-que-es-un-design-system %}">sistema de diseño propio</a>. O al menos un diseño de interfaz mínimamente personalizado.</li>
     <li>No contar con el tiempo necesario para desarrollar un sistema de diseño propio. Debido a los ajustados plazos de entrega que se acostumbran a manejar en el desarrollo de soluciones digitales.</li>
 </ul>
 

@@ -22,7 +22,7 @@ tags:          [leyes y principios de experiencia de usuario (UX) y usabilidad, 
 
 <h3>1. Diseño visual y percepción de usabilidad</h3>
 
-<p>Un diseño atractivo transmite una sensación de calidad y profesionalidad. Las interfaces limpias, bien organizadas y visualmente agradables generan confianza en el usuario y mejoran la percepción de usabilidad.</p>
+<p>Un diseño atractivo transmite una sensación de calidad y profesionalidad. Las interfaces limpias, bien organizadas y visualmente agradables generan confianza en el usuario y <a href="{{ site.baseurl }}{% post_url 2020-10-25-relacion-estetica-usabilidad %}">mejoran la percepción de usabilidad</a>.</p>
 
 <p><img src="{{ site.baseurl }}/img/efecto-halo-02.jpg" loading="lazy" alt="Mano sosteniendo un iPod como ejemplo de producto asociado a una marca reconocible" width="720" height="410"></p>
 

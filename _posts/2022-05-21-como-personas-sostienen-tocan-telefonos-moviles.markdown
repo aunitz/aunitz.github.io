@@ -79,7 +79,7 @@ tags:          [buenas prácticas de usabilidad, memorandos]
 
 <p>Las personas pueden leer mejor el contenido en el centro de la pantalla y, a menudo, desplazan el contenido para llevar la parte que están leyendo al centro de la pantalla.</p>
 
-<p>Las personas son más eficaces tocando <strong>en el centro de la pantalla</strong>, por lo que los objetivos táctiles pueden ser más pequeños, tan pequeños como <strong>7 milímetros</strong>, mientras que los tamaños de los objetivos de las <strong>esquinas</strong> deben ser de unos <strong>12 milímetros</strong>.</p>
+<p>Las personas son más eficaces tocando <strong>en el centro de la pantalla</strong>, por lo que los <a href="{{ site.baseurl }}{% post_url 2020-09-03-tamano-minimo-elementos-interactivos-dispositivo-tactil %}">objetivos táctiles pueden ser más pequeños</a>, tan pequeños como <strong>7 milímetros</strong>, mientras que los tamaños de los objetivos de las <strong>esquinas</strong> deben ser de unos <strong>12 milímetros</strong>.</p>
 
 <p>El enfoque del usuario en el centro de la pantalla es la razón por la que usamos tantas vistas de lista y cuadrícula. Funcionan bien, y las personas se enfocan e interactúan con ellos muy bien, tocando y desplazándose.</p>
 

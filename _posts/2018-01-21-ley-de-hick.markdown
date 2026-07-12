@@ -13,7 +13,7 @@ tags:          [leyes y principios de experiencia de usuario (UX) y usabilidad]
 
 <p><img src="{{ site.baseurl }}/img/ley-02-ley-de-hick.png" loading="lazy" alt="Comparación entre tres opciones visibles y una lista larga de opciones tachada para explicar la Ley de Hick" width="724" height="428"></p>
 
-<p>Llevado al campo de los interfaces de usuario, resulta que a medida que aumenta el número de opciones disponibles, más tiempo le llevará al usuario tomar una decisión con respecto a cuál elegir.</p>
+<p>Llevado al campo de los interfaces de usuario, resulta que a medida que aumenta el <a href="{{ site.baseurl }}{% post_url 2017-03-08-recomienda-una-opcion %}">número de opciones disponibles</a>, más tiempo le llevará al usuario tomar una decisión con respecto a cuál elegir.</p>
 
 <p>Tal y como ocurría con la <a href="{{ site.baseurl }}{% post_url 2018-01-21-ley-de-fitts %}">ley de Fitts</a>, resulta resulta bastante lógico, ¿verdad?</p>
 

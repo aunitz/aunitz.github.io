@@ -9,7 +9,7 @@ header-img:    "img/post-bg-13.jpg"
 tags:          [buenas prácticas de usabilidad]
 ---
 
-<p>Agrupar juntos los elementos relacionados es una forma básica de aumentar la usabilidad de un interfaz. La mayoría de nosotros tiende a esperar que funcionalidades relacionadas, como <em>abrir</em> o <em>guardar</em>, probablemente se encontrarán más o menos juntas. Perder el tiempo buscando cosas, generalmente no resultará de nuestro agrado.</p>
+<p><a href="{{ site.baseurl }}{% post_url 2018-01-22-principio-de-la-proximidad %}">Agrupar juntos los elementos relacionados</a> es una forma básica de aumentar la usabilidad de un interfaz. La mayoría de nosotros tiende a esperar que funcionalidades relacionadas, como <em>abrir</em> o <em>guardar</em>, probablemente se encontrarán más o menos juntas. Perder el tiempo buscando cosas, generalmente no resultará de nuestro agrado.</p>
 
 <p>Este consejo de usabilidad se deriva del <a href="{{ site.baseurl }}{% post_url 2017-01-18-principios-usabilidad %}">principio de consistencia</a>; del que ya he hablado en anteriores ocasiones.</p>
 

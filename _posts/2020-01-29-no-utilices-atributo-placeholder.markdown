@@ -16,7 +16,7 @@ tags:          [buenas prácticas de usabilidad, formularios]
 
 <h2>En ningún caso debe sustituir al label</h2>
 
-<p>Una práctica que no es raro ver en algunos formularios es la de utilizar atributos <code>placeholder</code> como sustitutos de los elementos <code>label</code> de HTML.</p>
+<p>Una práctica que no es raro ver en algunos formularios es la de utilizar atributos <code>placeholder</code> como sustitutos de los <a href="{{ site.baseurl }}{% post_url 2018-03-11-etiquetas-por-encima-campos %}">elementos <code>label</code> de HTML</a>.</p>
 
 <p><img src="{{ site.baseurl }}/img/no-utilices-atributo-placeholder-01.png" loading="lazy" alt="Formulario con varios campos vacíos que usan placeholders en lugar de etiquetas visibles" width="608" height="170"></p>
 

@@ -45,7 +45,7 @@ tags:          [leyes y principios de experiencia de usuario (UX) y usabilidad, 
 <p><img src="{{ site.baseurl }}/img/10-principios-generales-usabilidad-jakob-nielsen-04.png" loading="lazy" alt="Wireframe de formulario con campos desalineados y errores marcados" width="450" height="318"></p>
 
 <h2>4. Consistencia y estándares</h2>
-<p>Los usuarios no deberían tener que preguntarse si diferentes palabras, situaciones o acciones significan lo mismo. Debemos <strong>ajustarnos a las convenciones de la plataforma y la industria</strong>.</p>
+<p>Los usuarios no deberían tener que preguntarse si diferentes palabras, situaciones o acciones significan lo mismo. Debemos <strong><a href="{{ site.baseurl }}{% post_url 2017-11-04-utiliza-convenciones %}">ajustarnos a las convenciones de la plataforma y la industria</a></strong>.</p>
 
 <p>En mis principios explico que las aplicaciones deben ser <strong>consistentes</strong> con las expectativas de los usuarios, es decir, con su aprendizaje previo. Y no sólo eso, las aplicaciones también tienen que ser consistentes internamente, en sus diferentes áreas o módulos.</p>
 

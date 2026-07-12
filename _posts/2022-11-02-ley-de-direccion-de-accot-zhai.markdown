@@ -38,7 +38,7 @@ tags:          [leyes y principios de experiencia de usuario (UX) y usabilidad]
 
 <p><img src="{{ site.baseurl }}/img/ley-de-direccion-03.png" loading="lazy" alt="Pantalla de configuración de Microsoft Teams abierta en una ventana modal" width="720" height="308"></p>
 
-<p>En los mega menús deja de aplicarse la ley de dirección, pero debemos vigilar la <a href="{{ site.baseurl }}{% post_url 2018-01-21-ley-de-fitts %}"> ley de Fitts</a> y evitar objetivos demasiado pequeños sobre los que interactuar.</p>
+<p>En los mega menús deja de aplicarse la ley de dirección, pero debemos vigilar la <a href="{{ site.baseurl }}{% post_url 2018-01-21-ley-de-fitts %}"> ley de Fitts</a> y evitar <a href="{{ site.baseurl }}{% post_url 2025-05-11-tamano-minimo-elementos-interactivos %}">objetivos demasiado pequeños sobre los que interactuar</a>.</p>
 
 <h2>Controles deslizantes</h2>
 

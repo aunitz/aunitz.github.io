@@ -21,7 +21,7 @@ tags:          [legislación, cookies]
 
 <p><img src="{{ site.baseurl }}/img/aviso-cookies-portales-administracion-publica-01.jpg" loading="lazy" alt="Fichas de letras formando la palabra Law alrededor de iconos de datos y privacidad" width="720" height="410"></p>
 
-<p>Las principales leyes que regulan el <strong>uso de cookies en España</strong> son:</p>
+<p>Las principales leyes que regulan el <strong><a href="{{ site.baseurl }}{% post_url 2025-05-05-aviso-de-cookies-legislacion-espanola %}">uso de cookies en España</a></strong> son:</p>
 
 <ul>
 	<li>Ley 34/2002, de 11 de julio, de servicios de la sociedad de la información y de comercio electrónico (LSSI).</li>

@@ -11,7 +11,7 @@ tags:          [leyes y principios de experiencia de usuario (UX) y usabilidad]
 
 <p><em><strong>Los usuarios pasan más tiempo en OTROS sitios que en el TUYO.</strong></em></p>
 
-<p>Esta perogrullada del gran <a href="https://www.nngroup.com/people/jakob-nielsen/" target="_blank" rel="noopener noreferrer">Jakob Nielsen</a>, no es más que un recordatorio de que una de las maneras más efectivas de conseguir optimizar la usabilidad de nuestros interfaces es seguir las convenciones de diseño establecidas.</p>
+<p>Esta perogrullada del gran <a href="https://www.nngroup.com/people/jakob-nielsen/" target="_blank" rel="noopener noreferrer">Jakob Nielsen</a>, no es más que un recordatorio de que una de las maneras más efectivas de conseguir optimizar la usabilidad de nuestros interfaces es <a href="{{ site.baseurl }}{% post_url 2017-11-04-utiliza-convenciones %}">seguir las convenciones de diseño establecidas</a>.</p>
 
 <p><img src="{{ site.baseurl }}/img/ley-03-ley-de-jakob.png" loading="lazy" alt="Comparación entre una interfaz que sigue convenciones conocidas y otra tachada que altera la estructura esperada de navegación y contenido" width="722" height="428"></p>
 

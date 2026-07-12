@@ -16,7 +16,7 @@ tags:          [leyes y principios de experiencia de usuario (UX) y usabilidad, 
 
 <p>Hay que tener presente que muchas de las experiencias comunes son propias de una determinada cultura. En algunos países el blanco es visto como puro e inocente y el negro como el mal y la muerte. Pero en otros países esta interpretación es a la inversa.</p>
 
-<p>Debido a este principio, en usabilidad es común aconsejar que se utilicen convenciones de diseño establecidas. Como hace el gran <a href="https://www.nngroup.com/people/jakob-nielsen/" target="_blank" rel="noopener noreferrer">Jakob Nielsen</a> en su irónica <a href="{{ site.baseurl }}{% post_url 2018-01-21-ley-de-jakob %}">Ley de Jakob</a>. Aunque nuevamente es importante recordar que no todos compartimos las mismas experiencias.</p>
+<p>Debido a este principio, en usabilidad es común aconsejar que se utilicen <a href="{{ site.baseurl }}{% post_url 2017-11-04-utiliza-convenciones %}">convenciones de diseño establecidas</a>. Como hace el gran <a href="https://www.nngroup.com/people/jakob-nielsen/" target="_blank" rel="noopener noreferrer">Jakob Nielsen</a> en su irónica <a href="{{ site.baseurl }}{% post_url 2018-01-21-ley-de-jakob %}">Ley de Jakob</a>. Aunque nuevamente es importante recordar que no todos compartimos las mismas experiencias.</p>
 
 <p>Este principio de la percepción visual fue establecido por la escuela de psicología de la <strong>Gestalt</strong>. Una corriente de la psicología moderna, surgida en Alemania a principios del siglo XX.</p>
 

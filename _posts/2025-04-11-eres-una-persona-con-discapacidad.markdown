@@ -32,7 +32,7 @@ tags:          [accesibilidad]
 
 <p>¿Cuál es el estereotipo de este tipo de discapacidad? Una persona en silla de ruedas.</p>
 
-<p>Vale… las personas en silla de ruedas habitualmente no tienen especiales dificultades para acceder a internet o a aplicaciones móviles. Pongamos el ejemplo de una persona con artritis. Una dolencia muy común. Tener botones grandes, buena distancia entre enlaces y posibilidad de control por voz le ayudará a navegar mejor.</p>
+<p>Vale… las personas en silla de ruedas habitualmente no tienen especiales dificultades para acceder a internet o a aplicaciones móviles. Pongamos el ejemplo de una persona con artritis. Una dolencia muy común. Tener <a href="{{ site.baseurl }}{% post_url 2025-05-11-tamano-minimo-elementos-interactivos %}">botones grandes, buena distancia entre enlaces</a> y posibilidad de control por voz le ayudará a navegar mejor.</p>
 
 <p><img src="{{ site.baseurl }}/img/eres-una-persona-con-discapacidad-02.jpg" loading="lazy" alt="Una joven con el brazo derecho en cabestrillo y escayolado sostiene el móvil con la mano izquierda, mostrando frustración en su rostro." width="720" height="480"></p>
 

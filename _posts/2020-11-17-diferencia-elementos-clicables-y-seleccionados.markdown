@@ -12,7 +12,7 @@ tags:          [buenas prácticas de usabilidad]
 
 <p><img src="{{ site.baseurl }}/img/tip-19-diferencia-elementos-clicables-y-seleccionados.png" loading="lazy" alt="Dos wireframes comparando enlaces subrayados con pestañas seleccionadas para distinguir elementos clicables y estado activo" width="722" height="431"></p>
 
-<p>En la ilustración anterior, en la primera pantalla, sabemos que hemos entrado en la “Opción 3” del menú principal y que podemos acceder a cualquiera de las otras tres secciones. Además, distinguimos claramente dos enlaces en el texto de la zona de contenido y por último un botón de llamada a la acción.</p>
+<p>En la ilustración anterior, en la primera pantalla, sabemos que hemos entrado en la “Opción 3” del menú principal y que podemos acceder a cualquiera de las otras tres secciones. Además, distinguimos claramente dos enlaces en el texto de la zona de contenido y por último un <a href="{{ site.baseurl }}{% post_url 2017-07-30-destacar-llamadas-a-la-accion %}">botón de llamada a la acción</a>.</p>
 
 <p>La segunda pantalla, por el contrario, le pone mucho más difícil las cosas al usuario y no es sencillo distinguir los elementos interactivos y mucho menos saber en qué sección del menú principal nos encontramos.</p>
 

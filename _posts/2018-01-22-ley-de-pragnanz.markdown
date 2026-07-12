@@ -21,6 +21,6 @@ tags:          [leyes y principios de experiencia de usuario (UX) y usabilidad, 
 
 <p>La Ley de Prägnanz es la principal ley general de la <strong>Gestalt</strong>. Una corriente de la psicología moderna, surgida en Alemania a principios del siglo XX. "Prägnanz" es una palabra alemana que puede traducirse como "concisión".</p>
 
-<p>Aplicado al diseño, esta ley defiende la sencillez y la simplicidad como cualidades positivas del mismo.</p>
+<p>Aplicado al diseño, esta ley defiende la <a href="{{ site.baseurl }}{% post_url 2020-09-13-la-navaja-de-ockham %}">sencillez y la simplicidad</a> como cualidades positivas del mismo.</p>
 
 <p>Si quieres conocer más sobre sobre la escuela de la Gestalt y su principios sobre la percepción visual aplicados al diseño, puedes consultar <a href="https://www.smashingmagazine.com/2014/03/design-principles-visual-perception-and-the-principles-of-gestalt/" target="_blank" rel="noopener noreferrer">el siguiente artículo de Smashing Magazine</a>.</p>

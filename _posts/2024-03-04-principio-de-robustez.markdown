@@ -24,7 +24,7 @@ tags:          [leyes y principios de experiencia de usuario (UX) y usabilidad, 
 
 <h3>Accesibilidad</h3>
 
-<p>Siguiendo el Principio de Robustez, el diseño UX se enfoca en ser inclusivo, asegurando que los productos sean utilizables y <a href="{{ site.baseurl }}{% post_url 2019-02-22-accesibilidad-web-al-alcance-de-todos %}">accesibles</a> para personas con una amplia gama de habilidades, preferencias y contextos. Esto implica considerar desde el principio diversas interacciones, como el uso de lectores de pantalla por personas con discapacidad visual o la adaptabilidad de interfaces para diferentes tamaños de pantalla.</p>
+<p>Siguiendo el Principio de Robustez, el diseño UX se enfoca en ser inclusivo, asegurando que los productos sean utilizables y <a href="{{ site.baseurl }}{% post_url 2019-02-22-accesibilidad-web-al-alcance-de-todos %}">accesibles</a> para personas con una amplia gama de habilidades, preferencias y contextos. Esto implica considerar desde el principio diversas interacciones, como el uso de lectores de pantalla por personas con discapacidad visual o la <a href="{{ site.baseurl }}{% post_url 2020-04-06-que-es-mobile-first %}">adaptabilidad de interfaces para diferentes tamaños de pantalla</a>.</p>
 
 <p><img src="{{ site.baseurl }}/img/principio-de-robustez-02.jpg" loading="lazy" alt="Persona usando un teclado braille conectado a un ordenador" width="720" height="473"></p>
 

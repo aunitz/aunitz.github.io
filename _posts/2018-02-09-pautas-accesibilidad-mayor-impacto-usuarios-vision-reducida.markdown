@@ -9,7 +9,7 @@ header-img:    "img/post-bg-27.jpg"
 tags:          [accesibilidad]
 ---
 
-<p>Con este artículo voy a iniciar una serie dedicada a divulgar aquellas pautas de accesibilidad que tienen un <strong>mayor impacto práctico</strong> en el día a día de los usuarios con algún tipo de discapacidad.</p>
+<p>Con este artículo voy a iniciar una serie dedicada a divulgar aquellas <a href="{{ site.baseurl }}{% post_url 2019-02-22-accesibilidad-web-al-alcance-de-todos %}">pautas de accesibilidad</a> que tienen un <strong>mayor impacto práctico</strong> en el día a día de los usuarios con algún tipo de discapacidad.</p>
 
 <p>Lo primero que hay que aclarar, para los que aún nos seáis conscientes de ello, es que todos nosotros somos o seremos en algún momento usuarios con algún tipo de discapacidad.</p>
 

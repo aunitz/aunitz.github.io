@@ -29,7 +29,7 @@ tags:          [buenas prácticas de diseño, colores]
 <ul>
     <li>Color principal: color neutral agradable a la vista.</li>
     <li>Color secundario: debe contrastar con el color principal para crear interés visual.</li>
-    <li>Color enfático: debe contrastar notablemente con respecto a los dos anteriores. Es habitual utilizarlo en los botones del tipo “Call-to-Action”.</li>
+    <li>Color enfático: debe contrastar notablemente con respecto a los dos anteriores. Es habitual utilizarlo en los botones del tipo <a href="{{ site.baseurl }}{% post_url 2017-07-30-destacar-llamadas-a-la-accion %}">“Call-to-Action”</a>.</li>
 </ul>
 
 <p>Estos tres colores deben escogerse de modo que sean armónicos y transmitan las sensaciones que el proyecto requiera.</p>

@@ -49,7 +49,7 @@ tags:          [accesibilidad]
     <li>Sordoceguera</li>
     <li>Movilidad (entendida como la imposibilidad de utilizar el ratón y/o el teclado)</li>
     <li>Cognitiva</li>
-    <li>Visión reducida</li>
+    <li><a href="{{ site.baseurl }}{% post_url 2018-02-09-pautas-accesibilidad-mayor-impacto-usuarios-vision-reducida %}">Visión reducida</a></li>
     <li>Daltonismo</li>
 </ul>
 

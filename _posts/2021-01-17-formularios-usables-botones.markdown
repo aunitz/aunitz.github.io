@@ -15,7 +15,7 @@ tags:          [buenas prácticas de usabilidad, formularios]
 <ul>
     <li>El texto del botón debe describir de la manera más precisa posible la acción que realiza. Preferiblemente mediante un verbo simple. Como “Guardar”, “Continuar”, “Aceptar”, etc.</li>
     <li>Cuantos menos botones contenga el formulario, mejor. Sólo debería existir un único botón de acción principal en cada formulario.</li>
-    <li>Ubica el botón principal del formulario donde a los usuarios les resulte más cómodo encontrarlo. Típicamente en el borde inferior izquierdo del formulario, debajo del último campo.</li>
+    <li><a href="{{ site.baseurl }}{% post_url 2021-02-07-alineacion-botones-formulario %}">Ubica el botón principal del formulario</a> donde a los usuarios les resulte más cómodo encontrarlo. Típicamente en el borde inferior izquierdo del formulario, debajo del último campo.</li>
     <li>Los botones que tengan un efecto destructivo (como “Cancelar” o “Volver”) deben tener un peso visual inferior al del botón de acción principal.</li>
     <li>Evita los botones deshabilitados (atributo <code>disabled</code>). Tienen poco contraste y pueden causar confusión.</li>
 </ul>

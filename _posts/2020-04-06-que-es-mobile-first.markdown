@@ -22,7 +22,7 @@ tags:          [desarrollo de soluciones digitales, buenas prácticas de diseño
 
 <p>La <strong>principal restricción del móvil</strong> es el <strong>reducido tamaño de su pantalla</strong>. Además de otras características como la ausencia de teclado y ratón.</p>
 
-<p>Como explicó Luke en su día, <strong>Mobile First obliga a centrarse en lo importante</strong>. En un móvil sencillamente no hay espacio para todo y requiere que el diseño se concentre sólo en los datos y acciones más importantes de la aplicación. Obliga a priorizar.</p>
+<p>Como explicó Luke en su día, <strong>Mobile First obliga a <a href="{{ site.baseurl }}{% post_url 2020-09-13-la-navaja-de-ockham %}">centrarse en lo importante</a></strong>. En un móvil sencillamente no hay espacio para todo y requiere que el diseño se concentre sólo en los datos y acciones más importantes de la aplicación. Obliga a priorizar.</p>
 
 <p><img src="{{ site.baseurl }}/img/que-es-mobile-first-02.jpg" loading="lazy" alt="Grupo de personas usando teléfonos móviles, representando el diseño pensado primero para móvil" width="720" height="480"></p>
 

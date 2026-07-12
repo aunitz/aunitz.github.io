@@ -47,7 +47,7 @@ tags:          [buenas prácticas de diseño, desarrollo de soluciones digitales
 
 <h2>Proceso del DCU</h2>
 
-<p>El enfoque de diseño centrado en el usuario tiene forma de proceso. Las etapas típicas que los constituyen son:</p>
+<p>El <a href="{{ site.baseurl }}{% post_url 2025-09-10-el-diseno-como-proceso %}">enfoque de diseño centrado en el usuario tiene forma de proceso</a>. Las etapas típicas que los constituyen son:</p>
 
 <p><img src="{{ site.baseurl }}/img/que-es-diseno-centrado-en-el-usuario-03.webp" loading="lazy" alt="Diagrama circular del proceso de diseño centrado en el usuario con investigación, conceptualización, prototipado y evaluación" width="720" height="704"></p>
 

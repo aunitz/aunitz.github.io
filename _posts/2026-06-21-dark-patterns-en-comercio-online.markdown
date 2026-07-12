@@ -25,7 +25,7 @@ tags:          [sesgos cognitivos, buenas prácticas de usabilidad]
 
 <p>El objetivo del artículo de Consumer —y el de este post— es ese: que conozcamos los patrones más habituales para poder detectarlos cuando los encontremos.</p>
 
-<p>Funcionan porque no actúan al azar: cada uno de estos patrones explota un sesgo cognitivo concreto que afecta a nuestra forma de decidir.</p>
+<p>Funcionan porque no actúan al azar: cada uno de estos patrones <a href="{{ site.baseurl }}{% post_url 2021-08-08-uso-sesgos-cognitivos-marketing %}">explota un sesgo cognitivo concreto</a> que afecta a nuestra forma de decidir.</p>
 
 <h2>Patrones oscuros más frecuentes en webs y apps</h2>
 
@@ -127,7 +127,7 @@ tags:          [sesgos cognitivos, buenas prácticas de usabilidad]
 
 <h3>12. Sobrecarga informativa <em>(Information overload)</em></h3>
 
-<p>Demasiada información, demasiadas opciones y demasiados estímulos a la vez. La persona usuaria se satura, pierde la capacidad de evaluar con calma y acaba tomando la decisión de menor resistencia: la que la plataforma ha preparado para ese momento de agotamiento cognitivo.</p>
+<p><a href="{{ site.baseurl }}{% post_url 2024-03-01-paralisis-por-analisis %}">Demasiada información, demasiadas opciones y demasiados estímulos a la vez</a>. La persona usuaria se satura, pierde la capacidad de evaluar con calma y acaba tomando la decisión de menor resistencia: la que la plataforma ha preparado para ese momento de agotamiento cognitivo.</p>
 
 <p>En StubHub, una sola pantalla acumula 5 mensajes de urgencia y escasez simultáneos (demanda alta, último precio mínimo, 41 vistas recientes, última venta, temporizador). La saturación informativa impide la evaluación tranquila y empuja a la compra impulsiva.</p>
 

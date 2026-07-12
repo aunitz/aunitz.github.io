@@ -9,7 +9,7 @@ header-img:    "img/post-bg-12.jpg"
 tags:          [buenas prácticas de usabilidad]
 ---
 
-<p>Las convenciones son consistentes con las expectativas de los usuarios, es decir, con su aprendizaje previo. Utilizar estándares comúnmente aceptados facilita el uso de una aplicación.</p>
+<p>Las convenciones son consistentes con las expectativas de los usuarios, es decir, con su <a href="{{ site.baseurl }}{% post_url 2018-12-08-principio-de-experiencia %}">aprendizaje previo</a>. Utilizar estándares comúnmente aceptados facilita el uso de una aplicación.</p>
 
 <p>Gracias a las convenciones, los usuarios hemos aprendido que el icono de cerrar estará (habitualmente) en la esquina superior derecha, o esperamos que el icono de configuración tenga un determinado aspecto.</p>
 
