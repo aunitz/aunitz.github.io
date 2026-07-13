@@ -12,7 +12,7 @@ tags:          [leyes y principios de experiencia de usuario (UX) y usabilidad, 
 <p>La <strong>navaja de Ockham</strong> es un principio metodológico y filosófico atribuido al fraile franciscano Guillermo de Ockham (1280-1349), según el cual <strong>“en igualdad de condiciones, la explicación más sencilla suele ser la más probable”</strong>.</p>
 
 <p>
-    <img src="{{ site.baseurl }}/img/la-navaja-de-ockham-01.jpg" alt="Ilustración de Guillermo de Ockham" width="400" height="373">
+    <img src="{{ site.baseurl }}/img/la-navaja-de-ockham-01.jpg" alt="Ilustración de Guillermo de Ockham" width="400" height="373" loading="lazy">
     <em>Guillermo de Ockham</em>
 </p>
 
@@ -23,7 +23,7 @@ tags:          [leyes y principios de experiencia de usuario (UX) y usabilidad, 
 <p>Los product managers, los programadores y en general casi todos los implicados en el desarrollo de un producto o servicio suelen (solemos) caer en la tentación de tratar de ofrecer el máximo número y complejidad de funcionalidades y opciones al usuario. Cuando precisamente, la mayor parte de las veces, el usuario prefiere una solución simple, usable y orientada a una necesidad concreta. El resto de los elementos solo logran confundirlo, distraerlo y alejarlo de su objetivo.</p>
 
 <p>
-    <img src="{{ site.baseurl }}/img/la-navaja-de-ockham-02.png" alt="Captura de pantalla de Word con decenas de botones de acción a la vista" width="576" height="368">
+    <img src="{{ site.baseurl }}/img/la-navaja-de-ockham-02.png" alt="Captura de pantalla de Word con decenas de botones de acción a la vista" width="576" height="368" loading="lazy">
     <em>Sobrecarga de información. Imagen: <a href="https://twitter.com/ftrain" target="_blank" rel="noopener noreferrer">@ftrain</a></em>
 </p>
 
