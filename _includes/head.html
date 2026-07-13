@@ -11,6 +11,10 @@
     <link rel="preload" as="image" fetchpriority="high" href="{{ site.baseurl }}/{{ page.header-img }}">
     {% endif %}
 
+    {% if page.noindex %}
+    <meta name="robots" content="noindex">
+    {% endif %}
+
     <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ page.title }}. {{ page.subtitle }}.{% endif %}">
     <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ page.title }}. {{ page.subtitle }}.{% endif %}">
     {% if page.date %}

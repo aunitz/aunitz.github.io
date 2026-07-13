@@ -1,3 +1,4 @@
+{% unless page.schema == false %}
 {% if page.layout == "post" and page.republished != true %}{% assign _img_parts = page.content | split: 'src="' %}{% if _img_parts.size > 1 %}{% assign _img_src = _img_parts[1] | split: '"' | first %}{% endif %}{% endif %}
 <script type="application/ld+json">
 {
@@ -160,3 +161,4 @@
   ]
 }
 </script>
+{% endunless %}
