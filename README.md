@@ -42,6 +42,12 @@ bundle exec jekyll serve --incremental
 2. Pulsa `Ctrl+Shift+P`.
 3. Escribe `Compile LESS to CSS` y selecciona ese comando.
 
+## Dashboard de estadísticas del blog
+
+URL: `/dashboard/` (`dashboard.html`, con el layout `_layouts/dashboard.html`)
+
+Es un **dashboard estático generado en build-time**: no hay JavaScript, backend ni llamadas a APIs. Todas las métricas (posts por año y mes, etiquetas, imágenes, enlaces internos/externos, cobertura de alt, palabras totales, etc.) se calculan con Liquid a partir de `site.posts` y `site.static_files` durante la compilación de Jekyll, y quedan «congeladas» en el HTML resultante hasta la siguiente compilación (cada publicación de un post). No refleja tráfico ni datos en tiempo real; para eso están Google Analytics y Microsoft Clarity.
+
 ## Skill de Claude Code: publish-post-blog-aunitz
 
 Ubicación: `.claude/skills/publish-post-blog-aunitz/SKILL.md`
@@ -208,14 +214,5 @@ Este repositorio combina varias licencias:
 | jQuery 1.12.4 (vía CDN) | [MIT](https://opensource.org/licenses/MIT) — copyright OpenJS Foundation | CDN de Google |
 
 ## TODO
-1. Un **Dashboard** con métricas estáticas del sitio web:
-- Número de posts total
-  - Número de posts totales por año
-  - Número de posts totales por mes y año
-- Número total de imágenes
-- Número totas de etiquetas (tags) diferentes
-- Número total de enlaces internos
-- Número total de enlaces externos
-- Nube de palabras de etiquetas (tags)
-2. Revisar nuevo https://search.google.com/
-3. Revisar instalación de https://clarity.microsoft.com/lang/es-es
+1. Revisar datos de https://search.google.com/
+3. Revisar datos de https://clarity.microsoft.com/lang/es-es
