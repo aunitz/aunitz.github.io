@@ -2,7 +2,7 @@
 layout:        post
 title:         "El diseño como proceso"
 subtitle:      "Y no como entregable aislado"
-description:   "Por qué el diseño es un proceso: explicación del 'garabato' de Damien Newman, sus fases y límites, y la importancia de la investigación, la iteración y el trabajo en equipo."
+description:   "Por qué el diseño es un proceso: el 'garabato' de Damien Newman, sus fases y límites, y la importancia de la investigación, la iteración y el trabajo en equipo."
 date:          2025-09-10 10:00:00 +0200
 author:        "Aunitz Giménez"
 header-img:    "img/post-bg-110.jpg"

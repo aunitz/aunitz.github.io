@@ -2,7 +2,7 @@
 layout:        post
 title:         "Memorando del artículo de Colton Voege «Tailwind is the Worst of All Worlds»"
 subtitle:      "Tailwind: todo mal 👎🏻"
-description:   "Memorando del artículo de Colton Voege sobre Tailwind CSS: principales inconvenientes, motivos de su popularidad y reflexiones sobre su uso en desarrollo frontend."
+description:   "Memorando del artículo de Colton Voege sobre Tailwind CSS: principales inconvenientes, motivos de su popularidad y reflexiones sobre su uso en frontend."
 date:          2025-08-26 14:30:00 +0200
 author:        "Aunitz Giménez"
 header-img:    "img/post-bg-109.jpg"
