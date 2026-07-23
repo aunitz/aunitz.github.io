@@ -215,4 +215,6 @@ Este repositorio combina varias licencias:
 
 ## TODO
 1. Revisar datos de https://search.google.com/
-3. Revisar datos de https://clarity.microsoft.com/lang/es-es
+2. Revisar datos de https://clarity.microsoft.com/lang/es-es
+3. Añadir un apartado de política de privacidad cubriendo responsable del tratamiento, GA4, Clarity y derechos del usuario y enlazarla desde el footer. La página se llamará /politica-privacidad/ con el layout page que ya usa el blog.
+4. Añadir página de Aviso legal si es que es obligatorio por LSSI
