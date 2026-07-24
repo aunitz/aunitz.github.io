@@ -31,11 +31,17 @@ bundle exec jekyll serve --incremental
 **Limitación:** si cambias un `_include` o un `_layout`, Jekyll puede no regenerar todos los ficheros que los usan. En ese caso, haz un build completo (sin `--incremental`).
 
 ### Instalar lo necesario en Windows
-1. Instala Ruby con [RubyInstaller](https://rubyinstaller.org/). Comprobar: `ruby -v`
-2. Ejecuta: `gem install bundler jekyll`. Comprobar: `jekyll -v`
-3. Instala las dependencias con Bundler: `bundle install`. Se basa en el contenido de `Gemfile`.
-4. Levanta el servidor local de Jekyll.
-5. *(Opcional)* Limpiar antes de volver a generar: `bundle exec jekyll clean`.
+
+**Importante:** instala la versión de Ruby que usa GitHub Pages en producción (comprobar en [pages.github.com/versions](https://pages.github.com/versions/); en el momento de escribir esto, Ruby 3.3.x), no la última disponible en RubyInstaller. Versiones más nuevas (ej. Ruby 4.x) pueden hacer que `bundle install`/`bundle update` sea incapaz de resolver `github-pages` y sus dependencias contra versiones recientes, y termine retrocediendo en cascada hasta gemas transitivas antiguas (`jekyll` 1.x, `yajl-ruby`...) que ni siquiera compilan con Ruby moderno. Si ya tienes instalada una versión más nueva, no hace falta desinstalarla: se puede instalar la 3.3.x en una carpeta distinta (ej. `C:\Ruby33-x64`) y usar el acceso directo "Start Command Prompt with Ruby" que crea el instalador para trabajar en este proyecto sin tocar el PATH global.
+
+1. Instala Ruby con [RubyInstaller](https://rubyinstaller.org/) (versión con **DevKit**, necesaria para compilar gemas nativas como `nokogiri`). En "Select Components" deja marcado también **MSYS2 development toolchain**.
+2. Al final de la instalación, cuando se abra la consola de `ridk install`, elige la opción por defecto **`[1,3]`** (MSYS2 base + MINGW development toolchain) pulsando Enter.
+3. Comprueba que todo quedó en el PATH: `ruby -v` y `gem -v`.
+4. Instala Bundler: `gem install bundler`
+5. Instala las dependencias del proyecto con Bundler: `bundle install`. Se basa en las versiones exactas fijadas en `Gemfile.lock` (jekyll, github-pages y el resto de gemas). **No uses `gem install jekyll`**: instalaría una versión distinta a la del `Gemfile.lock` y `jekyll -v` (sin `bundle exec`) fallaría con `Bundler::GemNotFound` al intentar cargar el `Gemfile` del proyecto.
+6. Comprueba: `bundle exec jekyll -v`
+7. Levanta el servidor local de Jekyll.
+8. *(Opcional)* Limpiar antes de volver a generar: `bundle exec jekyll clean`.
 
 ## Compilar LESS manualmente en VS Code
 1. Guarda el archivo `less/clean-blog.less`.
