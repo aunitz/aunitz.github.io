@@ -40,19 +40,6 @@
     <meta property="og:image" content="{{ site.url }}/{{ site.og_image_index }}">
     {% endif %}
 
-    <!-- Preconnect to required origins -->
-    <link rel="preconnect"
-        href="//fonts.gstatic.com"
-        crossorigin>
-
-    <link rel="preconnect"
-        href="//maxcdn.bootstrapcdn.com/"
-        crossorigin>
-
-    <link rel="preconnect"
-        href="//ajax.googleapis.com/"
-        crossorigin>
-
     <!-- Bootstrap Core CSS -->
     <link rel="preload" as="style" href="{{ '/css/bootstrap.min.css' | prepend: site.baseurl }}">
     <link rel="stylesheet" href="{{ '/css/bootstrap.min.css' | prepend: site.baseurl }}">
@@ -61,33 +48,13 @@
     <link rel="preload" as="style" href="{{ '/css/clean-blog.min.css' | prepend: site.baseurl }}">
     <link rel="stylesheet" href="{{ '/css/clean-blog.min.css' | prepend: site.baseurl }}">
 
-    <!-- Google Fonts -->
-    <link rel="preload"
-        as="style"
-        href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic%7COpen+Sans:300,400,600,700,800,300italic,400italic,600italic,700italic,800italic%7CCaveat:400,700&display=swap">
+    <!-- Fuentes (autoalojadas, antes Google Fonts) -->
+    <link rel="preload" as="style" href="{{ '/css/fonts.css' | prepend: site.baseurl }}">
+    <link rel="stylesheet" href="{{ '/css/fonts.css' | prepend: site.baseurl }}">
 
-    <link rel="stylesheet"
-        href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic%7COpen+Sans:300,400,600,700,800,300italic,400italic,600italic,700italic,800italic%7CCaveat:400,700&display=swap"
-        media="print" onload="this.media='all'">
-
-    <noscript>
-        <link rel="stylesheet"
-            href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic%7COpen+Sans:300,400,600,700,800,300italic,400italic,600italic,700italic,800italic%7CCaveat:400,700&display=swap">
-    </noscript>
-
-    <!-- Font Awesome -->
-    <link rel="preload"
-        as="style"
-        href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-
-    <link rel="stylesheet"
-        href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"
-        media="print" onload="this.media='all'">
-
-    <noscript>
-        <link rel="stylesheet"
-            href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-    </noscript>
+    <!-- Font Awesome (autoalojado) -->
+    <link rel="preload" as="style" href="{{ '/css/font-awesome.min.css' | prepend: site.baseurl }}">
+    <link rel="stylesheet" href="{{ '/css/font-awesome.min.css' | prepend: site.baseurl }}">
 
     {% feed_meta %}
     {% include ga.html %}
@@ -97,11 +64,11 @@
     <!-- Schema Markup (datos estructurados) -->
     {% include schema.html %}
 
-    <!-- jQuery -->
-    <script defer src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- jQuery (autoalojado) -->
+    <script defer src="{{ '/js/vendor/jquery-1.12.4.min.js' | prepend: site.baseurl }}"></script>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script defer src="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!-- Bootstrap Core JavaScript (autoalojado) -->
+    <script defer src="{{ '/js/vendor/bootstrap-3.4.1.min.js' | prepend: site.baseurl }}"></script>
 
     <!-- Custom Theme JavaScript -->
     <script defer src="{{ '/js/clean-blog.min.js' | prepend: site.baseurl }}"></script>
