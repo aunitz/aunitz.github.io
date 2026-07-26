@@ -17,6 +17,6 @@ tags:          [leyes y principios de experiencia de usuario (UX) y usabilidad, 
 
 <p>Se trata de la tendencia humana a buscar y encontrar patrones. La clave para el cierre es proporcionar suficiente información para que el cerebro pueda completar el resto. Si falta mucho, los elementos se verán como partes separadas en lugar de un todo. Si se proporciona demasiada información, no es necesario que ocurra el cierre.</p>
 
-<p>Este principio de la percepción visual fue establecido por la escuela de psicología de la <strong>Gestalt</strong>strong>. Una corriente de la psicología moderna, surgida en Alemania a principios del siglo XX.</p>
+<p>Este principio de la percepción visual fue establecido por la escuela de psicología de la <strong>Gestalt</strong>. Una corriente de la psicología moderna, surgida en Alemania a principios del siglo XX.</p>
 
 <p>Si quieres conocer más sobre sobre la escuela de la Gestalt y sus principios sobre la percepción visual aplicados al diseño, puedes consultar <a href="https://www.smashingmagazine.com/2014/03/design-principles-visual-perception-and-the-principles-of-gestalt/" target="_blank" rel="noopener noreferrer">el siguiente artículo de Smashing Magazine</a>.</p>
