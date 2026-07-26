@@ -225,8 +225,14 @@ Este repositorio combina varias licencias:
 | Font Awesome 4.3.0 (iconos vía CDN) | Fuentes: [SIL OFL 1.1](https://scripts.sil.org/OFL) — CSS: [MIT](https://opensource.org/licenses/MIT) | CDN de BootstrapCDN |
 | jQuery 1.12.4 (vía CDN) | [MIT](https://opensource.org/licenses/MIT) — copyright OpenJS Foundation | CDN de Google |
 
+## Aviso legal
+
+La página `/aviso-legal/` (`aviso-legal.html`, layout `page`) cubre el deber de información del art. 10 de la LSSI-CE: identificación del titular, condiciones de uso, propiedad intelectual, contenidos republicados, protección de datos y legislación aplicable. Va enlazada desde `_includes/footer.html` y lleva `hide_from_nav: true` para no aparecer en el menú superior.
+
+El titular es Aunitz Giménez Mendiburu como persona física (no Adimedia). 
+
 ## TODO
 1. Revisar datos de https://search.google.com/
 2. Revisar datos de https://clarity.microsoft.com/lang/es-es
-3. Añadir un apartado de política de privacidad cubriendo responsable del tratamiento, GA4, Clarity y derechos del usuario y enlazarla desde el footer. La página se llamará /politica-privacidad/ con el layout page que ya usa el blog.
-4. Añadir página de Aviso legal si es que es obligatorio por LSSI
+3. Retirar Google Analytics 4 y Microsoft Clarity y dejar GoatCounter como única analítica (tras unas semanas de convivencia para comparar datos). Al hacerlo, actualizar el apartado 8 del aviso legal.
+4. Autoalojar las fuentes de Google y jQuery para dejar de enviar la IP de los visitantes a CDNs de terceros.
