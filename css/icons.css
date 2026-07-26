@@ -1,0 +1,19 @@
+/* Iconos de redes sociales del footer (sustituyen a Font Awesome) */
+
+.icon-circle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.15em;
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    background: currentColor;
+    vertical-align: middle;
+}
+
+.icon-circle svg {
+    width: 1em;
+    height: 1em;
+    fill: #fff;
+}

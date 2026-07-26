@@ -41,20 +41,16 @@
     {% endif %}
 
     <!-- Bootstrap Core CSS -->
-    <link rel="preload" as="style" href="{{ '/css/bootstrap.min.css' | prepend: site.baseurl }}">
     <link rel="stylesheet" href="{{ '/css/bootstrap.min.css' | prepend: site.baseurl }}">
 
     <!-- Custom CSS -->
-    <link rel="preload" as="style" href="{{ '/css/clean-blog.min.css' | prepend: site.baseurl }}">
     <link rel="stylesheet" href="{{ '/css/clean-blog.min.css' | prepend: site.baseurl }}">
 
     <!-- Fuentes (autoalojadas, antes Google Fonts) -->
-    <link rel="preload" as="style" href="{{ '/css/fonts.css' | prepend: site.baseurl }}">
     <link rel="stylesheet" href="{{ '/css/fonts.css' | prepend: site.baseurl }}">
 
-    <!-- Font Awesome (autoalojado) -->
-    <link rel="preload" as="style" href="{{ '/css/font-awesome.min.css' | prepend: site.baseurl }}">
-    <link rel="stylesheet" href="{{ '/css/font-awesome.min.css' | prepend: site.baseurl }}">
+    <!-- Iconos del footer (SVG inline, sustituyen a Font Awesome) -->
+    <link rel="stylesheet" href="{{ '/css/icons.css' | prepend: site.baseurl }}">
 
     {% feed_meta %}
     {% include ga.html %}

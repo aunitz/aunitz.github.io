@@ -17,7 +17,7 @@ El blog es también una herramienta de posicionamiento SEO y de autoridad profes
 - **Plugins Jekyll:** `github-pages`, `jekyll-paginate`, `jekyll-feed`, `jekyll-redirect-from`, `jekyll-sitemap`
 - **CSS:** Bootstrap 3.4.1 CSS compilado localmente desde `bootstrap-sass/` → `css/bootstrap.min.css` (via Live Sass Compiler) + plantilla Clean Blog compilada desde `less/` → `css/clean-blog.min.css` (via Easy LESS)
 - **Tipografías:** Lora (cuerpo), Open Sans (nav), Caveat (decorativa) — Google Fonts autoalojadas en `fonts/` (`css/fonts.css`)
-- **Iconos:** Font Awesome 4.3.0 autoalojado (`css/font-awesome.min.css` + `fonts/fontawesome-webfont.*`)
+- **Iconos:** SVG inline en el footer (`css/icons.css`); no se usa ninguna librería de iconos
 - **JavaScript:** jQuery 1.12.4 + Bootstrap JS 3.4.1, ambos autoalojados en `js/vendor/` + `js/clean-blog.min.js`
 - **Analytics:** Google Analytics 4 (ID: G-PJWXCNEVTP) + Microsoft Clarity (heatmaps y grabaciones de sesión, ID: x62p7a3dnf)
 - **Datos estructurados:** Schema.org via includes: BlogPosting, BreadcrumbList, WebSite, Organization
