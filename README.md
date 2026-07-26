@@ -52,7 +52,13 @@ bundle exec jekyll serve --incremental
 
 URL: `/dashboard/` (`dashboard.html`, con el layout `_layouts/dashboard.html`)
 
-Es un **dashboard estático generado en build-time**: no hay JavaScript, backend ni llamadas a APIs. Todas las métricas (posts por año y mes, etiquetas, imágenes, enlaces internos/externos, cobertura de alt, palabras totales, etc.) se calculan con Liquid a partir de `site.posts` y `site.static_files` durante la compilación de Jekyll, y quedan «congeladas» en el HTML resultante hasta la siguiente compilación (cada publicación de un post). No refleja tráfico ni datos en tiempo real; para eso están Google Analytics y Microsoft Clarity.
+Es un **dashboard estático generado en build-time**: no hay JavaScript, backend ni llamadas a APIs. Todas las métricas (posts por año y mes, etiquetas, imágenes, enlaces internos/externos, cobertura de alt, palabras totales, etc.) se calculan con Liquid a partir de `site.posts` y `site.static_files` durante la compilación de Jekyll, y quedan «congeladas» en el HTML resultante hasta la siguiente compilación (cada publicación de un post). No refleja tráfico ni datos en tiempo real; para eso están Google Analytics, Microsoft Clarity y GoatCounter.
+
+## Analítica de tráfico: GoatCounter
+
+Además de Google Analytics y Microsoft Clarity, el sitio carga [GoatCounter](https://www.goatcounter.com/), una analítica ligera y respetuosa con la privacidad. Se integra igual que GA4 y Clarity: include `_includes/goatcounter.html`, condicionado por la variable `goatcounter_code` en `_config.yml`, e insertado desde `_includes/head.html`.
+
+**Desactivar el tracking de GoatCounter en un navegador:** entrando en https://www.aunitz.net/#toggle-goatcounter se desactiva el registro de estadísticas de GoatCounter para ese navegador concreto (queda guardado en el propio navegador, no afecta a otros dispositivos). Más detalle en la documentación oficial: [aunitz.goatcounter.com/help/skip-dev](https://aunitz.goatcounter.com/help/skip-dev).
 
 ## Skill de Claude Code: publish-post-blog-aunitz
 
