@@ -7,6 +7,7 @@ date:          2026-06-21 10:00:00 +0200
 author:        "Aunitz Giménez"
 header-img:    "img/post-bg-03.jpg"
 tags:          [sesgos cognitivos, buenas prácticas de usabilidad]
+related:       true
 ---
 
 <p>Hace muchos años que soy socio del Club Eroski y lector habitual de su <a href="https://www.consumer.es/" target="_blank" rel="noopener noreferrer">revista mensual Consumer</a>. Se publica en papel y en versión digital (acceso gratuito). Cubre temas de consumo cotidiano, defensa del consumidor, comparativas de productos, etc. En noviembre de 2025 publicaron un artículo sobre cómo muchas <a href="https://www.consumer.es/economia-domestica/patrones-oscuros-internet-asi-manipulan-plataformas-para-comprar-sin-parar" target="_blank" rel="noopener noreferrer">plataformas online de venta aplican patrones oscuros o dark patterns</a> para influir en nuestro comportamiento e inducir la compra. En no pocas ocasiones, de productos que no necesitamos.</p>

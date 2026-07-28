@@ -56,6 +56,19 @@ layout: default
                 <hr>
 
                 {% comment %}
+                  Bloque «También te puede interesar».
+                  Fase de validación: solo se muestra en los posts con
+                  "related: true" en el frontmatter. Para extenderlo a todo el
+                  blog basta con cambiar la condición de abajo por
+                  "page.related != false", que lo activa por defecto y deja la
+                  opción de desactivarlo post a post con "related: false".
+                {% endcomment %}
+                {% if page.related %}
+                    {% include related-posts.html %}
+                    <hr>
+                {% endif %}
+
+                {% comment %}
                   Navegación Anterior/Siguiente omitiendo posts de redirección
                   (marcados con hide_from_home: true), para que los redireccionamientos
                   de URLs renombradas no rompan el orden cronológico.
