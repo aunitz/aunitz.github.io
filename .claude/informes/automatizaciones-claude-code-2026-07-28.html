@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Recomendaciones de automatización — Claude Code</title>
+<style>
+  :root {
+    --bg: #f7f5f2;
+    --bg-card: #ffffff;
+    --text: #2b2620;
+    --text-muted: #6b6459;
+    --border: #e4ddd3;
+    --accent: #a8562c;
+    --accent-soft: #f2e2d8;
+    --code-bg: #f1ede7;
+    --tag-bg: #efe6da;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #1c1a17;
+      --bg-card: #262320;
+      --text: #ece7e0;
+      --text-muted: #a89e8f;
+      --border: #3a352e;
+      --accent: #e08b56;
+      --accent-soft: #3a2a1e;
+      --code-bg: #1f1c19;
+      --tag-bg: #332c22;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #1c1a17;
+    --bg-card: #262320;
+    --text: #ece7e0;
+    --text-muted: #a89e8f;
+    --border: #3a352e;
+    --accent: #e08b56;
+    --accent-soft: #3a2a1e;
+    --code-bg: #1f1c19;
+    --tag-bg: #332c22;
+  }
+  :root[data-theme="light"] {
+    --bg: #f7f5f2;
+    --bg-card: #ffffff;
+    --text: #2b2620;
+    --text-muted: #6b6459;
+    --border: #e4ddd3;
+    --accent: #a8562c;
+    --accent-soft: #f2e2d8;
+    --code-bg: #f1ede7;
+    --tag-bg: #efe6da;
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Georgia', 'Iowan Old Style', serif;
+    line-height: 1.6;
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 2.5rem 1.5rem 5rem;
+  }
+  header {
+    border-bottom: 2px solid var(--border);
+    padding-bottom: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    margin: 0 0 0.4rem;
+    color: var(--accent);
+  }
+  header p {
+    color: var(--text-muted);
+    margin: 0.2rem 0;
+    font-size: 0.95rem;
+  }
+  .profile {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 1.2rem 1.5rem;
+    margin-bottom: 2.2rem;
+  }
+  .profile h2 { margin-top: 0; font-size: 1.1rem; }
+  .profile ul { margin: 0.5rem 0 0; padding-left: 1.2rem; }
+  .profile li { margin-bottom: 0.35rem; }
+
+  .category {
+    margin-bottom: 2.8rem;
+  }
+  .category > h2 {
+    font-size: 1.35rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.2rem;
+  }
+  .card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-left: 4px solid var(--accent);
+    border-radius: 8px;
+    padding: 1.1rem 1.4rem;
+    margin-bottom: 1.1rem;
+  }
+  .card h3 {
+    margin: 0 0 0.5rem;
+    font-size: 1.05rem;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+  }
+  .card p { margin: 0.4rem 0; }
+  .card .label {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-weight: 700;
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--text-muted);
+    margin-right: 0.4rem;
+  }
+  code, pre {
+    font-family: 'SFMono-Regular', Consolas, Menlo, monospace;
+    font-size: 0.85rem;
+  }
+  code {
+    background: var(--code-bg);
+    padding: 0.1rem 0.4rem;
+    border-radius: 4px;
+  }
+  pre {
+    background: var(--code-bg);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 0.8rem 1rem;
+    overflow-x: auto;
+    margin: 0.6rem 0 0;
+  }
+  .tag {
+    display: inline-block;
+    background: var(--tag-bg);
+    color: var(--accent);
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 0.72rem;
+    font-weight: 700;
+    padding: 0.15rem 0.55rem;
+    border-radius: 999px;
+    margin-left: 0.4rem;
+  }
+  .note {
+    background: var(--accent-soft);
+    border-radius: 8px;
+    padding: 1rem 1.3rem;
+    margin: 1.5rem 0;
+    font-size: 0.95rem;
+  }
+  .note strong { color: var(--accent); }
+  footer {
+    color: var(--text-muted);
+    font-size: 0.85rem;
+    text-align: center;
+    margin-top: 3rem;
+    border-top: 1px solid var(--border);
+    padding-top: 1.2rem;
+  }
+  @media (max-width: 600px) {
+    body { padding: 1.5rem 1rem 3rem; }
+    header h1 { font-size: 1.5rem; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Recomendaciones de automatización — Claude Code</h1>
+  <p>Proyecto: aunitz.github.io (blog personal de Aunitz Giménez)</p>
+  <p>Generado el 28 de julio de 2026</p>
+</header>
+
+<div class="profile">
+  <h2>Perfil del codebase</h2>
+  <ul>
+    <li><strong>Tipo:</strong> Sitio estático Jekyll (Ruby), sin Node/npm</li>
+    <li><strong>Stack:</strong> Bootstrap 3.4.1 (Sass) + plantilla Clean Blog (LESS), jQuery 1.12.4, sin framework JS moderno</li>
+    <li><strong>Contenido:</strong> 166 posts en español sobre UX/accesibilidad, hosting en GitHub Pages + Cloudflare</li>
+    <li><strong>Automatización ya existente:</strong> 5 skills propias (<code>publish-post-blog-aunitz</code>, <code>republish-theconversation-aunitz</code>, <code>enlazado-interno-ultimo-post-aunitz</code>, <code>web-performance-optimization</code>, <code>claude-automation-recommender</code>), plugin <code>claude-seo</code> activado, script Ruby <code>check_links.rb</code> para enlaces rotos</li>
+  </ul>
+</div>
+
+<div class="category">
+  <h2>🔌 MCP Servers</h2>
+
+  <div class="card">
+    <h3>GitHub MCP</h3>
+    <p><span class="label">Por qué</span>El sitio se despliega vía GitHub Pages y depende de un workflow de Actions (<code>purge-cloudflare-cache.yml</code>) que se dispara en cada deploy. Un MCP de GitHub permitiría consultar el estado de esos runs, revisar deploys fallidos o gestionar issues/PRs sin salir de la conversación.</p>
+    <p><span class="label">Instalar</span></p>
+    <pre>claude mcp add github</pre>
+  </div>
+
+  <div class="card">
+    <h3>context7</h3>
+    <p><span class="label">Por qué</span>El stack usa versiones "congeladas" y antiguas (Bootstrap 3.4.1, jQuery 1.12.4). Al tocar CSS/JS de esas librerías, context7 da la documentación exacta de esa versión en vez de arriesgarse a mezclar sintaxis de versiones más modernas.</p>
+    <p><span class="label">Instalar</span></p>
+    <pre>claude mcp add context7</pre>
+  </div>
+</div>
+
+<div class="category">
+  <h2>🎯 Skills</h2>
+
+  <div class="card">
+    <h3>check-enlaces-rotos <span class="tag">Solo usuario</span></h3>
+    <p><span class="label">Por qué</span>Ya existe <code>check_links.rb</code> en la raíz del repo pero no está empaquetado como skill invocable. Con 166 posts y una skill que añade enlazado interno activamente (<code>enlazado-interno-ultimo-post-aunitz</code>), tener un <code>/check-enlaces-rotos</code> que compile el sitio y ejecute el script tras publicar o enlazar sería el complemento natural.</p>
+    <p><span class="label">Crear</span><code>.claude/skills/check-enlaces-rotos/SKILL.md</code></p>
+    <pre>---
+name: check-enlaces-rotos
+description: Compila el sitio con Jekyll y ejecuta check_links.rb
+  para detectar enlaces internos/externos rotos
+disable-model-invocation: true
+---</pre>
+  </div>
+
+  <div class="card">
+    <h3>sync-claude-agents-md <span class="tag">Ambos</span></h3>
+    <p><span class="label">Por qué</span>El propio CLAUDE.md advierte que AGENTS.md es un fichero gemelo que hay que mantener sincronizado a mano — es un punto de fallo silencioso si algún día se edita uno sin el otro.</p>
+    <p><span class="label">Crear</span><code>.claude/skills/sync-claude-agents-md/SKILL.md</code></p>
+  </div>
+</div>
+
+<div class="category">
+  <h2>⚡ Hooks</h2>
+
+  <div class="card">
+    <h3>Aviso al editar CLAUDE.md sin tocar AGENTS.md</h3>
+    <p><span class="label">Por qué</span>Es la regla de mantenimiento explícita del propio proyecto. Un hook <code>PostToolUse</code> que detecte una edición a <code>CLAUDE.md</code> y recuerde revisar <code>AGENTS.md</code> (o viceversa) evita que se desincronicen con el tiempo.</p>
+    <p><span class="label">Dónde</span><code>.claude/settings.json</code></p>
+  </div>
+
+  <div class="card">
+    <h3>Bloqueo de edición directa de CSS/JS compilados</h3>
+    <p><span class="label">Por qué</span>Las convenciones del proyecto prohíben editar <code>css/bootstrap.min.css</code>, <code>css/clean-blog.min.css</code> o <code>js/clean-blog.min.js</code> directamente (se compilan desde <code>bootstrap-sass/</code> y <code>less/</code>). Un hook <code>PreToolUse</code> que bloquee <code>Edit</code>/<code>Write</code> sobre esos ficheros evita tocar el artefacto compilado en vez del origen.</p>
+    <p><span class="label">Dónde</span><code>.claude/settings.json</code></p>
+  </div>
+</div>
+
+<div class="category">
+  <h2>🤖 Subagentes</h2>
+
+  <div class="card">
+    <h3>seo-post-reviewer</h3>
+    <p><span class="label">Por qué</span>El blog es también herramienta de posicionamiento SEO/autoridad para Aunitz y Adimedia. Un subagente que revise un post recién creado contra un checklist (longitud de <code>description</code>, alt en imágenes, jerarquía de encabezados, densidad de enlazado interno, corrección del frontmatter de schema.org) daría una segunda pasada de calidad antes de publicar.</p>
+    <p><span class="label">Dónde</span><code>.claude/agents/seo-post-reviewer.md</code></p>
+  </div>
+
+  <div class="card">
+    <h3>accessibility-reviewer</h3>
+    <p><span class="label">Por qué</span>Ya existe una skill (<code>accesibilidad-medios-posts-aunitz</code>, en <code>.agents/skills/</code>) centrada en alt/title de medios. Un subagente más amplio de accesibilidad (contraste en estilos inline, semántica de encabezados, calidad del texto de enlace) encaja con el enfoque UX/accesibilidad del propio blog.</p>
+    <p><span class="label">Dónde</span><code>.claude/agents/accessibility-reviewer.md</code></p>
+  </div>
+</div>
+
+<div class="note">
+  <strong>Nota aparte:</strong> se detectó que <code>.agents/skills/accesibilidad-medios-posts-aunitz</code> existe para Codex pero no tiene equivalente en <code>.claude/skills/</code> — quizá valga la pena revisarlo si se quiere que ambos agentes tengan las mismas capacidades.
+</div>
+
+<footer>
+  Informe generado por Claude Code · skill <code>claude-automation-recommender</code><br>
+  Para ampliar cualquier categoría, pide más opciones en una nueva conversación con Claude Code.
+</footer>
+
+</body>
+</html>
