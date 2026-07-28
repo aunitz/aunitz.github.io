@@ -31,7 +31,7 @@ El blog es también una herramienta de posicionamiento SEO y de autoridad profes
 
 ```
 _layouts/       # Templates Jekyll (default, page, post, empty, fullscreen, redirected)
-_includes/      # Componentes reutilizables (head, nav, footer, ga, clarity, schema, youtube, disqus)
+_includes/      # Componentes reutilizables (head, nav, footer, ga, clarity, schema, youtube)
 _posts/         # Artículos en formato .markdown
 css/            # Estilos compilados (no editar directamente)
 js/             # JavaScript (clean-blog.js y su versión minificada)
