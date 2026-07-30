@@ -40,17 +40,23 @@
     <meta property="og:image" content="{{ site.url }}/{{ site.og_image_index }}">
     {% endif %}
 
+    {% comment %}
+      Cache busting: cambia en cada build, de modo que un CSS nuevo nunca se
+      sirve desde la caché del navegador ni desde la de Cloudflare
+    {% endcomment %}
+    {% assign asset_version = site.time | date: '%s' %}
+
     <!-- Bootstrap Core CSS -->
-    <link rel="stylesheet" href="{{ '/css/bootstrap.min.css' | prepend: site.baseurl }}">
+    <link rel="stylesheet" href="{{ '/css/bootstrap.min.css' | prepend: site.baseurl }}?v={{ asset_version }}">
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="{{ '/css/clean-blog.min.css' | prepend: site.baseurl }}">
+    <link rel="stylesheet" href="{{ '/css/clean-blog.min.css' | prepend: site.baseurl }}?v={{ asset_version }}">
 
     <!-- Fuentes (autoalojadas, antes Google Fonts) -->
-    <link rel="stylesheet" href="{{ '/css/fonts.css' | prepend: site.baseurl }}">
+    <link rel="stylesheet" href="{{ '/css/fonts.css' | prepend: site.baseurl }}?v={{ asset_version }}">
 
     <!-- Iconos del footer (SVG inline, sustituyen a Font Awesome) -->
-    <link rel="stylesheet" href="{{ '/css/icons.css' | prepend: site.baseurl }}">
+    <link rel="stylesheet" href="{{ '/css/icons.css' | prepend: site.baseurl }}?v={{ asset_version }}">
 
     {% feed_meta %}
     {% include ga.html %}

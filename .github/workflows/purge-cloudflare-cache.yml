@@ -51,10 +51,9 @@ jobs:
           CURRENT_SHA="${{ github.event.deployment.sha }}"
 
           if [ -z "$PREV_SHA" ]; then
-            echo "No previous successful deploy found; purging static URLs only."
-            echo "css=true" >> $GITHUB_OUTPUT
-            echo "posts=true" >> $GITHUB_OUTPUT
-            echo "post_urls=[]" >> $GITHUB_OUTPUT
+            echo "No previous successful deploy found; purging the whole zone."
+            echo "sitewide=true" >> $GITHUB_OUTPUT
+            echo "urls=[]" >> $GITHUB_OUTPUT
             exit 0
           fi
 
@@ -64,23 +63,37 @@ jobs:
           echo "Files changed between $PREV_SHA and $CURRENT_SHA:"
           git diff --name-only "$PREV_SHA" "$CURRENT_SHA" || true
 
-          if git diff --name-only "$PREV_SHA" "$CURRENT_SHA" -- css/ | grep -q .; then
-            echo "css=true" >> $GITHUB_OUTPUT
-          else
-            echo "css=false" >> $GITHUB_OUTPUT
+          # Cambios que afectan al HTML de TODAS las páginas: assets enlazados
+          # desde head.html (css/, js/), layouts, includes, datos y config.
+          # Purgar URL a URL no sirve aquí (son 160+ páginas), así que se purga
+          # la zona entera de una sola llamada.
+          if git diff --name-only "$PREV_SHA" "$CURRENT_SHA" -- css/ js/ _layouts/ _includes/ _data/ _config.yml | grep -q .; then
+            echo "Site-wide change detected; will purge everything."
+            echo "sitewide=true" >> $GITHUB_OUTPUT
+            echo "urls=[]" >> $GITHUB_OUTPUT
+            exit 0
           fi
 
-          # For each post added/modified/deleted/renamed, compute its URL at PREV_SHA
-          # and at CURRENT_SHA so we purge the old URL, the new URL, or both.
+          echo "sitewide=false" >> $GITHUB_OUTPUT
+
+          # Para cada post y cada página suelta añadida/modificada/borrada/renombrada,
+          # se calcula su URL en PREV_SHA y en CURRENT_SHA, de modo que se purgue la
+          # URL antigua, la nueva, o ambas.
           python3 - "$PREV_SHA" "$CURRENT_SHA" > urls.json <<'PY'
           import json, os, re, subprocess, sys
 
           prev_sha, curr_sha = sys.argv[1], sys.argv[2]
           SITE = "https://www.aunitz.net"
 
-          def changed_posts():
+          def is_content(path):
+              """Posts, y páginas sueltas HTML en la raíz del repo."""
+              if path.startswith("_posts/"):
+                  return True
+              return "/" not in path and path.endswith(".html")
+
+          def changed_files():
               out = subprocess.run(
-                  ["git", "diff", "--name-status", "-M", prev_sha, curr_sha, "--", "_posts/"],
+                  ["git", "diff", "--name-status", "-M", prev_sha, curr_sha],
                   capture_output=True, text=True, check=True,
               ).stdout
               for line in out.splitlines():
@@ -125,13 +138,16 @@ jobs:
                   base = os.path.basename(path)
                   slug = re.sub(r'^\d{4}-\d{2}-\d{2}-', '', base)
                   slug = re.sub(r'\.(markdown|md|html)$', '', slug, flags=re.IGNORECASE)
-                  permalink = f"/{slug}/"
+                  # index.html es la portada, ya incluida en las URLs estáticas
+                  permalink = "/" if slug == "index" else f"/{slug}/"
               if not permalink.startswith("/"):
                   permalink = "/" + permalink
               return SITE + permalink
 
           urls = set()
-          for sha, path in changed_posts():
+          for sha, path in changed_files():
+              if not is_content(path):
+                  continue
               u = url_for(sha, path)
               if u:
                   urls.add(u)
@@ -139,22 +155,25 @@ jobs:
           print(json.dumps(sorted(urls)))
           PY
 
-          POST_URLS=$(cat urls.json)
-          echo "Affected post URLs: $POST_URLS"
-          echo "post_urls=$POST_URLS" >> $GITHUB_OUTPUT
+          URLS=$(cat urls.json)
+          echo "Affected URLs: $URLS"
+          echo "urls=$URLS" >> $GITHUB_OUTPUT
 
-          if [ "$POST_URLS" != "[]" ]; then
-            echo "posts=true" >> $GITHUB_OUTPUT
-          else
-            echo "posts=false" >> $GITHUB_OUTPUT
-          fi
+      - name: Purge whole Cloudflare zone
+        if: steps.changes.outputs.sitewide == 'true'
+        run: |
+          curl -sS --fail-with-body -X POST \
+            "https://api.cloudflare.com/client/v4/zones/${{ secrets.CLOUDFLARE_ZONE_ID }}/purge_cache" \
+            -H "Authorization: Bearer ${{ secrets.CLOUDFLARE_API_TOKEN }}" \
+            -H "Content-Type: application/json" \
+            -d '{"purge_everything": true}'
 
       - name: Purge Cloudflare cache for affected URLs
-        if: steps.changes.outputs.posts == 'true'
+        if: steps.changes.outputs.sitewide == 'false' && steps.changes.outputs.urls != '[]'
         env:
           CF_ZONE_ID: ${{ secrets.CLOUDFLARE_ZONE_ID }}
           CF_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          POST_URLS: ${{ steps.changes.outputs.post_urls }}
+          CONTENT_URLS: ${{ steps.changes.outputs.urls }}
         run: |
           python3 <<'PY'
           import json, os, urllib.request
@@ -170,12 +189,12 @@ jobs:
               f"{site}/feed.xml",
               f"{site}/sitemap.xml",
           ]
-          post_urls = json.loads(os.environ.get("POST_URLS") or "[]")
+          content_urls = json.loads(os.environ.get("CONTENT_URLS") or "[]")
 
-          # Dedupe while preserving order: static first, then posts.
+          # Dedupe while preserving order: static first, then content.
           seen = set()
           all_urls = []
-          for u in static + post_urls:
+          for u in static + content_urls:
               if u not in seen:
                   seen.add(u)
                   all_urls.append(u)
@@ -199,17 +218,3 @@ jobs:
               with urllib.request.urlopen(req) as r:
                   print(f"Batch {i // 30 + 1}: {r.read().decode()}")
           PY
-
-      - name: Purge Cloudflare cache for CSS files
-        if: steps.changes.outputs.css == 'true'
-        run: |
-          curl -s -X POST \
-            "https://api.cloudflare.com/client/v4/zones/${{ secrets.CLOUDFLARE_ZONE_ID }}/purge_cache" \
-            -H "Authorization: Bearer ${{ secrets.CLOUDFLARE_API_TOKEN }}" \
-            -H "Content-Type: application/json" \
-            -d '{
-              "files": [
-                "https://www.aunitz.net/css/bootstrap.min.css",
-                "https://www.aunitz.net/css/clean-blog.min.css"
-              ]
-            }'
