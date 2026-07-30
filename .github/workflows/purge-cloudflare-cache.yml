@@ -144,13 +144,45 @@ jobs:
                   permalink = "/" + permalink
               return SITE + permalink
 
+          def pagination_urls():
+              """URLs de las páginas del paginador de la portada.
+
+              jekyll-paginate reparte TODOS los ficheros de _posts/ (el filtro
+              hide_from_home actúa al pintar, no al paginar), así que un alta o
+              una baja desplaza los posts entre páginas y las deja obsoletas
+              todas. Se purgan también al modificar un post, porque su título y
+              subtítulo se pintan en el listado. La página 1 es "/", ya incluida
+              entre las URLs estáticas.
+              """
+              config = show(curr_sha, "_config.yml") or ""
+              m = re.search(r'^paginate:\s*(\d+)', config, flags=re.MULTILINE)
+              per_page = int(m.group(1)) if m else 5
+
+              tree = subprocess.run(
+                  ["git", "ls-tree", "-r", "--name-only", curr_sha, "_posts/"],
+                  capture_output=True, text=True, check=True,
+              ).stdout
+              total = sum(
+                  1 for p in tree.splitlines()
+                  if re.match(r'^_posts/\d{4}-\d{2}-\d{2}-.+\.(markdown|md|html)$', p, flags=re.IGNORECASE)
+              )
+
+              total_pages = -(-total // per_page)  # ceil
+              return [f"{SITE}/page{n}/" for n in range(2, total_pages + 1)]
+
           urls = set()
+          posts_changed = False
           for sha, path in changed_files():
               if not is_content(path):
                   continue
+              if path.startswith("_posts/"):
+                  posts_changed = True
               u = url_for(sha, path)
               if u:
                   urls.add(u)
+
+          if posts_changed:
+              urls.update(pagination_urls())
 
           print(json.dumps(sorted(urls)))
           PY
