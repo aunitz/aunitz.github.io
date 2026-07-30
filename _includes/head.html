@@ -11,6 +11,17 @@
     <link rel="preload" as="image" fetchpriority="high" href="{{ site.baseurl }}/{{ page.header-img }}">
     {% endif %}
 
+    <!-- Preconnect a orígenes de analítica de terceros -->
+    {% if site.google_tracking_id %}
+    <link rel="preconnect" href="https://www.googletagmanager.com">
+    {% endif %}
+    {% if site.clarity_project_id %}
+    <link rel="preconnect" href="https://www.clarity.ms">
+    {% endif %}
+    {% if site.goatcounter_code %}
+    <link rel="preconnect" href="https://gc.zgo.at">
+    {% endif %}
+
     {% if page.noindex %}
     <meta name="robots" content="noindex">
     {% endif %}
