@@ -234,4 +234,3 @@ El titular es Aunitz Giménez Mendiburu como persona física (no Adimedia).
 
 ## TODO
 1. Retirar Google Analytics 4 y Microsoft Clarity y dejar GoatCounter como única analítica (tras unas semanas de convivencia para comparar datos). Al hacerlo, actualizar el apartado 8 del aviso legal.
-2. Probar Open Graph Checker & OG Image Tester (Free) | OpenGraph.to
