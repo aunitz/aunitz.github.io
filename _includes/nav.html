@@ -25,13 +25,19 @@
                 </li>
 				{% endif %}
                 {% endif %}{% endfor %}
-                {% comment %} Enlace al Dashboard solo en desarrollo/local (no en producción) {% endcomment %}
+                {% comment %} Enlaces visibles solo en desarrollo/local (no en producción) {% endcomment %}
                 {% if jekyll.environment != "production" %}
-                <li>
+                <li class="nav-link-dev">
                     <a href="{{ '/dashboard/' | prepend: site.baseurl }}">Dashboard</a>
                 </li>
-                <li>
+                <li class="nav-link-dev">
                     <a href="{{ '/template/' | prepend: site.baseurl }}">Template</a>
+                </li>
+                <li class="nav-link-dev">
+                    <a href="{{ '/chatbot-test/' | prepend: site.baseurl }}">Chatbot (pruebas)</a>
+                </li>
+                <li class="nav-link-dev">
+                    <a href="{{ '/chatbot-help/' | prepend: site.baseurl }}">Chatbot Help (pruebas)</a>
                 </li>
                 {% endif %}
             </ul>

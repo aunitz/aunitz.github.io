@@ -208,6 +208,17 @@ hr.small {
 	}
 }
 
+// Enlaces del menú que solo existen en entorno local (dev/test), nunca en producción
+.navbar-custom .nav li.nav-link-dev {
+	> a {
+		color: @dev-accent;
+		&:hover,
+		&:focus {
+			color: darken(@dev-accent, 12%);
+		}
+	}
+}
+
 // Header
 
 .intro-header {
