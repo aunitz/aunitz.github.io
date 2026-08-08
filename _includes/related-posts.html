@@ -11,19 +11,28 @@
   lo específica que sea la etiqueta, y a igualdad de puntos gana el post más
   reciente.
 
-  Presentación: se reutiliza el marcado .post-preview de la portada (index.html),
-  de modo que el bloque no añade CSS propio y hereda tipografías y tamaños ya
-  definidos en clean-blog.
+  Excepción a ese criterio: las etiquetas de "site.related_excluded_tags"
+  (_config.yml) no puntúan. Son etiquetas de formato, no de tema: describen
+  cómo está escrito el post, no de qué trata. Al ser poco frecuentes el
+  algoritmo las tomaba por muy específicas, y dos memorandos sobre temas
+  completamente distintos acababan relacionados solo por ser memorandos.
+
+  Presentación: marcado y estilos propios (clases .related-posts-*), definidos
+  al final de less/clean-blog.less para poder ganar en especificidad a la
+  regla ".container li a" que subraya todos los enlaces de lista del blog.
 
   Rendimiento: en lugar de recorrer los 166 posts del sitio, se parte de
   site.tags[etiqueta], que ya devuelve solo los posts que comparten etiqueta.
 {% endcomment %}
 
 {% assign related_limit = 3 %}
+{% comment %} Si no está definido en _config.yml, "contains" da false y no se excluye nada {% endcomment %}
+{% assign excluded_tags = site.related_excluded_tags %}
 
-{% comment %} 1. Candidatos: unión de los posts de cada etiqueta del post actual {% endcomment %}
+{% comment %} 1. Candidatos: unión de los posts de cada etiqueta puntuable del post actual {% endcomment %}
 {% assign candidates = "" | split: "," %}
 {% for tag in page.tags %}
+    {% if excluded_tags contains tag %}{% continue %}{% endif %}
     {% assign candidates = candidates | concat: site.tags[tag] %}
 {% endfor %}
 {% assign candidates = candidates | uniq %}
@@ -38,6 +47,7 @@
     {% assign score = 0 %}
     {% for tag in candidate.tags %}
         {% if page.tags contains tag %}
+            {% if excluded_tags contains tag %}{% continue %}{% endif %}
             {% assign tag_size = site.tags[tag] | size %}
             {% if tag_size <= 10 %}
                 {% assign score = score | plus: 5 %}
@@ -63,20 +73,10 @@
 {% assign scored = scored | sort | reverse %}
 
 {% if scored.size > 0 %}
-<aside aria-labelledby="related-posts-heading">
-    {% comment %}
-      El rótulo es un h2 (jerarquía correcta: h1 el título del post, h2 las
-      secciones), pero se baja al escalón de 24px para que no compita con los
-      titulares de 36px que lleva debajo. Es el único estilo propio del bloque;
-      todo lo demás lo aporta .post-preview.
-    {% endcomment %}
-    <style scoped>
-        #related-posts-heading {
-            font-size: 24px;
-        }
-    </style>
-    <h2 id="related-posts-heading">También te puede interesar</h2>
+<aside class="related-posts" aria-labelledby="related-posts-heading">
+    <h2 id="related-posts-heading" class="related-posts-heading">También te puede interesar</h2>
 
+    <ul class="related-posts-list">
     {% for entry in scored limit: related_limit %}
         {% assign entry_url = entry | split: "~" | last %}
         {% assign related_post = nil %}
@@ -87,15 +87,18 @@
             {% endif %}
         {% endfor %}
 
-    <div class="post-preview">
-        <a href="{{ related_post.url | prepend: site.baseurl | replace: '//', '/' }}">
-            <h3 class="post-title">{{ related_post.title }}</h3>
-            {% if related_post.subtitle %}
-            <h4 class="post-subtitle">{{ related_post.subtitle }}</h4>
-            {% endif %}
-        </a>
-    </div>
-    {% unless forloop.last %}<hr>{% endunless %}
+        <li>
+            <a href="{{ related_post.url | prepend: site.baseurl | replace: '//', '/' }}">
+                <span class="related-posts-arrow" aria-hidden="true">&rarr;</span>
+                <div class="related-posts-body">
+                    <h3 class="related-posts-title">{{ related_post.title }}</h3>
+                    {% if related_post.subtitle %}
+                    <p class="related-posts-subtitle">{{ related_post.subtitle }}</p>
+                    {% endif %}
+                </div>
+            </a>
+        </li>
     {% endfor %}
+    </ul>
 </aside>
 {% endif %}

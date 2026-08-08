@@ -34,6 +34,14 @@ clarity_project_id: x62p7a3dnf
 # GoatCounter (analítica web ligera y respetuosa con la privacidad)
 goatcounter_code: aunitz
 
+# Bloque «También te puede interesar» (_includes/related-posts.html)
+# Etiquetas que NO puntúan al elegir posts relacionados. Son etiquetas de
+# formato o de género (describen cómo está escrito el post, no de qué trata),
+# y como son poco frecuentes el algoritmo las tomaba por muy específicas: dos
+# memorandos sobre temas distintos acababan relacionados solo por serlo.
+# Siguen funcionando con normalidad en el resto del blog.
+related_excluded_tags: ["memorandos", "off topic"]
+
 # Build settings
 timezone: Europe/Madrid
 markdown: kramdown

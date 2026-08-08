@@ -53,19 +53,34 @@ layout: default
 
 				{{ content }}
 
-                <hr>
-
                 {% comment %}
                   Bloque «También te puede interesar».
-                  Fase de validación: solo se muestra en los posts con
-                  "related: true" en el frontmatter. Para extenderlo a todo el
-                  blog basta con cambiar la condición de abajo por
-                  "page.related != false", que lo activa por defecto y deja la
-                  opción de desactivarlo post a post con "related: false".
+                  Activo por defecto en todos los posts. Para desactivarlo en
+                  uno concreto, "related: false" en su frontmatter.
+
+                  Puede no pintarse aunque esté activo: si el post no comparte
+                  ninguna etiqueta puntuable con ningún otro post, el include
+                  no devuelve nada. Por eso no basta con mirar page.related;
+                  hay que capturar la salida y comprobar si está vacía.
+
+                  El <hr> que separa el contenido del pager solo se pinta
+                  cuando el bloque NO existe: si existe, el propio bloque ya
+                  marca visualmente el corte (filete bajo el rótulo) y una
+                  segunda línea encima y otra debajo quedaban redundantes.
                 {% endcomment %}
-                {% if page.related %}
-                    {% include related-posts.html %}
+                {% capture related_block %}{% if page.related != false %}{% include related-posts.html %}{% endif %}{% endcapture %}
+                {% assign related_block = related_block | strip %}
+                {% comment %}
+                  Comparar contra "" y no contra blank: en Liquid, "cadena ==
+                  blank" se resuelve con el == de la cadena, que no reconoce
+                  el literal blank y siempre da false. Por eso el strip de
+                  arriba, que deja la cadena vacía exacta cuando el include
+                  no ha pintado nada.
+                {% endcomment %}
+                {% if related_block == "" %}
                     <hr>
+                {% else %}
+                    {{ related_block }}
                 {% endif %}
 
                 {% comment %}

@@ -212,6 +212,56 @@ source_org:         "The Conversation"
 
 Cuando un post es republicado, `_includes/head.html` apunta el `<link rel="canonical">` y el `<meta name="author">` al artículo y autor originales (no a Aunitz). La skill `republish-theconversation-aunitz` rellena todos estos campos automáticamente.
 
+## Bloque «También te puede interesar»
+
+Al final de cada post, antes del paginador Anterior/Siguiente, se muestran hasta **3 artículos relacionados**. El objetivo de este bloque es aumentar las páginas vistas por sesión ofreciendo artículos realmente afines.
+
+Es **Liquid puro, sin plugins**, por lo que funciona en GitHub Pages.
+
+### Lógica de selección
+
+Parte de las **etiquetas compartidas**, pero no todas valen lo mismo. Compartir una etiqueta poco frecuente («sesgos cognitivos», 7 posts) dice mucho más sobre el parecido entre dos artículos que compartir una etiqueta paraguas («buenas prácticas de usabilidad», 37 posts). Por eso cada coincidencia puntúa según **lo específica que sea la etiqueta**:
+
+| Posts con esa etiqueta | Puntos por coincidencia |
+|---|---|
+| ≤ 10 | 5 |
+| ≤ 20 | 3 |
+| > 20 | 1 |
+
+El proceso completo:
+
+1. **Candidatos**: la unión de los posts de cada etiqueta puntuable del post actual. Se parte de `site.tags[etiqueta]`, que ya devuelve solo los posts que comparten etiqueta, en lugar de recorrer los 160+ posts del sitio.
+2. **Filtrado**: se descartan el propio post, los que llevan `hide_from_home: true` y los de layout `redirected`.
+3. **Puntuación**: se suman los puntos de todas las etiquetas compartidas según la tabla.
+4. **Orden**: mayor puntuación primero; **a igualdad de puntos gana el post más reciente**.
+5. Se muestran los 3 primeros (`related_limit` en el include).
+
+Detalle de implementación: la puntuación se codifica como la cadena `"PPP~AAAAMMDD~/url/"` para poder ordenarla alfabéticamente con un solo `sort`. Se suma 100 a la puntuación para que siempre tenga 3 dígitos y el orden alfabético coincida con el numérico.
+
+### Etiquetas excluidas
+
+`related_excluded_tags` en `_config.yml` lista las etiquetas que **no puntúan**:
+
+```yaml
+related_excluded_tags: ["memorandos", "off topic"]
+```
+
+Son etiquetas de **formato**, no de **tema**: describen cómo está escrito el post, no de qué trata. El criterio de rareza asume «etiqueta poco frecuente = tema muy específico», y esa suposición se rompe con las etiquetas de género.
+
+Caso real que motivó la exclusión: el post `open-llm-basque-day` tiene las etiquetas `inteligencia artificial` (12 posts → 3 puntos) y `memorandos` (7 posts → 5 puntos). Ganaba `memorandos`, y el bloque proponía un memorando sobre Tailwind, otro sobre cómo se sujeta el móvil y otro sobre los principios de Nielsen. Ningún post de IA entraba. Con la exclusión pasa a proponer los tres artículos de IA más recientes.
+
+Si en el futuro aparecen otras etiquetas de formato que ensucien la selección, basta con añadirlas a esa lista. **Ojo**: Jekyll no recarga `_config.yml` en caliente, hay que reiniciar `jekyll serve`.
+
+### Desactivarlo en un post concreto
+
+El bloque va **activo por defecto en todos los posts**. Para ocultarlo en uno:
+
+```yaml
+related:       false
+```
+
+Un post puede quedarse sin bloque aunque esté activo: si no comparte ninguna etiqueta puntuable con ningún otro post, no hay candidatos y el bloque no se pinta. Hoy solo le ocurre a `para-que-sirven-las-lenguas`, único con la etiqueta `off topic`.
+
 ## Licencias
 
 Este repositorio combina varias licencias:
