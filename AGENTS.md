@@ -13,7 +13,7 @@ El blog es también una herramienta de posicionamiento SEO y de autoridad profes
 ## Stack tecnológico
 
 - **Generador:** Jekyll (sitio estático)
-- **Hospedaje:** GitHub Pages con dominio personalizado `aunitz.net`; Cloudflare para cache (hay un GitHub Actions workflow que invalida la cache tras cada deploy)
+- **Hospedaje:** GitHub Pages con dominio personalizado `aunitz.net`; Cloudflare para cache (hay un GitHub Actions workflow que invalida la cache tras cada deploy). Ver «Infraestructura: DNS y HTTPS» más abajo antes de tocar nada de Cloudflare
 - **Plugins Jekyll:** `github-pages`, `jekyll-paginate`, `jekyll-feed`, `jekyll-redirect-from`, `jekyll-sitemap`
 - **CSS:** Bootstrap 3.4.1 CSS compilado localmente desde `bootstrap-sass/` → `css/bootstrap.min.css` (via Live Sass Compiler) + plantilla Clean Blog compilada desde `less/` → `css/clean-blog.min.css` (via Easy LESS)
 - **Tipografías:** Lora (cuerpo), Open Sans (nav), Caveat (decorativa) — Google Fonts autoalojadas en `fonts/` (`css/fonts.css`)
@@ -22,6 +22,31 @@ El blog es también una herramienta de posicionamiento SEO y de autoridad profes
 - **Analytics:** Google Analytics 4 (ID: G-PJWXCNEVTP) + Microsoft Clarity (heatmaps y grabaciones de sesión, ID: x62p7a3dnf)
 - **Datos estructurados:** Schema.org via includes: BlogPosting, BreadcrumbList, WebSite, Organization
 - **Lenguajes de plantilla:** Liquid (layouts e includes), HTML + SCSS
+
+---
+
+## Infraestructura: DNS y HTTPS
+
+⚠️ **Configuración crítica y frágil. No modificar sin leer esta sección entera.**
+
+Cloudflare va por delante de GitHub Pages en modo proxy (nube naranja) tanto en el CNAME `www` como en los cuatro registros A del apex.
+
+**Modo SSL/TLS de Cloudflare: debe estar en «Custom SSL/TLS» → «Full».**
+
+- **Nunca «Full (strict)».** Exige un certificado válido en el origen, y GitHub Pages no puede emitir ni renovar el suyo mientras Cloudflare esté en modo proxy (ve el dominio resolviendo a IPs de Cloudflare, no a las suyas, y lo marca como *«not properly configured to support HTTPS»*). Funcionó 564 días hasta que el certificado caducó; entonces el sitio cayó con error 526 y el pipeline de Pages dejó de compilar los commits (agosto de 2026).
+- **Nunca «Automatic SSL/TLS».** Cloudflare sube el modo de cifrado por su cuenta de forma progresiva y, según su documentación, no vuelve a bajarlo aunque eso rompa el sitio. Acabaría reintroduciendo Full (strict).
+- **Nunca «Flexible».** El tramo Cloudflare→origen viaja en texto plano.
+
+Con «Full», el tramo Cloudflare→GitHub va cifrado pero sin validar el certificado del origen, lo que elimina por completo la dependencia del ciclo de renovación de 90 días de GitHub. Los visitantes reciben el certificado propio de Cloudflare (Universal SSL), que se autorrenueva solo.
+
+**Consecuencias esperadas y aceptadas en la pantalla de GitHub Pages. Ninguna de las dos es un problema que haya que resolver, y no deben intentar arreglarse:**
+
+- El checkbox **«Enforce HTTPS» queda permanentemente deshabilitado**. En esta arquitectura es irrelevante: quien termina el TLS con el visitante es Cloudflare.
+- El estado del dominio se queda en **«DNS Check in Progress» y nunca pasa a verde**. GitHub busca un CNAME hacia `aunitz.github.io` o registros A con sus propias IPs, pero desde fuera el proxy de Cloudflare oculta el CNAME y publica sus propias IPs (`188.114.x.x`), así que el check no puede concluir. No afecta al servicio: GitHub decide qué servir a partir del fichero `CNAME` del repo y de la cabecera `Host`, no de este check.
+
+**Registros A del apex (`aunitz.net`):** `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`. Las antiguas `192.30.252.153/.154` están obsoletas. Ojo: con el proxy activo estos registros son invisibles desde internet (Cloudflare publica los suyos); sirven para que Cloudflare sepa a qué origen conectarse, no para los checks de GitHub.
+
+**Otros ajustes activos:** DNSSEC, HSTS (max-age 6 meses), Always Use HTTPS, Automatic HTTPS Rewrites, una Page Rule que redirige el apex a `www` con 301 y otra de «Cache Everything» sobre `www`.
 
 ---
 
