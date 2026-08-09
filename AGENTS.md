@@ -46,6 +46,8 @@ Con «Full», el tramo Cloudflare→GitHub va cifrado pero sin validar el certif
 
 **Registros A del apex (`aunitz.net`):** `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`. Las antiguas `192.30.252.153/.154` están obsoletas. Ojo: con el proxy activo estos registros son invisibles desde internet (Cloudflare publica los suyos); sirven para que Cloudflare sepa a qué origen conectarse, no para los checks de GitHub.
 
+**Verificación de dominio:** `aunitz.net` está verificado a nivel de cuenta de GitHub mediante el registro TXT `_github-pages-challenge-aunitz` (agosto de 2026). Al ser TXT no se ve afectado por el proxy, así que es la única comprobación del lado de GitHub que sí funciona en esta arquitectura. Impide que otra cuenta pueda reclamar el dominio en sus propias GitHub Pages. **No borrar ese registro TXT.**
+
 **Otros ajustes activos:** DNSSEC, HSTS (max-age 6 meses), Always Use HTTPS, Automatic HTTPS Rewrites, una Page Rule que redirige el apex a `www` con 301 y otra de «Cache Everything» sobre `www`.
 
 ---
