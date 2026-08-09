@@ -1,4 +1,4 @@
-{% if site.clarity_project_id %}
+{% if site.clarity_project_id and jekyll.environment == "production" %}
     <!-- Microsoft Clarity -->
     <script type="text/javascript">
     (function(c,l,a,r,i,t,y){

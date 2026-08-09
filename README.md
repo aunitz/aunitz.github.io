@@ -60,6 +60,16 @@ Además de Google Analytics y Microsoft Clarity, el sitio carga [GoatCounter](ht
 
 **Desactivar el tracking de GoatCounter en un navegador:** entrando en https://www.aunitz.net/#toggle-goatcounter se desactiva el registro de estadísticas de GoatCounter para ese navegador concreto (queda guardado en el propio navegador, no afecta a otros dispositivos). Más detalle en la documentación oficial: [aunitz.goatcounter.com/help/skip-dev](https://aunitz.goatcounter.com/help/skip-dev).
 
+## Analítica: no se carga en desarrollo local
+
+`_includes/ga.html` (GA4) y `_includes/clarity.html` (Microsoft Clarity) solo insertan sus scripts cuando `jekyll.environment == "production"`. Es el mismo mecanismo que ya usaba `_includes/nav.html` para ocultar los enlaces de Dashboard y Template fuera de producción (`jekyll.environment != "production"`).
+
+Efecto práctico: `bundle exec jekyll serve` en local no define `JEKYLL_ENV`, así que Jekyll usa `development` por defecto y los scripts ni se incluyen en el HTML — no hay envío alguno a las propiedades reales, sea cual sea la IP o el navegador. GitHub Pages, en cambio, fija `JEKYLL_ENV=production` automáticamente al construir el sitio, así que en el dominio público ambas analíticas funcionan igual que siempre.
+
+Antes de este cambio, cualquier sesión de desarrollo local enviaba hits reales a GA4. Se detectó revisando un CSV de tráfico: aparecía `/preview-relacionados.html` con vistas registradas, un fichero que nunca llegó a subirse al repositorio y que solo existió en un servidor local.
+
+GoatCounter (`_includes/goatcounter.html`) no lleva este filtro: se desactiva por navegador con el mecanismo descrito en el apartado anterior.
+
 ## Skill de Claude Code: publish-post-blog-aunitz
 
 Ubicación: `.claude/skills/publish-post-blog-aunitz/SKILL.md`
