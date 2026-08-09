@@ -12,12 +12,23 @@ schema:        false
 
 {%- comment %} ==================== CÁLCULO DE MÉTRICAS (build-time) ==================== {% endcomment -%}
 
-{%- assign totalPosts = site.posts | size -%}
+{%- comment %}
+  En _posts/ conviven los artículos reales y los stubs de redirección (layout
+  "redirected", identificables por "redirect_to"), que solo existen para que las
+  URLs antiguas sigan funcionando. Jekyll los mete igualmente en site.posts.
+
+  TODAS las métricas van sobre "realPosts": los stubs no tienen contenido, así
+  que aportan 0 al numerador pero sumaban al divisor y hundían las medias, y
+  además se colaban como posts sin enlaces salientes y en el gráfico por años.
+{% endcomment -%}
+{%- assign realPosts = site.posts | where_exp: "p", "p.redirect_to == nil" -%}
+{%- assign realPostsCount = realPosts | size -%}
+{%- assign redirectStubs = site.posts | size | minus: realPostsCount -%}
 {%- assign totalTags = site.tags | size -%}
 
 {%- comment %} Imágenes usadas dentro del contenido de los posts (<img>) {% endcomment -%}
 {%- assign imgInPosts = 0 -%}
-{%- for post in site.posts -%}
+{%- for post in realPosts -%}
   {%- assign n = post.content | split: '<img' | size | minus: 1 -%}
   {%- assign imgInPosts = imgInPosts | plus: n -%}
 {%- endfor -%}
@@ -35,7 +46,7 @@ schema:        false
 {%- comment %} Enlaces internos (root-relativos y al propio dominio) y externos (convención rel="noopener") {% endcomment -%}
 {%- assign internalLinks = 0 -%}
 {%- assign externalLinks = 0 -%}
-{%- for post in site.posts -%}
+{%- for post in realPosts -%}
   {%- assign ni = post.content | split: 'href="/' | size | minus: 1 -%}
   {%- assign na = post.content | split: 'href="https://www.aunitz.net' | size | minus: 1 -%}
   {%- assign internalLinks = internalLinks | plus: ni | plus: na -%}
@@ -44,7 +55,7 @@ schema:        false
 {%- endfor -%}
 
 {%- comment %} Agrupación por año (descendente) y máximos para escalar gráficos {% endcomment -%}
-{%- assign byYear = site.posts | group_by_exp: "p", "p.date | date: '%Y'" | sort: "name" | reverse -%}
+{%- assign byYear = realPosts | group_by_exp: "p", "p.date | date: '%Y'" | sort: "name" | reverse -%}
 {%- assign maxYearCount = 1 -%}
 {%- for yg in byYear -%}
   {%- assign c = yg.items | size -%}
@@ -63,19 +74,15 @@ schema:        false
 {%- comment %} ===== SALUD: sin meta description, meta desc fuera de rango, huérfanos de enlace interno, cobertura de alt ===== {% endcomment -%}
 {%- assign postsNoDesc = 0 -%}
 {%- assign descOutOfRange = 0 -%}
-{%- assign realPostsCount = 0 -%}
 {%- assign orphanPosts = 0 -%}
 {%- assign altCount = 0 -%}
-{%- for post in site.posts -%}
-  {%- unless post.redirect_to -%}
-    {%- assign realPostsCount = realPostsCount | plus: 1 -%}
-    {%- assign d = post.description | default: '' | strip -%}
-    {%- if d == '' -%}{%- assign postsNoDesc = postsNoDesc | plus: 1 -%}
-    {%- else -%}
-      {%- assign dl = d | size -%}
-      {%- if dl < 100 or dl > 160 -%}{%- assign descOutOfRange = descOutOfRange | plus: 1 -%}{%- endif -%}
-    {%- endif -%}
-  {%- endunless -%}
+{%- for post in realPosts -%}
+  {%- assign d = post.description | default: '' | strip -%}
+  {%- if d == '' -%}{%- assign postsNoDesc = postsNoDesc | plus: 1 -%}
+  {%- else -%}
+    {%- assign dl = d | size -%}
+    {%- if dl < 100 or dl > 160 -%}{%- assign descOutOfRange = descOutOfRange | plus: 1 -%}{%- endif -%}
+  {%- endif -%}
   {%- assign pi = post.content | split: 'href="/' | size | minus: 1 -%}
   {%- assign pa = post.content | split: 'href="https://www.aunitz.net' | size | minus: 1 -%}
   {%- assign intInPost = pi | plus: pa -%}
@@ -89,13 +96,11 @@ schema:        false
 {%- comment %} ===== SALUD: posts sin enlaces internos ENTRANTES (huérfanos de recepción) ===== {% endcomment -%}
 {%- comment %} Se concatena el contenido renderizado de todos los posts una sola vez; un enlace interno a un post
      (ya sea root-relativo href="/slug/" o absoluto https://www.aunitz.net/slug/) termina siempre en /slug/". {% endcomment -%}
-{%- capture allPostContent -%}{%- for p in site.posts -%}{{ p.content }}{%- endfor -%}{%- endcapture -%}
+{%- capture allPostContent -%}{%- for p in realPosts -%}{{ p.content }}{%- endfor -%}{%- endcapture -%}
 {%- assign inboundOrphans = 0 -%}
-{%- for post in site.posts -%}
-  {%- unless post.redirect_to -%}
-    {%- capture inboundNeedle -%}{{ post.url }}"{%- endcapture -%}
-    {%- unless allPostContent contains inboundNeedle -%}{%- assign inboundOrphans = inboundOrphans | plus: 1 -%}{%- endunless -%}
-  {%- endunless -%}
+{%- for post in realPosts -%}
+  {%- capture inboundNeedle -%}{{ post.url }}"{%- endcapture -%}
+  {%- unless allPostContent contains inboundNeedle -%}{%- assign inboundOrphans = inboundOrphans | plus: 1 -%}{%- endunless -%}
 {%- endfor -%}
 
 {%- comment %} ===== CUERPO: palabras totales, media por post, tiempo de lectura, histograma, extremos y republicados ===== {% endcomment -%}
@@ -110,21 +115,19 @@ schema:        false
 {%- assign longestPost = nil -%}
 {%- assign shortestPost = nil -%}
 {%- assign republishedCount = 0 -%}
-{%- for post in site.posts -%}
+{%- for post in realPosts -%}
   {%- assign w = post.content | strip_html | number_of_words -%}
   {%- assign totalWords = totalWords | plus: w -%}
   {%- assign totalTagAssign = totalTagAssign | plus: post.tags.size -%}
-  {%- unless post.redirect_to -%}
-    {%- if post.republished -%}{%- assign republishedCount = republishedCount | plus: 1 -%}{%- endif -%}
-    {%- if w < 500 -%}{%- assign histA = histA | plus: 1 -%}
-    {%- elsif w < 1000 -%}{%- assign histB = histB | plus: 1 -%}
-    {%- elsif w < 2000 -%}{%- assign histC = histC | plus: 1 -%}
-    {%- else -%}{%- assign histD = histD | plus: 1 -%}{%- endif -%}
-    {%- if w > maxWords -%}{%- assign maxWords = w -%}{%- assign longestPost = post -%}{%- endif -%}
-    {%- if w < minWords -%}{%- assign minWords = w -%}{%- assign shortestPost = post -%}{%- endif -%}
-  {%- endunless -%}
+  {%- if post.republished -%}{%- assign republishedCount = republishedCount | plus: 1 -%}{%- endif -%}
+  {%- if w < 500 -%}{%- assign histA = histA | plus: 1 -%}
+  {%- elsif w < 1000 -%}{%- assign histB = histB | plus: 1 -%}
+  {%- elsif w < 2000 -%}{%- assign histC = histC | plus: 1 -%}
+  {%- else -%}{%- assign histD = histD | plus: 1 -%}{%- endif -%}
+  {%- if w > maxWords -%}{%- assign maxWords = w -%}{%- assign longestPost = post -%}{%- endif -%}
+  {%- if w < minWords -%}{%- assign minWords = w -%}{%- assign shortestPost = post -%}{%- endif -%}
 {%- endfor -%}
-{%- assign avgWords = totalWords | times: 1.0 | divided_by: totalPosts | round -%}
+{%- assign avgWords = totalWords | times: 1.0 | divided_by: realPostsCount | round -%}
 {%- assign avgReadMin = avgWords | times: 1.0 | divided_by: 200 | round: 1 -%}
 {%- assign maxHist = histA -%}
 {%- if histB > maxHist -%}{%- assign maxHist = histB -%}{%- endif -%}
@@ -133,10 +136,10 @@ schema:        false
 {%- if maxHist < 1 -%}{%- assign maxHist = 1 -%}{%- endif -%}
 
 {%- comment %} ===== MEDIAS POR POST ===== {% endcomment -%}
-{%- assign avgTags = totalTagAssign | times: 1.0 | divided_by: totalPosts | round: 1 -%}
-{%- assign avgIntLinks = internalLinks | times: 1.0 | divided_by: totalPosts | round: 1 -%}
-{%- assign avgExtLinks = externalLinks | times: 1.0 | divided_by: totalPosts | round: 1 -%}
-{%- assign avgImgs = imgInPosts | times: 1.0 | divided_by: totalPosts | round: 1 -%}
+{%- assign avgTags = totalTagAssign | times: 1.0 | divided_by: realPostsCount | round: 1 -%}
+{%- assign avgIntLinks = internalLinks | times: 1.0 | divided_by: realPostsCount | round: 1 -%}
+{%- assign avgExtLinks = externalLinks | times: 1.0 | divided_by: realPostsCount | round: 1 -%}
+{%- assign avgImgs = imgInPosts | times: 1.0 | divided_by: realPostsCount | round: 1 -%}
 
 <style>
 .dashboard { margin-bottom: 40px;
@@ -237,18 +240,19 @@ schema:        false
 
 <div class="dashboard">
 
-  <p class="dash-note">Última actualización: {{ site.time | date: '%-d/%m/%Y a las %H:%M' }} · Se recalcula automáticamente en cada publicación.</p>
+  <p class="dash-note">Última actualización: {{ site.time | date: '%-d/%m/%Y a las %H:%M' }} · Se recalcula automáticamente en cada publicación. Todas las métricas se calculan sobre los {% include miles.html n=realPostsCount %} artículos reales; quedan fuera los {% include miles.html n=redirectStubs %} stubs de redirección de URLs antiguas, que en <code>_posts/</code> suman {% include miles.html n=site.posts.size %} ficheros.</p>
 
   {%- comment %} ==================== RESUMEN (KPIs) ==================== {% endcomment -%}
   <h2>Resumen</h2>
   <div class="kpi-grid">
-    <div class="kpi kpi-primary"><span class="kpi-num">{% include miles.html n=totalPosts %}</span><span class="kpi-label">Posts</span></div>
+    <div class="kpi kpi-primary"><span class="kpi-num">{% include miles.html n=realPostsCount %}</span><span class="kpi-label">Posts</span></div>
     <div class="kpi"><span class="kpi-num">{% include miles.html n=totalTags %}</span><span class="kpi-label">Etiquetas</span></div>
     <div class="kpi"><span class="kpi-num">{% include miles.html n=imgInPosts %}</span><span class="kpi-label">Imágenes en posts</span></div>
     <div class="kpi"><span class="kpi-num">{% include miles.html n=imgFiles %}</span><span class="kpi-label">Ficheros en /img</span></div>
     <div class="kpi"><span class="kpi-num">{% include miles.html n=internalLinks %}</span><span class="kpi-label">Enlaces internos</span></div>
     <div class="kpi"><span class="kpi-num">{% include miles.html n=externalLinks %}</span><span class="kpi-label">Enlaces externos</span></div>
     <div class="kpi"><span class="kpi-num">{% include miles.html n=republishedCount %}</span><span class="kpi-label">Republicados (The Conversation)</span></div>
+    <div class="kpi"><span class="kpi-num">{% include miles.html n=redirectStubs %}</span><span class="kpi-label">Stubs de redirección</span></div>
   </div>
 
   {%- comment %} ==================== SALUD DEL BLOG ==================== {% endcomment -%}
@@ -257,12 +261,12 @@ schema:        false
     <div class="health {% if postsNoDesc > 0 %}warn{% else %}ok{% endif %}">
       <span class="h-num">{% include miles.html n=postsNoDesc %}</span>
       <span class="h-label">Posts sin meta description</span>
-      <span class="h-note">De {% include miles.html n=realPostsCount %} (excluye redirecciones). Afecta al posicionamiento SEO.</span>
+      <span class="h-note">De {% include miles.html n=realPostsCount %}. Afecta al posicionamiento SEO.</span>
     </div>
     <div class="health {% if orphanPosts > 0 %}warn{% else %}ok{% endif %}">
       <span class="h-num">{% include miles.html n=orphanPosts %}</span>
       <span class="h-label">Posts sin enlace interno saliente</span>
-      <span class="h-note">De {% include miles.html n=totalPosts %}. No enlazan a ningún otro post.</span>
+      <span class="h-note">De {% include miles.html n=realPostsCount %}. No enlazan a ningún otro post.</span>
     </div>
     <div class="health {% if inboundOrphans > 0 %}warn{% else %}ok{% endif %}">
       <span class="h-num">{% include miles.html n=inboundOrphans %}</span>
@@ -322,7 +326,7 @@ schema:        false
       <span class="cnt">{{ histD }}</span>
     </li>
   </ul>
-  <p class="dash-note">Sobre {% include miles.html n=realPostsCount %} posts (excluye redirecciones). Longitud calculada sobre el texto sin marcado HTML.</p>
+  <p class="dash-note">Sobre {% include miles.html n=realPostsCount %} posts. Longitud calculada sobre el texto sin marcado HTML.</p>
 
   <div class="extreme-grid">
     {%- if longestPost -%}
