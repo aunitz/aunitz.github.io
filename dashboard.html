@@ -25,6 +25,8 @@ schema:        false
 {%- assign realPostsCount = realPosts | size -%}
 {%- assign redirectStubs = site.posts | size | minus: realPostsCount -%}
 {%- assign totalTags = site.tags | size -%}
+{%- comment %} Mismas etiquetas no puntuables que usa _includes/related-posts.html {% endcomment -%}
+{%- assign excludedTags = site.related_excluded_tags -%}
 
 {%- comment %} Imágenes usadas dentro del contenido de los posts (<img>) {% endcomment -%}
 {%- assign imgInPosts = 0 -%}
@@ -101,6 +103,51 @@ schema:        false
 {%- for post in realPosts -%}
   {%- capture inboundNeedle -%}{{ post.url }}"{%- endcapture -%}
   {%- unless allPostContent contains inboundNeedle -%}{%- assign inboundOrphans = inboundOrphans | plus: 1 -%}{%- endunless -%}
+{%- endfor -%}
+
+{%- comment %}
+  ===== BLOQUE «TAMBIÉN TE PUEDE INTERESAR»: curados vs automáticos =====
+
+  Replica la puerta de _includes/related-posts.html, no su puntuación:
+
+  - CURADO: el slug está en _data/related.yml y al menos uno de sus slugs
+    sigue existiendo como post real. Si ninguno resuelve, el include cae al
+    algoritmo, así que aquí también.
+  - AUTOMÁTICO: no está curado, pero tiene alguna etiqueta puntuable (no
+    excluida en _config.yml) compartida con otro post. Basta con eso: el
+    algoritmo solo necesita un candidato con puntuación mayor que cero, y la
+    puntuación únicamente decide el orden.
+  - SIN BLOQUE: ni lo uno ni lo otro.
+
+  Los slugs válidos se precalculan en una cadena "|slug|slug|" para poder
+  comprobarlos con "contains" en lugar de recorrer site.posts por cada uno.
+{% endcomment -%}
+{%- capture validSlugs -%}{%- for p in realPosts -%}|{{ p.slug }}{%- endfor -%}|{%- endcapture -%}
+{%- assign relCurated = 0 -%}
+{%- assign relAuto = 0 -%}
+{%- assign relNone = 0 -%}
+{%- for post in realPosts -%}
+  {%- assign curatedList = site.data.related[post.slug] -%}
+  {%- assign curatedOk = false -%}
+  {%- for s in curatedList -%}
+    {%- capture needle -%}|{{ s }}|{%- endcapture -%}
+    {%- if validSlugs contains needle -%}{%- assign curatedOk = true -%}{%- break -%}{%- endif -%}
+  {%- endfor -%}
+  {%- if curatedOk -%}
+    {%- assign relCurated = relCurated | plus: 1 -%}
+  {%- else -%}
+    {%- assign hasCandidate = false -%}
+    {%- for t in post.tags -%}
+      {%- if excludedTags contains t -%}{%- continue -%}{%- endif -%}
+      {%- assign tagSize = site.tags[t] | size -%}
+      {%- if tagSize > 1 -%}{%- assign hasCandidate = true -%}{%- break -%}{%- endif -%}
+    {%- endfor -%}
+    {%- if hasCandidate -%}
+      {%- assign relAuto = relAuto | plus: 1 -%}
+    {%- else -%}
+      {%- assign relNone = relNone | plus: 1 -%}
+    {%- endif -%}
+  {%- endif -%}
 {%- endfor -%}
 
 {%- comment %} ===== CUERPO: palabras totales, media por post, tiempo de lectura, histograma, extremos y republicados ===== {% endcomment -%}
@@ -292,6 +339,15 @@ schema:        false
     <div class="kpi"><span class="kpi-num">{% include miles.html n=avgWords %}</span><span class="kpi-label">Palabras por post</span></div>
     <div class="kpi"><span class="kpi-num">{{ avgReadMin | replace: '.', ',' }}</span><span class="kpi-label">Min. de lectura por post</span></div>
   </div>
+
+  {%- comment %} ==================== BLOQUE DE RELACIONADOS ==================== {% endcomment -%}
+  <h2>Bloque «También te puede interesar»</h2>
+  <div class="kpi-grid">
+    <div class="kpi"><span class="kpi-num">{% include miles.html n=relCurated %}</span><span class="kpi-label">Con selección curada</span></div>
+    <div class="kpi"><span class="kpi-num">{% include miles.html n=relAuto %}</span><span class="kpi-label">Con selección automática</span></div>
+    <div class="kpi"><span class="kpi-num">{% include miles.html n=relNone %}</span><span class="kpi-label">Sin bloque</span></div>
+  </div>
+  <p class="dash-note">Los curados toman su lista de <code>_data/related.yml</code>; el resto la calcula el algoritmo por etiquetas compartidas. Un post se queda sin bloque si no comparte ninguna etiqueta puntuable con ningún otro.</p>
 
   {%- comment %} ==================== MEDIAS POR POST ==================== {% endcomment -%}
   <h2>Medias por post</h2>
