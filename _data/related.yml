@@ -1,0 +1,301 @@
+# Posts relacionados curados a mano
+#
+# Cada clave es el slug de un post (el nombre del fichero en _posts/ sin la
+# fecha) y su valor es la lista ordenada de slugs que se mostrarán en el bloque
+# «También te puede interesar».
+#
+# Los posts que NO aparecen aquí siguen usando la selección automática por
+# etiquetas de _includes/related-posts.html. Esto es una capa editorial que se
+# superpone al algoritmo, no un sustituto.
+#
+# Si un slug no existe (por ejemplo tras renombrar un post), se ignora en
+# silencio; si no queda ninguno válido, el bloque cae al algoritmo.
+#
+# ---------------------------------------------------------------------------
+# CRITERIOS
+#
+#   1. Orden por AFINIDAD: primero el post más parecido, no el que da más
+#      contexto. Si un artículo explica una ley y otro la aplica, manda el
+#      parecido temático y no la jerarquía conceptual.
+#   2. Prima la afinidad real sobre la coincidencia de etiquetas: se busca
+#      activamente cruzar etiquetas, porque los mejores relacionados a menudo
+#      no comparten ninguna.
+#   3. La fecha no cuenta. Un post de 2017 puede ser el más relevante.
+#
+# ALCANCE
+#
+#   Se curan los 32 posts cuyas etiquetas son TODAS paraguas (más de 20 posts
+#   cada una: «buenas prácticas de usabilidad», 37, y «leyes y principios de
+#   UX», 32). Son los casos donde el algoritmo no tiene con qué desempatar y
+#   acaba mostrando los más recientes de una lista enorme.
+#
+#   Se conservan además las 9 fichas del piloto que quedaron fuera de ese
+#   grupo, ya revisadas. Si se quiere ceñir la curación estrictamente a las
+#   etiquetas paraguas, basta con borrar el último bloque de este fichero.
+# ---------------------------------------------------------------------------
+
+
+# ===========================================================================
+# LOS 32 POSTS DE ETIQUETA PARAGUAS
+# ===========================================================================
+
+# --- Leyes y efectos de UX --------------------------------------------------
+
+# Su contrapartida directa es la lista canónica de heurísticas de Nielsen.
+principios-usabilidad:
+  - los-10-principios-generales-usabilidad-jakob-nielsen
+  - que-es-la-usabilidad-de-una-aplicacion
+  - que-es-un-test-heuristico
+
+# Accot-Zhai es literalmente la extensión de Fitts para trayectorias.
+ley-de-fitts:
+  - ley-de-direccion-de-accot-zhai
+  - tamano-minimo-elementos-interactivos
+  - tamano-minimo-elementos-interactivos-dispositivo-tactil
+
+# Más opciones, más tiempo de decisión: el bloqueo por exceso de análisis es
+# el mismo fenómeno llevado al extremo.
+ley-de-hick:
+  - paralisis-por-analisis
+  - recomienda-una-opcion
+  - ley-de-miller
+
+# La ley de Jakob dice que esperan que tu web funcione como las demás; el
+# consejo de usar convenciones es su aplicación literal.
+ley-de-jakob:
+  - utiliza-convenciones
+  - principio-de-experiencia
+  - efecto-de-mera-exposicion
+
+# Miller va de cuántos elementos retenemos: agrupar es la técnica que lo
+# explota.
+ley-de-miller:
+  - agrupa-elementos-relacionados
+  - efecto-de-posicion-serial
+  - ley-de-hick
+
+# Dos leyes de memoria hermanas: qué se recuerda (Von Restorff) y dónde
+# estaba (posición serial).
+efecto-de-posicion-serial:
+  - efecto-von-restorff
+  - ley-de-miller
+  - utiliza-jerarquia-visual-para-dirigir-la-atencion
+
+# Lo distinto se recuerda: destacar las llamadas a la acción es aplicarlo.
+efecto-von-restorff:
+  - destacar-llamadas-a-la-accion
+  - efecto-de-posicion-serial
+  - utiliza-jerarquia-visual-para-dirigir-la-atencion
+
+# La complejidad no se elimina, se mueve. Ockham por el lado de simplificar,
+# Postel por el de que el sistema absorba el desorden.
+ley-de-tesler:
+  - la-navaja-de-ockham
+  - principio-de-robustez
+  - emplea-valores-por-defecto-utiles-en-formularios
+
+# Efecto de memoria visual: se emparenta con los otros dos efectos de memoria
+# del blog.
+efecto-superioridad-imagen:
+  - efecto-von-restorff
+  - efecto-de-posicion-serial
+  - utiliza-jerarquia-visual-para-dirigir-la-atencion
+
+# Doherty va de tiempos de respuesta por debajo de los 400 ms. Las Core Web
+# Vitals son su medición moderna, y no comparten ninguna etiqueta.
+umbral-de-doherty:
+  - que-son-las-core-web-vitals
+  - muestra-estado-elementos-interfaz
+  - que-es-la-usabilidad-de-una-aplicacion
+
+# Pareto y la regla del 90-9-1 son la misma familia: distribuciones muy
+# desiguales.
+principio-de-pareto:
+  - regla-del-90-9-1
+  - la-navaja-de-ockham
+  - ley-de-campbell
+
+regla-del-90-9-1:
+  - principio-de-pareto
+  - ley-de-campbell
+  - tecnica-de-construccion-de-personas
+
+# Extensión de Fitts para trayectorias: su aplicación más habitual son los
+# menús desplegables, que obligan a recorrer un pasillo sin salirse.
+ley-de-direccion-de-accot-zhai:
+  - ley-de-fitts
+  - no-ocultes-opciones-importantes-tras-menus-desplegables
+  - tamano-minimo-elementos-interactivos
+
+# El propio post concluye que la métrica hay que compensarla con
+# investigación cualitativa, y enlaza estos dos.
+ley-de-campbell:
+  - que-es-un-test-de-usabilidad-con-personas-usuarias
+  - que-es-un-test-heuristico
+  - regla-del-90-9-1
+
+
+# --- Buenas prácticas de usabilidad -----------------------------------------
+
+# Mismo antipatrón: esconder opciones importantes tras una interacción.
+alternativas-usables-menu-hamburguesa:
+  - no-ocultes-opciones-importantes-tras-menus-desplegables
+  - que-es-un-tree-testing
+  - que-es-un-card-sorting
+
+no-ocultes-opciones-importantes-tras-menus-desplegables:
+  - alternativas-usables-menu-hamburguesa
+  - ley-de-direccion-de-accot-zhai
+  - que-es-un-tree-testing
+
+# Una columna alarga la página: el miedo al scroll es la objeción inmediata.
+una-columna-no-dos:
+  - sin-miedo-al-scroll
+  - la-mejor-alineacion-del-texto-para-una-lectura-fluida-en-paginas-web
+  - utiliza-jerarquia-visual-para-dirigir-la-atencion
+
+# Unificar funcionalidades es reducir opciones: Hick es la ley que lo explica.
+unifica-funcionalidades-similares:
+  - ley-de-hick
+  - la-navaja-de-ockham
+  - agrupa-elementos-relacionados
+
+# Recomendar una opción evita el coste de decidir entre equivalentes.
+recomienda-una-opcion:
+  - ley-de-hick
+  - paralisis-por-analisis
+  - unifica-funcionalidades-similares
+
+# «Control y libertad del usuario» es una de las heurísticas de Nielsen.
+deshacer-no-solicitar-confirmacion:
+  - los-10-principios-generales-usabilidad-jakob-nielsen
+  - faculta-manipulacion-directa
+  - formularios-usables-mensajes-de-error
+
+# Destacar la acción principal es aplicar el efecto Von Restorff.
+destacar-llamadas-a-la-accion:
+  - efecto-von-restorff
+  - utiliza-jerarquia-visual-para-dirigir-la-atencion
+  - formularios-usables-botones
+
+# Usar convenciones es, literalmente, la ley de Jakob.
+utiliza-convenciones:
+  - ley-de-jakob
+  - principio-de-experiencia
+  - efecto-de-mera-exposicion
+
+# Agrupar por cercanía es el principio de proximidad de la Gestalt.
+agrupa-elementos-relacionados:
+  - principio-de-la-proximidad
+  - principio-de-semejanza
+  - ley-de-miller
+
+# El post hermano evidente, que el algoritmo no proponía.
+scroll-infinito-vs-paginacion:
+  - sin-miedo-al-scroll
+  - efecto-de-posicion-serial
+  - contenido-precede-diseno
+
+# Un carrusel esconde contenido tras una interacción, y solo se ve la primera
+# diapositiva.
+planteate-alternativas-al-carrusel:
+  - no-ocultes-opciones-importantes-tras-menus-desplegables
+  - efecto-de-posicion-serial
+  - destacar-llamadas-a-la-accion
+
+# Mostrar el estado y distinguir lo clicable de lo seleccionado son el mismo
+# problema visto desde dos lados.
+muestra-estado-elementos-interfaz:
+  - diferencia-elementos-clicables-y-seleccionados
+  - los-10-principios-generales-usabilidad-jakob-nielsen
+  - umbral-de-doherty
+
+diferencia-elementos-clicables-y-seleccionados:
+  - muestra-estado-elementos-interfaz
+  - principio-de-semejanza
+  - utiliza-convenciones
+
+utiliza-jerarquia-visual-para-dirigir-la-atencion:
+  - destacar-llamadas-a-la-accion
+  - efecto-von-restorff
+  - agrupa-elementos-relacionados
+
+# El contenido antes que el diseño enlaza con cómo se entiende el diseño como
+# proceso.
+contenido-precede-diseno:
+  - el-diseno-como-proceso
+  - que-es-diseno-centrado-en-el-usuario
+  - sin-miedo-al-scroll
+
+# Manipular directamente y poder deshacer son las dos caras del control.
+faculta-manipulacion-directa:
+  - deshacer-no-solicitar-confirmacion
+  - muestra-estado-elementos-interfaz
+  - los-10-principios-generales-usabilidad-jakob-nielsen
+
+# La versión actualizada del mismo tema, y la ley que hay detrás.
+tamano-minimo-elementos-interactivos-dispositivo-tactil:
+  - tamano-minimo-elementos-interactivos
+  - ley-de-fitts
+  - como-personas-sostienen-tocan-telefonos-moviles
+
+# Ya revisado en el piloto.
+sin-miedo-al-scroll:
+  - scroll-infinito-vs-paginacion
+  - contenido-precede-diseno
+  - utiliza-jerarquia-visual-para-dirigir-la-atencion
+
+
+# ===========================================================================
+# FICHAS DEL PILOTO QUE QUEDAN FUERA DE LOS 32
+# Ya revisadas. Borrar este bloque si se quiere ceñir la curación
+# estrictamente a los posts de etiqueta paraguas.
+# ===========================================================================
+
+# Reordenado al criterio de afinidad: primero los hermanos más próximos
+# (dirección común y cierre, que también van de completar trazados) y después
+# la ley paraguas.
+principio-de-continuidad:
+  - principio-de-direccion-comun
+  - principio-de-cierre
+  - ley-de-pragnanz
+
+efecto-halo:
+  - relacion-estetica-usabilidad
+  - efecto-de-mera-exposicion
+  - uso-sesgos-cognitivos-marketing
+
+nuestra-mente-ha-evolucionado-para-sobrevivir-no-para-pensar-racionalmente:
+  - uso-sesgos-cognitivos-marketing
+  - dark-patterns-en-comercio-online
+  - efecto-dunning-kruger
+
+no-utilices-atributo-placeholder:
+  - etiquetas-por-encima-campos
+  - campos-de-material-design-mal-disenados
+  - formularios-usables-campos-de-texto
+
+open-llm-basque-day:
+  - es-la-inteligencia-artificial-generativa-una-caja-negra
+  - cinco-niveles-adopcion-ia-en-desarrollo-software
+  - como-sera-futuro-ingenieria-software-en-era-ia
+
+memorando-tailwind-todo-mal:
+  - objeciones-al-css-in-js
+  - que-es-un-design-system
+  - ventajas-diseno-interfaz-personalizado
+
+git-como-deshacer-commit:
+  - como-deshacer-ultimo-commit-git
+  - diferencias-checkout-revert-reset
+  - patch-mode-git
+
+que-es-la-accesibilidad-de-una-aplicacion:
+  - que-es-la-usabilidad-de-una-aplicacion
+  - eres-una-persona-con-discapacidad
+  - accesibilidad-web-al-alcance-de-todos
+
+que-es-un-test-de-usabilidad-con-personas-usuarias:
+  - cuantas-personas-usuarias-son-necesarias-para-un-test-de-usabilidad
+  - que-es-un-test-heuristico
+  - que-es-la-usabilidad-de-una-aplicacion

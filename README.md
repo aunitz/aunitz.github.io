@@ -218,7 +218,37 @@ Al final de cada post, antes del paginador Anterior/Siguiente, se muestran hasta
 
 Es **Liquid puro, sin plugins**, por lo que funciona en GitHub Pages.
 
-### Lógica de selección
+Se resuelve en **dos capas, por orden de prioridad**:
+
+| Capa | Fuente | Cuándo actúa |
+|---|---|---|
+| 1. Curada | `_data/related.yml` | Si el slug del post aparece en el fichero |
+| 2. Automática | Etiquetas compartidas | Si no aparece, o si ninguno de sus slugs existe ya |
+
+Así ningún post se queda sin bloque y los artículos nuevos funcionan desde el primer día, sin esperar a que nadie los curé. Hoy hay **41 posts curados** y **85 en automático**.
+
+### Capa curada (`_data/related.yml`)
+
+Cada clave es el slug de un post y su valor la lista ordenada de slugs a mostrar. **El orden se respeta tal cual**, así que el primero debe ser el más afín.
+
+```yaml
+efecto-halo:
+  - relacion-estetica-usabilidad
+  - efecto-de-mera-exposicion
+  - uso-sesgos-cognitivos-marketing
+```
+
+Criterios editoriales aplicados, documentados también en la cabecera del propio fichero:
+
+1. **Orden por afinidad**: primero el post más parecido, no el que da más contexto.
+2. **La afinidad real manda sobre la etiqueta**: se busca activamente cruzar etiquetas, porque los mejores relacionados a menudo no comparten ninguna. El caso más claro es *Qué es la accesibilidad de una aplicación* y *Qué es la usabilidad de una aplicación*, posts gemelos sin ninguna etiqueta en común.
+3. **La fecha no cuenta**: un post de 2017 puede ser el más relevante.
+
+**Alcance actual**: los 32 posts cuyas etiquetas son todas paraguas (más de 20 posts cada una), que es donde el algoritmo no tiene con qué desempatar y acaba mostrando los más recientes de una lista enorme; más 9 fichas sueltas de otras familias. En clusters pequeños (`git`, 5 posts) la curación no aporta nada: el algoritmo ya acierta.
+
+Los slugs se escriben a mano, así que **si se renombra un post su referencia deja de resolver**. No rompe nada —se ignora, y si un post se queda sin ninguna referencia válida vuelve el algoritmo— pero degrada en silencio.
+
+### Lógica de selección automática
 
 Parte de las **etiquetas compartidas**, pero no todas valen lo mismo. Compartir una etiqueta poco frecuente («sesgos cognitivos», 7 posts) dice mucho más sobre el parecido entre dos artículos que compartir una etiqueta paraguas («buenas prácticas de usabilidad», 37 posts). Por eso cada coincidencia puntúa según **lo específica que sea la etiqueta**:
 

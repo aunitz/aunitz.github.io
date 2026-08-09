@@ -1,10 +1,19 @@
 {% comment %}
   Bloque «También te puede interesar».
 
-  Selecciona hasta 3 posts relacionados con el actual a partir de las etiquetas
-  compartidas. Liquid puro, sin plugins (compatible con GitHub Pages).
+  Selecciona hasta 3 posts relacionados con el actual. Liquid puro, sin plugins
+  (compatible con GitHub Pages). Dos capas, por orden de prioridad:
 
-  Criterio de relevancia: no todas las etiquetas valen lo mismo. Compartir una
+  1. CURADA — si el slug del post aparece en _data/related.yml, se usa esa lista
+     tal cual, en su orden. Es una selección editorial hecha a mano, que puede
+     cruzar etiquetas: muchas veces el mejor relacionado no comparte ninguna.
+
+  2. AUTOMÁTICA — si no hay lista curada (o ninguno de sus slugs existe ya), se
+     cae al algoritmo por etiquetas descrito abajo. Así ningún post se queda sin
+     bloque y los artículos nuevos funcionan desde el primer día, sin esperar a
+     que nadie los curé.
+
+  Criterio de relevancia del algoritmo: no todas las etiquetas valen lo mismo. Compartir una
   etiqueta poco frecuente ("sesgos cognitivos", 7 posts) dice mucho más sobre el
   parecido entre dos artículos que compartir una etiqueta paraguas ("buenas
   prácticas de usabilidad", 37 posts). Por eso cada coincidencia puntúa según
@@ -28,6 +37,27 @@
 {% assign related_limit = 3 %}
 {% comment %} Si no está definido en _config.yml, "contains" da false y no se excluye nada {% endcomment %}
 {% assign excluded_tags = site.related_excluded_tags %}
+
+{% comment %}
+  CAPA 1: lista curada en _data/related.yml, indexada por el slug del post.
+  Se validan los slugs contra site.posts para que un renombrado no deje un
+  hueco silencioso: los que ya no existen (o apuntan a una redirección) se
+  descartan, y si no queda ninguno se cae al algoritmo.
+  Se acumulan URLs en "final_urls", que es también lo que produce el algoritmo,
+  de modo que el marcado de abajo es único para las dos capas.
+{% endcomment %}
+{% assign final_urls = "" | split: "," %}
+{% assign curated_slugs = site.data.related[page.slug] %}
+{% for curated_slug in curated_slugs %}
+    {% assign curated_post = site.posts | where: "slug", curated_slug | first %}
+    {% if curated_post and curated_post.redirect_to == nil and curated_post.url != page.url %}
+        {% assign url_as_array = curated_post.url | split: "###" %}
+        {% assign final_urls = final_urls | concat: url_as_array %}
+    {% endif %}
+{% endfor %}
+
+{% comment %} CAPA 2: solo si la curada no ha dado nada {% endcomment %}
+{% if final_urls.size == 0 %}
 
 {% comment %} 1. Candidatos: unión de los posts de cada etiqueta puntuable del post actual {% endcomment %}
 {% assign candidates = "" | split: "," %}
@@ -72,21 +102,27 @@
 {% comment %} 3. Orden descendente: primero puntuación, después fecha {% endcomment %}
 {% assign scored = scored | sort | reverse %}
 
-{% if scored.size > 0 %}
+{% comment %} 4. Se vuelca en final_urls, el formato común con la capa curada {% endcomment %}
+{% for entry in scored limit: related_limit %}
+    {% assign entry_url = entry | split: "~" | last %}
+    {% assign url_as_array = entry_url | split: "###" %}
+    {% assign final_urls = final_urls | concat: url_as_array %}
+{% endfor %}
+
+{% endif %}{% comment %} fin de la capa automática {% endcomment %}
+
+{% comment %}
+  MARCADO, común a las dos capas. Se resuelve cada URL contra site.posts porque
+  la capa curada no ha construido ninguna colección de candidatos.
+{% endcomment %}
+{% if final_urls.size > 0 %}
 <aside class="related-posts" aria-labelledby="related-posts-heading">
     <h2 id="related-posts-heading" class="related-posts-heading">También te puede interesar</h2>
 
     <ul class="related-posts-list">
-    {% for entry in scored limit: related_limit %}
-        {% assign entry_url = entry | split: "~" | last %}
-        {% assign related_post = nil %}
-        {% for candidate in candidates %}
-            {% if candidate.url == entry_url %}
-                {% assign related_post = candidate %}
-                {% break %}
-            {% endif %}
-        {% endfor %}
-
+    {% for final_url in final_urls limit: related_limit %}
+        {% assign related_post = site.posts | where: "url", final_url | first %}
+        {% if related_post %}
         <li>
             <a href="{{ related_post.url | prepend: site.baseurl | replace: '//', '/' }}">
                 <span class="related-posts-arrow" aria-hidden="true">&rarr;</span>
@@ -98,6 +134,7 @@
                 </div>
             </a>
         </li>
+        {% endif %}
     {% endfor %}
     </ul>
 </aside>
