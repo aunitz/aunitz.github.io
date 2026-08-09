@@ -111,19 +111,27 @@ Escribe `/republish-theconversation-aunitz` o di "quiero republicar un artículo
 
 Ubicación: `.claude/skills/enlazado-interno-ultimo-post-aunitz/SKILL.md`
 
-Mejora el enlazado interno de **un único post objetivo** (por defecto, el último publicado) conectándolo con el resto del blog en las dos direcciones, **sin editar ningún fichero de `_posts/` hasta que Aunitz apruebe expresamente cada cambio concreto**. No hace una revisión global del blog. Tareas que realiza:
+Teje **un único post objetivo** (por defecto, el último publicado) con el resto del blog, **sin editar ningún fichero hasta que Aunitz apruebe expresamente cada cambio concreto**. No hace una revisión global del blog. Trabaja en **tres direcciones**:
+
+| Dirección | Qué hace | Fichero |
+|---|---|---|
+| **A. Salientes** | Enlaces desde el post objetivo hacia posts antiguos que amplían un concepto que ya menciona | `_posts/` |
+| **B. Entrantes** | Enlaces desde posts antiguos hacia el post objetivo, donde este es el "saber más" natural | `_posts/` |
+| **C. Relacionados** | Lista curada del bloque «También te puede interesar», en los dos sentidos | `_data/related.yml` |
+
+Tareas que realiza:
 
 1. Identifica y confirma el post objetivo (el último de `_posts/` por fecha del nombre, o el que indique el usuario).
 2. Lee el post objetivo y extrae su tema, conceptos clave, entidades (leyes de UX, sesgos, herramientas) y los enlaces internos que ya tiene.
-3. Detecta candidatos en dos direcciones, dirigido por conceptos (con `Grep` sobre `_posts/`, sin leer todos los posts a ciegas):
-   - **Salientes:** enlaces desde el post objetivo hacia posts antiguos que amplían un concepto que ya menciona.
-   - **Entrantes:** enlaces desde posts antiguos hacia el post objetivo, en frases donde este es el "saber más" natural.
-4. Prepara una ficha por propuesta (origen, destino, motivo, texto actual vs. propuesto, texto ancla) sin editar nada.
+3. Detecta candidatos en las tres direcciones, dirigido por conceptos (con `Grep`, sin leer todos los posts a ciegas).
+4. Prepara una ficha por propuesta sin editar nada.
 5. Publica una **hoja HTML (artifact)** con todas las propuestas y sus diffs a color, más una sección de descartadas por transparencia.
 6. Aplica **solo** las propuestas que Aunitz aprueba explícitamente en el chat, una a una; nunca asume aprobación por silencio ni convierte una aprobación parcial en total.
-7. Verifica cada cambio: que el `{% post_url %}` apunta a un fichero existente y que el HTML queda bien formado.
+7. Verifica cada cambio: que el `{% post_url %}` apunta a un fichero existente, que el HTML queda bien formado y, si tocó `related.yml`, que todos los slugs resuelven y que cada lista renderiza en el orden escrito.
 
-Los criterios editoriales (qué enlace es válido, cómo elegir el ancla y el destino, qué ajustes de redacción se permiten) están en `.agents/plans/enlazado-interno-posts.md`; la skill define el flujo operativo y el mecanismo de validación. No añade contenido nuevo ni fuerza enlaces: solo enlaces útiles y naturales, con ajustes mínimos de redacción sobre texto ya existente. Omite como origen los posts de The Conversation (`republished: true`, `canonical` externo) y los `hide_from_home: true` salvo confirmación. No añade `target="_blank"` a los enlaces internos.
+**Por qué la dirección C importa:** las listas curadas son estáticas. Si nadie las toca al publicar, un post nuevo no aparecerá jamás en el bloque de ningún post curado y se queda huérfano justo cuando más le interesa recibir tráfico. Cuantos más posts se curan, más se congela el grafo. La skill decide además si el post nuevo **necesita** lista curada: si sus etiquetas son específicas, el algoritmo ya acierta y lo deja en automático, diciéndolo explícitamente.
+
+Los criterios editoriales (qué enlace es válido, cómo elegir el ancla y el destino, qué ajustes de redacción se permiten, cuándo curar los relacionados y cómo mantenerlos) están en `.claude/skills/enlazado-interno-ultimo-post-aunitz/CRITERIOS.md`; la skill define el flujo operativo y el mecanismo de validación. No añade contenido nuevo ni fuerza enlaces: solo enlaces útiles y naturales, con ajustes mínimos de redacción sobre texto ya existente. Omite como origen los posts de The Conversation (`republished: true`, `canonical` externo) y los `hide_from_home: true` salvo confirmación. No añade `target="_blank"` a los enlaces internos. `_data/related.yml` es el único fichero fuera de `_posts/` que puede tocar.
 
 ### Cómo ejecutarla
 
