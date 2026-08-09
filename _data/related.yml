@@ -24,19 +24,314 @@
 #
 # ALCANCE
 #
-#   Se curan los 32 posts cuyas etiquetas son TODAS paraguas (más de 20 posts
-#   cada una: «buenas prácticas de usabilidad», 37, y «leyes y principios de
-#   UX», 32). Son los casos donde el algoritmo no tiene con qué desempatar y
-#   acaba mostrando los más recientes de una lista enorme.
+#   Prioridad 1 — TRÁFICO. Los 40 posts más visitados, que concentran el 91 %
+#   de las visitas del blog (GA4, 90 días a 08/08/2026). Es donde una mejora
+#   se nota, simplemente porque hay gente leyéndolos.
 #
-#   Se conservan además las 9 fichas del piloto que quedaron fuera de ese
-#   grupo, ya revisadas. Si se quiere ceñir la curación estrictamente a las
-#   etiquetas paraguas, basta con borrar el último bloque de este fichero.
+#   Prioridad 2 — ETIQUETA PARAGUAS. Los 32 posts cuyas etiquetas son TODAS
+#   paraguas (más de 20 posts cada una). Son los casos donde el algoritmo no
+#   tiene con qué desempatar y muestra los más recientes de una lista enorme.
+#   Se curaron primero, antes de mirar los datos de tráfico, y se conservan:
+#   están bien, pero entre todos suman el 7,9 % de las visitas, así que no
+#   conviene seguir ampliando por ahí.
+#
+#   Más 9 fichas sueltas del piloto de validación.
+#
+#   Lección aprendida: «donde peor funciona el algoritmo» y «donde más se
+#   nota arreglarlo» son ejes distintos. La mediana de los 32 de etiqueta
+#   paraguas es de 6 visitas en 90 días; el post más visitado del blog tiene
+#   1.115 él solo.
 # ---------------------------------------------------------------------------
 
 
 # ===========================================================================
-# LOS 32 POSTS DE ETIQUETA PARAGUAS
+# PRIORIDAD 1 — LOS 40 POSTS MÁS VISITADOS
+# (algunos ya estaban curados y viven en las secciones de abajo:
+#  open-llm-basque-day, principio-de-continuidad, ley-de-campbell,
+#  efecto-halo, sin-miedo-al-scroll y no-utilices-atributo-placeholder)
+# ===========================================================================
+
+# --- Métodos de investigación UX --------------------------------------------
+
+# El post nº1 del blog con diferencia: 1.115 visitas y 817 usuarios, pero solo
+# 1,36 páginas por usuario. Casi todo el mundo entra, lee y se va, así que es
+# donde más margen hay. El mapa de stakeholders es su gemelo directo y salía
+# el último por ser el más antiguo de los tres que proponía el algoritmo.
+la-matriz-de-poder-e-interes:
+  - que-es-un-stakeholder-map
+  - tecnica-de-construccion-de-personas
+  - que-es-user-customer-journey-map
+
+# El gemelo del anterior, en sentido inverso.
+que-es-un-stakeholder-map:
+  - la-matriz-de-poder-e-interes
+  - tecnica-de-construccion-de-personas
+  - que-es-user-customer-journey-map
+
+# 110 usuarios y 1,12 páginas por usuario: otro que se lee y se abandona.
+que-es-user-customer-journey-map:
+  - que-es-un-user-story-map
+  - tecnica-de-construccion-de-personas
+  - que-es-un-stakeholder-map
+
+que-es-un-user-story-map:
+  - que-es-user-customer-journey-map
+  - tecnica-de-construccion-de-personas
+  - la-matriz-de-poder-e-interes
+
+# --- Leyes y principios de la Gestalt ---------------------------------------
+# Cluster de mucho tráfico (454 visitas entre los cinco) y ratios de 1,1 a 1,4
+# páginas por usuario. El algoritmo acertaba de familia pero ordenaba por
+# fecha; aquí se ofrece el hermano más próximo y la aplicación práctica.
+
+principio-de-la-proximidad:
+  - principio-de-semejanza
+  - agrupa-elementos-relacionados
+  - ley-de-pragnanz
+
+principio-de-semejanza:
+  - principio-de-la-proximidad
+  - diferencia-elementos-clicables-y-seleccionados
+  - agrupa-elementos-relacionados
+
+principio-de-direccion-comun:
+  - principio-de-continuidad
+  - principio-de-la-proximidad
+  - ley-de-pragnanz
+
+# El principio de experiencia dice que interpretamos las formas según lo ya
+# visto: es exactamente la ley de Jakob y el consejo de usar convenciones,
+# aunque no compartan etiqueta con él.
+principio-de-experiencia:
+  - ley-de-jakob
+  - utiliza-convenciones
+  - ley-de-pragnanz
+
+# --- Diseño y proceso --------------------------------------------------------
+
+que-es-diseno-centrado-en-el-usuario:
+  - el-diseno-como-proceso
+  - que-es-la-usabilidad-de-una-aplicacion
+  - que-es-un-test-de-usabilidad-con-personas-usuarias
+
+# Romper la escala del eje Y es engañar con el diseño: su familia real son los
+# patrones oscuros y la explotación de sesgos, no las buenas prácticas de
+# diseño con las que comparte etiqueta.
+romper-escala-eje-y-grafico:
+  - dark-patterns-en-comercio-online
+  - ley-de-campbell
+  - uso-sesgos-cognitivos-marketing
+
+# --- Sesgos cognitivos -------------------------------------------------------
+
+dark-patterns-en-comercio-online:
+  - uso-sesgos-cognitivos-marketing
+  - nuestra-mente-ha-evolucionado-para-sobrevivir-no-para-pensar-racionalmente
+  - romper-escala-eje-y-grafico
+
+# --- Inteligencia artificial -------------------------------------------------
+
+# Va de alucinaciones: lo que pide el lector a continuación es entender por
+# qué se inventan cosas.
+la-ia-dejara-casi-de-inventarse-informacion:
+  - como-funciona-la-inteligencia-artificial-generativa
+  - es-la-inteligencia-artificial-generativa-una-caja-negra
+  - lo-que-inteligencia-artificial-nos-ensena-sobre-que-es-realmente-inteligencia
+
+# Si montas un chatbot en tu web, el primer problema práctico es que se
+# invente respuestas.
+buenas-practicas-usabilidad-chatbot-ia-sitio-web:
+  - la-ia-dejara-casi-de-inventarse-informacion
+  - como-funciona-la-inteligencia-artificial-generativa
+  - quiero-que-la-ia-me-cite
+
+como-sera-futuro-ingenieria-software-en-era-ia:
+  - cinco-niveles-adopcion-ia-en-desarrollo-software
+  - open-llm-basque-day
+  - ia-facilita-pero-no-garantiza-aprendizaje-en-organizaciones
+
+# --- Desarrollo de soluciones digitales -------------------------------------
+
+aplicaciones-web-front-end-back-end-desacoplado:
+  - que-es-una-progressive-web-app-pwa
+  - resultados-front-end-tooling-survey-2019
+  - que-es-mobile-first
+
+# --- Formularios -------------------------------------------------------------
+
+# El post gemelo sobre dónde alinear esos mismos botones, y la convención de
+# plataforma que explica el orden.
+botones-aceptar-cancelar-orden:
+  - alineacion-botones-formulario
+  - formularios-usables-botones
+  - utiliza-convenciones
+
+alineacion-botones-formulario:
+  - botones-aceptar-cancelar-orden
+  - formularios-usables-botones
+  - formularios-usables-consejos-de-diseno
+
+
+# ---------------------------------------------------------------------------
+# Puestos 21 a 30 del ranking de tráfico. Cada uno ronda las 22-41 visitas en
+# 90 días; entre los diez suman 322 y suben la cobertura del 79 % al 87 %.
+# ---------------------------------------------------------------------------
+
+# --- Métodos de investigación UX --------------------------------------------
+
+# Las Personas son arquetipos: el journey se recorre con ellas, y el contraste
+# natural es el test con personas usuarias reales.
+tecnica-de-construccion-de-personas:
+  - que-es-user-customer-journey-map
+  - que-es-un-focus-group
+  - que-es-un-test-de-usabilidad-con-personas-usuarias
+
+# Es la pregunta que sigue al post que explica qué es un test de usabilidad.
+cuantas-personas-usuarias-son-necesarias-para-un-test-de-usabilidad:
+  - que-es-un-test-de-usabilidad-con-personas-usuarias
+  - que-es-un-test-heuristico
+  - que-es-la-usabilidad-de-una-aplicacion
+
+# --- Leyes y principios de la Gestalt ---------------------------------------
+
+# Cierre y continuidad son el par clásico: en los dos la mente completa un
+# trazado que no está entero.
+principio-de-cierre:
+  - principio-de-continuidad
+  - ley-de-pragnanz
+  - principio-de-la-proximidad
+
+principio-de-simetria:
+  - principio-de-cierre
+  - principio-de-semejanza
+  - ley-de-pragnanz
+
+# --- Inteligencia artificial -------------------------------------------------
+
+# El gemelo de «¿Puede la IA superar a la humana?» es el que se pregunta qué
+# es realmente la inteligencia.
+puede-inteligencia-artificial-superar-humana:
+  - lo-que-inteligencia-artificial-nos-ensena-sobre-que-es-realmente-inteligencia
+  - como-funciona-la-inteligencia-artificial-generativa
+  - es-la-inteligencia-artificial-generativa-una-caja-negra
+
+cinco-niveles-adopcion-ia-en-desarrollo-software:
+  - como-sera-futuro-ingenieria-software-en-era-ia
+  - ia-facilita-pero-no-garantiza-aprendizaje-en-organizaciones
+  - open-llm-basque-day
+
+# --- Buenas prácticas de usabilidad -----------------------------------------
+
+# Cómo se sujeta el móvil determina qué zonas se alcanzan con el pulgar: la
+# aplicación directa es el tamaño mínimo de los elementos táctiles.
+como-personas-sostienen-tocan-telefonos-moviles:
+  - tamano-minimo-elementos-interactivos-dispositivo-tactil
+  - tamano-minimo-elementos-interactivos
+  - ley-de-fitts
+
+# --- Git ---------------------------------------------------------------------
+
+# Se cura solo por volumen de tráfico: como ya pasaba con el otro post de git,
+# el algoritmo acertaba y esto únicamente reordena por afinidad.
+diferencias-checkout-revert-reset:
+  - como-deshacer-ultimo-commit-git
+  - git-como-deshacer-commit
+  - patch-mode-git
+
+# --- Off topic ---------------------------------------------------------------
+
+# Era el ÚNICO post del blog sin bloque: su etiqueta «off topic» está excluida
+# del algoritmo y no la comparte con nadie, así que no había candidatos. La
+# curación se lo da por primera vez, enlazando con la evolución de la
+# cognición y con los modelos de lenguaje.
+para-que-sirven-las-lenguas:
+  - nuestra-mente-ha-evolucionado-para-sobrevivir-no-para-pensar-racionalmente
+  - lo-que-inteligencia-artificial-nos-ensena-sobre-que-es-realmente-inteligencia
+  - como-funciona-la-inteligencia-artificial-generativa
+
+
+# ---------------------------------------------------------------------------
+# Puestos 31 a 40. Entre 16 y 22 visitas cada uno; suman 188 y llevan la
+# cobertura del 87 % al 91 %. A partir de aquí el rendimiento cae mucho.
+# ---------------------------------------------------------------------------
+
+# --- Inteligencia artificial -------------------------------------------------
+# Los cuatro posts divulgativos sobre IA generativa se citan entre sí: cómo
+# funciona, si es una caja negra, por qué alucina y qué es la inteligencia.
+
+como-funciona-la-inteligencia-artificial-generativa:
+  - es-la-inteligencia-artificial-generativa-una-caja-negra
+  - la-ia-dejara-casi-de-inventarse-informacion
+  - lo-que-inteligencia-artificial-nos-ensena-sobre-que-es-realmente-inteligencia
+
+es-la-inteligencia-artificial-generativa-una-caja-negra:
+  - como-funciona-la-inteligencia-artificial-generativa
+  - la-ia-dejara-casi-de-inventarse-informacion
+  - lo-que-inteligencia-artificial-nos-ensena-sobre-que-es-realmente-inteligencia
+
+# Este va del impacto del cambio, no de la tecnología: encaja con los de
+# adopción en organizaciones.
+inteligencia-artificial-mira-cambio-directamente-ojos:
+  - ia-facilita-pero-no-garantiza-aprendizaje-en-organizaciones
+  - como-sera-futuro-ingenieria-software-en-era-ia
+  - puede-inteligencia-artificial-superar-humana
+
+# GEO: su familia es el posicionamiento, no la divulgación sobre IA.
+quiero-que-la-ia-me-cite:
+  - que-es-el-keyword-research
+  - como-funciona-la-inteligencia-artificial-generativa
+  - que-son-las-core-web-vitals
+
+# --- Leyes y principios ------------------------------------------------------
+
+# Prägnanz es la ley paraguas de la Gestalt: se ofrecen sus dos hijos más
+# aplicados y la navaja de Ockham, que es la misma idea de simplicidad.
+ley-de-pragnanz:
+  - principio-de-la-proximidad
+  - principio-de-semejanza
+  - la-navaja-de-ockham
+
+# La familiaridad genera preferencia, que es justo lo que explota la ley de
+# Jakob y lo que amplifica el efecto halo.
+efecto-de-mera-exposicion:
+  - ley-de-jakob
+  - efecto-halo
+  - utiliza-convenciones
+
+# Parkinson es gestión del tiempo: su familia son Pareto y la parálisis por
+# análisis, no el resto de leyes de interfaz.
+ley-de-parkinson:
+  - principio-de-pareto
+  - paralisis-por-analisis
+  - ley-de-campbell
+
+# --- Buenas prácticas y formularios -----------------------------------------
+
+# La versión de 2020 del mismo tema y la ley que hay detrás.
+tamano-minimo-elementos-interactivos:
+  - tamano-minimo-elementos-interactivos-dispositivo-tactil
+  - ley-de-fitts
+  - como-personas-sostienen-tocan-telefonos-moviles
+
+# Las etiquetas flotantes de Material Design son exactamente el antipatrón de
+# usar el placeholder como etiqueta.
+campos-de-material-design-mal-disenados:
+  - no-utilices-atributo-placeholder
+  - etiquetas-por-encima-campos
+  - formularios-usables-campos-de-texto
+
+# --- Diseño ------------------------------------------------------------------
+
+# Pedir propuestas gráficas en un concurso es precisamente saltarse el
+# proceso que defiende este post.
+el-diseno-como-proceso:
+  - que-es-diseno-centrado-en-el-usuario
+  - contenido-precede-diseno
+  - propuestas-graficas-en-tus-concursos-grave-error
+
+
+# ===========================================================================
+# PRIORIDAD 2 — LOS 32 POSTS DE ETIQUETA PARAGUAS
 # ===========================================================================
 
 # --- Leyes y efectos de UX --------------------------------------------------
