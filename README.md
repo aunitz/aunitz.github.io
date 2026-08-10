@@ -267,6 +267,44 @@ Son dos cosas distintas, y las dos aplican:
 
 Referencias: [JavaScript detections (docs de Cloudflare)](https://developers.cloudflare.com/bots/reference/javascript-detections/) · [Get started with Bot Fight Mode](https://developers.cloudflare.com/bots/get-started/bot-fight-mode/) · [Hilo de comunidad: JS Detections sigue inyectando `jsd/main.js` con Bot Fight Mode desactivado](https://community.cloudflare.com/t/js-detections-still-injecting-jsd-main-js-after-bot-fight-mode-disabled-free-plan/943263)
 
+## Cloudflare: gestión del `robots.txt` (desactivada)
+
+El `robots.txt` del sitio vive en el repositorio y son dos líneas:
+
+```
+User-agent: *
+Allow: /
+```
+
+Cloudflare tiene una función propia que puede generar o modificar ese fichero en el borde: **Security → Settings**, filtrando por *Bot traffic*, tarjeta **«Manage your robots.txt»**. Ofrece tres opciones:
+
+| Opción | Qué hace |
+|---|---|
+| Content Signals Policy | Despliega un `robots.txt` con el marco de señales de contenido. No bloquea a ningún rastreador |
+| Instruct AI bots to not scrape content | Crea o actualiza el `robots.txt` para señalar que el contenido no debe usarse para entrenar modelos de IA |
+| **Disable robots.txt configuration** | **Cloudflare deja de gestionar el fichero. Opción activa desde agosto de 2026** |
+
+### Por qué está desactivada
+
+Estaba en «Content Signals Policy» y se pasó a «Disable»:
+
+- **Fuente única de verdad.** Todo el blog se gobierna desde el repositorio; el `robots.txt` también. Tener dos sistemas con opinión sobre el mismo fichero es una discrepancia que tarde o temprano cuesta una tarde de diagnóstico.
+- **Evitar que una función gestionada se active sola.** Hay precedente en este mismo panel: el modo «Automatic SSL/TLS» sube el cifrado por su cuenta y no lo vuelve a bajar (ver «Infraestructura: DNS y HTTPS» en `CLAUDE.md`). Un ajuste hoy inocuo no garantiza serlo mañana.
+- **Lo que se renuncia vale poco.** Google ha declarado públicamente que la directiva `Content-Signal` no tiene ningún efecto sobre su rastreo, y no consta soporte entre los grandes rastreadores.
+- **No se pierde la capacidad.** Si algún día se quieren señales de contenido, se añaden al `robots.txt` del repositorio: versionadas, revisables en un diff y bajo control propio. **No reactivar la opción del panel para eso.**
+
+El estado resultante —`Allow: /` sin ninguna señal— es deliberadamente permisivo, también para entrenamiento de modelos. Es coherente con las políticas de bots de IA de la zona, todas en «Allow»: para un blog que funciona como herramienta de autoridad profesional, aparecer en búsquedas, en respuestas de IA y en los corpus de entrenamiento es un beneficio, no un riesgo.
+
+### Verificación (agosto de 2026)
+
+Tras desactivarlo, `https://www.aunitz.net/robots.txt` responde **200 OK** con **`cf-cache-status: MISS`** (sin cabecera `age`) y sirve exactamente las dos líneas del repositorio. El `MISS` es lo que da validez a la prueba: la respuesta vino del origen, no de la caché del borde. `https://aunitz.net/robots.txt` redirige a la versión con `www`, como el resto del apex.
+
+**Al repetir esta comprobación en el futuro, exigir `cf-cache-status: MISS`.** Una lectura con `HIT` no demuestra nada sobre lo que hace Cloudflare, solo sobre lo que había en caché. Si hace falta forzarlo, purgar la caché desde el panel o esperar al workflow `purge-cloudflare-cache.yml`, que se dispara en cada despliegue.
+
+**Lo que nunca llegó a comprobarse:** si con «Content Signals Policy» activa Cloudflare habría inyectado algo en una respuesta fresca de origen. La única lectura hecha con esa opción activa fue un `HIT` de caché, y por tanto no concluyente. Es irrelevante mientras la gestión siga desactivada; si alguien la reactiva, hay que repetir la prueba exigiendo `MISS` antes de sacar conclusiones.
+
+Referencias: [Content Signals Policy (blog de Cloudflare)](https://blog.cloudflare.com/content-signals-policy/) · [Google dice que la directiva `Content-Signal` no tiene efecto alguno](https://www.seroundtable.com/google-cloudflare-content-signals-41631.html)
+
 ## Sistema de redireccionamiento
 
 ### Situación actual
