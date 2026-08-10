@@ -546,6 +546,27 @@ video {
 	height: auto;
 }
 
+// Imágenes responsive dentro del cuerpo de posts y páginas.
+//
+// Antes esto lo hacía clean-blog.js añadiendo la clase .img-responsive de
+// Bootstrap a todas las imágenes con jQuery. Como no había ninguna regla CSS
+// equivalente, hasta que no arrancaba el JS el navegador maquetaba cada imagen
+// a su width real (720px), lo que desbordaba en móvil y provocaba un salto de
+// maquetación (CLS) al aplicarse la clase. En CSS se resuelve en el primer
+// pintado y sin depender del JS.
+//
+// Ojo al orden: esta regla tiene la misma especificidad que ".about-photo img"
+// (más abajo), así que debe quedar ANTES para que la foto de perfil conserve
+// su tamaño fijo y su recorte circular.
+article,
+.page-content {
+	img {
+		display: block;
+		max-width: 100%;
+		height: auto;
+	}
+}
+
 body {
         -webkit-tap-highlight-color: @brand-primary;
 }
