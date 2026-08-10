@@ -122,8 +122,30 @@ hr.small {
 	width: 100%;
 	z-index: 3;
 	.sans-serif;
+
+	// Ojo: estos dos colores son los que se ven POR DEBAJO de 768px, donde la
+	// barra tiene fondo blanco y no hay ninguna otra regla que los fije. Sin
+	// ellos gana el valor por defecto de Bootstrap (.navbar-default
+	// .navbar-brand y .navbar-default .navbar-nav > li > a, ambos #777), que
+	// sobre blanco da 4,47:1 y no llega al 4,5:1 de WCAG 2 AA. Lighthouse lo
+	// marcaba en móvil, y solo en móvil: a partir de 768px el texto pasa a
+	// blanco sobre la foto de cabecera (más abajo en este mismo bloque).
+	//
+	// El fallo de los enlaces del menú no lo detecta ninguna herramienta
+	// automática, porque viven dentro del desplegable colapsado y no son
+	// visibles al cargar la página; pero son 12px en negrita, así que en
+	// cuanto se abre la hamburguesa el problema es mayor que el del logotipo.
+	//
+	// @gray-dark sobre blanco son 10,4:1. Es el mismo par de colores que ya
+	// usaba la barra fija en escritorio (.is-fixed, más abajo), así que los
+	// dos estados comparten paleta.
 	.navbar-brand {
 		font-weight: 800;
+		color: @gray-dark;
+		&:hover,
+		&:focus {
+			color: @brand-primary;
+		}
 	}
 	.nav {
 		li {
@@ -132,7 +154,33 @@ hr.small {
 				font-size: 12px;
 				font-weight: 800;
 				letter-spacing: 1px;
+				color: @gray-dark;
+				&:hover,
+				&:focus {
+					color: @brand-primary;
+				}
 			}
+		}
+	}
+
+	// El botón de la hamburguesa, que solo se ve por debajo de 768px. Los dos
+	// valores por defecto de Bootstrap se quedaban cortos sobre fondo blanco:
+	//
+	//   barras  #888 -> 3,54:1   borde  #ddd -> 1,36:1
+	//
+	// Ninguno lo marca Lighthouse, porque son elementos gráficos y no texto:
+	// WCAG 2 AA solo les exige 3:1 (criterio 1.4.11), que las barras ya
+	// cumplían por poco. Pero al lado de un logotipo a 10,4:1 el botón entero
+	// se veía desvaído.
+	//
+	// Las barras van al mismo gris que el texto de la barra de navegación. El
+	// borde se queda en @gray, un paso por detrás: a @gray-dark el botón se
+	// leía como una caja marcada compitiendo con el logotipo, y aquí el borde
+	// solo tiene que delimitar el control, no identificarlo.
+	.navbar-toggle {
+		border-color: @gray;
+		.icon-bar {
+			background-color: @gray-dark;
 		}
 	}
 	@media only screen and (min-width: 768px) {
