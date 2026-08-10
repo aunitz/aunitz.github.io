@@ -215,6 +215,58 @@ Los agentes de Claude Code pueden tener asignados permisos sobre las herramienta
 | `Skill(nombre-skill)` | Ejecutar una skill concreta |
 | `Skill(nombre-skill:*)` | Ejecutar cualquier subcomando de una skill concreta |
 
+## Cloudflare: JavaScript Detections en plan Free
+
+Cloudflare inyecta en el borde el script `/cdn-cgi/challenge-platform/scripts/jsd/main.js` en todas las páginas del sitio. **No es código del repositorio**: se añade después de que GitHub Pages haya servido el HTML, así que no aparece ni en `_includes/head.html` ni en `js/`. Corresponde a **JavaScript Detections**, el motor de detección de bots que acompaña a Bot Fight Mode.
+
+Como Cloudflare va en modo proxy sobre `www.aunitz.net` (ver «Infraestructura: DNS y HTTPS» en `CLAUDE.md`), el script se sirve bajo el propio dominio del blog. Eso hace que las herramientas de auditoría lo atribuyan a *first party* y parezca código propio.
+
+### Síntoma en Lighthouse
+
+En la categoría **Best Practices**, la auditoría *«Uses deprecated APIs»* marca tres avisos con origen en `main.js`:
+
+| Aviso | Qué es |
+|---|---|
+| `The Shared Storage API is deprecated` | Almacenamiento particionado entre sitios (Privacy Sandbox) |
+| `StorageType.persistent is deprecated` | Antigua API de cuota de disco, sustituida por `navigator.storage` |
+| `The Protected Audience API is deprecated` | Subastas de publicidad en el navegador (antes FLEDGE, Privacy Sandbox) |
+
+El script sondea decenas de APIs del navegador —incluidas las obsoletas— para distinguir un navegador real de un bot a partir de qué responde cada una. Que las sondee no significa que las utilice: es *fingerprinting* defensivo, y además tiene que seguir funcionando en navegadores antiguos.
+
+### Estado de la configuración (verificado, agosto de 2026)
+
+En **Security → Settings**, filtrando por *Bot traffic*:
+
+- **Plan de la zona:** Free. No existe Super Bot Fight Mode (es de Pro/Business/Enterprise).
+- **Bot fight mode:** el toggle maestro está **desactivado**.
+- **JS Detections:** aparece como sub-línea dentro de la tarjeta de Bot fight mode y muestra **«On»**, pese a que el toggle maestro está apagado.
+
+### Por qué no se puede desactivar
+
+Son dos cosas distintas, y las dos aplican:
+
+1. **Es el comportamiento documentado del plan Free.** Según la documentación de Cloudflare, en Bot Fight Mode las JavaScript Detections «se activan automáticamente y no se pueden desactivar». El toggle independiente solo existe en Pro, Business y Enterprise (Security → Bots → Configure Bot Management). En Free no está oculto: no está.
+2. **Además hay un fallo conocido de asimetría.** Activar Bot Fight Mode enciende JS Detections, pero desactivarlo **no** las apaga: quedan pegadas en «On» y el script se sigue inyectando. Hay múltiples hilos abiertos en la comunidad de Cloudflare describiendo exactamente este escenario en plan Free.
+
+### Opciones evaluadas
+
+| Opción | Viabilidad |
+|---|---|
+| Apagar el toggle desde el panel | **No existe** en plan Free |
+| Encender y volver a apagar Bot fight mode | Es justo el gesto que produce el estado pegado. **No hacerlo** |
+| Desactivarlo por API | Reportado en la comunidad, pero el endpoint `bot_management` está limitado por plan y lo previsible es que rechace la llamada en Free. **Sin verificar** |
+| Abrir ticket a soporte | El plan Free no tiene soporte técnico para esto |
+| Subir a plan Pro | Daría acceso al toggle. Desproporcionado para el problema |
+| **Convivir con ello** | **Decisión adoptada** |
+
+### Decisión
+
+**Se asume el aviso y no se toca la configuración.** Es una petición asíncrona y pequeña, que no bloquea el renderizado; Best Practices de Lighthouse no es un factor de posicionamiento; y a cambio aporta detección de bots, que en un blog con 160+ posts y tráfico de *scrapers* no sobra. Cambiar la arquitectura de seguridad del sitio para ganar puntos en una métrica que no ve ningún visitante sería el negocio al revés.
+
+**Consecuencia esperada y aceptada:** la puntuación de Best Practices **nunca llegará a 100** mientras el sitio esté detrás de Cloudflare en plan Free. No es un problema que haya que resolver y no debe intentarse arreglar. Si en una auditoría futura aparece este aviso, la respuesta es esta sección.
+
+Referencias: [JavaScript detections (docs de Cloudflare)](https://developers.cloudflare.com/bots/reference/javascript-detections/) · [Get started with Bot Fight Mode](https://developers.cloudflare.com/bots/get-started/bot-fight-mode/) · [Hilo de comunidad: JS Detections sigue inyectando `jsd/main.js` con Bot Fight Mode desactivado](https://community.cloudflare.com/t/js-detections-still-injecting-jsd-main-js-after-bot-fight-mode-disabled-free-plan/943263)
+
 ## Sistema de redireccionamiento
 
 ### Situación actual
