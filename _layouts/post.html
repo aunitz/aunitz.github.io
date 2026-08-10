@@ -46,6 +46,14 @@ layout: default
 </header>
 
 <!-- Post Content -->
+{% comment %}
+  <main> es el landmark principal de la página: permite a un lector de
+  pantalla saltar directo al contenido, sin recorrer la cabecera y el menú.
+  Solo puede haber uno por página, y va por fuera de <article> porque los
+  estilos del cuerpo del post están scopeados a "article, .page-content"
+  en clean-blog.less. page.html y dashboard.html ya tenían el suyo.
+{% endcomment %}
+<main>
 <article>
     <div class="container">
         <div class="row">
@@ -135,5 +143,6 @@ layout: default
         </div>
     </div>
 </article>
+</main>
 
 <hr>

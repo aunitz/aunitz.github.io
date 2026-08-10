@@ -1,8 +1,18 @@
 // Variables
 
-@brand-primary: #0085A1;
+// Ojo al tocar estos dos colores: los valores están fijados por contraste, no
+// por gusto. Ambos se usan como color de texto sobre blanco y tienen que
+// llegar a 4,5:1 (WCAG 2 AA, texto normal). Comprobado con Lighthouse/axe en
+// agosto de 2026, que marcaba .related-posts-heading y .related-posts-subtitle.
+//
+//   @brand-primary  #0085A1 -> 4,31:1  ✗    #00819C -> 4,55:1  ✓
+//   @gray           #808080 -> 3,95:1  ✗    #757575 -> 4,61:1  ✓
+//
+// Si se aclara cualquiera de los dos, vuelven a fallar. Verificar el ratio
+// antes de cambiarlos.
+@brand-primary: #00819C;
 @gray-dark: lighten(black, 25%);
-@gray: lighten(black, 50%);
+@gray: lighten(black, 46%);
 @white-faded: fade(white, 80%);
 @gray-light: #eee;
 @dev-accent: #e67e22;
