@@ -716,13 +716,27 @@ article,
 }
 
 // Foto de perfil en la página "Sobre mí"
+//
+// Los márgenes automáticos de la imagen son los que la centran en móvil, NO el
+// "text-align: center" de aquí abajo: la regla "article, .page-content img" de
+// más arriba le pone "display: block", y ".about-photo img" no lo sobrescribe,
+// así que la foto es una caja de bloque de ancho fijo y el text-align del padre
+// no la afecta. Sin los márgenes auto se quedaba pegada al borde izquierdo, con
+// 265px de hueco muerto a su derecha en un viewport de 390px. En escritorio no
+// se notaba porque a partir de 768px manda el "float: left".
+//
+// A partir de 768px los márgenes auto se resuelven a 0 solos: el padre flota y
+// pasa a tener ancho ajustado al contenido, así que no queda espacio libre que
+// repartir. La foto de escritorio no se mueve ni un píxel.
 .about-photo {
 	text-align: center;
-	margin: 0 0 25px;
+	margin: 0 0 8px;
 
 	img {
-		width: 110px;
-		height: 110px;
+		width: 132px;
+		height: 132px;
+		margin-left: auto;
+		margin-right: auto;
 		border-radius: 50%;
 		object-fit: cover;
 		box-shadow: 0 0 0 3px white, 0 0 0 4px @gray-light;
