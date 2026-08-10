@@ -18,7 +18,7 @@ El blog es también una herramienta de posicionamiento SEO y de autoridad profes
 - **CSS:** Bootstrap 3.4.1 CSS compilado localmente desde `bootstrap-sass/` → `css/bootstrap.min.css` (via Live Sass Compiler) + plantilla Clean Blog compilada desde `less/` → `css/clean-blog.min.css` (via Easy LESS)
 - **Tipografías:** Lora (cuerpo), Open Sans (nav), Caveat (decorativa) — Google Fonts autoalojadas en `fonts/` (`css/fonts.css`)
 - **Iconos:** SVG inline en el footer (`css/icons.css`); no se usa ninguna librería de iconos
-- **JavaScript:** jQuery 1.12.4 + Bootstrap JS 3.4.1, ambos autoalojados en `js/vendor/` + `js/clean-blog.min.js`
+- **JavaScript:** `js/clean-blog.js` (JavaScript nativo, sin dependencias) y su versión minificada `js/clean-blog.min.js`. Cubre el menú desplegable en móvil y la cabecera que se oculta al hacer scroll. Ya no se cargan jQuery ni Bootstrap JS
 - **Analytics:** Google Analytics 4 (ID: G-PJWXCNEVTP) + Microsoft Clarity (heatmaps y grabaciones de sesión, ID: x62p7a3dnf)
 - **Datos estructurados:** Schema.org via includes: BlogPosting, BreadcrumbList, WebSite, Organization
 - **Lenguajes de plantilla:** Liquid (layouts e includes), HTML + SCSS
@@ -61,7 +61,7 @@ _layouts/       # Templates Jekyll (default, page, post, empty, fullscreen, redi
 _includes/      # Componentes reutilizables (head, nav, footer, ga, clarity, schema, youtube)
 _posts/         # Artículos en formato .markdown
 css/            # Estilos compilados (no editar directamente)
-js/             # JavaScript (clean-blog.js y su versión minificada)
+js/             # JavaScript nativo (clean-blog.js y su versión minificada)
 img/            # Imágenes del sitio
 ```
 

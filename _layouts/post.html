@@ -110,12 +110,23 @@ layout: default
                 <ul class="pager">
                     {% if prev_post %}
                     <li class="previous">
-                        <a href="{{ prev_post.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{ prev_post.title }}">&larr; Anterior</a>
+                        {% comment %}
+                          El título del post va en data-tooltip, no en title:
+                          lo pinta el tooltip CSS de .pager (clean-blog.less),
+                          que sustituye al plugin Tooltip de Bootstrap. Con
+                          title el navegador pintaría encima su tooltip nativo.
+
+                          El tooltip es un pseudoelemento, así que no se anuncia:
+                          el span sr-only es lo que hace que un lector de
+                          pantalla lea «Anterior: <título>» en vez de solo
+                          «Anterior».
+                        {% endcomment %}
+                        <a href="{{ prev_post.url | prepend: site.baseurl | replace: '//', '/' }}" data-tooltip="{{ prev_post.title | escape }}">&larr; Anterior<span class="sr-only">: {{ prev_post.title }}</span></a>
                     </li>
                     {% endif %}
                     {% if next_post %}
                     <li class="next">
-                        <a href="{{ next_post.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{ next_post.title }}">Siguiente &rarr;</a>
+                        <a href="{{ next_post.url | prepend: site.baseurl | replace: '//', '/' }}" data-tooltip="{{ next_post.title | escape }}">Siguiente &rarr;<span class="sr-only">: {{ next_post.title }}</span></a>
                     </li>
                     {% endif %}
                 </ul>

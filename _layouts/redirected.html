@@ -10,7 +10,19 @@
 <body>
     <h1>Redirecting...</h1>
     <a href="{{ page.redirect_to }}">Click here if you are not redirected.</a>
-    <script>location = '{{ page.redirect_to }}'</script>
+    {% comment %}
+      Aquí había un <script>location = '{{ page.redirect_to }}'</script>. Se ha
+      quitado por dos motivos: metía un valor de Liquid sin escapar dentro de
+      una cadena JavaScript (una comilla en la URL rompía el script), y era
+      redundante, porque el meta refresh de la cabecera ya redirige sin JS.
+
+      Ojo: este layout es código muerto y quitarlo NO cambia el sitio generado.
+      El plugin jekyll-redirect-from sobrescribe layout y content de cualquier
+      documento con redirect_to, así que las 39 páginas de redirección las pinta
+      su propio layout interno, que sí lleva un <script>location=...</script>.
+      El fichero se mantiene como documentación y red de seguridad (ver README,
+      «Situación actual» en el apartado de redirecciones).
+    {% endcomment %}
 </body>
 
 </html>

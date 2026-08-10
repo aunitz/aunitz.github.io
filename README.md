@@ -319,8 +319,7 @@ Este repositorio combina varias licencias:
 | Contenido del blog (posts, textos e imágenes propias) | Todos los derechos reservados — copyright Aunitz Giménez Mendiburu | `LICENSE-CONTENT` |
 | Artículos republicados de [The Conversation](https://theconversation.com/es) | [CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0/) — copyright de cada autor original | En el byline de cada post |
 | Código del tema (plantilla Clean Blog) | [MIT](https://opensource.org/licenses/MIT) — copyright Blackrock Digital LLC | `LICENSE` |
-| Bootstrap 3.4.1 (CSS compilado localmente + JS autoalojado) | [MIT](https://opensource.org/licenses/MIT) — copyright Twitter, Inc. | `css/bootstrap.min.css`, `js/vendor/bootstrap-3.4.1.min.js` |
-| jQuery 1.12.4 (autoalojado) | [MIT](https://opensource.org/licenses/MIT) — copyright OpenJS Foundation | `js/vendor/jquery-1.12.4.min.js` |
+| Bootstrap 3.4.1 (solo CSS, compilado localmente) | [MIT](https://opensource.org/licenses/MIT) — copyright Twitter, Inc. | `css/bootstrap.min.css` |
 | Lora y Caveat (Google Fonts, autoalojadas) | [SIL OFL 1.1](https://scripts.sil.org/OFL) | `fonts/lora-*.woff2`, `fonts/caveat-*.woff2`, `css/fonts.css` |
 | Open Sans (Google Fonts, autoalojada) | [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0) | `fonts/open-sans-*.woff2`, `css/fonts.css` |
 
