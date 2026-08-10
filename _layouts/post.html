@@ -110,12 +110,17 @@ layout: default
                 <ul class="pager">
                     {% if prev_post %}
                     <li class="previous">
-                        <a href="{{ prev_post.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{ prev_post.title }}">&larr; Anterior</a>
+                        {% comment %}
+                          El title lo pinta el navegador como tooltip nativo.
+                          Antes lo hacía el plugin Tooltip de Bootstrap, que
+                          obligaba a cargar jQuery y Bootstrap JS enteros.
+                        {% endcomment %}
+                        <a href="{{ prev_post.url | prepend: site.baseurl | replace: '//', '/' }}" title="{{ prev_post.title }}">&larr; Anterior</a>
                     </li>
                     {% endif %}
                     {% if next_post %}
                     <li class="next">
-                        <a href="{{ next_post.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{ next_post.title }}">Siguiente &rarr;</a>
+                        <a href="{{ next_post.url | prepend: site.baseurl | replace: '//', '/' }}" title="{{ next_post.title }}">Siguiente &rarr;</a>
                     </li>
                     {% endif %}
                 </ul>

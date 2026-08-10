@@ -121,13 +121,16 @@
     <!-- Schema Markup (datos estructurados) -->
     {% include schema.html %}
 
-    <!-- jQuery (autoalojado) -->
-    <script defer src="{{ '/js/vendor/jquery-1.12.4.min.js' | prepend: site.baseurl }}"></script>
+    {% comment %}
+      JavaScript propio, sin dependencias. Antes aquí se cargaban también
+      jQuery 1.12.4 y Bootstrap 3 JS (137 KB sin comprimir) solo para el menú
+      desplegable y la cabecera que se oculta al hacer scroll; ambas cosas
+      están ahora en clean-blog.js en JavaScript nativo.
 
-    <!-- Bootstrap Core JavaScript (autoalojado) -->
-    <script defer src="{{ '/js/vendor/bootstrap-3.4.1.min.js' | prepend: site.baseurl }}"></script>
-
-    <!-- Custom Theme JavaScript -->
-    <script defer src="{{ '/js/clean-blog.min.js' | prepend: site.baseurl }}"></script>
+      Lleva el mismo ?v= que las hojas de estilo: sin él, un navegador (o la
+      caché de Cloudflare) podría seguir sirviendo la versión anterior del
+      fichero, que esperaba encontrar jQuery cargado.
+    {% endcomment %}
+    <script defer src="{{ '/js/clean-blog.min.js' | prepend: site.baseurl }}?v={{ asset_version }}"></script>
 
 </head>
