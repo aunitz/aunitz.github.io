@@ -6,6 +6,8 @@
 
 @import "variables.less";
 @import "mixins.less";
+@import "fonts.less";
+@import "icons.less";
 
 // Global Components
 
@@ -158,16 +160,9 @@ hr.small {
 		}
 	}
 	@media only screen and (min-width: 1170px) {
-		-webkit-transition: background-color 0.3s;
-		-moz-transition: background-color 0.3s;
 		transition: background-color 0.3s;
 		/* Force Hardware Acceleration in WebKit */
-		-webkit-transform: translate3d(0, 0, 0);
-		-moz-transform: translate3d(0, 0, 0);
-		-ms-transform: translate3d(0, 0, 0);
-		-o-transform: translate3d(0, 0, 0);
 		transform: translate3d(0, 0, 0);
-		-webkit-backface-visibility: hidden;
 		backface-visibility: hidden;
 		&.is-fixed {
 			/* when the user scrolls down, we hide the header right above the viewport */
@@ -175,8 +170,6 @@ hr.small {
 			top: -61px;
 			background-color: fade(white, 90%);
 			border-bottom: 1px solid darken(white, 5%);
-			-webkit-transition: -webkit-transform 0.3s;
-			-moz-transition: -moz-transform 0.3s;
 			transition: transform 0.3s;
 			.navbar-brand {
 				color: @gray-dark;
@@ -199,10 +192,6 @@ hr.small {
 		}
 		&.is-visible {
 			/* if the user changes the scrolling direction, we show the header */
-			-webkit-transform: translate3d(0, 100%, 0);
-			-moz-transform: translate3d(0, 100%, 0);
-			-ms-transform: translate3d(0, 100%, 0);
-			-o-transform: translate3d(0, 100%, 0);
 			transform: translate3d(0, 100%, 0);
 		}
 	}
@@ -385,66 +374,6 @@ footer {
 	}
 }
 
-// Contact Form Styles
-
-.floating-label-form-group {
-	font-size: 14px;
-	position: relative;
-	margin-bottom: 0;
-	padding-bottom: 0.5em;
-	border-bottom: 1px solid @gray-light;
-	input,
-	textarea {
-		z-index: 1;
-		position: relative;
-		padding-right: 0;
-		padding-left: 0;
-		border: none;
-		border-radius: 0;
-		font-size: 1.5em;
-		background: none;
-		box-shadow: none !important;
-		resize: none;
-	}
-	label {
-		display: block;
-		z-index: 0;
-		position: relative;
-		top: 2em;
-		margin: 0;
-		font-size: 0.85em;
-		line-height: 1.764705882em;
-		vertical-align: middle;
-		vertical-align: baseline;
-		opacity: 0;
-		-webkit-transition: top 0.3s ease,opacity 0.3s ease;
-		-moz-transition: top 0.3s ease,opacity 0.3s ease;
-		-ms-transition: top 0.3s ease,opacity 0.3s ease;
-		transition: top 0.3s ease,opacity 0.3s ease;
-	}
-	&::not(:first-child) {
-		padding-left: 14px;
-		border-left: 1px solid @gray-light;
-	}
-}
-
-.floating-label-form-group-with-value {
-	label {
-		top: 0;
-		opacity: 1;
-	}
-}
-
-.floating-label-form-group-with-focus {
-	label {
-		color: @brand-primary;
-	}
-}
-
-form .row:first-child .floating-label-form-group {
-	border-top: 1px solid @gray-light;
-}
-
 // Button Styles
 
 .btn {
@@ -600,13 +529,23 @@ form .row:first-child .floating-label-form-group {
 		visibility: visible;
 	}
 
+	// Estado deshabilitado.
+	//
+	// Antes era @gray (#808080) sobre @gray-dark (#404040): 2,7:1, un gris
+	// sobre gris oscuro que no se leía. Ahora es gris sobre @gray-light, 3,4:1.
+	//
+	// Sigue sin llegar a 4,5:1 y es correcto que así sea: WCAG 1.4.3 excluye
+	// expresamente los componentes de interfaz inactivos, y un control
+	// deshabilitado tiene que verse apagado. El cambio es de legibilidad, no de
+	// conformidad. (De hecho el pager de este blog nunca genera .disabled: solo
+	// se usa en template.html.)
 	.disabled {
 		> a,
 		> a:hover,
 		> a:focus,
 		> span {
 			color: @gray;
-			background-color: @gray-dark;
+			background-color: @gray-light;
 			cursor: not-allowed;
 		}
 	}
@@ -662,8 +601,12 @@ article,
 	}
 }
 
+// Destello al tocar un enlace en móvil.
+//
+// Tiene que ser translúcido: con el color opaco se pintaba un rectángulo teal
+// sólido ENCIMA del texto del enlace, que quedaba ilegible durante el toque.
 body {
-        -webkit-tap-highlight-color: @brand-primary;
+	-webkit-tap-highlight-color: fade(@brand-primary, 25%);
 }
 
 // Estilos para artículos importados (The Conversation)
@@ -842,5 +785,45 @@ article,
 @media only screen and (max-width: 767px) {
 	.related-posts-title {
 		font-size: 19px;
+	}
+}
+
+// Movimiento reducido (WCAG 2.3.3, nivel AAA)
+//
+// Quien tenga activado «Reducir movimiento» en su sistema operativo (macOS,
+// iOS, Windows, Android, GNOME) no recibe las animaciones de traslación. Para
+// personas con trastornos vestibulares el movimiento en pantalla puede provocar
+// mareo o migraña, a veces durante horas.
+//
+// Va al final del fichero a propósito: estas reglas tienen la misma
+// especificidad que las que anulan, así que necesitan ganar por orden.
+//
+// Solo se neutraliza el MOVIMIENTO. Los fundidos del tooltip del pager se
+// quedan como están: el criterio excluye expresamente los cambios de opacidad y
+// de color, que no crean ilusión de movimiento, y quitarlos solo restaría
+// información sin beneficiar a nadie.
+@media (prefers-reduced-motion: reduce) {
+
+	// Cabecera que se esconde y reaparece al hacer scroll.
+	// Es la más relevante de las tres: ocupa el ancho de la pantalla y se
+	// dispara en cada cambio de dirección del scroll.
+	.navbar-custom {
+		@media only screen and (min-width: 1170px) {
+			&.is-fixed {
+				transition: none;
+			}
+		}
+	}
+
+	// Flecha de «También te puede interesar» al pasar el ratón.
+	.related-posts-arrow {
+		transition: none;
+	}
+
+	// Despliegue del menú en móvil (.collapsing es de Bootstrap).
+	// El menú sigue abriéndose y cerrándose igual: clean-blog.js espera sus
+	// 350 ms por setTimeout, no por el evento de fin de transición.
+	.collapsing {
+		transition: none;
 	}
 }

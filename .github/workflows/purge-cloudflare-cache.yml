@@ -64,10 +64,18 @@ jobs:
           git diff --name-only "$PREV_SHA" "$CURRENT_SHA" || true
 
           # Cambios que afectan al HTML de TODAS las páginas: assets enlazados
-          # desde head.html (css/, js/), layouts, includes, datos y config.
-          # Purgar URL a URL no sirve aquí (son 160+ páginas), así que se purga
-          # la zona entera de una sola llamada.
-          if git diff --name-only "$PREV_SHA" "$CURRENT_SHA" -- css/ js/ _layouts/ _includes/ _data/ _config.yml | grep -q .; then
+          # desde head.html (css/, js/, fonts/), layouts, includes, datos y
+          # config. Purgar URL a URL no sirve aquí (son 160+ páginas), así que
+          # se purga la zona entera de una sola llamada.
+          #
+          # fonts/ está en la lista por un motivo MÁS fuerte que css/ y js/:
+          # esos dos se sirven con ?v={{ site.time }}, así que un fichero nuevo
+          # estrena URL y nunca puede llegar cacheado. Las fuentes, en cambio,
+          # se piden por URL desnuda (/fonts/lora.woff2, tanto desde el
+          # @font-face como desde el rel="preload" de head.html). Si algún día
+          # se sustituye una fuente conservando el nombre, sin purgar aquí
+          # Cloudflare seguiría sirviendo los bytes viejos indefinidamente.
+          if git diff --name-only "$PREV_SHA" "$CURRENT_SHA" -- css/ js/ fonts/ _layouts/ _includes/ _data/ _config.yml | grep -q .; then
             echo "Site-wide change detected; will purge everything."
             echo "sitewide=true" >> $GITHUB_OUTPUT
             echo "urls=[]" >> $GITHUB_OUTPUT

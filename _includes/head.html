@@ -101,17 +101,33 @@
     {% endcomment %}
     {% assign asset_version = site.time | date: '%s' %}
 
+    {% comment %}
+      Precarga de las dos fuentes que se usan en todas las páginas: Lora recta
+      (cuerpo del texto) y Open Sans recta (titulares y menú).
+
+      Sin esto el navegador no se entera de que existen hasta que ha descargado
+      y analizado clean-blog.min.css, que es donde están los @font-face: una
+      cadena de tres saltos (HTML → CSS → woff2) antes de tener tipografía.
+
+      Son fuentes variables, así que estos dos ficheros cubren todos los pesos.
+      Caveat (el título manuscrito de portada y páginas) no se precarga a
+      propósito: son 75 KB que las páginas de post, que es casi todo el tráfico,
+      no llegan a usar.
+    {% endcomment %}
+    <link rel="preload" as="font" type="font/woff2" crossorigin href="{{ '/fonts/lora.woff2' | prepend: site.baseurl }}">
+    <link rel="preload" as="font" type="font/woff2" crossorigin href="{{ '/fonts/open-sans.woff2' | prepend: site.baseurl }}">
+
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="{{ '/css/bootstrap.min.css' | prepend: site.baseurl }}?v={{ asset_version }}">
 
-    <!-- Custom CSS -->
+    {% comment %}
+      Estilos propios. Incluye, además de la plantilla Clean Blog, los @font-face
+      de las tipografías y los iconos del footer: antes eran css/fonts.css y
+      css/icons.css, dos hojas sueltas de 2,6 KB y 377 bytes que costaban una
+      petición bloqueante cada una. Ahora compilan aquí desde less/fonts.less y
+      less/icons.less.
+    {% endcomment %}
     <link rel="stylesheet" href="{{ '/css/clean-blog.min.css' | prepend: site.baseurl }}?v={{ asset_version }}">
-
-    <!-- Fuentes (autoalojadas, antes Google Fonts) -->
-    <link rel="stylesheet" href="{{ '/css/fonts.css' | prepend: site.baseurl }}?v={{ asset_version }}">
-
-    <!-- Iconos del footer (SVG inline, sustituyen a Font Awesome) -->
-    <link rel="stylesheet" href="{{ '/css/icons.css' | prepend: site.baseurl }}?v={{ asset_version }}">
 
     {% feed_meta %}
     {% include ga.html %}

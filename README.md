@@ -48,6 +48,47 @@ bundle exec jekyll serve --incremental
 2. Pulsa `Ctrl+Shift+P`.
 3. Escribe `Compile LESS to CSS` y selecciona ese comando.
 
+Los parciales (`variables.less`, `mixins.less`, `fonts.less`, `icons.less`) no se
+compilan por separado: se importan desde `clean-blog.less` y acaban dentro de
+`css/clean-blog.min.css`. Guardar cualquiera de ellos recompila el fichero
+principal, que es el que está configurado como `main` en `.vscode/settings.json`.
+
+## Hojas de estilo que se sirven
+
+Solo dos, ambas bloqueantes en el `<head>`:
+
+| Fichero | Origen | Contiene |
+|---|---|---|
+| `css/bootstrap.min.css` | `bootstrap-sass/bootstrap.scss` (Live Sass Compiler) | Bootstrap 3.4.1 recortado por módulos |
+| `css/clean-blog.min.css` | `less/clean-blog.less` (Easy LESS) | Plantilla Clean Blog + `@font-face` + iconos del footer |
+
+De Bootstrap solo se compilan los módulos que el blog usa de verdad; el resto
+están comentados en `bootstrap-sass/bootstrap.scss`. Dos avisos para el futuro:
+
+- **`forms` está desactivado**, y para poder desactivarlo hubo que eliminar el
+  bloque `.navbar-form` de `bootstrap-sass/bootstrap/_navbar.scss`, que era lo
+  único que dependía del módulo (`@include form-inline`). Si algún día hace falta
+  un formulario, hay que reactivar el import **y** recuperar ese bloque del
+  Bootstrap 3.4.1 original.
+- **`tooltip` está desactivado**: el tooltip del pager se rehízo en CSS propio
+  (ver `.pager` en `less/clean-blog.less`) y la clase de Bootstrap ya no se usa.
+
+`buttons` y `labels` se mantienen aunque hoy solo los use `template.html`.
+
+### Tipografías
+
+Los cinco `.woff2` de `fonts/` son **fuentes variables**: un solo fichero por
+familia y estilo cubre todo el rango de pesos. Por eso `less/fonts.less` declara
+un `@font-face` por familia+estilo con `font-weight: min max`, y no uno por peso.
+
+Es importante no volver al esquema anterior, con una declaración y una URL por
+peso: los ficheros eran idénticos entre sí (mismo md5), así que el navegador se
+descargaba los mismos bytes varias veces. Una página de post pedía siete
+ficheros y 302 KB de tipografía; ahora pide tres y 124 KB.
+
+Lora y Open Sans rectas se precargan desde `_includes/head.html` con
+`rel="preload"`. Caveat no: solo aparece en portada y páginas, y son 75 KB.
+
 ## Dashboard de estadísticas del blog
 
 URL: `/dashboard/` (`dashboard.html`, con el layout `_layouts/dashboard.html`)
@@ -320,8 +361,8 @@ Este repositorio combina varias licencias:
 | Artículos republicados de [The Conversation](https://theconversation.com/es) | [CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0/) — copyright de cada autor original | En el byline de cada post |
 | Código del tema (plantilla Clean Blog) | [MIT](https://opensource.org/licenses/MIT) — copyright Blackrock Digital LLC | `LICENSE` |
 | Bootstrap 3.4.1 (solo CSS, compilado localmente) | [MIT](https://opensource.org/licenses/MIT) — copyright Twitter, Inc. | `css/bootstrap.min.css` |
-| Lora y Caveat (Google Fonts, autoalojadas) | [SIL OFL 1.1](https://scripts.sil.org/OFL) | `fonts/lora-*.woff2`, `fonts/caveat-*.woff2`, `css/fonts.css` |
-| Open Sans (Google Fonts, autoalojada) | [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0) | `fonts/open-sans-*.woff2`, `css/fonts.css` |
+| Lora y Caveat (Google Fonts, autoalojadas) | [SIL OFL 1.1](https://scripts.sil.org/OFL) | `fonts/lora*.woff2`, `fonts/caveat.woff2`, `less/fonts.less` |
+| Open Sans (Google Fonts, autoalojada) | [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0) | `fonts/open-sans*.woff2`, `less/fonts.less` |
 
 ## Aviso legal
 
