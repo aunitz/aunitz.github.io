@@ -5,9 +5,6 @@ layout: default
 <style>
 /* Cabecera del dashboard con SVG animado inline (los SVG animados no animan como background-image) */
 .intro-header.dashboard-hero { position: relative; overflow: hidden; background: #0f172a; }
-/* Esta cabecera no lleva foto, sino un SVG con su propio velo (.dashboard-hero-overlay).
-   Anula el velo genérico de .intro-header para no oscurecerla dos veces. */
-.intro-header.dashboard-hero::before { display: none; }
 .dashboard-hero-bg { position: absolute; top: 0; left: 0; right: 0; bottom: 0; z-index: 0; }
 .dashboard-hero-bg svg { width: 100%; height: 100%; display: block; }
 /* Velo oscuro sutil para garantizar el contraste del título blanco sobre el SVG */

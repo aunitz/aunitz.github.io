@@ -217,42 +217,6 @@ hr.small {
 	.background-cover;
 	// NOTE: Background images are set within the HTML using inline CSS!
 	margin-bottom: 50px;
-	position: relative;
-
-	// Velo de contraste.
-	//
-	// El título, el subtítulo y la firma van en blanco directamente sobre la
-	// foto de cabecera, que cambia en cada post y puede ser de cualquier color.
-	// Incluso el color de reserva (@gray, #808080) da solo 3,0:1 con el blanco,
-	// por debajo del 4,5:1 que pide WCAG 1.4.3 para texto normal como .meta.
-	//
-	// Va en un ::before y no en el propio background porque el layout
-	// sobreescribe background-image en línea por página: un degradado puesto en
-	// la propiedad background se perdería.
-	//
-	// Más oscuro arriba y abajo (donde se apoya el texto en móvil y en
-	// escritorio) y algo más suave en el centro, para no aplastar la foto.
-	&::before {
-		content: "";
-		position: absolute;
-		top: 0;
-		right: 0;
-		bottom: 0;
-		left: 0;
-		background: linear-gradient(
-			to bottom,
-			@header-scrim-strong 0%,
-			@header-scrim-soft 45%,
-			@header-scrim-strong 100%
-		);
-	}
-
-	// Sube el contenido por encima del velo. Basta con position: relative: al no
-	// llevar z-index, .container pinta después del ::before por orden de árbol.
-	> .container {
-		position: relative;
-	}
-
 	.site-heading,
 	.post-heading,
 	.page-heading {
