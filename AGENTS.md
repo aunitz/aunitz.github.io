@@ -119,6 +119,29 @@ Atributos opcionales: `hide_from_home: true` (oculta de portada), `last_modified
 - Sin metodología BEM; estilo centrado en Bootstrap
 - No editar los `.min.css` directamente
 
+### Convenciones de commits
+
+**Siempre con prefijo `tipo:`.** Nunca imperativo suelto («Corrige el contraste…»): hay commits así en el historial, pero son un error que no hay que propagar.
+
+Los tipos son los de **Conventional Commits**, es decir, la lista cerrada de `@commitlint/config-conventional`, que a su vez viene de la convención de Angular:
+
+```
+build  chore  ci  docs  feat  fix  perf  refactor  revert  style  test
+```
+
+⚠️ **`docs:` en plural, nunca `doc:`.** El historial tiene 24 `doc:` frente a 21 `docs:`, así que la frecuencia del repositorio engaña: `doc` no existe en el estándar y fallaría cualquier lint de commits. Los `doc:` antiguos son deuda y se dejan como están; **a partir de agosto de 2026 se usa `docs:`**. Vale lo mismo para el resto: si el historial discrepa del estándar, manda el estándar.
+
+Este repositorio usa además dos tipos fuera de esa lista, `content:` y `config:`, para cambios de contenido editorial y de configuración.
+
+Sobre el mensaje:
+
+- **Asunto** en español, en imperativo y en minúscula tras el prefijo.
+- **Cuerpo** explicativo: el porqué, no el qué; con las cifras concretas cuando las haya (ratios de contraste, KB, milisegundos) y una nota de si el CSS compilado cambia.
+- **Acentos bien escritos.** Varios commits antiguos los tienen comidos («anade», «Tambien»); es un artefacto de la herramienta, no la convención.
+- Cerrar con `Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>`.
+
+**No crear ramas salvo petición explícita**: se commitea directamente en `main`. Y no hacer `push` salvo que se pida.
+
 ---
 
 ## Contexto de negocio
