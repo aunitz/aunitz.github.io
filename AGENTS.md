@@ -53,6 +53,20 @@ Con «Full», el tramo Cloudflare→GitHub va cifrado pero sin validar el certif
 
 ---
 
+## Auditorías de Lighthouse: techos conocidos
+
+Dos resultados están ya investigados y cerrados. **Comprobar esta sección antes de proponer nada sobre ellos**, porque las dos veces la conclusión es contraintuitiva y el análisis ya está hecho.
+
+**Best Practices no llegará nunca a 100.** La auditoría *«Uses deprecated APIs»* marca tres avisos (Shared Storage, `StorageType.persistent`, Protected Audience) que vienen de `/cdn-cgi/challenge-platform/scripts/jsd/main.js`, un script que **Cloudflare inyecta en el borde** y que no está en el repositorio. Son las JavaScript Detections del plan Free, donde el toggle para desactivarlas **no existe**; además, encender y volver a apagar Bot Fight Mode es justo el gesto que las deja pegadas en «On». Decisión tomada: se convive con ello. **No proponer desactivarlo desde el panel ni por API.** El análisis completo, con las opciones evaluadas y las referencias, está en la sección «Cloudflare: JavaScript Detections en plan Free» del `README.md`.
+
+**Las tipografías ya están subseteadas; no volver a proponerlo.** Los cinco `.woff2` de `fonts/` son el subset `latin` de Google, no los ficheros multiidioma completos: 227-232 puntos de código, **cero cirílico, cero griego, cero vietnamita**. Su tamaño (37-49 KB) es la tabla `gvar` de la fuente variable, no cobertura de idiomas sobrante. Medido en agosto de 2026 con `harfbuzz`:
+
+- Recortar al juego de caracteres seguro (ASCII + Latin-1 completo + puntuación) ahorra **10,6 KB** en las tres precargadas. No compensa.
+- Recortar solo a lo que el blog usa hoy ahorra 36,9 KB, pero deja la fuente en 127 puntos de código: el primer post que cite un «François», un «Gödel» o un «Citroën» pierde el glifo y cae al fallback del sistema a mitad de palabra.
+- **Instanciar a pesos estáticos sale peor**, que es justo lo que uno esperaría al revés: Lora en una variable son 34,4 KB frente a 37,8 KB en dos estáticas (400 y 700); Open Sans, 43,6 KB frente a 48,4 KB en tres (400, 700 y 800). La arquitectura de fuente variable de `less/fonts.less` es la óptima y hay que dejarla como está.
+
+---
+
 ## Convenciones de código y estilo
 
 ### Estructura de carpetas relevante
