@@ -6,3 +6,14 @@
 @white-faded: fade(white, 80%);
 @gray-light: #eee;
 @dev-accent: #e67e22;
+
+// Velo oscuro sobre la foto de cabecera (.intro-header), para que el texto
+// blanco del título mantenga contraste sea cual sea la imagen que haya debajo.
+//
+// El número no es estético, sale de WCAG 1.4.3: el texto blanco necesita 4,5:1,
+// lo que exige un fondo no más claro que #767676. Sobre la peor imagen posible
+// (una foto blanca), un velo negro al 55% deja 255*(1-0.55) = 115 ≈ #737373, que
+// cumple por poco. De ahí el 0.55 de los extremos, donde se apoya el texto.
+// Bajarlo aclara la foto y deja el contraste a merced de la imagen concreta.
+@header-scrim-strong: rgba(0, 0, 0, 0.55);
+@header-scrim-soft: rgba(0, 0, 0, 0.4);

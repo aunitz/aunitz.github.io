@@ -15,9 +15,10 @@ El blog es también una herramienta de posicionamiento SEO y de autoridad profes
 - **Generador:** Jekyll (sitio estático)
 - **Hospedaje:** GitHub Pages con dominio personalizado `aunitz.net`; Cloudflare para cache (hay un GitHub Actions workflow que invalida la cache tras cada deploy). Ver «Infraestructura: DNS y HTTPS» más abajo antes de tocar nada de Cloudflare
 - **Plugins Jekyll:** `github-pages`, `jekyll-paginate`, `jekyll-feed`, `jekyll-redirect-from`, `jekyll-sitemap`
-- **CSS:** Bootstrap 3.4.1 CSS compilado localmente desde `bootstrap-sass/` → `css/bootstrap.min.css` (via Live Sass Compiler) + plantilla Clean Blog compilada desde `less/` → `css/clean-blog.min.css` (via Easy LESS)
-- **Tipografías:** Lora (cuerpo), Open Sans (nav), Caveat (decorativa) — Google Fonts autoalojadas en `fonts/` (`css/fonts.css`)
-- **Iconos:** SVG inline en el footer (`css/icons.css`); no se usa ninguna librería de iconos
+- **CSS:** solo se sirven dos hojas, ambas compiladas localmente. Bootstrap 3.4.1 desde `bootstrap-sass/` → `css/bootstrap.min.css` (via Live Sass Compiler), recortado por módulos: `forms` y `tooltip` están desactivados (ver aviso en el README antes de reactivarlos). Plantilla Clean Blog desde `less/clean-blog.less` → `css/clean-blog.min.css` (via Easy LESS), que absorbe además los `@font-face` y los iconos del footer vía los parciales `less/fonts.less` y `less/icons.less`
+- **Tipografías:** Lora (cuerpo), Open Sans (nav), Caveat (decorativa) — Google Fonts autoalojadas en `fonts/`, declaradas en `less/fonts.less`. Son **fuentes variables**: un `.woff2` por familia y estilo cubre todo el rango de pesos, y se declaran con `font-weight: min max`. No volver a una declaración por peso: los ficheros serían idénticos y el navegador se descargaría los mismos bytes varias veces. Lora y Open Sans rectas se precargan en `_includes/head.html`
+- **Iconos:** SVG inline en el footer (`less/icons.less`); no se usa ninguna librería de iconos
+- **Accesibilidad del CSS:** `.intro-header` lleva un velo oscuro (`::before`) para que el título blanco mantenga contraste sobre cualquier foto de cabecera, y hay un bloque `prefers-reduced-motion` al final de `less/clean-blog.less` que anula las animaciones de traslación. Al añadir animaciones nuevas, contemplarlas ahí
 - **JavaScript:** `js/clean-blog.js` (JavaScript nativo, sin dependencias) y su versión minificada `js/clean-blog.min.js`. Cubre el menú desplegable en móvil y la cabecera que se oculta al hacer scroll. Ya no se cargan jQuery ni Bootstrap JS
 - **Analytics:** Google Analytics 4 (ID: G-PJWXCNEVTP) + Microsoft Clarity (heatmaps y grabaciones de sesión, ID: x62p7a3dnf)
 - **Datos estructurados:** Schema.org via includes: BlogPosting, BreadcrumbList, WebSite, Organization
