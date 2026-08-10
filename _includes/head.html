@@ -102,19 +102,29 @@
     {% assign asset_version = site.time | date: '%s' %}
 
     {% comment %}
-      Precarga de las dos fuentes que se usan en todas las páginas: Lora recta
-      (cuerpo del texto) y Open Sans recta (titulares y menú).
+      Precarga de las tres fuentes que se usan en todas las páginas: Lora recta
+      (cuerpo del texto), Open Sans recta (titulares y menú) y Lora cursiva.
 
       Sin esto el navegador no se entera de que existen hasta que ha descargado
       y analizado clean-blog.min.css, que es donde están los @font-face: una
       cadena de tres saltos (HTML → CSS → woff2) antes de tener tipografía.
 
-      Son fuentes variables, así que estos dos ficheros cubren todos los pesos.
+      Lora cursiva se precarga porque la usa .meta, la línea «Publicado por…»
+      que va bajo el título dentro de .intro-header, y .post-preview .post-meta
+      en la portada. Es texto sobre el pliegue en las dos plantillas que
+      concentran el tráfico, así que con font-display: swap se veía el cambio de
+      tipografía a mitad de carga. Antes era el único nodo de profundidad 3 del
+      camino crítico que detecta Lighthouse.
+
+      Son fuentes variables, así que estos tres ficheros cubren todos los pesos.
       Caveat (el título manuscrito de portada y páginas) no se precarga a
       propósito: son 75 KB que las páginas de post, que es casi todo el tráfico,
-      no llegan a usar.
+      no llegan a usar. Open Sans cursiva tampoco, porque ninguna regla del CSS
+      la pide: body lleva el mixin .serif, así que todos los estilos en cursiva
+      del blog (blockquote, .meta, .post-meta, .caption) resuelven a Lora.
     {% endcomment %}
     <link rel="preload" as="font" type="font/woff2" crossorigin href="{{ '/fonts/lora.woff2' | prepend: site.baseurl }}">
+    <link rel="preload" as="font" type="font/woff2" crossorigin href="{{ '/fonts/lora-italic.woff2' | prepend: site.baseurl }}">
     <link rel="preload" as="font" type="font/woff2" crossorigin href="{{ '/fonts/open-sans.woff2' | prepend: site.baseurl }}">
 
     <!-- Bootstrap Core CSS -->

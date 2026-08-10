@@ -86,8 +86,22 @@ peso: los ficheros eran idénticos entre sí (mismo md5), así que el navegador 
 descargaba los mismos bytes varias veces. Una página de post pedía siete
 ficheros y 302 KB de tipografía; ahora pide tres y 124 KB.
 
-Lora y Open Sans rectas se precargan desde `_includes/head.html` con
-`rel="preload"`. Caveat no: solo aparece en portada y páginas, y son 75 KB.
+Tres de las cinco se precargan desde `_includes/head.html` con `rel="preload"`:
+**Lora recta, Lora cursiva y Open Sans recta**.
+
+La cursiva de Lora se añadió tras ver en el árbol de dependencias de red de
+Lighthouse que era el único nodo de profundidad 3 del camino crítico: el
+navegador no se enteraba de que existía hasta haber descargado y analizado
+`clean-blog.min.css`. Y sí hace falta pronto, porque `body` lleva el mixin
+`.serif` y por tanto **todas** las cursivas del blog resuelven a Lora, incluidas
+dos que van sobre el pliegue: `.meta` (la línea «Publicado por…» de la cabecera
+de cada post) y `.post-preview .post-meta` (la fecha de cada entrada en
+portada). Con `font-display: swap` eso se traducía en un cambio visible de
+tipografía a mitad de carga.
+
+No se precargan las otras dos. **Caveat** solo aparece en portada y páginas, y
+son 75 KB. **Open Sans cursiva** no la pide ninguna regla del CSS, por lo que
+acabamos de ver: si `body` es serif, no hay cursiva que caiga en Open Sans.
 
 ## Dashboard de estadísticas del blog
 
@@ -110,6 +124,20 @@ Efecto práctico: `bundle exec jekyll serve` en local no define `JEKYLL_ENV`, as
 Antes de este cambio, cualquier sesión de desarrollo local enviaba hits reales a GA4. Se detectó revisando un CSV de tráfico: aparecía `/preview-relacionados.html` con vistas registradas, un fichero que nunca llegó a subirse al repositorio y que solo existió en un servidor local.
 
 Este filtro por entorno es la protección de fondo; para GoatCounter existe además el toggle manual por navegador del apartado anterior, útil si alguna vez se navega el sitio ya construido en modo producción (por ejemplo, sirviendo `_site/` directamente) fuera del flujo habitual de `jekyll serve`.
+
+## Analítica: Cloudflare Web Analytics (inyectada en el borde)
+
+El sitio carga una **cuarta analítica** además de GA4, Clarity y GoatCounter: **Cloudflare Web Analytics**, que sirve `beacon.min.js` desde `static.cloudflareinsights.com` (~11 KiB).
+
+**No está en el repositorio.** No hay ningún include ni variable de `_config.yml` que la inserte: Cloudflare la inyecta en el HTML en el borde, igual que hace con `jsd/main.js` (ver «Cloudflare: JavaScript Detections en plan Free»). Buscar `cloudflareinsights` o `beacon` en `_includes/`, `_layouts/` o `_config.yml` no devuelve nada.
+
+Consecuencias de que sea una inyección de borde y no un include:
+
+- **El filtro por entorno del apartado anterior no le aplica.** Ese mecanismo (`jekyll.environment == "production"`) solo gobierna los tres scripts que sí están en el repositorio. Aun así, tampoco aparece en desarrollo local, pero por otro motivo: `bundle exec jekyll serve` sirve desde `localhost`, que no pasa por Cloudflare, así que no hay borde que inyecte nada.
+- **Se gestiona desde el panel de Cloudflare**, no desde el repositorio. El ajuste es la inyección automática del beacon, dentro de la sección de Web Analytics de la cuenta. *(Ubicación exacta no verificada en el panel; el resto de este apartado sí está comprobado.)*
+- **Aparece en el árbol de dependencias de red de Lighthouse** como hija directa del HTML. Al ser hermana de las hojas de estilo y no descendiente, no alarga el camino crítico.
+
+**Estado:** activa, y de momento se deja así. Es redundante con las tres analíticas que ya hay, así que si algún día se quiere adelgazar la página es la primera candidata a desactivar — con la ventaja de que se quita desde el panel, sin tocar código.
 
 ## Skill de Claude Code: publish-post-blog-aunitz
 
