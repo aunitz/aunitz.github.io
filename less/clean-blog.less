@@ -505,6 +505,101 @@ form .row:first-child .floating-label-form-group {
 		}
 	}
 
+	// Tooltip con el título del post, solo CSS.
+	//
+	// Sustituye al plugin Tooltip de Bootstrap, que obligaba a cargar jQuery y
+	// Bootstrap JS enteros. El texto viaja en data-tooltip y no en title, para
+	// que el navegador no pinte además su propio tooltip nativo encima. Es un
+	// adorno puramente visual: el título sigue llegando a los lectores de
+	// pantalla por el <span class="sr-only"> que va dentro del enlace.
+	li > a[data-tooltip] {
+		position: relative;
+
+		&::before,
+		&::after {
+			position: absolute;
+			bottom: 100%;
+			z-index: 2;
+			// Nunca debe interceptar el clic del enlace que hay debajo.
+			pointer-events: none;
+			opacity: 0;
+			visibility: hidden;
+			// La transición de visibility hace que al ocultarse espere a que
+			// termine el fundido, en vez de desaparecer de golpe.
+			-webkit-transition: opacity 0.15s ease, visibility 0.15s;
+			transition: opacity 0.15s ease, visibility 0.15s;
+		}
+
+		// Burbuja
+		&::after {
+			content: attr(data-tooltip);
+
+			// max-content: sin esto la burbuja se ajustaría al ancho del
+			// enlace, que es estrecho, y el título caería en una columna de
+			// una palabra por línea. El max-width la corta en los títulos largos.
+			width: max-content;
+			max-width: 220px;
+			padding: 8px 12px;
+			margin-bottom: 8px;
+
+			// El enlace va en versalitas, espaciado y con peso 800: hay que
+			// devolver el texto de la burbuja a una tipografía normal.
+			.sans-serif;
+			font-size: 13px;
+			font-weight: 400;
+			line-height: 1.35;
+			letter-spacing: normal;
+			text-transform: none;
+			text-align: center;
+			white-space: normal;
+
+			color: white;
+			background-color: rgba(0, 0, 0, 0.9);
+			border-radius: 4px;
+		}
+
+		// Flecha, centrada sobre el enlace
+		&::before {
+			content: "";
+			left: 50%;
+			margin-left: -6px;
+			margin-bottom: 2px;
+			border-width: 6px 6px 0;
+			border-style: solid;
+			border-color: rgba(0, 0, 0, 0.9) transparent transparent;
+		}
+	}
+
+	// La burbuja se ancla al borde exterior de cada enlace (el «Anterior» va
+	// flotado a la izquierda y el «Siguiente» a la derecha), en vez de
+	// centrarse sobre él: así un título largo crece hacia dentro de la columna
+	// de texto y nunca se sale de la pantalla.
+	.previous > a[data-tooltip]::after {
+		left: 0;
+	}
+
+	.next > a[data-tooltip]::after {
+		right: 0;
+	}
+
+	// Solo donde hay un puntero real: en pantallas táctiles :hover se queda
+	// pegado después de tocar.
+	@media (hover: hover) {
+		li > a[data-tooltip]:hover::before,
+		li > a[data-tooltip]:hover::after {
+			opacity: 1;
+			visibility: visible;
+		}
+	}
+
+	// Navegación por teclado. En un navegador sin :focus-visible simplemente no
+	// aparece el tooltip; el título sigue disponible en el texto sr-only.
+	li > a[data-tooltip]:focus-visible::before,
+	li > a[data-tooltip]:focus-visible::after {
+		opacity: 1;
+		visibility: visible;
+	}
+
 	.disabled {
 		> a,
 		> a:hover,
