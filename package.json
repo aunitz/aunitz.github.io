@@ -1,11 +1,13 @@
 {
   "name": "aunitz.github.io",
   "private": true,
-  "description": "Compilación local de less/clean-blog.less a css/clean-blog.min.css. Ver la sección «Compilación CSS» de CLAUDE.md.",
+  "description": "Compilación local de less/clean-blog.less a css/clean-blog.min.css y de js/clean-blog.js a js/clean-blog.min.js. Ver la sección «Compilación CSS» de CLAUDE.md.",
   "scripts": {
-    "build:css": "lessc less/clean-blog.less css/clean-blog.min.css --compress"
+    "build:css": "lessc less/clean-blog.less css/clean-blog.min.css --compress",
+    "build:js": "terser js/clean-blog.js -o js/clean-blog.min.js --compress --mangle --comments false"
   },
   "devDependencies": {
-    "less": "4.9.0"
+    "less": "4.9.0",
+    "terser": "5.50.0"
   }
 }
