@@ -1,0 +1,38 @@
+---
+layout: page
+title: "Archivo"
+subtitle: "Todos los artículos publicados, año a año"
+description: "Archivo cronológico completo del blog: todos los artículos publicados desde 2017, agrupados por año."
+header-img: "img/tags-bg.jpg"
+---
+{% comment %}
+  Mismo filtro que usan index.html y post.html: descarta los stubs de
+  redirección (layout: redirected, hide_from_home: true) para listar solo
+  artículos reales.
+{% endcomment %}
+{% assign visible_posts = site.posts | where_exp: "p", "p.hide_from_home != true" %}
+{% assign posts_by_year = visible_posts | group_by_exp: "post", "post.date | date: '%Y'" %}
+{% assign meses = "enero,febrero,marzo,abril,mayo,junio,julio,agosto,septiembre,octubre,noviembre,diciembre" | split: "," %}
+
+{% comment %}
+  Igual patrón que el botón de tags.html: oculto de partida y lo muestra
+  clean-blog.js, para que sin JavaScript no quede un control muerto.
+{% endcomment %}
+<button type="button" class="archivo-toggle" aria-expanded="false" hidden>Desplegar todos los años</button>
+
+{% for grupo in posts_by_year %}
+{% assign cuenta = grupo.items | size %}
+<details class="archivo-anio" id="{{ grupo.name }}">
+    <summary class="archivo-cabecera">
+        <h2 class="tags archivo-titulo">{{ grupo.name }}</h2>
+        <span class="archivo-cuenta">{{ cuenta }}<span class="sr-only"> {% if cuenta == 1 %}artículo{% else %}artículos{% endif %}</span></span>
+    </summary>
+    <ul class="archivo-lista">
+        {% for post in grupo.items %}
+        {% assign month_index = post.date | date: "%-m" | minus: 1 %}
+        <li><span class="archivo-fila"><span class="archivo-fecha">{{ post.date | date: "%-d" }} de {{ meses[month_index] }}</span> <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></span></li>
+        {% endfor %}
+    </ul>
+</details>
+{% endfor %}
+<p>&nbsp;</p>

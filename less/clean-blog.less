@@ -406,6 +406,255 @@ hr.small {
 	text-transform: capitalize;
 }
 
+// Índice de materias (tags.html)
+//
+// Cada materia es un <details> plegado. La página listaba 187 entradas para 127
+// artículos —un mismo artículo puede estar clasificado en varias materias— y esa
+// longitud impedía justo lo que un índice tiene que dar: la foto del volumen de
+// cada materia de un vistazo. Plegada mide 2.429px en lugar de 9.649px.
+
+// Despliega y pliega las 20 materias de una vez. Lo muestra clean-blog.js, que
+// además le cambia la etiqueta y el aria-expanded; en el HTML va con el atributo
+// hidden. Es un <button> porque acciona algo en la propia página en lugar de
+// navegar, pero se pinta como un enlace: aquí no hay ningún otro botón del que
+// pudiera heredar aspecto (el módulo forms de Bootstrap está desactivado).
+//
+// Sin "display" a propósito: el valor por defecto de un botón ya es
+// inline-block, y declararlo aquí ganaría al "display: none" que el navegador
+// aplica por el atributo hidden, con lo que el control aparecería también sin
+// JavaScript.
+.materias-toggle {
+	.sans-serif;
+	font-size: 17px;
+	font-weight: 700;
+	color: @brand-primary;
+	background: none;
+	border: 0;
+	// Sube el área táctil de 21px a 37px (WCAG 2.2, SC 2.5.8 pide 24px).
+	padding: 8px 0;
+	margin: 0 0 10px;
+	text-decoration: underline;
+	text-underline-offset: 3px;
+	cursor: pointer;
+
+	&:hover,
+	&:focus {
+		color: @gray-dark;
+	}
+}
+
+.materia {
+	border-bottom: 1px solid @gray-light;
+	// La cabecera del sitio se queda fija a partir de 1170px
+	// (.navbar-custom.is-fixed), así que sin esto un salto por ancla dejaría el
+	// título de la materia tapado por el menú.
+	scroll-margin-top: 80px;
+
+	> .materia-cabecera {
+		display: flex;
+		align-items: center;
+		gap: 14px;
+		padding: 14px 0;
+		cursor: pointer;
+		// El triángulo lo dibuja ::before. Con display:flex el marcador nativo ya
+		// desaparece en Chrome y Firefox; las otras dos reglas son para Safari.
+		list-style: none;
+
+		&::-webkit-details-marker {
+			display: none;
+		}
+
+		// Indicador de plegado. Es un componente de interfaz, no decoración, así
+		// que su color necesita 3:1 sobre blanco (WCAG 2, SC 1.4.11):
+		// @brand-primary da 4,55:1. Cambia de forma sin transición, para no
+		// tener que contemplarlo en el bloque de movimiento reducido del final.
+		&::before {
+			content: "";
+			flex: 0 0 auto;
+			width: 0;
+			height: 0;
+			border-top: 6px solid transparent;
+			border-bottom: 6px solid transparent;
+			border-left: 9px solid @brand-primary;
+		}
+	}
+
+	&[open] > .materia-cabecera::before {
+		border-top: 9px solid @brand-primary;
+		border-bottom: 0;
+		border-left: 6px solid transparent;
+		border-right: 6px solid transparent;
+	}
+
+	// El selector va anidado a propósito, para ganar en especificidad a
+	// "article, .page-content h2", que fija la escala de encabezados del cuerpo
+	// (28px, y 36px a partir de 768px). Aquí el h2 no encabeza una sección de un
+	// texto: es la fila de un índice, y a 36px veinte filas dejan de leerse como
+	// una lista. Un ".materia-titulo" suelto perdería esa cascada.
+	> .materia-cabecera > .materia-titulo {
+		flex: 1 1 auto;
+		font-size: 24px;
+		line-height: 1.3;
+		margin: 0;
+
+		@media only screen and (max-width: 767px) {
+			font-size: 20px;
+		}
+	}
+
+	.materia-cuenta {
+		.sans-serif;
+		flex: 0 0 auto;
+		font-size: 16px;
+		font-weight: 700;
+		// 4,61:1 sobre blanco. Ver el comentario de variables.less.
+		color: @gray;
+		white-space: nowrap;
+	}
+
+	.materia-posts {
+		margin: 0 0 24px;
+		padding-left: 44px;
+
+		li {
+			line-height: 1.4;
+			margin-bottom: 8px;
+		}
+
+		@media only screen and (max-width: 767px) {
+			padding-left: 24px;
+		}
+	}
+}
+
+// Archivo cronológico (archivo.html)
+//
+// Mismo problema que el índice de materias y misma solución: 127 artículos
+// repartidos en 10 años, con 2018 concentrando 45. Sin plegar, la página no
+// da la foto del volumen por año de un vistazo. Reutiliza el patrón visual
+// de ".materia" con nombres propios, porque agrupa años y no materias.
+
+// Ver el comentario de ".materias-toggle": mismo control, mismas razones.
+.archivo-toggle {
+	.sans-serif;
+	font-size: 17px;
+	font-weight: 700;
+	color: @brand-primary;
+	background: none;
+	border: 0;
+	padding: 8px 0;
+	margin: 0 0 10px;
+	text-decoration: underline;
+	text-underline-offset: 3px;
+	cursor: pointer;
+
+	&:hover,
+	&:focus {
+		color: @gray-dark;
+	}
+}
+
+.archivo-anio {
+	border-bottom: 1px solid @gray-light;
+	// La cabecera del sitio se queda fija a partir de 1170px
+	// (.navbar-custom.is-fixed), así que sin esto un salto por ancla dejaría
+	// el año tapado por el menú.
+	scroll-margin-top: 80px;
+
+	> .archivo-cabecera {
+		display: flex;
+		align-items: center;
+		gap: 14px;
+		padding: 14px 0;
+		cursor: pointer;
+		list-style: none;
+
+		&::-webkit-details-marker {
+			display: none;
+		}
+
+		&::before {
+			content: "";
+			flex: 0 0 auto;
+			width: 0;
+			height: 0;
+			border-top: 6px solid transparent;
+			border-bottom: 6px solid transparent;
+			border-left: 9px solid @brand-primary;
+		}
+	}
+
+	&[open] > .archivo-cabecera::before {
+		border-top: 9px solid @brand-primary;
+		border-bottom: 0;
+		border-left: 6px solid transparent;
+		border-right: 6px solid transparent;
+	}
+
+	> .archivo-cabecera > .archivo-titulo {
+		flex: 1 1 auto;
+		font-size: 24px;
+		line-height: 1.3;
+		margin: 0;
+
+		@media only screen and (max-width: 767px) {
+			font-size: 20px;
+		}
+	}
+
+	.archivo-cuenta {
+		.sans-serif;
+		flex: 0 0 auto;
+		font-size: 16px;
+		font-weight: 700;
+		color: @gray;
+		white-space: nowrap;
+	}
+
+	.archivo-lista {
+		margin: 0 0 24px;
+		padding-left: 44px;
+
+		li {
+			line-height: 1.4;
+			margin-bottom: 8px;
+		}
+
+		@media only screen and (max-width: 767px) {
+			padding-left: 24px;
+		}
+	}
+
+	// Fila fecha + título en flex, en vez de dos elementos inline sueltos: un
+	// título que hace wrap a segunda línea volvía al margen del <li>, debajo
+	// de la fecha, en lugar de alinearse con el propio inicio del título. Con
+	// flex el enlace es su propia caja de ancho fijo, y sus líneas envueltas
+	// se confinan a esa caja.
+	.archivo-fila {
+		display: flex;
+		gap: 8px;
+		align-items: baseline;
+	}
+
+	// Ancho fijo, no mínimo: con min-width cada fecha medía lo que pesaba su
+	// propio texto ("7 de febrero" vs "26 de agosto") y el título arrancaba en
+	// una columna distinta en cada fila. 8,5em cubre "10 de septiembre"
+	// (114,3px a 14px, la fecha más ancha del calendario) con margen.
+	.archivo-fecha {
+		.sans-serif;
+		flex: 0 0 auto;
+		width: 8.5em;
+		color: @gray;
+		font-size: 14px;
+		white-space: nowrap;
+	}
+
+	.archivo-fila > a {
+		flex: 1 1 auto;
+		min-width: 0;
+	}
+}
+
 .caption {
 	text-align: center;
 	font-size: 16px;

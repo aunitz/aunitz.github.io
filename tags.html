@@ -5,12 +5,48 @@ subtitle: "Sumario de todos los artículos publicados clasificados por materias"
 description: "Sumario de todos los artículos publicados clasificados por materias"
 header-img: "img/tags-bg.jpg"
 ---
-{% for tag in site.tags %}
-<h2 class="tags">{{ tag[0] }}</h2>
-<ul>
-    {% for post in tag[1] %}
-    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-</ul>
+{% comment %}
+	Orden alfabético de verdad. Un «site.tags | sort» a secas compara byte a
+	byte: dejaba «SEO/GEO» la primera (las mayúsculas van antes que las
+	minúsculas) y «Ética» la última (la É está por encima de la z). Aquí se
+	ordena por el slug de cada materia, que «slugify: 'latin'» devuelve en
+	minúsculas y sin tildes, y que además es el id del ancla: se calcula una vez
+	y sirve para las dos cosas.
+
+	Empaquetar «slug|nombre» en una cadena y trocearla después es la manera de
+	ordenar por una clave derivada en Liquid, que no tiene sort_by. Los
+	separadores «|» y «#» no aparecen en ningún nombre de materia.
+{% endcomment %}
+{% assign indice = "" %}
+{% for materia in site.tags %}
+{% assign slug = materia[0] | slugify: 'latin' %}
+{% assign indice = indice | append: slug | append: '|' | append: materia[0] | append: '#' %}
 {% endfor %}
-<p>&nbsp;</p>
+{% assign materias = indice | split: '#' | sort %}
+
+{% comment %}
+	Va oculto de partida y lo muestra clean-blog.js: sin JavaScript sería un
+	control muerto, y con el atributo hidden tampoco deja hueco en blanco. Su
+	razón de ser es Ctrl+F, que en varios navegadores no encuentra el texto que
+	hay dentro de un <details> plegado.
+{% endcomment %}
+<button type="button" class="materias-toggle" aria-expanded="false" hidden>Desplegar todas las materias</button>
+
+{% for entrada in materias %}
+{% assign partes = entrada | split: '|' %}
+{% assign slug = partes[0] %}
+{% assign nombre = partes[1] %}
+{% assign posts = site.tags[nombre] %}
+{% assign cuenta = posts | size %}
+<details class="materia" id="{{ slug }}">
+	<summary class="materia-cabecera">
+		<h2 class="tags materia-titulo">{{ nombre }}</h2>
+		<span class="materia-cuenta">{{ cuenta }}<span class="sr-only"> {% if cuenta == 1 %}artículo{% else %}artículos{% endif %}</span></span>
+	</summary>
+	<ul class="materia-posts">
+		{% for post in posts %}
+		<li><a href="{{ post.url }}">{{ post.title }}</a></li>
+		{% endfor %}
+	</ul>
+</details>
+{% endfor %}
