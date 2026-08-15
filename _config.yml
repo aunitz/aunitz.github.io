@@ -1,13 +1,13 @@
 # Site settings
-title: Aunitz Giménez Mendiburu - Consultor y director de proyectos digitales
+title: Aunitz Giménez Mendiburu - Consultor UX y director de proyectos digitales
 title_short: "Aunitz Giménez Mendiburu | UX y proyectos digitales"
 subtitle: Aunitz Giménez
 header-img: img/home-bg.webp
 copyright_name: Aunitz Giménez Mendiburu
 author: Aunitz Giménez
-author_job_title: Consultor y director de proyectos digitales
+author_job_title: Consultor UX y director de proyectos digitales
 author_logo: img/aunitz-gimenez-mendiburu.webp
-author_description: "Consultor y director de proyectos digitales, especialista en UX y accesibilidad. Ayudo a empresas e instituciones a crear productos y servicios digitales que conectan eficazmente con sus usuarios."
+author_description: "Consultor UX y director de proyectos digitales, especialista en usabilidad y accesibilidad. Ayudo a empresas e instituciones a crear productos y servicios digitales que conectan eficazmente con sus usuarios."
 og_image_index: img/og-image.jpg
 baseurl: ""
 url: "https://www.aunitz.net"
