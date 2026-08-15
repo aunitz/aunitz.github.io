@@ -851,6 +851,82 @@ article,
 	}
 }
 
+// Presentación de la portada (index.html)
+//
+// Va debajo de la cabecera y antes del listado, no DENTRO de .intro-header, y
+// es una decisión deliberada: allí el texto va en blanco directamente sobre la
+// foto, sin velo ni sombra, así que el contraste depende de la imagen y una
+// frase larga en cuerpo pequeño sería lo primero en fallar. Aquí va en negro
+// sobre blanco y el ratio no depende de la cabecera que haya puesta.
+//
+// El titular («Aunitz Giménez») y el subtítulo («Consultor y director de
+// proyectos digitales») dicen quién es, no qué se va a encontrar quien llega
+// por primera vez; de eso se ocupan estas dos líneas.
+.home-intro {
+	margin: 0 0 30px;
+}
+
+.home-intro-lead {
+	font-size: 23px;
+	line-height: 1.45;
+	margin: 0;
+}
+
+.home-intro-link {
+	.sans-serif;
+	font-size: 18px;
+	font-weight: 700;
+	margin: 18px 0 0;
+
+	// El subrayado lo lleva la etiqueta, no el enlace entero: si lo llevara el
+	// <a> se prolongaría bajo la flecha y bajo el hueco que la separa.
+	a {
+		color: @brand-primary;
+		text-decoration: none;
+		// Solo para agrandar el área táctil: sin él la caja del enlace mide
+		// 24px de alto, el mínimo exacto de WCAG 2.2 (SC 2.5.8, AA), y en el
+		// móvil se falla el toque con facilidad. Al ser un elemento inline el
+		// relleno vertical no altera la altura de línea ni desplaza nada; solo
+		// agranda la zona sensible, hasta 36px.
+		padding: 6px 0;
+
+		// Es un enlace de navegación permanente, no una referencia dentro de un
+		// texto: el morado de ".container a:visited" lo dejaría descolorido
+		// para siempre en la portada de quien ya lo ha pulsado una vez. Mismo
+		// criterio que el pager y el pie.
+		&:visited {
+			color: @brand-primary;
+		}
+		&:hover,
+		&:focus {
+			color: @gray-dark;
+		}
+		&:hover .home-intro-arrow,
+		&:focus .home-intro-arrow {
+			transform: translateX(5px);
+		}
+	}
+}
+
+.home-intro-arrow {
+	display: inline-block;
+	// El margen sustituye al espacio en blanco del marcado, que se ha quitado
+	// para que el subrayado de la etiqueta no lo arrastre.
+	margin-right: 12px;
+	transition: transform 0.2s ease;
+}
+
+.home-intro-label {
+	text-decoration: underline;
+	text-underline-offset: 3px;
+}
+
+@media only screen and (max-width: 767px) {
+	.home-intro-lead {
+		font-size: 20px;
+	}
+}
+
 // Movimiento reducido (WCAG 2.3.3, nivel AAA)
 //
 // Quien tenga activado «Reducir movimiento» en su sistema operativo (macOS,
@@ -880,6 +956,11 @@ article,
 
 	// Flecha de «También te puede interesar» al pasar el ratón.
 	.related-posts-arrow {
+		transition: none;
+	}
+
+	// Flecha del enlace al índice de materias en la portada.
+	.home-intro-arrow {
 		transition: none;
 	}
 

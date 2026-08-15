@@ -5,6 +5,22 @@ description: "Dirección de proyectos digitales y consultoría tecnológica. Ayu
 home-page: yes
 ---
 
+{% comment %}
+  Presentación de la portada. Solo en la página 1: en las siguientes el
+  visitante ya está paginando el archivo y la frase sobraría.
+{% endcomment %}
+{% if paginator.page == nil or paginator.page == 1 %}
+<div class="home-intro">
+    <p class="home-intro-lead">Escribo sobre experiencia de usuario, usabilidad, accesibilidad e inteligencia artificial desde 2017.</p>
+    <p class="home-intro-link">
+        <a href="{{ '/tags/' | prepend: site.baseurl | replace: '//', '/' }}">
+            <span class="home-intro-arrow" aria-hidden="true">&rarr;</span><span class="home-intro-label">Explora el índice de materias</span>
+        </a>
+    </p>
+</div>
+<hr>
+{% endif %}
+
 {% for post in paginator.posts %}
 {% unless post.hide_from_home or post.layout == "redirected" %}
 <div class="post-preview">
