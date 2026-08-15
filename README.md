@@ -43,15 +43,26 @@ bundle exec jekyll serve --incremental
 7. Levanta el servidor local de Jekyll.
 8. *(Opcional)* Limpiar antes de volver a generar: `bundle exec jekyll clean`.
 
-## Compilar LESS manualmente en VS Code
-1. Guarda el archivo `less/clean-blog.less`.
-2. Pulsa `Ctrl+Shift+P`.
-3. Escribe `Compile LESS to CSS` y selecciona ese comando.
+## Compilar LESS
+
+`less/clean-blog.less` ya no se compila desde el editor (se dejó de usar la
+extensión Easy LESS de VS Code). Es Claude Code quien recompila el fichero
+cuando hace falta, con el `lessc` local del proyecto:
+
+```
+npm install   # una vez, instala less/ en node_modules
+npm run build:css
+```
+
+Ese script ejecuta `lessc less/clean-blog.less css/clean-blog.min.css --compress`,
+el mismo modo de compresión nativa de less.js que usaba Easy LESS (no el plugin
+`less-plugin-clean-css`: reescribe el fichero entero — hex a minúsculas, `white`
+→ `#fff`, selectores reordenados — y generaría un diff ajeno al cambio real).
 
 Los parciales (`variables.less`, `mixins.less`, `fonts.less`, `icons.less`) no se
 compilan por separado: se importan desde `clean-blog.less` y acaban dentro de
-`css/clean-blog.min.css`. Guardar cualquiera de ellos recompila el fichero
-principal, que es el que está configurado como `main` en `.vscode/settings.json`.
+`css/clean-blog.min.css`. Tocar cualquiera de ellos exige recompilar el fichero
+principal con el comando de arriba.
 
 ## Hojas de estilo que se sirven
 
@@ -60,7 +71,7 @@ Solo dos, ambas bloqueantes en el `<head>`:
 | Fichero | Origen | Contiene |
 |---|---|---|
 | `css/bootstrap.min.css` | `bootstrap-sass/bootstrap.scss` (Live Sass Compiler) | Bootstrap 3.4.1 recortado por módulos |
-| `css/clean-blog.min.css` | `less/clean-blog.less` (Easy LESS) | Plantilla Clean Blog + `@font-face` + iconos del footer |
+| `css/clean-blog.min.css` | `less/clean-blog.less` (`npm run build:css`) | Plantilla Clean Blog + `@font-face` + iconos del footer |
 
 De Bootstrap solo se compilan los módulos que el blog usa de verdad; el resto
 están comentados en `bootstrap-sass/bootstrap.scss`. Dos avisos para el futuro:

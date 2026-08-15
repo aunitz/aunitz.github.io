@@ -1,0 +1,11 @@
+{
+  "name": "aunitz.github.io",
+  "private": true,
+  "description": "Compilación local de less/clean-blog.less a css/clean-blog.min.css. Ver la sección «Compilación CSS» de CLAUDE.md.",
+  "scripts": {
+    "build:css": "lessc less/clean-blog.less css/clean-blog.min.css --compress"
+  },
+  "devDependencies": {
+    "less": "4.9.0"
+  }
+}

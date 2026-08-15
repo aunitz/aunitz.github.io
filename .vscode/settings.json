@@ -1,14 +1,8 @@
 {
-    // Compilación de los estilos LESS del tema Clean Blog (StartBootstrap)
-    // Extensión requerida: Easy LESS
-    // Entrada: less/clean-blog.less → Salida: css/clean-blog.min.css
-    // Nota: ${workspaceRoot} está deprecated; el equivalente moderno es ${workspaceFolder}
-    "less.compile": {
-        "compress": true,       // Genera CSS minificado
-        "sourceMap": false,     // Sin source maps en producción
-        "main": "${workspaceFolder}\\less\\clean-blog.less",
-        "out": "${workspaceFolder}\\css\\clean-blog.min.css"
-    },
+    // El LESS del tema Clean Blog (less/clean-blog.less → css/clean-blog.min.css)
+    // ya no se compila desde el editor. Ver la sección «Compilación CSS» de
+    // CLAUDE.md: es Claude Code quien ejecuta `npm run build:css` cuando hace
+    // falta, con el `lessc` local de package.json.
 
     // Compilación de los estilos SCSS de Bootstrap (bootstrap-sass/)
     // Extensión requerida: Live Sass Compiler (v6+)
