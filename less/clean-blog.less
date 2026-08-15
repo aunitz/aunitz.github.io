@@ -413,11 +413,34 @@ hr.small {
 // longitud impedía justo lo que un índice tiene que dar: la foto del volumen de
 // cada materia de un vistazo. Plegada mide 2.429px en lugar de 9.649px.
 
-// Las tres cifras (artículos, materias y entradas) van en la entradilla para que
-// la diferencia entre 127 y 187 se lea como lo que es y no como un descuadre.
-.tags-intro {
-	font-size: 19px;
-	margin: 0 0 30px;
+// Despliega y pliega las 20 materias de una vez. Lo muestra clean-blog.js, que
+// además le cambia la etiqueta y el aria-expanded; en el HTML va con el atributo
+// hidden. Es un <button> porque acciona algo en la propia página en lugar de
+// navegar, pero se pinta como un enlace: aquí no hay ningún otro botón del que
+// pudiera heredar aspecto (el módulo forms de Bootstrap está desactivado).
+//
+// Sin "display" a propósito: el valor por defecto de un botón ya es
+// inline-block, y declararlo aquí ganaría al "display: none" que el navegador
+// aplica por el atributo hidden, con lo que el control aparecería también sin
+// JavaScript.
+.materias-toggle {
+	.sans-serif;
+	font-size: 17px;
+	font-weight: 700;
+	color: @brand-primary;
+	background: none;
+	border: 0;
+	// Sube el área táctil de 21px a 37px (WCAG 2.2, SC 2.5.8 pide 24px).
+	padding: 8px 0;
+	margin: 0 0 10px;
+	text-decoration: underline;
+	text-underline-offset: 3px;
+	cursor: pointer;
+
+	&:hover,
+	&:focus {
+		color: @gray-dark;
+	}
 }
 
 .materia {

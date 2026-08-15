@@ -140,4 +140,37 @@
 		sync();
 		window.addEventListener('resize', sync, { passive: true });
 	}
+
+	// ------------------------------------------------------------------
+	// Índice de materias: desplegar y plegar las 20 materias a la vez.
+	//
+	// El botón viene con el atributo hidden desde tags.html y solo se muestra
+	// aquí, para que sin JavaScript no quede un control muerto en la página.
+	//
+	// No es un adorno: con las materias plegadas, Ctrl+F no encuentra el texto
+	// que hay dentro de un <details> cerrado en varios navegadores (Chrome y
+	// Edge lo despliegan al buscar; Firefox y Safari, según la versión). Este
+	// botón devuelve la búsqueda en página, que es lo que se pierde al plegar.
+	// ------------------------------------------------------------------
+
+	var materiasToggle = document.querySelector('.materias-toggle');
+
+	if (materiasToggle) {
+		var materias = document.querySelectorAll('details.materia');
+
+		materiasToggle.hidden = false;
+
+		materiasToggle.addEventListener('click', function () {
+			// El estado lo lleva aria-expanded, así que la etiqueta visible y lo
+			// que anuncia un lector de pantalla no pueden desincronizarse.
+			var desplegar = materiasToggle.getAttribute('aria-expanded') !== 'true';
+
+			for (var j = 0; j < materias.length; j++) {
+				materias[j].open = desplegar;
+			}
+
+			materiasToggle.setAttribute('aria-expanded', desplegar ? 'true' : 'false');
+			materiasToggle.textContent = desplegar ? 'Plegar todas las materias' : 'Desplegar todas las materias';
+		});
+	}
 })();
