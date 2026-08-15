@@ -5,12 +5,37 @@ subtitle: "Sumario de todos los artículos publicados clasificados por materias"
 description: "Sumario de todos los artículos publicados clasificados por materias"
 header-img: "img/tags-bg.jpg"
 ---
-{% for tag in site.tags %}
-<h2 class="tags">{{ tag[0] }}</h2>
-<ul>
-    {% for post in tag[1] %}
-    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-</ul>
+{% comment %}
+	«articulos» filtra por layout a propósito: _posts contiene también los
+	ficheros de redirección de URLs antiguas (layout: redirected), que no tienen
+	etiquetas y no son artículos. Un «site.posts | size» a secas contaría esos
+	39 ficheros y daría una cifra falsa.
+
+	«site.tags | sort» ordena por nombre de materia. Sin el sort, Jekyll las
+	devuelve en orden de primer uso cronológico, que en pantalla parece
+	aleatorio. Es «sort» y no «sort_natural» porque aquí cada elemento es el par
+	[nombre, posts]: sort_natural llamaría a downcase sobre el par y reventaría.
+{% endcomment %}
+{% assign materias = site.tags | sort %}
+{% assign articulos = site.posts | where: "layout", "post" %}
+{% assign clasificaciones = 0 %}
+{% for materia in materias %}{% assign clasificaciones = clasificaciones | plus: materia[1].size %}{% endfor %}
+
+<p class="tags-intro">{{ articulos | size }} artículos clasificados en {{ materias | size }} materias.
+Un mismo artículo puede pertenecer a varias, así que las materias suman
+{{ clasificaciones }} entradas y no {{ articulos | size }}. Despliega la que te interese.</p>
+
+{% for materia in materias %}
+{% assign cuenta = materia[1] | size %}
+<details class="materia" id="{{ materia[0] | slugify: 'latin' }}">
+	<summary class="materia-cabecera">
+		<h2 class="tags materia-titulo">{{ materia[0] }}</h2>
+		<span class="materia-cuenta">{{ cuenta }}<span class="sr-only"> {% if cuenta == 1 %}artículo{% else %}artículos{% endif %}</span></span>
+	</summary>
+	<ul class="materia-posts">
+		{% for post in materia[1] %}
+		<li><a href="{{ post.url }}">{{ post.title }}</a></li>
+		{% endfor %}
+	</ul>
+</details>
 {% endfor %}
-<p>&nbsp;</p>
