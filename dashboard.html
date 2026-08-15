@@ -73,6 +73,29 @@ schema:        false
 {%- assign monthNums = "01,02,03,04,05,06,07,08,09,10,11,12" | split: "," -%}
 {%- assign monthNames = "Ene,Feb,Mar,Abr,May,Jun,Jul,Ago,Sep,Oct,Nov,Dic" | split: "," -%}
 
+{%- comment %} ===== HUBS DE MATERIA (colección _temas/) =====
+  Cobertura = hubs publicados / total de materias. El hueco (materias sin hub
+  todavía) se ordena por volumen con el mismo truco de empaquetado que usa
+  tags.html para su orden alfabético: aquí la clave es "999 menos el recuento"
+  para que el sort ascendente de Liquid (no tiene sort_by con criterio
+  numérico inverso) deje primero la materia más grande sin cubrir.
+{% endcomment -%}
+{%- assign hubCount = site.temas | size -%}
+{%- if totalTags > 0 -%}{%- assign hubCoverage = hubCount | times: 100 | divided_by: totalTags -%}{%- else -%}{%- assign hubCoverage = 0 -%}{%- endif -%}
+{%- assign hubTagsMask = "" -%}
+{%- for hub in site.temas -%}{%- assign hubTagsMask = hubTagsMask | append: "|" | append: hub.tag | append: "|" -%}{%- endfor -%}
+{%- assign hubGapsRaw = "" -%}
+{%- for tag in site.tags -%}
+  {%- assign nombre = tag[0] -%}
+  {%- assign needle = "|" | append: nombre | append: "|" -%}
+  {%- unless hubTagsMask contains needle -%}
+    {%- assign c = tag[1] | size -%}
+    {%- assign key = 999 | minus: c -%}
+    {%- assign hubGapsRaw = hubGapsRaw | append: key | append: "|" | append: nombre | append: " (" | append: c | append: ")" | append: "#" -%}
+  {%- endunless -%}
+{%- endfor -%}
+{%- assign hubGaps = hubGapsRaw | split: "#" | sort -%}
+
 {%- comment %} ===== SALUD: sin meta description, meta desc fuera de rango, huérfanos de enlace interno, cobertura de alt ===== {% endcomment -%}
 {%- assign postsNoDesc = 0 -%}
 {%- assign descOutOfRange = 0 -%}
@@ -243,6 +266,16 @@ schema:        false
 .hist-bars .bar-fill { display: block; height: 22px; background: #4a6fa5; border-radius: 4px; min-width: 2px; }
 .hist-bars .cnt { flex: 0 0 40px; text-align: right; font-weight: 700; color: #4a6fa5; padding-left: 10px; }
 
+/* Hubs de materia */
+.hub-items { margin: 0 0 16px; padding: 0; list-style: none; }
+.hub-items li { display: flex; justify-content: space-between; align-items: baseline;
+                 padding: 8px 0; border-bottom: 1px solid #f0f0f0; }
+.hub-items li a { font-weight: 700; color: #2c3e50; text-decoration: none; }
+.hub-items li a:hover { text-decoration: underline; }
+.hub-items-count { flex: 0 0 auto; padding-left: 12px; font-size: 13px; color: #777; white-space: nowrap; }
+.hub-gap-list { margin: 0; padding: 0; list-style: none; columns: 2; column-gap: 24px; }
+.hub-gap-list li { padding: 4px 0; font-size: 14px; color: #555; break-inside: avoid; }
+
 /* Extremos de longitud */
 .extreme-grid { display: flex; flex-wrap: wrap; margin: 0 -8px; }
 .extreme { flex: 1 1 45%; min-width: 220px; margin: 8px; padding: 16px; background: #f8f9fa;
@@ -282,6 +315,7 @@ schema:        false
 @media (max-width: 480px) {
   .kpi .kpi-num { font-size: 30px; }
   .heatmap { font-size: 11px; }
+  .hub-gap-list { columns: 1; }
 }
 </style>
 
@@ -331,6 +365,34 @@ schema:        false
       <span class="h-note">{% include miles.html n=altCount %} de {% include miles.html n=imgInPosts %}. Accesibilidad.</span>
     </div>
   </div>
+
+  {%- comment %} ==================== HUBS DE MATERIA ==================== {% endcomment -%}
+  <h2>Hubs de materia</h2>
+  <div class="kpi-grid">
+    <div class="kpi kpi-primary"><span class="kpi-num">{{ hubCount }}</span><span class="kpi-label">Hubs publicados</span></div>
+    <div class="kpi"><span class="kpi-num">{{ hubCoverage }}%</span><span class="kpi-label">Cobertura de materias</span></div>
+  </div>
+  {%- if site.temas.size > 0 -%}
+  <ul class="hub-items">
+    {%- assign sortedHubs = site.temas | sort: "title" -%}
+    {%- for hub in sortedHubs -%}
+    {%- assign c = site.tags[hub.tag] | size -%}
+    <li>
+      <a href="{{ hub.url | relative_url }}">{{ hub.title }}</a>
+      <span class="hub-items-count">{{ c }} {% if c == 1 %}artículo{% else %}artículos{% endif %}</span>
+    </li>
+    {%- endfor -%}
+  </ul>
+  {%- endif -%}
+  {%- if hubGaps.size > 0 -%}
+  <p class="dash-note">Materias sin hub todavía, de más a menos artículos:</p>
+  <ul class="hub-gap-list">
+    {%- for g in hubGaps -%}
+    {%- assign parts = g | split: "|" -%}
+    <li>{{ parts[1] }}</li>
+    {%- endfor -%}
+  </ul>
+  {%- endif -%}
 
   {%- comment %} ==================== CUERPO DEL BLOG ==================== {% endcomment -%}
   <h2>Cuerpo del blog</h2>
