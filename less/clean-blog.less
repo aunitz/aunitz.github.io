@@ -625,10 +625,33 @@ hr.small {
 		}
 	}
 
+	// Fila fecha + título en flex, en vez de dos elementos inline sueltos: un
+	// título que hace wrap a segunda línea volvía al margen del <li>, debajo
+	// de la fecha, en lugar de alinearse con el propio inicio del título. Con
+	// flex el enlace es su propia caja de ancho fijo, y sus líneas envueltas
+	// se confinan a esa caja.
+	.archivo-fila {
+		display: flex;
+		gap: 8px;
+		align-items: baseline;
+	}
+
+	// Ancho fijo, no mínimo: con min-width cada fecha medía lo que pesaba su
+	// propio texto ("7 de febrero" vs "26 de agosto") y el título arrancaba en
+	// una columna distinta en cada fila. 8,5em cubre "10 de septiembre"
+	// (114,3px a 14px, la fecha más ancha del calendario) con margen.
 	.archivo-fecha {
 		.sans-serif;
+		flex: 0 0 auto;
+		width: 8.5em;
 		color: @gray;
 		font-size: 14px;
+		white-space: nowrap;
+	}
+
+	.archivo-fila > a {
+		flex: 1 1 auto;
+		min-width: 0;
 	}
 }
 

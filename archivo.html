@@ -30,7 +30,7 @@ header-img: "img/tags-bg.jpg"
     <ul class="archivo-lista">
         {% for post in grupo.items %}
         {% assign month_index = post.date | date: "%-m" | minus: 1 %}
-        <li><span class="archivo-fecha">{{ post.date | date: "%-d" }} de {{ meses[month_index] }}</span> <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
+        <li><span class="archivo-fila"><span class="archivo-fecha">{{ post.date | date: "%-d" }} de {{ meses[month_index] }}</span> <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></span></li>
         {% endfor %}
     </ul>
 </details>
