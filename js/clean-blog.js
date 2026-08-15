@@ -173,4 +173,28 @@
 			materiasToggle.textContent = desplegar ? 'Plegar todas las materias' : 'Desplegar todas las materias';
 		});
 	}
+
+	// ------------------------------------------------------------------
+	// Archivo cronológico: desplegar y plegar los años a la vez.
+	// Mismo patrón que el índice de materias de arriba, mismas razones.
+	// ------------------------------------------------------------------
+
+	var archivoToggle = document.querySelector('.archivo-toggle');
+
+	if (archivoToggle) {
+		var anios = document.querySelectorAll('details.archivo-anio');
+
+		archivoToggle.hidden = false;
+
+		archivoToggle.addEventListener('click', function () {
+			var desplegar = archivoToggle.getAttribute('aria-expanded') !== 'true';
+
+			for (var k = 0; k < anios.length; k++) {
+				anios[k].open = desplegar;
+			}
+
+			archivoToggle.setAttribute('aria-expanded', desplegar ? 'true' : 'false');
+			archivoToggle.textContent = desplegar ? 'Plegar todos los años' : 'Desplegar todos los años';
+		});
+	}
 })();
