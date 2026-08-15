@@ -538,58 +538,16 @@ hr.small {
 	// .materia-posts para que la tarjeta arranque en la misma columna que la
 	// lista, dentro del panel desplegado.
 	//
-	// Va en tarjeta (fondo, borde de acento, flecha animada) y no como enlace
-	// suelto: en texto plano se leía como una entrada más de la lista de abajo,
-	// y es justo lo contrario, la puerta de salida hacia la página pilar de la
-	// materia. Mismo patrón que ".home-intro-link" en portada: la flecha lleva
-	// el color de marca y solo la etiqueta de texto va subrayada, para que el
-	// subrayado no se prolongue bajo el hueco que las separa.
-	.materia-hub {
-		margin: 0 0 18px;
+	// El componente en sí (".hub-tarjeta") va fuera de este bloque, porque se
+	// reutiliza tal cual al pie de cada post (_layouts/post.html): aquí solo
+	// el sangrado propio del panel, para que la tarjeta arranque en la misma
+	// columna que la lista de abajo.
+	.hub-tarjeta {
 		padding-left: 44px;
 
 		@media only screen and (max-width: 767px) {
 			padding-left: 24px;
 		}
-
-		a {
-			.sans-serif;
-			display: inline-flex;
-			align-items: center;
-			gap: 12px;
-			font-size: 17px;
-			font-weight: 700;
-			color: @brand-primary;
-			text-decoration: none;
-			background: fade(@brand-primary, 8%);
-			border-left: 3px solid @brand-primary;
-			padding: 12px 20px;
-
-			// Enlace de navegación permanente, no una referencia dentro de un
-			// texto: mismo criterio que ".home-intro-link", para que el morado
-			// de visitado no lo deje descolorido para siempre.
-			&:visited {
-				color: @brand-primary;
-			}
-			&:hover,
-			&:focus {
-				background: fade(@brand-primary, 16%);
-				color: @gray-dark;
-			}
-			&:hover .materia-hub-arrow,
-			&:focus .materia-hub-arrow {
-				transform: translateX(5px);
-			}
-		}
-	}
-
-	.materia-hub-arrow {
-		transition: transform 0.2s ease;
-	}
-
-	.materia-hub-texto {
-		text-decoration: underline;
-		text-underline-offset: 3px;
 	}
 
 	.materia-posts {
@@ -791,7 +749,7 @@ hr.small {
 		padding: 6px 0;
 
 		// Enlaces de navegación permanente, no referencias dentro de un texto:
-		// mismo criterio que ".home-intro-link" y ".materia-hub", para que el
+		// mismo criterio que ".home-intro-link" y ".hub-tarjeta", para que el
 		// morado de visitado no los deje descoloridos para siempre.
 		&:visited {
 			color: @gray-dark;
@@ -805,17 +763,64 @@ hr.small {
 	}
 }
 
-// Línea «Materias:» al pie de cada post, con el enlace de vuelta a su hub.
-.post-materias {
-	.sans-serif;
-	font-size: 16px;
-	margin-top: 30px;
+// Enlace en tarjeta a un hub de materia (colección _temas/): fondo tintado
+// con el color de marca, borde de acento y flecha animada al pasar el ratón.
+// Se usa tal cual en dos sitios —el índice de materias (".materia", arriba,
+// que solo le añade el sangrado del panel) y el pie de cada post
+// (".post-materias", debajo)— así que va como componente suelto y no
+// duplicado: en texto plano se leía como una entrada más de cualquier otra
+// lista, y es justo lo contrario, la puerta de salida hacia la página pilar
+// de la materia. Mismo patrón que ".home-intro-link" en portada: la flecha
+// lleva el color de marca y solo la etiqueta de texto va subrayada, para que
+// el subrayado no se prolongue bajo el hueco que las separa.
+.hub-tarjeta {
+	margin: 0 0 18px;
+
+	a {
+		.sans-serif;
+		display: inline-flex;
+		align-items: center;
+		gap: 12px;
+		font-size: 17px;
+		font-weight: 700;
+		color: @brand-primary;
+		text-decoration: none;
+		background: fade(@brand-primary, 8%);
+		border-left: 3px solid @brand-primary;
+		padding: 12px 20px;
+
+		// Enlace de navegación permanente, no una referencia dentro de un
+		// texto: mismo criterio que ".home-intro-link", para que el morado
+		// de visitado no lo deje descolorido para siempre.
+		&:visited {
+			color: @brand-primary;
+		}
+		&:hover,
+		&:focus {
+			background: fade(@brand-primary, 16%);
+			color: @gray-dark;
+		}
+		&:hover .hub-tarjeta-arrow,
+		&:focus .hub-tarjeta-arrow {
+			transform: translateX(5px);
+		}
+	}
 }
 
-.post-materias-rotulo {
-	font-weight: 700;
-	// 4,61:1 sobre blanco. Ver el comentario de variables.less.
-	color: @gray;
+.hub-tarjeta-arrow {
+	transition: transform 0.2s ease;
+}
+
+.hub-tarjeta-texto {
+	text-decoration: underline;
+	text-underline-offset: 3px;
+}
+
+// Envuelve las tarjetas de materia al pie de cada post: separación del
+// cuerpo del artículo. El espaciado entre tarjetas cuando un post tiene más
+// de una materia con hub lo lleva ".hub-tarjeta" (margin-bottom), no esto.
+.post-materias {
+	margin-top: 30px;
 }
 
 .caption {
@@ -1393,8 +1398,9 @@ article,
 		transition: none;
 	}
 
-	// Flecha de la tarjeta que enlaza al hub, en el índice de materias.
-	.materia-hub-arrow {
+	// Flecha de la tarjeta que enlaza a un hub de materia (índice de materias
+	// y pie de cada post).
+	.hub-tarjeta-arrow {
 		transition: none;
 	}
 

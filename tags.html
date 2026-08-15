@@ -55,9 +55,9 @@ header-img: "img/tags-bg.jpg"
 		<span class="materia-cuenta">{{ cuenta }}<span class="sr-only"> {% if cuenta == 1 %}artículo{% else %}artículos{% endif %}</span></span>
 	</summary>
 	{% if hub %}
-	<p class="materia-hub">
+	<p class="hub-tarjeta">
 		<a href="{{ hub.url | prepend: site.baseurl }}">
-			<span class="materia-hub-arrow" aria-hidden="true">&rarr;</span><span class="materia-hub-texto">Guía completa: {{ hub.title }}</span>
+			<span class="hub-tarjeta-arrow" aria-hidden="true">&rarr;</span><span class="hub-tarjeta-texto">Guía completa: {{ hub.title }}</span>
 		</a>
 	</p>
 	{% endif %}

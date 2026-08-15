@@ -62,8 +62,11 @@ layout: default
 				{{ content }}
 
                 {% comment %}
-                  Materias del post: enlace de vuelta al hub de cada etiqueta
-                  que tenga uno (colección _temas/).
+                  Materias del post: una tarjeta ".hub-tarjeta" de vuelta al
+                  hub de cada etiqueta que tenga uno (colección _temas/).
+                  Mismo componente que en tags.html; ver el comentario de
+                  ".hub-tarjeta" en clean-blog.less para el porqué de la
+                  tarjeta y no un enlace suelto.
 
                   Es lo que cierra el circuito del clúster. El hub ya enlaza
                   hacia sus artículos; sin este enlace de vuelta los 127 posts
@@ -72,24 +75,27 @@ layout: default
 
                   Las etiquetas que aún no tienen hub no pintan nada, así que
                   esto convive con la migración a medias: hoy solo dos materias
-                  lo tienen.
-
-                  Se cuenta primero para poder escoger entre «Materia» y
-                  «Materias», y el contador "i" es lo que separa con comas sin
-                  necesidad de forloop.last (que aquí no vale: el bucle recorre
-                  todas las etiquetas, tengan hub o no).
+                  lo tienen. El "if tiene_hub" evita un ".post-materias" vacío
+                  (con su margen superior) en el resto de posts.
                 {% endcomment %}
-                {% assign n_hubs = 0 %}
+                {% assign tiene_hub = false %}
                 {% for etiqueta in page.tags %}
-                    {% assign hub = site.temas | where: "tag", etiqueta | first %}
-                    {% if hub %}{% assign n_hubs = n_hubs | plus: 1 %}{% endif %}
+                    {% assign hub_check = site.temas | where: "tag", etiqueta | first %}
+                    {% if hub_check %}{% assign tiene_hub = true %}{% endif %}
                 {% endfor %}
-                {% if n_hubs > 0 %}
-                <p class="post-materias">
-                    <span class="post-materias-rotulo">{% if n_hubs == 1 %}Materia{% else %}Materias{% endif %}:</span>
-                    {% assign i = 0 %}
-                    {% for etiqueta in page.tags %}{% assign hub = site.temas | where: "tag", etiqueta | first %}{% if hub %}{% assign i = i | plus: 1 %}{% if i > 1 %}, {% endif %}<a href="{{ hub.url | prepend: site.baseurl }}">{{ hub.title }}</a>{% endif %}{% endfor %}
-                </p>
+                {% if tiene_hub %}
+                <div class="post-materias">
+                    {% for etiqueta in page.tags %}
+                    {% assign hub = site.temas | where: "tag", etiqueta | first %}
+                    {% if hub %}
+                    <p class="hub-tarjeta">
+                        <a href="{{ hub.url | prepend: site.baseurl }}">
+                            <span class="hub-tarjeta-arrow" aria-hidden="true">&rarr;</span><span class="hub-tarjeta-texto">Guía completa: {{ hub.title }}</span>
+                        </a>
+                    </p>
+                    {% endif %}
+                    {% endfor %}
+                </div>
                 {% endif %}
 
                 {% comment %}
