@@ -4,11 +4,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    {% comment %}
+      Mismo cálculo que _layouts/page.html: si la página no fija su propio
+      header-img y es un hub de materia (colección _temas/, lleva "tag" en el
+      frontmatter), hereda el del primer post de esa materia. Se resuelve aquí
+      arriba porque hace falta dos veces más abajo: en el preload de la LCP y
+      en el og:image de Open Graph.
+    {% endcomment %}
+    {% assign header_img = page.header-img %}
+    {% if header_img == nil and page.tag %}
+    {% assign primer_post_tema = site.tags[page.tag] | first %}
+    {% assign header_img = primer_post_tema.header-img %}
+    {% endif %}
+
     <!-- Preload LCP image -->
     {% if page.home-page %}
     <link rel="preload" as="image" fetchpriority="high" href="{{ site.baseurl }}/{{ site.header-img }}">
-    {% elsif page.header-img %}
-    <link rel="preload" as="image" fetchpriority="high" href="{{ site.baseurl }}/{{ page.header-img }}">
+    {% elsif header_img %}
+    <link rel="preload" as="image" fetchpriority="high" href="{{ site.baseurl }}/{{ header_img }}">
     {% endif %}
 
     <!-- Preconnect a orígenes de analítica de terceros -->
@@ -57,7 +70,7 @@
     {% if _img_height_parts.size > 1 %}{% assign _img_height = _img_height_parts[1] | split: '"' | first %}{% endif %}
     {% endif %}
     {% endif %}
-    {% assign post_image = _img_src | default: page.header-img %}
+    {% assign post_image = _img_src | default: header_img %}
 
     <!-- Open Graph Protocol (OGP) -->
     <meta property="og:type" content="{% if page.layout == 'post' %}article{% else %}website{% endif %}">

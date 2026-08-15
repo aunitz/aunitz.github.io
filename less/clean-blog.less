@@ -265,18 +265,40 @@ hr.small {
 	.background-cover;
 	// NOTE: Background images are set within the HTML using inline CSS!
 	margin-bottom: 50px;
-	.site-heading,
-	.post-heading,
-	.page-heading {
+	.post-heading {
 		padding: 100px 0 50px;
 		color: white;
 		@media only screen and (min-width: 768px) {
 			padding: 150px 0;
 		}
 	}
+	// .site-heading (portada) y .page-heading (about.html, tags.html, los hubs
+	// de materia...) llevan alto mínimo en vez del padding de arriba: con
+	// padding a secas, la altura de la cabecera dependía de cuántas líneas
+	// ocupara el subtítulo, y "background-size: cover" reescala la MISMA
+	// imagen para llenar contenedores de distinta altura. Dos páginas con la
+	// misma foto de cabecera (por ejemplo /tags/ y /archivo/) se veían con
+	// distinto nivel de zoom solo porque una tiene el subtítulo más largo.
+	//
+	// Es min-height, no height fija: una página futura con más texto del que
+	// cabe en las medidas de hoy crece hacia abajo en vez de recortarse. Los
+	// dos valores son los que necesita el subtítulo más largo que existe hoy
+	// en el sitio (72 caracteres, en /tags/ y en el hub de la Gestalt): 3
+	// líneas a 375px, 2 líneas a partir de 768px.
 	.site-heading,
 	.page-heading {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		min-height: 450px;
+		padding: 40px 0;
+		color: white;
 		text-align: center;
+
+		@media only screen and (min-width: 768px) {
+			min-height: 510px;
+			padding: 60px 0;
+		}
 		h1 {
 			margin-top: 0;
 			// El descriptor ahora vive dentro del propio <h1> (ver más abajo
@@ -512,6 +534,64 @@ hr.small {
 		white-space: nowrap;
 	}
 
+	// Enlace al hub de la materia, cuando existe. Comparte sangrado con
+	// .materia-posts para que la tarjeta arranque en la misma columna que la
+	// lista, dentro del panel desplegado.
+	//
+	// Va en tarjeta (fondo, borde de acento, flecha animada) y no como enlace
+	// suelto: en texto plano se leía como una entrada más de la lista de abajo,
+	// y es justo lo contrario, la puerta de salida hacia la página pilar de la
+	// materia. Mismo patrón que ".home-intro-link" en portada: la flecha lleva
+	// el color de marca y solo la etiqueta de texto va subrayada, para que el
+	// subrayado no se prolongue bajo el hueco que las separa.
+	.materia-hub {
+		margin: 0 0 18px;
+		padding-left: 44px;
+
+		@media only screen and (max-width: 767px) {
+			padding-left: 24px;
+		}
+
+		a {
+			.sans-serif;
+			display: inline-flex;
+			align-items: center;
+			gap: 12px;
+			font-size: 17px;
+			font-weight: 700;
+			color: @brand-primary;
+			text-decoration: none;
+			background: fade(@brand-primary, 8%);
+			border-left: 3px solid @brand-primary;
+			padding: 12px 20px;
+
+			// Enlace de navegación permanente, no una referencia dentro de un
+			// texto: mismo criterio que ".home-intro-link", para que el morado
+			// de visitado no lo deje descolorido para siempre.
+			&:visited {
+				color: @brand-primary;
+			}
+			&:hover,
+			&:focus {
+				background: fade(@brand-primary, 16%);
+				color: @gray-dark;
+			}
+			&:hover .materia-hub-arrow,
+			&:focus .materia-hub-arrow {
+				transform: translateX(5px);
+			}
+		}
+	}
+
+	.materia-hub-arrow {
+		transition: transform 0.2s ease;
+	}
+
+	.materia-hub-texto {
+		text-decoration: underline;
+		text-underline-offset: 3px;
+	}
+
 	.materia-posts {
 		margin: 0 0 24px;
 		padding-left: 44px;
@@ -653,6 +733,89 @@ hr.small {
 		flex: 1 1 auto;
 		min-width: 0;
 	}
+}
+
+// Hubs de materia (colección _temas/)
+//
+// El listado va con el subtítulo de cada post debajo del título, y no solo con
+// el título como el archivo cronológico: aquí el listado es el cuerpo de una
+// página pilar, no un índice de consulta rápida, así que cada entrada tiene
+// que decir de qué va el artículo sin obligar a entrar.
+
+.tema-lista-titulo {
+	margin-bottom: 24px;
+}
+
+.tema-lista {
+	margin: 0 0 30px;
+	padding-left: 20px;
+
+	li {
+		margin-bottom: 16px;
+		line-height: 1.4;
+	}
+}
+
+.tema-lista-subtitulo {
+	.sans-serif;
+	display: block;
+	margin-top: 2px;
+	// 4,61:1 sobre blanco. Ver el comentario de variables.less.
+	color: @gray;
+	font-size: 17px;
+	line-height: 1.4;
+}
+
+// Pie del hub: navegación secundaria hacia el índice completo y el archivo.
+// En texto plano con un punto medio como separador se leía tan pobre como el
+// enlace al hub antes de la tarjeta: aquí van en mayúsculas con espaciado,
+// mismo tratamiento que ".related-posts-heading", y un filete superior que
+// las separa del listado como el pie de una tarjeta.
+.tema-pie {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 8px 28px;
+	margin-top: 40px;
+	padding-top: 20px;
+	border-top: 1px solid @gray-light;
+
+	a {
+		.sans-serif;
+		font-size: 15px;
+		font-weight: 800;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		color: @gray-dark;
+		text-decoration: none;
+		// Sube el área táctil de 21px a 33px (WCAG 2.2, SC 2.5.8 pide 24px).
+		padding: 6px 0;
+
+		// Enlaces de navegación permanente, no referencias dentro de un texto:
+		// mismo criterio que ".home-intro-link" y ".materia-hub", para que el
+		// morado de visitado no los deje descoloridos para siempre.
+		&:visited {
+			color: @gray-dark;
+		}
+		&:hover,
+		&:focus {
+			color: @brand-primary;
+			text-decoration: underline;
+			text-underline-offset: 3px;
+		}
+	}
+}
+
+// Línea «Materias:» al pie de cada post, con el enlace de vuelta a su hub.
+.post-materias {
+	.sans-serif;
+	font-size: 16px;
+	margin-top: 30px;
+}
+
+.post-materias-rotulo {
+	font-weight: 700;
+	// 4,61:1 sobre blanco. Ver el comentario de variables.less.
+	color: @gray;
 }
 
 .caption {
@@ -1227,6 +1390,11 @@ article,
 
 	// Flecha del enlace al índice de materias en la portada.
 	.home-intro-arrow {
+		transition: none;
+	}
+
+	// Flecha de la tarjeta que enlaza al hub, en el índice de materias.
+	.materia-hub-arrow {
 		transition: none;
 	}
 

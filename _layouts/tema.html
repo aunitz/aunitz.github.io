@@ -1,0 +1,34 @@
+---
+layout: page
+---
+{% comment %}
+  Layout de los hubs de materia (colección _temas/).
+
+  El cuerpo del fichero es el texto propio del hub: es lo que lo convierte en
+  una página pilar y no en un archivo de etiquetas, y lo que le da algo que
+  posicionar. Debajo se pinta el listado completo de la materia.
+
+  La materia se declara con "tag" en el frontmatter, con el nombre exacto de
+  la etiqueta. No se deriva del nombre del fichero porque las dos cosas son
+  independientes por diseño: el fichero se llama como la palabra clave que se
+  quiere posicionar y la etiqueta es el rótulo interno del índice.
+{% endcomment %}
+{{ content }}
+
+{% assign posts_tema = site.tags[page.tag] %}
+{% if posts_tema and posts_tema.size > 0 %}
+<h2 class="tags tema-lista-titulo">{{ page.listado_titulo | default: "Todos los artículos de esta materia" }}</h2>
+<ul class="tema-lista">
+    {% for post in posts_tema %}
+    <li>
+        <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        {% if post.subtitle %}<span class="tema-lista-subtitulo">{{ post.subtitle }}</span>{% endif %}
+    </li>
+    {% endfor %}
+</ul>
+{% endif %}
+
+<p class="tema-pie">
+    <a href="{{ '/tags/' | prepend: site.baseurl }}">Índice completo de materias</a>
+    <a href="{{ '/archivo/' | prepend: site.baseurl }}">Archivo por años</a>
+</p>

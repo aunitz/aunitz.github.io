@@ -38,11 +38,29 @@ header-img: "img/tags-bg.jpg"
 {% assign nombre = partes[1] %}
 {% assign posts = site.tags[nombre] %}
 {% assign cuenta = posts | size %}
+{% comment %}
+	Hub de la materia, si lo tiene (colección _temas/). El enlace va dentro del
+	panel y no en el <summary> a propósito: un <a> dentro del summary navega y
+	además pliega el <details>, y con teclado esa doble acción es confusa. Al
+	ir aquí, además, es lo primero que se ve al desplegar la materia.
+
+	Que quede tras un <details> plegado no le resta valor de enlace: el <a>
+	está en el DOM igual, así que se rastrea y transmite autoridad como
+	cualquier otro.
+{% endcomment %}
+{% assign hub = site.temas | where: "tag", nombre | first %}
 <details class="materia" id="{{ slug }}">
 	<summary class="materia-cabecera">
 		<h2 class="tags materia-titulo">{{ nombre }}</h2>
 		<span class="materia-cuenta">{{ cuenta }}<span class="sr-only"> {% if cuenta == 1 %}artículo{% else %}artículos{% endif %}</span></span>
 	</summary>
+	{% if hub %}
+	<p class="materia-hub">
+		<a href="{{ hub.url | prepend: site.baseurl }}">
+			<span class="materia-hub-arrow" aria-hidden="true">&rarr;</span><span class="materia-hub-texto">Guía completa: {{ hub.title }}</span>
+		</a>
+	</p>
+	{% endif %}
 	<ul class="materia-posts">
 		{% for post in posts %}
 		<li><a href="{{ post.url }}">{{ post.title }}</a></li>

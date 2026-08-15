@@ -49,6 +49,23 @@ markdown: kramdown
 #permalink: pretty
 permalink: /:title/
 paginate: 5
+
+# Hubs de materia (_temas/): páginas pilar, una por materia grande, con texto
+# propio y el listado de sus artículos. Publican en la raíz igual que los posts.
+#
+# Es una colección y no ficheros sueltos en la raíz del repo a propósito:
+# _includes/nav.html recorre site.pages y pinta cualquiera que tenga "title",
+# así que como páginas normales aparecerían todas en el menú. Las colecciones
+# no están en site.pages, así que el nav no se entera.
+#
+# El slug del fichero es el de la URL, y se elige por la palabra clave que se
+# quiere posicionar: no tiene por qué parecerse al nombre de la etiqueta, que
+# es un rótulo interno del índice. El vínculo con la etiqueta lo hace el campo
+# "tag" del frontmatter de cada hub.
+collections:
+  temas:
+    output: true
+    permalink: /:name/
 # Jekyll ignora automáticamente los archivos y directorios que empiezan por "." o "_",
 # por lo que no es necesario incluirlos en esta lista.
 exclude: ["bootstrap-sass","less","node_modules","package.json","package-lock.json","README.md","LICENSE","Gemfile","Gemfile.lock","serve.bat","CLAUDE.md","AGENTS.md"]

@@ -2,8 +2,26 @@
 layout: default
 ---
 
+{% comment %}
+  Cabecera de los hubs de materia (colección _temas/, layout "tema" que
+  delega en este): si el hub no fija su propio header-img, hereda el del
+  primer post de su materia (site.tags[page.tag] va en el mismo orden en que
+  se pintan en la página, así que "primero" es el mismo que ve quien lee).
+
+  Solo entra en juego cuando el hub NO trae header-img propio: así un hub
+  puede fijar su propia imagen a mano cuando el heredado no encaje, sin tocar
+  esta lógica. El resto de páginas que usan este layout (about.html,
+  aviso-legal.html, tags.html...) no llevan "tag" en el frontmatter, así que
+  para ellas esto no cambia nada.
+{% endcomment %}
+{% assign header_img = page.header-img %}
+{% if header_img == nil and page.tag %}
+{% assign primer_post_tema = site.tags[page.tag] | first %}
+{% assign header_img = primer_post_tema.header-img %}
+{% endif %}
+
 <!-- Page Header -->
-<header class="intro-header{% if page.profile-page %} profile-header{% endif %}" style="background-image: url('{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}')">
+<header class="intro-header{% if page.profile-page %} profile-header{% endif %}" style="background-image: url('{{ site.baseurl }}/{% if header_img %}{{ header_img }}{% else %}{{ site.header-img }}{% endif %}')">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">

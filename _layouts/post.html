@@ -62,6 +62,37 @@ layout: default
 				{{ content }}
 
                 {% comment %}
+                  Materias del post: enlace de vuelta al hub de cada etiqueta
+                  que tenga uno (colección _temas/).
+
+                  Es lo que cierra el circuito del clúster. El hub ya enlaza
+                  hacia sus artículos; sin este enlace de vuelta los 127 posts
+                  no reparten nada de autoridad interna hacia las páginas de
+                  materia, que quedarían colgando solo del índice.
+
+                  Las etiquetas que aún no tienen hub no pintan nada, así que
+                  esto convive con la migración a medias: hoy solo dos materias
+                  lo tienen.
+
+                  Se cuenta primero para poder escoger entre «Materia» y
+                  «Materias», y el contador "i" es lo que separa con comas sin
+                  necesidad de forloop.last (que aquí no vale: el bucle recorre
+                  todas las etiquetas, tengan hub o no).
+                {% endcomment %}
+                {% assign n_hubs = 0 %}
+                {% for etiqueta in page.tags %}
+                    {% assign hub = site.temas | where: "tag", etiqueta | first %}
+                    {% if hub %}{% assign n_hubs = n_hubs | plus: 1 %}{% endif %}
+                {% endfor %}
+                {% if n_hubs > 0 %}
+                <p class="post-materias">
+                    <span class="post-materias-rotulo">{% if n_hubs == 1 %}Materia{% else %}Materias{% endif %}:</span>
+                    {% assign i = 0 %}
+                    {% for etiqueta in page.tags %}{% assign hub = site.temas | where: "tag", etiqueta | first %}{% if hub %}{% assign i = i | plus: 1 %}{% if i > 1 %}, {% endif %}<a href="{{ hub.url | prepend: site.baseurl }}">{{ hub.title }}</a>{% endif %}{% endfor %}
+                </p>
+                {% endif %}
+
+                {% comment %}
                   Bloque «También te puede interesar».
                   Activo por defecto en todos los posts. Para desactivarlo en
                   uno concreto, "related: false" en su frontmatter.
