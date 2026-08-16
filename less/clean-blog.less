@@ -724,45 +724,6 @@ hr.small {
 	line-height: 1.4;
 }
 
-// Pie del hub: navegación secundaria hacia el índice completo y el archivo.
-// En texto plano con un punto medio como separador se leía tan pobre como el
-// enlace al hub antes de la tarjeta: aquí van en mayúsculas con espaciado,
-// mismo tratamiento que ".related-posts-heading", y un filete superior que
-// las separa del listado como el pie de una tarjeta.
-.tema-pie {
-	display: flex;
-	flex-wrap: wrap;
-	gap: 8px 28px;
-	margin-top: 40px;
-	padding-top: 20px;
-	border-top: 1px solid @gray-light;
-
-	a {
-		.sans-serif;
-		font-size: 15px;
-		font-weight: 800;
-		text-transform: uppercase;
-		letter-spacing: 1px;
-		color: @gray-dark;
-		text-decoration: none;
-		// Sube el área táctil de 21px a 33px (WCAG 2.2, SC 2.5.8 pide 24px).
-		padding: 6px 0;
-
-		// Enlaces de navegación permanente, no referencias dentro de un texto:
-		// mismo criterio que ".home-intro-link" y ".hub-tarjeta", para que el
-		// morado de visitado no los deje descoloridos para siempre.
-		&:visited {
-			color: @gray-dark;
-		}
-		&:hover,
-		&:focus {
-			color: @brand-primary;
-			text-decoration: underline;
-			text-underline-offset: 3px;
-		}
-	}
-}
-
 // Enlace en tarjeta a un hub de materia (colección _temas/): fondo tintado
 // con el color de marca, borde de acento y flecha animada al pasar el ratón.
 // Se usa tal cual en dos sitios —el índice de materias (".materia", arriba,
