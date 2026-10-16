@@ -1,7 +1,7 @@
 {
     // El LESS del tema Clean Blog (less/clean-blog.less → css/clean-blog.min.css)
-    // ya no se compila desde el editor. Ver la sección «Compilación CSS» de
-    // CLAUDE.md: es Claude Code quien ejecuta `npm run build:css` cuando hace
+    // ya no se compila desde el editor. Ver la sección «Compilar LESS» del
+    // README: es el agente (Claude Code) quien ejecuta `npm run build:css` cuando hace
     // falta, con el `lessc` local de package.json.
 
     // Compilación de los estilos SCSS de Bootstrap (bootstrap-sass/)

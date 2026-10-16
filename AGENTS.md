@@ -1,4 +1,4 @@
-# Instrucciones para Codex
+# Instrucciones para agentes de código
 
 ## Descripción del proyecto
 
@@ -150,7 +150,7 @@ Sobre el mensaje:
 - **Volumen:** 160+ posts desde 2017
 - **Frecuencia de publicación:** irregular
 - **SEO:** URLs limpias (`/:title/`), meta descriptions por post, OG tags para LinkedIn, sitemap y feed RSS automáticos
-- **Automatización:** existen skills para el blog en `.claude/skills/`: `publish-post-blog-aunitz` (conversión Word → HTML y creación del fichero de post con metadatos e imágenes), `republish-theconversation-aunitz` (republicación de artículos de The Conversation respetando la licencia CC) y `enlazado-interno-ultimo-post-aunitz` (mejora del enlazado interno del último post publicado)
+- **Automatización:** existen skills de Claude Code para el blog en `.claude/skills/`: `publish-post-blog-aunitz` (conversión Word → HTML y creación del fichero de post con metadatos e imágenes), `republish-theconversation-aunitz` (republicación de artículos de The Conversation respetando la licencia CC) y `enlazado-interno-ultimo-post-aunitz` (mejora del enlazado interno del último post publicado)
 - **Paginación:** 5 posts por página en portada
 - **Timezone:** Europe/Madrid
 
@@ -158,4 +158,4 @@ Sobre el mensaje:
 
 ## Nota de mantenimiento
 
-Existe un fichero gemelo `CLAUDE.md` (instrucciones para Claude Code) con contenido casi idéntico a este. Cualquier cambio en las convenciones o el stack debe replicarse en ambos ficheros para mantenerlos sincronizados.
+Este fichero es la **única fuente** de instrucciones del proyecto para todos los agentes (Codex, Claude Code, etc.). `CLAUDE.md` no duplica nada: se limita a importarlo con `@AGENTS.md`, de modo que Claude Code lo carga incluso en sesiones que no leen `AGENTS.md` por sí mismas, sin cargarlo dos veces. Cualquier cambio en las convenciones o el stack se hace **aquí**. En `CLAUDE.md` va solo lo que sea exclusivo de Claude Code, debajo del import.

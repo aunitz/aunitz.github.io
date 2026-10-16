@@ -258,7 +258,7 @@ Los agentes de Claude Code pueden tener asignados permisos sobre las herramienta
 
 Cloudflare inyecta en el borde el script `/cdn-cgi/challenge-platform/scripts/jsd/main.js` en todas las páginas del sitio. **No es código del repositorio**: se añade después de que GitHub Pages haya servido el HTML, así que no aparece ni en `_includes/head.html` ni en `js/`. Corresponde a **JavaScript Detections**, el motor de detección de bots que acompaña a Bot Fight Mode.
 
-Como Cloudflare va en modo proxy sobre `www.aunitz.net` (ver «Infraestructura: DNS y HTTPS» en `CLAUDE.md`), el script se sirve bajo el propio dominio del blog. Eso hace que las herramientas de auditoría lo atribuyan a *first party* y parezca código propio.
+Como Cloudflare va en modo proxy sobre `www.aunitz.net` (ver «Infraestructura: DNS y HTTPS» en `AGENTS.md`), el script se sirve bajo el propio dominio del blog. Eso hace que las herramientas de auditoría lo atribuyan a *first party* y parezca código propio.
 
 ### Síntoma en Lighthouse
 
@@ -328,7 +328,7 @@ Cloudflare tiene una función propia que puede generar o modificar ese fichero e
 Estaba en «Content Signals Policy» y se pasó a «Disable»:
 
 - **Fuente única de verdad.** Todo el blog se gobierna desde el repositorio; el `robots.txt` también. Tener dos sistemas con opinión sobre el mismo fichero es una discrepancia que tarde o temprano cuesta una tarde de diagnóstico.
-- **Evitar que una función gestionada se active sola.** Hay precedente en este mismo panel: el modo «Automatic SSL/TLS» sube el cifrado por su cuenta y no lo vuelve a bajar (ver «Infraestructura: DNS y HTTPS» en `CLAUDE.md`). Un ajuste hoy inocuo no garantiza serlo mañana.
+- **Evitar que una función gestionada se active sola.** Hay precedente en este mismo panel: el modo «Automatic SSL/TLS» sube el cifrado por su cuenta y no lo vuelve a bajar (ver «Infraestructura: DNS y HTTPS» en `AGENTS.md`). Un ajuste hoy inocuo no garantiza serlo mañana.
 - **Lo que se renuncia vale poco.** Google ha declarado públicamente que la directiva `Content-Signal` no tiene ningún efecto sobre su rastreo, y no consta soporte entre los grandes rastreadores.
 - **No se pierde la capacidad.** Si algún día se quieren señales de contenido, se añaden al `robots.txt` del repositorio: versionadas, revisables en un diff y bajo control propio. **No reactivar la opción del panel para eso.**
 
