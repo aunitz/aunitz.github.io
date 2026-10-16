@@ -9,12 +9,15 @@
       "name": "{{ site.subtitle }}",
       "url": "{{ '/' | absolute_url }}",
       "inLanguage": "es",
-      "description": "{{ site.author_description | escape }}"
+      "description": "{{ site.author_description | escape }}",
+      "author": { "@id": "https://www.aunitz.net/#person" },
+      "publisher": { "@id": "https://www.aunitz.net/#person" }
     },
     {
       "@type": "Person",
       "@id": "https://www.aunitz.net/#person",
       "name": "{{ site.author }}",
+      "alternateName": "{{ site.copyright_name }}",
       "url": "{{ '/about/' | absolute_url }}",
       "jobTitle": "{{ site.author_job_title }}",
       "description": "{{ site.author_description | escape }}",
@@ -24,11 +27,7 @@
         "width": 550,
         "height": 550
       },
-      "worksFor": {
-        "@type": "Organization",
-        "name": "Adimedia",
-        "url": "{{ site.adimedia_url }}"
-      },
+      "worksFor": { "@id": "{{ site.adimedia_url }}#organization" },
       "sameAs": [
         "https://www.linkedin.com/in/{{ site.linkedin_username }}/",
         "https://github.com/aunitz"
@@ -43,6 +42,20 @@
         "Dirección de proyectos digitales",
         "Diseño de productos digitales",
         "Inteligencia artificial aplicada al desarrollo digital"
+      ]
+    },
+    {% comment %}
+      El @id sigue el patrón de adimedia.net, que publica su propio WebSite como
+      https://www.adimedia.net/#website pero ningún nodo Organization. Sin logo a
+      propósito: el de su web mide 215×42 y Google exige al menos 112×112.
+    {% endcomment %}
+    {
+      "@type": "Organization",
+      "@id": "{{ site.adimedia_url }}#organization",
+      "name": "Adimedia",
+      "url": "{{ site.adimedia_url }}",
+      "sameAs": [
+        "{{ site.adimedia_linkedin_url }}"
       ]
     }{% if page.home-page %},
     {

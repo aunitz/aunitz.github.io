@@ -56,6 +56,23 @@
     {% assign _img_height_parts = _img_tag | split: 'height="' %}
     {% if _img_height_parts.size > 1 %}{% assign _img_height = _img_height_parts[1] | split: '"' | first %}{% endif %}
     {% endif %}
+    {% comment %}
+      La primera imagen del post solo vale para la tarjeta si LinkedIn y X la
+      pueden mostrar en grande: JPG o PNG (ninguna de las dos admite SVG y
+      LinkedIn no lista WebP) y al menos 600×315, que es 1,91:1. Por debajo, X
+      no muestra la imagen grande (mínimo 300×157) y LinkedIn la reduce a
+      miniatura. Si no cumple, o no declara sus dimensiones, se usa header-img.
+    {% endcomment %}
+    {% if _img_src %}
+    {% assign _img_ext = _img_src | split: "." | last | downcase %}
+    {% assign _img_w = _img_width | plus: 0 %}
+    {% assign _img_h = _img_height | plus: 0 %}
+    {% assign _img_ok = false %}
+    {% if _img_ext == "jpg" or _img_ext == "jpeg" or _img_ext == "png" %}
+    {% if _img_w >= 600 and _img_h >= 315 %}{% assign _img_ok = true %}{% endif %}
+    {% endif %}
+    {% unless _img_ok %}{% assign _img_src = nil %}{% endunless %}
+    {% endif %}
     {% endif %}
     {% assign post_image = _img_src | default: page.header-img %}
 
@@ -70,7 +87,10 @@
     <meta property="article:published_time" content="{{ page.date | date: '%Y-%m-%dT%H:%M:%SZ' }}" />
     {% endif %}
     <meta name="twitter:card" content="summary_large_image" />
-    {% if page.home-page or page.url == "/tags/" %}
+    {% if page.og-image %}
+    <meta property="og:image" content="{{ page.og-image | absolute_url }}">
+    <meta property="og:image:alt" content="{{ page.title | escape }}">
+    {% elsif page.home-page or page.url == "/tags/" %}
     <meta property="og:image" content="{{ site.url }}/{{ site.og_image_index }}">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">

@@ -101,7 +101,7 @@ tags:          [tag1, tag2, tag3]
 ---
 ```
 
-Atributos opcionales: `hide_from_home: true` (oculta de portada), `last_modified_at` (para schema), `canonical` (URL canónica; en duplicados sin `republished` suprime el schema de artículo), `related: false` (oculta el bloque «También te puede interesar», que va activo por defecto en todos los posts). Posts republicados de The Conversation: `republished: true` + `original_date`, `license`, `author_url`, `author_affiliation`, `source_org` (activan el bloque `Article` específico en `_includes/schema.html`).
+Atributos opcionales: `hide_from_home: true` (oculta de portada), `last_modified_at` (para schema), `canonical` (URL canónica; en duplicados sin `republished` suprime el schema de artículo), `related: false` (oculta el bloque «También te puede interesar», que va activo por defecto en todos los posts), `og-image` (ruta de la imagen para la tarjeta de LinkedIn/X; manda sobre todo lo demás. Sin él, `_includes/head.html` usa la primera imagen del post solo si es JPG o PNG y declara al menos 600×315 en `width`/`height`; si no, `header-img`. Conviene que sea JPG o PNG de 1200×630). Posts republicados de The Conversation: `republished: true` + `original_date`, `license`, `author_url`, `author_affiliation`, `source_org` (activan el bloque `Article` específico en `_includes/schema.html`).
 
 ### Convenciones HTML/Markdown en posts
 
