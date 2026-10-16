@@ -9,12 +9,15 @@
       "name": "{{ site.subtitle }}",
       "url": "{{ '/' | absolute_url }}",
       "inLanguage": "es",
-      "description": "{{ site.author_description | escape }}"
+      "description": "{{ site.author_description | escape }}",
+      "author": { "@id": "https://www.aunitz.net/#person" },
+      "publisher": { "@id": "https://www.aunitz.net/#person" }
     },
     {
       "@type": "Person",
       "@id": "https://www.aunitz.net/#person",
       "name": "{{ site.author }}",
+      "alternateName": "{{ site.copyright_name }}",
       "url": "{{ '/about/' | absolute_url }}",
       "jobTitle": "{{ site.author_job_title }}",
       "description": "{{ site.author_description | escape }}",
