@@ -150,7 +150,7 @@ Sobre el mensaje:
 - **Volumen:** 160+ posts desde 2017
 - **Frecuencia de publicación:** irregular
 - **SEO:** URLs limpias (`/:title/`), meta descriptions por post, OG tags para LinkedIn, sitemap y feed RSS automáticos
-- **Automatización:** existen skills de Claude Code para el blog en `.claude/skills/`: `publish-post-blog-aunitz` (conversión Word → HTML y creación del fichero de post con metadatos e imágenes), `republish-theconversation-aunitz` (republicación de artículos de The Conversation respetando la licencia CC) y `enlazado-interno-ultimo-post-aunitz` (mejora del enlazado interno del último post publicado)
+- **Automatización:** existen skills de Claude Code para el blog en `.claude/skills/`: `publish-post-blog-aunitz` (conversión Word → HTML, creación del fichero de post con metadatos y procesado de las imágenes en bruto con `sharp` —devDependency del proyecto— y `ffmpeg` para las animaciones), `republish-theconversation-aunitz` (republicación de artículos de The Conversation respetando la licencia CC) y `enlazado-interno-ultimo-post-aunitz` (mejora del enlazado interno del último post publicado)
 - **Paginación:** 5 posts por página en portada
 - **Timezone:** Europe/Madrid
 

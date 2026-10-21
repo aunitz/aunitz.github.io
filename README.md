@@ -50,7 +50,7 @@ extensión Easy LESS de VS Code). Es Claude Code quien recompila el fichero
 cuando hace falta, con el `lessc` local del proyecto:
 
 ```
-npm install   # una vez, instala less/ en node_modules
+npm install   # una vez, instala less, terser y sharp en node_modules
 npm run build:css
 ```
 
@@ -152,26 +152,47 @@ Consecuencias de que sea una inyección de borde y no un include:
 
 ## Skill de Claude Code: publish-post-blog-aunitz
 
-Ubicación: `.claude/skills/publish-post-blog-aunitz/SKILL.md`
+Ubicación: `.claude/skills/publish-post-blog-aunitz/SKILL.md`, con el script de imágenes en `scripts/procesar-imagenes.mjs`.
 
-Automatiza la publicación de un nuevo post a partir de un documento Word. Tareas que realiza:
+Automatiza la publicación de un nuevo post a partir de un documento Word y de los ficheros en bruto de sus imágenes. Tareas que realiza:
 
-1. Lee el contenido del Word adjuntado por el usuario.
+1. Lee el contenido del Word adjuntado por el usuario, con el formato y con cada enlace asociado a su texto.
 2. Genera el fichero `.markdown` en `_posts/` con la fecha del día y el slug del título.
-3. Rellena el frontmatter (título, subtítulo, descripción SEO, tags, header-img).
-4. Convierte el contenido a HTML limpio siguiendo las convenciones del blog.
-5. Añade `target="_blank" rel="noopener noreferrer"` a los enlaces externos.
-6. Convierte los enlaces internos (aunitz.net) a la sintaxis `{% post_url %}` de Jekyll.
-7. Inserta las imágenes del post (que deben estar previamente en `img/`) con sus dimensiones reales.
+3. Rellena el frontmatter (título, subtítulo, descripción SEO, tags, header-img y, si procede, og-image). El desfase horario de `date` se calcula para la fecha de publicación: `+0200` en verano y `+0100` en invierno.
+4. Empareja las imágenes en bruto con las posiciones de imagen del Word, propone un tipo para cada una y espera confirmación antes de procesarlas.
+5. Procesa las imágenes al tamaño y formato del blog (ver tabla más abajo) y las deja en `img/`.
+6. Convierte el contenido a HTML limpio siguiendo las convenciones del blog, con el marcado propio de cada tipo de imagen.
+7. Añade `target="_blank" rel="noopener noreferrer"` a los enlaces externos.
+8. Convierte los enlaces internos (aunitz.net) a la sintaxis `{% post_url %}` de Jekyll.
+
+Los `alt` de las imágenes y los `title` de los vídeos quedan vacíos a propósito: los rellena después la skill de accesibilidad de medios desde Codex. Al terminar, la skill recuerda ese paso y el del enlazado interno.
+
+### Procesado de imágenes
+
+Los criterios salen de los posts publicados en 2026:
+
+| Tipo | Cuándo | Resultado |
+|---|---|---|
+| `normal` | Ilustraciones, fotos y capturas legibles a 750 px | WebP de 750 px de ancho como máximo, sin ampliar nunca |
+| `xl` | Capturas de escritorio con texto pequeño | WebP de 750 px en el post, enlazado a una `-xl.webp` de hasta 1600 px |
+| `movil` | Capturas verticales de móvil | WebP de 360 px; dos seguidas van en dos columnas |
+| `animacion` | GIF y vídeos | WebM VP9 sin audio de 750 px como máximo, en `<video autoplay loop muted playsinline>`, con `controls` si dura más de 5 s (WCAG 2.2.2) |
+| `svg` | Diagramas y logos vectoriales | Se copia tal cual |
+| `cabecera` | Cabecera nueva aportada en bruto | `post-bg-NNN.jpg` recortado a 1500×474 |
+| `og` | Imagen de la tarjeta de LinkedIn y X | JPG recortado a 1200×630 |
+
+**Requisitos:** `npm install` (instala `sharp`, que procesa las imágenes fijas) y `ffmpeg`/`ffprobe` en el PATH para las animaciones. El script aplica la orientación EXIF, convierte a sRGB, elimina los metadatos y nunca sobrescribe un fichero existente de `img/`.
+
+La `og-image` existe porque las imágenes del post salen en WebP, y LinkedIn y X no las usan para la tarjeta: sin ella, la tarjeta mostraría la cabecera recortada.
 
 ### Modos de ejecución
 
-- **Modo real (por defecto):** ejecuta todo el proceso y deja el post creado en `_posts/` para revisión manual.
-- **Modo prueba:** se activa añadiendo `--test` (o palabras como "prueba", "test") en la invocación. Usa imágenes ya existentes en `img/` en lugar de las reales y, al finalizar, ofrece borrar el fichero de prueba creado.
+- **Modo real (por defecto):** ejecuta todo el proceso y deja el post y las imágenes creados para revisión manual. No hace commit.
+- **Modo prueba:** se activa añadiendo `--test` (o palabras como "prueba", "test") en la invocación. Las imágenes en bruto son opcionales: si no se aportan, usa imágenes ya existentes en `img/`. Al finalizar ofrece borrar el post de prueba y las imágenes generadas en esa ejecución, y solo esas.
 
 ### Cómo ejecutarla
 
-Escribe `/publish-post-blog-aunitz` o di "quiero publicar un nuevo post" en Claude Code. Para modo prueba: `/publish-post-blog-aunitz --test`.
+Escribe `/publish-post-blog-aunitz` o di "quiero publicar un nuevo post" en Claude Code. Puedes pasar la ruta del Word y la carpeta de imágenes: `/publish-post-blog-aunitz ruta/al/post.docx ruta/a/imagenes`. Para modo prueba: `/publish-post-blog-aunitz --test`.
 
 ## Skill de Claude Code: republish-theconversation-aunitz
 

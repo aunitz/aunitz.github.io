@@ -4,11 +4,12 @@ description: >
   Publica un nuevo post en el blog Jekyll de aunitz.net. Usa esta skill cuando el usuario diga que
   quiere publicar un nuevo post, crear un artículo, añadir una entrada al blog, o algo similar.
   Automatiza la conversión de Word a HTML, la creación del fichero del post, la generación del
-  frontmatter, la inserción de imágenes y la corrección de enlaces.
+  frontmatter, el procesado de las imágenes en bruto (tamaño y formato del blog: WebP, -xl,
+  WebM, cabecera y og-image), su inserción y la corrección de enlaces.
 when_to_use: >
   Trigger phrases: "publicar un post", "nuevo post", "nuevo artículo", "crear post", "publicar
   artículo", "añadir entrada al blog", "publish post", "new post", "new blog post".
-argument-hint: "[--test] ruta/al/documento.docx"
+argument-hint: "[--test] ruta/al/documento.docx [carpeta/de/imagenes]"
 allowed-tools: Read Write Edit Glob Grep Bash AskUserQuestion
 ---
 
@@ -22,8 +23,8 @@ La skill tiene dos modos:
 
 - **Modo real (por defecto):** ejecuta todo el proceso y deja el post creado en `_posts/` para que el usuario lo revise, haga commit y push manualmente.
 - **Modo prueba:** se activa cuando el usuario incluye `--test`, `test`, `prueba` o expresiones similares (p. ej. "en modo prueba", "modo test") en la invocación de la skill. Ejecuta todo el proceso igual que el modo real, con dos diferencias:
-  1. **No se usan imágenes nuevas reales.** En los pasos 4 y 5, en lugar de asignar/buscar imágenes específicas del nuevo post, se seleccionan imágenes cualquiera ya existentes en la carpeta `img/` (aunque no tengan relación con el contenido). Ver detalles en cada paso.
-  2. **Al finalizar, se ofrece borrar el post creado** (ver Paso 9).
+  1. **Las imágenes en bruto son opcionales.** Si el usuario no las aporta, en los pasos 4 y 5 se usan imágenes cualquiera ya existentes en `img/` (aunque no tengan relación con el contenido). Si las aporta, se procesan igual que en modo real, lo que sirve para probar el procesado. Ver detalles en cada paso.
+  2. **Al finalizar, se ofrece borrar el post creado y las imágenes generadas** (ver Paso 9).
 
 Identifica el modo al inicio y tenlo en cuenta en los pasos marcados con "⚠ Modo prueba".
 
@@ -41,7 +42,7 @@ Si existe, ofrece al usuario reanudarlo mostrando el título del post y el paso 
 
 Pide al usuario que adjunte el documento Word (.docx) con el contenido del nuevo post. Dile algo como:
 
-> Adjunta el documento Word del nuevo post para que pueda procesarlo.
+> Adjunta el documento Word del nuevo post para que pueda procesarlo. Si tienes ya la carpeta con las imágenes en bruto, indícamela también.
 
 Espera a que el usuario proporcione el fichero.
 
@@ -202,108 +203,116 @@ Ejemplos de referencia:
 
 ## Paso 4: Determinar el header-img
 
-Busca en los ficheros de `_posts/` cuál es el número más alto usado en `header-img: "img/post-bg-NNN.jpg"`. El nuevo post usará el siguiente número consecutivo. Verifica que la imagen existe en la carpeta `img/`. Si no existe, avisa al usuario de que deberá crearla manualmente.
+Las cabeceras son `img/post-bg-NNN.jpg` de **1500×474**. Hay dos casos:
 
-**⚠ Modo prueba:** no busques la siguiente imagen consecutiva. En su lugar, elige una imagen `post-bg-*.jpg` existente cualquiera dentro de `img/` (por ejemplo la más reciente ya en uso) y úsala como `header-img`. No hay que crear ni pedir nuevas imágenes.
+- **El usuario aporta una cabecera en bruto** (se pide en el Paso 5a): se procesa en el Paso 5c con el tipo `cabecera` y se guarda como `post-bg-NNN.jpg`. NNN es el siguiente al número más alto que exista **en `img/`**, no en `_posts/`: los posts recientes reutilizan cabeceras antiguas (`post-bg-05.jpg`…), así que el máximo en uso no sirve.
+  ```bash
+  ls img/post-bg-*.* | sed 's/.*post-bg-\([0-9]*\)\..*/\1/' | sort -n | tail -1
+  ```
+- **No la aporta:** pregunta qué `post-bg` existente quiere usar. Comprueba que el fichero existe.
+
+En los dos casos, mira la cabecera elegida con Read antes de seguir. El título, el subtítulo y el bloque `.meta` («Publicado por…») van en blanco directamente sobre la foto, sin velo, y `.meta` es texto de 20 px que necesita un contraste de 4,5:1. Si la franja central de la imagen es clara o tiene mucho detalle, avísalo. Si la cabecera procede de un original en bruto, propón otro encuadre con `posicion` (ver 5c).
+
+**⚠ Modo prueba:** si no hay cabecera en bruto, usa cualquier `post-bg-*` existente sin preguntar.
 
 ---
 
-## Paso 5: Imágenes del post — inventario y dimensiones
+## Paso 5: Imágenes del post — procesado de los originales
 
-### 5a. Preguntar el nombre base
+La skill recibe, junto al Word, los **ficheros en bruto** de las imágenes (capturas a resolución completa, ilustraciones exportadas, GIF o vídeos de pantalla…). En este paso los empareja con las posiciones de imagen del Word y genera en `img/` los ficheros con el tamaño y el formato del blog.
 
-Pregunta al usuario:
-
-> ¿Cuál es el nombre base de la primera imagen del post? (Por ejemplo: `como-sera-futuro-ingenieria-software-01.webp`)
-
-A partir de esa respuesta, extrae el patrón base (todo excepto el número y la extensión) y busca en `img/` todas las imágenes que sigan ese patrón (01, 02, 03…):
-
+**Requisitos:** `node_modules` con `sharp` (va en `devDependencies`) y, para las animaciones, `ffmpeg` y `ffprobe` en el PATH. Compruébalo antes de empezar:
 ```bash
-ls img/PATRON-*.{webp,gif,jpg,png} 2>/dev/null | sort
+node -e "require('sharp')" 2>/dev/null || npm install
+ffmpeg -version >/dev/null 2>&1 || echo "Falta ffmpeg: las animaciones no se podrán convertir"
 ```
 
-**⚠ Modo prueba:** no preguntes. Selecciona imágenes existentes en `img/` (excluyendo `post-bg-*.jpg`) en número igual al de posiciones de imagen detectadas en el Word. Úsalas aunque no tengan relación con el contenido.
+### Criterios del blog (sacados de los posts de 2026)
 
-### 5b. Verificar inventario — comparar Word vs `img/`
+| Tipo | Cuándo | Resultado |
+|---|---|---|
+| `normal` | Ilustraciones, fotos y capturas que se leen bien a 750 px | WebP de **750 px de ancho** como máximo, sin ampliar nunca (una captura de 660 px se queda en 660). Las ilustraciones suelen ser 16:9 (750×422) |
+| `xl` | Capturas de escritorio de **más de ~1125 px** con texto que a 750 px no se lee | WebP de 750 px en el post **más** `NOMBRE-xl.webp` de hasta 1600 px, que se abre al pulsar la imagen |
+| `movil` | Capturas verticales de móvil | WebP de **360 px** de ancho. Dos seguidas van en dos columnas (ver Paso 6) |
+| `animacion` | GIF animados y vídeos (mp4, mov, webm…) | **WebM VP9 sin audio** de 750 px como máximo. Un GIF de 1,6 MB queda en unos 235 KB |
+| `svg` | Diagramas y logos vectoriales | Se copia tal cual; solo se calculan las dimensiones que hay que declarar |
+| `cabecera` | La imagen de cabecera | JPG recortado a 1500×474 |
+| `og` | Imagen para la tarjeta de LinkedIn y X (Paso 5d) | JPG recortado a 1200×630 |
 
-Cuenta las posiciones de imagen en el Word con este script (`/tmp/count_images.js`):
+Todos los ficheros raster salen con la orientación EXIF aplicada, en sRGB y sin metadatos.
 
-```js
-const fs = require('fs');
-const content = fs.readFileSync(process.argv[2], 'utf8');
-const embeds = [...content.matchAll(/r:embed="(rId\d+)"/g)];
-console.log(`Imágenes en el Word: ${embeds.length}`);
-embeds.forEach((m, i) => console.log(`  ${i+1}. ${m[1]}`));
-```
+### 5a. Pedir los originales
 
+Si no vinieron en la invocación, pide la carpeta:
+
+> Indica la carpeta con las imágenes en bruto del post (y la cabecera, si tienes una nueva). Si alguna imagen solo está dentro del Word, dímelo y la saco de ahí.
+
+Pregunta también el **nombre base** de los ficheros y propón uno derivado del slug del Paso 3, acortado si es muy largo (p. ej. `buenas-practicas-usabilidad-chatbot-ia`). Los ficheros se llamarán `BASE-01`, `BASE-02`… en el orden del Word. Comprueba que no hay ficheros con ese nombre en `img/`:
 ```bash
-node $(cygpath -w /tmp/count_images.js) $(cygpath -w /tmp/doc.xml)
+ls img/BASE-* 2>/dev/null
 ```
 
-Compara el número de imágenes del Word con el número de ficheros encontrados en `img/`:
+### 5b. Emparejar originales y posiciones del Word
 
-- **Si coinciden:** asume correspondencia secuencial (imagen 1 del Word → `nombre-01.webp`, imagen 2 → `nombre-02.webp`, etc.) y continúa.
-- **Si no coinciden:** informa al usuario del desfase (p. ej. "El Word tiene 28 imágenes pero en `img/` hay 25 con ese patrón") y avisa de que algunas posiciones de imagen quedarán sin imagen. Asume de todas formas correspondencia secuencial para las que sí existen, y omite (`<!-- imagen no disponible -->`) las posiciones sobrantes del Word.
+Extrae las imágenes que lleva incrustadas el Word y su orden de aparición:
+```bash
+rm -rf /tmp/docx-media && mkdir -p /tmp/docx-media && unzip -o -q /tmp/post.docx 'word/media/*' -d /tmp/docx-media
+```
+El orden lo dan los `r:embed="rIdN"` de `document.xml` (las marcas `[IMG:rIdN]` del parser del Paso 1), y cada `rIdN` apunta a su `media/imageN.*` en `/tmp/doc.rels`.
 
-### 5c. Obtener dimensiones reales (sin dependencias externas)
+Empareja cada posición con un original:
 
-Para cada imagen encontrada, obtén sus dimensiones con este script Node.js portátil (`/tmp/img_dimensions.js`):
+- Si los originales están numerados o tienen nombres que siguen el orden del texto, empareja por orden.
+- **Si hay dudas, compáralos a la vista:** abre con Read la imagen del Word (`/tmp/docx-media/word/media/imageN.*`) y los originales candidatos.
+- **Si a una posición le falta el original,** propón usar la imagen incrustada en el Word como fuente. Suele estar comprimida, pero sirve. No dejes huecos sin preguntar.
 
-```js
-const fs = require('fs');
-const path = require('path');
+Asigna a cada imagen un **tipo** según la tabla de criterios. Para decidir entre `normal` y `xl`, mira la captura: si a 750 px de ancho el texto relevante sería ilegible, es `xl`.
 
-function getDimensions(filepath) {
-    const buf = fs.readFileSync(filepath);
-    const ext = path.extname(filepath).toLowerCase();
-    // PNG
-    if (buf[0] === 0x89 && buf[1] === 0x50 && buf[2] === 0x4E && buf[3] === 0x47) {
-        return { w: buf.readUInt32BE(16), h: buf.readUInt32BE(20) };
-    }
-    // GIF
-    if (buf[0] === 0x47 && buf[1] === 0x49 && buf[2] === 0x46) {
-        return { w: buf.readUInt16LE(6), h: buf.readUInt16LE(8) };
-    }
-    // JPEG
-    if (buf[0] === 0xFF && buf[1] === 0xD8) {
-        let offset = 2;
-        while (offset < buf.length) {
-            if (buf[offset] !== 0xFF) break;
-            const marker = buf[offset + 1];
-            if (marker === 0xC0 || marker === 0xC2) {
-                return { w: buf.readUInt16BE(offset + 7), h: buf.readUInt16BE(offset + 5) };
-            }
-            offset += 2 + buf.readUInt16BE(offset + 2);
-        }
-    }
-    // WebP
-    if (buf.toString('ascii', 0, 4) === 'RIFF' && buf.toString('ascii', 8, 12) === 'WEBP') {
-        const vp8type = buf.toString('ascii', 12, 16);
-        if (vp8type === 'VP8 ') {
-            return { w: buf.readUInt16LE(26) & 0x3FFF, h: buf.readUInt16LE(28) & 0x3FFF };
-        } else if (vp8type === 'VP8L') {
-            const bits = buf.readUInt32LE(21);
-            return { w: (bits & 0x3FFF) + 1, h: ((bits >> 14) & 0x3FFF) + 1 };
-        } else if (vp8type === 'VP8X') {
-            return { w: buf.readUIntLE(24, 3) + 1, h: buf.readUIntLE(27, 3) + 1 };
-        }
-    }
-    return null;
+Muestra la propuesta en una tabla y **espera a que el usuario la confirme o la corrija**:
+
+| # | Párrafo Word | Original | Medidas originales | Tipo | Fichero final |
+|---|---|---|---|---|---|
+| 1 | Para 4 | `IMG_2034.png` | 2560×1187 | xl | `BASE-01.webp` + `BASE-01-xl.webp` |
+| 2 | Para 9 | `animacion.gif` | 834×248 | animacion | `BASE-02.webm` |
+
+Si te ayuda montar una hoja de contactos (originales en una fila, imágenes del Word en otra) para compararlas de un vistazo, ten en cuenta que **un script guardado en `/tmp` no encuentra `sharp`**: Node busca los módulos junto al script, no en el directorio actual. Ejecútalo desde la raíz del repo con `NODE_PATH="$(cygpath -w "$PWD/node_modules")" node …`. Los `node -e` lanzados desde la raíz del repo no tienen ese problema.
+
+Las medidas originales se sacan con sharp (sirve para cualquier formato raster):
+```bash
+node -e "const s=require('sharp');Promise.all(process.argv.slice(1).map(f=>s(f).metadata().then(m=>console.log(f,m.width+'x'+m.height,m.format,(m.pages||1)>1?'animada':''))))" RUTA/*.*
+```
+
+Señala también los **originales que no se usan** por si sobra alguno.
+
+### 5c. Procesar
+
+Escribe el plan en `/tmp/plan-imagenes.json`. Las rutas de `src` van en formato Windows, porque Node no ve `/tmp` de Git Bash, pero **con barras normales** (`C:/ruta/…`): Node las acepta, y las barras invertidas se pierden al escribir el JSON con un heredoc de Bash, lo que rompe el `JSON.parse`:
+```json
+{
+  "outDir": "img",
+  "items": [
+    { "src": "C:/ruta/IMG_2034.png", "name": "BASE-01", "tipo": "xl" },
+    { "src": "C:/ruta/animacion.gif", "name": "BASE-02", "tipo": "animacion" },
+    { "src": "C:/ruta/cabecera.jpg", "name": "post-bg-122", "tipo": "cabecera", "posicion": "centre" }
+  ]
 }
-
-const files = process.argv.slice(2);
-files.forEach(f => {
-    const dim = getDimensions(f);
-    if (dim) console.log(`${path.basename(f)}: ${dim.w}x${dim.h}`);
-    else console.log(`${path.basename(f)}: dimensiones desconocidas (usa 720x405 por defecto)`);
-});
 ```
+`posicion` solo afecta a `cabecera` y `og`, y decide qué parte se conserva al recortar: `centre` (por defecto), `top`, `bottom`, `left`, `right`, `attention` (la zona más llamativa) o `entropy`.
 
+Ejecuta el script desde la raíz del repositorio:
 ```bash
-node $(cygpath -w /tmp/img_dimensions.js) img/PATRON-*.{webp,gif,jpg,png} 2>/dev/null
+node .claude/skills/publish-post-blog-aunitz/scripts/procesar-imagenes.mjs $(cygpath -w /tmp/plan-imagenes.json)
 ```
 
-Con esto tienes la lista completa de imágenes con sus dimensiones.
+El script no sobrescribe ficheros existentes salvo con `"sobrescribir": true`. Devuelve un JSON con, por imagen, el `src`, las **dimensiones que hay que declarar** en el HTML, la `-xl` si la hay, la `duracion` de las animaciones y el peso. Además:
+
+- Si alguna imagen sale en `errores`, informa al usuario y decide con él antes de seguir.
+- Muestra los `aviso` que devuelva: una `-xl` que no aporta resolución, una cabecera ampliada desde un original pequeño…
+- Abre con Read la cabecera generada y una de las capturas con texto para comprobar que el recorte y la nitidez son correctos.
+
+Guarda el resultado en el estado (ver **Estado de la skill**) y apunta la lista de ficheros generados: el modo prueba la necesita para limpiar.
+
+**⚠ Modo prueba:** si el usuario no aporta originales, no proceses nada. Usa imágenes existentes en `img/` (excluyendo `post-bg-*`), tantas como posiciones de imagen tenga el Word, y saca sus medidas con el comando de sharp del 5b. Si aporta originales, procésalos igual que en modo real: el Paso 9 los borrará.
 
 ### 5d. Imagen de la tarjeta de LinkedIn y X (`og-image`)
 
@@ -313,17 +322,15 @@ Con esto tienes la lista completa de imágenes con sus dimensiones.
 2. La **primera imagen del post**, pero solo si es **JPG o PNG** (LinkedIn no lista WebP y ninguna de las dos redes admite SVG) y declara en `width`/`height` **al menos 600×315**.
 3. Si no, `header-img`: una banda de 1500×474 que LinkedIn y X recortan a 1,91:1 y suele quedar mal.
 
-Con el inventario del 5c, mira la primera imagen que vas a insertar:
+Como el procesado genera WebP, la primera imagen casi nunca cumple. Propón generar `BASE-og.jpg` con el tipo `og` a partir del **original** de la primera imagen del post (lo habitual es una ilustración 16:9, que apenas pierde nada al recortarla a 1,91:1). Si encaja mejor, usa el original de la cabecera:
 
-- **Si es JPG/PNG de 600×315 o más:** la tarjeta ya sale bien sola. No añadas `og-image`.
-- **Si no lo es** (lo habitual, porque las imágenes del cuerpo suelen ser `.webp`), o el post no tiene imágenes, pregunta al usuario:
-  > La tarjeta de LinkedIn y X usaría la cabecera recortada, porque la primera imagen del post es `nombre-01.webp`. ¿Tienes una imagen JPG o PNG para la tarjeta, idealmente de 1200×630? (Por ejemplo: `PATRON-og.jpg` en `img/`.) Si no, sigo sin ella.
+> La tarjeta de LinkedIn y X usaría la cabecera recortada. ¿Genero `BASE-og.jpg` (1200×630) a partir de la primera imagen del post?
 
-  Si da un nombre, comprueba que el fichero existe en `img/` y saca sus dimensiones con el script del 5c. Si es JPG/PNG de 600×315 o más, añade `og-image: "img/NOMBRE"` al frontmatter (Paso 7); si no existe o no cumple, avísale y no lo añadas. Si dice que no tiene, no añadas `og-image` y anótalo en los warnings del resumen.
+- **Si acepta:** procésala con el mismo script. Si devuelve el aviso de original pequeño, coméntaselo. Abre el resultado con Read y añade `og-image: "img/BASE-og.jpg"` al frontmatter (Paso 7).
+- **Si prefiere otra imagen ya preparada:** comprueba que existe en `img/`, que es JPG o PNG y que mide al menos 600×315.
+- **Si no quiere ninguna:** no añadas `og-image` y anótalo en los warnings del resumen.
 
 **⚠ Modo prueba:** no preguntes ni añadas `og-image`.
-
-Ahora guarda el estado (ver sección **Estado de la skill** al final).
 
 ---
 
@@ -334,7 +341,13 @@ Ahora guarda el estado (ver sección **Estado de la skill** al final).
 - Usa `<p>` para párrafos normales.
 - Usa `<h2>` y `<h3>` para encabezados (nunca `<h1>`, que es el título del post).
 - Usa `<strong>` para negritas y `<em>` para cursivas, **colapsando runs adyacentes del mismo formato** (véase script del Paso 1). Si varios runs consecutivos son todos bold, envuélvelos en un único `<strong>`.
-- **Listas con viñetas:** un párrafo es elemento de lista si su XML contiene `<w:numPr>` con `<w:numId w:val="N">` (N > 0). Agrupa párrafos de lista consecutivos en `<ul>…</ul>`. Cierra el `</ul>` en cuanto aparezca un párrafo sin lista. Si la lista es claramente numerada, usa `<ol>`. Ejemplo:
+- **Encabezados:** `Ttulo2` → `<h2>`, `Ttulo3` → `<h3>`. Si el Word usa `Ttulo4`, respétalo como `<h4>` (el CSS lo estiliza y lo usan varios posts, como `2026-04-20-quiero-que-la-ia-me-cite.markdown`); no lo aplanes a `<h3>`.
+- **Listas con viñetas:** un párrafo es elemento de lista si su XML contiene `<w:numPr>` con `<w:numId w:val="N">` (N > 0). Agrupa párrafos de lista consecutivos en `<ul>…</ul>`. Cierra el `</ul>` en cuanto aparezca un párrafo sin lista. **Para saber si es numerada no te fíes del texto:** mira en `word/numbering.xml` qué `abstractNumId` tiene ese `numId` y el `numFmt` de su nivel 0 (`decimal` → `<ol>`, `bullet` → `<ul>`):
+  ```bash
+  unzip -p /tmp/post.docx word/numbering.xml > /tmp/numbering.xml
+  node -e "const c=require('fs').readFileSync(process.argv[1],'utf8');const fmt={};for(const m of c.matchAll(/<w:abstractNum [^>]*w:abstractNumId=\"(\d+)\"[\s\S]*?<w:numFmt w:val=\"(\w+)\"/g))fmt[m[1]]=m[2];for(const m of c.matchAll(/<w:num w:numId=\"(\d+)\"[^>]*>[\s\S]*?<w:abstractNumId w:val=\"(\d+)\"/g))console.log('numId',m[1],fmt[m[2]])" "$(cygpath -w /tmp/numbering.xml)"
+  ```
+  Ejemplo:
   ```html
   <ul>
       <li><strong>Primer elemento.</strong></li>
@@ -421,10 +434,40 @@ El Word puede incluir notas al pie (referencias `<w:footnoteReference w:id="N"/>
 
 ### Imágenes
 
-Inserta las imágenes en los lugares adecuados del HTML (posición secuencial respecto al Word). Usa este formato:
+Inserta cada imagen en su posición del Word con el `src` y las dimensiones **exactas que devolvió el script del Paso 5c**.
 
+**Imagen dentro de un párrafo con texto.** Word suele anclar la imagen en el mismo párrafo que el encabezado o la frase que la sigue: el parser lo muestra como `[Ttulo3] Para 24 [IMG:rId10]: Hacia dónde va la industria`. La imagen va en su propio `<p>`, **antes** del encabezado si en el XML el `r:embed` aparece antes del primer `<w:t>`, y después si aparece detrás. Nunca la metas dentro del `<h2>`/`<h3>`.
+
+El marcado depende del tipo:
+
+**`normal`, `svg` y `movil` suelta:**
 ```html
-<p><img src="{{ site.baseurl }}/img/NOMBRE-IMAGEN.webp" loading="lazy" alt="" width="W" height="H"></p>
+<p><img src="{{ site.baseurl }}/img/BASE-01.webp" loading="lazy" alt="" width="W" height="H"></p>
+```
+Un SVG de logo puede declararse más pequeño que 750 px (manteniendo la proporción) y centrarse con `class="center-block"`, como el de LATXA en `2026-06-27-open-llm-basque-day.markdown`.
+
+**`xl`:** la versión de 750 px en el post, enlazada a la `-xl`:
+```html
+<p><a href="{{ site.baseurl }}/img/BASE-01-xl.webp" target="_blank" rel="noopener noreferrer"><img src="{{ site.baseurl }}/img/BASE-01.webp" loading="lazy" alt="" width="750" height="H"></a></p>
+```
+
+**Dos `movil` seguidas:** en dos columnas, como en `2026-05-12-buenas-practicas-usabilidad-chatbot-ia-sitio-web.markdown`:
+```html
+<div class="row">
+    <div class="col-sm-6">
+        <p><img src="{{ site.baseurl }}/img/BASE-03.webp" loading="lazy" alt="" width="360" height="800" class="img-responsive"></p>
+    </div>
+    <div class="col-sm-6">
+        <p><img src="{{ site.baseurl }}/img/BASE-04.webp" loading="lazy" alt="" width="360" height="800" class="img-responsive"></p>
+    </div>
+</div>
+```
+(Es la única excepción a la regla de no usar `<div>`.)
+
+**`animacion`:** un `<video>` silencioso en bucle. El `title` se deja vacío, porque lo rellena la skill de accesibilidad de medios igual que los `alt`. Si la `duracion` que devolvió el script **supera los 5 segundos**, añade `controls`: WCAG 2.2.2 exige poder pausar cualquier movimiento automático de más de 5 s.
+```html
+<p><video src="{{ site.baseurl }}/img/BASE-02.webm" width="W" height="H" autoplay loop muted playsinline title=""></video></p>
+<p><video src="{{ site.baseurl }}/img/BASE-05.webm" width="W" height="H" autoplay loop muted playsinline controls title=""></video></p>
 ```
 
 Si una imagen necesita caption, usa:
@@ -435,7 +478,7 @@ Si una imagen necesita caption, usa:
 </figure>
 ```
 
-Si una posición de imagen no tiene fichero correspondiente (inventario desfasado), inserta un comentario:
+Si el usuario decidió en el Paso 5b dejar una posición sin imagen, inserta un comentario:
 ```html
 <!-- imagen no disponible -->
 ```
@@ -444,14 +487,8 @@ Si una posición de imagen no tiene fichero correspondiente (inventario desfasad
 
 Si el post tiene más de 5 secciones `<h2>`, genera el HTML **sección por sección** en lugar de todo de golpe, para evitar alcanzar el límite de tokens de salida:
 
-1. Escribe el fichero con el frontmatter y el bloque introductorio (párrafos anteriores al primer `<h2>`).
-2. Para cada sección `<h2>`, **añade** al fichero con un append de Bash:
-   ```bash
-   cat >> "_posts/FICHERO.markdown" << 'ENDSECTION'
-   <h2>Título de la sección</h2>
-   <p>...</p>
-   ENDSECTION
-   ```
+1. Escribe el fichero con Write: el frontmatter y las primeras secciones.
+2. Añade el resto con **Edit**, tomando como `old_string` el último párrafo escrito y como `new_string` ese mismo párrafo seguido de las secciones nuevas. **No uses `cat >> … << 'EOF'` en Bash:** con textos largos que llevan comillas tipográficas y rectas el heredoc falla (`unexpected EOF while looking for matching '`) y no se escribe nada.
 3. Actualiza el estado guardado tras cada sección (ver sección **Estado de la skill**).
 
 ---
@@ -485,6 +522,22 @@ Notas sobre el frontmatter:
 
 Para posts con más de 5 secciones, aplica la estrategia de escritura incremental descrita en el Paso 6.
 
+### 7b. Verificar que no se ha perdido texto
+
+Compara, párrafo a párrafo, el texto del Word con el del post sin etiquetas. Detecta párrafos perdidos, duplicados o retocados sin querer, algo fácil en posts largos escritos por partes. Guarda primero la salida del parser y luego compara:
+```bash
+node $(cygpath -w /tmp/parse_paragraphs.js) "$(cygpath -w /tmp/doc.xml)" "$(cygpath -w /tmp/doc.rels)" > /tmp/word.txt
+node -e "
+const fs=require('fs');const norm=s=>s.replace(/\[([^\]]*)\]\(→[^)]*\)/g,'\$1').replace(/[*_]/g,'').replace(/\s+/g,' ').trim();
+const w=fs.readFileSync(process.argv[1],'utf8').split('\n').filter(Boolean).map(l=>norm(l.replace(/^\[[^\]]*\] Para \d+( \[IMG:\w+\])?( \[LIST\])?: ?/,''))).filter(Boolean).slice(2);
+let post=fs.readFileSync(process.argv[2],'utf8').split('---').slice(2).join('---');post=post.split('<div class=\"footnotes\">')[0].replace(/<sup[^>]*>.*?<\/sup>/g,'');
+const p=[...post.matchAll(/<(p|li|h2|h3|h4)>([\s\S]*?)<\/\1>/g)].map(m=>norm(m[2].replace(/<[^>]+>/g,''))).filter(Boolean);
+console.log('Word',w.length,'post',p.length);let bad=0;w.forEach((t,i)=>{if(t!==p[i]){bad++;console.log('DIF',i,'\nW:',t.slice(0,150),'\nP:',(p[i]||'').slice(0,150))}});console.log('diferencias',bad)" "$(cygpath -w /tmp/word.txt)" "_posts/FICHERO.markdown"
+```
+El `.slice(2)` descarta el título y el subtítulo, que van en el frontmatter; ajústalo si el Word no tiene subtítulo. Si sale alguna diferencia, corrígela antes del resumen. Las únicas aceptables son las intencionadas (por ejemplo, un párrafo en negrita convertido en encabezado), y en ese caso explícalas en el resumen.
+
+Después, si el usuario tiene Ruby y Bundler, arranca la vista previa (`preview_start` con la configuración `jekyll-aunitz` de `.claude/launch.json`) y comprueba en la página del post que cargan todas las imágenes, que cada llamada a nota lleva a su nota y que `og:image` apunta a la imagen esperada.
+
 ---
 
 ## Paso 8: Mostrar resumen detallado y avisar al usuario
@@ -505,15 +558,17 @@ Una vez creado el fichero, muestra un resumen completo:
 | Secciones h2 | N |
 | Párrafos procesados | N |
 
-**Imágenes insertadas (N):**
-| Fichero | Dimensiones | Párrafo Word |
-|---|---|---|
-| nombre-01.webp | 750×400 | Para 10 |
-| … | … | … |
+**Imágenes procesadas e insertadas (N):**
+| Original | Tipo | Fichero | Dimensiones | Peso | Párrafo Word |
+|---|---|---|---|---|---|
+| IMG_2034.png (2560×1187) | xl | BASE-01.webp + BASE-01-xl.webp | 750×348 / 1600×742 | 18 KB / 54 KB | Para 10 |
+| … | … | … | … | … | … |
 
-**Imágenes omitidas / sin fichero:** lista si las hay.
+**Peso total de las imágenes del post** (sin contar las `-xl`, que solo se descargan al pulsar).
 
-**Imágenes no utilizadas en `img/` con el mismo patrón:** lista si las hay (posibles huérfanas).
+**Posiciones sin imagen y originales sin usar:** lista si los hay.
+
+**Ficheros nuevos en `img/`:** la lista completa, para que el usuario los añada al commit junto con el post.
 
 **Enlaces internos convertidos a `post_url` (N):**
 - "texto del enlace" → `2024-01-01-slug`
@@ -564,18 +619,18 @@ Tras mostrar el resumen del Paso 8, avisa al usuario con un mensaje como:
 
 Espera a que el usuario confirme que ha terminado la revisión. A continuación pregúntale explícitamente:
 
-> ¿Quieres que elimine el fichero de prueba `_posts/FICHERO.markdown`?
+> ¿Quieres que elimine el fichero de prueba `_posts/FICHERO.markdown` y las N imágenes que se generaron en `img/`?
 
-- Si responde **sí** (o equivalente): elimina el fichero con `rm` y confirma que el post de prueba ha sido borrado.
-- Si responde **no** (o equivalente): deja el fichero en su sitio y avisa al usuario de que el fichero permanece en `_posts/` y que deberá borrarlo manualmente cuando ya no lo necesite.
+(Enumera las imágenes: son las que apuntaste en el estado al procesarlas en el Paso 5c. Si no se procesó ninguna, la pregunta es solo por el post.)
 
-No toques las imágenes — en modo prueba no se han creado imágenes nuevas, así que no hay nada que limpiar en `img/`.
+- Si responde **sí** (o equivalente): borra con `rm` el post y **exactamente** los ficheros generados en esta ejecución, y confirma que se han borrado. Nunca borres imágenes de `img/` que existieran antes, aunque se hayan usado en el post de prueba.
+- Si responde **no** (o equivalente): deja los ficheros en su sitio y avisa al usuario de que permanecen en `_posts/` e `img/` y que deberá borrarlos manualmente cuando ya no los necesite.
 
 ---
 
 ## Estado de la skill (persistencia entre sesiones)
 
-Guarda el estado en `.claude/skills/publish-post-blog-aunitz/state/state.json` después de completar el análisis (Paso 5c) y después de cada sección HTML escrita (Paso 7). Formato:
+Guarda el estado en `.claude/skills/publish-post-blog-aunitz/state/state.json` después de procesar las imágenes (Paso 5c) y después de cada sección HTML escrita (Paso 6). Si una sesión se interrumpe después del 5c, al reanudarla **no vuelvas a procesar** las imágenes: ya están en `img/` y el script se negaría a sobrescribirlas. Formato:
 
 ```json
 {
@@ -593,9 +648,12 @@ Guarda el estado en `.claude/skills/publish-post-blog-aunitz/state/state.json` d
     "tags": ["tag1", "tag2"],
     "description": "Descripción SEO"
   },
+  "images_dir": "C:\\ruta\\a\\los\\originales",
   "images": [
-    { "para": 10, "file": "nombre-01.webp", "width": 750, "height": 400 }
+    { "para": 10, "original": "IMG_2034.png", "tipo": "xl", "src": "img/BASE-01.webp", "width": 750, "height": 348, "xl": "img/BASE-01-xl.webp" },
+    { "para": 15, "original": "animacion.gif", "tipo": "animacion", "src": "img/BASE-02.webm", "width": 750, "height": 224, "duracion": 6.65 }
   ],
+  "generated_files": ["img/BASE-01.webp", "img/BASE-01-xl.webp", "img/BASE-02.webm", "img/post-bg-122.jpg"],
   "hyperlinks": [
     { "rid": "rId7", "url": "https://...", "text": "texto", "internal": false, "post_url": null }
   ],
