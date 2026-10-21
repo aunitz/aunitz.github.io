@@ -67,13 +67,29 @@ DOCRELS=$(cygpath -w /tmp/doc.rels)
 
 ### Parser de párrafos (análisis)
 
-Escribe este script en `/tmp/parse_paragraphs.js` y ejecútalo. **Muestra cada párrafo con su número, estilo, y texto colapsando runs adyacentes del mismo formato en una sola marca:**
+Escribe este script en `/tmp/parse_paragraphs.js` y ejecútalo. **Muestra cada párrafo con su número, estilo, y texto colapsando runs adyacentes del mismo formato en una sola marca. Cada enlace aparece en línea con su texto y su URL ya resuelta**, con la forma `[texto del enlace](→URL)`, para que no haya que adivinar qué URL corresponde a qué texto:
 
 ```js
 const fs = require('fs');
-const content = fs.readFileSync(process.argv[2], 'utf8');
+const [docPath, relsPath] = process.argv.slice(2);
+const content = fs.readFileSync(docPath, 'utf8');
+
+const decode = s => s.replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&quot;/g, '"')
+    .replace(/&apos;/g, "'").replace(/&#(\d+);/g, (_, n) => String.fromCodePoint(+n)).replace(/&amp;/g, '&');
+
+// Relaciones rId → URL. Se lee cada <Relationship> entero y luego sus atributos por
+// separado, porque Word no garantiza el orden Id/Type/Target dentro de la etiqueta.
+const rels = {};
+if (relsPath && fs.existsSync(relsPath)) {
+    for (const [tag] of fs.readFileSync(relsPath, 'utf8').matchAll(/<Relationship\b[^>]*>/g)) {
+        const attr = name => (tag.match(new RegExp(`\\b${name}="([^"]*)"`)) || [])[1];
+        if (/\/hyperlink$/.test(attr('Type') || '')) rels[attr('Id')] = decode(attr('Target'));
+    }
+}
+
 const paraRegex = /<w:p[ >][\s\S]*?<\/w:p>/g;
 let match, i = 0;
+let fieldLink = null, inFieldResult = false; // enlaces como campo HYPERLINK (fldChar/instrText)
 while ((match = paraRegex.exec(content)) !== null) {
     const p = match[0];
     const styleMatch = p.match(/<w:pStyle w:val="([^"]+)"/);
@@ -82,45 +98,60 @@ while ((match = paraRegex.exec(content)) !== null) {
     const hasImg = imgMatch ? ` [IMG:${imgMatch[1]}]` : '';
     // Detectar si es elemento de lista
     const isList = p.includes('<w:numId ') && !p.includes('<w:numId w:val="0"');
-    // Extraer runs y colapsar adyacentes con mismo formato
-    const runs = [...p.matchAll(/<w:r[ >][\s\S]*?<\/w:r>/g)];
+    // Recorrer runs y bloques <w:hyperlink> en orden de aparición
+    const parts = [...p.matchAll(/<w:hyperlink\b([^>]*)>([\s\S]*?)<\/w:hyperlink>|<w:r[ >][\s\S]*?<\/w:r>/g)];
     let segments = [];
-    runs.forEach(r => {
-        const rText = [...r[0].matchAll(/<w:t[^>]*>([\s\S]*?)<\/w:t>/g)].map(m => m[1]).join('');
-        const bold = r[0].includes('<w:b/>') || (r[0].includes('<w:b ') && !r[0].includes('<w:b w:val="0"'));
-        const italic = r[0].includes('<w:i/>') || (r[0].includes('<w:i ') && !r[0].includes('<w:i w:val="0"'));
+    const addRun = (r, link) => {
+        if (/<w:fldChar [^>]*w:fldCharType="begin"/.test(r)) { fieldLink = null; inFieldResult = false; }
+        const instr = r.match(/<w:instrText[^>]*>\s*HYPERLINK\s+"([^"]+)"/);
+        if (instr) fieldLink = decode(instr[1]);
+        if (/<w:fldChar [^>]*w:fldCharType="separate"/.test(r)) inFieldResult = !!fieldLink;
+        if (/<w:fldChar [^>]*w:fldCharType="end"/.test(r)) { fieldLink = null; inFieldResult = false; }
+        if (!link && inFieldResult) link = fieldLink;
+        const rText = decode([...r.matchAll(/<w:t[^>]*>([\s\S]*?)<\/w:t>/g)].map(m => m[1]).join(''));
+        const bold = r.includes('<w:b/>') || (r.includes('<w:b ') && !r.includes('<w:b w:val="0"'));
+        const italic = r.includes('<w:i/>') || (r.includes('<w:i ') && !r.includes('<w:i w:val="0"'));
         if (!rText) return;
         const last = segments[segments.length - 1];
-        if (last && last.bold === bold && last.italic === italic) {
+        if (last && last.bold === bold && last.italic === italic && last.link === link) {
             last.text += rText;
         } else {
-            segments.push({ text: rText, bold, italic });
+            segments.push({ text: rText, bold, italic, link });
+        }
+    };
+    parts.forEach(part => {
+        if (part[0].startsWith('<w:hyperlink')) {
+            const rid = (part[1].match(/r:id="([^"]+)"/) || [])[1];
+            const anchor = (part[1].match(/w:anchor="([^"]+)"/) || [])[1];
+            const link = rid ? (rels[rid] || `${rid}?? (sin URL en el .rels)`) : `#${anchor}`;
+            [...part[2].matchAll(/<w:r[ >][\s\S]*?<\/w:r>/g)].forEach(r => addRun(r[0], link));
+        } else {
+            addRun(part[0], null);
         }
     });
-    const text = segments.map(s => (s.bold ? '**' : '') + (s.italic ? '_' : '') + s.text + (s.italic ? '_' : '') + (s.bold ? '**' : '')).join('');
+    // Formato primero y enlace por fuera, fusionando segmentos contiguos del mismo enlace
+    let text = '';
+    segments.forEach((s, k) => {
+        const fmt = (s.bold ? '**' : '') + (s.italic ? '_' : '') + s.text + (s.italic ? '_' : '') + (s.bold ? '**' : '');
+        const prev = segments[k - 1], next = segments[k + 1];
+        if (s.link && (!prev || prev.link !== s.link)) text += '[';
+        text += fmt;
+        if (s.link && (!next || next.link !== s.link)) text += `](→${s.link})`;
+    });
     const listMark = isList ? ' [LIST]' : '';
-    if (text.trim() || hasImg) console.log(`[${style}] Para ${i}${hasImg}${listMark}: ${text.substring(0, 300)}`);
+    if (text.trim() || hasImg) console.log(`[${style}] Para ${i}${hasImg}${listMark}: ${text}`);
     i++;
 }
 ```
 
-Ejecución (Windows):
+Ejecución (Windows). El segundo argumento, el `.rels`, es el que permite resolver cada enlace a su URL:
 ```bash
 DOCXML=$(cygpath -w /tmp/doc.xml)
-node $(cygpath -w /tmp/parse_paragraphs.js) "$DOCXML"
-```
-
-### Extracción de hipervínculos
-
-```bash
 DOCRELS=$(cygpath -w /tmp/doc.rels)
-node -e "
-const fs = require('fs');
-const c = fs.readFileSync('$DOCRELS','utf8');
-const re = /Id=\"(rId\\d+)\"[^>]*Type=\"[^\"]*hyperlink[^\"]*\"[^>]*Target=\"([^\"]+)\"/g;
-let m; while((m=re.exec(c))!==null) console.log(m[1],'->',m[2]);
-"
+node $(cygpath -w /tmp/parse_paragraphs.js) "$DOCXML" "$DOCRELS"
 ```
+
+El parser detecta las dos formas en que Word guarda un enlace: el bloque `<w:hyperlink r:id="…">` (lo habitual) y el campo `HYPERLINK "…"` (documentos pegados desde la web o de versiones antiguas). Los enlaces a marcadores internos del propio documento salen como `#nombre-del-marcador`. Si algún enlace sale como `rIdN?? (sin URL en el .rels)`, el `.rels` no tiene esa relación: avisa al usuario en lugar de inventar la URL.
 
 A partir de aquí, el XML parseado es tu fuente principal. **Nunca uses extracción de texto plano** (`sed 's/<[^>]*>//g'`), ya que pierde toda la información de formato.
 
@@ -139,7 +170,13 @@ A partir del contenido del Word:
    ```
 5. **Determina la fecha y hora.** La fecha es hoy. Pregunta explícitamente al usuario la hora de publicación:
    > ¿A qué hora quieres que aparezca publicado el post? (Por defecto: 10:00)
-   Usa el formato `YYYY-MM-DD HH:MM:SS +0200`.
+
+   Usa el formato `YYYY-MM-DD HH:MM:SS +HHMM`. **El desfase no es fijo:** el blog va en hora de Madrid, que es `+0200` en verano y `+0100` en invierno (el cambio es el último domingo de marzo y el último de octubre). Calcúlalo siempre para la fecha y hora concretas de publicación, nunca lo copies de otro post:
+   ```bash
+   node -e "const [d,t]=process.argv.slice(1);const o=new Intl.DateTimeFormat('en',{timeZone:'Europe/Madrid',timeZoneName:'longOffset'}).formatToParts(new Date(d+'T'+t+'Z')).find(p=>p.type==='timeZoneName').value;console.log(d+' '+t+' '+o.replace(/GMT|:/g,''))" 2026-11-03 10:00:00
+   # → 2026-11-03 10:00:00 +0100
+   ```
+   (La hora se interpreta como UTC solo para averiguar el desfase; en las dos horas del cambio de hora el resultado puede salir con el desfase anterior, así que no programes posts entre las 00:00 y las 03:00 de esos domingos.)
 
 ---
 
@@ -266,7 +303,27 @@ files.forEach(f => {
 node $(cygpath -w /tmp/img_dimensions.js) img/PATRON-*.{webp,gif,jpg,png} 2>/dev/null
 ```
 
-Con esto tienes la lista completa de imágenes con sus dimensiones. Ahora guarda el estado (ver sección **Estado de la skill** al final).
+Con esto tienes la lista completa de imágenes con sus dimensiones.
+
+### 5d. Imagen de la tarjeta de LinkedIn y X (`og-image`)
+
+`_includes/head.html` elige la imagen de la tarjeta social en este orden:
+
+1. `og-image` del frontmatter, si existe.
+2. La **primera imagen del post**, pero solo si es **JPG o PNG** (LinkedIn no lista WebP y ninguna de las dos redes admite SVG) y declara en `width`/`height` **al menos 600×315**.
+3. Si no, `header-img`: una banda de 1500×474 que LinkedIn y X recortan a 1,91:1 y suele quedar mal.
+
+Con el inventario del 5c, mira la primera imagen que vas a insertar:
+
+- **Si es JPG/PNG de 600×315 o más:** la tarjeta ya sale bien sola. No añadas `og-image`.
+- **Si no lo es** (lo habitual, porque las imágenes del cuerpo suelen ser `.webp`), o el post no tiene imágenes, pregunta al usuario:
+  > La tarjeta de LinkedIn y X usaría la cabecera recortada, porque la primera imagen del post es `nombre-01.webp`. ¿Tienes una imagen JPG o PNG para la tarjeta, idealmente de 1200×630? (Por ejemplo: `PATRON-og.jpg` en `img/`.) Si no, sigo sin ella.
+
+  Si da un nombre, comprueba que el fichero existe en `img/` y saca sus dimensiones con el script del 5c. Si es JPG/PNG de 600×315 o más, añade `og-image: "img/NOMBRE"` al frontmatter (Paso 7); si no existe o no cumple, avísale y no lo añadas. Si dice que no tiene, no añadas `og-image` y anótalo en los warnings del resumen.
+
+**⚠ Modo prueba:** no preguntes ni añadas `og-image`.
+
+Ahora guarda el estado (ver sección **Estado de la skill** al final).
 
 ---
 
@@ -334,6 +391,11 @@ El Word puede incluir notas al pie (referencias `<w:footnoteReference w:id="N"/>
    unzip -p /tmp/post.docx word/footnotes.xml > /tmp/footnotes.xml
    unzip -p /tmp/post.docx word/_rels/footnotes.xml.rels > /tmp/footnotes.rels
    ```
+   Y pásalos por el mismo parser del Paso 1, que así resuelve también los enlaces de las notas (las notas tienen su propio `.rels`; los `rId` del cuerpo no sirven para ellas):
+   ```bash
+   node $(cygpath -w /tmp/parse_paragraphs.js) $(cygpath -w /tmp/footnotes.xml) $(cygpath -w /tmp/footnotes.rels)
+   ```
+   Las dos primeras «notas» de `footnotes.xml` son los separadores de Word (sin texto); el parser las omite.
 2. Numera las notas en el orden en que aparecen en el texto (1, 2, 3…) e identifícalas con el slug `fn-fN`.
 3. En el punto del texto donde aparece la llamada a la nota, inserta justo después de la palabra o frase de referencia (sin espacio):
    ```html
@@ -404,9 +466,10 @@ layout:        post
 title:         "TÍTULO DEL POST"
 subtitle:      "SUBTÍTULO DEL POST"
 description:   "DESCRIPCIÓN SEO GENERADA"
-date:          YYYY-MM-DD HH:MM:SS +0200
+date:          YYYY-MM-DD HH:MM:SS +HHMM
 author:        "Aunitz Giménez"
 header-img:    "img/post-bg-NNN.jpg"
+og-image:      "img/NOMBRE-og.jpg"
 tags:          [tag1, tag2]
 ---
 
@@ -417,6 +480,8 @@ Notas sobre el frontmatter:
 - Mantén el alineamiento visual de los valores (usa espacios para alinear como en los posts existentes).
 - El `title` y `subtitle` van entre comillas dobles. Si contienen comillas dobles internas, escápalas correctamente.
 - Los tags van en minúsculas y entre corchetes.
+- El desfase horario de `date` es el calculado en el Paso 2 (`+0100` o `+0200`), no uno fijo.
+- La línea `og-image` solo se incluye si así se decidió en el Paso 5d; en caso contrario, se omite.
 
 Para posts con más de 5 secciones, aplica la estrategia de escritura incremental descrita en el Paso 6.
 
@@ -435,6 +500,7 @@ Una vez creado el fichero, muestra un resumen completo:
 | Descripción SEO | … (N caracteres) |
 | Fecha de publicación | … |
 | Header-img | … |
+| Imagen de la tarjeta social | `og-image` / primera imagen del post / header-img recortada |
 | Tags | … |
 | Secciones h2 | N |
 | Párrafos procesados | N |
@@ -521,8 +587,9 @@ Guarda el estado en `.claude/skills/publish-post-blog-aunitz/state/state.json` d
     "title": "Título del post",
     "subtitle": "Subtítulo",
     "slug": "slug-del-post",
-    "date": "2026-01-01 10:00:00 +0200",
+    "date": "2026-01-01 10:00:00 +0100",
     "header_img": "img/post-bg-NNN.jpg",
+    "og_image": null,
     "tags": ["tag1", "tag2"],
     "description": "Descripción SEO"
   },
