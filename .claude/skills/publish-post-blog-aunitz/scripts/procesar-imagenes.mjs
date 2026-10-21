@@ -37,8 +37,12 @@ import sharp from 'sharp';
 const ANCHO = 750;
 const ANCHO_XL = 1600;
 const ANCHO_MOVIL = 360;
-const WEBP = { quality: 80, effort: 6 };
-const JPEG = { quality: 80, mozjpeg: true, progressive: true };
+// Calidad 85 y no 80: las ilustraciones del blog son colores planos pálidos con
+// degradados suaves y líneas finas, y a 80 se pierden detalles y los degradados
+// salen manchados. smartSubsample evita que el color sangre en los bordes. A 90
+// solo se conservan además líneas casi invisibles, con un 28 % más de peso.
+const WEBP = { quality: 85, smartSubsample: true, effort: 6 };
+const JPEG = { quality: 85, mozjpeg: true, progressive: true };
 const VIDEO = new Set(['.gif', '.mp4', '.mov', '.webm', '.mkv', '.avi', '.m4v']);
 
 const plan = JSON.parse(fs.readFileSync(process.argv[2], 'utf8'));
