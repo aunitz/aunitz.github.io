@@ -115,7 +115,7 @@ tags:          [inteligencia artificial, memorandos]
 
 <p><a href="https://www.linkedin.com/in/floresherr/" target="_blank" rel="noopener noreferrer">Nicolas Flores-Herr</a>. Responsable de Modelos Funcionales y Sistemas de IA Generativa en Soofi y jefe de equipo en Fraunhofer IAIS.</p>
 
-<p>Nicolas comenzó referenciando un relato de ficción titulado <a href="https://europe2031.ai/" target="_blank" rel="noopener noreferrer">Europe 2031</a>, que explora cómo la mala gestión de la inteligencia artificial podría llevar a Europa a la irrelevancia económica y política.</p>
+<p>Nicolas comenzó referenciando un relato de ficción titulado <a href="https://europe2031.ai/" target="_blank" rel="noopener noreferrer">Europe 2031</a>, que explora cómo la mala gestión de la inteligencia artificial podría llevar a Europa a <a href="{% post_url 2026-10-21-escuchando-nobel-economia-hablar-sobre-ia-mucho-ruido-y-poco-crecimiento %}">la irrelevancia económica y política</a>.</p>
 
 <p>Habló de como escapar de "<strong>la trampa de los tokens</strong>". Recurriendo a modelos abiertos auditables, adaptables y soberanos. Como por ejemplo <strong>Soofi</strong> (Sovereign Open Source Foundation Models), que es un proyecto colaborativo alemán enfocado en desarrollar modelos fundacionales de inteligencia artificial soberanos para Europa orientados a un uso industrial y no como chatbots generales.</p>
 

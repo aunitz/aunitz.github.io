@@ -147,8 +147,15 @@ buenas-practicas-usabilidad-chatbot-ia-sitio-web:
 
 como-sera-futuro-ingenieria-software-en-era-ia:
   - cinco-niveles-adopcion-ia-en-desarrollo-software
-  - open-llm-basque-day
+  - escuchando-nobel-economia-hablar-sobre-ia-mucho-ruido-y-poco-crecimiento
   - ia-facilita-pero-no-garantiza-aprendizaje-en-organizaciones
+
+# La paradoja de la productividad: la IA ayuda a cada persona, pero eso no
+# llega a la organización ni a la economía. Encaja con los de adopción.
+escuchando-nobel-economia-hablar-sobre-ia-mucho-ruido-y-poco-crecimiento:
+  - ia-facilita-pero-no-garantiza-aprendizaje-en-organizaciones
+  - como-sera-futuro-ingenieria-software-en-era-ia
+  - open-llm-basque-day
 
 # --- Desarrollo de soluciones digitales -------------------------------------
 
@@ -571,7 +578,7 @@ no-utilices-atributo-placeholder:
   - formularios-usables-campos-de-texto
 
 open-llm-basque-day:
-  - es-la-inteligencia-artificial-generativa-una-caja-negra
+  - escuchando-nobel-economia-hablar-sobre-ia-mucho-ruido-y-poco-crecimiento
   - cinco-niveles-adopcion-ia-en-desarrollo-software
   - como-sera-futuro-ingenieria-software-en-era-ia
 

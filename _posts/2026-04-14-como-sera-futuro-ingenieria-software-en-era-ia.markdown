@@ -121,7 +121,7 @@ tags:          [inteligencia artificial, desarrollo de soluciones digitales]
 <p>Annie Vella, una de las ingenieras participantes en el evento, <a href="https://annievella.com/posts/finding-comfort-in-the-uncertainty/" target="_blank" rel="noopener noreferrer">aporta unas interesantes reflexiones</a> que quiero incorporar a modo de conclusiones.</p>
 
 <ul>
-  <li><strong>Hay más incertidumbre que certeza:</strong> sobre cómo usar bien la IA, qué impacto real tiene en la productividad, cómo están cambiando los roles y hacia dónde evolucionará todo. Nadie tiene respuestas definitivas. Todos están aprendiendo sobre la marcha.</li>
+  <li><strong>Hay más incertidumbre que certeza:</strong> sobre cómo usar bien la IA, <a href="{% post_url 2026-10-21-escuchando-nobel-economia-hablar-sobre-ia-mucho-ruido-y-poco-crecimiento %}">qué impacto real tiene en la productividad</a>, cómo están cambiando los roles y hacia dónde evolucionará todo. Nadie tiene respuestas definitivas. Todos están aprendiendo sobre la marcha.</li>
   <li>Debemos ayudar a las generaciones actuales y futuras de ingenieros no con promesas vacías, sino definiendo con claridad los nuevos problemas que deben resolver. Se les contrató para escribir código; ahora se les pide delegarlo. Merecen que <strong>definamos qué viene después</strong>.</li>
 </ul>
 

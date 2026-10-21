@@ -16,7 +16,7 @@ tags:          [inteligencia artificial]
 
 <h2>Evolución de la tecnología en explosiones impredecibles</h2>
 
-<p>Dicen que rectificar es de sabios, aunque no es algo que veamos a menudo. Acemoglu, sin embargo, abre la conversación haciendo precisamente eso. En 2024 propuso un marco cuantitativo muy conservador sobre el impacto macroeconómico de la IA a diez años vista. Hoy reconoce que la inteligencia artificial ha avanzado más deprisa de lo que él mismo esperaba. A su juicio, <strong>la tecnología no progresa en línea recta</strong> ni a un ritmo constante, <strong>sino a saltos</strong>, con explosiones e impulsos muy <strong>difíciles de prever</strong>. El último de esos impulsos, según él, ha llegado con la IA agéntica. La considera un punto de inflexión que aumentará significativamente el impacto de la inteligencia artificial en la economía real.</p>
+<p>Dicen que rectificar es de sabios, aunque no es algo que veamos a menudo. Acemoglu, sin embargo, abre la conversación haciendo precisamente eso. En 2024 propuso un marco cuantitativo muy conservador sobre el impacto macroeconómico de la IA a diez años vista. Hoy reconoce que la inteligencia artificial ha avanzado más deprisa de lo que él mismo esperaba. A su juicio, <strong>la tecnología no progresa en línea recta</strong> ni a un ritmo constante, <strong>sino a saltos</strong>, con explosiones e impulsos muy <strong>difíciles de prever</strong>. El último de esos impulsos, según él, ha llegado con <a href="{% post_url 2026-04-14-como-sera-futuro-ingenieria-software-en-era-ia %}">la IA agéntica</a>. La considera un punto de inflexión que aumentará significativamente el impacto de la inteligencia artificial en la economía real.</p>
 
 <h2>La paradoja de la productividad</h2>
 
@@ -165,9 +165,9 @@ tags:          [inteligencia artificial]
 
 <h3>El riesgo de que la IA se convierta en un producto genérico</h3>
 
-<p>Aunque el uso de la IA siga creciendo, existe un riesgo alto de que los modelos de lenguaje acaben siendo un <strong>producto genérico</strong> (<em>commodity</em><sup id="fnref:fn-f2"><a href="#fn:fn-f2" class="footnote">2</a></sup>), intercambiables entre sí.</p>
+<p>Aunque el uso de la IA siga creciendo, existe un riesgo alto de que <a href="{% post_url 2026-02-21-como-funciona-la-inteligencia-artificial-generativa %}">los modelos de lenguaje</a> acaben siendo un <strong>producto genérico</strong> (<em>commodity</em><sup id="fnref:fn-f2"><a href="#fn:fn-f2" class="footnote">2</a></sup>), intercambiables entre sí.</p>
 
-<p>Si alternativas de código abierto o modelos destilados<sup id="fnref:fn-f3"><a href="#fn:fn-f3" class="footnote">3</a></sup> como DeepSeek ofrecen un rendimiento parecido a un coste mínimo, las grandes empresas se verán obligadas a bajar sus precios hasta el coste marginal<sup id="fnref:fn-f4"><a href="#fn:fn-f4" class="footnote">4</a></sup>. Sin margen para cobrar más, no podrán recuperar lo invertido en entrenamiento e infraestructura, y <strong>algunas podrían quebrar</strong>.</p>
+<p>Si <a href="{% post_url 2026-06-27-open-llm-basque-day %}">alternativas de código abierto</a> o modelos destilados<sup id="fnref:fn-f3"><a href="#fn:fn-f3" class="footnote">3</a></sup> como DeepSeek ofrecen un rendimiento parecido a un coste mínimo, las grandes empresas se verán obligadas a bajar sus precios hasta el coste marginal<sup id="fnref:fn-f4"><a href="#fn:fn-f4" class="footnote">4</a></sup>. Sin margen para cobrar más, no podrán recuperar lo invertido en entrenamiento e infraestructura, y <strong>algunas podrían quebrar</strong>.</p>
 
 <p>Hay que tener en cuenta, además, que esa inversión se deprecia muy rápido. Las GPU tienen una vida útil de apenas uno o dos años, de modo que el capital invertido pierde valor a gran velocidad.</p>
 
