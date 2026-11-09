@@ -3,6 +3,13 @@ name: Purge Cloudflare Cache
 on:
   deployment_status:
 
+# El GITHUB_TOKEN solo se usa para leer: checkout/git fetch (contents) y la
+# consulta de deploys anteriores con gh api (deployments). El token de
+# Cloudflare es un secreto aparte y no depende de esto.
+permissions:
+  contents: read
+  deployments: read
+
 jobs:
   purge-cache:
     if: github.event.deployment_status.state == 'success' && github.event.deployment.environment == 'github-pages'
