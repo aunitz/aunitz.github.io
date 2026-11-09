@@ -19,6 +19,7 @@ output_file    = output_index ? ARGV[output_index + 1] : nil
 
 SITE_DIR   = File.expand_path("_site", __dir__)
 BASE_URL   = "https://www.aunitz.net"
+BASE_URI   = URI.parse(BASE_URL)
 TIMEOUT    = 10  # segundos por petición externa
 
 # ── Resultado ─────────────────────────────────────────────────────────────────
@@ -49,6 +50,18 @@ def local_path(url, site_dir, base_url)
     File.join(site_dir, path.chomp("/"))
   ]
   candidates.find { |c| File.exist?(c) }
+end
+
+# Un enlace es interno si es una ruta relativa a la raíz ("/algo") o una URL
+# absoluta cuyo esquema y host coinciden EXACTAMENTE con los del sitio.
+# Comprobar solo que empieza por BASE_URL daría por interno
+# "https://www.aunitz.net.otro-dominio.com/".
+def internal_link?(href)
+  return true if href.start_with?("/")
+  uri = URI.parse(href)
+  uri.scheme == BASE_URI.scheme && uri.host.to_s.downcase == BASE_URI.host
+rescue URI::InvalidURIError
+  false
 end
 
 def check_external_url(url)
@@ -94,9 +107,13 @@ files.each do |file|
 
     total_links += 1
 
+    # Las URLs sin esquema ("//gc.zgo.at/count.js") empiezan por "/" pero
+    # apuntan a otro host: se completan con https: antes de clasificarlas,
+    # para no tomarlas por rutas internas.
+    href = "https:#{href}" if href.start_with?("//")
+
     # ── Enlace interno ─────────────────────────────────────────────────────
-    is_internal = href.start_with?("/") || href.start_with?(BASE_URL)
-    if is_internal
+    if internal_link?(href)
       next if checked.include?(href)
       checked.add(href)
 
